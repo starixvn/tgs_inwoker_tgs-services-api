@@ -1,5 +1,5 @@
 import { ApiService } from "./ApiService";
-import config from "../config/config";
+import config from "../../config/config";
 
 export const InboxService = {
   InboxList,
@@ -22,7 +22,6 @@ function UpdateReadMessage(ids) {
 }
 function DeleteMessage(ids) {
   const result = ApiService.post("member/messageDelete", {
-    token,
     ids,
   });
 

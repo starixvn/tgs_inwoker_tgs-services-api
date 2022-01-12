@@ -1,5 +1,5 @@
 import { ApiService } from "./ApiService";
-import config from "../config/config";
+import config from "../../config/config";
 
 export const GameService = {
   GetGameList,
