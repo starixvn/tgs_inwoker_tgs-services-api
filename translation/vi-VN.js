@@ -167,7 +167,7 @@ export const vivN = {
     info: "Thông tin",
     qrCode: "Mã QR",
     promoId: "ID Khuyến mãi",
-    promoLink: "Liên kết khuyến mãi",
+    promoLink: "liên kết",
     memberName: "Tên thành viên",
     UUID: "UUID",
     dateTime: "DateTime",
