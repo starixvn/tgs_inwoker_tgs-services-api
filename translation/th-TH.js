@@ -945,6 +945,12 @@ export const thTH = {
   BC: {
     sports: "BetConstruct",
   },
+  AVIA: {
+    sports: "AVIA Gaming",
+  },
+  TF: {
+    sports: "TF Gaming",
+  },
   hk28: {
     card: {
       withdrawalNumber: "หมายเลขบัตรธนาคาร/ที่อยู่สกุลเงินที่เข้ารหัส",
