@@ -27,6 +27,8 @@ import {
   GETBRAND_BEGIN,
   GETBRAND_SUCCESS,
   GETBRAND_FAIL,
+  GETVIP_SUCCESS,
+  GETVIP_FAILED,
 } from "../constant/actionType";
 // These are the constants to represent each of three recommended actions for a single API fetch or post.
 
@@ -41,6 +43,7 @@ export const generalAction = {
   getLiveChatURL,
   getBanner,
   getBrand,
+  getVIP,
 };
 function getSiteToken() {
   return (dispatch) => {
@@ -369,6 +372,29 @@ function getLiveChatURL() {
           loading: false,
         });
       });
+    return result;
+  };
+}
+
+function getVIP() {
+  return (dispatch) => {
+    const result = GeneralService.GetVIP().then((response) => {
+      if (response.IsSuccess) {
+        dispatch({
+          type: GETVIP_SUCCESS,
+          payload: response,
+        });
+
+        // AppHistory.push("/");
+      } else {
+        dispatch({
+          type: GETVIP_FAILED,
+          payload: response,
+        });
+      }
+      return response;
+    });
+
     return result;
   };
 }
