@@ -6,7 +6,7 @@ import Promise from "promise-polyfill";
 import { isMobileOnly } from "react-device-detect";
 import ErrorSwitcher from "../../utils/ErrorSwitcher";
 
-export default {
+const Interceptor = {
   setupInterceptors: (store) => {
     // Add a response interceptor
     axios.interceptors.request.use(
@@ -138,3 +138,4 @@ export default {
     );
   },
 };
+export default Interceptor;
