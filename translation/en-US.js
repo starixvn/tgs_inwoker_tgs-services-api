@@ -967,12 +967,6 @@ export const enUS = {
   BC: {
     sports: "BetConstruct",
   },
-  AVIA: {
-    sports: "AVIA Gaming",
-  },
-  TF: {
-    sports: "TF Gaming",
-  },
   hk28: {
     withdrawalNumber: "Bank card number/Crypto currency address",
     msgEnterWithdrawalNumber:

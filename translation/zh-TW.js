@@ -939,13 +939,7 @@ export const zhTW = {
     fish: "樂遊捕魚",
   },
   BC: {
-    sports: "Bet體育",
-  },
-  AVIA: {
-    sports: "AVIA體育",
-  },
-  TF: {
-    sports: "TF體育",
+    sports: "BetConstruct",
   },
   hk28: {
     withdrawalNumber: "銀行卡號碼/FPS(轉數快)號碼",

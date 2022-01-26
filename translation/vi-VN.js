@@ -947,12 +947,6 @@ export const vivN = {
   BC: {
     sports: "BetConstruct",
   },
-  AVIA: {
-    sports: "AVIA Gaming",
-  },
-  TF: {
-    sports: "TF Gaming",
-  },
   hk28: {
     withdrawalNumber: "Số thẻ ngân hàng / Địa chỉ tiền điện tử",
     msgEnterWithdrawalNumber:
