@@ -941,7 +941,13 @@ export const zhCN = {
     fish: "乐游捕鱼",
   },
   BC: {
-    sports: "BetConstruct",
+    sports: "Bet体育",
+  },
+  AVIA: {
+    sports: "AVIA体育",
+  },
+  TF: {
+    sports: "TF体育",
   },
   hk28: {
     withdrawalNumber: "银行卡号码/FPS(转数快)号码",
