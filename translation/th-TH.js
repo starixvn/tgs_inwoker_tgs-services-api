@@ -173,7 +173,7 @@ export const thTH = {
   },
   card: {
     title: "แก้ไขธนาคาร",
-    myCard: "บัตรธนาคารของฉัน",
+    myCard: "เลือกธนาคาร",
     tail: "เลขท้าย",
     transferRecord: "บันทึกการโอน",
     removeCard: "ถอดการ์ด",
@@ -584,7 +584,7 @@ export const thTH = {
     refresh: "รีเฟรช",
     title: "โอน",
     totalFund: "ยอดเงินคงเหลือ",
-    mainAccount: "กระเป๋าเงินหลัก",
+    mainAccount: "ยอดเงินคงเหลือในกระเป๋าเงินหลัก",
     oneKeyReceive: "OneKeyReceive",
     oneKeyTransfer: "โอนทั้งหมด",
     maintenance: "บำรุงรักษา",
@@ -788,7 +788,7 @@ export const thTH = {
       header: {
         lastLogin: "เวลาเข้าสู่ระบบครั้งสุดท้าย",
         total: "ยอดเงินคงเหลือ",
-        mainWallet: "กระเป๋าเงินหลัก",
+        mainWallet: "ยอดเงินคงเหลือในกระเป๋าเงินหลัก",
         allGameWallet: "กระเป๋าเกม ",
       },
       msgCenterAcc: {
