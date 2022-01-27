@@ -816,7 +816,7 @@ export const thTH = {
       btn: "ติดต่อเรา",
     },
   },
-  PrimePay: "PrimePay",
+  PrimePay: "ฝากอัตโนมัติ",
   MaticPay: "MaticPay",
   LeePay: "LeePay",
   ApplePay: "ApplePay",
