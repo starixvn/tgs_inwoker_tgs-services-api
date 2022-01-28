@@ -383,6 +383,7 @@ function getVIP() {
         dispatch({
           type: GETVIP_SUCCESS,
           payload: response,
+          loading: false,
         });
 
         // AppHistory.push("/");
@@ -390,6 +391,7 @@ function getVIP() {
         dispatch({
           type: GETVIP_FAILED,
           payload: response,
+          loading: false,
         });
       }
       return response;

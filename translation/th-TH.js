@@ -173,7 +173,7 @@ export const thTH = {
   },
   card: {
     title: "แก้ไขธนาคาร",
-    myCard: "เลือกธนาคาร",
+    myCard: "บัตรธนาคารของฉัน",
     tail: "เลขท้าย",
     transferRecord: "บันทึกการโอน",
     removeCard: "ถอดการ์ด",
@@ -584,7 +584,7 @@ export const thTH = {
     refresh: "รีเฟรช",
     title: "โอน",
     totalFund: "ยอดเงินคงเหลือ",
-    mainAccount: "ยอดเงินคงเหลือในกระเป๋าเงินหลัก",
+    mainAccount: "กระเป๋าเงินหลัก",
     oneKeyReceive: "OneKeyReceive",
     oneKeyTransfer: "โอนทั้งหมด",
     maintenance: "บำรุงรักษา",
@@ -788,7 +788,7 @@ export const thTH = {
       header: {
         lastLogin: "เวลาเข้าสู่ระบบครั้งสุดท้าย",
         total: "ยอดเงินคงเหลือ",
-        mainWallet: "ยอดเงินคงเหลือในกระเป๋าเงินหลัก",
+        mainWallet: "กระเป๋าเงินหลัก",
         allGameWallet: "กระเป๋าเกม ",
       },
       msgCenterAcc: {
@@ -828,11 +828,13 @@ export const thTH = {
   CustomBank: "ธนาคารที่กำหนดเอง",
   VR: {
     lottery: "VR",
-    desc: 'VR Lottery has always been in the leading position in the industry with "fairness, safety, fast and accuracy", and has an all-round system of artificial intelligence. We have all kinds of mainstream lottery here, mainly divided into "VR Live streaming lottery" and "VR lottery". We are also developing the "VR Electronic" series of games, determined to give customers more diversified choices.    VR will continue to create and progress, in order to introduce more new kind lottery for the public, and create an all-round entertainment environment.',
+    desc:
+      'VR Lottery has always been in the leading position in the industry with "fairness, safety, fast and accuracy", and has an all-round system of artificial intelligence. We have all kinds of mainstream lottery here, mainly divided into "VR Live streaming lottery" and "VR lottery". We are also developing the "VR Electronic" series of games, determined to give customers more diversified choices.    VR will continue to create and progress, in order to introduce more new kind lottery for the public, and create an all-round entertainment environment.',
   },
   KY: {
     chess: "KaiYuan",
-    desc: "คว้าตัววัว ตัววัว ตัวผู้ ตัวผู้ มังกร และเสือ แล้วคุณสามารถเลือกหมากรุกและไพ่ได้หลากหลาย! หมากรุกและไพ่แสดงความคิดของคุณ ความบันเทิงในการแข่งขัน เผาสมอง พบปะเพื่อนฝูง และแข่งขัน เกมเปลี่ยนชีวิตคุณ",
+    desc:
+      "คว้าตัววัว ตัววัว ตัวผู้ ตัวผู้ มังกร และเสือ แล้วคุณสามารถเลือกหมากรุกและไพ่ได้หลากหลาย! หมากรุกและไพ่แสดงความคิดของคุณ ความบันเทิงในการแข่งขัน เผาสมอง พบปะเพื่อนฝูง และแข่งขัน เกมเปลี่ยนชีวิตคุณ",
     BankerNiuNiu: "Niu-Niu",
     GoldenFlower: "Gloden Flower",
     The21Point: "The 21 Point",
@@ -840,10 +842,12 @@ export const thTH = {
     fish: "KY",
   },
   sports: {
-    desc: "PG นำเสนอรูปแบบการเล่นที่แปลกใหม่และหลากหลายและการถ่ายทอดเหตุการณ์ที่อัตราต่อรองสูง เช่นเดียวกับการใช้อุปกรณ์ต่างๆ ทุกที่ทุกเวลา ช่วยให้คุณวางเดิมพันได้อย่างง่ายดาย รวดเร็ว และปลอดภัย บวกกับความมั่งคั่งของ การพนันกีฬารวมถึงฟุตบอล บาสเก็ตบอล เบสบอล เทนนิส อเมริกันฟุตบอล อีสปอร์ต ฯลฯ เพื่อตอบสนองความต้องการของผู้รักกีฬาทุกคน!",
+    desc:
+      "PG นำเสนอรูปแบบการเล่นที่แปลกใหม่และหลากหลายและการถ่ายทอดเหตุการณ์ที่อัตราต่อรองสูง เช่นเดียวกับการใช้อุปกรณ์ต่างๆ ทุกที่ทุกเวลา ช่วยให้คุณวางเดิมพันได้อย่างง่ายดาย รวดเร็ว และปลอดภัย บวกกับความมั่งคั่งของ การพนันกีฬารวมถึงฟุตบอล บาสเก็ตบอล เบสบอล เทนนิส อเมริกันฟุตบอล อีสปอร์ต ฯลฯ เพื่อตอบสนองความต้องการของผู้รักกีฬาทุกคน!",
   },
   esports: {
-    desc: "IM e-sports มีการสนับสนุนด้านเทคนิคที่ยอดเยี่ยม เช่นเดียวกับอินเทอร์เฟซภาพที่น่าทึ่งและประสบการณ์ผู้ใช้ที่มีประสิทธิภาพ ตอนนี้ผ่านแพลตฟอร์มเครือข่ายแพ็คเกจ [PG] สัมผัสความสนุกของการเดิมพัน e-sports ได้ง่ายๆ!",
+    desc:
+      "IM e-sports มีการสนับสนุนด้านเทคนิคที่ยอดเยี่ยม เช่นเดียวกับอินเทอร์เฟซภาพที่น่าทึ่งและประสบการณ์ผู้ใช้ที่มีประสิทธิภาพ ตอนนี้ผ่านแพลตฟอร์มเครือข่ายแพ็คเกจ [PG] สัมผัสความสนุกของการเดิมพัน e-sports ได้ง่ายๆ!",
   },
   services: {
     depositTitle: "การฝากและถอนเงินด่วน",
@@ -853,7 +857,8 @@ export const thTH = {
     security:
       "ได้รับการพัฒนาเป็นพิเศษโดยใช้เทคโนโลยีการเข้ารหัส 128 บิตและระบบการจัดการความปลอดภัยที่เข้มงวด เงินทุนของลูกค้าคือการป้องกันที่สมบูรณ์ที่สุด ช่วยให้คุณเพลิดเพลินกับความบันเทิง เดิมพันกิจกรรม และไม่ต้องกังวล!",
     oddsTitle: "ประเภทงานใหญ่",
-    odds: "เสนอกิจกรรมกีฬาที่น่าตื่นเต้นเกือบพันรายการให้คุณทุกวัน เช่นเดียวกับตัวเลือกความบันเทิงที่หลากหลาย เช่น ไลฟ์แอ็กชัน ลอตเตอรี เกมอิเล็กทรอนิกส์ ฯลฯ เพื่อให้คุณได้รับประสบการณ์การเล่นเกมที่สมบูรณ์แบบ",
+    odds:
+      "เสนอกิจกรรมกีฬาที่น่าตื่นเต้นเกือบพันรายการให้คุณทุกวัน เช่นเดียวกับตัวเลือกความบันเทิงที่หลากหลาย เช่น ไลฟ์แอ็กชัน ลอตเตอรี เกมอิเล็กทรอนิกส์ ฯลฯ เพื่อให้คุณได้รับประสบการณ์การเล่นเกมที่สมบูรณ์แบบ",
     platformTitle: "คุณสามารถเลือกได้จากสามเทอร์มินัล",
     platform:
       "เทคโนโลยีที่ยอดเยี่ยมที่เป็นผู้นำตลาด พัฒนาชุดแอปพลิเคชันเทอร์มินัลอย่างอิสระ ช่วยให้คุณเพลิดเพลินกับเว็บ, H5 และ iOS, แอพ Android ดั้งเดิม ช่วยให้คุณเดิมพันได้ทุกที่ทุกเวลา! บริการลูกค้าออนไลน์ 7x24 ให้บริการที่ใกล้ชิดที่สุด คุณภาพดีที่สุด",
@@ -1014,5 +1019,24 @@ export const thTH = {
   usertype: {
     agent: "ตัวแทน",
     player: "ผู้เล่น",
+  },
+  vip: {
+    birthBenefit: "ของขวัญวันเกิด",
+    cardGameRebate: "เกมไพ่",
+    level: "เงื่อนไขโปรโมชั่น",
+    levelKeepAccumulateBetAmount:
+      "จำนวนเงินเดิมพันที่ต้องการในเดือนปัจจุบันเพื่อรักษาการตกชั้น",
+    levelKeepAccumulateDeposit:
+      "การฝากที่จำเป็นสำหรับเดือนปัจจุบันเพื่อรักษาระดับ",
+    levelUpAccumulateBetAmount:
+      "จำนวนเงินเดิมพันที่ต้องการในเดือนปัจจุบันเพื่อล่วงหน้า",
+    levelUpAccumulateDeposit: "การฝากที่จำเป็นสำหรับเดือนโปรโมชั่น",
+    liveDealerRebate: "ความบันเทิงสด",
+    lotteryRebate: "เกมลอตเตอรี",
+    promotionBenefit: "โปรโมชั่นผลประโยชน์",
+    quarterlyBenefit: "ผลประโยชน์รายไตรมาส",
+    slotRebate: "วิดีโอเกม",
+    sportsRebate: "เกมกีฬา",
+    virtualSportsRebate: "เกม Esports",
   },
 };
