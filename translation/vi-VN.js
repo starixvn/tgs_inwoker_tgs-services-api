@@ -340,8 +340,8 @@ export const vivN = {
         gameTab: {
           sports: "Thể thao",
           esports: "Thể thao điện tử",
-          live: "Trực tiếp",
-          lottery: "Lô tô",
+          live: "Casino",
+          lottery: "Xổ số",
           chess: "Trò chơi bài",
           electron: "Trò chơi điện tử",
           slot: "Slots",
