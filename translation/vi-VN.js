@@ -106,7 +106,7 @@ export const vivN = {
     horserace: "Đua xe Horce",
     sport: "Thể thao",
     esports: "eSports",
-    live: "Sòng bạc trực tiếp",
+    live: "Casino",
     lottery: "Xổ số",
     chess: "Trò chơi bài",
     slot: "Slots",
