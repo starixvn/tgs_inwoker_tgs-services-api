@@ -415,7 +415,7 @@ export const zhCN = {
     bankCard: {
       title: "银行卡",
       settledBankCard: "您的银行卡已经设定，请妥善保管。",
-      limitedWithdraw: "您可的可提款余额为：",
+      limitedWithdraw: "您可提款余额为：",
       biggerThanZero: "提款金额 必须大于 0",
     },
     phone: {
@@ -598,7 +598,7 @@ export const zhCN = {
   withdrawal: {
     msgMustHundred: "金额必须以百位数字结尾",
     msgInvalidAmt: "提款金额 必须大于 0",
-    msgCanWithdrawal: "您可的可提款余额为：{{amount}}",
+    msgCanWithdrawal: "您可提款余额为：{{amount}}",
     turnover: "流水需求: ",
     msgEnterWithdrawalPass: "请输入提款密码",
     msgInsufficient: "中心钱包余额不足",

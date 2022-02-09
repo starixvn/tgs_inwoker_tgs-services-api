@@ -415,7 +415,7 @@ export const zhTW = {
     bankCard: {
       title: "銀行卡",
       settledBankCard: "您的銀行卡已經設定，請妥善保管。",
-      limitedWithdraw: "您可的可提款餘額為：",
+      limitedWithdraw: "您可提款餘額為：",
       biggerThanZero: "提款金額 必須大於 0",
     },
     phone: {
@@ -596,7 +596,7 @@ export const zhTW = {
   withdrawal: {
     msgMustHundred: "金額必須以百位數字結尾",
     msgInvalidAmt: "提款金額 必須大於 0",
-    msgCanWithdrawal: "您可的可提款餘額為：{{amount}}",
+    msgCanWithdrawal: "您可提款餘額為：{{amount}}",
     turnover: "流水需求: ",
     msgEnterWithdrawalPass: "請輸入提款密碼",
     msgInsufficient: "中心錢包餘額不足",
