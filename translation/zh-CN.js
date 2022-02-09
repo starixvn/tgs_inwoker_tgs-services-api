@@ -151,6 +151,7 @@ export const zhCN = {
     msgRequestFailed: "请求失败，请联系客服",
     termsAndCondition: "条款和条件",
     exit: "登出",
+    playeronline: "在线人数",
   },
   affiliate: {
     title: "推广赚钱",

@@ -161,6 +161,7 @@ export const enUS = {
       "Request failed, please contact Customer Service for further information.",
     termsAndCondition: "Terms and conditions",
     exit: "Exit",
+    playeronline: "Online users",
   },
   affiliate: {
     title: "Affiliate",

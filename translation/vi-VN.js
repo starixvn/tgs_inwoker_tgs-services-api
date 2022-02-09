@@ -158,6 +158,7 @@ export const vivN = {
       "Yêu cầu không thành công, vui lòng liên hệ với bộ phận Dịch vụ khách hàng để biết thêm thông tin.",
     termsAndCondition: "Các điều khoản và điều kiện",
     exit: "Thoát",
+    playeronline: "người dùng trực tuyến",
   },
   affiliate: {
     title: "Khuyến mãi",

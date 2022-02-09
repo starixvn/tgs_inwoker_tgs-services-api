@@ -151,6 +151,7 @@ export const zhTW = {
     msgRequestFailed: "請求失敗，請聯繫客服",
     termsAndCondition: "條款和條件",
     exit: "登出",
+    playeronline: "在線人數",
   },
   affiliate: {
     title: "推廣賺錢",

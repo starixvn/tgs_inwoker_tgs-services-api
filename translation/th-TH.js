@@ -153,6 +153,7 @@ export const thTH = {
     msgRequestFailed: "คำขอล้มเหลว โปรดติดต่อฝ่ายบริการลูกค้า",
     termsAndCondition: "ข้อกำหนดและเงื่อนไข",
     exit: "ออกจากระบบ",
+    playeronline: "ผู้ใช้ออนไลน์",
   },
   affiliate: {
     title: "โปรโมชั่นสร้างรายได้",
