@@ -14,6 +14,7 @@ export const GeneralService = {
   GetBrand,
   GetJoinedPromoReport,
   GetVIP,
+  GetInvitationCode,
 };
 
 function GetSiteToken() {
@@ -79,5 +80,10 @@ function GetJoinedPromoReport(From, To, page, rows, desc, sort, all) {
 
 function GetVIP() {
   const result = ApiService.get("vip");
+  return result;
+}
+
+function GetInvitationCode() {
+  const result = ApiService.get("agent");
   return result;
 }

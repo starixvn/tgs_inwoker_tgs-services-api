@@ -27,8 +27,11 @@ import {
   GETBRAND_BEGIN,
   GETBRAND_SUCCESS,
   GETBRAND_FAIL,
+  GETVIP_BEGIN,
   GETVIP_SUCCESS,
   GETVIP_FAILED,
+  GETINVITATIONCODE_SUCCESS,
+  GETINVITATIONCODE_FAILED,
 } from "../constant/actionType";
 // These are the constants to represent each of three recommended actions for a single API fetch or post.
 
@@ -44,6 +47,7 @@ export const generalAction = {
   getBanner,
   getBrand,
   getVIP,
+  getInvitationCode,
 };
 function getSiteToken() {
   return (dispatch) => {
@@ -378,12 +382,14 @@ function getLiveChatURL() {
 
 function getVIP() {
   return (dispatch) => {
+    dispatch({
+      type: GETVIP_BEGIN,
+    });
     const result = GeneralService.GetVIP().then((response) => {
       if (response.IsSuccess) {
         dispatch({
           type: GETVIP_SUCCESS,
           payload: response,
-          loading: false,
         });
 
         // AppHistory.push("/");
@@ -391,7 +397,27 @@ function getVIP() {
         dispatch({
           type: GETVIP_FAILED,
           payload: response,
-          loading: false,
+        });
+      }
+      return response;
+    });
+
+    return result;
+  };
+}
+
+function getInvitationCode() {
+  return (dispatch) => {
+    const result = GeneralService.GetInvitationCode().then((response) => {
+      if (response.IsSuccess) {
+        dispatch({
+          type: GETINVITATIONCODE_SUCCESS,
+          payload: response,
+        });
+      } else {
+        dispatch({
+          type: GETINVITATIONCODE_FAILED,
+          payload: response,
         });
       }
       return response;
