@@ -1036,4 +1036,12 @@ export const vivN = {
     sportsRebate: "trò chơi thể thao",
     virtualSportsRebate: "Trò chơi thể thao điện tử",
   },
+  custom: {
+    addcard: {
+      name: "Tên tài khoản FPS",
+      msgPlsEnterName: "Vui lòng điền tên tài khoản FPS",
+      phoneNumber: "Số FPS",
+      msgEnterPhone: "Vui lòng điền số FPS hoặc địa chỉ email",
+    },
+  },
 };

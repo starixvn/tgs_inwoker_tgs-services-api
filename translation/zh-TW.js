@@ -1027,4 +1027,12 @@ export const zhTW = {
     sportsRebate: "體育遊戲",
     virtualSportsRebate: "電競遊戲",
   },
+  custom: {
+    addcard: {
+      name: "轉數快帳號名稱",
+      msgPlsEnterName: "請填寫轉數快帳號名稱",
+      phoneNumber: "轉數快號碼",
+      msgEnterPhone: "請填寫轉數快號碼或電郵地址",
+    },
+  },
 };

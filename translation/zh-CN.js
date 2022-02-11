@@ -1028,4 +1028,12 @@ export const zhCN = {
     sportsRebate: "体育游戏",
     virtualSportsRebate: "电竞游戏",
   },
+  custom: {
+    addcard: {
+      name: "转数快帐号名称",
+      msgPlsEnterName: "请填写转数快帐号名称",
+      phoneNumber: "转数快号码",
+      msgEnterPhone: "请填写转数快号码或电邮地址",
+    },
+  },
 };

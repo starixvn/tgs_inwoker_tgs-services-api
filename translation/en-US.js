@@ -1057,4 +1057,12 @@ export const enUS = {
     sportsRebate: "sports games",
     virtualSportsRebate: "Esports Games",
   },
+  custom: {
+    addcard: {
+      name: "FPS account name",
+      msgPlsEnterName: "Please fill in the FPS account name",
+      phoneNumber: "FPS number",
+      msgEnterPhone: "Please fill in the FPS number or email address",
+    },
+  },
 };

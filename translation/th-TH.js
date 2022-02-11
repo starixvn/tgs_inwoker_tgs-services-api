@@ -1035,4 +1035,12 @@ export const thTH = {
     sportsRebate: "เกมกีฬา",
     virtualSportsRebate: "เกม Esports",
   },
+  custom: {
+    addcard: {
+      name: "ชื่อบัญชี FPS",
+      msgPlsEnterName: "กรุณากรอกชื่อบัญชี FPS",
+      phoneNumber: "หมายเลข FPS",
+      msgEnterPhone: "กรุณากรอกหมายเลข FPS หรือที่อยู่อีเมล",
+    },
+  },
 };
