@@ -1035,6 +1035,7 @@ export const vivN = {
     slotRebate: "Trò chơi điện tử",
     sportsRebate: "trò chơi thể thao",
     virtualSportsRebate: "Trò chơi thể thao điện tử",
+    vipBenefit: "Giảm giá VIP",
   },
   custom: {
     addcard: {

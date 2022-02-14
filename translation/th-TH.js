@@ -1034,6 +1034,7 @@ export const thTH = {
     slotRebate: "วิดีโอเกม",
     sportsRebate: "เกมกีฬา",
     virtualSportsRebate: "เกม Esports",
+    vipBenefit: "ส่วนลดวีไอพี",
   },
   custom: {
     addcard: {

@@ -1026,6 +1026,7 @@ export const zhTW = {
     slotRebate: "電子遊戲",
     sportsRebate: "體育遊戲",
     virtualSportsRebate: "電競遊戲",
+    vipBenefit: "VIP返水",
   },
   custom: {
     addcard: {

@@ -1056,6 +1056,7 @@ export const enUS = {
     slotRebate: "Video Games",
     sportsRebate: "sports games",
     virtualSportsRebate: "Esports Games",
+    vipBenefit: "VIP rebate",
   },
   custom: {
     addcard: {

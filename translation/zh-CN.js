@@ -1027,6 +1027,7 @@ export const zhCN = {
     slotRebate: "电子游戏",
     sportsRebate: "体育游戏",
     virtualSportsRebate: "电竞游戏",
+    vipBenefit: "VIP返水",
   },
   custom: {
     addcard: {
