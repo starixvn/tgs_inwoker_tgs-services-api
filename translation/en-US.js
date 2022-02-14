@@ -1066,4 +1066,10 @@ export const enUS = {
       msgEnterPhone: "Please fill in the FPS number or email address",
     },
   },
+  depositNotification: {
+    title: "Bank Transferring Notification",
+    content: `Dear all VIP members, before making a deposit, please double-check you are using our designated bank account number showed on the Deposit Page.
+    If the incorrect bank account number has been used, we're NOT responsible for the issues caused, such as: top-up delay, lost track of your deposit, etc.
+    Thank you for your attention.`,
+  },
 };

@@ -1045,4 +1045,8 @@ export const vivN = {
       msgEnterPhone: "Vui lòng điền số FPS hoặc địa chỉ email",
     },
   },
+  depositNotification: {
+    title: "Nguyên tắc chuyển tiền",
+    content: `Xin lưu ý rằng liên quan đến tài khoản chuyển tiền, vui lòng chuyển tiền theo tài khoản của nền tảng. Nếu chuyển tiền được gửi đến tài khoản cũ, điểm số cao nhất có thể bị chậm một thời gian hoặc nó có thể không được kiểm tra Công ty chúng tôi sẽ không chịu trách nhiệm về vấn đề này., Hãy chú ý! `,
+  },
 };
