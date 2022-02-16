@@ -142,9 +142,8 @@ export const thTH = {
     joinGame: "เข้าร่วมเกม",
     withdrawalBankType: "หมวดหมู่",
     withdrawalChannel: "ช่อง",
-    withdrawalNumber: "หมายเลขบัตรธนาคาร/ที่อยู่สกุลเงินที่เข้ารหัส",
-    msgEnterWithdrawalNumber:
-      "โปรดป้อนหมายเลขบัตรธนาคาร/ที่อยู่สกุลเงินที่เข้ารหัส",
+    withdrawalNumber: "หมายเลขบัญชีธนาคาร",
+    msgEnterWithdrawalNumber: "โปรดป้อนหมายเลขบัญชีธนาคาร",
     msgEmailExist: "ที่อยู่อีเมลมีอยู่แล้ว",
     msgRequiredTurnover:
       "การหมุนเวียนการเดิมพันของคุณไม่เพียงพอสำหรับการถอนเงิน หากคุณมีคำถามใดๆ โปรดติดต่อฝ่ายบริการลูกค้า",
@@ -191,8 +190,8 @@ export const thTH = {
       subTitle: "หมายเลขบัตรธนาคารต้องเป็น 15-19 หลัก",
       msgSelectBank: "กรุณาป้อนธนาคาร",
       msgEnterCard: "กรุณากรอกหมายเลขบัตรธนาคาร",
-      BankName: "ชื่อธนาคาร",
-      msgEnterBankName: "กรุณากรอกชื่อธนาคาร",
+      BankName: "ธนาคาร",
+      msgEnterBankName: "กรุณากรอกธนาคาร",
       BankAccountName: "ชื่อบัญชีธนาคาร",
       msgEnterBankAccountName: "กรุณากรอกชื่อบัญชีธนาคาร",
       cardHolder: "ผู้ถือบัตร",
@@ -250,7 +249,7 @@ export const thTH = {
     cancel: "ยกเลิกการชำระเงิน",
     qrCode: "คิวอาร์โค้ด",
     qrDesc: "สแกนบนโทรศัพท์มือถือของคุณเพื่อชำระเงินอย่างง่ายดาย",
-    receiverBank: "รับชื่อธนาคาร",
+    receiverBank: "รับธนาคาร",
     receiverAccount: "การรับบัญชีธนาคาร",
     receiverNumber: "รับหมายเลขบัญชีธนาคาร",
     msgDialog: 'กรุณาคลิก "ยืนยัน" เพื่อดำเนินการฝากเงิน',
@@ -954,12 +953,11 @@ export const thTH = {
   },
   hk28: {
     card: {
-      withdrawalNumber: "หมายเลขบัตรธนาคาร/ที่อยู่สกุลเงินที่เข้ารหัส",
-      msgEnterWithdrawalNumber:
-        "โปรดป้อนหมายเลขบัตรธนาคาร/ที่อยู่สกุลเงินที่เข้ารหัส",
+      withdrawalNumber: "หมายเลขบัญชีธนาคาร",
+      msgEnterWithdrawalNumber: "โปรดป้อนหมายเลขบัญชีธนาคาร",
       addCard: {
-        BankName: "ชื่อธนาคาร",
-        msgEnterBankName: "กรุณากรอกชื่อธนาคาร",
+        BankName: "ธนาคาร",
+        msgEnterBankName: "กรุณากรอกธนาคาร",
         BankAccountName: "ชื่อบัญชีธนาคาร",
         msgEnterBankAccountName: "กรุณากรอกชื่อบัญชีธนาคาร",
       },
