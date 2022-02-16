@@ -1043,6 +1043,6 @@ export const zhCN = {
   },
   mgm: {
     msgPlsEnterAccount: "银行名称",
-    depositTips: "请填写有效汇款户口姓名，方便上分 的提醒字句",
+    depositTips: "请填写有效汇款户口姓名，方便上分",
   },
 };

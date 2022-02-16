@@ -1042,6 +1042,6 @@ export const zhTW = {
   },
   mgm: {
     msgPlsEnterAccount: "銀行名稱",
-    depositTips: "請填寫有效匯款戶口姓名，方便上分 的提醒字句",
+    depositTips: "請填寫有效匯款戶口姓名，方便上分",
   },
 };

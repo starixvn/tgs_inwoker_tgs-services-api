@@ -1072,7 +1072,6 @@ export const enUS = {
   },
   mgm: {
     msgPlsEnterAccount: "Bank name",
-    depositTips:
-      "Please fill in the name of a valid remittance account to facilitate the reminder of the score",
+    depositTips: "Vui lòng điền tên tài khoản chuyển tiền hợp lệ để thuận tiện",
   },
 };
