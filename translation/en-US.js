@@ -1070,4 +1070,9 @@ export const enUS = {
     title: "Bank Transferring Notification",
     content: `<div style="margin-bottom: 10px; text-align: center">* IMPORTANT *</div> <div style="margin-bottom: 10px;">Dear all VIP members, before making a deposit, please double-check you are using our designated bank account number showed on the Deposit Page. </div><div style="margin-bottom: 10px;">If the incorrect bank account number has been used, we're NOT responsible for the issues caused, such as: top-up delay, lost track of your deposit, etc. </div><div style="margin-bottom: 10px;">Thank you for your attention.</div>`,
   },
+  mgm: {
+    msgPlsEnterAccount: "Bank name",
+    depositTips:
+      "Please fill in the name of a valid remittance account to facilitate the reminder of the score",
+  },
 };
