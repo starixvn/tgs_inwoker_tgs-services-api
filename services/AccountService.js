@@ -26,6 +26,7 @@ export const AccountService = {
   GetPromoteUser,
   GetPromoteBill,
   UpdateMemberName,
+  UploadIC,
 };
 
 function CheckUserName(username) {
@@ -223,6 +224,12 @@ function UpdateMemberName(token, name) {
     },
     true
   );
+
+  return result;
+}
+
+function UploadIC(file) {
+  const result = ApiService.postFile(`player/identity/upload`, file, {});
 
   return result;
 }
