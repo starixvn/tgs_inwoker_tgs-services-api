@@ -1044,4 +1044,10 @@ export const zhTW = {
     msgPlsEnterAccount: "銀行名稱",
     depositTips: "請填寫有效匯款戶口姓名，方便上分",
   },
+  t3: {
+    profile: "用戶資訊",
+    transfer: "轉帳",
+    deposit: "存款",
+    withdraw: "提款",
+  },
 };

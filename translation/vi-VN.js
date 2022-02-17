@@ -1053,4 +1053,10 @@ export const vivN = {
     msgPlsEnterAccount: "tên ngân hàng",
     depositTips: "Vui lòng điền tên tài khoản chuyển tiền hợp lệ để thuận tiện",
   },
+  t3: {
+    profile: "Thông tin Người dùng",
+    transfer: "chuyển",
+    deposit: "Đặt cọc",
+    withdraw: "Rút tiền",
+  },
 };

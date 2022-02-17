@@ -645,7 +645,7 @@ export const thTH = {
     home: {
       Section1Chess: "หมากรุก",
       Section1Slot: "เกมสล็อต",
-      Section1Lottery: "เกมลอตเตอรี",
+      Section1Lottery: "ลอตเตอรี่",
       Section1Fishing: "เกมตกปลา",
       Section1Sport: "เกมกีฬา",
       Section1Electron: "เกมอิเล็กตรอน",
@@ -1049,5 +1049,11 @@ export const thTH = {
   mgm: {
     msgPlsEnterAccount: "ชื่อธนาคาร",
     depositTips: "กรุณากรอกชื่อบัญชีการโอนเงินที่ถูกต้องเพื่อความสะดวก",
+  },
+  t3: {
+    profile: "ข้อมูลผู้ใช้",
+    transfer: "โอน",
+    deposit: "เงินฝาก",
+    withdraw: "ถอนเงิน",
   },
 };

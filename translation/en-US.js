@@ -1074,4 +1074,10 @@ export const enUS = {
     msgPlsEnterAccount: "Bank name",
     depositTips: "Vui lòng điền tên tài khoản chuyển tiền hợp lệ để thuận tiện",
   },
+  t3: {
+    profile: "Profile",
+    transfer: "Transfer",
+    deposit: "Deposit",
+    withdraw: "Withdrawal",
+  },
 };
