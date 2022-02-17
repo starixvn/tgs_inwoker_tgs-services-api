@@ -1049,11 +1049,11 @@ export const enUS = {
     levelUpAccumulateBetAmount:
       "The required bet amount in the current month to advance",
     levelUpAccumulateDeposit: "Deposit required for the promotion month",
-    liveDealerRebate: "Live Entertainment",
+    liveDealerRebate: "Live Casino",
     lotteryRebate: "Lottery Game",
     promotionBenefit: "Promotion Benefit",
     quarterlyBenefit: "Quarterly Benefit",
-    slotRebate: "Video Games",
+    slotRebate: "Slots Games",
     sportsRebate: "sports games",
     virtualSportsRebate: "Esports Games",
     vipBenefit: "VIP rebate",
