@@ -1076,7 +1076,8 @@ export const enUS = {
   },
   mgm: {
     msgPlsEnterAccount: "Bank name",
-    depositTips: "Vui lòng điền tên tài khoản chuyển tiền hợp lệ để thuận tiện",
+    depositTips:
+      "Please fill in the name of a valid remittance account for convenience",
   },
   t3: {
     profile: "Profile",
