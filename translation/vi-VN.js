@@ -39,6 +39,7 @@ export const vivN = {
     join: "Tham gia",
   },
   common: {
+    noReachMin: "Số điện thoại di động được đặt thành 8 đến 10 chữ số",
     upload: "tải tệp lên",
     title: "{brand} | Sòng bạc trực tuyến lớn nhất & đáng tin cậy nhất",
     register: "Đăng ký",

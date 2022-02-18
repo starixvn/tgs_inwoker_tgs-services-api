@@ -35,6 +35,7 @@ export const thTH = {
     join: "เข้าร่วม",
   },
   common: {
+    noReachMin: "เบอร์มือถือตั้งไว้ที่ 8 ถึง 10 หลัก",
     upload: "อัพโหลดไฟล์",
     title: "{brand}-แพลตฟอร์มความบันเทิงระดับมืออาชีพ",
     register: "ลงทะเบียน",

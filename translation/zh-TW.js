@@ -37,6 +37,7 @@ export const zhTW = {
   },
 
   common: {
+    noReachMin: "手機號碼設定在8至10位數",
     upload: "上傳文件",
     title: "{brand} - 專業娛樂平台",
     register: "註冊",

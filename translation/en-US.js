@@ -39,6 +39,7 @@ export const enUS = {
   },
 
   common: {
+    noReachMin: "The mobile number is set to 8 to 10 digits",
     upload: "Upload document",
     title: "{brand} | The Biggest & Most Trusted Online Casino",
     register: "Register",

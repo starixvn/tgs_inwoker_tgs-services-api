@@ -37,6 +37,7 @@ export const zhCN = {
   },
 
   common: {
+    noReachMin: "手机号码设定在8至10位数",
     upload: "上传文件",
     title: "{brand} - 专业娱乐平台",
     register: "注册",
