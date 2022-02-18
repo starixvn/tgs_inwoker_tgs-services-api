@@ -37,6 +37,7 @@ export const zhCN = {
   },
 
   common: {
+    upload: "上传文件",
     title: "{brand} - 专业娱乐平台",
     register: "注册",
     login: "登录",

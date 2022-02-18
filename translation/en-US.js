@@ -39,6 +39,7 @@ export const enUS = {
   },
 
   common: {
+    upload: "Upload document",
     title: "{brand} | The Biggest & Most Trusted Online Casino",
     register: "Register",
     login: "Login",

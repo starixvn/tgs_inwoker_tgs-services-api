@@ -37,6 +37,7 @@ export const zhTW = {
   },
 
   common: {
+    upload: "上傳文件",
     title: "{brand} - 專業娛樂平台",
     register: "註冊",
     login: "登錄",

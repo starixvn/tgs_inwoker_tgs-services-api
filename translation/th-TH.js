@@ -35,6 +35,7 @@ export const thTH = {
     join: "เข้าร่วม",
   },
   common: {
+    upload: "อัพโหลดไฟล์",
     title: "{brand}-แพลตฟอร์มความบันเทิงระดับมืออาชีพ",
     register: "ลงทะเบียน",
     login: "เข้าสู่ระบบ",

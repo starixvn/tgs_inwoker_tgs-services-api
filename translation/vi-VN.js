@@ -39,6 +39,7 @@ export const vivN = {
     join: "Tham gia",
   },
   common: {
+    upload: "tải tệp lên",
     title: "{brand} | Sòng bạc trực tuyến lớn nhất & đáng tin cậy nhất",
     register: "Đăng ký",
     login: "Đăng nhập",
