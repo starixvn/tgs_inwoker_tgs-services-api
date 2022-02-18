@@ -953,9 +953,10 @@ export const thTH = {
     sports: "TF Gaming",
   },
   hk28: {
+    withdrawalNumber: "หมายเลขบัตรธนาคาร/ที่อยู่สกุลเงิน Crypto",
+    msgEnterWithdrawalNumber:
+      "โปรดป้อนหมายเลขบัตรธนาคาร/ที่อยู่สกุลเงิน crypto",
     card: {
-      withdrawalNumber: "หมายเลขบัญชีธนาคาร",
-      msgEnterWithdrawalNumber: "โปรดป้อนหมายเลขบัญชีธนาคาร",
       addCard: {
         BankName: "ธนาคาร",
         msgEnterBankName: "กรุณากรอกธนาคาร",
@@ -1004,6 +1005,8 @@ export const thTH = {
     },
   },
   piso: {
+    withdrawalNumber: "หมายเลขบัญชีธนาคาร",
+    msgEnterWithdrawalNumber: "โปรดป้อนหมายเลขบัญชีธนาคาร",
     profile: {
       fullName: "ชื่อเต็ม",
       enterFullName: "ป้อนชื่อเต็ม",

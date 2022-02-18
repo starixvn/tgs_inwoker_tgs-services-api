@@ -968,6 +968,7 @@ export const vivN = {
       },
     },
   },
+
   mess888: {
     panel: {
       cs: "CSKH",
@@ -1007,6 +1008,9 @@ export const vivN = {
     },
   },
   piso: {
+    withdrawalNumber: "Số thẻ ngân hàng / Địa chỉ tiền điện tử",
+    msgEnterWithdrawalNumber:
+      "Vui lòng nhập số thẻ ngân hàng / địa chỉ tiền điện tử",
     profile: {
       fullName: "Tên đầy đủ",
       enterFullName: "Nhập tên đầy đủ",

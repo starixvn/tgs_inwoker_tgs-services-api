@@ -1002,6 +1002,8 @@ export const zhCN = {
     },
   },
   piso: {
+    withdrawalNumber: "银行卡号码/加密货币地址",
+    msgEnterWithdrawalNumber: "请输入银行卡号码/加密货币地址",
     profile: {
       fullName: "全名",
       enterFullName: "请输入全名",

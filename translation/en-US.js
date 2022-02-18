@@ -1028,6 +1028,8 @@ export const enUS = {
   },
 
   piso: {
+    withdrawalNumber: "Bank Account Number/Gcash Number",
+    msgEnterWithdrawalNumber: "Please enter bank account number/ Gcash number",
     profile: {
       fullName: "Full name",
       enterFullName: "Enter full name",

@@ -1001,6 +1001,8 @@ export const zhTW = {
     },
   },
   piso: {
+    withdrawalNumber: "銀行卡號碼/加密貨幣地址",
+    msgEnterWithdrawalNumber: "請輸入銀行卡號碼/加密貨幣地址",
     profile: {
       fullName: "全名",
       enterFullName: "請輸入全名",
