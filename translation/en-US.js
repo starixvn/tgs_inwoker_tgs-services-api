@@ -1076,8 +1076,7 @@ export const enUS = {
   },
   mgm: {
     msgPlsEnterAccount: "Bank name",
-    depositTips:
-      "Please fill in the name of a valid remittance account for convenience",
+    depositTips: "Please fill in a valid remittance bank name for convenience",
   },
   t3: {
     profile: "Profile",

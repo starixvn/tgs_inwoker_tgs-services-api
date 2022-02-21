@@ -1057,7 +1057,7 @@ export const vivN = {
   },
   mgm: {
     msgPlsEnterAccount: "tên ngân hàng",
-    depositTips: "Vui lòng điền tên tài khoản chuyển tiền hợp lệ để thuận tiện",
+    depositTips: "Vui lòng điền tên ngân hàng chuyển tiền hợp lệ để thuận tiện",
   },
   t3: {
     profile: "Thông tin Người dùng",
