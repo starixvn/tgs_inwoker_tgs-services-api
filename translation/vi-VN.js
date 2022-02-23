@@ -956,8 +956,8 @@ export const vivN = {
     esports: "AVIA",
   },
   TF: {
-    sports: "TF ",
     sports: "TF",
+    esports: "TF",
   },
   hk28: {
     withdrawalNumber: "Số thẻ ngân hàng / Địa chỉ tiền điện tử",
