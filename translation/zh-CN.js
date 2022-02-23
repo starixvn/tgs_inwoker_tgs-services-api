@@ -882,6 +882,7 @@ export const zhCN = {
   },
   IMES: {
     sports: "IM电竞",
+    esports: "IM电竞",
   },
   SABA: {
     sports: "沙巴体育",
@@ -948,9 +949,11 @@ export const zhCN = {
   },
   AVIA: {
     sports: "AVIA体育",
+    esports: "AVIA电竞",
   },
   TF: {
     sports: "TF体育",
+    esports: "TF电竞",
   },
   hk28: {
     withdrawalNumber: "银行卡号码/FPS(转数快)号码",

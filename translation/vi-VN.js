@@ -889,6 +889,7 @@ export const vivN = {
   },
   IMES: {
     sports: "IM",
+    esports: "IM",
   },
   SABA: {
     sports: "SABA",
@@ -951,10 +952,12 @@ export const vivN = {
     sports: "BetConstruct",
   },
   AVIA: {
-    sports: "AVIA Gaming",
+    sports: "AVIA ",
+    esports: "AVIA",
   },
   TF: {
-    sports: "TF Gaming",
+    sports: "TF ",
+    sports: "TF",
   },
   hk28: {
     withdrawalNumber: "Số thẻ ngân hàng / Địa chỉ tiền điện tử",

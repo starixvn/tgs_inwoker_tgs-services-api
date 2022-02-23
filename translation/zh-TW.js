@@ -880,6 +880,7 @@ export const zhTW = {
   },
   IMES: {
     sports: "IM電競",
+    esports: "IM電競",
   },
   SABA: {
     sports: "沙巴體育",
@@ -946,9 +947,11 @@ export const zhTW = {
   },
   AVIA: {
     sports: "AVIA體育",
+    esports: "AVIA電競",
   },
   TF: {
-    sports: "TF體育",
+    sports: "AVIA體育",
+    esports: "AVIA電競",
   },
   hk28: {
     withdrawalNumber: "銀行卡號碼/FPS(轉數快)號碼",

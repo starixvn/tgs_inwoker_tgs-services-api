@@ -883,6 +883,7 @@ export const thTH = {
   },
   IMES: {
     sports: "IM",
+    esports: "IM",
   },
   SABA: {
     sports: "SABA",
@@ -949,9 +950,11 @@ export const thTH = {
   },
   AVIA: {
     sports: "AVIA Gaming",
+    esports: "AVIA",
   },
   TF: {
     sports: "TF Gaming",
+    esports: "TF",
   },
   hk28: {
     withdrawalNumber: "หมายเลขบัตรธนาคาร/ที่อยู่สกุลเงิน Crypto",

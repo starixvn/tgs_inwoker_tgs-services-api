@@ -906,6 +906,7 @@ export const enUS = {
   },
   IMES: {
     sports: "IM",
+    esports: "IM",
   },
   SABA: {
     sports: "SABA",
@@ -972,9 +973,11 @@ export const enUS = {
   },
   AVIA: {
     sports: "AVIA Gaming",
+    esports: "AVIA",
   },
   TF: {
     sports: "TF Gaming",
+    esports: "TF",
   },
   hk28: {
     withdrawalNumber: "Bank card number/Crypto currency address",
