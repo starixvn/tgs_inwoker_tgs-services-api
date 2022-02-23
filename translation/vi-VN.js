@@ -1065,4 +1065,9 @@ export const vivN = {
     deposit: "Đặt cọc",
     withdraw: "Rút tiền",
   },
+  verified: {
+    yes: "Đã xác minh",
+    no: "Chưa được xác minh",
+    goVerify: "Đã xác minh",
+  },
 };

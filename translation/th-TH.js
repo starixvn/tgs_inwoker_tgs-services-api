@@ -1061,4 +1061,9 @@ export const thTH = {
     deposit: "เงินฝาก",
     withdraw: "ถอนเงิน",
   },
+  verified: {
+    yes: "ยืนยันแล้ว",
+    no: "ไม่ได้รับการยืนยัน",
+    goVerify: "ยืนยันแล้ว",
+  },
 };

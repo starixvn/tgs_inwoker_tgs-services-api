@@ -1054,4 +1054,9 @@ export const zhTW = {
     deposit: "存款",
     withdraw: "提款",
   },
+  verified: {
+    yes: "已驗證",
+    no: "未驗證",
+    goVerify: "進行驗證",
+  },
 };

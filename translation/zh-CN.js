@@ -1055,4 +1055,9 @@ export const zhCN = {
     deposit: "存款",
     withdraw: "提款",
   },
+  verified: {
+    yes: "已验证",
+    no: "未验证",
+    goVerify: "进行验证",
+  },
 };

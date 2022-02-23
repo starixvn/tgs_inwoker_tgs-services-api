@@ -1084,4 +1084,9 @@ export const enUS = {
     deposit: "Deposit",
     withdraw: "Withdrawal",
   },
+  verified: {
+    yes: "Verified",
+    no: "Not verified",
+    goVerify: "Perform verification",
+  },
 };
