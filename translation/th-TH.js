@@ -1064,6 +1064,6 @@ export const thTH = {
   verified: {
     yes: "ยืนยันแล้ว",
     no: "ไม่ได้รับการยืนยัน",
-    goVerify: "ยืนยันแล้ว",
+    goVerify: "ตรวจสอบชื่อจริง",
   },
 };

@@ -1087,6 +1087,6 @@ export const enUS = {
   verified: {
     yes: "Verified",
     no: "Not verified",
-    goVerify: "Perform verification",
+    goVerify: "Verify real name",
   },
 };

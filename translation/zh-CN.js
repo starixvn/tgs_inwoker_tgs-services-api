@@ -1058,6 +1058,6 @@ export const zhCN = {
   verified: {
     yes: "已验证",
     no: "未验证",
-    goVerify: "进行验证",
+    goVerify: "验证真实姓名",
   },
 };

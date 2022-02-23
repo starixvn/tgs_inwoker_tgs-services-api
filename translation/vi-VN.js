@@ -1068,6 +1068,6 @@ export const vivN = {
   verified: {
     yes: "Đã xác minh",
     no: "Chưa được xác minh",
-    goVerify: "Đã xác minh",
+    goVerify: "Xác minh tên thật",
   },
 };

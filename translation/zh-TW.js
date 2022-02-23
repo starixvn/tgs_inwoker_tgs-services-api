@@ -1057,6 +1057,6 @@ export const zhTW = {
   verified: {
     yes: "已驗證",
     no: "未驗證",
-    goVerify: "進行驗證",
+    goVerify: "驗證真實姓名",
   },
 };
