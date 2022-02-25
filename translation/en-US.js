@@ -1090,6 +1090,13 @@ export const enUS = {
   verified: {
     yes: "Verified",
     no: "Not verified",
+    waiting: "waiting verification from customer service",
     goVerify: "Verify real name",
+  },
+
+  disabledAddCard: {
+    title: "No card(s) found in your account",
+    description:
+      "Please contact customer service to add card in order to access withdrawal page.",
   },
 };

@@ -1061,6 +1061,12 @@ export const zhCN = {
   verified: {
     yes: "已验证",
     no: "未验证",
+    waiting: "等待客服验证",
     goVerify: "验证真实姓名",
+  },
+
+  disabledAddCard: {
+    title: "在您的帐户中未找到任何卡",
+    description: "请联系客服添加卡，以便访问提款页面。",
   },
 };

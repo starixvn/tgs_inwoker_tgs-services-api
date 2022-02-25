@@ -1060,6 +1060,11 @@ export const zhTW = {
   verified: {
     yes: "已驗證",
     no: "未驗證",
+    waiting: "等待客服驗證",
     goVerify: "驗證真實姓名",
+  },
+  disabledAddCard: {
+    title: "在您的帳戶中未找到任何卡",
+    description: "請聯繫客服添加卡，以便訪問提款頁面。",
   },
 };

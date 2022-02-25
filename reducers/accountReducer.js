@@ -161,6 +161,8 @@ function mapToAccountState(state, data) {
     member_qq: data.qq,
     member_wechat: data.wechat,
     playercode: data.playercode,
+    identityformstatus: data.identityformstatus,
+    identityformid: data.identityformid === null ? false : true,
   };
 }
 export function accountReducer(state = initialState, action) {

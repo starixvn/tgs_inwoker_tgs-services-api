@@ -1071,6 +1071,13 @@ export const vivN = {
   verified: {
     yes: "Đã xác minh",
     no: "Chưa được xác minh",
+    waiting: "đang chờ xác minh từ dịch vụ khách hàng",
     goVerify: "Xác minh tên thật",
+  },
+
+  disabledAddCard: {
+    title: "Không tìm thấy (các) thẻ nào trong tài khoản của bạn",
+    description:
+      "Vui lòng liên hệ với bộ phận chăm sóc khách hàng để thêm thẻ vào trang rút tiền.",
   },
 };
