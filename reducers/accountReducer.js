@@ -162,7 +162,7 @@ function mapToAccountState(state, data) {
     member_wechat: data.wechat,
     playercode: data.playercode,
     identityformstatus: data.identityformstatus,
-    identityformid: data.identityformid === null ? false : true,
+    identityformid: data.identityformid ? data.identityformid : "",
   };
 }
 export function accountReducer(state = initialState, action) {
@@ -322,8 +322,9 @@ export function accountReducer(state = initialState, action) {
         updateCardResult: action.payload,
         info: {
           ...state.info,
-          check_pass_account: true,
           member_name: action.payload.member_name,
+          identityformstatus: 0,
+          identityformid: "confirm not empty",
         },
       };
     case UPDATECARDNO_FAILURE:
