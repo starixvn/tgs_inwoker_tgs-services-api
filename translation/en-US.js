@@ -1091,6 +1091,7 @@ export const enUS = {
     yes: "Verified",
     no: "Not verified",
     verifying: "Verifying",
+    rejected: "Rejected",
     waiting: "waiting verification from customer service",
     goVerify: "Verify real name",
   },
