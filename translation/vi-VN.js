@@ -1071,6 +1071,7 @@ export const vivN = {
   verified: {
     yes: "Đã xác minh",
     no: "Chưa được xác minh",
+    verifying: "Đang xác minh",
     waiting: "đang chờ xác minh từ dịch vụ khách hàng",
     goVerify: "Xác minh tên thật",
   },

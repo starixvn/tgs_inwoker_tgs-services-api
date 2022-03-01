@@ -1061,6 +1061,7 @@ export const zhCN = {
   verified: {
     yes: "已验证",
     no: "未验证",
+    verifying: "验证中",
     waiting: "等待客服验证",
     goVerify: "验证真实姓名",
   },
