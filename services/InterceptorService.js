@@ -26,10 +26,6 @@ const Interceptor = {
 
         config.headers["Accept-Language"] = localStorage.getItem("i18nextLng");
 
-        if (config.headers["AFFILIATE_ID"])
-          localStorage.setItem("promotionId", config.headers["AFFILIATE_ID"]);
-        else localStorage.setItem("promotionId", "");
-
         return config;
       },
       function (error) {
