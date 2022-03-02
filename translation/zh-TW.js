@@ -209,6 +209,8 @@ export const zhTW = {
       callHotline: "或撥打000-000-0000獲得幫助。",
       bindBankCard: "綁定其他銀行卡",
       goWithdrawal: "前往提款",
+      noMoreAddCard:
+        "恭喜您完成銀行賬戶綁定，稍後提款時可以快速選擇您的提款銀行。",
     },
   },
   deposit: {

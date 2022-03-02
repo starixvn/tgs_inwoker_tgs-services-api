@@ -222,6 +222,8 @@ export const enUS = {
       callHotline: "Or call 000-000-0000 for help.",
       bindBankCard: "Bind Other Banks",
       goWithdrawal: "Withdraw",
+      noMoreAddCard:
+        "Congratulations that you have completed the bank account binding. You can quickly select your withdrawal bank when you withdraw later.",
     },
   },
   deposit: {
