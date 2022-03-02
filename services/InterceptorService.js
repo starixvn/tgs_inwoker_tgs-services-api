@@ -1,5 +1,5 @@
 import axios from "axios";
-import {UNAUTHORIZE} from "../constant/actionType";
+import { UNAUTHORIZE } from "../constant/actionType";
 import { AppHistory } from "../../history/History";
 import i18n from "../../utils/i18n";
 import Promise from "promise-polyfill";
@@ -108,7 +108,8 @@ const Interceptor = {
           ) {
             if (
               error.response.config.url.indexOf("Player/Login") < 0 &&
-              error.response.config.url.indexOf("player/password") < 0
+              error.response.config.url.indexOf("player/password") < 0 &&
+              error.response.config.url.indexOf("player/init-phone") < 0
             ) {
               localStorage.removeItem("token" + (isMobileOnly ? "1" : "0"));
               store.dispatch({ type: UNAUTHORIZE });
