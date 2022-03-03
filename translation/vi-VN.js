@@ -219,6 +219,7 @@ export const vivN = {
       callHotline: "Hoặc gọi 000-000-0000 để được trợ giúp.",
       bindBankCard: "Liên kết Thẻ Ngân hàng Khác",
       goWithdrawal: "Chuyển đến Rút tiền",
+      goProfile: "Chuyển đến TIỂU SỬ",
       noMoreAddCard:
         "Chúc mừng bạn đã hoàn tất việc ràng buộc tài khoản ngân hàng. Bạn có thể nhanh chóng chọn ngân hàng rút tiền của mình khi rút tiền sau.",
     },

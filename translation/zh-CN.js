@@ -209,6 +209,7 @@ export const zhCN = {
       callHotline: "或拨打000-000-0000获得帮助。",
       bindBankCard: "绑定其他银行卡",
       goWithdrawal: "前往提款",
+      goProfile: "前往个人资料",
       noMoreAddCard:
         "恭喜您完成银行账户绑定，稍后提款时可以快速选择您的提款银行。",
     },
