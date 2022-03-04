@@ -178,13 +178,21 @@ function getDepositMethod() {
   };
 }
 
-function doBankDeposit(account, amount, paymentid, promotionid, banktype) {
+function doBankDeposit(
+  name,
+  account,
+  amount,
+  paymentid,
+  promotionid,
+  banktype
+) {
   return (dispatch) => {
     dispatch({
       type: DOMANUALDEPOSIT_BEGIN,
       loading: true,
     });
     const result = WalletService.PerformManualBankDeposit(
+      name,
       account,
       amount,
       paymentid,

@@ -98,6 +98,7 @@ function PerformManualThirdPartyDeposit(
 }
 
 function PerformManualBankDeposit(
+  name,
   account,
   amount,
   paymentid,
@@ -105,6 +106,7 @@ function PerformManualBankDeposit(
   banktype
 ) {
   const result = ApiService.put("deposit/manual/bank", {
+    name: name,
     account: account,
     amount: amount,
     paymentid: paymentid,
