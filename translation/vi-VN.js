@@ -225,6 +225,9 @@ export const vivN = {
     },
   },
   deposit: {
+    email: "Email",
+    phone: "Điện thoại",
+    fpsId: "ID FPS",
     title: "Gửi tiền",
     ppRemark:
       "Lưu ý: HAI chữ số thập phân ngẫu nhiên sẽ được thêm vào tổng số tiền (bắt buộc cho mục đích xác minh đơn đặt hàng)",

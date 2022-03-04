@@ -102,6 +102,7 @@ export const walletAction = {
   updateAutoTransferStatus,
   doUmPayCryptoDeposit,
   doUmPayBankDeposit,
+  doFPSDeposit,
   doThirdPartyDeposit,
   doBankDeposit,
   doHelp2PayDeposit,
@@ -184,6 +185,46 @@ function doBankDeposit(account, amount, paymentid, promotionid, banktype) {
       loading: true,
     });
     const result = WalletService.PerformManualBankDeposit(
+      account,
+      amount,
+      paymentid,
+      promotionid,
+      banktype
+    )
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: DOMANUALDEPOSIT_SUCCESS,
+            payload: response,
+            loading: true,
+          });
+        } else {
+          dispatch({
+            type: DOMANUALDEPOSIT_FAILED,
+            payload: response,
+            loading: false,
+          });
+        }
+        return response;
+      })
+      .catch((error) => {
+        dispatch({
+          type: DOMANUALDEPOSIT_FAILED,
+          payload: error,
+          loading: false,
+        });
+      });
+    return result;
+  };
+}
+
+function doFPSDeposit(account, amount, paymentid, promotionid, banktype) {
+  return (dispatch) => {
+    dispatch({
+      type: DOMANUALDEPOSIT_BEGIN,
+      loading: true,
+    });
+    const result = WalletService.PerformManualFPSDeposit(
       account,
       amount,
       paymentid,

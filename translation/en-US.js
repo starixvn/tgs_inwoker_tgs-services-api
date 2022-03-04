@@ -228,6 +228,9 @@ export const enUS = {
     },
   },
   deposit: {
+    email: "Email",
+    phone: "Phone",
+    fpsId: "FPS ID",
     title: "Deposit",
     ppRemark:
       "Remarks: TWO random decimal places will be added to the total amount (it is required for the order verification purpose)",

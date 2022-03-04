@@ -28,6 +28,7 @@ export const WalletService = {
   GetMinWithdrawLimit,
   PerformManualThirdPartyDeposit,
   PerformManualBankDeposit,
+  PerformManualFPSDeposit,
   PerformHelp2PayDeposit,
   GetHelp2PayDeposit,
   PerformSkyPayDeposit,
@@ -104,6 +105,23 @@ function PerformManualBankDeposit(
   banktype
 ) {
   const result = ApiService.put("deposit/manual/bank", {
+    account: account,
+    amount: amount,
+    paymentid: paymentid,
+    promotionid: promotionid === "" ? null : promotionid,
+    banktype: banktype,
+  });
+  return result;
+}
+
+function PerformManualFPSDeposit(
+  account,
+  amount,
+  paymentid,
+  promotionid = "",
+  banktype
+) {
+  const result = ApiService.put("deposit/manual/fps", {
     account: account,
     amount: amount,
     paymentid: paymentid,

@@ -215,6 +215,9 @@ export const zhTW = {
     },
   },
   deposit: {
+    email: "電子郵件",
+    phone: "電話號碼",
+    fpsId: "ID FPS",
     title: "存款",
     ppRemark: "提示: 系統稍後會在您輸入的金額後方隨機的小數，以便識別訂單",
     plsEnterDepositAmount: "請輸入存款金額",

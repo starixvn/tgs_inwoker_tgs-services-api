@@ -215,6 +215,9 @@ export const zhCN = {
     },
   },
   deposit: {
+    email: "电子邮件",
+    phone: "电话号码",
+    fpsId: "ID FPS",
     title: "存款",
     ppRemark: "提示: 系统稍后会在您输入的金额后方随机的小数，以便识别订单",
     plsEnterDepositAmount: "请输入存款金额",
