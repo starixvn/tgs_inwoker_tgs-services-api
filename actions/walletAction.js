@@ -179,8 +179,7 @@ function getDepositMethod() {
 }
 
 function doBankDeposit(
-  //TODO: uncomment
-  // name,
+  name,
   account,
   amount,
   paymentid,
@@ -193,7 +192,7 @@ function doBankDeposit(
       loading: true,
     });
     const result = WalletService.PerformManualBankDeposit(
-      //  name,
+      name,
       account,
       amount,
       paymentid,
