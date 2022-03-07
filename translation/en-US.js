@@ -39,6 +39,7 @@ export const enUS = {
   },
 
   common: {
+    pleaseEnterAccountName: "Plase enter your real name",
     noReachMin: "The mobile number is set to 8 to 10 digits",
     upload: "Upload document",
     title: "{brand} | The Biggest & Most Trusted Online Casino",
@@ -1086,6 +1087,8 @@ export const enUS = {
   mgm: {
     msgPlsEnterAccount: "Bank name",
     depositTips: "Please fill in a valid remittance bank name for convenience",
+    depositTips2:
+      "Please fill in the name of a valid remittance account for convenience",
   },
   t3: {
     profile: "Profile",

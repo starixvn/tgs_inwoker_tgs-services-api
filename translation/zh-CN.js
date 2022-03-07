@@ -37,6 +37,7 @@ export const zhCN = {
   },
 
   common: {
+    pleaseEnterAccountName: "请输入您的戶口姓名",
     noReachMin: "手机号码设定在8至10位数",
     upload: "上传文件",
     title: "{brand} - 专业娱乐平台",
@@ -1057,6 +1058,7 @@ export const zhCN = {
   mgm: {
     msgPlsEnterAccount: "银行名称",
     depositTips: "请填写有效汇款银行名称，方便上分",
+    depositTips2: "请填写有效汇款户口姓名，方便上分",
   },
   t3: {
     profile: "用户资讯",

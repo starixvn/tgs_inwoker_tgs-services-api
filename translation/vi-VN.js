@@ -39,6 +39,7 @@ export const vivN = {
     join: "Tham gia",
   },
   common: {
+    pleaseEnterAccountName: "Vui lòng nhập tên tài khoản của bạn",
     noReachMin: "Số điện thoại di động được đặt thành 8 đến 10 chữ số",
     upload: "tải tệp lên",
     title: "{brand} | Sòng bạc trực tuyến lớn nhất & đáng tin cậy nhất",
@@ -1067,6 +1068,8 @@ export const vivN = {
   mgm: {
     msgPlsEnterAccount: "tên ngân hàng",
     depositTips: "Vui lòng điền tên ngân hàng chuyển tiền hợp lệ để thuận tiện",
+    depositTips2:
+      "Vui lòng điền vào tên của tài khoản chuyển tiền hợp lệ để tạo điều kiện ghi điểm",
   },
   t3: {
     profile: "Thông tin Người dùng",

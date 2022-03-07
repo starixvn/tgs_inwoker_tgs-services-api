@@ -37,6 +37,7 @@ export const zhTW = {
   },
 
   common: {
+    pleaseEnterAccountName: "请输入您的戶口姓名",
     noReachMin: "手機號碼設定在8至10位數",
     upload: "上傳文件",
     title: "{brand} - 專業娛樂平台",
@@ -1056,6 +1057,7 @@ export const zhTW = {
   mgm: {
     msgPlsEnterAccount: "銀行名稱",
     depositTips: "請填寫有效匯款銀行名稱，方便上分",
+    depositTips2: "請填寫有效匯款戶口姓名，方便上分",
   },
   t3: {
     profile: "用戶資訊",
