@@ -913,16 +913,16 @@ export const zhCN = {
     sports: "沙巴体育",
   },
   HABA: {
-    slots: "HABANERO",
-    electron: "HABANERO",
-    fish: "HABANERO",
+    slots: "HABANERO老虎机",
+    electron: "HABANERO电子",
+    fish: "HABANERO捕鱼",
   },
   JDB: {
-    slots: "JDB",
+    slots: "JDB老虎机",
     fish: "JDB捕鱼",
   },
   JILI: {
-    slots: "JILI",
+    slots: "JILI老虎机",
     fish: "JILI捕鱼",
   },
   PP: {

@@ -911,16 +911,16 @@ export const zhTW = {
     sports: "沙巴體育",
   },
   HABA: {
-    slots: "HABANERO",
-    electron: "HABANERO",
-    fish: "HABANERO",
+    slots: "HABANERO老虎機",
+    electron: "HABANERO電子",
+    fish: "HABANERO捕魚",
   },
   JDB: {
-    slots: "JDB",
+    slots: "JDB老虎機",
     fish: "JDB捕魚",
   },
   JILI: {
-    slots: "JILI",
+    slots: "JILI老虎機",
     fish: "JILI捕魚",
   },
   PP: {
