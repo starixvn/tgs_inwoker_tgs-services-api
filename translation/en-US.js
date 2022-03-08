@@ -678,6 +678,24 @@ export const enUS = {
       Section1Sport: "Sports",
       Section1Electron: "Table Games",
       Section1Live: "Live Casino",
+      features: {
+        feature1: {
+          title: "More Professional",
+          description: "Every day, we provide you with nearly a thousand exciting sports and e-sports events, and the ultimate enjoyment of multiple gameplays. There are more entertainment methods such as real people, chess, lottery, electronic games and so on. "
+        },
+        feature2: {
+          title: "More secure",
+          description: "Exclusive development, using 128-bit encryption technology and strict security management system, customer funds are the most complete protection, allowing you to fully enjoy entertainment, event betting, no worries."
+        },
+        feature3: {
+          title: "More convenient",
+          description: "Self-developed Web, H5, and iOS and Android native apps, allowing you to entertain and bet whatever you want, anytime, anywhere 24 hours online customer service provides the most intimate and quality service."
+        },
+        feature4: {
+          title: "Faster",
+          description: "The financial processing system independently developed by the latest technology can truly achieve extremely fast deposit, retrieval and transfer. Exclusive network optimization technology, to provide you with a first-class gaming experience, maximize network delay optimization."
+        }
+      }
     },
     liveGame: {
       wmDesc:

@@ -655,6 +655,24 @@ export const zhCN = {
       Section1Sport: "体育电竞",
       Section1Electron: "电子游戏",
       Section1Live: "真人游戏",
+      features: {
+        feature1: {
+          title: "更专业",
+          description: "每天为您提供近千场精彩体育、电竞赛事，玩法多元极致享受，更有真人、棋牌、彩票、电子游戏等多种娱乐方式随心选择。"
+        },
+        feature2: {
+          title: "更安全",
+          description: "独家开发，采用128位加密技术和严格的安全管理体系，客户资金得到最完善的保障，让您全情尽享娱乐、赛事投注，无后顾之忧！"
+        },
+        feature3: {
+          title: "更便捷",
+          description: "自主研发的 Web、H5，更有iOS、Android原生App，让您随时随地，娱乐投注随心所欲！ 7×24小时在线客服提供最贴心、最优质的服务。"
+        },
+        feature4: {
+          title: "更快速",
+          description: "最新技术自主研发的财务处理系统，真正做到极速存、取、转。独家网路优化技术，为您提供一流的游戏体验，最大优化网路延迟。"
+        }
+      }
     },
     liveGame: {
       wmDesc:
