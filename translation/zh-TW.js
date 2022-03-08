@@ -1057,7 +1057,7 @@ export const zhTW = {
   mgm: {
     msgPlsEnterAccount: "請输入銀行帳戶/姓名",
     depositTips: "請填寫有效匯款銀行名稱，方便上分",
-    depositTips2: "請填寫有效匯款戶口姓名，方便上分",
+    depositTips2: "請填寫有效匯款戶口/姓名，方便上分",
   },
   t3: {
     profile: "用戶資訊",

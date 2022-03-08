@@ -1058,7 +1058,7 @@ export const zhCN = {
   mgm: {
     msgPlsEnterAccount: "请输入银行帐户/姓名",
     depositTips: "请填写有效汇款银行名称，方便上分",
-    depositTips2: "请填写有效汇款户口姓名，方便上分",
+    depositTips2: "请填写有效汇款户口/姓名，方便上分",
   },
   t3: {
     profile: "用户资讯",
