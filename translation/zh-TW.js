@@ -37,7 +37,7 @@ export const zhTW = {
   },
 
   common: {
-    pleaseEnterAccountName: "请输入您的戶口姓名",
+    pleaseEnterAccountName: "請输入銀行名稱",
     noReachMin: "手機號碼設定在8至10位數",
     upload: "上傳文件",
     title: "{brand} - 專業娛樂平台",
@@ -1055,7 +1055,7 @@ export const zhTW = {
     content: `請各位注意，關於匯款帳號，請根據平台的戶口進行匯款，如匯款至舊戶口，上分可能有時間延遲，亦有可能檢查不到，我司不會因這個問題而負上責任，敬請垂注！`,
   },
   mgm: {
-    msgPlsEnterAccount: "請填寫银行賬戶/姓名",
+    msgPlsEnterAccount: "請输入銀行帳戶/姓名",
     depositTips: "請填寫有效匯款銀行名稱，方便上分",
     depositTips2: "請填寫有效匯款戶口姓名，方便上分",
   },

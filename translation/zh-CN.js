@@ -1056,7 +1056,7 @@ export const zhCN = {
     content: `请各位注意，关于汇款帐号，请根据平台的户口进行汇款，如汇款至旧户口，上分可能有时间延迟，亦有可能检查不到，我司不会因这个问题而负上责任，敬请垂注！ `,
   },
   mgm: {
-    msgPlsEnterAccount: "请填写银行账户/姓名",
+    msgPlsEnterAccount: "请输入银行帐户/姓名",
     depositTips: "请填写有效汇款银行名称，方便上分",
     depositTips2: "请填写有效汇款户口姓名，方便上分",
   },
