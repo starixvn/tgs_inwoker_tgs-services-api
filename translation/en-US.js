@@ -678,6 +678,24 @@ export const enUS = {
       Section1Sport: "Sports",
       Section1Electron: "Table Games",
       Section1Live: "Live Casino",
+      services:{
+        service1: {
+          title: "Average Deposit Time",
+          value: "30s"
+        },
+        service2: {
+          title: "Average Withdrawal Time",
+          value: "50s"
+        },
+        service3: {
+          title: "Cooperative Payment Platform",
+          value: "60 partners"
+        },
+        service4: {
+          title: "Cooperative Gaming Platform",
+          value: "80 partners"
+        },
+      },
       features: {
         feature1: {
           title: "More Professional",

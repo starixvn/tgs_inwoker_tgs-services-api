@@ -653,6 +653,24 @@ export const zhTW = {
       Section1Sport: "體育電競",
       Section1Electron: "電子遊戲",
       Section1Live: "真人遊戲",
+      services:{
+        service1: {
+          title: "平均存款時間",
+          value: "30秒"
+        },
+        service2: {
+          title: "平均取款時間",
+          value: "50秒"
+        },
+        service3: {
+          title: "合作支付平台",
+          value: "60家"
+        },
+        service4: {
+          title: "合作遊戲平台",
+          value: "80家"
+        },
+      },
       features: {
         feature1: {
           title: "更專業",

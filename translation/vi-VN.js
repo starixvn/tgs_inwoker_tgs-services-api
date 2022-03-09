@@ -667,6 +667,24 @@ export const vivN = {
       Section1Sport: "THỂ THAO",
       Section1Electron: "TRÒ CHƠI ĐIỆN TỬ",
       Section1Live: "TRÒ CHƠI TRỰC TIẾP",
+      services:{
+        service1: {
+          title: "Thời gian gửi tiền trung bình",
+          value: "30 giây"
+        },
+        service2: {
+          title: "Thời gian rút tiền trung bình",
+          value: "50 giây"
+        },
+        service3: {
+          title: "Nền tảng thanh toán hợp tác",
+          value: "60 đối tác"
+        },
+        service4: {
+          title: "Nền tảng trò chơi hợp tác",
+          value: "80 đối tác"
+        },
+      },
       features: {
         feature1: {
           title: "Chuyên nghiệp hơn",

@@ -655,6 +655,24 @@ export const zhCN = {
       Section1Sport: "体育电竞",
       Section1Electron: "电子游戏",
       Section1Live: "真人游戏",
+      services:{
+        service1: {
+          title: "平均存款时间",
+          value: "30秒"
+        },
+        service2: {
+          title: "平均取款时间",
+          value: "50秒"
+        },
+        service3: {
+          title: "合作支付平台",
+          value: "60家"
+        },
+        service4: {
+          title: "合作游戏平台",
+          value: "80家"
+        },
+      },
       features: {
         feature1: {
           title: "更专业",

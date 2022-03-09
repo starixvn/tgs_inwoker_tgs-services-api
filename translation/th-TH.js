@@ -659,6 +659,24 @@ export const thTH = {
       Section1Sport: "เกมกีฬา",
       Section1Electron: "เกมอิเล็กตรอน",
       Section1Live: "คาสิโนสด",
+      services:{
+        service1: {
+          title: "เวลาฝากเฉลี่ย",
+          value: "30 วินาที"
+        },
+        service2: {
+          title: "เวลาถอนเฉลี่ย",
+          value: "50 วินาที"
+        },
+        service3: {
+          title: "แพลตฟอร์มการชำระเงินสหกรณ์",
+          value: "60 พันธมิตร"
+        },
+        service4: {
+          title: "แพลตฟอร์มการเล่นเกมแบบร่วมมือ",
+          value: "80 พันธมิตร"
+        },
+      },
       features: {
         feature1: {
           title: "มืออาชีพมากขึ้น",
