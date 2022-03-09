@@ -670,21 +670,25 @@ export const vivN = {
       features: {
         feature1: {
           title: "Chuyên nghiệp hơn",
-          description: "Nó cung cấp cho bạn gần một nghìn sự kiện thể thao và thể thao điện tử hấp dẫn mỗi ngày, với nhiều cách khác nhau để tận hưởng cảm giác thích thú tột cùng và nhiều phương thức giải trí như người thật, cờ vua và bài, xổ số và trò chơi điện tử để bạn lựa chọn từ."
+          description:
+            "Nó cung cấp cho bạn gần một nghìn sự kiện thể thao và thể thao điện tử hấp dẫn mỗi ngày, với nhiều cách khác nhau để tận hưởng cảm giác thích thú tột cùng và nhiều phương thức giải trí như người thật, cờ vua và bài, xổ số và trò chơi điện tử để bạn lựa chọn từ.",
         },
         feature2: {
           title: "an toàn hơn",
-          description: "Được phát triển độc quyền, sử dụng công nghệ mã hóa 128-bit và hệ thống quản lý bảo mật nghiêm ngặt, quỹ của khách hàng được bảo vệ toàn diện nhất, cho phép bạn tận hưởng trọn vẹn hoạt động giải trí, cá cược sự kiện, không phải lo lắng!"
+          description:
+            "Được phát triển độc quyền, sử dụng công nghệ mã hóa 128-bit và hệ thống quản lý bảo mật nghiêm ngặt, quỹ của khách hàng được bảo vệ toàn diện nhất, cho phép bạn tận hưởng trọn vẹn hoạt động giải trí, cá cược sự kiện, không phải lo lắng!",
         },
         feature3: {
           title: "thuận tiện hơn",
-          description: "Ứng dụng gốc Web, H5 và iOS và Android tự phát triển cho phép bạn chơi và đặt cược như bạn muốn mọi lúc, mọi nơi! Dịch vụ khách hàng trực tuyến 24 giờ của 7 × cung cấp dịch vụ thân mật và chất lượng cao nhất."
+          description:
+            "Ứng dụng gốc Web, H5 và iOS và Android tự phát triển cho phép bạn chơi và đặt cược như bạn muốn mọi lúc, mọi nơi! Dịch vụ khách hàng trực tuyến 24 giờ của 7 × cung cấp dịch vụ thân mật và chất lượng cao nhất.",
         },
         feature4: {
           title: "Nhanh hơn",
-          description: "Hệ thống xử lý tài chính được phát triển độc lập bởi công nghệ mới nhất thực sự có thể đạt được tốc độ lưu trữ, truy xuất và chuyển giao cực kỳ nhanh chóng. Công nghệ tối ưu hóa mạng độc quyền để cung cấp cho bạn trải nghiệm chơi game hạng nhất và tối đa hóa độ trễ của mạng."
-        }
-      }
+          description:
+            "Hệ thống xử lý tài chính được phát triển độc lập bởi công nghệ mới nhất thực sự có thể đạt được tốc độ lưu trữ, truy xuất và chuyển giao cực kỳ nhanh chóng. Công nghệ tối ưu hóa mạng độc quyền để cung cấp cho bạn trải nghiệm chơi game hạng nhất và tối đa hóa độ trễ của mạng.",
+        },
+      },
     },
     liveGame: {
       wmDesc:
@@ -1085,8 +1089,9 @@ export const vivN = {
   },
   mgm: {
     msgPlsEnterAccount: "Vui lòng điền tên / tài khoản ngân hàng",
-    depositTips: "Vui lòng điền tên ngân hàng chuyển tiền hợp lệ để thuận tiện",
-    depositTips2:
+    accountDepositTips:
+      "Vui lòng điền tên ngân hàng chuyển tiền hợp lệ để thuận tiện",
+    nameDepositTips:
       "Vui lòng điền vào tên của tài khoản chuyển tiền hợp lệ để tạo điều kiện ghi điểm",
   },
   t3: {
