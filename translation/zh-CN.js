@@ -70,6 +70,7 @@ export const zhCN = {
     msgEnterEmail: "请输入您的邮箱地址",
     msgInvalidEmail: "邮箱地址不正确",
     msgEnterCode: "请输入验证码",
+    msgEnterCodeEmail: "请输入验证码",
     msgInvalidPhoneCode: "验证码错误",
     msgEnterEmailCode: "请输入邮箱验证码",
     msgEnterPhoneCode: "请输入手机验证码",

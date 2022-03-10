@@ -72,6 +72,7 @@ export const enUS = {
     msgEnterEmail: "Please enter your email",
     msgInvalidEmail: "Invalid Email Address",
     msgEnterCode: "Please enter verification code",
+    msgEnterCodeEmail: "Please enter verification code",
     msgEnterEmailCode: "Please enter the email verification code",
     msgEnterPhoneCode: "Please enter the phone verification code",
     msgInvalidPhoneCode: "Verification code error",

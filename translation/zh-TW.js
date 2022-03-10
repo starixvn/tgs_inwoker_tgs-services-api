@@ -70,6 +70,7 @@ export const zhTW = {
     msgEnterEmail: "請輸入您的郵箱地址",
     msgInvalidEmail: "郵箱地址不正確",
     msgEnterCode: "請輸入驗證碼",
+    msgEnterCodeEmail: "請輸入驗證碼",
     msgInvalidPhoneCode: "驗證碼錯誤",
     msgEnterEmailCode: "請輸入郵箱驗證碼",
     msgEnterPhoneCode: "請輸入手機驗證碼",

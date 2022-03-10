@@ -72,6 +72,7 @@ export const vivN = {
     msgEnterEmail: "Địa chỉ Email",
     msgInvalidEmail: "Địa chỉ Email Không hợp lệ",
     msgEnterCode: "Vui lòng nhập mã xác minh",
+    msgEnterCodeEmail: "Vui lòng nhập mã xác minh",
     msgEnterEmailCode: "Mã xác minh email",
     msgEnterPhoneCode: "Mã Xác minh Điện thoại",
     msgInvalidPhoneCode: "Mã xác minh không hợp lệ",

@@ -68,6 +68,7 @@ export const thTH = {
     msgEnterEmail: "กรุณากรอกที่อยู่อีเมลของคุณ",
     msgInvalidEmail: "ที่อยู่อีเมลไม่ถูกต้อง",
     msgEnterCode: "กรุณากรอกรหัสยืนยัน SMS",
+    msgEnterCodeEmail: "กรุณากรอกรหัสยืนยัน Email",
     msgInvalidPhoneCode: "รหัสยืนยันผิดพลาด",
     msgEnterEmailCode: "กรุณากรอกรหัสยืนยันอีเมล",
     msgEnterPhoneCode: "กรุณากรอกรหัสยืนยันโทรศัพท์",
