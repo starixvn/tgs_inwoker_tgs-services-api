@@ -619,6 +619,8 @@ export const vivN = {
     msgFailedTransfer: "Chuyển không thành công",
   },
   withdrawal: {
+    notReachMin: "số tiền rút không đạt số tiền tối thiểu",
+    reachedMax: "số tiền rút đã đạt đến số tiền tối đa",
     msgMustHundred: "Số tiền phải kết thúc bằng hàng trăm chữ số",
     msgInvalidAmt: "Số tiền rút phải lớn hơn 0",
     msgCanWithdrawal: "Rút tiền sẵn có ： {{amount}}",
@@ -669,22 +671,22 @@ export const vivN = {
       Section1Sport: "THỂ THAO",
       Section1Electron: "TRÒ CHƠI ĐIỆN TỬ",
       Section1Live: "TRÒ CHƠI TRỰC TIẾP",
-      services:{
+      services: {
         service1: {
           title: "Thời gian gửi tiền trung bình",
-          value: "30 giây"
+          value: "30 giây",
         },
         service2: {
           title: "Thời gian rút tiền trung bình",
-          value: "50 giây"
+          value: "50 giây",
         },
         service3: {
           title: "Nền tảng thanh toán hợp tác",
-          value: "60 đối tác"
+          value: "60 đối tác",
         },
         service4: {
           title: "Nền tảng trò chơi hợp tác",
-          value: "80 đối tác"
+          value: "80 đối tác",
         },
       },
       features: {

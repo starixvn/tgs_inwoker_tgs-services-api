@@ -608,6 +608,8 @@ export const zhCN = {
   },
 
   withdrawal: {
+    notReachMin: "提款金额未达到最低金额",
+    reachedMax: "提款金额达到最大金额",
     msgMustHundred: "金额必须以百位数字结尾",
     msgInvalidAmt: "提款金额 必须大于 0",
     msgCanWithdrawal: "您可提款余额为：{{amount}}",
@@ -657,22 +659,22 @@ export const zhCN = {
       Section1Sport: "体育电竞",
       Section1Electron: "电子游戏",
       Section1Live: "真人游戏",
-      services:{
+      services: {
         service1: {
           title: "平均存款时间",
-          value: "30秒"
+          value: "30秒",
         },
         service2: {
           title: "平均取款时间",
-          value: "50秒"
+          value: "50秒",
         },
         service3: {
           title: "合作支付平台",
-          value: "60家"
+          value: "60家",
         },
         service4: {
           title: "合作游戏平台",
-          value: "80家"
+          value: "80家",
         },
       },
       features: {

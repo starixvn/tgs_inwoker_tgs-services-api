@@ -606,6 +606,8 @@ export const zhTW = {
   },
 
   withdrawal: {
+    notReachMin: "提款金額未達到最低金額",
+    reachedMax: "提款金額達到最大金額",
     msgMustHundred: "金額必須以百位數字結尾",
     msgInvalidAmt: "提款金額 必須大於 0",
     msgCanWithdrawal: "您可提款餘額為：{{amount}}",
@@ -655,22 +657,22 @@ export const zhTW = {
       Section1Sport: "體育電競",
       Section1Electron: "電子遊戲",
       Section1Live: "真人遊戲",
-      services:{
+      services: {
         service1: {
           title: "平均存款時間",
-          value: "30秒"
+          value: "30秒",
         },
         service2: {
           title: "平均取款時間",
-          value: "50秒"
+          value: "50秒",
         },
         service3: {
           title: "合作支付平台",
-          value: "60家"
+          value: "60家",
         },
         service4: {
           title: "合作遊戲平台",
-          value: "80家"
+          value: "80家",
         },
       },
       features: {

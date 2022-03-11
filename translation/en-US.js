@@ -630,6 +630,8 @@ export const enUS = {
   },
 
   withdrawal: {
+    notReachMin: "Withdrawal amount is not reach minimum amount",
+    reachedMax: "Withdrawal amount reached maximum amount",
     msgMustHundred: "Amount must end with hundred digits",
     msgInvalidAmt: "Withdrawal amount must be greater than 0",
     msgCanWithdrawal: "Available withdrawal：{{amount}}",
@@ -680,22 +682,22 @@ export const enUS = {
       Section1Sport: "Sports",
       Section1Electron: "Table Games",
       Section1Live: "Live Casino",
-      services:{
+      services: {
         service1: {
           title: "Average Deposit Time",
-          value: "30s"
+          value: "30s",
         },
         service2: {
           title: "Average Withdrawal Time",
-          value: "50s"
+          value: "50s",
         },
         service3: {
           title: "Cooperative Payment Platform",
-          value: "60 partners"
+          value: "60 partners",
         },
         service4: {
           title: "Cooperative Gaming Platform",
-          value: "80 partners"
+          value: "80 partners",
         },
       },
       features: {
