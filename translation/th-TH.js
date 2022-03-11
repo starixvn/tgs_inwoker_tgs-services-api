@@ -143,6 +143,7 @@ export const thTH = {
     startGame: "เข้าร่วมเกม",
     cs: "ติดต่อแอดมิน",
     msgSuccessUpdateProfile: "การปรับเปลี่ยนสำเร็จ",
+    favoriteGame: "ที่ชื่นชอบ",
     joinGame: "เข้าร่วมเกม",
     withdrawalBankType: "หมวดหมู่",
     withdrawalChannel: "ช่อง",

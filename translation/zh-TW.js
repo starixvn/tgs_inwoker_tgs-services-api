@@ -143,6 +143,7 @@ export const zhTW = {
     startGame: "立即體驗",
     cs: "客服",
     msgSuccessUpdateProfile: "修改成功。",
+    favoriteGame: "加到最愛",
     joinGame: "立刻體驗",
     withdrawalBankType: "類別",
     withdrawalChannel: "渠道",

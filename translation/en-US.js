@@ -150,6 +150,7 @@ export const enUS = {
     startGame: "START",
     cs: "CHAT",
     msgSuccessUpdateProfile: "Profile updated succesfully",
+    favoriteGame: "Add to Favorites",
     joinGame: "Join game",
     withdrawalBankType: "Type",
     withdrawalChannel: "Channel",

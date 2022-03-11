@@ -143,6 +143,7 @@ export const zhCN = {
     startGame: "立即体验",
     cs: "客服",
     msgSuccessUpdateProfile: "修改成功。",
+    favoriteGame: "加到最爱",
     joinGame: "立刻体验",
     withdrawalBankType: "类别",
     withdrawalChannel: "渠道",

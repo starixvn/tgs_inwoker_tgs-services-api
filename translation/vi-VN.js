@@ -147,6 +147,7 @@ export const vivN = {
     startGame: "BẮT ĐẦU",
     cs: "TRÒ CHUYỆN",
     msgSuccessUpdateProfile: "Cập nhật hồ sơ thành công",
+    favoriteGame: "yêu thích",
     joinGame: "Nhập",
     withdrawalBankType: "Loại",
     withdrawalChannel: "Kênh",
