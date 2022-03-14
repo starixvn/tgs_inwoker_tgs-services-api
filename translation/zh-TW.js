@@ -1001,8 +1001,8 @@ export const zhTW = {
     esports: "AVIA電競",
   },
   TF: {
-    sports: "AVIA體育",
-    esports: "AVIA電競",
+    sports: "TF體育",
+    esports: "TF電競",
   },
   hk28: {
     withdrawalNumber: "銀行卡號碼/FPS(轉數快)號碼",
