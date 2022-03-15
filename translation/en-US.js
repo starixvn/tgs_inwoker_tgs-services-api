@@ -1003,6 +1003,9 @@ export const enUS = {
   WM: {
     live: "WM Casino",
   },
+  DG: {
+    live: "DG Casino",
+  },
   TCG_SEA: {
     lottery: "TCG SEA",
   },

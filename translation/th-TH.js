@@ -980,6 +980,9 @@ export const thTH = {
   WM: {
     live: "WM Casino",
   },
+  DG: {
+    live: "DG Casino",
+  },
   TCG_SEA: {
     lottery: "TCG SEA",
   },

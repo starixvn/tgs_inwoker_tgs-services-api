@@ -977,6 +977,9 @@ export const zhTW = {
   WM: {
     live: "WM真人",
   },
+  DG: {
+    live: "DG真人",
+  },
   TCG_SEA: {
     lottery: "TCG SEA彩票",
   },
