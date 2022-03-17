@@ -894,6 +894,7 @@ export const enUS = {
   },
   PrimePay: "PrimePay",
   MaticPay: "MaticPay",
+  ZeroNineNinePay: "099Pay",
   LeePay: "LeePay",
   ApplePay: "ApplePay",
   UmPay: "PlayPay",

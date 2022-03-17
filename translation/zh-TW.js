@@ -868,6 +868,7 @@ export const zhTW = {
   },
   PrimePay: "一等付",
   MaticPay: "MaticPay",
+  ZeroNineNinePay: "099Pay",
   LeePay: "利付錢包",
   ApplePay: "蘋果支付",
   UmPay: "PlayPay",
