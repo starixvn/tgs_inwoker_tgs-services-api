@@ -1132,6 +1132,10 @@ export const enUS = {
     title: "Bank Transferring Notification",
     content: `<div style="margin-bottom: 10px; text-align: center">* IMPORTANT *</div> <div style="margin-bottom: 10px;">Dear all VIP members, before making a deposit, please double-check you are using our designated bank account number showed on the Deposit Page. </div><div style="margin-bottom: 10px;">If the incorrect bank account number has been used, we're NOT responsible for the issues caused, such as: top-up delay, lost track of your deposit, etc. </div><div style="margin-bottom: 10px;">Thank you for your attention.</div>`,
   },
+  depositNotificationGMO: {
+    title: "Bank Transferring Notification",
+    content: `<div style="margin-bottom: 10px; text-align: center;">Important !</div> <div style="margin-bottom: 10px;">Please ensure your withdrawal bank account is the SAME as your deposit account to prevent money laundering.</div><div style="margin-bottom: 10px;">Contact CS if you have any withdrawal questions, thanks you.</div>`,
+  },
   mgm: {
     msgPlsEnterAccount: "Please fill in bank account/name",
     accountDepositTips:

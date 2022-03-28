@@ -1102,6 +1102,10 @@ export const zhTW = {
     title: "匯款指引",
     content: `請各位注意，關於匯款帳號，請根據平台的戶口進行匯款，如匯款至舊戶口，上分可能有時間延遲，亦有可能檢查不到，我司不會因這個問題而負上責任，敬請垂注！`,
   },
+  depositNotificationGMO: {
+    title: "匯款指引",
+    content: `客戶存取款須知\n為防止洗黑錢\n客戶取款必須跟綁定充值帳戶相同\n有關於取款問題可向客服查詢`,
+  },
   mgm: {
     msgPlsEnterAccount: "請输入銀行帳戶/姓名",
     accountDepositTips: "請填寫有效匯款銀行名稱，方便上分",
