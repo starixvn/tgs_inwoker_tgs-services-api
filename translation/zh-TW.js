@@ -611,6 +611,7 @@ export const zhTW = {
     msgMustHundred: "金額必須以百位數字結尾",
     msgInvalidAmt: "提款金額 必須大於 0",
     msgCanWithdrawal: "您可提款餘額為：{{amount}}",
+    msgContactCSCardChange: "如需修改請聯繫客服",
     turnover: "流水需求: ",
     msgEnterWithdrawalPass: "請輸入提款密碼",
     msgInsufficient: "中心錢包餘額不足",

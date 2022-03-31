@@ -616,6 +616,7 @@ export const thTH = {
     msgMustHundred: "จำนวนเงินต้องลงท้ายด้วยหลักร้อย",
     msgInvalidAmt: "จำนวนการถอนต้องมากกว่า 0",
     msgCanWithdrawal: "ยอดเงินที่ถอนได้คือ: {{amount}}",
+    msgContactCSCardChange: "หากต้องการแก้ไขกรุณาติดต่อฝ่ายบริการลูกค้า",
     turnover: "เทิร์นโอเวอร์: ",
     msgEnterWithdrawalPass: "กรุณากรอกรหัสผ่านในการถอนเงิน",
     msgInsufficient: "ยอดเงินคงเหลือในกระเป๋าเงินกลางไม่เพียงพอ",

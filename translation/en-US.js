@@ -635,6 +635,7 @@ export const enUS = {
     msgMustHundred: "Amount must end with hundred digits",
     msgInvalidAmt: "Withdrawal amount must be greater than 0",
     msgCanWithdrawal: "Available withdrawal：{{amount}}",
+    msgContactCSCardChange: "For any changes, please contact online customer service",
     turnover: "Turnover Requirement :",
     msgEnterWithdrawalPass: "Please Enter Withdrawal Password",
     msgInsufficient: "Insufficient balance.",

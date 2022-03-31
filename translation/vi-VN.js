@@ -624,6 +624,7 @@ export const vivN = {
     msgMustHundred: "Số tiền phải kết thúc bằng hàng trăm chữ số",
     msgInvalidAmt: "Số tiền rút phải lớn hơn 0",
     msgCanWithdrawal: "Rút tiền sẵn có ： {{amount}}",
+    msgContactCSCardChange: "Nếu bạn cần sửa đổi, vui lòng liên hệ với bộ phận chăm sóc khách hàng",
     turnover: "Doanh thu:",
     msgEnterWithdrawalPass: "Vui lòng nhập mật khẩu rút tiền",
     msgInsuffnough: "Không đủ số dư.",
