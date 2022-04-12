@@ -87,6 +87,11 @@ export const zhTW = {
     emailAddress: "郵箱地址",
     qqNumber: "QQ賬號",
     wechatNumber: "微信賬號",
+    fb: "Facebook Messenger Account",
+    telegram: "Telegram Account",
+    line: "Line Account",
+    viber: "Viber Account",
+    whatsapp: "Whatsapp Account",
     receiverAddress: "收貨地址",
     loginPassword: "登錄密碼",
     contact: "聯繫",
@@ -456,6 +461,31 @@ export const zhTW = {
       msgInvalidWeChat: "微信賬號格式不正確",
       plsEnterWechat: "請輸入微信賬號",
       weChatAccount: "微信賬號",
+    },
+    fb: {
+      msgInvalidFB: "Facebook Messenger賬號格式不正確",
+      plsEnterFB: "請輸入Facebook Messenger賬號",
+      fbAccount: "Facebook Messenger賬號",
+    },
+    telegram: {
+      msgInvalidTelegram: "Telegram賬號格式不正確",
+      plsEnterTelegram: "請輸入Telegram賬號",
+      telegramAccount: "Telegram賬號",
+    },
+    line: {
+      msgInvalidLine: "Line賬號格式不正確",
+      plsEnterLine: "請輸入Line賬號",
+      lineAccount: "Line賬號",
+    },
+    viber: {
+      msgInvalidViber: "Viber賬號格式不正確",
+      plsEnterViber: "請輸入Viber賬號",
+      viberAccount: "Viber賬號",
+    },
+    whatsapp: {
+      msgInvalidWhatsapp: "Whatsapp賬號格式不正確",
+      plsEnterWhatsapp: "請輸入Whatsapp賬號格式不正確賬號",
+      whatsappAccount: "Whatsapp賬號",
     },
     resetResetWithdrawalPassword: {
       title: "修改提款密碼",
