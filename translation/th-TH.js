@@ -697,6 +697,7 @@ export const thTH = {
       Section1Lottery: "ลอตเตอรี่",
       Section1Fishing: "เกมตกปลา",
       Section1Sport: "เกมกีฬา",
+      Section1Esport: "อีสปอร์ต",
       Section1Electron: "เกมอิเล็กตรอน",
       Section1Live: "คาสิโนสด",
       services: {
@@ -984,6 +985,7 @@ export const thTH = {
   JDB: {
     slots: "JDB",
     fish: "JDB",
+    desc: "การชนะขุมทรัพย์ออนไลน์ไม่ใช่เรื่องน่าเบื่อ มีเกมและสล็อตแมชชีนมากมายที่นี่ หากคุณต้องการสัมผัสประสบการณ์การเล่นเกมมากกว่านี้ คุณต้องมาที่นี่!",
   },
   JILI: {
     slots: "JILI",

@@ -716,6 +716,7 @@ export const enUS = {
       Section1Lottery: "Lottery",
       Section1Fishing: "Fishing",
       Section1Sport: "Sports",
+      Section1Esport: "Esports",
       Section1Electron: "Table Games",
       Section1Live: "Live Casino",
       services: {
@@ -1007,6 +1008,7 @@ export const enUS = {
   JDB: {
     slots: "JDB",
     fish: "JDB",
+    desc: "Winning treasures online is not boring. There are many games and slot machines here. If you want to experience more gameplay, you must come here!",
   },
   JILI: {
     slots: "JILI",

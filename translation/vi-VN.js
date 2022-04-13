@@ -705,6 +705,7 @@ export const vivN = {
       Section1Lottery: "TRÒ CHƠI XỔ SỐ",
       Section1Fishing: "TRÒ CHƠI CÂU CÁ",
       Section1Sport: "THỂ THAO",
+      Section1Esport: "eSports",
       Section1Electron: "TRÒ CHƠI ĐIỆN TỬ",
       Section1Live: "TRÒ CHƠI TRỰC TIẾP",
       services: {
@@ -990,6 +991,7 @@ export const vivN = {
   JDB: {
     slots: "JDB",
     fish: "JDB",
+    desc: "Chiến thắng báu vật trực tuyến không hề nhàm chán. Tại đây có rất nhiều trò chơi và máy đánh bạc, muốn trải nghiệm thêm nhiều cách chơi thì bạn phải vào đây!",
   },
   JILI: {
     slots: "JILI",

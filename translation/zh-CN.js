@@ -693,6 +693,7 @@ export const zhCN = {
       Section1Lottery: "彩票游戏",
       Section1Fishing: "捕鱼游戏",
       Section1Sport: "体育电竞",
+      Section1Esport: "电竞",
       Section1Electron: "电子游戏",
       Section1Live: "真人游戏",
       services: {
@@ -983,6 +984,7 @@ export const zhCN = {
   JDB: {
     slots: "JDB老虎机",
     fish: "JDB捕鱼",
+    desc: "线上网夺宝不无聊。这里拥有众多游戏以及老虎机，想要体验更多的玩法，那你来这里准没错!",
   },
   JILI: {
     slots: "JILI老虎机",

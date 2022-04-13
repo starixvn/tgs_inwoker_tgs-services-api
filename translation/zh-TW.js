@@ -686,6 +686,7 @@ export const zhTW = {
       Section1Lottery: "彩票遊戲",
       Section1Fishing: "捕魚游戲",
       Section1Sport: "體育電競",
+      Section1Esport: "電競",
       Section1Electron: "電子遊戲",
       Section1Live: "真人遊戲",
       services: {
@@ -976,6 +977,7 @@ export const zhTW = {
   JDB: {
     slots: "JDB老虎機",
     fish: "JDB捕魚",
+    desc: "線上網奪寶不無聊。 這裡擁有眾多遊戲以及老虎機，想要體驗更多的玩法，那你來這裡準沒錯!",
   },
   JILI: {
     slots: "JILI老虎機",
