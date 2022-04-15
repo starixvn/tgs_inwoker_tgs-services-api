@@ -74,6 +74,9 @@ import {
   DOCRYPTODEPOSIT_BEGIN,
   DOCRYPTODEPOSIT_SUCCESS,
   DOCRYPTODEPOSIT_FAILED,
+  DODEPOSIT_BEGIN,
+  DODEPOSIT_SUCCESS,
+  DODEPOSIT_FAILED,
 } from "../constant/actionType";
 import { WalletService } from "../services/WalletService";
 
@@ -109,6 +112,7 @@ export const walletAction = {
   doSkyPayDeposit,
   doBankDeposit2,
   doCryptoDeposit,
+  performDeposit,
 };
 function getWalletBalance() {
   return (dispatch) => {
@@ -1115,6 +1119,47 @@ function doCryptoDeposit(amount, paymentid, promotionid, paymentcode) {
     return result;
   };
 }
+
+function performDeposit(amount, paymentid, promotionid, paymentcode, type) {
+  return (dispatch) => {
+    dispatch({
+      type: DODEPOSIT_BEGIN,
+      loading: true,
+    });
+    const result = WalletService.PerformDeposit(
+      amount,
+      paymentid,
+      promotionid,
+      paymentcode,
+      type
+    )
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: DODEPOSIT_SUCCESS,
+            payload: response,
+            loading: true,
+          });
+        } else {
+          dispatch({
+            type: DODEPOSIT_FAILED,
+            payload: response,
+            loading: false,
+          });
+        }
+        return response;
+      })
+      .catch((error) => {
+        dispatch({
+          type: DODEPOSIT_FAILED,
+          payload: error,
+          loading: false,
+        });
+      });
+    return result;
+  };
+}
+
 function addBilling(card_id, amount) {
   return (dispatch) => {
     dispatch({

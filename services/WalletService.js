@@ -34,6 +34,7 @@ export const WalletService = {
   PerformSkyPayDeposit,
   PerformBankDeposit,
   PerformCryptoDeposit,
+  PerformDeposit,
 };
 
 function WithdrawalFromGame(gpcode, amount) {
@@ -329,6 +330,28 @@ function PerformCryptoDeposit(
     promotionid: promotionid === "" ? null : promotionid,
   };
   if (paymentcode.toUpperCase() === "LEEPAY") {
+    const result = ApiService.put(url, params);
+    return result;
+  } else {
+    const result = ApiService.post(url, params);
+    return result;
+  }
+}
+
+function PerformDeposit(
+  amount,
+  paymentid,
+  promotionid = "",
+  paymentcode,
+  type
+) {
+  var url = `deposit/${type}/${paymentcode.toLowerCase()}`;
+  var params = {
+    amount: amount,
+    paymentid: paymentid,
+    promotionid: promotionid === "" ? null : promotionid,
+  };
+  if (paymentcode.toUpperCase() === "LEEPAY" && type === "crypto") {
     const result = ApiService.put(url, params);
     return result;
   } else {
