@@ -279,7 +279,7 @@ export const vivN = {
     msgPlsSelectPayment: "Vui lòng chọn hình thức thanh toán",
     msgPlsSelectMethod: "Vui lòng chọn kênh thanh toán",
     msgPlsEnterAccount: "Vui lòng nhập tên tài khoản ngân hàng",
-    msgInvalidFileSize: "Tệp quá lớn, vui lòng chọn tệp nhỏ hơn 2mb",
+    msgInvalidFileSize: "Tệp quá lớn, vui lòng chọn tệp nhỏ hơn 5mb",
     msgInvalidFileType:
       "Vui lòng chỉ tải lên tệp hình ảnh. (.jpg / .jpeg / .png / .tiff)",
     msgFailedJoinPromotion:
@@ -659,7 +659,8 @@ export const vivN = {
     msgMustHundred: "Số tiền phải kết thúc bằng hàng trăm chữ số",
     msgInvalidAmt: "Số tiền rút phải lớn hơn 0",
     msgCanWithdrawal: "Rút tiền sẵn có ： {{amount}}",
-    msgContactCSCardChange: "Nếu bạn cần sửa đổi, vui lòng liên hệ với bộ phận chăm sóc khách hàng",
+    msgContactCSCardChange:
+      "Nếu bạn cần sửa đổi, vui lòng liên hệ với bộ phận chăm sóc khách hàng",
     turnover: "Doanh thu:",
     msgEnterWithdrawalPass: "Vui lòng nhập mật khẩu rút tiền",
     msgInsuffnough: "Không đủ số dư.",
@@ -906,7 +907,8 @@ export const vivN = {
       title: "Xin lỗi, hệ thống đang được bảo trì",
       maintenance: "bảo trì",
       maintenancePeriod: "Thời gian bảo trì ：",
-      desc: "Để bạn có trải nghiệm trò chơi tốt hơn, chúng tôi đã làm việc chăm chỉ",
+      desc:
+        "Để bạn có trải nghiệm trò chơi tốt hơn, chúng tôi đã làm việc chăm chỉ",
       descText:
         "Nếu có bất kỳ câu hỏi nào, vui lòng liên hệ với dịch vụ khách hàng trực tuyến trong thời gian",
       btn: "Liên hệ với chúng tôi",
@@ -925,11 +927,13 @@ export const vivN = {
   CustomBank: "Ngân hàng tùy chỉnh",
   VR: {
     lottery: "VR",
-    desc: 'Xổ số VR luôn ở vị trí dẫn đầu trong ngành với " công bằng, an toàn, nhanh chóng và chính xác "và có hệ thống trí tuệ nhân tạo toàn diện. Chúng tôi có tất cả các loại xổ số chính thống tại đây, chủ yếu được chia thành "Xổ số phát trực tiếp VR " và "Xổ số VR ". Chúng tôi cũng đang phát triển loạt trò chơi "VR Điện tử ", quyết tâm mang đến cho khách hàng nhiều sự lựa chọn đa dạng hơn. VR sẽ tiếp tục sáng tạo và phát triển, nhằm giới thiệu thêm nhiều loại hình xổ số mới cho công chúng và tạo ra một môi trường giải trí toàn diện. ',
+    desc:
+      'Xổ số VR luôn ở vị trí dẫn đầu trong ngành với " công bằng, an toàn, nhanh chóng và chính xác "và có hệ thống trí tuệ nhân tạo toàn diện. Chúng tôi có tất cả các loại xổ số chính thống tại đây, chủ yếu được chia thành "Xổ số phát trực tiếp VR " và "Xổ số VR ". Chúng tôi cũng đang phát triển loạt trò chơi "VR Điện tử ", quyết tâm mang đến cho khách hàng nhiều sự lựa chọn đa dạng hơn. VR sẽ tiếp tục sáng tạo và phát triển, nhằm giới thiệu thêm nhiều loại hình xổ số mới cho công chúng và tạo ra một môi trường giải trí toàn diện. ',
   },
   KY: {
     chess: "KaiYuan",
-    desc: "Không có 1 trò chơi bài nào. Bull bull, blackjack, poker, dragon tiger và các trò chơi đánh bài thực khác",
+    desc:
+      "Không có 1 trò chơi bài nào. Bull bull, blackjack, poker, dragon tiger và các trò chơi đánh bài thực khác",
     BankerNiuNiu: "Niu-Niu",
     GoldenFlower: "Hoa Gloden",
     The21Point: "Điểm 21",
@@ -937,10 +941,12 @@ export const vivN = {
     fish: "KY",
   },
   sports: {
-    desc: "Pega Gaming cung cấp nhiều loại cược mới và tỷ lệ cược cạnh tranh cho các trận đấu trực tiếp. bóng đá, bóng rổ, bóng chày, quần vợt, bóng đá và Thể thao điện tử để đáp ứng nhu cầu của bạn! ",
+    desc:
+      "Pega Gaming cung cấp nhiều loại cược mới và tỷ lệ cược cạnh tranh cho các trận đấu trực tiếp. bóng đá, bóng rổ, bóng chày, quần vợt, bóng đá và Thể thao điện tử để đáp ứng nhu cầu của bạn! ",
   },
   esports: {
-    desc: "IM E-Sports là một nền tảng cá cược hàng đầu trong ngành được thiết kế bởi các game thủ dành cho người chơi. đối tác tự hào của IM E-Sports và luôn cập nhật về các trò chơi và đội yêu thích của bạn! ",
+    desc:
+      "IM E-Sports là một nền tảng cá cược hàng đầu trong ngành được thiết kế bởi các game thủ dành cho người chơi. đối tác tự hào của IM E-Sports và luôn cập nhật về các trò chơi và đội yêu thích của bạn! ",
   },
   services: {
     depositTitle: "Thanh toán dễ dàng, nhanh chóng",
@@ -950,7 +956,8 @@ export const vivN = {
     security:
       "Là nền tảng cá cược trực tuyến đáng tin cậy nhất ở Châu Á, chúng tôi cam kết cung cấp trải nghiệm chơi trò chơi tốt nhất ở mọi khía cạnh. Chúng tôi sử dụng SSL 128 bit để mã hóa mọi thông tin cá nhân mà bạn chia sẻ với chúng tôi.",
     oddsTitle: "Hơn 500 trò chơi hàng đầu",
-    odds: "Từ các môn thể thao thú vị, đến giải đặc biệt lũy tiến lớn, trò chơi trên bàn cổ điển, sòng bạc trực tiếp, xổ số và các trò chơi đặc biệt - chúng tôi có tất cả! Với hơn 500 trò chơi, sòng bạc trực tuyến của chúng tôi cung cấp hàng giờ giải trí và phần thưởng độc quyền, giải thưởng và tiền thưởng chỉ dành cho bạn! ",
+    odds:
+      "Từ các môn thể thao thú vị, đến giải đặc biệt lũy tiến lớn, trò chơi trên bàn cổ điển, sòng bạc trực tiếp, xổ số và các trò chơi đặc biệt - chúng tôi có tất cả! Với hơn 500 trò chơi, sòng bạc trực tuyến của chúng tôi cung cấp hàng giờ giải trí và phần thưởng độc quyền, giải thưởng và tiền thưởng chỉ dành cho bạn! ",
     platformTitle: "Mọi nơi, mọi thiết bị",
     platform:
       "Dù bạn ở đâu, bạn đều có thể giành được tài sản của mình và vui chơi bất cứ lúc nào, với bất kỳ thiết bị nào! Chúng tôi có sẵn trên các ứng dụng cho cả thiết bị Android và iOS cũng như nền tảng dựa trên web. Hãy tận dụng cơ hội giành chiến thắng LỚN với chúng tôi ngay hôm nay! ",
@@ -991,7 +998,8 @@ export const vivN = {
   JDB: {
     slots: "JDB",
     fish: "JDB",
-    desc: "Chiến thắng báu vật trực tuyến không hề nhàm chán. Tại đây có rất nhiều trò chơi và máy đánh bạc, muốn trải nghiệm thêm nhiều cách chơi thì bạn phải vào đây!",
+    desc:
+      "Chiến thắng báu vật trực tuyến không hề nhàm chán. Tại đây có rất nhiều trò chơi và máy đánh bạc, muốn trải nghiệm thêm nhiều cách chơi thì bạn phải vào đây!",
   },
   JILI: {
     slots: "JILI",

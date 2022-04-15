@@ -283,7 +283,7 @@ export const enUS = {
     msgPlsSelectPayment: "Please select the deposit type",
     msgPlsSelectMethod: "Please select the deposit channel",
     msgPlsEnterAccount: "Please enter the bank account name",
-    msgInvalidFileSize: "File too Big, please select a file less than 2mb",
+    msgInvalidFileSize: "File too Big, please select a file less than 5mb",
     msgInvalidFileType:
       "Please upload image file only. (.jpg/.jpeg/.png/.tiff)",
     msgFailedJoinPromotion:
