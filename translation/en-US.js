@@ -283,7 +283,7 @@ export const enUS = {
     msgPlsSelectPayment: "Please select the deposit type",
     msgPlsSelectMethod: "Please select the deposit channel",
     msgPlsEnterAccount: "Please enter the bank account name",
-    msgInvalidFileSize: "File too Big, please select a file less than 2mb",
+    msgInvalidFileSize: "File too Big, please select a file less than 5mb",
     msgInvalidFileType:
       "Please upload image file only. (.jpg/.jpeg/.png/.tiff)",
     msgFailedJoinPromotion:
@@ -435,14 +435,15 @@ export const enUS = {
 
     nameVerify: {
       title: "Real Name",
-      msgEnterICNum: "Enter IC number",
-      icNum: "IC Number",
-      msgInvalidICNum: "Invalid IC number",
+      msgEnterICNum: "Enter ID number",
+      icNum: "ID Number",
+      msgInvalidICNum: "Invalid ID number",
       msgPlsEnterName: "Please enter your real name",
-      msgPlsEnterICNum: "Please enter your IC number",
+      msgPlsEnterICNum: "Please enter your ID number",
       toEdit: "If Required to Edit Real Name, Please Click ",
       verifyName: "Real Name Verify",
-      tips: "Tips:  Real name needs to be same as withdrawal bank name to withdraw money",
+      tips:
+        "Tips:  Real name needs to be same as withdrawal bank name to withdraw money",
     },
     password: {
       title: "Login Password",
@@ -670,7 +671,8 @@ export const enUS = {
     msgMustHundred: "Amount must end with hundred digits",
     msgInvalidAmt: "Withdrawal amount must be greater than 0",
     msgCanWithdrawal: "Available withdrawal：{{amount}}",
-    msgContactCSCardChange: "For any changes, please contact online customer service",
+    msgContactCSCardChange:
+      "For any changes, please contact online customer service",
     turnover: "Turnover Requirement :",
     msgEnterWithdrawalPass: "Please Enter Withdrawal Password",
     msgInsufficient: "Insufficient balance.",
@@ -942,11 +944,13 @@ export const enUS = {
   CustomBank: "Custom Bank",
   VR: {
     lottery: "VR",
-    desc: "VR lottery. We are also developing the VR Electronic series of games, determined to give customers more diversified choices. VR will continue to create and progress, in order to introduce more new kind lottery for the public, and create an all-round entertainment environment.",
+    desc:
+      "VR lottery. We are also developing the VR Electronic series of games, determined to give customers more diversified choices. VR will continue to create and progress, in order to introduce more new kind lottery for the public, and create an all-round entertainment environment.",
   },
   KY: {
     chess: "KaiYuan",
-    desc: "No 1 card game. Bull bull,blackjack,poker,dragon tiger and other real playercard game",
+    desc:
+      "No 1 card game. Bull bull,blackjack,poker,dragon tiger and other real playercard game",
     BankerNiuNiu: "Niu-Niu",
     GoldenFlower: "Gloden Flower",
     The21Point: "The 21 Point",
@@ -954,10 +958,12 @@ export const enUS = {
     fish: "KY",
   },
   sports: {
-    desc: "Pega Gaming provide innovative, variety of bet type and competitive odds for live matches.  Easy betting with quick, and secure way through any kind of devices anywhere, anytime!  In addition, we support all kinds of sport events, including soccer, basketball, baseball, tennis, football, and E-sports to fulfill your needs!",
+    desc:
+      "Pega Gaming provide innovative, variety of bet type and competitive odds for live matches.  Easy betting with quick, and secure way through any kind of devices anywhere, anytime!  In addition, we support all kinds of sport events, including soccer, basketball, baseball, tennis, football, and E-sports to fulfill your needs!",
   },
   esports: {
-    desc: "IM E-Sports is an industry-leading betting platform designed by gamers for gamers. Ready to be stunned by the aesthetically pleasing visual interface, endless betting options, and the ultimate betting experience.Visit 【PG】 Gaming, a proud partner of IM E-Sports, and stay up to date on your favorite games and teams!",
+    desc:
+      "IM E-Sports is an industry-leading betting platform designed by gamers for gamers. Ready to be stunned by the aesthetically pleasing visual interface, endless betting options, and the ultimate betting experience.Visit 【PG】 Gaming, a proud partner of IM E-Sports, and stay up to date on your favorite games and teams!",
   },
   services: {
     depositTitle: "Easy, Rapid Payouts",
@@ -967,7 +973,8 @@ export const enUS = {
     security:
       "As the most trusted online betting platform in Asia, we are committed to providing the best gaming experience in every aspect. We use an 128-bit SSL to encrypt every private information you share with us.",
     oddsTitle: "500+ Top games",
-    odds: "From exciting sports, to massive progressive jackpots, classic table games, live casino, lottery, and specialty games – we have it all! With 500+ games, our online casino offers hours of entertainment and exclusive rewards, prizes and bonuses just for you!",
+    odds:
+      "From exciting sports, to massive progressive jackpots, classic table games, live casino, lottery, and specialty games – we have it all! With 500+ games, our online casino offers hours of entertainment and exclusive rewards, prizes and bonuses just for you!",
     platformTitle: "Anywhere, any devices",
     platform:
       "No matter where you are, you can win your fortune and have fun at anytime, with any devices! We are available on apps for both Android and iOS devices, and also as a web-based platform. Take advantage of chances to win BIG with us today!",
@@ -1008,7 +1015,8 @@ export const enUS = {
   JDB: {
     slots: "JDB",
     fish: "JDB",
-    desc: "Winning treasures online is not boring. There are many games and slot machines here. If you want to experience more gameplay, you must come here!",
+    desc:
+      "Winning treasures online is not boring. There are many games and slot machines here. If you want to experience more gameplay, you must come here!",
   },
   JILI: {
     slots: "JILI",
