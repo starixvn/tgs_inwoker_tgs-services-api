@@ -13,6 +13,8 @@ export const GeneralService = {
   GetBanner,
   GetBrand,
   GetJoinedPromoReport,
+  GetVIP,
+  GetInvitationCode,
 };
 
 function GetSiteToken() {
@@ -73,5 +75,15 @@ function GetJoinedPromoReport(From, To, page, rows, desc, sort, all) {
   const result = ApiService.get(
     `playerpromotion/joined?From=${From}&To=${To}&page=${page}&rows=${rows}&desc=${desc}&sort=${sort}&all=${all}`
   );
+  return result;
+}
+
+function GetVIP() {
+  const result = ApiService.get("vip");
+  return result;
+}
+
+function GetInvitationCode() {
+  const result = ApiService.get("agent");
   return result;
 }

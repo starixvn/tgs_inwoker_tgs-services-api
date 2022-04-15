@@ -39,6 +39,9 @@ export const enUS = {
   },
 
   common: {
+    pleaseEnterAccountName: "Plase enter your real name",
+    noReachMin: "The mobile number is set to 8 to 10 digits",
+    upload: "Upload document",
     title: "{brand} | The Biggest & Most Trusted Online Casino",
     register: "Register",
     login: "Login",
@@ -69,13 +72,14 @@ export const enUS = {
     msgEnterEmail: "Please enter your email",
     msgInvalidEmail: "Invalid Email Address",
     msgEnterCode: "Please enter verification code",
+    msgEnterCodeEmail: "Please enter verification code",
     msgEnterEmailCode: "Please enter the email verification code",
     msgEnterPhoneCode: "Please enter the phone verification code",
     msgInvalidPhoneCode: "Verification code error",
     msgInvalidConfirmPass: "The confirm password does not match",
     msgInvalidOldPass: "Invalid Old Password",
     msgRegisterUserNameInvalid:
-      "The account length must be between 6 and 32 digits, and must consist of numbers, letters or a combination",
+      "The account length must be between 6 and 16 digits, and must consist of numbers, letters or a combination",
     msgRegisterPassInvalid:
       "The password length must be between 6 and 20 digits",
     msgRegisterPassMatchInvalid:
@@ -90,6 +94,11 @@ export const enUS = {
     emailAddress: "Email Address",
     qqNumber: "QQ Account",
     wechatNumber: "Wechat Account",
+    fb: "Facebook Messenger Account",
+    telegram: "Telegram Account",
+    line: "Line Account",
+    viber: "Viber Account",
+    whatsapp: "Whatsapp Account",
     receiverAddress: "Receiver Address",
     loginPassword: "Login Password",
     contact: "Contact",
@@ -146,6 +155,7 @@ export const enUS = {
     startGame: "START",
     cs: "CHAT",
     msgSuccessUpdateProfile: "Profile updated succesfully",
+    favoriteGame: "Add to Favorites",
     joinGame: "Join game",
     withdrawalBankType: "Type",
     withdrawalChannel: "Channel",
@@ -161,15 +171,16 @@ export const enUS = {
       "Request failed, please contact Customer Service for further information.",
     termsAndCondition: "Terms and conditions",
     exit: "Exit",
+    playeronline: "Online users",
   },
   affiliate: {
-    title: "Be an Affiliate",
+    title: "Affiliate",
     details: "Details",
     downline: "Downline",
     report: "Report",
     info: "Affiliate Bonus",
     qrCode: "Affiliate QR Code",
-    promoId: "Affiliate ID",
+    promoId: "Referral ID",
     promoLink: "Affiliate Link",
     memberName: "Username",
     UUID: "UUID",
@@ -219,9 +230,15 @@ export const enUS = {
       callHotline: "Or call 000-000-0000 for help.",
       bindBankCard: "Bind Other Banks",
       goWithdrawal: "Withdraw",
+      goProfile: "Profile",
+      noMoreAddCard:
+        "Congratulations that you have completed the bank account binding. You can quickly select your withdrawal bank when you withdraw later.",
     },
   },
   deposit: {
+    email: "Email",
+    phone: "Phone",
+    fpsId: "FPS ID",
     title: "Deposit",
     ppRemark:
       "Remarks: TWO random decimal places will be added to the total amount (it is required for the order verification purpose)",
@@ -468,6 +485,36 @@ export const enUS = {
       weChatAccount: "WeChat",
       toEdit: "If Required to Edit WeChat, Please Click ",
     },
+    fb: {
+      msgInvalidFB: "Invalid Facebook Messenger account",
+      plsEnterFB: "Please enter Facebook Messenger account",
+      fbAccount: "Facebook Messenger",
+      toEdit: "If Required to Edit Facebook Messenger, Please Click ",
+    },
+    telegram: {
+      msgInvalidTelegram: "Invalid Telegram account",
+      plsEnterTelegram: "Please enter Telegram account",
+      telegramAccount: "Telegram",
+      toEdit: "If Required to Edit Telegram, Please Click ",
+    },
+    line: {
+      msgInvalidLine: "Invalid Line account",
+      plsEnterLine: "Please enter Line account",
+      lineAccount: "Line",
+      toEdit: "If Required to Edit Line, Please Click ",
+    },
+    viber: {
+      msgInvalidViber: "Invalid Viber account",
+      plsEnterViber: "Please enter Viber account",
+      viberAccount: "Viber",
+      toEdit: "If Required to Edit Viber, Please Click ",
+    },
+    whatsapp: {
+      msgInvalidWhatsapp: "Invalid Whatsapp account",
+      plsEnterWhatsapp: "Please enter Whatsapp account",
+      whatsappAccount: "Whatsapp",
+      toEdit: "If Required to Edit Whatsapp, Please Click ",
+    },
     resetResetWithdrawalPassword: {
       title: "Reset Withdrawal Password",
       editWithdrawalPassword: "Edit Withdrawal Password",
@@ -618,9 +665,12 @@ export const enUS = {
   },
 
   withdrawal: {
+    notReachMin: "Withdrawal amount is not reach minimum amount",
+    reachedMax: "Withdrawal amount reached maximum amount",
     msgMustHundred: "Amount must end with hundred digits",
     msgInvalidAmt: "Withdrawal amount must be greater than 0",
     msgCanWithdrawal: "Available withdrawal：{{amount}}",
+    msgContactCSCardChange: "For any changes, please contact online customer service",
     turnover: "Turnover Requirement :",
     msgEnterWithdrawalPass: "Please Enter Withdrawal Password",
     msgInsufficient: "Insufficient balance.",
@@ -666,8 +716,49 @@ export const enUS = {
       Section1Lottery: "Lottery",
       Section1Fishing: "Fishing",
       Section1Sport: "Sports",
+      Section1Esport: "Esports",
       Section1Electron: "Table Games",
       Section1Live: "Live Casino",
+      services: {
+        service1: {
+          title: "Average Deposit Time",
+          value: "30s",
+        },
+        service2: {
+          title: "Average Withdrawal Time",
+          value: "50s",
+        },
+        service3: {
+          title: "Cooperative Payment Platform",
+          value: "60 partners",
+        },
+        service4: {
+          title: "Cooperative Gaming Platform",
+          value: "80 partners",
+        },
+      },
+      features: {
+        feature1: {
+          title: "More Professional",
+          description:
+            "Every day, we provide you with nearly a thousand exciting sports and e-sports events, and the ultimate enjoyment of multiple gameplays. There are more entertainment methods such as real people, chess, lottery, electronic games and so on. ",
+        },
+        feature2: {
+          title: "More secure",
+          description:
+            "Exclusive development, using 128-bit encryption technology and strict security management system, customer funds are the most complete protection, allowing you to fully enjoy entertainment, event betting, no worries.",
+        },
+        feature3: {
+          title: "More convenient",
+          description:
+            "Self-developed Web, H5, and iOS and Android native apps, allowing you to entertain and bet whatever you want, anytime, anywhere 24 hours online customer service provides the most intimate and quality service.",
+        },
+        feature4: {
+          title: "Faster",
+          description:
+            "The financial processing system independently developed by the latest technology can truly achieve extremely fast deposit, retrieval and transfer. Exclusive network optimization technology, to provide you with a first-class gaming experience, maximize network delay optimization.",
+        },
+      },
     },
     liveGame: {
       wmDesc:
@@ -840,6 +931,7 @@ export const enUS = {
   },
   PrimePay: "PrimePay",
   MaticPay: "MaticPay",
+  ZeroNineNinePay: "099Pay",
   LeePay: "LeePay",
   ApplePay: "ApplePay",
   UmPay: "PlayPay",
@@ -903,6 +995,7 @@ export const enUS = {
   },
   IMES: {
     sports: "IM",
+    esports: "IM",
   },
   SABA: {
     sports: "SABA",
@@ -915,6 +1008,7 @@ export const enUS = {
   JDB: {
     slots: "JDB",
     fish: "JDB",
+    desc: "Winning treasures online is not boring. There are many games and slot machines here. If you want to experience more gameplay, you must come here!",
   },
   JILI: {
     slots: "JILI",
@@ -948,6 +1042,9 @@ export const enUS = {
   WM: {
     live: "WM Casino",
   },
+  DG: {
+    live: "DG Casino",
+  },
   TCG_SEA: {
     lottery: "TCG SEA",
   },
@@ -966,6 +1063,14 @@ export const enUS = {
   },
   BC: {
     sports: "BetConstruct",
+  },
+  AVIA: {
+    sports: "AVIA Gaming",
+    esports: "AVIA",
+  },
+  TF: {
+    sports: "TF Gaming",
+    esports: "TF",
   },
   hk28: {
     withdrawalNumber: "Bank card number/Crypto currency address",
@@ -1020,6 +1125,8 @@ export const enUS = {
   },
 
   piso: {
+    withdrawalNumber: "Bank Account Number/Gcash Number",
+    msgEnterWithdrawalNumber: "Please enter bank account number/ Gcash number",
     profile: {
       fullName: "Full name",
       enterFullName: "Enter full name",
@@ -1030,5 +1137,68 @@ export const enUS = {
   usertype: {
     agent: "Agent",
     player: "Player",
+  },
+  vip: {
+    birthBenefit: "Birthday Gift",
+    cardGameRebate: "Card Game",
+    level: "Promotion Conditions",
+    levelKeepAccumulateBetAmount:
+      "The required bet amount in the current month to keep the relegation",
+    levelKeepAccumulateDeposit:
+      "Deposit required for the current month to maintain the level",
+    levelUpAccumulateBetAmount:
+      "The required bet amount in the current month to advance",
+    levelUpAccumulateDeposit: "Deposit required for the promotion month",
+    liveDealerRebate: "Live Casino",
+    lotteryRebate: "Lottery Game",
+    promotionBenefit: "Promotion Benefit",
+    quarterlyBenefit: "Quarterly Benefit",
+    slotRebate: "Slots Games",
+    sportsRebate: "sports games",
+    virtualSportsRebate: "Esports Games",
+    vipBenefit: "VIP rebate",
+  },
+  custom: {
+    addcard: {
+      name: "FPS account name",
+      msgPlsEnterName: "Please fill in the FPS account name",
+      phoneNumber: "FPS number",
+      msgEnterPhone: "Please fill in the FPS number or email address",
+    },
+  },
+  depositNotification: {
+    title: "Bank Transferring Notification",
+    content: `<div style="margin-bottom: 10px; text-align: center">* IMPORTANT *</div> <div style="margin-bottom: 10px;">Dear all VIP members, before making a deposit, please double-check you are using our designated bank account number showed on the Deposit Page. </div><div style="margin-bottom: 10px;">If the incorrect bank account number has been used, we're NOT responsible for the issues caused, such as: top-up delay, lost track of your deposit, etc. </div><div style="margin-bottom: 10px;">Thank you for your attention.</div>`,
+  },
+  depositNotificationGMO: {
+    title: "Bank Transferring Notification",
+    content: `<div style="margin-bottom: 10px; text-align: center;">Important !</div> <div style="margin-bottom: 10px;">Please ensure your withdrawal bank account is the SAME as your deposit account to prevent money laundering.</div><div style="margin-bottom: 10px;">Contact CS if you have any withdrawal questions, thanks you.</div>`,
+  },
+  mgm: {
+    msgPlsEnterAccount: "Please fill in bank account/name",
+    accountDepositTips:
+      "Please fill in a valid remittance bank name for convenience",
+    nameDepositTips:
+      "Please fill in the name of a valid remittance account for convenience",
+  },
+  t3: {
+    profile: "Profile",
+    transfer: "Transfer",
+    deposit: "Deposit",
+    withdraw: "Withdrawal",
+  },
+  verified: {
+    yes: "Verified",
+    no: "Not verified",
+    verifying: "Verifying",
+    rejected: "Rejected",
+    waiting: "Waiting verification from customer service",
+    goVerify: "Verify real name",
+  },
+
+  disabledAddCard: {
+    title: "No card(s) found in your account",
+    description:
+      "Please contact customer service to add card in order to access withdrawal page.",
   },
 };

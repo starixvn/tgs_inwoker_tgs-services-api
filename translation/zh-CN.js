@@ -37,6 +37,9 @@ export const zhCN = {
   },
 
   common: {
+    pleaseEnterAccountName: "请输入银行名称",
+    noReachMin: "手机号码设定在8至10位数",
+    upload: "上传文件",
     title: "{brand} - 专业娱乐平台",
     register: "注册",
     login: "登录",
@@ -67,13 +70,14 @@ export const zhCN = {
     msgEnterEmail: "请输入您的邮箱地址",
     msgInvalidEmail: "邮箱地址不正确",
     msgEnterCode: "请输入验证码",
+    msgEnterCodeEmail: "请输入验证码",
     msgInvalidPhoneCode: "验证码错误",
     msgEnterEmailCode: "请输入邮箱验证码",
     msgEnterPhoneCode: "请输入手机验证码",
     msgInvalidConfirmPass: "两次密码要一致",
     msgInvalidOldPass: "旧密码不正确",
     msgRegisterUserNameInvalid:
-      "账户长度必须是在6到32位之间,且必须由数字，字母或组合",
+      "账户长度必须是在6到16位之间,且必须由数字，字母或组合",
     msgRegisterPassInvalid: "密码长度必须在6到20位数字之间",
     msgRegisterPassMatchInvalid: "密码必须与确认密码相同",
     msgRegisterTermAndCondition: "请确认您已阅读我们的条款和条件",
@@ -83,6 +87,11 @@ export const zhCN = {
     emailAddress: "邮箱地址",
     qqNumber: "QQ账号",
     wechatNumber: "微信账号",
+    fb: "Facebook Messenger 账号",
+    telegram: "Telegram 账号",
+    line: "Line 账号",
+    viber: "Viber 账号",
+    whatsapp: "Whatsapp 账号",
     receiverAddress: "收货地址",
     loginPassword: "登录密码",
     contact: "联系",
@@ -139,6 +148,7 @@ export const zhCN = {
     startGame: "立即体验",
     cs: "客服",
     msgSuccessUpdateProfile: "修改成功。",
+    favoriteGame: "加到最爱",
     joinGame: "立刻体验",
     withdrawalBankType: "类别",
     withdrawalChannel: "渠道",
@@ -151,6 +161,7 @@ export const zhCN = {
     msgRequestFailed: "请求失败，请联系客服",
     termsAndCondition: "条款和条件",
     exit: "登出",
+    playeronline: "在线人数",
   },
   affiliate: {
     title: "推广赚钱",
@@ -206,9 +217,15 @@ export const zhCN = {
       callHotline: "或拨打000-000-0000获得帮助。",
       bindBankCard: "绑定其他银行卡",
       goWithdrawal: "前往提款",
+      goProfile: "前往个人资料",
+      noMoreAddCard:
+        "恭喜您完成银行账户绑定，稍后提款时可以快速选择您的提款银行。",
     },
   },
   deposit: {
+    email: "电子邮件",
+    phone: "电话号码",
+    fpsId: "ID FPS",
     title: "存款",
     ppRemark: "提示: 系统稍后会在您输入的金额后方随机的小数，以便识别订单",
     plsEnterDepositAmount: "请输入存款金额",
@@ -415,7 +432,7 @@ export const zhCN = {
     bankCard: {
       title: "银行卡",
       settledBankCard: "您的银行卡已经设定，请妥善保管。",
-      limitedWithdraw: "您可的可提款余额为：",
+      limitedWithdraw: "您可提款余额为：",
       biggerThanZero: "提款金额 必须大于 0",
     },
     phone: {
@@ -446,6 +463,36 @@ export const zhCN = {
       plsEnterWechat: "请输入微信账号",
       weChatAccount: "微信账号",
       toEdit: "如需修改微信账号，请点击",
+    },
+    fb: {
+      msgInvalidFB: "Facebook Messenger账号格式不正确",
+      plsEnterFB: "请输入Facebook Messenger账号",
+      fbAccount: "Facebook Messenger账号",
+      toEdit: "如需修改Facebook Messenger账号，请点击",
+    },
+    telegram: {
+      msgInvalidTelegram: "Telegram账号格式不正确",
+      plsEnterTelegram: "请输入Telegram账号",
+      telegramAccount: "Telegram账号",
+      toEdit: "如需修改Telegram账号，请点击",
+    },
+    line: {
+      msgInvalidLine: "Line账号格式不正确",
+      plsEnterLine: "请输入Line账号",
+      lineAccount: "Line账号",
+      toEdit: "如需修改Line账号，请点击",
+    },
+    viber: {
+      msgInvalidViber: "Viber账号格式不正确",
+      plsEnterViber: "请输入Viber账号",
+      viberAccount: "Viber账号",
+      toEdit: "如需修改Viber账号，请点击",
+    },
+    whatsapp: {
+      msgInvalidWhatsapp: "Whatsapp账号格式不正确",
+      plsEnterWhatsapp: "请输入Whatsapp账号格式不正确账号",
+      whatsappAccount: "Whatsapp账号",
+      toEdit: "如需修改Whatsapp账号，请点击",
     },
     resetResetWithdrawalPassword: {
       title: "修改提款密码",
@@ -596,9 +643,12 @@ export const zhCN = {
   },
 
   withdrawal: {
+    notReachMin: "提款金额未达到最低金额",
+    reachedMax: "提款金额达到最大金额",
     msgMustHundred: "金额必须以百位数字结尾",
     msgInvalidAmt: "提款金额 必须大于 0",
-    msgCanWithdrawal: "您可的可提款余额为：{{amount}}",
+    msgCanWithdrawal: "您可提款余额为：{{amount}}",
+    msgContactCSCardChange: "如需修改请联系客服",
     turnover: "流水需求: ",
     msgEnterWithdrawalPass: "请输入提款密码",
     msgInsufficient: "中心钱包余额不足",
@@ -643,8 +693,49 @@ export const zhCN = {
       Section1Lottery: "彩票游戏",
       Section1Fishing: "捕鱼游戏",
       Section1Sport: "体育电竞",
+      Section1Esport: "电竞",
       Section1Electron: "电子游戏",
       Section1Live: "真人游戏",
+      services: {
+        service1: {
+          title: "平均存款时间",
+          value: "30秒",
+        },
+        service2: {
+          title: "平均取款时间",
+          value: "50秒",
+        },
+        service3: {
+          title: "合作支付平台",
+          value: "60家",
+        },
+        service4: {
+          title: "合作游戏平台",
+          value: "80家",
+        },
+      },
+      features: {
+        feature1: {
+          title: "更专业",
+          description:
+            "每天为您提供近千场精彩体育、电竞赛事，玩法多元极致享受，更有真人、棋牌、彩票、电子游戏等多种娱乐方式随心选择。",
+        },
+        feature2: {
+          title: "更安全",
+          description:
+            "独家开发，采用128位加密技术和严格的安全管理体系，客户资金得到最完善的保障，让您全情尽享娱乐、赛事投注，无后顾之忧！",
+        },
+        feature3: {
+          title: "更便捷",
+          description:
+            "自主研发的 Web、H5，更有iOS、Android原生App，让您随时随地，娱乐投注随心所欲！ 7×24小时在线客服提供最贴心、最优质的服务。",
+        },
+        feature4: {
+          title: "更快速",
+          description:
+            "最新技术自主研发的财务处理系统，真正做到极速存、取、转。独家网路优化技术，为您提供一流的游戏体验，最大优化网路延迟。",
+        },
+      },
     },
     liveGame: {
       wmDesc:
@@ -816,6 +907,7 @@ export const zhCN = {
   },
   PrimePay: "一等付",
   MaticPay: "MaticPay",
+  ZeroNineNinePay: "099Pay",
   LeePay: "利付钱包",
   ApplePay: "苹果支付",
   UmPay: "PlayPay",
@@ -879,21 +971,23 @@ export const zhCN = {
   },
   IMES: {
     sports: "IM电竞",
+    esports: "IM电竞",
   },
   SABA: {
     sports: "沙巴体育",
   },
   HABA: {
-    slots: "HABANERO",
-    electron: "HABANERO",
-    fish: "HABANERO",
+    slots: "HABANERO老虎机",
+    electron: "HABANERO电子",
+    fish: "HABANERO捕鱼",
   },
   JDB: {
-    slots: "JDB",
+    slots: "JDB老虎机",
     fish: "JDB捕鱼",
+    desc: "线上网夺宝不无聊。这里拥有众多游戏以及老虎机，想要体验更多的玩法，那你来这里准没错!",
   },
   JILI: {
-    slots: "JILI",
+    slots: "JILI老虎机",
     fish: "JILI捕鱼",
   },
   PP: {
@@ -924,6 +1018,9 @@ export const zhCN = {
   WM: {
     live: "WM真人",
   },
+  DG: {
+    live: "DG真人",
+  },
   TCG_SEA: {
     lottery: "TCG SEA彩票",
   },
@@ -941,7 +1038,15 @@ export const zhCN = {
     fish: "乐游捕鱼",
   },
   BC: {
-    sports: "BetConstruct",
+    sports: "Bet体育",
+  },
+  AVIA: {
+    sports: "AVIA体育",
+    esports: "AVIA电竞",
+  },
+  TF: {
+    sports: "TF体育",
+    esports: "TF电竞",
   },
   hk28: {
     withdrawalNumber: "银行卡号码/FPS(转数快)号码",
@@ -994,6 +1099,8 @@ export const zhCN = {
     },
   },
   piso: {
+    withdrawalNumber: "银行卡号码/加密货币地址",
+    msgEnterWithdrawalNumber: "请输入银行卡号码/加密货币地址",
     profile: {
       fullName: "全名",
       enterFullName: "请输入全名",
@@ -1004,5 +1111,62 @@ export const zhCN = {
   usertype: {
     agent: "代理",
     player: "玩家",
+  },
+  vip: {
+    birthBenefit: "生日礼金",
+    cardGameRebate: "棋牌游戏",
+    level: "晋级条件",
+    levelKeepAccumulateBetAmount: "保级当月所需投注量",
+    levelKeepAccumulateDeposit: "保级当月所需存款量",
+    levelUpAccumulateBetAmount: "晋级当月所需投注量",
+    levelUpAccumulateDeposit: "晋级当月所需存款量",
+    liveDealerRebate: "真人娱乐",
+    lotteryRebate: "彩票游戏",
+    promotionBenefit: "优惠活动利益",
+    quarterlyBenefit: "季度利益",
+    slotRebate: "电子游戏",
+    sportsRebate: "体育游戏",
+    virtualSportsRebate: "电竞游戏",
+    vipBenefit: "VIP返水",
+  },
+  custom: {
+    addcard: {
+      name: "转数快帐号名称",
+      msgPlsEnterName: "请填写转数快帐号名称",
+      phoneNumber: "转数快号码",
+      msgEnterPhone: "请填写转数快号码或电邮地址",
+    },
+  },
+  depositNotification: {
+    title: "汇款指引",
+    content: `请各位注意，关于汇款帐号，请根据平台的户口进行汇款，如汇款至旧户口，上分可能有时间延迟，亦有可能检查不到，我司不会因这个问题而负上责任，敬请垂注！ `,
+  },
+  depositNotificationGMO: {
+    title: "汇款指引",
+    content: `客户存取款须知\n为防止洗黑钱\n客户取款必须跟绑定充值帐户相同\n有关于取款问题可向客服查询`,
+  },
+  mgm: {
+    msgPlsEnterAccount: "请输入银行帐户/姓名",
+    accountDepositTips: "请填写有效汇款银行名称，方便上分",
+    nameDepositTips: "请填写有效汇款户口/姓名，方便上分",
+  },
+  t3: {
+    profile: "用户资讯",
+    transfer: "转帐",
+    deposit: "存款",
+    withdraw: "提款",
+  },
+  verified: {
+    yes: "已验证",
+    no: "未验证",
+    verifying: "验证中",
+    rejected: "已拒絕",
+    waiting: "等待客服验证",
+    goVerify: "验证真实姓名",
+  },
+
+  disabledAddCard: {
+    title: "在您的帐户中未找到任何卡",
+    description: "请联系客服添加卡，以便访问提款页面。",
   },
 };

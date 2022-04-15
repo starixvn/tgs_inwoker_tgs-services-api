@@ -74,6 +74,9 @@ import {
   DOCRYPTODEPOSIT_BEGIN,
   DOCRYPTODEPOSIT_SUCCESS,
   DOCRYPTODEPOSIT_FAILED,
+  DODEPOSIT_BEGIN,
+  DODEPOSIT_SUCCESS,
+  DODEPOSIT_FAILED,
 } from "../constant/actionType";
 import { WalletService } from "../services/WalletService";
 
@@ -102,12 +105,14 @@ export const walletAction = {
   updateAutoTransferStatus,
   doUmPayCryptoDeposit,
   doUmPayBankDeposit,
+  doFPSDeposit,
   doThirdPartyDeposit,
   doBankDeposit,
   doHelp2PayDeposit,
   doSkyPayDeposit,
   doBankDeposit2,
   doCryptoDeposit,
+  performDeposit,
 };
 function getWalletBalance() {
   return (dispatch) => {
@@ -177,13 +182,62 @@ function getDepositMethod() {
   };
 }
 
-function doBankDeposit(account, amount, paymentid, promotionid, banktype) {
+function doBankDeposit(
+  name,
+  account,
+  amount,
+  paymentid,
+  promotionid,
+  banktype
+) {
   return (dispatch) => {
     dispatch({
       type: DOMANUALDEPOSIT_BEGIN,
       loading: true,
     });
     const result = WalletService.PerformManualBankDeposit(
+      name,
+      account,
+      amount,
+      paymentid,
+      promotionid,
+      banktype
+    )
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: DOMANUALDEPOSIT_SUCCESS,
+            payload: response,
+            loading: true,
+          });
+        } else {
+          dispatch({
+            type: DOMANUALDEPOSIT_FAILED,
+            payload: response,
+            loading: false,
+          });
+        }
+        return response;
+      })
+      .catch((error) => {
+        dispatch({
+          type: DOMANUALDEPOSIT_FAILED,
+          payload: error,
+          loading: false,
+        });
+      });
+    return result;
+  };
+}
+
+function doFPSDeposit(name, account, amount, paymentid, promotionid, banktype) {
+  return (dispatch) => {
+    dispatch({
+      type: DOMANUALDEPOSIT_BEGIN,
+      loading: true,
+    });
+    const result = WalletService.PerformManualFPSDeposit(
+      name,
       account,
       amount,
       paymentid,
@@ -1065,6 +1119,47 @@ function doCryptoDeposit(amount, paymentid, promotionid, paymentcode) {
     return result;
   };
 }
+
+function performDeposit(amount, paymentid, promotionid, paymentcode, type) {
+  return (dispatch) => {
+    dispatch({
+      type: DODEPOSIT_BEGIN,
+      loading: true,
+    });
+    const result = WalletService.PerformDeposit(
+      amount,
+      paymentid,
+      promotionid,
+      paymentcode,
+      type
+    )
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: DODEPOSIT_SUCCESS,
+            payload: response,
+            loading: true,
+          });
+        } else {
+          dispatch({
+            type: DODEPOSIT_FAILED,
+            payload: response,
+            loading: false,
+          });
+        }
+        return response;
+      })
+      .catch((error) => {
+        dispatch({
+          type: DODEPOSIT_FAILED,
+          payload: error,
+          loading: false,
+        });
+      });
+    return result;
+  };
+}
+
 function addBilling(card_id, amount) {
   return (dispatch) => {
     dispatch({

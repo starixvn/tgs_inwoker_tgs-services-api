@@ -79,6 +79,8 @@ import {
   DOSKYPAYDEPOSIT_BEGIN,
   DOSKYPAYDEPOSIT_SUCCESS,
   DOSKYPAYDEPOSIT_FAILED,
+  DODEPOSIT_FAILED,
+  DODEPOSIT_SUCCESS,
 } from "../constant/actionType";
 import { WalletType } from "../utils/Enum";
 const initState = {
@@ -624,6 +626,8 @@ const walletReducer = (state = initState, action) => {
     case DOCRYPTODEPOSIT_FAILED:
     case DOBANKDEPOSIT_SUCCESS:
     case DOBANKDEPOSIT_FAILED:
+    case DODEPOSIT_SUCCESS:
+    case DODEPOSIT_FAILED:
       return {
         ...state,
         depositResult: action.payload,

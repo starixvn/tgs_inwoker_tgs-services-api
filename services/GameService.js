@@ -1,6 +1,6 @@
 import { ApiService } from "./ApiService";
 import config from "../../config/config";
-
+import i18n from "../../utils/i18n";
 export const GameService = {
   GetGameList,
   JoinGame,
@@ -16,14 +16,14 @@ export const GameService = {
 
 function GetGameList(gpCode, gametypes) {
   const result = ApiService.get(
-    `Game/list?gpcode=${gpCode}&platformtype=${config.isPC}&language=${config.lang}&currency=${config.currency}&gametypes=${gametypes}`
+    `Game/list?gpcode=${gpCode}&platformtype=${config.isPC}&language=${i18n.language}&currency=${config.currency}&gametypes=${gametypes}`
   );
   return result;
 }
 
 function GetHomePageGameList() {
   const result = ApiService.get(
-    `GameProvider/list?platformtype=${config.isPC}&language=${config.lang}&currency=${config.currency}`
+    `GameProvider/list?platformtype=${config.isPC}&language=${i18n.language}&currency=${config.currency}`
   );
   return result;
 }
@@ -32,7 +32,7 @@ function JoinLobbyGame(gtype, gpcode) {
   const result = ApiService.post(`Game/lobby/geturl`, {
     gpcode: gpcode,
     gtype: parseInt(gtype),
-    language: config.lang,
+    language: i18n.language,
     extends: {
       lobbyurl: window.location.protocol + "//" + window.location.hostname,
     },
@@ -44,7 +44,7 @@ function JoinGame(gid, gpcode) {
   const result = ApiService.post(`Game/geturl`, {
     gpcode: gpcode,
     gid: parseInt(gid),
-    language: config.lang,
+    language: i18n.language,
     extends: {
       lobbyurl: window.location.protocol + "//" + window.location.hostname,
     },
@@ -54,7 +54,7 @@ function JoinGame(gid, gpcode) {
 
 function GetGamePlatformByType() {
   const result = ApiService.get(
-    `GameProvider/list?platformtype=${config.isPC}&language=${config.lang}&currency=${config.currency}`
+    `GameProvider/list?platformtype=${config.isPC}&language=${i18n.language}&currency=${config.currency}`
   );
   return result;
 }

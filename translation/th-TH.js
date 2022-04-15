@@ -35,6 +35,9 @@ export const thTH = {
     join: "เข้าร่วม",
   },
   common: {
+    pleaseEnterAccountName: "กรุณาใส่ชื่อบัญชีของคุณ",
+    noReachMin: "เบอร์มือถือตั้งไว้ที่ 8 ถึง 10 หลัก",
+    upload: "อัพโหลดไฟล์",
     title: "{brand}-แพลตฟอร์มความบันเทิงระดับมืออาชีพ",
     register: "ลงทะเบียน",
     login: "เข้าสู่ระบบ",
@@ -64,14 +67,15 @@ export const thTH = {
     msgEnterPhone: "กรุณากรอกหมายเลขโทรศัพท์มือถือของคุณ",
     msgEnterEmail: "กรุณากรอกที่อยู่อีเมลของคุณ",
     msgInvalidEmail: "ที่อยู่อีเมลไม่ถูกต้อง",
-    msgEnterCode: "กรุณากรอกรหัสยืนยัน",
+    msgEnterCode: "กรุณากรอกรหัสยืนยัน SMS",
+    msgEnterCodeEmail: "กรุณากรอกรหัสยืนยัน Email",
     msgInvalidPhoneCode: "รหัสยืนยันผิดพลาด",
     msgEnterEmailCode: "กรุณากรอกรหัสยืนยันอีเมล",
     msgEnterPhoneCode: "กรุณากรอกรหัสยืนยันโทรศัพท์",
     msgInvalidConfirmPass: "รหัสผ่านทั้งสองต้องเหมือนกัน",
     msgInvalidOldPass: "รหัสผ่านเก่าไม่ถูกต้อง",
     msgRegisterUserNameInvalid:
-      "ความยาวบัญชีต้องอยู่ระหว่าง 6 ถึง 32 หลัก และต้องประกอบด้วยตัวเลข ตัวอักษร หรือชุดค่าผสม",
+      "ความยาวบัญชีต้องอยู่ระหว่าง 6 ถึง 16 หลัก และต้องประกอบด้วยตัวเลข ตัวอักษร หรือชุดค่าผสม",
     msgRegisterPassInvalid: "รหัสผ่านต้องมีความยาวระหว่าง 6 ถึง 20 หลัก",
     msgRegisterPassMatchInvalid: "รหัสผ่านต้องเหมือนกับรหัสผ่านที่ยืนยันแล้ว",
     msgRegisterTermAndCondition:
@@ -83,6 +87,11 @@ export const thTH = {
     emailAddress: "ที่อยู่อีเมล",
     qqNumber: "บัญชี QQ",
     wechatNumber: "บัญชี Wechat",
+    fb: "บัญชี Facebook Messenger",
+    telegram: "บัญชี Telegram",
+    line: "บัญชี Line",
+    viber: "บัญชี Viber",
+    whatsapp: "บัญชี Whatsapp",
     receiverAddress: "ที่อยู่สำหรับรับ",
     loginPassword: "เข้าสู่ระบบรหัสผ่าน",
     contact: "ติดต่อ",
@@ -100,14 +109,14 @@ export const thTH = {
     sports: "กีฬา",
     sportsonly: "กีฬา",
     horserace: "แข่ง",
-    sport: "พลศึกษา",
+    sport: "กีฬา",
     esports: "อีสปอร์ต",
-    live: "คาสิโน",
-    lottery: "ล็อตเตอร",
-    chess: "หมากรุก",
-    slot: "สล็อต",
+    live: "คาสีโน",
+    lottery: "หวย",
+    chess: "365 เกม",
+    slot: " สล็อต",
     electron: "อีสปอร์ต",
-    fish: "ตกปลา",
+    fish: "ยิงปลา",
     shootFish: "ยิงปลา",
     promotion: "โปรโมชั่น",
     download: "ดาวน์โหลด",
@@ -137,14 +146,14 @@ export const thTH = {
     ConfirmPass: "ยืนยันรหัสผ่านใหม่",
     language: "ภาษา",
     startGame: "เข้าร่วมเกม",
-    cs: "บริการลูกค้า",
+    cs: "ติดต่อแอดมิน",
     msgSuccessUpdateProfile: "การปรับเปลี่ยนสำเร็จ",
+    favoriteGame: "ที่ชื่นชอบ",
     joinGame: "เข้าร่วมเกม",
     withdrawalBankType: "หมวดหมู่",
     withdrawalChannel: "ช่อง",
-    withdrawalNumber: "หมายเลขบัตรธนาคาร/ที่อยู่สกุลเงินที่เข้ารหัส",
-    msgEnterWithdrawalNumber:
-      "โปรดป้อนหมายเลขบัตรธนาคาร/ที่อยู่สกุลเงินที่เข้ารหัส",
+    withdrawalNumber: "หมายเลขบัญชีธนาคาร",
+    msgEnterWithdrawalNumber: "โปรดป้อนหมายเลขบัญชีธนาคาร",
     msgEmailExist: "ที่อยู่อีเมลมีอยู่แล้ว",
     msgRequiredTurnover:
       "การหมุนเวียนการเดิมพันของคุณไม่เพียงพอสำหรับการถอนเงิน หากคุณมีคำถามใดๆ โปรดติดต่อฝ่ายบริการลูกค้า",
@@ -152,7 +161,8 @@ export const thTH = {
     msgInvalidWithdrawalPassword: "การถอนรหัสผ่านไม่ถูกต้อง",
     msgRequestFailed: "คำขอล้มเหลว โปรดติดต่อฝ่ายบริการลูกค้า",
     termsAndCondition: "ข้อกำหนดและเงื่อนไข",
-    exit: "ทางออก",
+    exit: "ออกจากระบบ",
+    playeronline: "ผู้ใช้ออนไลน์",
   },
   affiliate: {
     title: "โปรโมชั่นสร้างรายได้",
@@ -172,7 +182,7 @@ export const thTH = {
     copied: "คัดลอก",
   },
   card: {
-    title: "จัดการบัตรธนาคาร",
+    title: "แก้ไขธนาคาร",
     myCard: "บัตรธนาคารของฉัน",
     tail: "เลขท้าย",
     transferRecord: "บันทึกการโอน",
@@ -190,8 +200,8 @@ export const thTH = {
       subTitle: "หมายเลขบัตรธนาคารต้องเป็น 15-19 หลัก",
       msgSelectBank: "กรุณาป้อนธนาคาร",
       msgEnterCard: "กรุณากรอกหมายเลขบัตรธนาคาร",
-      BankName: "ชื่อธนาคาร",
-      msgEnterBankName: "กรุณากรอกชื่อธนาคาร",
+      BankName: "ธนาคาร",
+      msgEnterBankName: "กรุณากรอกธนาคาร",
       BankAccountName: "ชื่อบัญชีธนาคาร",
       msgEnterBankAccountName: "กรุณากรอกชื่อบัญชีธนาคาร",
       cardHolder: "ผู้ถือบัตร",
@@ -210,9 +220,15 @@ export const thTH = {
       callHotline: "หรือโทร 000-000-0000 เพื่อขอความช่วยเหลือ",
       bindBankCard: "ผูกบัตรธนาคารอื่น",
       goWithdrawal: "ไปที่การถอนเงิน",
+      goProfile: "ไปที่การข้อมูลส่วนตัว",
+      noMoreAddCard:
+        "ยินดีด้วยที่คุณได้ทำการผูกบัญชีธนาคารเรียบร้อยแล้ว คุณสามารถเลือกธนาคารถอนได้อย่างรวดเร็วเมื่อคุณถอนออกในภายหลัง",
     },
   },
   deposit: {
+    email: "อีเมล",
+    phone: "โทรศัพท์",
+    fpsId: "รหัส FPS",
     title: "เงินฝาก",
     ppRemark:
       "หมายเหตุ: จะเพิ่มทศนิยมสุ่มสองตำแหน่งลงในยอดรวม (จำเป็นสำหรับวัตถุประสงค์ในการตรวจสอบคำสั่งซื้อ)",
@@ -223,12 +239,12 @@ export const thTH = {
       "ระบบฝากเงินอยู่ระหว่างการบำรุงรักษา กรุณาลองใหม่อีกครั้งในภายหลัง...",
     paymentTunnel: "ช่องทางการชำระเงิน",
     msgEnterCard: "กรุณาใส่บัตรธนาคาร",
-    bankCard: "บัตรธนาคาร",
+    bankCard: "เลือกธนาคาร",
     msgPleaseEnter: "กรุณาป้อน",
     dollor: "",
     depositAmount: "จำนวนเงินฝาก",
     chooseAmount: "กรุณาเลือกจำนวนเงิน",
-    limitDeposit: "ขีดจำกัดเดียว",
+    limitDeposit: "ฝากขั้นต่ำ",
     reminderTitle: "เตือนความจำ:",
     orderNumber: "หมายเลขคำสั่งซื้อ",
     completeDeposit: "ชำระเงินเรียบร้อยแล้ว",
@@ -249,7 +265,7 @@ export const thTH = {
     cancel: "ยกเลิกการชำระเงิน",
     qrCode: "คิวอาร์โค้ด",
     qrDesc: "สแกนบนโทรศัพท์มือถือของคุณเพื่อชำระเงินอย่างง่ายดาย",
-    receiverBank: "รับชื่อธนาคาร",
+    receiverBank: "รับธนาคาร",
     receiverAccount: "การรับบัญชีธนาคาร",
     receiverNumber: "รับหมายเลขบัญชีธนาคาร",
     msgDialog: 'กรุณาคลิก "ยืนยัน" เพื่อดำเนินการฝากเงิน',
@@ -296,7 +312,7 @@ export const thTH = {
   },
   wap: {
     login: {
-      browse: "กลับหน้าแรก",
+      browse: "ย้อนกลับ",
       rememberMe: "จำชื่อผู้ใช้",
       forgetPass: "ลืมรหัสผ่าน?",
     },
@@ -310,18 +326,18 @@ export const thTH = {
       promoteCode: "รหัสเชิญ (ไม่บังคับ)",
     },
     main: {
-      homePage: "โฮมเพจ",
+      homePage: "หน้าหลัก",
       promo: "โปรโมชั่น",
-      cs: "บริการลูกค้า",
-      my: "ของฉัน",
+      cs: "ติดต่อแอดมิน",
+      my: "ข้อมูลของฉัน",
       account: {
-        mainAccount: "ยอดคงเหลือในกระเป๋าเงินกลาง:",
+        mainAccount: "ยอดเงินคงเหลือในกระเป๋าเงินหลัก:",
         totalFund: "ยอดเงินคงเหลือ:",
         accountReport: "รายละเอียดบัญชี",
         betReport: "บันทึกการเดิมพัน",
         transferReport: "บันทึกการโอน",
         personalInfo: "ข้อมูลส่วนบุคคล",
-        manageBank: "จัดการบัตรธนาคาร",
+        manageBank: "แก้ไขธนาคาร",
         inbox: "แจ้งเตือนข้อความ",
         affiliate: "โปรโมชั่นสร้างรายได้",
         question: "คำถามทั่วไป",
@@ -357,10 +373,10 @@ export const thTH = {
         },
       },
       bottomNavigation: {
-        homePage: "โฮมเพจ",
+        homePage: "หน้าหลัก",
         promo: "โปรโมชั่น",
-        customerService: "บริการลูกค้า",
-        profile: "ของฉัน",
+        customerService: "ติดต่อแอดมิน",
+        profile: "ข้อมูลของฉัน",
       },
       menuDrawer: {
         deposit: "ฝาก",
@@ -370,7 +386,7 @@ export const thTH = {
         betReport: "รายละเอียดบัญชี",
         withdrawalReport: "รายงานการฝากเงิน",
         depositReport: "บันทึกการฝากเงิน",
-        bankCard: "จัดการบัตรธนาคาร",
+        bankCard: "แก้ไขธนาคาร",
         inbox: "ศูนย์ข้อความ",
       },
     },
@@ -420,7 +436,7 @@ export const thTH = {
         "รหัสผ่านสำหรับเข้าสู่ระบบของคุณถูกตั้งไว้ โปรดเก็บไว้ให้ปลอดภัย",
     },
     bankCard: {
-      title: "บัตรธนาคาร",
+      title: "เลือกธนาคาร",
       settledBankCard:
         "บัตรธนาคารของคุณได้รับการตั้งค่าแล้ว โปรดเก็บไว้ให้ปลอดภัย",
       limitedWithdraw: "ยอดเงินที่ถอนได้ของคุณคือ:",
@@ -453,6 +469,36 @@ export const thTH = {
       plsEnterWechat: "กรุณาป้อนบัญชี Wechat",
       weChatAccount: "บัญชี WeChat",
       toEdit: "หากต้องการแก้ไข WeChat โปรดติดต่อ",
+    },
+    fb: {
+      msgInvalidFB: "รูปแบบของบัญชี Facebook Messenger ไม่ถูกต้อง",
+      plsEnterFB: "กรุณาป้อนบัญชี Facebook Messenger",
+      fbAccount: "บัญชี Facebook Messenger",
+      toEdit: "หากต้องการแก้ไข Facebook Messenger โปรดติดต่อ",
+    },
+    telegram: {
+      msgInvalidTelegram: "รูปแบบของบัญชี Telegram ไม่ถูกต้อง",
+      plsEnterTelegram: "กรุณาป้อนบัญชี Telegram",
+      telegramAccount: "บัญชี Telegram",
+      toEdit: "หากต้องการแก้ไข Telegram โปรดติดต่อ",
+    },
+    line: {
+      msgInvalidLine: "รูปแบบของบัญชี Line ไม่ถูกต้อง",
+      plsEnterLine: "กรุณาป้อนบัญชี Line",
+      lineAccount: "บัญชี Line",
+      toEdit: "หากต้องการแก้ไข Line โปรดติดต่อ",
+    },
+    viber: {
+      msgInvalidViber: "รูปแบบของบัญชี Viber ไม่ถูกต้อง",
+      plsEnterViber: "กรุณาป้อนบัญชี Viber",
+      viberAccount: "บัญชี Viber",
+      toEdit: "หากต้องการแก้ไข Viber โปรดติดต่อ",
+    },
+    whatsapp: {
+      msgInvalidWhatsapp: "รูปแบบของบัญชี Whatsapp ไม่ถูกต้อง",
+      plsEnterWhatsapp: "กรุณาป้อนบัญชี Whatsapp",
+      whatsappAccount: "บัญชี Whatsapp",
+      toEdit: "หากต้องการแก้ไข Whatsapp โปรดติดต่อ",
     },
     resetResetWithdrawalPassword: {
       title: "แก้ไขรหัสผ่านการถอนเงิน",
@@ -508,7 +554,7 @@ export const thTH = {
     NewOrderNumber: "หมายเลขคำสั่งซื้อ GMS",
     depositChannel: "วิธีการชำระเงิน",
     withdrawal: {
-      bankCard: "บัตรธนาคาร",
+      bankCard: "เลือกธนาคาร",
       status1: "กำลังรอการชำระเงิน",
       status2: "อยู่ระหว่างการอนุมัติ",
       status3: "ผ่าน",
@@ -600,23 +646,26 @@ export const thTH = {
     msgFailedTransfer: "การโอนล้มเหลว",
   },
   withdrawal: {
+    notReachMin: "จำนวนเงินที่ถอนไม่ถึงจำนวนเงินขั้นต่ำ",
+    reachedMax: "จำนวนเงินที่ถอนได้ถึงจำนวนสูงสุด",
     msgMustHundred: "จำนวนเงินต้องลงท้ายด้วยหลักร้อย",
     msgInvalidAmt: "จำนวนการถอนต้องมากกว่า 0",
     msgCanWithdrawal: "ยอดเงินที่ถอนได้คือ: {{amount}}",
-    turnover: "น้ำไหล: ",
+    msgContactCSCardChange: "หากต้องการแก้ไขกรุณาติดต่อฝ่ายบริการลูกค้า",
+    turnover: "เทิร์นโอเวอร์: ",
     msgEnterWithdrawalPass: "กรุณากรอกรหัสผ่านในการถอนเงิน",
     msgInsufficient: "ยอดเงินคงเหลือในกระเป๋าเงินกลางไม่เพียงพอ",
     msgSuccess: "ส่งคำขอถอนเงินของคุณเรียบร้อยแล้ว กรุณารออย่างอดทนเพื่อยืนยัน",
     title: "ถอนเงิน",
-    limitDeposit: "ขีดจำกัดเดียว",
+    limitDeposit: "ฝากขั้นต่ำ",
     canWithdrawal: "ถอนเงินได้",
     checkDetails: "ตรวจสอบรายละเอียด",
-    manageBank: "จัดการบัตรธนาคาร",
-    bankCard: "บัตรธนาคาร",
-    msgEnterBank: "กรุณาเลือกบัตรธนาคาร",
+    manageBank: "แก้ไขธนาคาร",
+    bankCard: "เลือกธนาคาร",
+    msgEnterBank: "กรุณาเลือกบัญชีธนาคาร",
     tail: "เลขท้าย",
     enterAmount: "กรุณากรอกจำนวนเงินที่ถอน",
-    msgWithdrawalAmount: "ขีดจำกัดเดียวที่ 100-450,000",
+    msgWithdrawalAmount: "ฝากขั้นต่ำที่ 100-450,000",
     notice:
       "ชื่อเปิดบัญชีของบัตรธนาคารนี้จะต้องสอดคล้องกับชื่อจริงที่กรอกในหมายเลขบัญชีของคุณ มิฉะนั้น การถอนอาจล้มเหลว",
     receiverAcc: "รับบัญชี",
@@ -645,11 +694,52 @@ export const thTH = {
     home: {
       Section1Chess: "หมากรุก",
       Section1Slot: "เกมสล็อต",
-      Section1Lottery: "เกมลอตเตอรี",
+      Section1Lottery: "ลอตเตอรี่",
       Section1Fishing: "เกมตกปลา",
       Section1Sport: "เกมกีฬา",
+      Section1Esport: "อีสปอร์ต",
       Section1Electron: "เกมอิเล็กตรอน",
       Section1Live: "คาสิโนสด",
+      services: {
+        service1: {
+          title: "เวลาฝากเฉลี่ย",
+          value: "30 วินาที",
+        },
+        service2: {
+          title: "เวลาถอนเฉลี่ย",
+          value: "50 วินาที",
+        },
+        service3: {
+          title: "แพลตฟอร์มการชำระเงินสหกรณ์",
+          value: "60 พันธมิตร",
+        },
+        service4: {
+          title: "แพลตฟอร์มการเล่นเกมแบบร่วมมือ",
+          value: "80 พันธมิตร",
+        },
+      },
+      features: {
+        feature1: {
+          title: "มืออาชีพมากขึ้น",
+          description:
+            "มีกิจกรรมกีฬาและ e-sports ที่น่าตื่นเต้นเกือบพันรายการให้คุณทุกวัน พร้อมวิธีเพลิดเพลินไปกับความบันเทิงที่หลากหลาย เช่น คนจริง หมากรุกและไพ่ ลอตเตอรี และเกมอิเล็กทรอนิกส์ให้เลือก จาก.",
+        },
+        feature2: {
+          title: "ปลอดภัยกว่า",
+          description:
+            "การพัฒนาแบบเอกสิทธิ์เฉพาะบุคคลโดยใช้เทคโนโลยีการเข้ารหัสแบบ 128 บิตและระบบการจัดการความปลอดภัยที่เข้มงวด เงินทุนของลูกค้าคือการป้องกันที่สมบูรณ์ที่สุด ช่วยให้คุณเพลิดเพลินกับความบันเทิง เดิมพันกิจกรรม ไม่ต้องกังวล!",
+        },
+        feature3: {
+          title: "สะดวกขึ้น",
+          description:
+            "แอพเนทีฟบนเว็บ, H5, iOS และ Android ที่พัฒนาขึ้นเอง ช่วยให้คุณเล่นและเดิมพันตามที่คุณต้องการได้ทุกที่ทุกเวลา! ฝ่ายบริการลูกค้าออนไลน์ 7×24 ชั่วโมงให้บริการที่ใกล้ชิดและมีคุณภาพสูงที่สุด",
+        },
+        feature4: {
+          title: "เร็วขึ้น",
+          description:
+            "ระบบประมวลผลทางการเงินที่พัฒนาขึ้นอย่างอิสระโดยเทคโนโลยีล่าสุดสามารถบรรลุการจัดเก็บ การดึงข้อมูล และการถ่ายโอนที่รวดเร็วอย่างแท้จริง เทคโนโลยีการเพิ่มประสิทธิภาพเครือข่ายพิเศษเฉพาะเพื่อให้คุณได้รับประสบการณ์การเล่นเกมระดับเฟิร์สคลาสและเพิ่มเวลาแฝงของเครือข่ายให้สูงสุด",
+        },
+      },
     },
     liveGame: {
       wmDesc:
@@ -816,12 +906,13 @@ export const thTH = {
       btn: "ติดต่อเรา",
     },
   },
-  PrimePay: "PrimePay",
+  PrimePay: "ฝากอัตโนมัติ",
   MaticPay: "MaticPay",
+  ZeroNineNinePay: "099Pay",
   LeePay: "LeePay",
   ApplePay: "ApplePay",
   UmPay: "PlayPay",
-  Manual: "โอน ผ่านบัญชีอื่น",
+  Manual: "ฝากผ่านธนาคาร",
   Crypto: "สกุลเงินเสมือน",
   BankTransfer: "การโอนเงินผ่านธนาคาร",
   ThirdParty: "บุคคลที่สาม",
@@ -881,6 +972,7 @@ export const thTH = {
   },
   IMES: {
     sports: "IM",
+    esports: "IM",
   },
   SABA: {
     sports: "SABA",
@@ -893,6 +985,7 @@ export const thTH = {
   JDB: {
     slots: "JDB",
     fish: "JDB",
+    desc: "การชนะขุมทรัพย์ออนไลน์ไม่ใช่เรื่องน่าเบื่อ มีเกมและสล็อตแมชชีนมากมายที่นี่ หากคุณต้องการสัมผัสประสบการณ์การเล่นเกมมากกว่านี้ คุณต้องมาที่นี่!",
   },
   JILI: {
     slots: "JILI",
@@ -926,6 +1019,9 @@ export const thTH = {
   WM: {
     live: "WM Casino",
   },
+  DG: {
+    live: "DG Casino",
+  },
   TCG_SEA: {
     lottery: "TCG SEA",
   },
@@ -945,14 +1041,22 @@ export const thTH = {
   BC: {
     sports: "BetConstruct",
   },
+  AVIA: {
+    sports: "AVIA Gaming",
+    esports: "AVIA",
+  },
+  TF: {
+    sports: "TF Gaming",
+    esports: "TF",
+  },
   hk28: {
+    withdrawalNumber: "หมายเลขบัตรธนาคาร/ที่อยู่สกุลเงิน Crypto",
+    msgEnterWithdrawalNumber:
+      "โปรดป้อนหมายเลขบัตรธนาคาร/ที่อยู่สกุลเงิน crypto",
     card: {
-      withdrawalNumber: "หมายเลขบัตรธนาคาร/ที่อยู่สกุลเงินที่เข้ารหัส",
-      msgEnterWithdrawalNumber:
-        "โปรดป้อนหมายเลขบัตรธนาคาร/ที่อยู่สกุลเงินที่เข้ารหัส",
       addCard: {
-        BankName: "ชื่อธนาคาร",
-        msgEnterBankName: "กรุณากรอกชื่อธนาคาร",
+        BankName: "ธนาคาร",
+        msgEnterBankName: "กรุณากรอกธนาคาร",
         BankAccountName: "ชื่อบัญชีธนาคาร",
         msgEnterBankAccountName: "กรุณากรอกชื่อบัญชีธนาคาร",
       },
@@ -998,6 +1102,8 @@ export const thTH = {
     },
   },
   piso: {
+    withdrawalNumber: "หมายเลขบัญชีธนาคาร",
+    msgEnterWithdrawalNumber: "โปรดป้อนหมายเลขบัญชีธนาคาร",
     profile: {
       fullName: "ชื่อเต็ม",
       enterFullName: "ป้อนชื่อเต็ม",
@@ -1008,5 +1114,67 @@ export const thTH = {
   usertype: {
     agent: "ตัวแทน",
     player: "ผู้เล่น",
+  },
+  vip: {
+    birthBenefit: "ของขวัญวันเกิด",
+    cardGameRebate: "เกมไพ่",
+    level: "เงื่อนไขโปรโมชั่น",
+    levelKeepAccumulateBetAmount:
+      "จำนวนเงินเดิมพันที่ต้องการในเดือนปัจจุบันเพื่อรักษาการตกชั้น",
+    levelKeepAccumulateDeposit:
+      "การฝากที่จำเป็นสำหรับเดือนปัจจุบันเพื่อรักษาระดับ",
+    levelUpAccumulateBetAmount:
+      "จำนวนเงินเดิมพันที่ต้องการในเดือนปัจจุบันเพื่อล่วงหน้า",
+    levelUpAccumulateDeposit: "การฝากที่จำเป็นสำหรับเดือนโปรโมชั่น",
+    liveDealerRebate: "ความบันเทิงสด",
+    lotteryRebate: "เกมลอตเตอรี",
+    promotionBenefit: "โปรโมชั่นผลประโยชน์",
+    quarterlyBenefit: "ผลประโยชน์รายไตรมาส",
+    slotRebate: "วิดีโอเกม",
+    sportsRebate: "เกมกีฬา",
+    virtualSportsRebate: "เกม Esports",
+    vipBenefit: "ส่วนลดวีไอพี",
+  },
+  custom: {
+    addcard: {
+      name: "ชื่อบัญชี FPS",
+      msgPlsEnterName: "กรุณากรอกชื่อบัญชี FPS",
+      phoneNumber: "หมายเลข FPS",
+      msgEnterPhone: "กรุณากรอกหมายเลข FPS หรือที่อยู่อีเมล",
+    },
+  },
+  depositNotification: {
+    title: "แนวทางการโอนเงิน",
+    content: `โปรดทราบว่าเกี่ยวกับบัญชีการโอนเงิน โปรดทำการโอนเงินตามบัญชีของแพลตฟอร์ม หากการโอนเงินไปที่บัญชีเก่า อาจมีการหน่วงเวลาในคะแนนสูงสุดหรืออาจไม่ตรวจสอบ . บริษัทของเราจะไม่รับผิดชอบต่อปัญหานี้ , กรุณาให้ความสนใจ!`,
+  },
+  depositNotificationGMO: {
+    title: "แนวทางการโอนเงิน",
+    content: `คำแนะนำในการฝากและถอนเงินของลูกค้า เพื่อป้องกันการฟอกเงิน การถอนเงินของลูกค้าจะต้องเหมือนกับบัญชีเติมเงินที่ถูกผูกไว้ หากมีคำถามเกี่ยวกับการถอนเงิน โปรดติดต่อฝ่ายบริการลูกค้าเพื่อสอบถามข้อมูล
+    `,
+  },
+  mgm: {
+    msgPlsEnterAccount: "กรุณากรอกบัญชีธนาคาร/ชื่อ",
+    accountDepositTips: "กรุณากรอกชื่อธนาคารที่โอนเงินให้ถูกต้องเพื่อความสะดวก",
+    nameDepositTips:
+      "กรุณากรอกชื่อบัญชีโอนเงินที่ถูกต้องเพื่ออำนวยความสะดวกในการให้คะแนน",
+  },
+  t3: {
+    profile: "ข้อมูลผู้ใช้",
+    transfer: "โอน",
+    deposit: "เงินฝาก",
+    withdraw: "ถอนเงิน",
+  },
+  verified: {
+    yes: "ยืนยันแล้ว",
+    no: "ไม่ได้รับการยืนยัน",
+    rejected: "ปฏิเสธ",
+    verifying: "กำลังตรวจสอบ",
+    waiting: "รอการยืนยันจากฝ่ายบริการลูกค้า",
+    goVerify: "ตรวจสอบชื่อจริง",
+  },
+  disabledAddCard: {
+    title: "ไม่พบบัตรในบัญชีของคุณ",
+    description:
+      "โปรดติดต่อฝ่ายบริการลูกค้าเพื่อเพิ่มบัตรเพื่อเข้าสู่หน้าการถอนเงิน",
   },
 };

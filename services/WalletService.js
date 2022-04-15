@@ -28,11 +28,13 @@ export const WalletService = {
   GetMinWithdrawLimit,
   PerformManualThirdPartyDeposit,
   PerformManualBankDeposit,
+  PerformManualFPSDeposit,
   PerformHelp2PayDeposit,
   GetHelp2PayDeposit,
   PerformSkyPayDeposit,
   PerformBankDeposit,
   PerformCryptoDeposit,
+  PerformDeposit,
 };
 
 function WithdrawalFromGame(gpcode, amount) {
@@ -97,6 +99,7 @@ function PerformManualThirdPartyDeposit(
 }
 
 function PerformManualBankDeposit(
+  name,
   account,
   amount,
   paymentid,
@@ -104,6 +107,26 @@ function PerformManualBankDeposit(
   banktype
 ) {
   const result = ApiService.put("deposit/manual/bank", {
+    name: name,
+    account: account,
+    amount: amount,
+    paymentid: paymentid,
+    promotionid: promotionid === "" ? null : promotionid,
+    banktype: banktype,
+  });
+  return result;
+}
+
+function PerformManualFPSDeposit(
+  name,
+  account,
+  amount,
+  paymentid,
+  promotionid = "",
+  banktype
+) {
+  const result = ApiService.put("deposit/manual/fps", {
+    name: name,
     account: account,
     amount: amount,
     paymentid: paymentid,
@@ -307,6 +330,28 @@ function PerformCryptoDeposit(
     promotionid: promotionid === "" ? null : promotionid,
   };
   if (paymentcode.toUpperCase() === "LEEPAY") {
+    const result = ApiService.put(url, params);
+    return result;
+  } else {
+    const result = ApiService.post(url, params);
+    return result;
+  }
+}
+
+function PerformDeposit(
+  amount,
+  paymentid,
+  promotionid = "",
+  paymentcode,
+  type
+) {
+  var url = `deposit/${type}/${paymentcode.toLowerCase()}`;
+  var params = {
+    amount: amount,
+    paymentid: paymentid,
+    promotionid: promotionid === "" ? null : promotionid,
+  };
+  if (paymentcode.toUpperCase() === "LEEPAY" && type === "crypto") {
     const result = ApiService.put(url, params);
     return result;
   } else {

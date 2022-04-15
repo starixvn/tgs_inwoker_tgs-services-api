@@ -55,6 +55,11 @@ const initialState = {
     member_question: "",
     member_qq: "",
     member_wechat: "",
+    member_fb: "",
+    member_telegram: "",
+    member_line: "",
+    member_viber: "",
+    member_whatsapp: "",
     can_withdrawal: "",
     bonus_num: "",
     message_num: 0,
@@ -160,7 +165,14 @@ function mapToAccountState(state, data) {
     member_safe_password: data.issetpaypassword === true ? "set" : "",
     member_qq: data.qq,
     member_wechat: data.wechat,
+    member_fb: data.facebookmessenger,
+    member_telegram: data.telegram,
+    member_line: data.line,
+    member_viber: data.viber,
+    member_whatsapp: data.whatsapp,
     playercode: data.playercode,
+    identityformstatus: data.identityformstatus,
+    identityformid: data.identityformid ? data.identityformid : "",
   };
 }
 export function accountReducer(state = initialState, action) {
@@ -320,8 +332,9 @@ export function accountReducer(state = initialState, action) {
         updateCardResult: action.payload,
         info: {
           ...state.info,
-          check_pass_account: true,
           member_name: action.payload.member_name,
+          identityformstatus: 0,
+          identityformid: "confirm not empty",
         },
       };
     case UPDATECARDNO_FAILURE:
