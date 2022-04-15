@@ -118,7 +118,6 @@ function PerformManualBankDeposit(
 }
 
 function PerformManualFPSDeposit(
-  name,
   account,
   amount,
   paymentid,
@@ -126,7 +125,6 @@ function PerformManualFPSDeposit(
   banktype
 ) {
   const result = ApiService.put("deposit/manual/fps", {
-    name: name,
     account: account,
     amount: amount,
     paymentid: paymentid,

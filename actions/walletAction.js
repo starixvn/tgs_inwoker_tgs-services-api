@@ -230,14 +230,13 @@ function doBankDeposit(
   };
 }
 
-function doFPSDeposit(name, account, amount, paymentid, promotionid, banktype) {
+function doFPSDeposit(account, amount, paymentid, promotionid, banktype) {
   return (dispatch) => {
     dispatch({
       type: DOMANUALDEPOSIT_BEGIN,
       loading: true,
     });
     const result = WalletService.PerformManualFPSDeposit(
-      name,
       account,
       amount,
       paymentid,
