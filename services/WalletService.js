@@ -29,6 +29,7 @@ export const WalletService = {
   PerformManualThirdPartyDeposit,
   PerformManualBankDeposit,
   PerformManualFPSDeposit,
+  PerformManualFPSDepositWithName,
   PerformHelp2PayDeposit,
   GetHelp2PayDeposit,
   PerformSkyPayDeposit,
@@ -118,6 +119,23 @@ function PerformManualBankDeposit(
 }
 
 function PerformManualFPSDeposit(
+  account,
+  amount,
+  paymentid,
+  promotionid = "",
+  banktype
+) {
+  const result = ApiService.put("deposit/manual/fps", {
+    account: account,
+    amount: amount,
+    paymentid: paymentid,
+    promotionid: promotionid === "" ? null : promotionid,
+    banktype: banktype,
+  });
+  return result;
+}
+
+function PerformManualFPSDepositWithName(
   name,
   account,
   amount,
