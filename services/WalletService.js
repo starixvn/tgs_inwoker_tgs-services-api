@@ -149,6 +149,7 @@ function PerformManualFPSDepositWithName(
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
     banktype: banktype,
+    name: name
   });
   return result;
 }
