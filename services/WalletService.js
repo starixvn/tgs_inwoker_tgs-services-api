@@ -144,13 +144,12 @@ function PerformManualFPSDepositWithName(
   banktype
 ) {
   const result = ApiService.put("deposit/manual/fps", {
-    name: name,
-    account: account,
+    account: name,
     amount: amount,
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
     banktype: banktype,
-    name: name
+    name: account
   });
   return result;
 }
