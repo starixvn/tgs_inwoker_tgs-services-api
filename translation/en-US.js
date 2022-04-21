@@ -1147,20 +1147,20 @@ export const enUS = {
     player: "Player",
   },
   vip: {
-    birthBenefit: "Birthday Gift",
+    birthBenefit: "Birthday Bonus",
     cardGameRebate: "Card Game",
     level: "Promotion Conditions",
     levelKeepAccumulateBetAmount:
-      "The required bet amount in the current month to keep the relegation",
+      "Required Quarterly bet amount to maintain level",
     levelKeepAccumulateDeposit:
-      "Deposit required for the current month to maintain the level",
+      "Required Quarterly deposit amount to maintain level",
     levelUpAccumulateBetAmount:
-      "The required bet amount in the current month to advance",
-    levelUpAccumulateDeposit: "Deposit required for the promotion month",
+      "Required bet amount to up level",
+    levelUpAccumulateDeposit: "Required deposit amount to up level",
     liveDealerRebate: "Live Casino",
     lotteryRebate: "Lottery Game",
-    promotionBenefit: "Promotion Benefit",
-    quarterlyBenefit: "Quarterly Benefit",
+    promotionBenefit: "Promotion Bonus",
+    quarterlyBenefit: "Quarterly Bonus",
     slotRebate: "Slots Games",
     sportsRebate: "sports games",
     virtualSportsRebate: "Esports Games",
