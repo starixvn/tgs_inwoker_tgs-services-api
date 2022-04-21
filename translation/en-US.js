@@ -958,6 +958,8 @@ export const enUS = {
     fish: "KY",
   },
   sports: {
+    bunnydesc:
+      "atebunny provide innovative, variety of bet type and competitive odds for live matches.  Easy betting with quick, and secure way through any kind of devices anywhere, anytime!  In addition, we support all kinds of sport events, including soccer, basketball, baseball, tennis, football, and E-sports to fulfill your needs!",
     desc:
       "Pega Gaming provide innovative, variety of bet type and competitive odds for live matches.  Easy betting with quick, and secure way through any kind of devices anywhere, anytime!  In addition, we support all kinds of sport events, including soccer, basketball, baseball, tennis, football, and E-sports to fulfill your needs!",
   },
@@ -1188,7 +1190,7 @@ export const enUS = {
   },
   depositNotificationGMO: {
     title: "Bank Transferring Notification",
-    content: `<div style="margin-bottom: 10px; text-align: center;">Important !</div> <div style="margin-bottom: 10px;">Please ensure your withdrawal bank account is the SAME as your deposit account to prevent money laundering.</div><div style="margin-bottom: 10px;">Contact CS if you have any withdrawal questions, thanks you.</div>`,
+    content: `<div style="margin-bottom: 10px; text-align: center;">Important !</div> <div style="margin-bottom: 10px;">Please ensure your withdrawal bank account is the SAME as your deposit account to prevent money laundering.</div><div style="margin-bottom: 10px;">There are 3 times withdrawal limitation within 1 day for general members.</div><div style="margin-bottom: 10px;">Contact CS if you have any withdrawal questions, thanks you.</div>`,
   },
   mgm: {
     msgPlsEnterAccount: "Please fill in bank account/name",

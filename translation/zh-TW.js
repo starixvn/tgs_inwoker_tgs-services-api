@@ -1151,7 +1151,7 @@ export const zhTW = {
   },
   depositNotificationGMO: {
     title: "匯款指引",
-    content: `客戶存取款須知\n為防止洗黑錢\n客戶取款必須跟綁定充值帳戶相同\n有關於取款問題可向客服查詢`,
+    content: `客戶存取款須知\n為防止洗黑錢\n一般客戶每日出款次數為三次\n客戶取款必須跟綁定充值帳戶相同\n有關於取款問題可向客服查詢`,
   },
   mgm: {
     msgPlsEnterAccount: "請输入銀行帳戶/姓名",
