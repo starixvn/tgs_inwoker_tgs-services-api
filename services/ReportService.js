@@ -7,12 +7,18 @@ export const ReportService = {
   GetDepositStatus,
   GetWithdrawalStatus,
   GetTransferReport,
+  GetRoundsTotal,
 };
 
 function GetTransactionDetails(from, to, page, rows, desc, sort, all) {
   const result = ApiService.get(
     `playerreport/rounds?From=${from}&To=${to}&page=${page}&rows=${rows}&desc=${desc}&sort=${sort}&all=${all}`
   );
+  return result;
+}
+
+function GetRoundsTotal() {
+  const result = ApiService.get(`playerreport/rounds/total`);
   return result;
 }
 
