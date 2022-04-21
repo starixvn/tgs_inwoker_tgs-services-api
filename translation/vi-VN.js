@@ -1146,6 +1146,14 @@ export const vivN = {
     sportsRebate: "trò chơi thể thao",
     virtualSportsRebate: "Trò chơi thể thao điện tử",
     vipBenefit: "Giảm giá VIP",
+    bunny: {
+      level1: "Đồng",
+      level2: "Bạc",
+      level3: "Vàng",
+      level4: "Ruby",
+      level5: "Bạch kim",
+      level6: "Kim cương",
+    }
   },
   custom: {
     addcard: {

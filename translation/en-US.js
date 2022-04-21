@@ -1165,6 +1165,14 @@ export const enUS = {
     sportsRebate: "sports games",
     virtualSportsRebate: "Esports Games",
     vipBenefit: "VIP rebate",
+    bunny: {
+      level1: "Bronze",
+      level2: "Silver",
+      level3: "Gold",
+      level4: "Ruby",
+      level5: "Platinum",
+      level6: "Diamond",
+    }
   },
   custom: {
     addcard: {

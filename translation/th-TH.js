@@ -1140,6 +1140,14 @@ export const thTH = {
     sportsRebate: "เกมกีฬา",
     virtualSportsRebate: "เกม Esports",
     vipBenefit: "ส่วนลดวีไอพี",
+    bunny: {
+      level1: "บรอนซ์",
+      level2: "เงิน",
+      level3: "ทอง",
+      level4: "ทับทิม",
+      level5: "แพลตตินั่ม",
+      level6: "เพชร",
+    }
   },
   custom: {
     addcard: {

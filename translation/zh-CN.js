@@ -1134,6 +1134,14 @@ export const zhCN = {
     sportsRebate: "体育游戏",
     virtualSportsRebate: "电竞游戏",
     vipBenefit: "VIP返水",
+    bunny: {
+      level1: "青铜",
+      level2: "白银",
+      level3: "黄金",
+      level4: "红宝石",
+      level5: "白金",
+      level6: "钻石",
+    }
   },
   custom: {
     addcard: {

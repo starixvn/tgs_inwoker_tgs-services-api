@@ -1128,6 +1128,14 @@ export const zhTW = {
     sportsRebate: "體育遊戲",
     virtualSportsRebate: "電競遊戲",
     vipBenefit: "VIP返水",
+    bunny: {
+      level1: "青銅",
+      level2: "白銀",
+      level3: "黃金",
+      level4: "紅寶石",
+      level5: "白金",
+      level6: "鑽石",
+    }
   },
   custom: {
     addcard: {
