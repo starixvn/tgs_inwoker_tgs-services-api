@@ -964,6 +964,8 @@ export const enUS = {
       "Pega Gaming provide innovative, variety of bet type and competitive odds for live matches.  Easy betting with quick, and secure way through any kind of devices anywhere, anytime!  In addition, we support all kinds of sport events, including soccer, basketball, baseball, tennis, football, and E-sports to fulfill your needs!",
   },
   esports: {
+    bunnydesc:
+      "IM E-Sports is an industry-leading betting platform designed by gamers for gamers. Ready to be stunned by the aesthetically pleasing visual interface, endless betting options, and the ultimate betting experience.Visit atebunny, a proud partner of IM E-Sports, and stay up to date on your favorite games and teams!",
     desc:
       "IM E-Sports is an industry-leading betting platform designed by gamers for gamers. Ready to be stunned by the aesthetically pleasing visual interface, endless betting options, and the ultimate betting experience.Visit 【PG】 Gaming, a proud partner of IM E-Sports, and stay up to date on your favorite games and teams!",
   },
