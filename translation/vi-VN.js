@@ -941,10 +941,14 @@ export const vivN = {
     fish: "KY",
   },
   sports: {
+    bunnydesc:
+      "atebunny cung cấp nhiều loại cược mới và tỷ lệ cược cạnh tranh cho các trận đấu trực tiếp. bóng đá, bóng rổ, bóng chày, quần vợt, bóng đá và Thể thao điện tử để đáp ứng nhu cầu của bạn! ",
     desc:
       "Pega Gaming cung cấp nhiều loại cược mới và tỷ lệ cược cạnh tranh cho các trận đấu trực tiếp. bóng đá, bóng rổ, bóng chày, quần vợt, bóng đá và Thể thao điện tử để đáp ứng nhu cầu của bạn! ",
   },
   esports: {
+    bunnydesc:
+      "IM E-Sports là một nền tảng cá cược hàng đầu trong ngành được thiết kế bởi các game thủ dành cho người chơi. đối tác tự hào của IM E-Sports và luôn cập nhật về các trò chơi và đội yêu thích của bạn! ",
     desc:
       "IM E-Sports là một nền tảng cá cược hàng đầu trong ngành được thiết kế bởi các game thủ dành cho người chơi. đối tác tự hào của IM E-Sports và luôn cập nhật về các trò chơi và đội yêu thích của bạn! ",
   },
@@ -1153,7 +1157,7 @@ export const vivN = {
       level4: "Ruby",
       level5: "Bạch kim",
       level6: "Kim cương",
-    }
+    },
   },
   custom: {
     addcard: {

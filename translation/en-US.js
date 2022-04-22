@@ -967,7 +967,7 @@ export const enUS = {
     bunnydesc:
       "IM E-Sports is an industry-leading betting platform designed by gamers for gamers. Ready to be stunned by the aesthetically pleasing visual interface, endless betting options, and the ultimate betting experience.Visit atebunny, a proud partner of IM E-Sports, and stay up to date on your favorite games and teams!",
     desc:
-      "IM E-Sports is an industry-leading betting platform designed by gamers for gamers. Ready to be stunned by the aesthetically pleasing visual interface, endless betting options, and the ultimate betting experience.Visit 【PG】 Gaming, a proud partner of IM E-Sports, and stay up to date on your favorite games and teams!",
+      "IM E-Sports is an industry-leading betting platform designed by gamers for gamers. Ready to be stunned by the aesthetically pleasing visual interface, endless betting options, and the ultimate betting experience.Visit atebunny Gaming, a proud partner of IM E-Sports, and stay up to date on your favorite games and teams!",
   },
   services: {
     depositTitle: "Easy, Rapid Payouts",
@@ -1158,8 +1158,7 @@ export const enUS = {
       "Required Quarterly bet amount to maintain level",
     levelKeepAccumulateDeposit:
       "Required Quarterly deposit amount to maintain level",
-    levelUpAccumulateBetAmount:
-      "Required bet amount to up level",
+    levelUpAccumulateBetAmount: "Required bet amount to up level",
     levelUpAccumulateDeposit: "Required deposit amount to up level",
     liveDealerRebate: "Live Casino",
     lotteryRebate: "Lottery Game",
@@ -1176,7 +1175,7 @@ export const enUS = {
       level4: "Ruby",
       level5: "Platinum",
       level6: "Diamond",
-    }
+    },
   },
   custom: {
     addcard: {
