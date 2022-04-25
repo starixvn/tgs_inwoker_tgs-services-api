@@ -525,6 +525,7 @@ export const zhCN = {
   },
   report: {
     title: "报表",
+    total: "总计",
     transferDetails: "转换记录",
     withdrawalDetails: "提现记录",
     depositDetails: "充值记录",

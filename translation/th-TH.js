@@ -531,6 +531,7 @@ export const thTH = {
   },
   report: {
     title: "รายงาน",
+    total: "ทั้งหมด",
     transferDetails: "บันทึกการโอน",
     withdrawalDetails: "รายงานการถอนเงิน",
     depositDetails: "รายงานการฝากเงิน",

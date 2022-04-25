@@ -518,6 +518,7 @@ export const zhTW = {
   },
   report: {
     title: "報表",
+    total: "總計",
     transferDetails: "轉換記錄",
     withdrawalDetails: "提現記錄",
     depositDetails: "充值記錄",

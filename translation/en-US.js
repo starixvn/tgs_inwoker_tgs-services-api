@@ -548,6 +548,7 @@ export const enUS = {
   },
   report: {
     title: "Report",
+    total: "Total",
     transferDetails: "Transfer",
     withdrawalDetails: "Withdrawal",
     depositDetails: "Deposit",

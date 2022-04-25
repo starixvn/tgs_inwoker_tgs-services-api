@@ -539,6 +539,7 @@ export const vivN = {
   },
   report: {
     title: "Báo cáo",
+    total: "toàn bộ",
     transferDetails: "Chuyển",
     withdrawalDetails: "Rút tiền",
     depositDetails: "Gửi tiền",
