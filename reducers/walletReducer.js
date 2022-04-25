@@ -264,12 +264,6 @@ function mapWithdrawalList(data) {
   var withdrawalMaxLimit = 0;
   var withdrawalMinLimit = 999999999;
   for (var i = 0; i < data.length; i++) {
-    if (data[i].transferlimit.from < withdrawalMinLimit) {
-      withdrawalMinLimit = data[i].transferlimit.from;
-    }
-    if (data[i].transferlimit.to > withdrawalMaxLimit) {
-      withdrawalMaxLimit = data[i].transferlimit.to;
-    }
     if (checkDuplicate.indexOf(data[i].banktype) < 0) {
       checkDuplicate.push(data[i].banktype);
       withdrawalList.push({
@@ -279,6 +273,7 @@ function mapWithdrawalList(data) {
             channelid: data[i].channelid,
             channelname: data[i].channelname,
             channelcode: data[i].channelcode,
+            transferlimit: data[i].transferlimit,
           },
         ],
       });
@@ -289,6 +284,7 @@ function mapWithdrawalList(data) {
           channelid: data[i].channelid,
           channelname: data[i].channelname,
           channelcode: data[i].channelcode,
+          transferlimit: data[i].transferlimit,
         });
     }
   }
