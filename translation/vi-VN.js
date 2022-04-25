@@ -605,6 +605,9 @@ export const vivN = {
     turnover: "Doanh thu",
     winloss: "Thắng thua",
     ratio: "Tỷ lệ",
+    totalBetAmount: "Tổng số tiền đặt cược",
+    totalWinLose: "Tổng số tiền thắng thua",
+    totalValidBet: "tổng số tiền đặt cược hợp lệ",
   },
   share: {
     bottomNote: {

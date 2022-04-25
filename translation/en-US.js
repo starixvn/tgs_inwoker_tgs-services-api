@@ -614,6 +614,9 @@ export const enUS = {
     turnover: "Turnover",
     winloss: "Win Loss",
     ratio: "Ratio",
+    totalBetAmount: "Total Bet Amount",
+    totalWinLose: "Total Win Loss",
+    totalValidBet: "Total Valid Bet",
   },
   share: {
     bottomNote: {

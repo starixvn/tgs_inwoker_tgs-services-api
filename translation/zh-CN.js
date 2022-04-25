@@ -592,6 +592,9 @@ export const zhCN = {
     turnover: "流水",
     winloss: "输赢",
     ratio: "赔率",
+    totalBetAmount: "总投注",
+    totalWinLose: "总输赢",
+    totalValidBet: "总有效投注",
   },
   share: {
     bottomNote: {

@@ -585,6 +585,9 @@ export const zhTW = {
     turnover: "流水",
     winloss: "輸贏",
     ratio: "賠率",
+    totalBetAmount: "總投注",
+    totalWinLose: "縂輸贏",
+    totalValidBet: "總有效投注",
   },
   share: {
     bottomNote: {

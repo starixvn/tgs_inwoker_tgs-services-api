@@ -597,6 +597,9 @@ export const thTH = {
     turnover: "น้ำไหล",
     winloss: "ชนะหรือแพ้",
     ratio: "อัตราต่อรอง",
+    totalBetAmount: "จำนวนเงินเดิมพันทั้งหมด",
+    totalWinLose: "การสูญเสียการชนะทั้งหมด",
+    totalValidBet: "เดิมพันที่ถูกต้องทั้งหมด",
   },
   share: {
     bottomNote: {
