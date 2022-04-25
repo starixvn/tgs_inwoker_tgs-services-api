@@ -36,6 +36,7 @@ export const WalletService = {
   PerformBankDeposit,
   PerformCryptoDeposit,
   PerformDeposit,
+  PerformUsdtDeposit,
 };
 
 function WithdrawalFromGame(gpcode, amount) {
@@ -99,6 +100,16 @@ function PerformManualThirdPartyDeposit(
   return result;
 }
 
+function PerformUsdtDeposit(amount, paymentid, promotionid, banktype) {
+  const result = ApiService.put("deposit/manual/usdt", {
+    amount: amount,
+    paymentid: paymentid,
+    promotionid: promotionid === "" ? null : promotionid,
+    banktype: banktype,
+  });
+  return result;
+}
+
 function PerformManualBankDeposit(
   name,
   account,
@@ -149,7 +160,7 @@ function PerformManualFPSDepositWithName(
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
     banktype: banktype,
-    name: account
+    name: account,
   });
   return result;
 }

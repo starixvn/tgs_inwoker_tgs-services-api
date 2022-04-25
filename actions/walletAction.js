@@ -114,6 +114,7 @@ export const walletAction = {
   doBankDeposit2,
   doCryptoDeposit,
   performDeposit,
+  doUsdtDeposit,
 };
 function getWalletBalance() {
   return (dispatch) => {
@@ -271,7 +272,14 @@ function doFPSDeposit(account, amount, paymentid, promotionid, banktype) {
   };
 }
 
-function doFPSDepositWithName(name, account, amount, paymentid, promotionid, banktype) {
+function doFPSDepositWithName(
+  name,
+  account,
+  amount,
+  paymentid,
+  promotionid,
+  banktype
+) {
   return (dispatch) => {
     dispatch({
       type: DOMANUALDEPOSIT_BEGIN,
@@ -343,6 +351,45 @@ function doThirdPartyDeposit(amount, paymentid, promotionid, banktype) {
       .catch((error) => {
         dispatch({
           type: DOTHIRDPARTYDEPOSIT_FAIL,
+          payload: error,
+          loading: false,
+        });
+      });
+    return result;
+  };
+}
+
+function doUsdtDeposit(amount, paymentid, promotionid, banktype) {
+  return (dispatch) => {
+    dispatch({
+      type: DODEPOSIT_BEGIN,
+      loading: true,
+    });
+    const result = WalletService.PerformUsdtDeposit(
+      amount,
+      paymentid,
+      promotionid,
+      banktype
+    )
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: DODEPOSIT_SUCCESS,
+            payload: response,
+            loading: true,
+          });
+        } else {
+          dispatch({
+            type: DODEPOSIT_FAILED,
+            payload: response,
+            loading: false,
+          });
+        }
+        return response;
+      })
+      .catch((error) => {
+        dispatch({
+          type: DODEPOSIT_FAILED,
           payload: error,
           loading: false,
         });
