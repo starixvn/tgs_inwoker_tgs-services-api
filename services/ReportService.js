@@ -17,8 +17,10 @@ function GetTransactionDetails(from, to, page, rows, desc, sort, all) {
   return result;
 }
 
-function GetRoundsTotal() {
-  const result = ApiService.get(`playerreport/rounds/total`);
+function GetRoundsTotal(from, to) {
+  const result = ApiService.get(
+    `playerreport/rounds/total?From=${from}&To=${to}`
+  );
   return result;
 }
 
