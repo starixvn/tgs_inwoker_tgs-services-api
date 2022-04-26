@@ -115,6 +115,7 @@ export const walletAction = {
   doCryptoDeposit,
   performDeposit,
   doUsdtDeposit,
+  performWithdrawFromEveryBrand,
 };
 function getWalletBalance() {
   return (dispatch) => {
@@ -1091,6 +1092,42 @@ function doWithdrawalFromGame(gpcode, amount) {
     return result;
   };
 }
+
+function performWithdrawFromEveryBrand() {
+  return (dispatch) => {
+    dispatch({
+      type: DOTRANSFER_BEGIN,
+      loading: true,
+    });
+    const result = WalletService.WithdrawEverything()
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: DOTRANSFER_SUCCESS,
+            payload: response,
+            loading: false,
+          });
+        } else {
+          dispatch({
+            type: DOTRANSFER_FAIL,
+            payload: response,
+            loading: false,
+          });
+        }
+        return response;
+      })
+      .catch((e) => {
+        dispatch({
+          type: DOTRANSFER_FAIL,
+          payload: e.status,
+          loading: false,
+        });
+      });
+
+    return result;
+  };
+}
+
 function getGameBalance(gpcode) {
   return (dispatch) => {
     dispatch({

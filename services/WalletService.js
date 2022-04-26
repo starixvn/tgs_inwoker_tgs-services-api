@@ -37,6 +37,7 @@ export const WalletService = {
   PerformCryptoDeposit,
   PerformDeposit,
   PerformUsdtDeposit,
+  WithdrawEverything,
 };
 
 function WithdrawalFromGame(gpcode, amount) {
@@ -44,6 +45,11 @@ function WithdrawalFromGame(gpcode, amount) {
     amount: Math.floor(amount),
     gpcode: gpcode,
   });
+  return result;
+}
+
+function WithdrawEverything() {
+  const result = ApiService.post("game/balance/fund/in", {});
   return result;
 }
 
