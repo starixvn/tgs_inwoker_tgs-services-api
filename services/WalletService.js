@@ -49,7 +49,7 @@ function WithdrawalFromGame(gpcode, amount) {
 }
 
 function WithdrawEverything() {
-  const result = ApiService.post("game/balance/fund/in", {});
+  const result = ApiService.post("game/balance/fund/in");
   return result;
 }
 
