@@ -233,6 +233,7 @@ export const vivN = {
     },
   },
   deposit: {
+    address: "Địa chỉ",
     email: "Email",
     phone: "Điện thoại",
     fpsId: "ID FPS",

@@ -226,6 +226,7 @@ export const thTH = {
     },
   },
   deposit: {
+    address: "ที่อยู่",
     email: "อีเมล",
     phone: "โทรศัพท์",
     fpsId: "รหัส FPS",

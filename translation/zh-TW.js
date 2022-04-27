@@ -223,6 +223,7 @@ export const zhTW = {
     },
   },
   deposit: {
+    address: "地址",
     email: "電子郵件",
     phone: "電話號碼",
     fpsId: "ID FPS",

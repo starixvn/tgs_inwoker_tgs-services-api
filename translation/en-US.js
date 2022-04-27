@@ -236,6 +236,7 @@ export const enUS = {
     },
   },
   deposit: {
+    address: "Address",
     email: "Email",
     phone: "Phone",
     fpsId: "FPS ID",

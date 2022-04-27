@@ -223,6 +223,7 @@ export const zhCN = {
     },
   },
   deposit: {
+    address: "地址",
     email: "电子邮件",
     phone: "电话号码",
     fpsId: "ID FPS",
