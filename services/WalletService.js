@@ -101,7 +101,7 @@ function PerformManualThirdPartyDeposit(
     amount: amount,
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
-    banktype: banktype,
+    banktype: banktype || "thirdparty",
   });
   return result;
 }
@@ -111,7 +111,7 @@ function PerformUsdtDeposit(amount, paymentid, promotionid, banktype) {
     amount: amount,
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
-    banktype: banktype,
+    banktype: banktype || "usdt",
   });
   return result;
 }
@@ -130,7 +130,7 @@ function PerformManualBankDeposit(
     amount: amount,
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
-    banktype: banktype,
+    banktype: banktype || "bank",
   });
   return result;
 }
@@ -147,7 +147,7 @@ function PerformManualFPSDeposit(
     amount: amount,
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
-    banktype: banktype,
+    banktype: banktype || "fps",
   });
   return result;
 }
@@ -165,7 +165,7 @@ function PerformManualFPSDepositWithName(
     amount: amount,
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
-    banktype: banktype,
+    banktype: banktype || "fps",
     name: account,
   });
   return result;
@@ -385,6 +385,7 @@ function PerformDeposit(
     amount: amount,
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
+    banktype: type,
   };
   if (paymentcode.toUpperCase() === "LEEPAY" && type === "crypto") {
     const result = ApiService.put(url, params);
