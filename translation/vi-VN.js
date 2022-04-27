@@ -1013,6 +1013,10 @@ export const vivN = {
     slots: "JILI",
     fish: "JILI",
   },
+  JOKER: {
+    slots: "JOKER",
+    fish: "JOKER",
+  },
   PP: {
     slots: "Chơi thực dụng",
     electron: "Chơi thực dụng",

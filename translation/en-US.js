@@ -1030,6 +1030,10 @@ export const enUS = {
     slots: "JILI",
     fish: "JILI",
   },
+  JOKER: {
+    slots: "JOKER",
+    fish: "JOKER",
+  },
   PP: {
     slots: "Pragmatic Play",
     electron: "Pragmatic Play",

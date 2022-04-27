@@ -1004,6 +1004,10 @@ export const zhCN = {
     slots: "JILI老虎机",
     fish: "JILI捕鱼",
   },
+  JOKER: {
+    slots: "JOKER老虎机",
+    fish: "JOKER捕鱼",
+  },
   PP: {
     slots: "PP老虎机",
     electron: "PP电子",
