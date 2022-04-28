@@ -39,7 +39,7 @@ export const enUS = {
   },
 
   common: {
-    pleaseEnterAccountName: "Plase enter your real name",
+    pleaseEnterAccountName: "Please enter your real name",
     noReachMin: "The mobile number is set to 8 to 10 digits",
     upload: "Upload document",
     title: "{brand} | The Biggest & Most Trusted Online Casino",
