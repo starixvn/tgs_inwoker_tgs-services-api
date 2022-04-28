@@ -400,6 +400,11 @@ export const vivN = {
     },
   },
   profile: {
+    birthdate: {
+      title: "Ngày sinh",
+      toEdit: "Nếu bạn cần chỉnh sửa ngày sinh, vui lòng nhấp vào",
+      here: "Đây",
+    },
     setted: "Đã định cấu hình",
     setNow: "Định cấu hình ngay bây giờ",
     edit: "Cập nhật",

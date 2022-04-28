@@ -393,6 +393,11 @@ export const thTH = {
     },
   },
   profile: {
+    birthdate: {
+      title: "วันเกิด",
+      toEdit: "หากคุณต้องการแก้ไขวันเกิด โปรดคลิก",
+      here: "ที่นี่",
+    },
     setted: "ตั้งค่าเรียบร้อยแล้ว",
     setNow: "ตั้งค่าเลย",
     edit: "แก้ไข",

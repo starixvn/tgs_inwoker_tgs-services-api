@@ -32,6 +32,7 @@ export const AccountService = {
   GetPromoteBill,
   UpdateMemberName,
   UploadIC,
+  SetBirthDate,
 };
 
 function CheckUserName(username) {
@@ -92,6 +93,14 @@ function Logout() {
 
 function GetMemberInfo() {
   const result = ApiService.get("Player/info");
+  return result;
+}
+
+function SetBirthDate(yyyymmdd) {
+  const result = ApiService.patch("player/birthdate", {
+    birthdate: yyyymmdd,
+  });
+
   return result;
 }
 

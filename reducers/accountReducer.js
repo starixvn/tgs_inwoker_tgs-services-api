@@ -160,6 +160,7 @@ function mapToAccountState(state, data) {
     check_pass_phone: data.phone === null ? false : true,
     check_pass_email: data.email === null ? false : true,
     check_pass_account: data.identityauthentication === false ? false : true,
+    member_birthdate: data.birthdate,
     member_phone: data.phone,
     member_email: data.email,
     member_safe_password: data.issetpaypassword === true ? "set" : "",

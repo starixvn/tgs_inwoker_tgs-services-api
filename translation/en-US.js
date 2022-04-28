@@ -406,6 +406,11 @@ export const enUS = {
   },
 
   profile: {
+    birthdate: {
+      title: "Birth Date",
+      toEdit: "If Required To Edit Birth Date, Please Click ",
+      here: "Here",
+    },
     setted: "Configuration Completed",
     setNow: "Configure now",
     edit: "Edit",

@@ -387,6 +387,11 @@ export const zhCN = {
   },
 
   profile: {
+    birthdate: {
+      title: "出生日期",
+      toEdit: "如果需要编辑出生日期，请点击",
+      here: "这里",
+    },
     setted: "已设置",
     setNow: "立即设置",
     edit: "修改",

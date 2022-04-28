@@ -387,6 +387,11 @@ export const zhTW = {
   },
 
   profile: {
+    birthdate: {
+      title: "出生日期",
+      toEdit: "如果需要编辑出生日期，请点击",
+      here: "这里",
+    },
     setted: "已設置",
     setNow: "立即設置",
     edit: "修改",
