@@ -638,7 +638,7 @@ export const zhCN = {
     totalFund: "玩家总资金",
     mainAccount: "中心钱包",
     oneKeyReceive: "一键回收",
-    oneKeyTransfer: "一键转入",
+    oneKeyTransfer: "一键转出",
     maintenance: "维护中",
     transferFrom: "请选择转出钱包",
     transferFromWallet: "转出钱包",

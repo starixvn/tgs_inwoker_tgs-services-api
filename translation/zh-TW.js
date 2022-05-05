@@ -631,7 +631,7 @@ export const zhTW = {
     totalFund: "玩家總資金",
     mainAccount: "中心錢包",
     oneKeyReceive: "一鍵回收",
-    oneKeyTransfer: "一鍵轉入",
+    oneKeyTransfer: "一鍵轉出",
     maintenance: "維護中",
     transferFrom: "請選擇轉出錢包",
     transferFromWallet: "轉出錢包",
