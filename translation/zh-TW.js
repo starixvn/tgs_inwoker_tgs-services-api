@@ -1197,4 +1197,8 @@ export const zhTW = {
   hint: {
     _099: "在 (9:00-23:30) 可用",
   },
+
+  idr1: {
+    pleaseEnterAccountName: "請输入銀行名稱",
+  },
 };

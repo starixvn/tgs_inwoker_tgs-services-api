@@ -1204,4 +1204,7 @@ export const zhCN = {
   hint: {
     _099: "在 (9:00-23:30) 可用",
   },
+  idr1: {
+    pleaseEnterAccountName: "请输入银行名称",
+  },
 };

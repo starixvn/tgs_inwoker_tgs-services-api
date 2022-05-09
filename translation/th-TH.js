@@ -1213,4 +1213,8 @@ export const thTH = {
   hint: {
     _099: "เปิดให้บริการเวลา (9:00-23:30 น.)",
   },
+
+  idr1: {
+    pleaseEnterAccountName: "กรุณาใส่ชื่อบัญชีของคุณ",
+  },
 };

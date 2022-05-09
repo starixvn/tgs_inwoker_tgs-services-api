@@ -1238,4 +1238,8 @@ export const enUS = {
   hint: {
     _099: "Available at (9:00-23:30)",
   },
+
+  idr1: {
+    pleaseEnterAccountName: "Please enter your origin account",
+  },
 };

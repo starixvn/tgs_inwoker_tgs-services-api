@@ -1219,4 +1219,7 @@ export const vivN = {
   hint: {
     _099: "Có sẵn lúc (9: 00-23: 30)",
   },
+  idr1: {
+    pleaseEnterAccountName: "Vui lòng nhập tên tài khoản của bạn",
+  },
 };
