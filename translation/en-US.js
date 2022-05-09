@@ -1234,4 +1234,8 @@ export const enUS = {
     description:
       "Please contact customer service to add card in order to access withdrawal page.",
   },
+
+  hint: {
+    _099: "Available at (9:00-23:30)",
+  },
 };

@@ -1216,4 +1216,7 @@ export const vivN = {
     description:
       "Vui lòng liên hệ với bộ phận chăm sóc khách hàng để thêm thẻ vào trang rút tiền.",
   },
+  hint: {
+    _099: "Có sẵn lúc (9: 00-23: 30)",
+  },
 };
