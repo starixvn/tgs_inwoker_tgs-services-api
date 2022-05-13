@@ -268,6 +268,7 @@ export const zhCN = {
     msgPlsSelectPayment: "请选择支付方式",
     msgPlsSelectMethod: "请选择支付渠道",
     msgPlsEnterAccount: "请输入银行账户名称",
+    msgPlsUploadProof: "请上传相关银行凭证",
     msgInvalidFileSize: "文件太大，请选择小于5mb的文件",
     msgInvalidFileType: "请仅上传图像文件。(.jpg/.jpeg/.png/.tiff)",
     msgFailedJoinPromotion: "您无法参加此活动。如有问题，请联系客服。",

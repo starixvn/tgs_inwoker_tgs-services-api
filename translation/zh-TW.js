@@ -268,6 +268,7 @@ export const zhTW = {
     msgPlsSelectPayment: "請選擇支付方式",
     msgPlsSelectMethod: "請選擇支付渠道",
     msgPlsEnterAccount: "請輸入銀行帳戶名稱",
+    msgPlsUploadProof: "【請上傳相關銀行憑證】",
     msgInvalidFileSize: "文件太大，請選擇小於5mb的文件",
     msgInvalidFileType: "請僅上傳圖像文件。(.jpg/.jpeg/.png/.tiff)",
     msgFailedJoinPromotion: "您無法參加此活動。如有問題，請聯繫客服。",

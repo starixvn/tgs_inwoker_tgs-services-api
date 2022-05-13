@@ -273,6 +273,7 @@ export const thTH = {
     msgPlsSelectPayment: "กรุณาเลือกวิธีการชำระเงิน",
     msgPlsSelectMethod: "กรุณาเลือกช่องทางการชำระเงิน",
     msgPlsEnterAccount: "โปรดป้อนชื่อบัญชีธนาคาร",
+    msgPlsUploadProof: "Please upload deposit proof",
     msgInvalidFileSize: "ไฟล์มีขนาดใหญ่เกินไป โปรดเลือกไฟล์ที่เล็กกว่า 5mb",
     msgInvalidFileType: "กรุณาอัปโหลดเฉพาะไฟล์ภาพ (.jpg/.jpeg/.png/.tiff)",
     msgFailedJoinPromotion:
