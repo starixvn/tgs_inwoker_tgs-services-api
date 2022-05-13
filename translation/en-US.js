@@ -1168,12 +1168,10 @@ export const enUS = {
     birthBenefit: "Birthday Bonus",
     cardGameRebate: "Card Game",
     level: "Promotion Conditions",
-    levelKeepAccumulateBetAmount:
-      "Required Quarterly bet amount to maintain level",
-    levelKeepAccumulateDeposit:
-      "Required Quarterly deposit amount to maintain level",
-    levelUpAccumulateBetAmount: "Required bet amount to up level",
-    levelUpAccumulateDeposit: "Required deposit amount to up level",
+    levelKeepAccumulateBetAmount: "Qtly. Bet Amount to remain",
+    levelKeepAccumulateDeposit: "Qtly. Deposit to remain",
+    levelUpAccumulateBetAmount: "Mth. Bet Amount to upgrade",
+    levelUpAccumulateDeposit: "Mth. Deposit to upgrade",
     liveDealerRebate: "Live Casino",
     lotteryRebate: "Lottery Game",
     promotionBenefit: "Promotion Bonus",
