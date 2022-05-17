@@ -274,6 +274,7 @@ function mapWithdrawalList(data) {
             channelname: data[i].channelname,
             channelcode: data[i].channelcode,
             transferlimit: data[i].transferlimit,
+            extended: data[i].extended,
           },
         ],
       });
@@ -285,6 +286,7 @@ function mapWithdrawalList(data) {
           channelname: data[i].channelname,
           channelcode: data[i].channelcode,
           transferlimit: data[i].transferlimit,
+          extended: data[i].extended,
         });
     }
   }
