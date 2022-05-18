@@ -290,6 +290,8 @@ export const zhTW = {
       orderVerify: "到賬核對",
       manualOpen: "手動開啟",
     },
+    totalAmount: "上分金額",
+    plsEnterUSDTAmount: "請輸入USDT金額",
   },
   forgotPassword: {
     title: "忘記密碼",
@@ -672,6 +674,7 @@ export const zhTW = {
     receiverName: "收款人姓名",
     fee: "手續費",
     receiverAmount: "到賬金額",
+    usdtAmount: "金額 USDT",
   },
   promotion: {
     emptyLine1: "目前尚未有活動",
