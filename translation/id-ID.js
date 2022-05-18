@@ -1,6 +1,6 @@
 export const idID = {
   lang: {
-    language: "Language",
+    language: "Bahasa",
     "zh-TW": "繁體",
     "zh-CN": "简体",
     "en-US": "English",
