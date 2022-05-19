@@ -562,6 +562,7 @@ export const idID = {
     gamename: "Nama Permainan",
     rebateDetails: "Rebate",
     platform: "Platform",
+    platformgamename: "Platform/Nama Permainan",
     date: "Tanggal",
     startDate: "Tanggal Mulai",
     endDate: "Tanggal Berakhir",

@@ -539,6 +539,7 @@ export const zhCN = {
     bettingDetails: "投注记录",
     rebateDetails: "返水记录",
     platform: "平台",
+    platformgamename: "平台/游戏名称",
     date: "日期",
     gamename: "游戏名称",
     startDate: "开始时间",

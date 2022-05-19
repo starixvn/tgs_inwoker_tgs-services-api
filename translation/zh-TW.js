@@ -532,6 +532,7 @@ export const zhTW = {
     bettingDetails: "投注記錄",
     rebateDetails: "返水記錄",
     platform: "平台",
+    platformgamename: "平台/遊戲名稱",
     date: "日期",
     gamename: "遊戲名稱",
     startDate: "開始時間",

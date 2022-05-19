@@ -555,6 +555,7 @@ export const vivN = {
     rebateDetails: "Giảm giá",
     platform: "Nền tảng",
     date: "Ngày",
+    platformgamename: "Nền tảng/Tên trò chơi",
     startDate: "Ngày bắt đầu",
     endDate: "Ngày kết thúc",
     today: "Hôm nay",

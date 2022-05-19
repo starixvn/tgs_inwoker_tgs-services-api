@@ -563,6 +563,7 @@ export const enUS = {
     gamename: "Game Name",
     rebateDetails: "Rebate",
     platform: "Platform",
+    platformgamename: "Platform/Game Name",
     date: "Date",
     startDate: "Start Date",
     endDate: "End Date",
