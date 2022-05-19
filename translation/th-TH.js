@@ -545,6 +545,7 @@ export const thTH = {
     bettingDetails: "ประวัติการเดิมพัน",
     rebateDetails: "บันทึกการคืนเงิน",
     platform: "แพลตฟอร์ม",
+    platformgamename: "แพลตฟอร์ม/ชื่อเกม",
     date: "วันที่",
     gamename: "ชื่อเกม",
     startDate: "วันที่เริ่มต้น",
