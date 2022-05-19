@@ -354,6 +354,9 @@ export const vivN = {
         setting: "Cài đặt",
         signout: "Đăng xuất",
         wallet: "Ví",
+        deposit: "Gửi tiền",
+        withdrawal: "Rút tiền",
+        transfer: "Chuyển",
       },
       home: {
         gameTab: {

@@ -347,6 +347,9 @@ export const thTH = {
         setting: "ตั้งค่า",
         signout: "ออกจากระบบ",
         wallet: "กระเป๋าสตางค์",
+        deposit: "ฝาก",
+        withdrawal: "ถอนเงิน",
+        transfer: "โอน",
       },
       home: {
         gameTab: {

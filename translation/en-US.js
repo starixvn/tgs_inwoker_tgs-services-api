@@ -359,6 +359,9 @@ export const enUS = {
         setting: "Settings",
         signout: "Logout",
         wallet: "Wallet",
+        withdrawal: "Withdrawal Report",
+        deposit: "Deposit Report",
+        transfer: "Transfer Report",
       },
       home: {
         gameTab: {

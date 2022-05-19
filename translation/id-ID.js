@@ -358,6 +358,9 @@ export const idID = {
         setting: "Pengaturan",
         signout: "Keluar",
         wallet: "Dompet",
+        deposit: "Setoran",
+        withdrawal: "Penarikan",
+        transfer: "Transfer",
       },
       home: {
         gameTab: {

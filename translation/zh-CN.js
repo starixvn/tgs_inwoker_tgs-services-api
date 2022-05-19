@@ -340,6 +340,9 @@ export const zhCN = {
         setting: "设定",
         signout: "退出登录",
         wallet: "钱包",
+        deposit: "存款记录",
+        withdrawal: "提款记录",
+        transfer: "转账记录",
       },
       home: {
         gameTab: {

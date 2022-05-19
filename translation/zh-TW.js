@@ -340,6 +340,9 @@ export const zhTW = {
         setting: "設定",
         signout: "退出登錄",
         wallet: "錢包",
+        deposit: "存款記錄",
+        withdrawal: "提款記錄",
+        transfer: "轉賬記錄",
       },
       home: {
         gameTab: {
