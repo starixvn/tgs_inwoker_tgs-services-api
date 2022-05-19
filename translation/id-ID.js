@@ -1172,7 +1172,7 @@ export const idID = {
   vip: {
     birthBenefit: "Hadiah Ulang Tahun",
     cardGameRebate: "Permainan Kartu",
-    tingkat: "Ketentuan Promosi",
+    level: "Ketentuan Promosi",
     levelKeepAccumulateBetAmount:
       "Jumlah taruhan yang diperlukan pada bulan ini untuk mempertahankan degradasi",
     levelKeepAccumulateDeposit:
