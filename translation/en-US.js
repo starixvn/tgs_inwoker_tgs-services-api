@@ -308,6 +308,8 @@ export const enUS = {
       orderVerify: "Verify",
       manualOpen: "Manual Open",
     },
+    totalAmount: "Total Amount",
+    plsEnterUSDTAmount: "Please Enter USDT Amount",
   },
   forgotPassword: {
     title: "Forgot Password",
@@ -709,6 +711,7 @@ export const enUS = {
     receiverName: "Receiver Name",
     fee: "Fee",
     receiverAmount: "Amount",
+    usdtAmount: "USDT Amount",
   },
   promotion: {
     emptyLine1: "MORE PROMOTIONS AND ACTIVITIES ARE",

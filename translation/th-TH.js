@@ -296,6 +296,8 @@ export const thTH = {
       orderVerify: "การยืนยันการมาถึง",
       manualOpen: "เปิดด้วยตนเอง",
     },
+    totalAmount: "จำนวนคะแนน",
+    plsEnterUSDTAmount: "กรุณากรอกจำนวนเงิน USDT",
   },
   forgotPassword: {
     title: "ลืมรหัสผ่าน",
@@ -688,6 +690,7 @@ export const thTH = {
     receiverName: "ชื่อผู้รับเงิน",
     fee: "ค่าธรรมเนียมการจัดการ",
     receiverAmount: "จำนวนเงินเข้าบัญชี",
+    usdtAmount: "USDT จำนวนเงินเข้าบัญชี",
   },
   promotion: {
     emptyLine1: "ไม่มีกิจกรรมในขณะนี้",

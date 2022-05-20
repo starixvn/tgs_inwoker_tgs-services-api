@@ -304,6 +304,8 @@ export const vivN = {
       orderVerify: "Xác minh",
       manualOpen: "Mở bằng tay",
     },
+    totalAmount: "Số lượng điểm",
+    plsEnterUSDTAmount: "Vui lòng nhập số tiền USDT",
   },
   forgotPassword: {
     title: "Quên mật khẩu",
@@ -697,6 +699,7 @@ export const vivN = {
     receiverName: "Tên người nhận",
     fee: "Phí",
     receiverAmount: "Số tiền",
+    usdtAmount: "USDT Số tiền",
   },
   promotion: {
     emptyLine1: "CÓ NHIỀU KHUYẾN MÃI VÀ HOẠT ĐỘNG HƠN",

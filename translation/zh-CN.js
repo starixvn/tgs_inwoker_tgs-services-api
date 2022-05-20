@@ -290,6 +290,8 @@ export const zhCN = {
       orderVerify: "到账核对",
       manualOpen: "手动开启",
     },
+    totalAmount: "上分金额",
+    plsEnterUSDTAmount: "请输入USDT金额",
   },
   forgotPassword: {
     title: "忘记密码",
@@ -684,6 +686,7 @@ export const zhCN = {
     receiverName: "收款人姓名",
     fee: "手续费",
     receiverAmount: "到账金额",
+    usdtAmount: "金额 USDT",
   },
   promotion: {
     emptyLine1: "目前尚未有活动",
