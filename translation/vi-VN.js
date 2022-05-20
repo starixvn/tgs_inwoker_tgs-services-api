@@ -437,6 +437,7 @@ export const vivN = {
       step2Title: "Đặt điện thoại mới",
     },
     nameVerify: {
+      editHere: "đây",
       title: "Tên thật",
       msgEnterICNum: "Nhập số IC",
       icNum: "Số IC",

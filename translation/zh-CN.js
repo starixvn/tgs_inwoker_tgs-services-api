@@ -425,13 +425,14 @@ export const zhCN = {
     },
 
     nameVerify: {
+      editHere: "这里",
       title: "真实姓名",
       msgEnterICNum: "请输入您的身份证号码",
       icNum: "身份证",
       msgInvalidICNum: "身份证号码不正确",
       msgPlsEnterName: "请输入您的真实姓名",
       msgPlsEnterICNum: "请输入您的身份证号码",
-      toEdit: "如需修改真实姓名，请联系",
+      toEdit: "如需修改真實姓名，請点击",
       verifyName: "实名认证",
       tips: "提示： 真实姓名需要与提款卡姓名相同才可提款",
     },

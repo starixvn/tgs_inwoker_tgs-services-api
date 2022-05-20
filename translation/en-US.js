@@ -444,6 +444,7 @@ export const enUS = {
     },
 
     nameVerify: {
+      editHere: "here",
       title: "Real Name",
       msgEnterICNum: "Enter ID number",
       icNum: "ID Number",

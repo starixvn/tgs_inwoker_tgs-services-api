@@ -443,6 +443,7 @@ export const idID = {
     },
 
     nameVerify: {
+      editHere: "di sini",
       title: "Nama Asli",
       msgEnterICNum: "Masukkan nomor ID",
       icNum: "Nomor ID",

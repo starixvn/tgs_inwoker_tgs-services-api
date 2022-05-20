@@ -430,6 +430,7 @@ export const thTH = {
       step2Title: "ตั้งหมายเลขใหม่",
     },
     nameVerify: {
+      editHere: "ที่นี่",
       title: "ชื่อจริง",
       msgEnterICNum: "กรุณากรอกเลขประจำตัวประชาชน",
       icNum: "บัตรประจำตัวประชาชน",

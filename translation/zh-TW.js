@@ -425,13 +425,14 @@ export const zhTW = {
     },
 
     nameVerify: {
+      editHere: "这里",
       title: "真實姓名",
       msgEnterICNum: "請輸入您的身份證號碼",
       icNum: "身份證",
       msgInvalidICNum: "身份證號碼不正確",
       msgPlsEnterName: "請輸入您的真實姓名",
       msgPlsEnterICNum: "請輸入您的身份證號碼",
-      toEdit: "如需修改真實姓名，請聯繫",
+      toEdit: "如需修改真实姓名，请點擊",
       verifyName: "實名認證",
       tips: "提示： 真實姓名需要與提款卡姓名相同才可提款",
     },
