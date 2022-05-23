@@ -130,6 +130,7 @@ function mapDepositType(result) {
 
       depositType.paymentcode = data[i].paymentcode;
       depositType.paymentid = data[i].paymentid;
+      depositType.displayorder = data[i].displayorder;
       depositType.method = [
         {
           methodid: data[i].methodid,
