@@ -308,7 +308,7 @@ export const enUS = {
       orderVerify: "Verify",
       manualOpen: "Manual Open",
     },
-    totalAmount: "Total Amount",
+    totalAmount: "Amount",
     plsEnterUSDTAmount: "Please Enter USDT Amount",
   },
   forgotPassword: {
