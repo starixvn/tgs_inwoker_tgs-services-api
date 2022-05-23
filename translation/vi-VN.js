@@ -281,6 +281,7 @@ export const vivN = {
     msgPlsSelectMethod: "Vui lòng chọn kênh thanh toán",
     msgPlsEnterAccount: "Vui lòng nhập tên tài khoản ngân hàng",
     msgPlsUploadProof: "Please upload deposit proof",
+    msgNotMustUploadProof: "Không bắt buộc tải lên",
     msgInvalidFileSize: "Tệp quá lớn, vui lòng chọn tệp nhỏ hơn 5mb",
     msgInvalidFileType:
       "Vui lòng chỉ tải lên tệp hình ảnh. (.jpg / .jpeg / .png / .tiff)",

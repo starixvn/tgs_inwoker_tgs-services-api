@@ -157,9 +157,8 @@ export const idID = {
     joinGame: "Bergabung dengan game",
     withdrawalBankType: "Jenis",
     withdrawalChannel: "Saluran",
-    withdrawalNumber: "Nomor kartu bank/alamat mata uang Crypto",
-    msgEnterWithdrawalNumber:
-      "Silakan masukkan nomor kartu bank/alamat mata uang kripto",
+    withdrawalNumber: "NOMOR REKENING",
+    msgEnterWithdrawalNumber: "Silahkan Masukkan Nomor Rekening",
     msgEmailExist: "Alamat email sudah ada",
     msgRequiredTurnover:
       "Tidak dapat menarik. Harap pastikan Anda memenuhi persyaratan taruhan, atau hubungi Layanan Pelanggan untuk informasi lebih lanjut.",
@@ -175,7 +174,7 @@ export const idID = {
     title: "Afiliasi",
     details: "Rincian",
     downline: "Downline",
-    report: "Laporkan",
+    report: "Laporan",
     info: "Bonus Afiliasi",
     qrCode: "Kode QR Afiliasi",
     promoId: "ID Rujukan",
@@ -283,6 +282,7 @@ export const idID = {
     msgPlsSelectMethod: "Silakan pilih saluran setoran",
     msgPlsEnterAccount: "Silakan masukkan nama rekening bank",
     msgPlsUploadProof: "Silakan unggah bukti setoran",
+    msgNotMustUploadProof: "Tidak diwajibkan unduh file",
     msgInvalidFileSize: "File terlalu besar, pilih file kurang dari 5mb",
     msgInvalidFileType:
       "Harap unggah file gambar saja. (.jpg/.jpeg/.png/.tiff)",
@@ -908,7 +908,7 @@ export const idID = {
       deposit: "Setoran",
       withdrawal: "Penarikan",
       transfer: "Transfer",
-      report: "Laporkan",
+      report: "Laporan",
       profile: "Profil",
       inbox: "kotak masuk",
       affiliate: "Afiliasi",
@@ -1104,9 +1104,8 @@ export const idID = {
     esports: "TF",
   },
   hk28: {
-    withdrawalNumber: "Nomor kartu bank/alamat mata uang Crypto",
-    msgEnterWithdrawalNumber:
-      "Silakan masukkan nomor kartu bank/alamat mata uang kripto",
+    withdrawalNumber: "NOMOR REKENING",
+    msgEnterWithdrawalNumber: "Silahkan Masukkan Nomor Rekening",
     card: {
       addCard: {
         BankName: "Nama Bank",
