@@ -157,7 +157,7 @@ export const idID = {
     joinGame: "Bergabung dengan game",
     withdrawalBankType: "Jenis",
     withdrawalChannel: "Saluran",
-    withdrawalNumber: "NOMOR REKENING",
+    withdrawalNumber: "Nomor Rekening",
     msgEnterWithdrawalNumber: "Silahkan Masukkan Nomor Rekening",
     msgEmailExist: "Alamat email sudah ada",
     msgRequiredTurnover:
