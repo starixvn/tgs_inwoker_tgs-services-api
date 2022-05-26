@@ -289,7 +289,7 @@ export const enUS = {
     msgPlsSelectMethod: "Please select the deposit channel",
     msgPlsEnterAccount: "Please enter the bank account name",
     msgPlsUploadProof: "Please upload deposit proof",
-    msgNotMustUplo: "Not mandatory upload",
+    msgNotMustUploadProof: "Not mandatory upload",
     msgInvalidFileSize: "File too Big, please select a file less than 5mb",
     msgInvalidFileType:
       "Please upload image file only. (.jpg/.jpeg/.png/.tiff)",
