@@ -329,7 +329,7 @@ export const idID = {
   },
   wap: {
     login: {
-      browser: "Kembali ke beranda",
+      browse: "Kembali ke beranda",
       rememberMe: "Ingat Saya",
       forgetPass: "Lupa Kata Sandi",
     },
