@@ -123,7 +123,7 @@ export const idID = {
     electron: "Table Games",
     fish: "Fishing",
     shootFish: "Shoot Fish",
-    promotion: "Promosi",
+    promotion: "Promotion",
     download: "Download",
     home: "Home",
     member: "member",
