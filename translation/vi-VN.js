@@ -216,6 +216,10 @@ export const vivN = {
       desc: "Thông tin được mã hóa",
       branch: "Chi nhánh",
       branchPlaceHolder: "Vui lòng nhập chi nhánh ngân hàng",
+      eWalletAccount: "Tên tiền điện tử",
+      msgEnterEwalletAccount: "Vui lòng nhập tên tiền điện tử",
+      phone: "Số điện thoại",
+      msgEnterPhone: "Vui lòng nhập số điện thoại",
     },
     success: {
       title: "Thêm thẻ ngân hàng thành công",

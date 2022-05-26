@@ -216,6 +216,10 @@ export const idID = {
       desc: "Informasi dienkripsi",
       branch: "Cabang",
       branchPlaceHolder: "Silakan Masukkan Cabang Bank",
+      eWalletAccount: "Nama uang elektronik",
+      msgEnterEwalletAccount: "Silakan masukkan nama uang elektronik",
+      phone: "Nomor telepon",
+      msgEnterPhone: "Silakan masukkan nomor telepon",
     },
     success: {
       title: "Tambah bank berhasil",

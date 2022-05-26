@@ -207,6 +207,10 @@ export const zhTW = {
       desc: "資訊加密處理，僅用銀行驗證",
       branch: "支行",
       branchPlaceHolder: "請輸入銀行支行",
+      eWalletAccount: "電子貨幣名稱",
+      msgEnterEwalletAccount: "請輸入電子貨幣名稱",
+      phone: "電話號碼",
+      msgEnterPhone: "請輸入電話號碼",
     },
     success: {
       title: "添加銀行卡成功",

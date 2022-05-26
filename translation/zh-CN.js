@@ -207,6 +207,10 @@ export const zhCN = {
       desc: "资讯加密处理，仅用银行验证",
       branch: "支行",
       branchPlaceHolder: "请输入银行支行",
+      eWalletAccount: "电子货币名称",
+      msgEnterEwalletAccount: "请输入电子货币名称",
+      phone: "电话号码",
+      msgEnterPhone: "请输入电话号码",
     },
     success: {
       title: "添加银行卡成功",
