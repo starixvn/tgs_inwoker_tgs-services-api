@@ -1029,7 +1029,7 @@ export const thTH = {
     slots: "JOKER",
     fish: "JOKER",
   },
-  PP: {
+  PPTF: {
     slots: "Pragmatic Play",
     electron: "Pragmatic Play",
   },

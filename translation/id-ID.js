@@ -1049,7 +1049,7 @@ export const idID = {
     slots: "JOKER",
     fish: "JOKER",
   },
-  PP: {
+  PPTF: {
     slots: "Pragmatic Play",
     electron: "Pragmatic Play",
   },

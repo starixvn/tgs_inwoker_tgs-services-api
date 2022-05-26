@@ -1037,7 +1037,7 @@ export const vivN = {
     slots: "JOKER",
     fish: "JOKER",
   },
-  PP: {
+  PPTF: {
     slots: "Chơi thực dụng",
     electron: "Chơi thực dụng",
   },
