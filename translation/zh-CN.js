@@ -1031,6 +1031,9 @@ export const zhCN = {
   PPTF: {
     slots: "PP老虎机",
     electron: "PP电子",
+    live: "PP真人",
+    fish: "PP捕鱼",
+    sports: "PP体育",
   },
   EVO: {
     live: "EVO真人",

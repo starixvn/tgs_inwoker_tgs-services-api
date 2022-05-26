@@ -1038,8 +1038,11 @@ export const vivN = {
     fish: "JOKER",
   },
   PPTF: {
-    slots: "Chơi thực dụng",
-    electron: "Chơi thực dụng",
+    slots: "Pragmatic Play",
+    electron: "Pragmatic Play",
+    live: "Pragmatic Play",
+    fish: "Pragmatic Play",
+    sports: "Pragmatic Play",
   },
   EVO: {
     live: "Tiến hóa",
