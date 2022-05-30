@@ -219,6 +219,10 @@ export const enUS = {
       desc: "Information is encrypted",
       branch: "Branch",
       branchPlaceHolder: "Please Enter Bank Branch",
+      eWalletAccount: "E-money name",
+      msgEnterEwalletAccount: "Please enter e-money name",
+      phone: "Phone number",
+      msgEnterPhone: "Please enter phone number",
     },
     success: {
       title: "Add bank succesful",
@@ -1050,9 +1054,12 @@ export const enUS = {
     slots: "JOKER",
     fish: "JOKER",
   },
-  PP: {
+  PPTF: {
     slots: "Pragmatic Play",
     electron: "Pragmatic Play",
+    live: "Pragmatic Play",
+    fish: "Pragmatic Play",
+    sports: "Pragmatic Play",
   },
   EVO: {
     live: "Evolution",
