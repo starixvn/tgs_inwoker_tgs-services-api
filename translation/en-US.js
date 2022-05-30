@@ -40,7 +40,7 @@ export const enUS = {
 
   common: {
     pleaseEnterAccountName: "Please enter your real name",
-    noReachMin: "The mobile number is set to 8 to 10 digits",
+    noReachMin: "The mobile number is set to 8 to {maxlength} digits",
     upload: "Upload document",
     title: "{brand} | The Biggest & Most Trusted Online Casino",
     register: "Register",
@@ -219,10 +219,6 @@ export const enUS = {
       desc: "Information is encrypted",
       branch: "Branch",
       branchPlaceHolder: "Please Enter Bank Branch",
-      eWalletAccount: "E-money name",
-      msgEnterEwalletAccount: "Please enter e-money name",
-      phone: "Phone number",
-      msgEnterPhone: "Please enter phone number",
     },
     success: {
       title: "Add bank succesful",
@@ -289,7 +285,7 @@ export const enUS = {
     msgPlsSelectMethod: "Please select the deposit channel",
     msgPlsEnterAccount: "Please enter the bank account name",
     msgPlsUploadProof: "Please upload deposit proof",
-    msgNotMustUploadProof: "Not mandatory upload",
+    msgNotMustUploadProof: "NOT MANDATORY UPLOAD",
     msgInvalidFileSize: "File too Big, please select a file less than 5mb",
     msgInvalidFileType:
       "Please upload image file only. (.jpg/.jpeg/.png/.tiff)",
@@ -1054,12 +1050,9 @@ export const enUS = {
     slots: "JOKER",
     fish: "JOKER",
   },
-  PPTF: {
+  PP: {
     slots: "Pragmatic Play",
     electron: "Pragmatic Play",
-    live: "Pragmatic Play",
-    fish: "Pragmatic Play",
-    sports: "Pragmatic Play",
   },
   EVO: {
     live: "Evolution",

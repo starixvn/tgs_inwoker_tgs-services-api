@@ -40,7 +40,7 @@ export const vivN = {
   },
   common: {
     pleaseEnterAccountName: "Vui lòng nhập tên tài khoản của bạn",
-    noReachMin: "Số điện thoại di động được đặt thành 8 đến 10 chữ số",
+    noReachMin: "Số điện thoại di động được đặt thành 8 đến {maxlength} chữ số",
     upload: "tải tệp lên",
     title: "{brand} | Sòng bạc trực tuyến lớn nhất & đáng tin cậy nhất",
     register: "Đăng ký",

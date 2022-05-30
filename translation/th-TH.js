@@ -36,7 +36,7 @@ export const thTH = {
   },
   common: {
     pleaseEnterAccountName: "กรุณาใส่ชื่อบัญชีของคุณ",
-    noReachMin: "เบอร์มือถือตั้งไว้ที่ 8 ถึง 10 หลัก",
+    noReachMin: "เบอร์มือถือตั้งไว้ที่ 8 ถึง {maxlength} หลัก",
     upload: "อัพโหลดไฟล์",
     title: "{brand}-แพลตฟอร์มความบันเทิงระดับมืออาชีพ",
     register: "ลงทะเบียน",

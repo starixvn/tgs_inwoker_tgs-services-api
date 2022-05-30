@@ -38,7 +38,7 @@ export const zhCN = {
 
   common: {
     pleaseEnterAccountName: "请输入银行名称",
-    noReachMin: "手机号码设定在8至10位数",
+    noReachMin: "手機號碼設定在8至{maxlength}位數",
     upload: "上传文件",
     title: "{brand} - 专业娱乐平台",
     register: "注册",
