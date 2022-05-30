@@ -40,7 +40,7 @@ export const enUS = {
 
   common: {
     pleaseEnterAccountName: "Please enter your real name",
-    noReachMin: "The mobile number is set to 8 to 10 digits",
+    noReachMin: "The mobile number is set to 8 to {maxlength} digits",
     upload: "Upload document",
     title: "{brand} | The Biggest & Most Trusted Online Casino",
     register: "Register",
@@ -285,7 +285,7 @@ export const enUS = {
     msgPlsSelectMethod: "Please select the deposit channel",
     msgPlsEnterAccount: "Please enter the bank account name",
     msgPlsUploadProof: "Please upload deposit proof",
-    msgNotMustUplo: "Not mandatory upload",
+    msgNotMustUpload: "NOT MANDATORY UPLOAD",
     msgInvalidFileSize: "File too Big, please select a file less than 5mb",
     msgInvalidFileType:
       "Please upload image file only. (.jpg/.jpeg/.png/.tiff)",

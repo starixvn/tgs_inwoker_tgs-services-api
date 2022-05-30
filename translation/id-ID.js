@@ -40,7 +40,7 @@ export const idID = {
 
   common: {
     pleaseEnterAccountName: "Silakan masukkan nama asli Anda",
-    noReachMin: "The mobile number is set to 8 to 10 digits",
+    noReachMin: "Nomor ponsel disetel ke 8 hingga {maxlength} digit",
     upload: "Upload document",
     title: "{brand} | Kasino Online Terbesar & Terpercaya",
     register: "Daftar",
@@ -282,7 +282,7 @@ export const idID = {
     msgPlsSelectMethod: "Silakan pilih saluran setoran",
     msgPlsEnterAccount: "Silakan masukkan nama rekening bank",
     msgPlsUploadProof: "Silakan unggah bukti setoran",
-    msgNotMustUploadProof: "Tidak diwajibkan unduh file",
+    msgNotMustUploadProof: "Tidak Diwajibkan Unduh File",
     msgInvalidFileSize: "File terlalu besar, pilih file kurang dari 5mb",
     msgInvalidFileType:
       "Harap unggah file gambar saja. (.jpg/.jpeg/.png/.tiff)",
