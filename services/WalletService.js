@@ -37,6 +37,8 @@ export const WalletService = {
   PerformCryptoDeposit,
   PerformDeposit,
   PerformUsdtDeposit,
+  PerformPulsaDeposit,
+  PerformEWalletDeposit,
   WithdrawEverything,
 };
 
@@ -112,6 +114,26 @@ function PerformUsdtDeposit(amount, paymentid, promotionid, banktype) {
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
     banktype: banktype || "usdt",
+  });
+  return result;
+}
+
+function PerformPulsaDeposit(amount, paymentid, promotionid, banktype) {
+  const result = ApiService.put("deposit/manual/pulsa", {
+    amount: amount,
+    paymentid: paymentid,
+    promotionid: promotionid === "" ? null : promotionid,
+    banktype: banktype || "pulsa",
+  });
+  return result;
+}
+
+function PerformEWalletDeposit(amount, paymentid, promotionid, banktype) {
+  const result = ApiService.put("deposit/manual/ewallet", {
+    amount: amount,
+    paymentid: paymentid,
+    promotionid: promotionid === "" ? null : promotionid,
+    banktype: banktype || "ewallet",
   });
   return result;
 }

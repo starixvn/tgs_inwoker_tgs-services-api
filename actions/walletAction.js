@@ -115,6 +115,8 @@ export const walletAction = {
   doCryptoDeposit,
   performDeposit,
   doUsdtDeposit,
+  doPulsaDeposit,
+  doEWalletDeposit,
   performWithdrawFromEveryBrand,
 };
 function getWalletBalance() {
@@ -367,6 +369,84 @@ function doUsdtDeposit(amount, paymentid, promotionid, banktype) {
       loading: true,
     });
     const result = WalletService.PerformUsdtDeposit(
+      amount,
+      paymentid,
+      promotionid,
+      banktype
+    )
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: DODEPOSIT_SUCCESS,
+            payload: response,
+            loading: true,
+          });
+        } else {
+          dispatch({
+            type: DODEPOSIT_FAILED,
+            payload: response,
+            loading: false,
+          });
+        }
+        return response;
+      })
+      .catch((error) => {
+        dispatch({
+          type: DODEPOSIT_FAILED,
+          payload: error,
+          loading: false,
+        });
+      });
+    return result;
+  };
+}
+
+function doPulsaDeposit(amount, paymentid, promotionid, banktype) {
+  return (dispatch) => {
+    dispatch({
+      type: DODEPOSIT_BEGIN,
+      loading: true,
+    });
+    const result = WalletService.PerformPulsaDeposit(
+      amount,
+      paymentid,
+      promotionid,
+      banktype
+    )
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: DODEPOSIT_SUCCESS,
+            payload: response,
+            loading: true,
+          });
+        } else {
+          dispatch({
+            type: DODEPOSIT_FAILED,
+            payload: response,
+            loading: false,
+          });
+        }
+        return response;
+      })
+      .catch((error) => {
+        dispatch({
+          type: DODEPOSIT_FAILED,
+          payload: error,
+          loading: false,
+        });
+      });
+    return result;
+  };
+}
+
+function doEWalletDeposit(amount, paymentid, promotionid, banktype) {
+  return (dispatch) => {
+    dispatch({
+      type: DODEPOSIT_BEGIN,
+      loading: true,
+    });
+    const result = WalletService.PerformEWalletDeposit(
       amount,
       paymentid,
       promotionid,
