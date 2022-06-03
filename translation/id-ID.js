@@ -311,6 +311,8 @@ export const idID = {
       orderVerify: "Verifikasi",
       manualOpen: "Buka Manual",
     },
+    playerNote: "Catatan Pemain",
+    plsEnterPlayerNote: "Silakan masukkan catatan pemain",
   },
   forgotPassword: {
     title: "Lupa Kata Sandi",
@@ -712,6 +714,8 @@ export const idID = {
     receiverName: "Nama Penerima",
     fee: "Biaya",
     receiverAmount: "Jumlah",
+    playerNote: "Catatan Pemain",
+    plsEnterPlayerNote: "Silakan masukkan catatan pemain",
   },
   promotion: {
     emptyLine1: "PROMOSI DAN AKTIVITAS LEBIH BANYAK",

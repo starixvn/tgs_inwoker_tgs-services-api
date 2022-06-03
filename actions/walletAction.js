@@ -193,7 +193,8 @@ function doBankDeposit(
   amount,
   paymentid,
   promotionid,
-  banktype
+  banktype,
+  playerNote,
 ) {
   return (dispatch) => {
     dispatch({
@@ -206,7 +207,8 @@ function doBankDeposit(
       amount,
       paymentid,
       promotionid,
-      banktype
+      banktype,
+      playerNote,
     )
       .then((response) => {
         if (response.IsSuccess) {
@@ -235,7 +237,7 @@ function doBankDeposit(
   };
 }
 
-function doFPSDeposit(account, amount, paymentid, promotionid, banktype) {
+function doFPSDeposit(account, amount, paymentid, promotionid, banktype, playerNote) {
   return (dispatch) => {
     dispatch({
       type: DOMANUALDEPOSIT_BEGIN,
@@ -246,7 +248,8 @@ function doFPSDeposit(account, amount, paymentid, promotionid, banktype) {
       amount,
       paymentid,
       promotionid,
-      banktype
+      banktype,
+      playerNote
     )
       .then((response) => {
         if (response.IsSuccess) {
@@ -281,7 +284,8 @@ function doFPSDepositWithName(
   amount,
   paymentid,
   promotionid,
-  banktype
+  banktype,
+  playerNote
 ) {
   return (dispatch) => {
     dispatch({
@@ -294,7 +298,8 @@ function doFPSDepositWithName(
       amount,
       paymentid,
       promotionid,
-      banktype
+      banktype,
+      playerNote
     )
       .then((response) => {
         if (response.IsSuccess) {
@@ -323,7 +328,7 @@ function doFPSDepositWithName(
   };
 }
 
-function doThirdPartyDeposit(amount, paymentid, promotionid, banktype) {
+function doThirdPartyDeposit(amount, paymentid, promotionid, banktype, playerNote) {
   return (dispatch) => {
     dispatch({
       type: DOTHIRDPARTYDEPOSIT_BEGIN,
@@ -333,7 +338,8 @@ function doThirdPartyDeposit(amount, paymentid, promotionid, banktype) {
       amount,
       paymentid,
       promotionid,
-      banktype
+      banktype,
+      playerNote
     )
       .then((response) => {
         if (response.IsSuccess) {
@@ -362,7 +368,7 @@ function doThirdPartyDeposit(amount, paymentid, promotionid, banktype) {
   };
 }
 
-function doUsdtDeposit(amount, paymentid, promotionid, banktype) {
+function doUsdtDeposit(amount, paymentid, promotionid, banktype, playerNote) {
   return (dispatch) => {
     dispatch({
       type: DODEPOSIT_BEGIN,
@@ -372,7 +378,8 @@ function doUsdtDeposit(amount, paymentid, promotionid, banktype) {
       amount,
       paymentid,
       promotionid,
-      banktype
+      banktype,
+      playerNote
     )
       .then((response) => {
         if (response.IsSuccess) {
@@ -401,7 +408,7 @@ function doUsdtDeposit(amount, paymentid, promotionid, banktype) {
   };
 }
 
-function doPulsaDeposit(amount, paymentid, promotionid, banktype) {
+function doPulsaDeposit(amount, paymentid, promotionid, banktype, playerNote) {
   return (dispatch) => {
     dispatch({
       type: DODEPOSIT_BEGIN,
@@ -411,7 +418,8 @@ function doPulsaDeposit(amount, paymentid, promotionid, banktype) {
       amount,
       paymentid,
       promotionid,
-      banktype
+      banktype,
+      playerNote
     )
       .then((response) => {
         if (response.IsSuccess) {
@@ -440,7 +448,7 @@ function doPulsaDeposit(amount, paymentid, promotionid, banktype) {
   };
 }
 
-function doEWalletDeposit(amount, paymentid, promotionid, banktype) {
+function doEWalletDeposit(amount, paymentid, promotionid, banktype, playerNote) {
   return (dispatch) => {
     dispatch({
       type: DODEPOSIT_BEGIN,
@@ -450,7 +458,8 @@ function doEWalletDeposit(amount, paymentid, promotionid, banktype) {
       amount,
       paymentid,
       promotionid,
-      banktype
+      banktype,
+      playerNote
     )
       .then((response) => {
         if (response.IsSuccess) {
@@ -1325,7 +1334,7 @@ function doCryptoDeposit(amount, paymentid, promotionid, paymentcode) {
   };
 }
 
-function performDeposit(amount, paymentid, promotionid, paymentcode, type) {
+function performDeposit(amount, paymentid, promotionid, paymentcode, type, playerNote) {
   return (dispatch) => {
     dispatch({
       type: DODEPOSIT_BEGIN,
@@ -1336,7 +1345,8 @@ function performDeposit(amount, paymentid, promotionid, paymentcode, type) {
       paymentid,
       promotionid,
       paymentcode,
-      type
+      type,
+      playerNote
     )
       .then((response) => {
         if (response.IsSuccess) {
@@ -1401,13 +1411,13 @@ function addBilling(card_id, amount) {
     return result;
   };
 }
-function doWithdraw(amount, bankinfoid, paypassword) {
+function doWithdraw(amount, bankinfoid, paypassword, playerNote) {
   return (dispatch) => {
     dispatch({
       type: DOWITHDRAWAL_BEGIN,
       loading: true,
     });
-    const result = WalletService.DoWithdraw(amount, bankinfoid, paypassword)
+    const result = WalletService.DoWithdraw(amount, bankinfoid, paypassword, playerNote)
       .then((response) => {
         if (response.IsSuccess) {
           dispatch({

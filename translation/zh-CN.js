@@ -297,6 +297,8 @@ export const zhCN = {
     },
     totalAmount: "上分金额",
     plsEnterUSDTAmount: "请输入USDT金额",
+    playerNote: "玩家备注",
+    plsEnterPlayerNote: "请输入玩家备注",
   },
   forgotPassword: {
     title: "忘记密码",
@@ -692,6 +694,8 @@ export const zhCN = {
     fee: "手续费",
     receiverAmount: "到账金额",
     usdtAmount: "金额 USDT",
+    playerNote: "玩家备注",
+    plsEnterPlayerNote: "请输入玩家备注",
   },
   promotion: {
     emptyLine1: "目前尚未有活动",

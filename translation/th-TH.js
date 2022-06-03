@@ -303,6 +303,8 @@ export const thTH = {
     },
     totalAmount: "จำนวนคะแนน",
     plsEnterUSDTAmount: "กรุณากรอกจำนวนเงิน USDT",
+    playerNote: "หมายเหตุผู้เล่น",
+    plsEnterPlayerNote: "กรุณาใส่หมายเหตุผู้เล่น",
   },
   forgotPassword: {
     title: "ลืมรหัสผ่าน",
@@ -696,6 +698,8 @@ export const thTH = {
     fee: "ค่าธรรมเนียมการจัดการ",
     receiverAmount: "จำนวนเงินเข้าบัญชี",
     usdtAmount: "USDT จำนวนเงินเข้าบัญชี",
+    playerNote: "หมายเหตุผู้เล่น",
+    plsEnterPlayerNote: "กรุณาใส่หมายเหตุผู้เล่น",
   },
   promotion: {
     emptyLine1: "ไม่มีกิจกรรมในขณะนี้",

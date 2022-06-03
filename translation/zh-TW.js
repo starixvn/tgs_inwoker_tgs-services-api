@@ -297,6 +297,8 @@ export const zhTW = {
     },
     totalAmount: "上分金額",
     plsEnterUSDTAmount: "請輸入USDT金額",
+    playerNote: "玩家備註",
+    plsEnterPlayerNote: "請輸入玩家備註",
   },
   forgotPassword: {
     title: "忘記密碼",
@@ -685,6 +687,8 @@ export const zhTW = {
     fee: "手續費",
     receiverAmount: "到賬金額",
     usdtAmount: "金額 USDT",
+    playerNote: "玩家備註",
+    plsEnterPlayerNote: "請輸入玩家備註",
   },
   promotion: {
     emptyLine1: "目前尚未有活動",

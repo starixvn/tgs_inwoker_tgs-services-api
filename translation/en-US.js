@@ -315,6 +315,8 @@ export const enUS = {
     },
     totalAmount: "Amount",
     plsEnterUSDTAmount: "Please Enter USDT Amount",
+    playerNote: "Player Note",
+    plsEnterPlayerNote: "Please enter the note",
   },
   forgotPassword: {
     title: "Forgot Password",
@@ -717,6 +719,8 @@ export const enUS = {
     fee: "Fee",
     receiverAmount: "Amount",
     usdtAmount: "USDT Amount",
+    playerNote: "Player Note",
+    plsEnterPlayerNote: "Please enter the note",
   },
   promotion: {
     emptyLine1: "MORE PROMOTIONS AND ACTIVITIES ARE",
