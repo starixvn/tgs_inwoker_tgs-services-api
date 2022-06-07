@@ -97,49 +97,54 @@ function PerformManualThirdPartyDeposit(
   amount,
   paymentid,
   promotionid = "",
-  banktype,
-  playerNote
+  banktype
 ) {
   const result = ApiService.put("deposit/manual/thirdparty", {
     amount: amount,
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
     banktype: banktype || "thirdparty",
-    playerNote: playerNote,
   });
   return result;
 }
 
-function PerformUsdtDeposit(amount, paymentid, promotionid, banktype, playerNote) {
+function PerformUsdtDeposit(amount, paymentid, promotionid, banktype) {
   const result = ApiService.put("deposit/manual/usdt", {
     amount: amount,
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
     banktype: banktype || "usdt",
-    playerNote: playerNote,
   });
   return result;
 }
 
-function PerformPulsaDeposit(amount, paymentid, promotionid, banktype, playerNote) {
-  const result = ApiService.put("deposit/manual/pulsa", {
+function PerformPulsaDeposit(amount, paymentid, promotionid, banktype, note) {
+  var params = {
     amount: amount,
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
-    banktype: banktype || "pulsa",
-    playerNote: playerNote,
-  });
+    banktype: banktype || "pulsa"
+  }
+  if(note !== undefined && note !== null)
+  {
+    params.note = note;
+  }
+  const result = ApiService.put("deposit/manual/pulsa", params);
   return result;
 }
 
-function PerformEWalletDeposit(amount, paymentid, promotionid, banktype, playerNote) {
-  const result = ApiService.put("deposit/manual/ewallet", {
+function PerformEWalletDeposit(amount, paymentid, promotionid, banktype, note) {
+  var params = { 
     amount: amount,
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
-    banktype: banktype || "ewallet",
-    playerNote: playerNote,
-  });
+    banktype: banktype || "ewallet"
+  }
+  if(note !== undefined && note !== null)
+  {
+    params.note = note;
+  }
+  const result = ApiService.put("deposit/manual/ewallet", params);
   return result;
 }
 
@@ -149,8 +154,7 @@ function PerformManualBankDeposit(
   amount,
   paymentid,
   promotionid = "",
-  banktype,
-  playerNote,
+  banktype
 ) {
   const result = ApiService.put("deposit/manual/bank", {
     name: name,
@@ -158,8 +162,7 @@ function PerformManualBankDeposit(
     amount: amount,
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
-    banktype: banktype || "bank",
-    playerNote: playerNote,
+    banktype: banktype || "bank"
   });
   return result;
 }
@@ -169,16 +172,14 @@ function PerformManualFPSDeposit(
   amount,
   paymentid,
   promotionid = "",
-  banktype,
-  playerNote,
+  banktype
 ) {
   const result = ApiService.put("deposit/manual/fps", {
     account: account,
     amount: amount,
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
-    banktype: banktype || "fps",
-    playerNote: playerNote,
+    banktype: banktype || "fps"
   });
   return result;
 }
@@ -189,8 +190,7 @@ function PerformManualFPSDepositWithName(
   amount,
   paymentid,
   promotionid = "",
-  banktype,
-  playerNote,
+  banktype
 ) {
   const result = ApiService.put("deposit/manual/fps", {
     account: name,
@@ -198,8 +198,7 @@ function PerformManualFPSDepositWithName(
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
     banktype: banktype || "fps",
-    name: account,
-    playerNote: playerNote,
+    name: account
   });
   return result;
 }
@@ -287,13 +286,17 @@ function GetListOfWithdrawChannel() {
   const result = ApiService.get("withdraw");
   return result;
 }
-function DoWithdraw(amount, bankinfoid, paypassword, playerNote) {
-  const result = ApiService.post("withdraw", {
-    amount,
-    bankinfoid,
-    paypassword,
-    playerNote,
-  });
+function DoWithdraw(amount, bankinfoid, paypassword, note) {
+  var params = {
+    amount: amount,
+    bankinfoid: bankinfoid,
+    paypassword: paypassword
+  }
+  if(note !== undefined && note !== null)
+  {
+    params.note = note;
+  }
+  const result = ApiService.post("withdraw", params);
 
   return result;
 }
@@ -412,16 +415,14 @@ function PerformDeposit(
   paymentid,
   promotionid = "",
   paymentcode,
-  type,
-  playerNote
+  type
 ) {
   var url = `deposit/${type}/${paymentcode.toLowerCase()}`;
   var params = {
     amount: amount,
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
-    banktype: type,
-    playerNote: playerNote,
+    banktype: type
   };
   if (paymentcode.toUpperCase() === "LEEPAY" && type === "crypto") {
     const result = ApiService.put(url, params);
