@@ -219,7 +219,7 @@ export const enUS = {
       desc: "Information is encrypted",
       branch: "Branch",
       branchPlaceHolder: "Please Enter Bank Branch",
-      eWalletAccount: "E-money name",
+      eWalletAccount: "E-money Name",
       msgEnterEwalletAccount: "Please enter e-money name",
       phone: "Phone number",
       msgEnterPhone: "Please enter phone number",
@@ -317,7 +317,7 @@ export const enUS = {
     plsEnterUSDTAmount: "Please Enter USDT Amount",
     playerNote: "Player Note",
     plsEnterPlayerNote: "Please enter the note",
-    eWalletAccount: "E-money name",
+    eWalletAccount: "E-money Name",
   },
   forgotPassword: {
     title: "Forgot Password",
