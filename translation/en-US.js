@@ -317,6 +317,7 @@ export const enUS = {
     plsEnterUSDTAmount: "Please Enter USDT Amount",
     playerNote: "Player Note",
     plsEnterPlayerNote: "Please enter the note",
+    eWalletAccount: "E-money name",
   },
   forgotPassword: {
     title: "Forgot Password",

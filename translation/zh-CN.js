@@ -299,6 +299,7 @@ export const zhCN = {
     plsEnterUSDTAmount: "请输入USDT金额",
     playerNote: "玩家备注",
     plsEnterPlayerNote: "请输入玩家备注",
+    eWalletAccount: "电子货币名称",
   },
   forgotPassword: {
     title: "忘记密码",

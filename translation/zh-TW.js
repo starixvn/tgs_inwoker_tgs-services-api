@@ -299,6 +299,7 @@ export const zhTW = {
     plsEnterUSDTAmount: "請輸入USDT金額",
     playerNote: "玩家備註",
     plsEnterPlayerNote: "請輸入玩家備註",
+    eWalletAccount: "電子貨幣名稱",
   },
   forgotPassword: {
     title: "忘記密碼",

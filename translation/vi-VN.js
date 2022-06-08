@@ -313,6 +313,7 @@ export const vivN = {
     plsEnterUSDTAmount: "Vui lòng nhập số tiền USDT",
     playerNote: "Ghi chú của người chơi",
     plsEnterPlayerNote: "Vui lòng nhập ghi chú của người chơi",
+    eWalletAccount: "Tên tiền điện tử",
   },
   forgotPassword: {
     title: "Quên mật khẩu",

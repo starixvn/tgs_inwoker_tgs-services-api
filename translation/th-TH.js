@@ -305,6 +305,7 @@ export const thTH = {
     plsEnterUSDTAmount: "กรุณากรอกจำนวนเงิน USDT",
     playerNote: "หมายเหตุผู้เล่น",
     plsEnterPlayerNote: "กรุณาใส่หมายเหตุผู้เล่น",
+    eWalletAccount: "ชื่อเงินอิเล็กทรอนิกส์",
   },
   forgotPassword: {
     title: "ลืมรหัสผ่าน",

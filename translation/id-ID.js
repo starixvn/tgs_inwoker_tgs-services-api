@@ -313,6 +313,7 @@ export const idID = {
     },
     playerNote: "Catatan Pemain",
     plsEnterPlayerNote: "Silakan masukkan catatan pemain",
+    eWalletAccount: "Nama uang elektronik",
   },
   forgotPassword: {
     title: "Lupa Kata Sandi",
