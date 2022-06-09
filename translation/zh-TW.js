@@ -1218,4 +1218,8 @@ export const zhTW = {
   idr1: {
     pleaseEnterAccountName: "請输入銀行名稱",
   },
+
+  pointless: {
+    download: "APP鏈接載點",
+  },
 };

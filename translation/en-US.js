@@ -1257,4 +1257,8 @@ export const enUS = {
   idr1: {
     pleaseEnterAccountName: "Please enter your origin account",
   },
+
+  pointless: {
+    download: "APP Download",
+  },
 };

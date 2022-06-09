@@ -1224,4 +1224,7 @@ export const zhCN = {
   idr1: {
     pleaseEnterAccountName: "请输入银行名称",
   },
+  pointless: {
+    download: "APP链接载点",
+  },
 };
