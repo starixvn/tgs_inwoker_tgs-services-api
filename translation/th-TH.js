@@ -1239,4 +1239,8 @@ export const thTH = {
   idr1: {
     pleaseEnterAccountName: "กรุณาใส่ชื่อบัญชีของคุณ",
   },
+
+  pointless: {
+    download: "จุดดาวน์โหลดลิงค์ APP",
+  },
 };
