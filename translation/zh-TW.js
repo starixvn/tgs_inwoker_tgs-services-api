@@ -1083,6 +1083,30 @@ export const zhTW = {
     sports: "AVIA體育",
     esports: "AVIA電競",
   },
+
+  AWC_RCB: {
+    sports: "RCB988體育",
+  },
+  AWC_VENUS: {
+    live: "VENUS真人",
+  },
+  AWC_COCKFIGHT: {
+    sports: "SV388鬥鷄",
+  },
+  AWC_SPADE: {
+    electron: "SPADE電子",
+    fish: "SPADE捕魚",
+    slots: "SPADE老虎機",
+  },
+  AWC_FACAI: { electron: "發財電子", slots: "發財老虎機", fish: "發財捕魚" },
+  AWC_PGS: { electron: "PGS電子", slots: "PGS老虎機" },
+  AWC_AWS: { electron: "AWS電子", slots: "AWS老虎機" },
+  AWC_FS: { slots: "FS老虎機" },
+  AWC_YL: { electron: "YL電子", fish: "YL捕魚" },
+  AWC_KM: { electron: "KM電子" },
+  AWC_LUDO: { electron: "LUDO電子" },
+  AWC_AELOTTO: { lottery: "AE彩票" },
+
   TF: {
     sports: "TF體育",
     esports: "TF電競",

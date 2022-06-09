@@ -1090,6 +1090,30 @@ export const zhCN = {
     sports: "AVIA体育",
     esports: "AVIA电竞",
   },
+
+  AWC_RCB: {
+    sports: "RCB988体育",
+  },
+  AWC_VENUS: {
+    live: "VENUS真人",
+  },
+  AWC_COCKFIGHT: {
+    sports: "SV388斗鸡",
+  },
+  AWC_SPADE: {
+    electron: "SPADE电子",
+    fish: "SPADE捕鱼",
+    slots: "SPADE老虎机",
+  },
+  AWC_FACAI: { electron: "发财电子", slots: "发财老虎机", fish: "发财捕鱼" },
+  AWC_PGS: { electron: "PGS电子", slots: "PGS老虎机" },
+  AWC_AWS: { electron: "AWS电子", slots: "AWS老虎机" },
+  AWC_FS: { slots: "FS老虎机" },
+  AWC_YL: { electron: "YL电子", fish: "YL捕鱼" },
+  AWC_KM: { electron: "KM电子" },
+  AWC_LUDO: { electron: "LUDO电子" },
+  AWC_AELOTTO: { lottery: "AE彩票" },
+
   TF: {
     sports: "TF体育",
     esports: "TF电竞",
