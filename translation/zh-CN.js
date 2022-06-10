@@ -1255,5 +1255,6 @@ export const zhCN = {
   },
   pointless: {
     download: "APP链接载点",
+    copy: "已复制",
   },
 };
