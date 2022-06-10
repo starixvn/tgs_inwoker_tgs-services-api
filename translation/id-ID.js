@@ -1260,4 +1260,8 @@ export const idID = {
   idr1: {
     pleaseEnterAccountName: "Silakan masukkan akun asal Anda",
   },
+  pointless: {
+    download: "Titik unduh tautan APLIKASI",
+    copy: "Disalin",
+  },
 };

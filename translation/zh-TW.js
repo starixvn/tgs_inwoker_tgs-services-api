@@ -647,7 +647,7 @@ export const zhTW = {
     totalFund: "玩家總資金",
     mainAccount: "中心錢包",
     oneKeyReceive: "一鍵回收",
-    oneKeyTransfer: "一鍵轉出",
+    oneKeyTransfer: "一鍵轉入",
     maintenance: "維護中",
     transferFrom: "請選擇轉出錢包",
     transferFromWallet: "轉出錢包",
@@ -1222,5 +1222,10 @@ export const zhTW = {
 
   idr1: {
     pleaseEnterAccountName: "請输入銀行名稱",
+  },
+
+  pointless: {
+    download: "APP鏈接載點",
+    copy: "已復制",
   },
 };

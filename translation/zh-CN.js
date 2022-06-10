@@ -654,7 +654,7 @@ export const zhCN = {
     totalFund: "玩家总资金",
     mainAccount: "中心钱包",
     oneKeyReceive: "一键回收",
-    oneKeyTransfer: "一键转出",
+    oneKeyTransfer: "一键转入",
     maintenance: "维护中",
     transferFrom: "请选择转出钱包",
     transferFromWallet: "转出钱包",
@@ -1228,5 +1228,9 @@ export const zhCN = {
   },
   idr1: {
     pleaseEnterAccountName: "请输入银行名称",
+  },
+  pointless: {
+    download: "APP链接载点",
+    copy: "已复制",
   },
 };
