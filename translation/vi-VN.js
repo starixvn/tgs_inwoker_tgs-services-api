@@ -1241,5 +1241,6 @@ export const vivN = {
   },
   pointless: {
     download: "Điểm tải xuống liên kết APP",
+    copy: "Đã sao chép",
   },
 };
