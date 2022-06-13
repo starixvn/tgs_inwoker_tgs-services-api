@@ -599,7 +599,7 @@ export const idID = {
       status6: "Berbayar",
     },
     deposit: {
-      status1: "Penarikan Tertunda",
+      status1: "Setoran Tertunda",
       status2: "Memproses",
       status3: "Disetujui",
       status4: "Ditolak",
