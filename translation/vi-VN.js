@@ -666,7 +666,8 @@ export const vivN = {
     totalFund: "Số dư",
     mainAccount: "Ví chính",
     oneKeyReceive: "Nhận tất cả",
-    oneKeyTransfer: "Chuyển tất cả",
+    oneKeyTransferIn: "Chuyển vào",
+    oneKeyTransferOut: "Chuyển ra ngoài",
     maintenance: "bảo trì",
     transferFrom: "Chuyển từ",
     transferFromWallet: "Chuyển từ",
@@ -1096,6 +1097,29 @@ export const vivN = {
     sports: "AVIA ",
     esports: "AVIA",
   },
+
+  AWC_RCB: {
+    sports: "RCB988",
+  },
+  AWC_VENUS: {
+    live: "VENUS",
+  },
+  AWC_COCKFIGHT: {
+    sports: "SV388",
+  },
+  AWC_SPADE: {
+    electron: "SPADE",
+    fish: "SPADE",
+    slots: "SPADE",
+  },
+  AWC_FACAI: { electron: "FACAI", slots: "FACAI", fish: "FACAI" },
+  AWC_PGS: { electron: "PGS", slots: "PGS" },
+  AWC_AWS: { electron: "AWS", slots: "AWS" },
+  AWC_FS: { slots: "FS" },
+  AWC_YL: { electron: "YL", fish: "YL" },
+  AWC_KM: { electron: "KM" },
+  AWC_LUDO: { electron: "LUDO" },
+  AWC_AELOTTO: { lottery: "AE" },
   TF: {
     sports: "TF",
     esports: "TF",

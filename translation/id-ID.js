@@ -673,7 +673,8 @@ export const idID = {
     totalFund: "Saldo",
     mainAccount: "Dompet Utama",
     oneKeyReceive: "Terima Semua",
-    oneKeyTransfer: "Transfer Semua",
+    oneKeyTransferIn: "Transfer Masuk",
+    oneKeyTransferOut: "Transfer Keluar",
     maintenance: "Dalam Pemeliharaan",
     transferFrom: "Transfer Dari",
     transferFromWallet: "Transfer Dari",
@@ -1111,6 +1112,28 @@ export const idID = {
     sports: "AVIA Gaming",
     esports: "AVIA",
   },
+  AWC_RCB: {
+    sports: "RCB988",
+  },
+  AWC_VENUS: {
+    live: "VENUS",
+  },
+  AWC_COCKFIGHT: {
+    sports: "SV388",
+  },
+  AWC_SPADE: {
+    electron: "SPADE",
+    fish: "SPADE",
+    slots: "SPADE",
+  },
+  AWC_FACAI: { electron: "FACAI", slots: "FACAI", fish: "FACAI" },
+  AWC_PGS: { electron: "PGS", slots: "PGS" },
+  AWC_AWS: { electron: "AWS", slots: "AWS" },
+  AWC_FS: { slots: "FS" },
+  AWC_YL: { electron: "YL", fish: "YL" },
+  AWC_KM: { electron: "KM" },
+  AWC_LUDO: { electron: "LUDO" },
+  AWC_AELOTTO: { lottery: "AE" },
   TF: {
     sports: "TF Gaming",
     esports: "TF",
