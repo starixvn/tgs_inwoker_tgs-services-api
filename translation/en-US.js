@@ -603,7 +603,7 @@ export const enUS = {
       status6: "Paid",
     },
     deposit: {
-      status1: "Withdrawal Pending",
+      status1: "Deposit Pending",
       status2: "Processing",
       status3: "Approved",
       status4: "Rejected",
