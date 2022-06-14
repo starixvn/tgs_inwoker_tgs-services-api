@@ -1261,5 +1261,6 @@ export const enUS = {
   pointless: {
     download: "APP Download",
     copy: "Successful Copy",
+    link: "Link",
   },
 };

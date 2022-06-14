@@ -1223,5 +1223,6 @@ export const zhTW = {
   pointless: {
     download: "APP鏈接載點",
     copy: "已復制",
+    link: "鏈接",
   },
 };

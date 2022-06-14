@@ -1259,5 +1259,6 @@ export const idID = {
   pointless: {
     download: "Titik unduh tautan APLIKASI",
     copy: "Disalin",
+    link: "Tautan",
   },
 };
