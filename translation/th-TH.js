@@ -1266,5 +1266,6 @@ export const thTH = {
   pointless: {
     download: "จุดดาวน์โหลดลิงค์ APP",
     copy: "คัดลอก",
+    link: "ลิงค์",
   },
 };
