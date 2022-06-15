@@ -672,6 +672,7 @@ export const thTH = {
     transfer: "โอน",
     noticeTitle: "ประกาศ",
     msgFailedTransfer: "การโอนล้มเหลว",
+    msgTransferOutFromGP: "โอนจากกระเป๋าเงินย่อยทั้งหมดไปยังกระเป๋าเงินหลัก",
   },
   withdrawal: {
     notReachMin: "จำนวนเงินที่ถอนไม่ถึงจำนวนเงินขั้นต่ำ",

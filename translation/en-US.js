@@ -691,6 +691,7 @@ export const enUS = {
     transfer: "Transfer",
     noticeTitle: "Tips",
     msgFailedTransfer: "Transfer failed",
+    msgTransferOutFromGP: "Transfer from all sub-wallet to main wallet",
   },
 
   withdrawal: {

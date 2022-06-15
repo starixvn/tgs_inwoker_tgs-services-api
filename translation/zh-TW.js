@@ -661,6 +661,7 @@ export const zhTW = {
     transfer: "轉賬",
     noticeTitle: "溫馨提示",
     msgFailedTransfer: "轉賬失敗",
+    msgTransferOutFromGP: "從所有子錢包轉移到主錢包",
   },
 
   withdrawal: {

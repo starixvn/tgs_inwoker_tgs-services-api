@@ -668,6 +668,7 @@ export const zhCN = {
     transfer: "转账",
     noticeTitle: "温馨提示",
     msgFailedTransfer: "转账失败",
+    msgTransferOutFromGP: "从所有子钱包转移到主钱包",
   },
 
   withdrawal: {

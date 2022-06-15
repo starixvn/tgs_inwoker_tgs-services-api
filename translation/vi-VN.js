@@ -680,6 +680,7 @@ export const vivN = {
     transfer: "Chuyển",
     noticeTitle: "Mẹo",
     msgFailedTransfer: "Chuyển không thành công",
+    msgTransferOutFromGP: "Chuyển từ tất cả ví phụ sang ví chính",
   },
   withdrawal: {
     notReachMin: "số tiền rút không đạt số tiền tối thiểu",

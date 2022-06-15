@@ -687,6 +687,7 @@ export const idID = {
     transfer: "Transfer",
     noticeTitle: "Tips",
     msgFailedTransfer: "Transfer gagal",
+    msgTransferOutFromGP: "Transfer dari semua sub-dompet ke dompet utama",
   },
 
   withdrawal: {
