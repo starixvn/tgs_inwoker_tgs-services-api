@@ -344,6 +344,7 @@ export const idID = {
       withdrawalPassword: "Silakan masukkan kata sandi penarikan (6 angka)",
       confirmWithdrawalPassword: "Konfirmasi Kata Sandi Penarikan",
       promoteCode: "Kode Undangan",
+      email: "Silakan masukkan alamat email",
     },
     main: {
       homePage: "Beranda",
@@ -903,6 +904,7 @@ export const idID = {
         "Saya mengonfirmasi bahwa saya berusia minimal 18 tahun dan telah membaca dan menerima kebijakan, pernyataan privasi, syarat dan ketentuan situs web ini.",
       btn: "Daftar Sekarang",
       activation: "Verifikasi SMS",
+      email: "Silakan masukkan alamat email",
     },
     resetPassword: {
       title: "Setel Ulang Kata Sandi",

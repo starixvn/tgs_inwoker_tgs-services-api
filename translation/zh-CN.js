@@ -329,6 +329,7 @@ export const zhCN = {
       withdrawalPassword: "请输入提款密码 (6位数字)",
       confirmWithdrawalPassword: "重复提款密码",
       promoteCode: "邀请码（选填）",
+      email: "请输入邮箱地址",
     },
     main: {
       homePage: "首页",
@@ -883,6 +884,7 @@ export const zhCN = {
         "我确认我已年满18岁，并已阅读和接受本网站的策略丶隐私声明，条款及条件。",
       btn: "立即注册",
       activation: "SMS短信认证",
+      email: "请输入邮箱地址",
     },
     resetPassword: {
       title: "重置密码",

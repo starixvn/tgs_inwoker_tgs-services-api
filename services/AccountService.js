@@ -6,6 +6,8 @@ export const AccountService = {
   Register,
   Activation,
   VerifyActivation,
+  ActivationEmail,
+  VerifyActivationEmail,
   Logout,
   GetMemberInfo,
   AddRealName,
@@ -64,10 +66,8 @@ function Register(username, pwd, confirmpwd, invitationcode = "", upper) {
   });
   return result;
 }
-function Activation(username, pwd, areacode, phone) {
+function Activation(areacode, phone) {
   const result = ApiService.post("player/init-phone", {
-    username,
-    pwd,
     areacode,
     phone,
   });
@@ -75,6 +75,19 @@ function Activation(username, pwd, areacode, phone) {
 }
 function VerifyActivation(securitykey, validatecode) {
   const result = ApiService.put("player/init-phone", {
+    securitykey,
+    validatecode,
+  });
+  return result;
+}
+function ActivationEmail(email) {
+  const result = ApiService.post("player/init-email", {
+    email
+  });
+  return result;
+}
+function VerifyActivationEmail(securitykey, validatecode) {
+  const result = ApiService.put("player/init-email", {
     securitykey,
     validatecode,
   });

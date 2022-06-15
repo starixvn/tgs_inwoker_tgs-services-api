@@ -348,6 +348,7 @@ export const enUS = {
       withdrawalPassword: "Please enter withdrawal password (6 numerics)",
       confirmWithdrawalPassword: "Confirm Withdrawal Password",
       promoteCode: "Invitation Code ",
+      email: "Please enter email address",
     },
     main: {
       homePage: "Home",
@@ -909,6 +910,7 @@ export const enUS = {
         "I confirm that I am at least 18 years old and have read and accepted the policy, privacy statement, terms and conditions of this website.",
       btn: "Register Now",
       activation: "SMS Verification",
+      email: "Please enter email address",
     },
     resetPassword: {
       title: "Reset Password",
