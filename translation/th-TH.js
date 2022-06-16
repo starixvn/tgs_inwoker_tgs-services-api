@@ -336,6 +336,7 @@ export const thTH = {
       withdrawalPassword: "กรุณากรอกรหัสผ่านการถอน (6 หลัก)",
       confirmWithdrawalPassword: "ทำซ้ำรหัสผ่านการถอน",
       promoteCode: "รหัสเชิญ (ไม่บังคับ)",
+      email: "โปรดป้อนที่อยู่อีเมลของคุณ",
     },
     main: {
       homePage: "หน้าหลัก",
@@ -671,6 +672,7 @@ export const thTH = {
     transfer: "โอน",
     noticeTitle: "ประกาศ",
     msgFailedTransfer: "การโอนล้มเหลว",
+    msgTransferOutFromGP: "โอนจากกระเป๋าเงินย่อยทั้งหมดไปยังกระเป๋าเงินหลัก",
   },
   withdrawal: {
     notReachMin: "จำนวนเงินที่ถอนไม่ถึงจำนวนเงินขั้นต่ำ",
@@ -887,6 +889,7 @@ export const thTH = {
         "ฉันยืนยันว่าฉันอายุเกิน 18 ปีและได้อ่านและยอมรับนโยบาย คำชี้แจงสิทธิ์ส่วนบุคคล ข้อกำหนดและเงื่อนไขของเว็บไซต์นี้แล้ว",
       btn: "ลงทะเบียนเลย",
       activation: "การยืนยันทาง SMS",
+      email: "โปรดป้อนที่อยู่อีเมลของคุณ",
     },
     resetPassword: {
       title: "รีเซ็ตรหัสผ่าน",

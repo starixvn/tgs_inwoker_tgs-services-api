@@ -343,6 +343,7 @@ export const vivN = {
       withdrawalPassword: "Mật khẩu rút tiền",
       confirmWithdrawalPassword: "Xác nhận Mật khẩu Rút tiền",
       promoteCode: "Mã khuyến mãi",
+      email: "Vui lòng nhập địa chỉ email",
     },
     main: {
       homePage: "Trang chủ",
@@ -679,6 +680,7 @@ export const vivN = {
     transfer: "Chuyển",
     noticeTitle: "Mẹo",
     msgFailedTransfer: "Chuyển không thành công",
+    msgTransferOutFromGP: "Chuyển từ tất cả ví phụ sang ví chính",
   },
   withdrawal: {
     notReachMin: "số tiền rút không đạt số tiền tối thiểu",
@@ -894,6 +896,7 @@ export const vivN = {
         "Tôi xác nhận rằng tôi từ 18 tuổi trở lên và đã đọc và chấp nhận chính sách, tuyên bố về quyền riêng tư, các điều khoản và điều kiện của trang web này.",
       btn: "Đăng ký ngay",
       activation: "Xác minh qua SMS",
+      email: "Vui lòng nhập địa chỉ email",
     },
     resetPassword: {
       title: "Đặt lại mật khẩu",

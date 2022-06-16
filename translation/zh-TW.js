@@ -329,6 +329,7 @@ export const zhTW = {
       withdrawalPassword: "請輸入提款密碼 (6位數字)",
       confirmWithdrawalPassword: "重複提款密碼",
       promoteCode: "邀請碼（選填）",
+      email: "請輸入郵箱地址",
     },
     main: {
       homePage: "首頁",
@@ -660,6 +661,7 @@ export const zhTW = {
     transfer: "轉賬",
     noticeTitle: "溫馨提示",
     msgFailedTransfer: "轉賬失敗",
+    msgTransferOutFromGP: "從所有子錢包轉移到主錢包",
   },
 
   withdrawal: {
@@ -876,6 +878,7 @@ export const zhTW = {
         "我確認我已年滿18歲，並已閱讀和接受本網站的策略丶隱私聲明，條款及條件。",
       btn: "立即註冊",
       activation: "SMS短信認證",
+      email: "請輸入郵箱地址",
     },
     resetPassword: {
       title: "重置密碼",
