@@ -832,7 +832,7 @@ export const idID = {
       addBookmark: "Bookmark",
       transfer: "Transfer",
       deposit: "Setoran",
-      mainAccount: "Saldo：",
+      mainAccount: "Saldo",
       dollor: "",
       logout: "Keluar",
       welcomBack: "Selamat datang kembali,",

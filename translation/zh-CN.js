@@ -813,7 +813,7 @@ export const zhCN = {
       addBookmark: "加入收藏",
       transfer: "转账",
       deposit: "存款",
-      mainAccount: "总资金：",
+      mainAccount: "总资金",
       dollor: "",
       logout: "登出",
       welcomBack: "欢迎您回来，",

@@ -817,7 +817,7 @@ export const thTH = {
       addBookmark: "เพิ่มในรายการโปรด",
       transfer: "โอน",
       deposit: "ฝาก",
-      mainAccount: "ยอดเงินคงเหลือ:",
+      mainAccount: "ยอดเงินคงเหลือ",
       dollor: "",
       logout: "ออกจากระบบ",
       welcomBack: "ยินดีต้อนรับ",

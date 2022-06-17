@@ -806,7 +806,7 @@ export const zhTW = {
       addBookmark: "加入收藏",
       transfer: "轉賬",
       deposit: "存款",
-      mainAccount: "總資金:",
+      mainAccount: "總資金",
       dollor: "",
       logout: "登出",
       welcomBack: "歡迎您回來，",

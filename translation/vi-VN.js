@@ -825,7 +825,7 @@ export const vivN = {
       addBookmark: "Dấu trang",
       transfer: "Chuyển",
       deposit: "Gửi tiền",
-      mainAccount: "Số dư ：",
+      mainAccount: "Số dư ",
       dollor: "",
       logout: "Đăng xuất",
       welcomBack: "Chào mừng bạn trở lại",

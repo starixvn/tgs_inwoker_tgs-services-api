@@ -838,7 +838,7 @@ export const enUS = {
       addBookmark: "Bookmark",
       transfer: "Transfer",
       deposit: "Deposit",
-      mainAccount: "Balance：",
+      mainAccount: "Balance",
       dollor: "",
       logout: "Logout",
       welcomBack: "Welcome back, ",
