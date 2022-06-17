@@ -7,6 +7,7 @@ export const WalletService = {
   PerformUploadDepositProof,
   GetListOfWithdrawChannel,
   GetBankCardList,
+  InitBankCard,
   AddBankCard,
   DeleteBankCard,
   DoWithdraw,
@@ -302,6 +303,15 @@ function DoWithdraw(amount, bankinfoid, paypassword, note) {
 }
 function GetBankCardList() {
   const result = ApiService.get("bankinfo");
+
+  return result;
+}
+function InitBankCard(channelid, bankType, detail) {
+  const result = ApiService.post("player/init-bankinfo", {
+    paymentchannelid: channelid,
+    banktype: bankType,
+    detail: detail,
+  });
 
   return result;
 }

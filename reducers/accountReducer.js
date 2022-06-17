@@ -174,6 +174,7 @@ function mapToAccountState(state, data) {
     playercode: data.playercode,
     identityformstatus: data.identityformstatus,
     identityformid: data.identityformid ? data.identityformid : "",
+    bankInfoAuthentication: data.bankinfoauthentication,
   };
 }
 export function accountReducer(state = initialState, action) {
