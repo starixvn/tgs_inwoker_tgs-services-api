@@ -1004,6 +1004,9 @@ export const thTH = {
     name: "Sexy Gaming",
     live: "Sexy Gaming",
   },
+  AWC_SG: {
+    live: "Sexy Gaming",
+  },
   SW: {
     live: "Skywind",
     slots: "Skywind",

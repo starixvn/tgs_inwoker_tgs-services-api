@@ -1012,6 +1012,9 @@ export const vivN = {
     name: "Trò chơi gợi cảm",
     live: "Trò chơi gợi cảm",
   },
+  AWC_SG: {
+    live: "Sexy Gaming",
+  },
   SW: {
     live: "Skywind",
     slots: "Skywind",

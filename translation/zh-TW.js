@@ -996,6 +996,9 @@ export const zhTW = {
     name: "Sexy真人",
     live: "Sexy真人",
   },
+  AWC_SG: {
+    live: "Sexy真人",
+  },
   SW: {
     live: "SW真人",
     slots: "SW老虎機",

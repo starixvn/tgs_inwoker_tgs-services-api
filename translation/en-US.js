@@ -1034,6 +1034,9 @@ export const enUS = {
     slots: "Skywind",
     electron: "Skywind",
   },
+  AWC_SG: {
+    live: "Sexy Gaming",
+  },
   SBO: {
     sports: "SBO",
   },
