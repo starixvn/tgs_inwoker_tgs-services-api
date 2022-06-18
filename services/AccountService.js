@@ -66,8 +66,10 @@ function Register(username, pwd, confirmpwd, invitationcode = "", upper) {
   });
   return result;
 }
-function Activation(areacode, phone) {
+function Activation(username, pwd, areacode, phone) {
   const result = ApiService.post("player/init-phone", {
+    username,
+    pwd,
     areacode,
     phone,
   });
@@ -82,7 +84,7 @@ function VerifyActivation(securitykey, validatecode) {
 }
 function ActivationEmail(email) {
   const result = ApiService.post("player/init-email", {
-    email
+    email,
   });
   return result;
 }
