@@ -220,6 +220,7 @@ export const zhCN = {
       reminder: "贴心提醒",
       callHotline: "或拨打000-000-0000获得帮助。",
       bindBankCard: "绑定其他银行卡",
+      goDeposit: "前往存款",
       goWithdrawal: "前往提款",
       goProfile: "前往个人资料",
       noMoreAddCard:
@@ -1129,6 +1130,10 @@ export const zhCN = {
     sports: "TF体育",
     esports: "TF电竞",
   },
+  idr: {
+    withdrawalNumber: "银行卡号码",
+    msgEnterWithdrawalNumber: "请输入银行卡号码",
+  },
   hk28: {
     withdrawalNumber: "银行卡号码/FPS(转数快)号码",
     msgEnterWithdrawalNumber: "请输入银行卡号码/FPS(转数快)号码",
@@ -1263,6 +1268,7 @@ export const zhCN = {
   },
   idr1: {
     pleaseEnterAccountName: "请输入银行名称",
+    msgPlsSelectAccount: "请选择帐号",
   },
   pointless: {
     download: "APP链接载点",

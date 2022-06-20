@@ -220,6 +220,7 @@ export const zhTW = {
       reminder: "貼心提醒",
       callHotline: "或撥打000-000-0000獲得幫助。",
       bindBankCard: "綁定其他銀行卡",
+      goDeposit: "前往存款",
       goWithdrawal: "前往提款",
       goProfile: "前往個人資料",
       noMoreAddCard:
@@ -1122,6 +1123,10 @@ export const zhTW = {
     sports: "TF體育",
     esports: "TF電競",
   },
+  idr: {
+    withdrawalNumber: "銀行卡號碼",
+    msgEnterWithdrawalNumber: "請輸入銀行卡號碼",
+  },
   hk28: {
     withdrawalNumber: "銀行卡號碼/FPS(轉數快)號碼",
     msgEnterWithdrawalNumber: "請輸入銀行卡號碼/FPS(轉數快)號碼",
@@ -1257,6 +1262,7 @@ export const zhTW = {
 
   idr1: {
     pleaseEnterAccountName: "請输入銀行名稱",
+    msgPlsSelectAccount: "請選擇帳號",
   },
 
   pointless: {

@@ -223,6 +223,7 @@ export const thTH = {
       reminder: "เตือนความจำอย่างใกล้ชิด",
       callHotline: "หรือโทร 000-000-0000 เพื่อขอความช่วยเหลือ",
       bindBankCard: "ผูกบัตรธนาคารอื่น",
+      goDeposit: "ไปที่การเงินฝาก",
       goWithdrawal: "ไปที่การถอนเงิน",
       goProfile: "ไปที่การข้อมูลส่วนตัว",
       noMoreAddCard:
@@ -1128,6 +1129,11 @@ export const thTH = {
     sports: "TF Gaming",
     esports: "TF",
   },
+  idr: {
+    withdrawalNumber: "หมายเลขบัตรธนาคาร",
+    msgEnterWithdrawalNumber:
+      "โปรดป้อนหมายเลขบัตรธนาคาร",
+  },
   hk28: {
     withdrawalNumber: "หมายเลขบัตรธนาคาร/ที่อยู่สกุลเงิน Crypto",
     msgEnterWithdrawalNumber:
@@ -1271,6 +1277,7 @@ export const thTH = {
 
   idr1: {
     pleaseEnterAccountName: "กรุณาใส่ชื่อบัญชีของคุณ",
+    msgPlsSelectAccount: "กรุณาเลือกบัญชี",
   },
 
   pointless: {

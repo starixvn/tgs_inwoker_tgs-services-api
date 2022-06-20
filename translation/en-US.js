@@ -234,6 +234,7 @@ export const enUS = {
       callHotline: "Or call 000-000-0000 for help.",
       bindBankCard: "Bind Other Banks",
       goWithdrawal: "Withdraw",
+      goDeposit: "Deposit",
       goProfile: "Profile",
       noMoreAddCard:
         "Congratulations that you have completed the bank account binding. You can quickly select your withdrawal bank when you withdraw later.",
@@ -1153,6 +1154,11 @@ export const enUS = {
     sports: "TF Gaming",
     esports: "TF",
   },
+  idr: {
+    withdrawalNumber: "Bank card number",
+    msgEnterWithdrawalNumber:
+      "Please enter bank card number",
+  },
   hk28: {
     withdrawalNumber: "Bank card number/Crypto currency address",
     msgEnterWithdrawalNumber:
@@ -1294,6 +1300,7 @@ export const enUS = {
 
   idr1: {
     pleaseEnterAccountName: "Please enter your origin account",
+    msgPlsSelectAccount: "Please select account",
   },
 
   pointless: {

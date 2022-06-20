@@ -230,6 +230,7 @@ export const idID = {
       reminder: "Pengingat",
       callHotline: "Atau hubungi 000-000-0000 untuk bantuan.",
       bindBankCard: "Mengikat Bank Lain",
+      goDeposit: "Setoran",
       goWithdrawal: "Penarikan",
       goProfile: "Profil",
       noMoreAddCard:
@@ -1148,6 +1149,10 @@ export const idID = {
     sports: "TF Gaming",
     esports: "TF",
   },
+  idr: {
+    withdrawalNumber: "NOMOR REKENING",
+    msgEnterWithdrawalNumber: "Silahkan Masukkan Nomor Rekening",
+  },
   hk28: {
     withdrawalNumber: "NOMOR REKENING",
     msgEnterWithdrawalNumber: "Silahkan Masukkan Nomor Rekening",
@@ -1292,6 +1297,7 @@ export const idID = {
 
   idr1: {
     pleaseEnterAccountName: "Silakan masukkan akun asal Anda",
+    msgPlsSelectAccount: "Silakan pilih akun asal Anda",
   },
   pointless: {
     download: "Titik unduh tautan APLIKASI",
