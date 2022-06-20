@@ -225,11 +225,14 @@ export const idID = {
       title: "Tambah bank berhasil",
       successDesc:
         "Selamat Anda telah menyelesaikan pengikatan rekening bank. Anda dapat dengan cepat memilih bank penarikan Anda ketika Anda menarik nanti. Jika Anda ingin mengikat bank lain,",
+      successDescDeposit:
+        "Selamat Anda telah menyelesaikan pengikatan rekening bank.",
       bindDesc:
         "Silahkan klik 'Ikat Bank Lain' di bawah ini untuk melakukan operasi lagi.",
       reminder: "Pengingat",
       callHotline: "Atau hubungi 000-000-0000 untuk bantuan.",
       bindBankCard: "Mengikat Bank Lain",
+      goDeposit: "Setoran",
       goWithdrawal: "Penarikan",
       goProfile: "Profil",
       noMoreAddCard:
@@ -1057,6 +1060,10 @@ export const idID = {
     slots: "JILI",
     fish: "JILI",
   },
+  JILITF: {
+    slots: "JILI",
+    fish: "JILI",
+  },
   JOKER: {
     slots: "JOKER",
     fish: "JOKER",
@@ -1143,6 +1150,10 @@ export const idID = {
   TF: {
     sports: "TF Gaming",
     esports: "TF",
+  },
+  idr: {
+    withdrawalNumber: "NOMOR REKENING",
+    msgEnterWithdrawalNumber: "Silahkan Masukkan Nomor Rekening",
   },
   hk28: {
     withdrawalNumber: "NOMOR REKENING",
@@ -1288,6 +1299,7 @@ export const idID = {
 
   idr1: {
     pleaseEnterAccountName: "Silakan masukkan akun asal Anda",
+    msgPlsSelectAccount: "Silakan pilih akun asal Anda",
   },
   pointless: {
     download: "Titik unduh tautan APLIKASI",

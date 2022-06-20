@@ -228,12 +228,15 @@ export const enUS = {
       title: "Add bank succesful",
       successDesc:
         "Congratulations that you have completed the bank account binding. You can quickly select your withdrawal bank when you withdraw later. If you want to bind another banks,",
+      successDescDeposit:
+        "Congratulations that you have completed the bank account binding.",
       bindDesc:
         "Please click “Bind Other Banks” below to perform the operation again.",
       reminder: "Reminder",
       callHotline: "Or call 000-000-0000 for help.",
       bindBankCard: "Bind Other Banks",
       goWithdrawal: "Withdraw",
+      goDeposit: "Deposit",
       goProfile: "Profile",
       noMoreAddCard:
         "Congratulations that you have completed the bank account binding. You can quickly select your withdrawal bank when you withdraw later.",
@@ -1062,6 +1065,10 @@ export const enUS = {
     slots: "JILI",
     fish: "JILI",
   },
+  JILITF: {
+    slots: "JILI",
+    fish: "JILI",
+  },
   JOKER: {
     slots: "JOKER",
     fish: "JOKER",
@@ -1148,6 +1155,11 @@ export const enUS = {
   TF: {
     sports: "TF Gaming",
     esports: "TF",
+  },
+  idr: {
+    withdrawalNumber: "Bank card number",
+    msgEnterWithdrawalNumber:
+      "Please enter bank card number",
   },
   hk28: {
     withdrawalNumber: "Bank card number/Crypto currency address",
@@ -1290,6 +1302,7 @@ export const enUS = {
 
   idr1: {
     pleaseEnterAccountName: "Please enter your origin account",
+    msgPlsSelectAccount: "Please select account",
   },
 
   pointless: {

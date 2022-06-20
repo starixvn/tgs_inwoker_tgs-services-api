@@ -216,10 +216,13 @@ export const zhCN = {
       title: "添加银行卡成功",
       successDesc:
         "恭喜您已经设定完成银行卡绑定，后续在提款时可以快速选取您的银行卡，若还想绑定其他银行卡，",
+      successDescDeposit:
+        "恭喜您已经设定完成银行卡绑定.",
       bindDesc: "请点选下方“绑定其他银行卡”再次进行操作。",
       reminder: "贴心提醒",
       callHotline: "或拨打000-000-0000获得帮助。",
       bindBankCard: "绑定其他银行卡",
+      goDeposit: "前往存款",
       goWithdrawal: "前往提款",
       goProfile: "前往个人资料",
       noMoreAddCard:
@@ -1036,6 +1039,10 @@ export const zhCN = {
     slots: "JILI老虎机",
     fish: "JILI捕鱼",
   },
+  JILITF: {
+    slots: "JILI老虎机",
+    fish: "JILI捕鱼",
+  },
   JOKER: {
     slots: "JOKER老虎机",
     fish: "JOKER捕鱼",
@@ -1124,6 +1131,10 @@ export const zhCN = {
   TF: {
     sports: "TF体育",
     esports: "TF电竞",
+  },
+  idr: {
+    withdrawalNumber: "银行卡号码",
+    msgEnterWithdrawalNumber: "请输入银行卡号码",
   },
   hk28: {
     withdrawalNumber: "银行卡号码/FPS(转数快)号码",
@@ -1259,6 +1270,7 @@ export const zhCN = {
   },
   idr1: {
     pleaseEnterAccountName: "请输入银行名称",
+    msgPlsSelectAccount: "请选择帐号",
   },
   pointless: {
     download: "APP链接载点",

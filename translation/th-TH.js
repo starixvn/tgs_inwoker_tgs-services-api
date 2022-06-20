@@ -219,10 +219,13 @@ export const thTH = {
       title: "เพิ่มบัตรธนาคารเรียบร้อยแล้ว",
       successDesc:
         "ยินดีด้วย คุณได้ทำการผูกบัตรธนาคารเรียบร้อยแล้ว คุณสามารถเลือกบัตรธนาคารของคุณได้อย่างรวดเร็วเมื่อคุณถอนเงินในภายหลัง หากคุณต้องการผูกบัตรธนาคารอื่นๆ",
+      successDescDeposit:
+        "ยินดีด้วย คุณได้ทำการผูกบัตรธนาคารเรียบร้อยแล้ว ",
       bindDesc: "โปรดคลิก 'ผูกบัตรธนาคารอื่น' ด้านล่างเพื่อดำเนินการอีกครั้ง",
       reminder: "เตือนความจำอย่างใกล้ชิด",
       callHotline: "หรือโทร 000-000-0000 เพื่อขอความช่วยเหลือ",
       bindBankCard: "ผูกบัตรธนาคารอื่น",
+      goDeposit: "ไปที่การเงินฝาก",
       goWithdrawal: "ไปที่การถอนเงิน",
       goProfile: "ไปที่การข้อมูลส่วนตัว",
       noMoreAddCard:
@@ -1037,6 +1040,10 @@ export const thTH = {
     slots: "JILI",
     fish: "JILI",
   },
+  JILITF: {
+    slots: "JILI",
+    fish: "JILI",
+  },
   JOKER: {
     slots: "JOKER",
     fish: "JOKER",
@@ -1123,6 +1130,11 @@ export const thTH = {
   TF: {
     sports: "TF Gaming",
     esports: "TF",
+  },
+  idr: {
+    withdrawalNumber: "หมายเลขบัตรธนาคาร",
+    msgEnterWithdrawalNumber:
+      "โปรดป้อนหมายเลขบัตรธนาคาร",
   },
   hk28: {
     withdrawalNumber: "หมายเลขบัตรธนาคาร/ที่อยู่สกุลเงิน Crypto",
@@ -1267,6 +1279,7 @@ export const thTH = {
 
   idr1: {
     pleaseEnterAccountName: "กรุณาใส่ชื่อบัญชีของคุณ",
+    msgPlsSelectAccount: "กรุณาเลือกบัญชี",
   },
 
   pointless: {

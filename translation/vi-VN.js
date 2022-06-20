@@ -225,11 +225,14 @@ export const vivN = {
       title: "Thêm thẻ ngân hàng thành công",
       successDesc:
         "Xin chúc mừng vì bạn đã hoàn tất việc ràng buộc thẻ ngân hàng. Bạn có thể nhanh chóng chọn thẻ ngân hàng của mình khi rút tiền sau. Nếu bạn muốn ràng buộc các thẻ ngân hàng khác",
+      successDescDeposit:
+        "Xin chúc mừng vì bạn đã hoàn tất việc ràng buộc thẻ ngân hàng.",
       bindDesc:
         'Vui lòng nhấp vào" Liên kết các thẻ ngân hàng khác "bên dưới để thực hiện lại thao tác.',
       reminder: "Nhắc nhở",
       callHotline: "Hoặc gọi 000-000-0000 để được trợ giúp.",
       bindBankCard: "Liên kết Thẻ Ngân hàng Khác",
+      goDeposit: "Chuyển đến Gửi tiền",
       goWithdrawal: "Chuyển đến Rút tiền",
       goProfile: "Chuyển đến TIỂU SỬ",
       noMoreAddCard:
@@ -1045,6 +1048,10 @@ export const vivN = {
     slots: "JILI",
     fish: "JILI",
   },
+  JILITF: {
+    slots: "JILI",
+    fish: "JILI",
+  },
   JOKER: {
     slots: "JOKER",
     fish: "JOKER",
@@ -1129,6 +1136,11 @@ export const vivN = {
   TF: {
     sports: "TF",
     esports: "TF",
+  },
+  idr: {
+    withdrawalNumber: "Số thẻ ngân hàng",
+    msgEnterWithdrawalNumber:
+      "Vui lòng nhập số thẻ ngân hàng",
   },
   hk28: {
     withdrawalNumber: "Số thẻ ngân hàng / Địa chỉ tiền điện tử",
@@ -1273,6 +1285,7 @@ export const vivN = {
   },
   idr1: {
     pleaseEnterAccountName: "Vui lòng nhập tên tài khoản của bạn",
+    msgPlsSelectAccount: "Vui lòng chọn tài khoản",
   },
   pointless: {
     download: "Điểm tải xuống liên kết APP",

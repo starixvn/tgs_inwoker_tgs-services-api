@@ -216,10 +216,13 @@ export const zhTW = {
       title: "添加銀行卡成功",
       successDesc:
         "恭喜您已經設定完成銀行卡綁定，後續在提款時可以快速選取您的銀行卡，若還想綁定其他銀行卡，",
+      successDescDeposit:
+        "恭喜您已經設定完成銀行卡綁定.",
       bindDesc: "請點選下方“綁定其他銀行卡”再次進行操作。",
       reminder: "貼心提醒",
       callHotline: "或撥打000-000-0000獲得幫助。",
       bindBankCard: "綁定其他銀行卡",
+      goDeposit: "前往存款",
       goWithdrawal: "前往提款",
       goProfile: "前往個人資料",
       noMoreAddCard:
@@ -1029,6 +1032,10 @@ export const zhTW = {
     slots: "JILI老虎機",
     fish: "JILI捕魚",
   },
+  JILITF: {
+    slots: "JILI老虎機",
+    fish: "JILI捕魚",
+  },
   JOKER: {
     slots: "JOKER老虎機",
     fish: "JOKER捕魚",
@@ -1117,6 +1124,10 @@ export const zhTW = {
   TF: {
     sports: "TF體育",
     esports: "TF電競",
+  },
+  idr: {
+    withdrawalNumber: "銀行卡號碼",
+    msgEnterWithdrawalNumber: "請輸入銀行卡號碼",
   },
   hk28: {
     withdrawalNumber: "銀行卡號碼/FPS(轉數快)號碼",
@@ -1253,6 +1264,7 @@ export const zhTW = {
 
   idr1: {
     pleaseEnterAccountName: "請输入銀行名稱",
+    msgPlsSelectAccount: "請選擇帳號",
   },
 
   pointless: {
