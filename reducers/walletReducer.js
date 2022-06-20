@@ -88,6 +88,7 @@ const initState = {
   updateBalanceloading: false,
   transferLoading: false,
   message: "",
+  depositList: [],
   depositTypeList: [],
   depositLoading: false,
   depositResult: null,
@@ -110,6 +111,39 @@ const initState = {
   depositMinLimit: 0,
   depositMaxLimit: 0,
 };
+function mapDepositList(result) {
+  var data = result.data;
+
+  var depositList = [];
+  var checkDuplicate = [];
+  for (var i = 0; i < data.length; i++) {
+    if (checkDuplicate.indexOf(data[i].banktype) < 0) {
+      checkDuplicate.push(data[i].banktype);
+      depositList.push({
+        banktype: data[i].banktype,
+        channel: [
+          {
+            channelid: data[i].channelid,
+            channelname: data[i].channelname,
+            channelcode: data[i].channelcode,
+            transferlimit: data[i].transferlimit,
+          },
+        ],
+      });
+    } else {
+      depositList
+        .filter((a) => a.banktype === data[i].banktype)[0]
+        .channel.push({
+          channelid: data[i].channelid,
+          channelname: data[i].channelname,
+          channelcode: data[i].channelcode,
+          transferlimit: data[i].transferlimit,
+        });
+    }
+  }
+
+  return { depositList };
+}
 function mapDepositType(result) {
   var data = result.data;
 
@@ -451,6 +485,7 @@ const walletReducer = (state = initState, action) => {
       return {
         ...state,
         ...mapDepositType(action.payload),
+        ...mapDepositList(action.payload),
         loading: false,
       };
     case GETDEPOSITCHANNEL_FAIL:

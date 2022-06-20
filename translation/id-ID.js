@@ -225,6 +225,8 @@ export const idID = {
       title: "Tambah bank berhasil",
       successDesc:
         "Selamat Anda telah menyelesaikan pengikatan rekening bank. Anda dapat dengan cepat memilih bank penarikan Anda ketika Anda menarik nanti. Jika Anda ingin mengikat bank lain,",
+      successDescDeposit:
+        "Selamat Anda telah menyelesaikan pengikatan rekening bank.",
       bindDesc:
         "Silahkan klik 'Ikat Bank Lain' di bawah ini untuk melakukan operasi lagi.",
       reminder: "Pengingat",

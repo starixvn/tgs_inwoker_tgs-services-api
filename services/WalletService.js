@@ -41,6 +41,9 @@ export const WalletService = {
   PerformPulsaDeposit,
   PerformEWalletDeposit,
   WithdrawEverything,
+  PerformManualBankDepositWithDetail,
+  PerformPulsaDepositWithDetail,
+  PerformEWalletDepositWithDetail,
 };
 
 function WithdrawalFromGame(gpcode, amount) {
@@ -441,4 +444,67 @@ function PerformDeposit(
     const result = ApiService.post(url, params);
     return result;
   }
+}
+
+function PerformManualBankDepositWithDetail(
+  name,
+  account,
+  amount,
+  paymentid,
+  promotionid = "",
+  banktype,
+  detail
+) {
+  var params = {
+    name: name,
+    account: account,
+    amount: amount,
+    paymentid: paymentid,
+    promotionid: promotionid === "" ? null : promotionid,
+    banktype: banktype || "bank",
+  };
+  if(detail !== undefined && detail !== null)
+  {
+    params.detail = detail;
+  }
+  const result = ApiService.put("deposit/manual/bank", params);
+  return result;
+}
+
+function PerformPulsaDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail) {
+  var params = {
+    amount: amount,
+    paymentid: paymentid,
+    promotionid: promotionid === "" ? null : promotionid,
+    banktype: banktype || "pulsa"
+  }
+  if(note !== undefined && note !== null)
+  {
+    params.note = note;
+  }
+  if(detail !== undefined && detail !== null)
+  {
+    params.detail = detail;
+  }
+  const result = ApiService.put("deposit/manual/pulsa", params);
+  return result;
+}
+
+function PerformEWalletDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail) {
+  var params = { 
+    amount: amount,
+    paymentid: paymentid,
+    promotionid: promotionid === "" ? null : promotionid,
+    banktype: banktype || "ewallet"
+  }
+  if(note !== undefined && note !== null)
+  {
+    params.note = note;
+  }
+  if(detail !== undefined && detail !== null)
+  {
+    params.detail = detail;
+  }
+  const result = ApiService.put("deposit/manual/ewallet", params);
+  return result;
 }

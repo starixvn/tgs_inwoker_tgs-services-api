@@ -225,6 +225,8 @@ export const vivN = {
       title: "Thêm thẻ ngân hàng thành công",
       successDesc:
         "Xin chúc mừng vì bạn đã hoàn tất việc ràng buộc thẻ ngân hàng. Bạn có thể nhanh chóng chọn thẻ ngân hàng của mình khi rút tiền sau. Nếu bạn muốn ràng buộc các thẻ ngân hàng khác",
+      successDescDeposit:
+        "Xin chúc mừng vì bạn đã hoàn tất việc ràng buộc thẻ ngân hàng.",
       bindDesc:
         'Vui lòng nhấp vào" Liên kết các thẻ ngân hàng khác "bên dưới để thực hiện lại thao tác.',
       reminder: "Nhắc nhở",

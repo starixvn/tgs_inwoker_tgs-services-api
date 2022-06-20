@@ -216,6 +216,8 @@ export const zhTW = {
       title: "添加銀行卡成功",
       successDesc:
         "恭喜您已經設定完成銀行卡綁定，後續在提款時可以快速選取您的銀行卡，若還想綁定其他銀行卡，",
+      successDescDeposit:
+        "恭喜您已經設定完成銀行卡綁定.",
       bindDesc: "請點選下方“綁定其他銀行卡”再次進行操作。",
       reminder: "貼心提醒",
       callHotline: "或撥打000-000-0000獲得幫助。",

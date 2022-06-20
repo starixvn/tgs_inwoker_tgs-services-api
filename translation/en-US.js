@@ -228,6 +228,8 @@ export const enUS = {
       title: "Add bank succesful",
       successDesc:
         "Congratulations that you have completed the bank account binding. You can quickly select your withdrawal bank when you withdraw later. If you want to bind another banks,",
+      successDescDeposit:
+        "Congratulations that you have completed the bank account binding.",
       bindDesc:
         "Please click “Bind Other Banks” below to perform the operation again.",
       reminder: "Reminder",
