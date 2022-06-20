@@ -1062,6 +1062,10 @@ export const enUS = {
     slots: "JILI",
     fish: "JILI",
   },
+  JILITF: {
+    slots: "JILI",
+    fish: "JILI",
+  },
   JOKER: {
     slots: "JOKER",
     fish: "JOKER",
