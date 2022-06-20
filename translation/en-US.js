@@ -838,7 +838,7 @@ export const enUS = {
       addBookmark: "Bookmark",
       transfer: "Transfer",
       deposit: "Deposit",
-      mainAccount: "Balance：",
+      mainAccount: "Balance",
       dollor: "",
       logout: "Logout",
       welcomBack: "Welcome back, ",
@@ -1033,6 +1033,9 @@ export const enUS = {
     live: "Skywind",
     slots: "Skywind",
     electron: "Skywind",
+  },
+  AWC_SG: {
+    live: "Sexy Gaming",
   },
   SBO: {
     sports: "SBO",

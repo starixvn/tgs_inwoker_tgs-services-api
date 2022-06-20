@@ -825,7 +825,7 @@ export const vivN = {
       addBookmark: "Dấu trang",
       transfer: "Chuyển",
       deposit: "Gửi tiền",
-      mainAccount: "Số dư ：",
+      mainAccount: "Số dư ",
       dollor: "",
       logout: "Đăng xuất",
       welcomBack: "Chào mừng bạn trở lại",
@@ -1011,6 +1011,9 @@ export const vivN = {
   SG: {
     name: "Trò chơi gợi cảm",
     live: "Trò chơi gợi cảm",
+  },
+  AWC_SG: {
+    live: "Sexy Gaming",
   },
   SW: {
     live: "Skywind",

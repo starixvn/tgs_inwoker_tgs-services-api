@@ -817,7 +817,7 @@ export const thTH = {
       addBookmark: "เพิ่มในรายการโปรด",
       transfer: "โอน",
       deposit: "ฝาก",
-      mainAccount: "ยอดเงินคงเหลือ:",
+      mainAccount: "ยอดเงินคงเหลือ",
       dollor: "",
       logout: "ออกจากระบบ",
       welcomBack: "ยินดีต้อนรับ",
@@ -1002,6 +1002,9 @@ export const thTH = {
   },
   SG: {
     name: "Sexy Gaming",
+    live: "Sexy Gaming",
+  },
+  AWC_SG: {
     live: "Sexy Gaming",
   },
   SW: {

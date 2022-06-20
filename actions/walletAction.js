@@ -90,6 +90,7 @@ export const walletAction = {
   doMaticPayDeposit,
   doApplePayDeposit,
   getBankCardList,
+  initBankCard,
   addBankCard,
   deleteBankCard,
   getBalanceList,
@@ -876,6 +877,42 @@ function getBankCardList() {
         dispatch({
           type: GETBANKCARDLIST_FAIL,
           payload: e.status,
+          loading: false,
+        });
+      });
+
+    return result;
+  };
+}
+function initBankCard(channelid, bankType, address) {
+  return (dispatch) => {
+    dispatch({
+      type: ADDBANKCARD_BEGIN,
+      loading: true,
+    });
+    const result = WalletService.InitBankCard(channelid, bankType, address)
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: ADDBANKCARD_SUCCESS,
+            payload: response,
+            loading: false,
+          });
+
+          // AppHistory.push("/");
+        } else {
+          dispatch({
+            type: ADDBANKCARD_FAIL,
+            payload: response,
+            loading: false,
+          });
+        }
+        return response;
+      })
+      .catch((e) => {
+        dispatch({
+          type: ADDBANKCARD_FAIL,
+          payload: { IsSuccess: false, info: e.status },
           loading: false,
         });
       });

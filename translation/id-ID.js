@@ -832,7 +832,7 @@ export const idID = {
       addBookmark: "Bookmark",
       transfer: "Transfer",
       deposit: "Setoran",
-      mainAccount: "Saldo：",
+      mainAccount: "Saldo",
       dollor: "",
       logout: "Keluar",
       welcomBack: "Selamat datang kembali,",
@@ -1022,6 +1022,9 @@ export const idID = {
   },
   SG: {
     name: "Sexy Gaming",
+    live: "Sexy Gaming",
+  },
+  AWC_SG: {
     live: "Sexy Gaming",
   },
   SW: {
