@@ -679,6 +679,7 @@ export const idID = {
     oneKeyReceive: "Terima Semua",
     oneKeyTransferIn: "Transfer Masuk",
     oneKeyTransferOut: "Transfer Keluar",
+    oneKeyTransferAll: "Transfer Semua",
     maintenance: "Dalam Pemeliharaan",
     transferFrom: "Transfer Dari",
     transferFromWallet: "Transfer Dari",

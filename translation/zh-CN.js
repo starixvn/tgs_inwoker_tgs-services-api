@@ -216,8 +216,7 @@ export const zhCN = {
       title: "添加银行卡成功",
       successDesc:
         "恭喜您已经设定完成银行卡绑定，后续在提款时可以快速选取您的银行卡，若还想绑定其他银行卡，",
-      successDescDeposit:
-        "恭喜您已经设定完成银行卡绑定.",
+      successDescDeposit: "恭喜您已经设定完成银行卡绑定.",
       bindDesc: "请点选下方“绑定其他银行卡”再次进行操作。",
       reminder: "贴心提醒",
       callHotline: "或拨打000-000-0000获得帮助。",
@@ -660,6 +659,7 @@ export const zhCN = {
     oneKeyReceive: "一键回收",
     oneKeyTransferIn: "一键转入",
     oneKeyTransferOut: "一键转出",
+    oneKeyTransferAll: "一键传输",
     maintenance: "维护中",
     transferFrom: "请选择转出钱包",
     transferFromWallet: "转出钱包",
