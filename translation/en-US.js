@@ -683,6 +683,7 @@ export const enUS = {
     oneKeyReceive: "Receive All",
     oneKeyTransferIn: "Transfer In",
     oneKeyTransferOut: "Transfer Out",
+    oneKeyTransferAll: "Transfer All",
     maintenance: "Under Maintenance",
     transferFrom: "Transfer From",
     transferFromWallet: "Transfer From",
@@ -1158,8 +1159,7 @@ export const enUS = {
   },
   idr: {
     withdrawalNumber: "Bank card number",
-    msgEnterWithdrawalNumber:
-      "Please enter bank card number",
+    msgEnterWithdrawalNumber: "Please enter bank card number",
   },
   hk28: {
     withdrawalNumber: "Bank card number/Crypto currency address",

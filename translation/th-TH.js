@@ -219,8 +219,7 @@ export const thTH = {
       title: "เพิ่มบัตรธนาคารเรียบร้อยแล้ว",
       successDesc:
         "ยินดีด้วย คุณได้ทำการผูกบัตรธนาคารเรียบร้อยแล้ว คุณสามารถเลือกบัตรธนาคารของคุณได้อย่างรวดเร็วเมื่อคุณถอนเงินในภายหลัง หากคุณต้องการผูกบัตรธนาคารอื่นๆ",
-      successDescDeposit:
-        "ยินดีด้วย คุณได้ทำการผูกบัตรธนาคารเรียบร้อยแล้ว ",
+      successDescDeposit: "ยินดีด้วย คุณได้ทำการผูกบัตรธนาคารเรียบร้อยแล้ว ",
       bindDesc: "โปรดคลิก 'ผูกบัตรธนาคารอื่น' ด้านล่างเพื่อดำเนินการอีกครั้ง",
       reminder: "เตือนความจำอย่างใกล้ชิด",
       callHotline: "หรือโทร 000-000-0000 เพื่อขอความช่วยเหลือ",
@@ -664,6 +663,7 @@ export const thTH = {
     oneKeyReceive: "OneKeyReceive",
     oneKeyTransferIn: "โอนเข้า",
     oneKeyTransferOut: "โอนออก",
+    oneKeyTransferAll: "โอนทั้งหมด",
     maintenance: "บำรุงรักษา",
     transferFrom: "โปรดเลือกโอนจาก wallet",
     transferFromWallet: "โอนจาก Wallet",
@@ -1133,8 +1133,7 @@ export const thTH = {
   },
   idr: {
     withdrawalNumber: "หมายเลขบัตรธนาคาร",
-    msgEnterWithdrawalNumber:
-      "โปรดป้อนหมายเลขบัตรธนาคาร",
+    msgEnterWithdrawalNumber: "โปรดป้อนหมายเลขบัตรธนาคาร",
   },
   hk28: {
     withdrawalNumber: "หมายเลขบัตรธนาคาร/ที่อยู่สกุลเงิน Crypto",

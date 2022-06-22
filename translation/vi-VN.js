@@ -672,6 +672,7 @@ export const vivN = {
     oneKeyReceive: "Nhận tất cả",
     oneKeyTransferIn: "Chuyển vào",
     oneKeyTransferOut: "Chuyển ra ngoài",
+    oneKeyTransferAll: "Chuyển tất cả",
     maintenance: "bảo trì",
     transferFrom: "Chuyển từ",
     transferFromWallet: "Chuyển từ",
@@ -1139,8 +1140,7 @@ export const vivN = {
   },
   idr: {
     withdrawalNumber: "Số thẻ ngân hàng",
-    msgEnterWithdrawalNumber:
-      "Vui lòng nhập số thẻ ngân hàng",
+    msgEnterWithdrawalNumber: "Vui lòng nhập số thẻ ngân hàng",
   },
   hk28: {
     withdrawalNumber: "Số thẻ ngân hàng / Địa chỉ tiền điện tử",
