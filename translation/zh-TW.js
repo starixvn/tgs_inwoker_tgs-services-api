@@ -1272,4 +1272,11 @@ export const zhTW = {
     copy: "已復制",
     link: "鏈接",
   },
+  promoRoulette: {
+    main: "優惠主頁",
+    content: "優惠内容",
+    terms: "優惠條規",
+    dialogUnavailableTitle1: "每日限玩一次",
+    dialogUnavailableTitle2: "明天再來唷",
+  },
 };

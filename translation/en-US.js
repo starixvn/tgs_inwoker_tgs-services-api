@@ -1310,4 +1310,11 @@ export const enUS = {
     copy: "Successful Copy",
     link: "Link",
   },
+  promoRoulette: {
+    main: "Promotion Home",
+    content: "Promotion Content",
+    terms: "Promotion T&C",
+    dialogUnavailableTitle1: "Play once a day",
+    dialogUnavailableTitle2: "Come again tomorrow",
+  },
 };

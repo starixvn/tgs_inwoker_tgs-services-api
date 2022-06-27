@@ -1292,4 +1292,11 @@ export const vivN = {
     copy: "Đã sao chép",
     link: "Liên kết",
   },
+  promoRoulette: {
+    main: "Trang chủ ưu đãi",
+    content: "Ưu đãi",
+    terms: "Ưu đãi",
+    dialogUnavailableTitle1: "Chơi mỗi ngày một lần",
+    dialogUnavailableTitle2: "Hãy đến lại vào ngày mai",
+  },
 };

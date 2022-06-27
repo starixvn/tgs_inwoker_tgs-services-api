@@ -1277,4 +1277,11 @@ export const zhCN = {
     copy: "已复制",
     link: "链接",
   },
+  promoRoulette: {
+    main: "优惠主页",
+    content: "优惠内容",
+    terms: "优惠条规",
+    dialogUnavailableTitle1: "每日限玩一次",
+    dialogUnavailableTitle2: "明天再来唷",
+  },
 };

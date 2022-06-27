@@ -25,6 +25,16 @@ import {
   GETBRAND_BEGIN,
   GETBRAND_SUCCESS,
   GETBRAND_FAIL,
+  GETPROMOROULETTE_STATUS_BEGIN,
+  GETPROMOROULETTE_STATUS_SUCCESS,
+  GETPROMOROULETTE_STATUS_FAILED,
+  GETPROMOROULETTE_RESULT_BEGIN,
+  GETPROMOROULETTE_RESULT_SUCCESS,
+  GETPROMOROULETTE_RESULT_FAILED,
+  RESET_PROMOROULETTE,
+  GETPROMOTION_BEGIN,
+  GETPROMOTION_SUCCESS,
+  GETPROMOTION_FAILURE,
 } from "../constant/actionType";
 const initialState = {
   isIPRestrict: false,
@@ -44,7 +54,15 @@ const initialState = {
     //TGS-197, since hide when true, default hide, show when return false
     hasInvitationCode: true,
   },
+  isRouletteAvailable: null,
+  itemIndex: null,
 };
+function mapPromotionList(data) {
+  var items = [];
+  data.map((item)=> items.push(item));
+  return { items };
+}
+
 export function generalReducer(state = initialState, action) {
   switch (action.type) {
     case IPRESTRICT:
@@ -75,6 +93,7 @@ export function generalReducer(state = initialState, action) {
       };
     case GETPLAYERPROMOLIST_BEGIN:
     case GETPROMOLIST_BEGIN:
+    case GETPROMOTION_BEGIN:
       return {
         ...state,
         loading: action.loading,
@@ -86,8 +105,15 @@ export function generalReducer(state = initialState, action) {
         promotionList: action.payload.data,
         loading: action.loading,
       };
+    case GETPROMOTION_SUCCESS:
+      return {
+        ...state,
+        promotionList: mapPromotionList(action.payload.data),
+        loading: action.loading,
+      };
     case GETPLAYERPROMOLIST_FAILURE:
     case GETPROMOLIST_FAILURE:
+    case GETPROMOTION_FAILURE:
       return {
         ...state,
         promotionList: { items: [] },
@@ -196,6 +222,49 @@ export function generalReducer(state = initialState, action) {
         loading: false,
       };
 
+    case GETPROMOROULETTE_STATUS_BEGIN:
+      return {
+        ...state,
+        isRouletteAvailable: null,
+        loading: true,
+      }
+    case GETPROMOROULETTE_STATUS_SUCCESS:
+      return {
+        ...state,
+        isRouletteAvailable: action.payload.data.id === undefined,
+        loading: false,
+      };
+    case GETPROMOROULETTE_STATUS_FAILED:
+      return {
+        ...state,
+        isRouletteAvailable: null,
+        loading: false,
+      };
+    case GETPROMOROULETTE_RESULT_BEGIN:
+      return {
+        ...state,
+        itemIndex: null,
+        loading: true,
+      }
+    case GETPROMOROULETTE_RESULT_SUCCESS:
+      return {
+        ...state,
+        itemIndex:
+          action.payload.data.itemindex,
+        loading: false,
+      };
+    case GETPROMOROULETTE_RESULT_FAILED:
+      return {
+        ...state,
+        itemIndex: null,
+        loading: false,
+      };
+    case RESET_PROMOROULETTE: 
+      return {
+        ...state,
+        isRouletteAvailable: null,
+        itemIndex: null,
+      }
     default:
       return state;
   }

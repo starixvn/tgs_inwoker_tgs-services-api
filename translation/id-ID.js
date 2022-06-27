@@ -1307,4 +1307,11 @@ export const idID = {
     copy: "Disalin",
     link: "Tautan",
   },
+  promoRoulette: {
+    main: "Beranda Promosi",
+    content: "Konten Promosi",
+    terms: "S&K Promosi",
+    dialogUnavailableTitle1: "Mainkan sekali sehari",
+    dialogUnavailableTitle2: "Datang lagi besok",
+  },
 };

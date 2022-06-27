@@ -1286,4 +1286,11 @@ export const thTH = {
     copy: "คัดลอก",
     link: "ลิงค์",
   },
+  promoRoulette: {
+    main: "เสนอหน้าแรก",
+    content: "ข้อเสนอ",
+    terms: "ข้อเสนอ",
+    dialogUnavailableTitle1: "เล่นวันละครั้ง",
+    dialogUnavailableTitle2: "พรุ่งนี้มาอีกนะ",
+  },
 };
