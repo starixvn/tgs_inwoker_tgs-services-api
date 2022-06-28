@@ -376,7 +376,7 @@ export const zhCN = {
         },
         profile: {
           announcement: "公告",
-          welcomeBack: "欢迎您回来，",
+          welcomeBack: "测试欢迎您回来，",
           pleaseLogin: "亲爱的用户您好，请先登录...",
           profile: "个人资料",
           mainAccount: "总资金",
@@ -819,7 +819,7 @@ export const zhCN = {
       mainAccount: "总资金",
       dollor: "",
       logout: "登出",
-      welcomBack: "欢迎您回来，",
+      welcomBack: "测试欢迎您回来，",
     },
     rightNavBar: {
       wallet: "资金中心",
