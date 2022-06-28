@@ -1278,5 +1278,6 @@ export const zhTW = {
     terms: "優惠條規",
     dialogUnavailableTitle1: "每日限玩一次",
     dialogUnavailableTitle2: "明天再來唷",
+    dialogRewardTitle1: "恭喜您贏得",
   },
 };

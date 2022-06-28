@@ -1316,5 +1316,6 @@ export const enUS = {
     terms: "Promotion T&C",
     dialogUnavailableTitle1: "Play once a day",
     dialogUnavailableTitle2: "Come again tomorrow",
+    dialogRewardTitle1: "Congratulations on winning",
   },
 };

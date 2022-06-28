@@ -1283,5 +1283,6 @@ export const zhCN = {
     terms: "优惠条规",
     dialogUnavailableTitle1: "每日限玩一次",
     dialogUnavailableTitle2: "明天再来唷",
+    dialogRewardTitle1: "恭喜您赢得",
   },
 };

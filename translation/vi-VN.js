@@ -1298,5 +1298,6 @@ export const vivN = {
     terms: "Ưu đãi",
     dialogUnavailableTitle1: "Chơi mỗi ngày một lần",
     dialogUnavailableTitle2: "Hãy đến lại vào ngày mai",
+    dialogRewardTitle1: "chúc mừng chiến thắng của bạn",
   },
 };
