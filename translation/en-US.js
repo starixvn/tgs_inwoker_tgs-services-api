@@ -1081,6 +1081,13 @@ export const enUS = {
     fish: "Pragmatic Play",
     sports: "Pragmatic Play",
   },
+  PP: {
+    slots: "Pragmatic Play",
+    electron: "Pragmatic Play",
+    live: "Pragmatic Play",
+    fish: "Pragmatic Play",
+    sports: "Pragmatic Play",
+  },
   EVO: {
     live: "Evolution",
     slots: "Evolution",

@@ -1047,6 +1047,13 @@ export const zhTW = {
     fish: "PP捕魚",
     sports: "PP體育",
   },
+  PP: {
+    slots: "PP老虎機",
+    electron: "PP電子",
+    live: "PP真人",
+    fish: "PP捕魚",
+    sports: "PP體育",
+  },
   EVO: {
     live: "EVO真人",
     slots: "EVO老虎機",
