@@ -1305,6 +1305,7 @@ export const vivN = {
     terms: "Ưu đãi",
     dialogUnavailableTitle1: "Chơi mỗi ngày một lần",
     dialogUnavailableTitle2: "Hãy đến lại vào ngày mai",
+    dialogUnavailableTitle3: "Click để xem thêm nhiều ưu đãi tốt",
     dialogRewardTitle1: "chúc mừng chiến thắng của bạn",
   },
   idr1HomePage: {

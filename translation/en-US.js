@@ -1323,6 +1323,7 @@ export const enUS = {
     terms: "Promotion T&C",
     dialogUnavailableTitle1: "Play once a day",
     dialogUnavailableTitle2: "Come again tomorrow",
+    dialogUnavailableTitle3: "Click to see more good deals",
     dialogRewardTitle1: "Congratulations on winning",
   },
 
