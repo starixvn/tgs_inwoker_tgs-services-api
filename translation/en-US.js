@@ -1331,7 +1331,7 @@ export const enUS = {
       "1000game": "1000+ Games",
       "247support": "24/7 Support",
       fastpay: "Fast Payment",
-      secure: "100% secure",
+      secure: "100% Secure",
       vip: "VIP Program",
       promo: "Awesome Promos",
     },
