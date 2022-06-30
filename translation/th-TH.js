@@ -1299,6 +1299,7 @@ export const thTH = {
     terms: "ข้อเสนอ",
     dialogUnavailableTitle1: "เล่นวันละครั้ง",
     dialogUnavailableTitle2: "พรุ่งนี้มาอีกนะ",
+    dialogUnavailableTitle3: "คลิกเพื่อดูข้อเสนอที่ดีเพิ่มเติม",
     dialogRewardTitle1: "ยินดีด้วยกับชัยชนะของคุณ",
   },
   idr1HomePage: {

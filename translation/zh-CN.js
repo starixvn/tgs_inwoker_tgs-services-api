@@ -1290,6 +1290,7 @@ export const zhCN = {
     terms: "优惠条规",
     dialogUnavailableTitle1: "每日限玩一次",
     dialogUnavailableTitle2: "明天再来唷",
+    dialogUnavailableTitle3: "点我看更多好康优惠",
     dialogRewardTitle1: "恭喜您赢得",
   },
   idr1HomePage: {
