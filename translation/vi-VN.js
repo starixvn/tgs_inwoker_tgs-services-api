@@ -1328,5 +1328,11 @@ export const vivN = {
       description:
         "Trò chơi xèng, Sòng bạc trực tiếp, Sách thể thao có thể chơi dễ dàng chỉ với một Điện thoại di động",
     },
+    section4: {
+      exclusive: "độc quyền",
+      vip: "Quyền lợi VIP",
+      description:
+        "Tham gia ngay bây giờ và tận hưởng các đặc quyền VIP độc quyền được tạo riêng cho bạn",
+    },
   },
 };

@@ -1344,5 +1344,11 @@ export const idID = {
       description:
         "Slot Games, Live Casino, Sportsbook dapat dimainkan dengan mudah hanya dengan satu Ponsel",
     },
+    section4: {
+      exclusive: "Eksklusif",
+      vip: "Program VIP",
+      description:
+        "Gabung sekarang dan nikmati hak istimewa VIP premium khusus untuk Anda",
+    },
   },
 };

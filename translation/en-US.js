@@ -1347,5 +1347,11 @@ export const enUS = {
       description:
         "Slot Games, Live Casino, Sportsbook can play easily with just one Mobile",
     },
+    section4: {
+      exclusive: "Exclusive",
+      vip: "VIP Program",
+      description:
+        "Join now and enjoy premium VIP privileges specially for you",
+    },
   },
 };

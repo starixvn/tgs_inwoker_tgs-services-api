@@ -1312,5 +1312,10 @@ export const zhCN = {
       title: "移动娱乐场",
       description: "老虎机游戏、真人娱乐场、体育博彩只需一部手机即可轻松玩",
     },
+    section4: {
+      exclusive: "独家",
+      vip: "VIP福利",
+      description: "即刻加入，享受专为您打造的尊贵VIP特权",
+    },
   },
 };
