@@ -1313,6 +1313,7 @@ export const idID = {
     terms: "S&K Promosi",
     dialogUnavailableTitle1: "Mainkan sekali sehari",
     dialogUnavailableTitle2: "Datang lagi besok",
+    dialogUnavailableTitle3: "Klik untuk melihat lebih banyak penawaran bagus",
     dialogRewardTitle1: "Selamat atas kemenangan",
   },
 };
