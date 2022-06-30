@@ -1292,4 +1292,14 @@ export const zhCN = {
     dialogUnavailableTitle2: "明天再来唷",
     dialogRewardTitle1: "恭喜您赢得",
   },
+  idr1HomePage: {
+    section2: {
+      "1000game": "1000+ 游戏",
+      "247support": "24/7 客服",
+      fastpay: "快速支付",
+      secure: "100% 安全",
+      vip: "VIP福利",
+      promo: "真棒优惠",
+    },
+  },
 };

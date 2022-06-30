@@ -1301,4 +1301,14 @@ export const thTH = {
     dialogUnavailableTitle2: "พรุ่งนี้มาอีกนะ",
     dialogRewardTitle1: "ยินดีด้วยกับชัยชนะของคุณ",
   },
+  idr1HomePage: {
+    section2: {
+      "1000game": "1000+ เกม",
+      "247support": "24/7 สนับสนุน",
+      fastpay: "จ่ายเร็ว",
+      secure: "ปลอดภัย 100%",
+      vip: "ผลประโยชน์วีไอพี",
+      promo: "ข้อเสนอสุดพิเศษ",
+    },
+  },
 };

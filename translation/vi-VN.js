@@ -1307,4 +1307,14 @@ export const vivN = {
     dialogUnavailableTitle2: "Hãy đến lại vào ngày mai",
     dialogRewardTitle1: "chúc mừng chiến thắng của bạn",
   },
+  idr1HomePage: {
+    section2: {
+      "1000game": "Hơn 1000 trò chơi",
+      "247support": "Hỗ trợ 24/7",
+      fastpay: "Thanh toán nhanh",
+      secure: "100% an toàn",
+      vip: "Quyền lợi VIP",
+      promo: "Ưu đãi tuyệt vời",
+    },
+  },
 };

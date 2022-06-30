@@ -1325,4 +1325,15 @@ export const enUS = {
     dialogUnavailableTitle2: "Come again tomorrow",
     dialogRewardTitle1: "Congratulations on winning",
   },
+
+  idr1HomePage: {
+    section2: {
+      "1000game": "1000+ Games",
+      "247support": "24/7 Support",
+      fastpay: "Fast Payment",
+      secure: "100% secure",
+      vip: "VIP Program",
+      promo: "Awesome Promos",
+    },
+  },
 };

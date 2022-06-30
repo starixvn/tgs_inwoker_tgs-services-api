@@ -1322,4 +1322,15 @@ export const idID = {
     dialogUnavailableTitle2: "Datang lagi besok",
     dialogRewardTitle1: "Selamat atas kemenangan",
   },
+
+  idr1HomePage: {
+    section2: {
+      "1000game": "1000+ game",
+      "247support": "Dukungan 24/7",
+      fastpay: "Pembayaran Cepat",
+      secure: "100% aman",
+      vip: "Manfaat VIP",
+      promo: "Penawaran Luar Biasa",
+    },
+  },
 };
