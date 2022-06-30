@@ -1324,6 +1324,12 @@ export const idID = {
   },
 
   idr1HomePage: {
+    section1: {
+      live: "Kasino langsung",
+      slot: "Permainan slot",
+      lottery: "Permainan lotere",
+      fishing: "Permainan memancing",
+    },
     section2: {
       "1000game": "1000+ game",
       "247support": "Dukungan 24/7",

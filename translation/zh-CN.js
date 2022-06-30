@@ -1293,6 +1293,12 @@ export const zhCN = {
     dialogRewardTitle1: "恭喜您赢得",
   },
   idr1HomePage: {
+    section1: {
+      live: "真人娱乐",
+      slot: "电子游艺",
+      lottery: "彩票游戏",
+      fishing: "捕鱼游戏",
+    },
     section2: {
       "1000game": "1000+ 游戏",
       "247support": "24/7 客服",

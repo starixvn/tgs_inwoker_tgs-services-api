@@ -1327,6 +1327,12 @@ export const enUS = {
   },
 
   idr1HomePage: {
+    section1: {
+      live: "Live casino",
+      slot: "Slot games",
+      lottery: "Lottery games",
+      fishing: "Fishing games",
+    },
     section2: {
       "1000game": "1000+ Games",
       "247support": "24/7 Support",

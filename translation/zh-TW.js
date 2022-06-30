@@ -1288,6 +1288,12 @@ export const zhTW = {
     dialogRewardTitle1: "恭喜您贏得",
   },
   idr1HomePage: {
+    section1: {
+      live: "真人娛樂",
+      slot: "電子遊藝",
+      lottery: "彩票遊戲",
+      fishing: "捕魚遊戲",
+    },
     section2: {
       "1000game": "1000+ 遊戲",
       "247support": "24/7 客服",

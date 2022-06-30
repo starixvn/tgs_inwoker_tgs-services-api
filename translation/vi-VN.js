@@ -1308,6 +1308,12 @@ export const vivN = {
     dialogRewardTitle1: "chúc mừng chiến thắng của bạn",
   },
   idr1HomePage: {
+    section1: {
+      live: "Sòng bạc trực tiếp",
+      slot: "Trò chơi xèng",
+      lottery: "Trò chơi xổ số",
+      fishing: "Trò chơi câu cá",
+    },
     section2: {
       "1000game": "Hơn 1000 trò chơi",
       "247support": "Hỗ trợ 24/7",

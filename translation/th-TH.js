@@ -1302,6 +1302,12 @@ export const thTH = {
     dialogRewardTitle1: "ยินดีด้วยกับชัยชนะของคุณ",
   },
   idr1HomePage: {
+    section1: {
+      live: "คาสิโนสด",
+      slot: "เกมสล็อต",
+      lottery: "เกมลอตเตอรี",
+      fishing: "เกมตกปลา",
+    },
     section2: {
       "1000game": "1000+ เกม",
       "247support": "24/7 สนับสนุน",
