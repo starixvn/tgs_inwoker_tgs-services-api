@@ -1307,5 +1307,9 @@ export const zhCN = {
       vip: "VIP福利",
       promo: "真棒优惠",
     },
+    section3: {
+      title: "移动娱乐场",
+      description: "老虎机游戏、真人娱乐场、体育博彩只需一部手机即可轻松玩",
+    },
   },
 };

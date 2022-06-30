@@ -1341,5 +1341,10 @@ export const enUS = {
       vip: "VIP Program",
       promo: "Awesome Promos",
     },
+    section3: {
+      title: "Casino on the go",
+      description:
+        "Slot Games, Live Casino, Sportsbook can play easily with just one Mobile",
+    },
   },
 };

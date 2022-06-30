@@ -1322,5 +1322,10 @@ export const vivN = {
       vip: "Quyền lợi VIP",
       promo: "Ưu đãi tuyệt vời",
     },
+    section3: {
+      title: "Sòng bạc khi di chuyển",
+      description:
+        "Trò chơi xèng, Sòng bạc trực tiếp, Sách thể thao có thể chơi dễ dàng chỉ với một Điện thoại di động",
+    },
   },
 };

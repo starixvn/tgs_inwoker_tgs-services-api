@@ -1338,5 +1338,10 @@ export const idID = {
       vip: "Manfaat VIP",
       promo: "Penawaran Luar Biasa",
     },
+    section3: {
+      title: "Casino on the go",
+      description:
+        "Slot Games, Live Casino, Sportsbook dapat dimainkan dengan mudah hanya dengan satu Ponsel",
+    },
   },
 };
