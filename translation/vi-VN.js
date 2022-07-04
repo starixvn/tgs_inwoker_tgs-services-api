@@ -267,6 +267,7 @@ export const vivN = {
     depositMethod: "Hình thức thanh toán",
     depositTunnel: "Kênh thanh toán",
     transferAccount: "Chuyển khoản",
+    bankType: "Loại ngân hàng",
     accName: "tên tài khoản",
     cardNum: "số tài khoản",
     promotion: "Khuyến mãi",
