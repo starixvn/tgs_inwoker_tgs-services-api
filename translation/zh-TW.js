@@ -254,7 +254,6 @@ export const zhTW = {
     depositMethod: "支付方式",
     depositTunnel: "支付渠道",
     transferAccount: "轉帳賬戶",
-    bankType: "銀行類別",
     accName: "帳戶名字",
     cardNum: "銀行卡號",
     promotion: "優惠活動",

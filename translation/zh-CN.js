@@ -254,7 +254,6 @@ export const zhCN = {
     depositMethod: "支付方式",
     depositTunnel: "支付渠道",
     transferAccount: "转帐帐户",
-    bankType: "银行类别",
     accName: "帐户名字",
     cardNum: "银行卡号",
     promotion: "优惠活动",

@@ -270,7 +270,6 @@ export const enUS = {
     depositMethod: "Deposit Type",
     depositTunnel: "Deposit Channel",
     transferAccount: "Transfer account",
-    bankType: "Bank Type",
     accName: "Account name",
     cardNum: "Account number",
     promotion: "Promotion ",

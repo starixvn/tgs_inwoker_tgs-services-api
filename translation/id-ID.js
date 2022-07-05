@@ -268,7 +268,6 @@ export const idID = {
     depositMetode: "Jenis Deposit",
     depositTunnel: "Saluran Deposit",
     transferAccount: "Transfer akun",
-    bankType: "Jenis Bank",
     accName: "Nama akun",
     cardNum: "Nomor rekening",
     promotion: "Promosi",

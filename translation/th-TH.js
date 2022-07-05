@@ -259,7 +259,6 @@ export const thTH = {
     depositMethod: "วิธีการชำระเงิน",
     depositTunnel: "ช่องทางการชำระเงิน",
     transferAccount: "โอนบัญชี",
-    bankType: "ประเภทธนาคาร",
     accName: "ชื่อบัญชี",
     cardNum: "หมายเลขบัญชี",
     promotion: "โปรโมชั่น",
