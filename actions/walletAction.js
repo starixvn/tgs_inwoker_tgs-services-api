@@ -197,7 +197,8 @@ function doBankDeposit(
   amount,
   paymentid,
   promotionid,
-  banktype
+  banktype,
+  note
 ) {
   return (dispatch) => {
     dispatch({
@@ -210,7 +211,8 @@ function doBankDeposit(
       amount,
       paymentid,
       promotionid,
-      banktype
+      banktype,
+      note
     )
       .then((response) => {
         if (response.IsSuccess) {
@@ -1558,7 +1560,8 @@ function doBankDepositWithDetail(
   paymentid,
   promotionid,
   banktype,
-  detail
+  detail,
+  note
 ) {
   return (dispatch) => {
     dispatch({
@@ -1572,7 +1575,8 @@ function doBankDepositWithDetail(
       paymentid,
       promotionid,
       banktype,
-      detail
+      detail,
+      note
     )
       .then((response) => {
         if (response.IsSuccess) {

@@ -158,7 +158,8 @@ function PerformManualBankDeposit(
   amount,
   paymentid,
   promotionid = "",
-  banktype
+  banktype,
+  note
 ) {
   const result = ApiService.put("deposit/manual/bank", {
     name: name,
@@ -166,7 +167,8 @@ function PerformManualBankDeposit(
     amount: amount,
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
-    banktype: banktype || "bank"
+    banktype: banktype || "bank",
+    note: note
   });
   return result;
 }
@@ -453,7 +455,8 @@ function PerformManualBankDepositWithDetail(
   paymentid,
   promotionid = "",
   banktype,
-  detail
+  detail,
+  note
 ) {
   var params = {
     name: name,
@@ -462,6 +465,7 @@ function PerformManualBankDepositWithDetail(
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
     banktype: banktype || "bank",
+    note: note,
   };
   if(detail !== undefined && detail !== null)
   {
