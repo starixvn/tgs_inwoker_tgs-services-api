@@ -79,6 +79,8 @@ import {
   DOSKYPAYDEPOSIT_BEGIN,
   DOSKYPAYDEPOSIT_SUCCESS,
   DOSKYPAYDEPOSIT_FAILED,
+  DODEPOSIT_FAILED,
+  DODEPOSIT_SUCCESS,
 } from "../constant/actionType";
 import { WalletType } from "../utils/Enum";
 const initState = {
@@ -86,6 +88,7 @@ const initState = {
   updateBalanceloading: false,
   transferLoading: false,
   message: "",
+  depositList: [],
   depositTypeList: [],
   depositLoading: false,
   depositResult: null,
@@ -108,6 +111,39 @@ const initState = {
   depositMinLimit: 0,
   depositMaxLimit: 0,
 };
+function mapDepositList(result) {
+  var data = result.data;
+
+  var depositList = [];
+  var checkDuplicate = [];
+  for (var i = 0; i < data.length; i++) {
+    if (checkDuplicate.indexOf(data[i].banktype) < 0) {
+      checkDuplicate.push(data[i].banktype);
+      depositList.push({
+        banktype: data[i].banktype,
+        channel: [
+          {
+            channelid: data[i].channelid,
+            channelname: data[i].channelname,
+            channelcode: data[i].channelcode,
+            transferlimit: data[i].transferlimit,
+          },
+        ],
+      });
+    } else {
+      depositList
+        .filter((a) => a.banktype === data[i].banktype)[0]
+        .channel.push({
+          channelid: data[i].channelid,
+          channelname: data[i].channelname,
+          channelcode: data[i].channelcode,
+          transferlimit: data[i].transferlimit,
+        });
+    }
+  }
+
+  return { depositList };
+}
 function mapDepositType(result) {
   var data = result.data;
 
@@ -128,6 +164,7 @@ function mapDepositType(result) {
 
       depositType.paymentcode = data[i].paymentcode;
       depositType.paymentid = data[i].paymentid;
+      depositType.displayorder = data[i].displayorder;
       depositType.method = [
         {
           methodid: data[i].methodid,
@@ -262,12 +299,6 @@ function mapWithdrawalList(data) {
   var withdrawalMaxLimit = 0;
   var withdrawalMinLimit = 999999999;
   for (var i = 0; i < data.length; i++) {
-    if (data[i].transferlimit.from < withdrawalMinLimit) {
-      withdrawalMinLimit = data[i].transferlimit.from;
-    }
-    if (data[i].transferlimit.to > withdrawalMaxLimit) {
-      withdrawalMaxLimit = data[i].transferlimit.to;
-    }
     if (checkDuplicate.indexOf(data[i].banktype) < 0) {
       checkDuplicate.push(data[i].banktype);
       withdrawalList.push({
@@ -277,6 +308,7 @@ function mapWithdrawalList(data) {
             channelid: data[i].channelid,
             channelname: data[i].channelname,
             channelcode: data[i].channelcode,
+            transferlimit: data[i].transferlimit,
           },
         ],
       });
@@ -287,6 +319,7 @@ function mapWithdrawalList(data) {
           channelid: data[i].channelid,
           channelname: data[i].channelname,
           channelcode: data[i].channelcode,
+          transferlimit: data[i].transferlimit,
         });
     }
   }
@@ -452,6 +485,7 @@ const walletReducer = (state = initState, action) => {
       return {
         ...state,
         ...mapDepositType(action.payload),
+        ...mapDepositList(action.payload),
         loading: false,
       };
     case GETDEPOSITCHANNEL_FAIL:
@@ -624,6 +658,8 @@ const walletReducer = (state = initState, action) => {
     case DOCRYPTODEPOSIT_FAILED:
     case DOBANKDEPOSIT_SUCCESS:
     case DOBANKDEPOSIT_FAILED:
+    case DODEPOSIT_SUCCESS:
+    case DODEPOSIT_FAILED:
       return {
         ...state,
         depositResult: action.payload,

@@ -35,7 +35,8 @@ export const thTH = {
     join: "เข้าร่วม",
   },
   common: {
-    noReachMin: "เบอร์มือถือตั้งไว้ที่ 8 ถึง 10 หลัก",
+    pleaseEnterAccountName: "กรุณาใส่ชื่อบัญชีของคุณ",
+    noReachMin: "เบอร์มือถือตั้งไว้ที่ 8 ถึง {maxlength} หลัก",
     upload: "อัพโหลดไฟล์",
     title: "{brand}-แพลตฟอร์มความบันเทิงระดับมืออาชีพ",
     register: "ลงทะเบียน",
@@ -67,6 +68,7 @@ export const thTH = {
     msgEnterEmail: "กรุณากรอกที่อยู่อีเมลของคุณ",
     msgInvalidEmail: "ที่อยู่อีเมลไม่ถูกต้อง",
     msgEnterCode: "กรุณากรอกรหัสยืนยัน SMS",
+    msgEnterCodeEmail: "กรุณากรอกรหัสยืนยัน Email",
     msgInvalidPhoneCode: "รหัสยืนยันผิดพลาด",
     msgEnterEmailCode: "กรุณากรอกรหัสยืนยันอีเมล",
     msgEnterPhoneCode: "กรุณากรอกรหัสยืนยันโทรศัพท์",
@@ -85,6 +87,11 @@ export const thTH = {
     emailAddress: "ที่อยู่อีเมล",
     qqNumber: "บัญชี QQ",
     wechatNumber: "บัญชี Wechat",
+    fb: "บัญชี Facebook Messenger",
+    telegram: "บัญชี Telegram",
+    line: "บัญชี Line",
+    viber: "บัญชี Viber",
+    whatsapp: "บัญชี Whatsapp",
     receiverAddress: "ที่อยู่สำหรับรับ",
     loginPassword: "เข้าสู่ระบบรหัสผ่าน",
     contact: "ติดต่อ",
@@ -141,6 +148,7 @@ export const thTH = {
     startGame: "เข้าร่วมเกม",
     cs: "ติดต่อแอดมิน",
     msgSuccessUpdateProfile: "การปรับเปลี่ยนสำเร็จ",
+    favoriteGame: "ที่ชื่นชอบ",
     joinGame: "เข้าร่วมเกม",
     withdrawalBankType: "หมวดหมู่",
     withdrawalChannel: "ช่อง",
@@ -202,19 +210,32 @@ export const thTH = {
       desc: "ข้อมูลได้รับการเข้ารหัสและยืนยันโดยธนาคารเท่านั้น",
       branch: "สาขา",
       branchPlaceHolder: "กรุณาป้อนสาขาของธนาคาร",
+      eWalletAccount: "ชื่อเงินอิเล็กทรอนิกส์",
+      msgEnterEwalletAccount: "โปรดป้อนชื่อเงินอิเล็กทรอนิกส์",
+      phone: "หมายเลขโทรศัพท์",
+      msgEnterPhone: "กรุณาใส่หมายเลขโทรศัพท์",
     },
     success: {
       title: "เพิ่มบัตรธนาคารเรียบร้อยแล้ว",
       successDesc:
         "ยินดีด้วย คุณได้ทำการผูกบัตรธนาคารเรียบร้อยแล้ว คุณสามารถเลือกบัตรธนาคารของคุณได้อย่างรวดเร็วเมื่อคุณถอนเงินในภายหลัง หากคุณต้องการผูกบัตรธนาคารอื่นๆ",
+      successDescDeposit: "ยินดีด้วย คุณได้ทำการผูกบัตรธนาคารเรียบร้อยแล้ว ",
       bindDesc: "โปรดคลิก 'ผูกบัตรธนาคารอื่น' ด้านล่างเพื่อดำเนินการอีกครั้ง",
       reminder: "เตือนความจำอย่างใกล้ชิด",
       callHotline: "หรือโทร 000-000-0000 เพื่อขอความช่วยเหลือ",
       bindBankCard: "ผูกบัตรธนาคารอื่น",
+      goDeposit: "ไปที่การเงินฝาก",
       goWithdrawal: "ไปที่การถอนเงิน",
+      goProfile: "ไปที่การข้อมูลส่วนตัว",
+      noMoreAddCard:
+        "ยินดีด้วยที่คุณได้ทำการผูกบัญชีธนาคารเรียบร้อยแล้ว คุณสามารถเลือกธนาคารถอนได้อย่างรวดเร็วเมื่อคุณถอนออกในภายหลัง",
     },
   },
   deposit: {
+    address: "ที่อยู่",
+    email: "อีเมล",
+    phone: "โทรศัพท์",
+    fpsId: "รหัส FPS",
     title: "เงินฝาก",
     ppRemark:
       "หมายเหตุ: จะเพิ่มทศนิยมสุ่มสองตำแหน่งลงในยอดรวม (จำเป็นสำหรับวัตถุประสงค์ในการตรวจสอบคำสั่งซื้อ)",
@@ -258,7 +279,9 @@ export const thTH = {
     msgPlsSelectPayment: "กรุณาเลือกวิธีการชำระเงิน",
     msgPlsSelectMethod: "กรุณาเลือกช่องทางการชำระเงิน",
     msgPlsEnterAccount: "โปรดป้อนชื่อบัญชีธนาคาร",
-    msgInvalidFileSize: "ไฟล์มีขนาดใหญ่เกินไป โปรดเลือกไฟล์ที่เล็กกว่า 2mb",
+    msgPlsUploadProof: "Please upload deposit proof",
+    msgNotMustUploadProof: "ไม่จำเป็นต้องอัปโหลด",
+    msgInvalidFileSize: "ไฟล์มีขนาดใหญ่เกินไป โปรดเลือกไฟล์ที่เล็กกว่า 5mb",
     msgInvalidFileType: "กรุณาอัปโหลดเฉพาะไฟล์ภาพ (.jpg/.jpeg/.png/.tiff)",
     msgFailedJoinPromotion:
       "คุณไม่สามารถเข้าร่วมกิจกรรมนี้ได้ หากคุณมีคำถามใดๆ โปรดติดต่อฝ่ายบริการลูกค้า",
@@ -280,6 +303,11 @@ export const thTH = {
       orderVerify: "การยืนยันการมาถึง",
       manualOpen: "เปิดด้วยตนเอง",
     },
+    totalAmount: "จำนวนคะแนน",
+    plsEnterUSDTAmount: "กรุณากรอกจำนวนเงิน USDT",
+    playerNote: "หมายเหตุผู้เล่น",
+    plsEnterPlayerNote: "กรุณาใส่หมายเหตุผู้เล่น",
+    eWalletAccount: "ชื่อเงินอิเล็กทรอนิกส์",
   },
   forgotPassword: {
     title: "ลืมรหัสผ่าน",
@@ -310,6 +338,7 @@ export const thTH = {
       withdrawalPassword: "กรุณากรอกรหัสผ่านการถอน (6 หลัก)",
       confirmWithdrawalPassword: "ทำซ้ำรหัสผ่านการถอน",
       promoteCode: "รหัสเชิญ (ไม่บังคับ)",
+      email: "โปรดป้อนที่อยู่อีเมลของคุณ",
     },
     main: {
       homePage: "หน้าหลัก",
@@ -331,6 +360,9 @@ export const thTH = {
         setting: "ตั้งค่า",
         signout: "ออกจากระบบ",
         wallet: "กระเป๋าสตางค์",
+        deposit: "ฝาก",
+        withdrawal: "ถอนเงิน",
+        transfer: "โอน",
       },
       home: {
         gameTab: {
@@ -378,6 +410,11 @@ export const thTH = {
     },
   },
   profile: {
+    birthdate: {
+      title: "วันเกิด",
+      toEdit: "หากคุณต้องการแก้ไขวันเกิด โปรดคลิก",
+      here: "ที่นี่",
+    },
     setted: "ตั้งค่าเรียบร้อยแล้ว",
     setNow: "ตั้งค่าเลย",
     edit: "แก้ไข",
@@ -406,6 +443,7 @@ export const thTH = {
       step2Title: "ตั้งหมายเลขใหม่",
     },
     nameVerify: {
+      editHere: "ที่นี่",
       title: "ชื่อจริง",
       msgEnterICNum: "กรุณากรอกเลขประจำตัวประชาชน",
       icNum: "บัตรประจำตัวประชาชน",
@@ -456,6 +494,36 @@ export const thTH = {
       weChatAccount: "บัญชี WeChat",
       toEdit: "หากต้องการแก้ไข WeChat โปรดติดต่อ",
     },
+    fb: {
+      msgInvalidFB: "รูปแบบของบัญชี Facebook Messenger ไม่ถูกต้อง",
+      plsEnterFB: "กรุณาป้อนบัญชี Facebook Messenger",
+      fbAccount: "บัญชี Facebook Messenger",
+      toEdit: "หากต้องการแก้ไข Facebook Messenger โปรดติดต่อ",
+    },
+    telegram: {
+      msgInvalidTelegram: "รูปแบบของบัญชี Telegram ไม่ถูกต้อง",
+      plsEnterTelegram: "กรุณาป้อนบัญชี Telegram",
+      telegramAccount: "บัญชี Telegram",
+      toEdit: "หากต้องการแก้ไข Telegram โปรดติดต่อ",
+    },
+    line: {
+      msgInvalidLine: "รูปแบบของบัญชี Line ไม่ถูกต้อง",
+      plsEnterLine: "กรุณาป้อนบัญชี Line",
+      lineAccount: "บัญชี Line",
+      toEdit: "หากต้องการแก้ไข Line โปรดติดต่อ",
+    },
+    viber: {
+      msgInvalidViber: "รูปแบบของบัญชี Viber ไม่ถูกต้อง",
+      plsEnterViber: "กรุณาป้อนบัญชี Viber",
+      viberAccount: "บัญชี Viber",
+      toEdit: "หากต้องการแก้ไข Viber โปรดติดต่อ",
+    },
+    whatsapp: {
+      msgInvalidWhatsapp: "รูปแบบของบัญชี Whatsapp ไม่ถูกต้อง",
+      plsEnterWhatsapp: "กรุณาป้อนบัญชี Whatsapp",
+      whatsappAccount: "บัญชี Whatsapp",
+      toEdit: "หากต้องการแก้ไข Whatsapp โปรดติดต่อ",
+    },
     resetResetWithdrawalPassword: {
       title: "แก้ไขรหัสผ่านการถอนเงิน",
       editWithdrawalPassword: "แก้ไขรหัสผ่านการถอน",
@@ -487,12 +555,14 @@ export const thTH = {
   },
   report: {
     title: "รายงาน",
+    total: "ทั้งหมด",
     transferDetails: "บันทึกการโอน",
     withdrawalDetails: "รายงานการถอนเงิน",
     depositDetails: "รายงานการฝากเงิน",
     bettingDetails: "ประวัติการเดิมพัน",
     rebateDetails: "บันทึกการคืนเงิน",
     platform: "แพลตฟอร์ม",
+    platformgamename: "แพลตฟอร์ม/ชื่อเกม",
     date: "วันที่",
     gamename: "ชื่อเกม",
     startDate: "วันที่เริ่มต้น",
@@ -519,7 +589,7 @@ export const thTH = {
       status6: "ชำระเงินแล้ว",
     },
     deposit: {
-      status1: "กำลังรอการชำระเงิน",
+      status1: "เงินฝากที่รอดำเนินการ",
       status2: "อยู่ระหว่างการอนุมัติ",
       status3: "ผ่าน",
       status4: "ถูกปฏิเสธ",
@@ -552,6 +622,9 @@ export const thTH = {
     turnover: "น้ำไหล",
     winloss: "ชนะหรือแพ้",
     ratio: "อัตราต่อรอง",
+    totalBetAmount: "จำนวนเงินเดิมพันทั้งหมด",
+    totalWinLose: "การสูญเสียการชนะทั้งหมด",
+    totalValidBet: "เดิมพันที่ถูกต้องทั้งหมด",
   },
   share: {
     bottomNote: {
@@ -588,7 +661,9 @@ export const thTH = {
     totalFund: "ยอดเงินคงเหลือ",
     mainAccount: "กระเป๋าเงินหลัก",
     oneKeyReceive: "OneKeyReceive",
-    oneKeyTransfer: "โอนทั้งหมด",
+    oneKeyTransferIn: "โอนเข้า",
+    oneKeyTransferOut: "โอนออก",
+    oneKeyTransferAll: "โอนทั้งหมด",
     maintenance: "บำรุงรักษา",
     transferFrom: "โปรดเลือกโอนจาก wallet",
     transferFromWallet: "โอนจาก Wallet",
@@ -600,11 +675,15 @@ export const thTH = {
     transfer: "โอน",
     noticeTitle: "ประกาศ",
     msgFailedTransfer: "การโอนล้มเหลว",
+    msgTransferOutFromGP: "โอนจากกระเป๋าเงินย่อยทั้งหมดไปยังกระเป๋าเงินหลัก",
   },
   withdrawal: {
+    notReachMin: "จำนวนเงินที่ถอนไม่ถึงจำนวนเงินขั้นต่ำ",
+    reachedMax: "จำนวนเงินที่ถอนได้ถึงจำนวนสูงสุด",
     msgMustHundred: "จำนวนเงินต้องลงท้ายด้วยหลักร้อย",
     msgInvalidAmt: "จำนวนการถอนต้องมากกว่า 0",
     msgCanWithdrawal: "ยอดเงินที่ถอนได้คือ: {{amount}}",
+    msgContactCSCardChange: "หากต้องการแก้ไขกรุณาติดต่อฝ่ายบริการลูกค้า",
     turnover: "เทิร์นโอเวอร์: ",
     msgEnterWithdrawalPass: "กรุณากรอกรหัสผ่านในการถอนเงิน",
     msgInsufficient: "ยอดเงินคงเหลือในกระเป๋าเงินกลางไม่เพียงพอ",
@@ -625,6 +704,9 @@ export const thTH = {
     receiverName: "ชื่อผู้รับเงิน",
     fee: "ค่าธรรมเนียมการจัดการ",
     receiverAmount: "จำนวนเงินเข้าบัญชี",
+    usdtAmount: "USDT จำนวนเงินเข้าบัญชี",
+    playerNote: "หมายเหตุผู้เล่น",
+    plsEnterPlayerNote: "กรุณาใส่หมายเหตุผู้เล่น",
   },
   promotion: {
     emptyLine1: "ไม่มีกิจกรรมในขณะนี้",
@@ -650,8 +732,49 @@ export const thTH = {
       Section1Lottery: "ลอตเตอรี่",
       Section1Fishing: "เกมตกปลา",
       Section1Sport: "เกมกีฬา",
+      Section1Esport: "อีสปอร์ต",
       Section1Electron: "เกมอิเล็กตรอน",
       Section1Live: "คาสิโนสด",
+      services: {
+        service1: {
+          title: "เวลาฝากเฉลี่ย",
+          value: "30 วินาที",
+        },
+        service2: {
+          title: "เวลาถอนเฉลี่ย",
+          value: "50 วินาที",
+        },
+        service3: {
+          title: "แพลตฟอร์มการชำระเงินสหกรณ์",
+          value: "60 พันธมิตร",
+        },
+        service4: {
+          title: "แพลตฟอร์มการเล่นเกมแบบร่วมมือ",
+          value: "80 พันธมิตร",
+        },
+      },
+      features: {
+        feature1: {
+          title: "มืออาชีพมากขึ้น",
+          description:
+            "มีกิจกรรมกีฬาและ e-sports ที่น่าตื่นเต้นเกือบพันรายการให้คุณทุกวัน พร้อมวิธีเพลิดเพลินไปกับความบันเทิงที่หลากหลาย เช่น คนจริง หมากรุกและไพ่ ลอตเตอรี และเกมอิเล็กทรอนิกส์ให้เลือก จาก.",
+        },
+        feature2: {
+          title: "ปลอดภัยกว่า",
+          description:
+            "การพัฒนาแบบเอกสิทธิ์เฉพาะบุคคลโดยใช้เทคโนโลยีการเข้ารหัสแบบ 128 บิตและระบบการจัดการความปลอดภัยที่เข้มงวด เงินทุนของลูกค้าคือการป้องกันที่สมบูรณ์ที่สุด ช่วยให้คุณเพลิดเพลินกับความบันเทิง เดิมพันกิจกรรม ไม่ต้องกังวล!",
+        },
+        feature3: {
+          title: "สะดวกขึ้น",
+          description:
+            "แอพเนทีฟบนเว็บ, H5, iOS และ Android ที่พัฒนาขึ้นเอง ช่วยให้คุณเล่นและเดิมพันตามที่คุณต้องการได้ทุกที่ทุกเวลา! ฝ่ายบริการลูกค้าออนไลน์ 7×24 ชั่วโมงให้บริการที่ใกล้ชิดและมีคุณภาพสูงที่สุด",
+        },
+        feature4: {
+          title: "เร็วขึ้น",
+          description:
+            "ระบบประมวลผลทางการเงินที่พัฒนาขึ้นอย่างอิสระโดยเทคโนโลยีล่าสุดสามารถบรรลุการจัดเก็บ การดึงข้อมูล และการถ่ายโอนที่รวดเร็วอย่างแท้จริง เทคโนโลยีการเพิ่มประสิทธิภาพเครือข่ายพิเศษเฉพาะเพื่อให้คุณได้รับประสบการณ์การเล่นเกมระดับเฟิร์สคลาสและเพิ่มเวลาแฝงของเครือข่ายให้สูงสุด",
+        },
+      },
     },
     liveGame: {
       wmDesc:
@@ -697,7 +820,7 @@ export const thTH = {
       addBookmark: "เพิ่มในรายการโปรด",
       transfer: "โอน",
       deposit: "ฝาก",
-      mainAccount: "ยอดเงินคงเหลือ:",
+      mainAccount: "ยอดเงินคงเหลือ",
       dollor: "",
       logout: "ออกจากระบบ",
       welcomBack: "ยินดีต้อนรับ",
@@ -769,6 +892,7 @@ export const thTH = {
         "ฉันยืนยันว่าฉันอายุเกิน 18 ปีและได้อ่านและยอมรับนโยบาย คำชี้แจงสิทธิ์ส่วนบุคคล ข้อกำหนดและเงื่อนไขของเว็บไซต์นี้แล้ว",
       btn: "ลงทะเบียนเลย",
       activation: "การยืนยันทาง SMS",
+      email: "โปรดป้อนที่อยู่อีเมลของคุณ",
     },
     resetPassword: {
       title: "รีเซ็ตรหัสผ่าน",
@@ -820,6 +944,7 @@ export const thTH = {
   },
   PrimePay: "ฝากอัตโนมัติ",
   MaticPay: "MaticPay",
+  ZeroNineNinePay: "099Pay",
   LeePay: "LeePay",
   ApplePay: "ApplePay",
   UmPay: "PlayPay",
@@ -830,11 +955,13 @@ export const thTH = {
   CustomBank: "ธนาคารที่กำหนดเอง",
   VR: {
     lottery: "VR",
-    desc: 'VR Lottery has always been in the leading position in the industry with "fairness, safety, fast and accuracy", and has an all-round system of artificial intelligence. We have all kinds of mainstream lottery here, mainly divided into "VR Live streaming lottery" and "VR lottery". We are also developing the "VR Electronic" series of games, determined to give customers more diversified choices.    VR will continue to create and progress, in order to introduce more new kind lottery for the public, and create an all-round entertainment environment.',
+    desc:
+      'VR Lottery has always been in the leading position in the industry with "fairness, safety, fast and accuracy", and has an all-round system of artificial intelligence. We have all kinds of mainstream lottery here, mainly divided into "VR Live streaming lottery" and "VR lottery". We are also developing the "VR Electronic" series of games, determined to give customers more diversified choices.    VR will continue to create and progress, in order to introduce more new kind lottery for the public, and create an all-round entertainment environment.',
   },
   KY: {
     chess: "KaiYuan",
-    desc: "คว้าตัววัว ตัววัว ตัวผู้ ตัวผู้ มังกร และเสือ แล้วคุณสามารถเลือกหมากรุกและไพ่ได้หลากหลาย! หมากรุกและไพ่แสดงความคิดของคุณ ความบันเทิงในการแข่งขัน เผาสมอง พบปะเพื่อนฝูง และแข่งขัน เกมเปลี่ยนชีวิตคุณ",
+    desc:
+      "คว้าตัววัว ตัววัว ตัวผู้ ตัวผู้ มังกร และเสือ แล้วคุณสามารถเลือกหมากรุกและไพ่ได้หลากหลาย! หมากรุกและไพ่แสดงความคิดของคุณ ความบันเทิงในการแข่งขัน เผาสมอง พบปะเพื่อนฝูง และแข่งขัน เกมเปลี่ยนชีวิตคุณ",
     BankerNiuNiu: "Niu-Niu",
     GoldenFlower: "Gloden Flower",
     The21Point: "The 21 Point",
@@ -842,10 +969,16 @@ export const thTH = {
     fish: "KY",
   },
   sports: {
-    desc: "PG นำเสนอรูปแบบการเล่นที่แปลกใหม่และหลากหลายและการถ่ายทอดเหตุการณ์ที่อัตราต่อรองสูง เช่นเดียวกับการใช้อุปกรณ์ต่างๆ ทุกที่ทุกเวลา ช่วยให้คุณวางเดิมพันได้อย่างง่ายดาย รวดเร็ว และปลอดภัย บวกกับความมั่งคั่งของ การพนันกีฬารวมถึงฟุตบอล บาสเก็ตบอล เบสบอล เทนนิส อเมริกันฟุตบอล อีสปอร์ต ฯลฯ เพื่อตอบสนองความต้องการของผู้รักกีฬาทุกคน!",
+    bunnydesc:
+      "atebunny นำเสนอรูปแบบการเล่นที่แปลกใหม่และหลากหลายและการถ่ายทอดเหตุการณ์ที่อัตราต่อรองสูง เช่นเดียวกับการใช้อุปกรณ์ต่างๆ ทุกที่ทุกเวลา ช่วยให้คุณวางเดิมพันได้อย่างง่ายดาย รวดเร็ว และปลอดภัย บวกกับความมั่งคั่งของ การพนันกีฬารวมถึงฟุตบอล บาสเก็ตบอล เบสบอล เทนนิส อเมริกันฟุตบอล อีสปอร์ต ฯลฯ เพื่อตอบสนองความต้องการของผู้รักกีฬาทุกคน!",
+    desc:
+      "PG นำเสนอรูปแบบการเล่นที่แปลกใหม่และหลากหลายและการถ่ายทอดเหตุการณ์ที่อัตราต่อรองสูง เช่นเดียวกับการใช้อุปกรณ์ต่างๆ ทุกที่ทุกเวลา ช่วยให้คุณวางเดิมพันได้อย่างง่ายดาย รวดเร็ว และปลอดภัย บวกกับความมั่งคั่งของ การพนันกีฬารวมถึงฟุตบอล บาสเก็ตบอล เบสบอล เทนนิส อเมริกันฟุตบอล อีสปอร์ต ฯลฯ เพื่อตอบสนองความต้องการของผู้รักกีฬาทุกคน!",
   },
   esports: {
-    desc: "IM e-sports มีการสนับสนุนด้านเทคนิคที่ยอดเยี่ยม เช่นเดียวกับอินเทอร์เฟซภาพที่น่าทึ่งและประสบการณ์ผู้ใช้ที่มีประสิทธิภาพ ตอนนี้ผ่านแพลตฟอร์มเครือข่ายแพ็คเกจ [PG] สัมผัสความสนุกของการเดิมพัน e-sports ได้ง่ายๆ!",
+    bunnydesc:
+      "IM e-sports มีการสนับสนุนด้านเทคนิคที่ยอดเยี่ยม เช่นเดียวกับอินเทอร์เฟซภาพที่น่าทึ่งและประสบการณ์ผู้ใช้ที่มีประสิทธิภาพ ตอนนี้ผ่านแพลตฟอร์มเครือข่ายแพ็คเกจ [atebunny] สัมผัสความสนุกของการเดิมพัน e-sports ได้ง่ายๆ!",
+    desc:
+      "IM e-sports มีการสนับสนุนด้านเทคนิคที่ยอดเยี่ยม เช่นเดียวกับอินเทอร์เฟซภาพที่น่าทึ่งและประสบการณ์ผู้ใช้ที่มีประสิทธิภาพ ตอนนี้ผ่านแพลตฟอร์มเครือข่ายแพ็คเกจ [PG] สัมผัสความสนุกของการเดิมพัน e-sports ได้ง่ายๆ!",
   },
   services: {
     depositTitle: "การฝากและถอนเงินด่วน",
@@ -855,7 +988,8 @@ export const thTH = {
     security:
       "ได้รับการพัฒนาเป็นพิเศษโดยใช้เทคโนโลยีการเข้ารหัส 128 บิตและระบบการจัดการความปลอดภัยที่เข้มงวด เงินทุนของลูกค้าคือการป้องกันที่สมบูรณ์ที่สุด ช่วยให้คุณเพลิดเพลินกับความบันเทิง เดิมพันกิจกรรม และไม่ต้องกังวล!",
     oddsTitle: "ประเภทงานใหญ่",
-    odds: "เสนอกิจกรรมกีฬาที่น่าตื่นเต้นเกือบพันรายการให้คุณทุกวัน เช่นเดียวกับตัวเลือกความบันเทิงที่หลากหลาย เช่น ไลฟ์แอ็กชัน ลอตเตอรี เกมอิเล็กทรอนิกส์ ฯลฯ เพื่อให้คุณได้รับประสบการณ์การเล่นเกมที่สมบูรณ์แบบ",
+    odds:
+      "เสนอกิจกรรมกีฬาที่น่าตื่นเต้นเกือบพันรายการให้คุณทุกวัน เช่นเดียวกับตัวเลือกความบันเทิงที่หลากหลาย เช่น ไลฟ์แอ็กชัน ลอตเตอรี เกมอิเล็กทรอนิกส์ ฯลฯ เพื่อให้คุณได้รับประสบการณ์การเล่นเกมที่สมบูรณ์แบบ",
     platformTitle: "คุณสามารถเลือกได้จากสามเทอร์มินัล",
     platform:
       "เทคโนโลยีที่ยอดเยี่ยมที่เป็นผู้นำตลาด พัฒนาชุดแอปพลิเคชันเทอร์มินัลอย่างอิสระ ช่วยให้คุณเพลิดเพลินกับเว็บ, H5 และ iOS, แอพ Android ดั้งเดิม ช่วยให้คุณเดิมพันได้ทุกที่ทุกเวลา! บริการลูกค้าออนไลน์ 7x24 ให้บริการที่ใกล้ชิดที่สุด คุณภาพดีที่สุด",
@@ -873,6 +1007,9 @@ export const thTH = {
     name: "Sexy Gaming",
     live: "Sexy Gaming",
   },
+  AWC_SG: {
+    live: "Sexy Gaming",
+  },
   SW: {
     live: "Skywind",
     slots: "Skywind",
@@ -883,6 +1020,7 @@ export const thTH = {
   },
   IMES: {
     sports: "IM",
+    esports: "IM",
   },
   SABA: {
     sports: "SABA",
@@ -895,14 +1033,34 @@ export const thTH = {
   JDB: {
     slots: "JDB",
     fish: "JDB",
+    desc:
+      "การชนะขุมทรัพย์ออนไลน์ไม่ใช่เรื่องน่าเบื่อ มีเกมและสล็อตแมชชีนมากมายที่นี่ หากคุณต้องการสัมผัสประสบการณ์การเล่นเกมมากกว่านี้ คุณต้องมาที่นี่!",
   },
   JILI: {
     slots: "JILI",
     fish: "JILI",
   },
+  JILITF: {
+    slots: "JILI",
+    fish: "JILI",
+  },
+  JOKER: {
+    slots: "JOKER",
+    fish: "JOKER",
+  },
+  PPTF: {
+    slots: "Pragmatic Play",
+    electron: "Pragmatic Play",
+    live: "Pragmatic Play",
+    fish: "Pragmatic Play",
+    sports: "Pragmatic Play",
+  },
   PP: {
     slots: "Pragmatic Play",
     electron: "Pragmatic Play",
+    live: "Pragmatic Play",
+    fish: "Pragmatic Play",
+    sports: "Pragmatic Play",
   },
   EVO: {
     live: "Evolution",
@@ -928,6 +1086,9 @@ export const thTH = {
   WM: {
     live: "WM Casino",
   },
+  DG: {
+    live: "DG Casino",
+  },
   TCG_SEA: {
     lottery: "TCG SEA",
   },
@@ -949,9 +1110,37 @@ export const thTH = {
   },
   AVIA: {
     sports: "AVIA Gaming",
+    esports: "AVIA",
   },
+  AWC_RCB: {
+    sports: "RCB988",
+  },
+  AWC_VENUS: {
+    live: "VENUS",
+  },
+  AWC_COCKFIGHT: {
+    sports: "SV388",
+  },
+  AWC_SPADE: {
+    electron: "SPADE",
+    fish: "SPADE",
+    slots: "SPADE",
+  },
+  AWC_FACAI: { electron: "FACAI", slots: "FACAI", fish: "FACAI" },
+  AWC_PGS: { electron: "PGS", slots: "PGS" },
+  AWC_AWS: { electron: "AWS", slots: "AWS" },
+  AWC_FS: { slots: "FS" },
+  AWC_YL: { electron: "YL", fish: "YL" },
+  AWC_KM: { electron: "KM" },
+  AWC_LUDO: { electron: "LUDO" },
+  AWC_AELOTTO: { lottery: "AE" },
   TF: {
     sports: "TF Gaming",
+    esports: "TF",
+  },
+  idr: {
+    withdrawalNumber: "หมายเลขบัตรธนาคาร",
+    msgEnterWithdrawalNumber: "โปรดป้อนหมายเลขบัตรธนาคาร",
   },
   hk28: {
     withdrawalNumber: "หมายเลขบัตรธนาคาร/ที่อยู่สกุลเงิน Crypto",
@@ -1038,6 +1227,14 @@ export const thTH = {
     sportsRebate: "เกมกีฬา",
     virtualSportsRebate: "เกม Esports",
     vipBenefit: "ส่วนลดวีไอพี",
+    bunny: {
+      level1: "บรอนซ์",
+      level2: "เงิน",
+      level3: "ทอง",
+      level4: "ทับทิม",
+      level5: "แพลตตินั่ม",
+      level6: "เพชร",
+    },
   },
   custom: {
     addcard: {
@@ -1051,14 +1248,85 @@ export const thTH = {
     title: "แนวทางการโอนเงิน",
     content: `โปรดทราบว่าเกี่ยวกับบัญชีการโอนเงิน โปรดทำการโอนเงินตามบัญชีของแพลตฟอร์ม หากการโอนเงินไปที่บัญชีเก่า อาจมีการหน่วงเวลาในคะแนนสูงสุดหรืออาจไม่ตรวจสอบ . บริษัทของเราจะไม่รับผิดชอบต่อปัญหานี้ , กรุณาให้ความสนใจ!`,
   },
+  depositNotificationGMO: {
+    title: "แนวทางการโอนเงิน",
+    content: `คำแนะนำในการฝากและถอนเงินของลูกค้า เพื่อป้องกันการฟอกเงิน การถอนเงินของลูกค้าจะต้องเหมือนกับบัญชีเติมเงินที่ถูกผูกไว้ หากมีคำถามเกี่ยวกับการถอนเงิน โปรดติดต่อฝ่ายบริการลูกค้าเพื่อสอบถามข้อมูล
+    `,
+  },
   mgm: {
-    msgPlsEnterAccount: "ชื่อธนาคาร",
-    depositTips: "กรุณากรอกชื่อบัญชีการโอนเงินที่ถูกต้องเพื่อความสะดวก",
+    msgPlsEnterAccount: "กรุณากรอกบัญชีธนาคาร/ชื่อ",
+    accountDepositTips: "กรุณากรอกชื่อธนาคารที่โอนเงินให้ถูกต้องเพื่อความสะดวก",
+    nameDepositTips:
+      "กรุณากรอกชื่อบัญชีโอนเงินที่ถูกต้องเพื่ออำนวยความสะดวกในการให้คะแนน",
   },
   t3: {
     profile: "ข้อมูลผู้ใช้",
     transfer: "โอน",
     deposit: "เงินฝาก",
     withdraw: "ถอนเงิน",
+  },
+  verified: {
+    yes: "ยืนยันแล้ว",
+    no: "ไม่ได้รับการยืนยัน",
+    rejected: "ปฏิเสธ",
+    verifying: "กำลังตรวจสอบ",
+    waiting: "รอการยืนยันจากฝ่ายบริการลูกค้า",
+    goVerify: "ตรวจสอบชื่อจริง",
+  },
+  disabledAddCard: {
+    title: "ไม่พบบัตรในบัญชีของคุณ",
+    description:
+      "โปรดติดต่อฝ่ายบริการลูกค้าเพื่อเพิ่มบัตรเพื่อเข้าสู่หน้าการถอนเงิน",
+  },
+
+  hint: {
+    _099: "เปิดให้บริการเวลา (9:00-23:30 น.)",
+  },
+
+  idr1: {
+    pleaseEnterAccountName: "กรุณาใส่ชื่อบัญชีของคุณ",
+    msgPlsSelectAccount: "กรุณาเลือกบัญชี",
+  },
+
+  pointless: {
+    download: "จุดดาวน์โหลดลิงค์ APP",
+    copy: "คัดลอก",
+    link: "ลิงค์",
+  },
+  promoRoulette: {
+    main: "เสนอหน้าแรก",
+    content: "ข้อเสนอ",
+    terms: "ข้อเสนอ",
+    dialogUnavailableTitle1: "เล่นวันละครั้ง",
+    dialogUnavailableTitle2: "พรุ่งนี้มาอีกนะ",
+    dialogUnavailableTitle3: "คลิกเพื่อดูข้อเสนอที่ดีเพิ่มเติม",
+    dialogRewardTitle1: "ยินดีด้วยกับชัยชนะของคุณ",
+  },
+  idr1HomePage: {
+    section1: {
+      live: "คาสิโนสด",
+      slot: "เกมสล็อต",
+      lottery: "เกมลอตเตอรี",
+      fishing: "เกมตกปลา",
+    },
+    section2: {
+      "1000game": "1000+ เกม",
+      "247support": "24/7 สนับสนุน",
+      fastpay: "จ่ายเร็ว",
+      secure: "ปลอดภัย 100%",
+      vip: "ผลประโยชน์วีไอพี",
+      promo: "ข้อเสนอสุดพิเศษ",
+    },
+    section3: {
+      title: "คาสิโนทุกที่ทุกเวลา",
+      description:
+        "เกมสล็อต คาสิโนสด กีฬาสามารถเล่นได้อย่างง่ายดายด้วยมือถือเครื่องเดียว",
+    },
+    section4: {
+      exclusive: "พิเศษ",
+      vip: "โปรแกรมวีไอพี",
+      description:
+        "เข้าร่วมตอนนี้และเพลิดเพลินกับสิทธิพิเศษวีไอพีพิเศษสำหรับคุณ",
+    },
   },
 };

@@ -39,7 +39,8 @@ export const vivN = {
     join: "Tham gia",
   },
   common: {
-    noReachMin: "Số điện thoại di động được đặt thành 8 đến 10 chữ số",
+    pleaseEnterAccountName: "Vui lòng nhập tên tài khoản của bạn",
+    noReachMin: "Số điện thoại di động được đặt thành 8 đến {maxlength} chữ số",
     upload: "tải tệp lên",
     title: "{brand} | Sòng bạc trực tuyến lớn nhất & đáng tin cậy nhất",
     register: "Đăng ký",
@@ -71,6 +72,7 @@ export const vivN = {
     msgEnterEmail: "Địa chỉ Email",
     msgInvalidEmail: "Địa chỉ Email Không hợp lệ",
     msgEnterCode: "Vui lòng nhập mã xác minh",
+    msgEnterCodeEmail: "Vui lòng nhập mã xác minh",
     msgEnterEmailCode: "Mã xác minh email",
     msgEnterPhoneCode: "Mã Xác minh Điện thoại",
     msgInvalidPhoneCode: "Mã xác minh không hợp lệ",
@@ -89,6 +91,11 @@ export const vivN = {
     emailAddress: "Địa chỉ Email",
     qqNumber: "Tài khoản QQ",
     wechatNumber: "Tài khoản Wechat",
+    fb: "Tài khoản Facebook Messenger",
+    telegram: "Tài khoản Telegram",
+    line: "Tài khoản Line",
+    viber: "Tài khoản Viber",
+    whatsapp: "Tài khoản Whatsapp",
     receiverAddress: "Địa chỉ người nhận",
     loginPassword: "Mật khẩu đăng nhập",
     contact: "Liên hệ",
@@ -145,6 +152,7 @@ export const vivN = {
     startGame: "BẮT ĐẦU",
     cs: "TRÒ CHUYỆN",
     msgSuccessUpdateProfile: "Cập nhật hồ sơ thành công",
+    favoriteGame: "yêu thích",
     joinGame: "Nhập",
     withdrawalBankType: "Loại",
     withdrawalChannel: "Kênh",
@@ -208,20 +216,34 @@ export const vivN = {
       desc: "Thông tin được mã hóa",
       branch: "Chi nhánh",
       branchPlaceHolder: "Vui lòng nhập chi nhánh ngân hàng",
+      eWalletAccount: "Tên tiền điện tử",
+      msgEnterEwalletAccount: "Vui lòng nhập tên tiền điện tử",
+      phone: "Số điện thoại",
+      msgEnterPhone: "Vui lòng nhập số điện thoại",
     },
     success: {
       title: "Thêm thẻ ngân hàng thành công",
       successDesc:
         "Xin chúc mừng vì bạn đã hoàn tất việc ràng buộc thẻ ngân hàng. Bạn có thể nhanh chóng chọn thẻ ngân hàng của mình khi rút tiền sau. Nếu bạn muốn ràng buộc các thẻ ngân hàng khác",
+      successDescDeposit:
+        "Xin chúc mừng vì bạn đã hoàn tất việc ràng buộc thẻ ngân hàng.",
       bindDesc:
         'Vui lòng nhấp vào" Liên kết các thẻ ngân hàng khác "bên dưới để thực hiện lại thao tác.',
       reminder: "Nhắc nhở",
       callHotline: "Hoặc gọi 000-000-0000 để được trợ giúp.",
       bindBankCard: "Liên kết Thẻ Ngân hàng Khác",
+      goDeposit: "Chuyển đến Gửi tiền",
       goWithdrawal: "Chuyển đến Rút tiền",
+      goProfile: "Chuyển đến TIỂU SỬ",
+      noMoreAddCard:
+        "Chúc mừng bạn đã hoàn tất việc ràng buộc tài khoản ngân hàng. Bạn có thể nhanh chóng chọn ngân hàng rút tiền của mình khi rút tiền sau.",
     },
   },
   deposit: {
+    address: "Địa chỉ",
+    email: "Email",
+    phone: "Điện thoại",
+    fpsId: "ID FPS",
     title: "Gửi tiền",
     ppRemark:
       "Lưu ý: HAI chữ số thập phân ngẫu nhiên sẽ được thêm vào tổng số tiền (bắt buộc cho mục đích xác minh đơn đặt hàng)",
@@ -265,7 +287,9 @@ export const vivN = {
     msgPlsSelectPayment: "Vui lòng chọn hình thức thanh toán",
     msgPlsSelectMethod: "Vui lòng chọn kênh thanh toán",
     msgPlsEnterAccount: "Vui lòng nhập tên tài khoản ngân hàng",
-    msgInvalidFileSize: "Tệp quá lớn, vui lòng chọn tệp nhỏ hơn 2mb",
+    msgPlsUploadProof: "Please upload deposit proof",
+    msgNotMustUploadProof: "Không bắt buộc tải lên",
+    msgInvalidFileSize: "Tệp quá lớn, vui lòng chọn tệp nhỏ hơn 5mb",
     msgInvalidFileType:
       "Vui lòng chỉ tải lên tệp hình ảnh. (.jpg / .jpeg / .png / .tiff)",
     msgFailedJoinPromotion:
@@ -288,6 +312,11 @@ export const vivN = {
       orderVerify: "Xác minh",
       manualOpen: "Mở bằng tay",
     },
+    totalAmount: "Số lượng điểm",
+    plsEnterUSDTAmount: "Vui lòng nhập số tiền USDT",
+    playerNote: "Ghi chú của người chơi",
+    plsEnterPlayerNote: "Vui lòng nhập ghi chú của người chơi",
+    eWalletAccount: "Tên tiền điện tử",
   },
   forgotPassword: {
     title: "Quên mật khẩu",
@@ -317,6 +346,7 @@ export const vivN = {
       withdrawalPassword: "Mật khẩu rút tiền",
       confirmWithdrawalPassword: "Xác nhận Mật khẩu Rút tiền",
       promoteCode: "Mã khuyến mãi",
+      email: "Vui lòng nhập địa chỉ email",
     },
     main: {
       homePage: "Trang chủ",
@@ -338,6 +368,9 @@ export const vivN = {
         setting: "Cài đặt",
         signout: "Đăng xuất",
         wallet: "Ví",
+        deposit: "Gửi tiền",
+        withdrawal: "Rút tiền",
+        transfer: "Chuyển",
       },
       home: {
         gameTab: {
@@ -385,6 +418,11 @@ export const vivN = {
     },
   },
   profile: {
+    birthdate: {
+      title: "Ngày sinh",
+      toEdit: "Nếu bạn cần chỉnh sửa ngày sinh, vui lòng nhấp vào",
+      here: "Đây",
+    },
     setted: "Đã định cấu hình",
     setNow: "Định cấu hình ngay bây giờ",
     edit: "Cập nhật",
@@ -413,6 +451,7 @@ export const vivN = {
       step2Title: "Đặt điện thoại mới",
     },
     nameVerify: {
+      editHere: "đây",
       title: "Tên thật",
       msgEnterICNum: "Nhập số IC",
       icNum: "Số IC",
@@ -464,6 +503,36 @@ export const vivN = {
       weChatAccount: "WeChat",
       toEdit: "Nếu Cần Chỉnh sửa WeChat, Vui lòng Liên hệ",
     },
+    fb: {
+      msgInvalidFB: "Tài khoản Facebook Messenger không hợp lệ",
+      plsEnterFB: "Vui lòng nhập tài khoản Facebook Messenger",
+      fbAccount: "Tài khoản Facebook Messenger",
+      toEdit: "Nếu Cần Chỉnh sửa Facebook Messenger, Vui lòng Liên hệ",
+    },
+    telegram: {
+      msgInvalidTelegram: "Tài khoản Telegram không hợp lệ",
+      plsEnterTelegram: "Vui lòng nhập tài khoản Telegram",
+      telegramAccount: "Tài khoản Telegram",
+      toEdit: "Nếu Cần Chỉnh sửa Telegram, Vui lòng Liên hệ",
+    },
+    line: {
+      msgInvalidLine: "Tài khoản Line không hợp lệ",
+      plsEnterLine: "Vui lòng nhập tài khoản Line",
+      lineAccount: "Tài khoản Line",
+      toEdit: "Nếu Cần Chỉnh sửa Line, Vui lòng Liên hệ",
+    },
+    viber: {
+      msgInvalidViber: "Tài khoản Viber không hợp lệ",
+      plsEnterViber: "Vui lòng nhập tài khoản Viber",
+      viberAccount: "Tài khoản Viber",
+      toEdit: "Nếu Cần Chỉnh sửa Viber, Vui lòng Liên hệ",
+    },
+    whatsapp: {
+      msgInvalidWhatsapp: "Tài khoản Whatsapp không hợp lệ",
+      plsEnterWhatsapp: "Vui lòng nhập tài khoản Whatsapp",
+      whatsappAccount: "Tài khoản Whatsapp",
+      toEdit: "Nếu Cần Chỉnh sửa Whatsapp, Vui lòng Liên hệ",
+    },
     resetResetWithdrawalPassword: {
       title: "Đặt lại mật khẩu rút tiền",
       editWithdrawalPassword: "Chỉnh sửa mật khẩu rút tiền",
@@ -495,6 +564,7 @@ export const vivN = {
   },
   report: {
     title: "Báo cáo",
+    total: "toàn bộ",
     transferDetails: "Chuyển",
     withdrawalDetails: "Rút tiền",
     depositDetails: "Gửi tiền",
@@ -503,6 +573,7 @@ export const vivN = {
     rebateDetails: "Giảm giá",
     platform: "Nền tảng",
     date: "Ngày",
+    platformgamename: "Nền tảng/Tên trò chơi",
     startDate: "Ngày bắt đầu",
     endDate: "Ngày kết thúc",
     today: "Hôm nay",
@@ -560,6 +631,9 @@ export const vivN = {
     turnover: "Doanh thu",
     winloss: "Thắng thua",
     ratio: "Tỷ lệ",
+    totalBetAmount: "Tổng số tiền đặt cược",
+    totalWinLose: "Tổng số tiền thắng thua",
+    totalValidBet: "tổng số tiền đặt cược hợp lệ",
   },
   share: {
     bottomNote: {
@@ -596,7 +670,9 @@ export const vivN = {
     totalFund: "Số dư",
     mainAccount: "Ví chính",
     oneKeyReceive: "Nhận tất cả",
-    oneKeyTransfer: "Chuyển tất cả",
+    oneKeyTransferIn: "Chuyển vào",
+    oneKeyTransferOut: "Chuyển ra ngoài",
+    oneKeyTransferAll: "Chuyển tất cả",
     maintenance: "bảo trì",
     transferFrom: "Chuyển từ",
     transferFromWallet: "Chuyển từ",
@@ -608,11 +684,16 @@ export const vivN = {
     transfer: "Chuyển",
     noticeTitle: "Mẹo",
     msgFailedTransfer: "Chuyển không thành công",
+    msgTransferOutFromGP: "Chuyển từ tất cả ví phụ sang ví chính",
   },
   withdrawal: {
+    notReachMin: "số tiền rút không đạt số tiền tối thiểu",
+    reachedMax: "số tiền rút đã đạt đến số tiền tối đa",
     msgMustHundred: "Số tiền phải kết thúc bằng hàng trăm chữ số",
     msgInvalidAmt: "Số tiền rút phải lớn hơn 0",
     msgCanWithdrawal: "Rút tiền sẵn có ： {{amount}}",
+    msgContactCSCardChange:
+      "Nếu bạn cần sửa đổi, vui lòng liên hệ với bộ phận chăm sóc khách hàng",
     turnover: "Doanh thu:",
     msgEnterWithdrawalPass: "Vui lòng nhập mật khẩu rút tiền",
     msgInsuffnough: "Không đủ số dư.",
@@ -633,6 +714,9 @@ export const vivN = {
     receiverName: "Tên người nhận",
     fee: "Phí",
     receiverAmount: "Số tiền",
+    usdtAmount: "USDT Số tiền",
+    playerNote: "Ghi chú của người chơi",
+    plsEnterPlayerNote: "Vui lòng nhập ghi chú của người chơi",
   },
   promotion: {
     emptyLine1: "CÓ NHIỀU KHUYẾN MÃI VÀ HOẠT ĐỘNG HƠN",
@@ -658,8 +742,49 @@ export const vivN = {
       Section1Lottery: "TRÒ CHƠI XỔ SỐ",
       Section1Fishing: "TRÒ CHƠI CÂU CÁ",
       Section1Sport: "THỂ THAO",
+      Section1Esport: "eSports",
       Section1Electron: "TRÒ CHƠI ĐIỆN TỬ",
       Section1Live: "TRÒ CHƠI TRỰC TIẾP",
+      services: {
+        service1: {
+          title: "Thời gian gửi tiền trung bình",
+          value: "30 giây",
+        },
+        service2: {
+          title: "Thời gian rút tiền trung bình",
+          value: "50 giây",
+        },
+        service3: {
+          title: "Nền tảng thanh toán hợp tác",
+          value: "60 đối tác",
+        },
+        service4: {
+          title: "Nền tảng trò chơi hợp tác",
+          value: "80 đối tác",
+        },
+      },
+      features: {
+        feature1: {
+          title: "Chuyên nghiệp hơn",
+          description:
+            "Nó cung cấp cho bạn gần một nghìn sự kiện thể thao và thể thao điện tử hấp dẫn mỗi ngày, với nhiều cách khác nhau để tận hưởng cảm giác thích thú tột cùng và nhiều phương thức giải trí như người thật, cờ vua và bài, xổ số và trò chơi điện tử để bạn lựa chọn từ.",
+        },
+        feature2: {
+          title: "an toàn hơn",
+          description:
+            "Được phát triển độc quyền, sử dụng công nghệ mã hóa 128-bit và hệ thống quản lý bảo mật nghiêm ngặt, quỹ của khách hàng được bảo vệ toàn diện nhất, cho phép bạn tận hưởng trọn vẹn hoạt động giải trí, cá cược sự kiện, không phải lo lắng!",
+        },
+        feature3: {
+          title: "thuận tiện hơn",
+          description:
+            "Ứng dụng gốc Web, H5 và iOS và Android tự phát triển cho phép bạn chơi và đặt cược như bạn muốn mọi lúc, mọi nơi! Dịch vụ khách hàng trực tuyến 24 giờ của 7 × cung cấp dịch vụ thân mật và chất lượng cao nhất.",
+        },
+        feature4: {
+          title: "Nhanh hơn",
+          description:
+            "Hệ thống xử lý tài chính được phát triển độc lập bởi công nghệ mới nhất thực sự có thể đạt được tốc độ lưu trữ, truy xuất và chuyển giao cực kỳ nhanh chóng. Công nghệ tối ưu hóa mạng độc quyền để cung cấp cho bạn trải nghiệm chơi game hạng nhất và tối đa hóa độ trễ của mạng.",
+        },
+      },
     },
     liveGame: {
       wmDesc:
@@ -704,7 +829,7 @@ export const vivN = {
       addBookmark: "Dấu trang",
       transfer: "Chuyển",
       deposit: "Gửi tiền",
-      mainAccount: "Số dư ：",
+      mainAccount: "Số dư ",
       dollor: "",
       logout: "Đăng xuất",
       welcomBack: "Chào mừng bạn trở lại",
@@ -775,6 +900,7 @@ export const vivN = {
         "Tôi xác nhận rằng tôi từ 18 tuổi trở lên và đã đọc và chấp nhận chính sách, tuyên bố về quyền riêng tư, các điều khoản và điều kiện của trang web này.",
       btn: "Đăng ký ngay",
       activation: "Xác minh qua SMS",
+      email: "Vui lòng nhập địa chỉ email",
     },
     resetPassword: {
       title: "Đặt lại mật khẩu",
@@ -818,7 +944,8 @@ export const vivN = {
       title: "Xin lỗi, hệ thống đang được bảo trì",
       maintenance: "bảo trì",
       maintenancePeriod: "Thời gian bảo trì ：",
-      desc: "Để bạn có trải nghiệm trò chơi tốt hơn, chúng tôi đã làm việc chăm chỉ",
+      desc:
+        "Để bạn có trải nghiệm trò chơi tốt hơn, chúng tôi đã làm việc chăm chỉ",
       descText:
         "Nếu có bất kỳ câu hỏi nào, vui lòng liên hệ với dịch vụ khách hàng trực tuyến trong thời gian",
       btn: "Liên hệ với chúng tôi",
@@ -826,6 +953,7 @@ export const vivN = {
   },
   PrimePay: "PrimePay",
   MaticPay: "MaticPay",
+  ZeroNineNinePay: "099Pay",
   LeePay: "LeePay",
   ApplePay: "ApplePay",
   UmPay: "PlayPay",
@@ -836,11 +964,13 @@ export const vivN = {
   CustomBank: "Ngân hàng tùy chỉnh",
   VR: {
     lottery: "VR",
-    desc: 'Xổ số VR luôn ở vị trí dẫn đầu trong ngành với " công bằng, an toàn, nhanh chóng và chính xác "và có hệ thống trí tuệ nhân tạo toàn diện. Chúng tôi có tất cả các loại xổ số chính thống tại đây, chủ yếu được chia thành "Xổ số phát trực tiếp VR " và "Xổ số VR ". Chúng tôi cũng đang phát triển loạt trò chơi "VR Điện tử ", quyết tâm mang đến cho khách hàng nhiều sự lựa chọn đa dạng hơn. VR sẽ tiếp tục sáng tạo và phát triển, nhằm giới thiệu thêm nhiều loại hình xổ số mới cho công chúng và tạo ra một môi trường giải trí toàn diện. ',
+    desc:
+      'Xổ số VR luôn ở vị trí dẫn đầu trong ngành với " công bằng, an toàn, nhanh chóng và chính xác "và có hệ thống trí tuệ nhân tạo toàn diện. Chúng tôi có tất cả các loại xổ số chính thống tại đây, chủ yếu được chia thành "Xổ số phát trực tiếp VR " và "Xổ số VR ". Chúng tôi cũng đang phát triển loạt trò chơi "VR Điện tử ", quyết tâm mang đến cho khách hàng nhiều sự lựa chọn đa dạng hơn. VR sẽ tiếp tục sáng tạo và phát triển, nhằm giới thiệu thêm nhiều loại hình xổ số mới cho công chúng và tạo ra một môi trường giải trí toàn diện. ',
   },
   KY: {
     chess: "KaiYuan",
-    desc: "Không có 1 trò chơi bài nào. Bull bull, blackjack, poker, dragon tiger và các trò chơi đánh bài thực khác",
+    desc:
+      "Không có 1 trò chơi bài nào. Bull bull, blackjack, poker, dragon tiger và các trò chơi đánh bài thực khác",
     BankerNiuNiu: "Niu-Niu",
     GoldenFlower: "Hoa Gloden",
     The21Point: "Điểm 21",
@@ -848,10 +978,16 @@ export const vivN = {
     fish: "KY",
   },
   sports: {
-    desc: "Pega Gaming cung cấp nhiều loại cược mới và tỷ lệ cược cạnh tranh cho các trận đấu trực tiếp. bóng đá, bóng rổ, bóng chày, quần vợt, bóng đá và Thể thao điện tử để đáp ứng nhu cầu của bạn! ",
+    bunnydesc:
+      "atebunny cung cấp nhiều loại cược mới và tỷ lệ cược cạnh tranh cho các trận đấu trực tiếp. bóng đá, bóng rổ, bóng chày, quần vợt, bóng đá và Thể thao điện tử để đáp ứng nhu cầu của bạn! ",
+    desc:
+      "Pega Gaming cung cấp nhiều loại cược mới và tỷ lệ cược cạnh tranh cho các trận đấu trực tiếp. bóng đá, bóng rổ, bóng chày, quần vợt, bóng đá và Thể thao điện tử để đáp ứng nhu cầu của bạn! ",
   },
   esports: {
-    desc: "IM E-Sports là một nền tảng cá cược hàng đầu trong ngành được thiết kế bởi các game thủ dành cho người chơi. đối tác tự hào của IM E-Sports và luôn cập nhật về các trò chơi và đội yêu thích của bạn! ",
+    bunnydesc:
+      "IM E-Sports là một nền tảng cá cược hàng đầu trong ngành được thiết kế bởi các game thủ dành cho người chơi. đối tác tự hào của IM E-Sports và luôn cập nhật về các trò chơi và đội yêu thích của bạn! ",
+    desc:
+      "IM E-Sports là một nền tảng cá cược hàng đầu trong ngành được thiết kế bởi các game thủ dành cho người chơi. đối tác tự hào của IM E-Sports và luôn cập nhật về các trò chơi và đội yêu thích của bạn! ",
   },
   services: {
     depositTitle: "Thanh toán dễ dàng, nhanh chóng",
@@ -861,7 +997,8 @@ export const vivN = {
     security:
       "Là nền tảng cá cược trực tuyến đáng tin cậy nhất ở Châu Á, chúng tôi cam kết cung cấp trải nghiệm chơi trò chơi tốt nhất ở mọi khía cạnh. Chúng tôi sử dụng SSL 128 bit để mã hóa mọi thông tin cá nhân mà bạn chia sẻ với chúng tôi.",
     oddsTitle: "Hơn 500 trò chơi hàng đầu",
-    odds: "Từ các môn thể thao thú vị, đến giải đặc biệt lũy tiến lớn, trò chơi trên bàn cổ điển, sòng bạc trực tiếp, xổ số và các trò chơi đặc biệt - chúng tôi có tất cả! Với hơn 500 trò chơi, sòng bạc trực tuyến của chúng tôi cung cấp hàng giờ giải trí và phần thưởng độc quyền, giải thưởng và tiền thưởng chỉ dành cho bạn! ",
+    odds:
+      "Từ các môn thể thao thú vị, đến giải đặc biệt lũy tiến lớn, trò chơi trên bàn cổ điển, sòng bạc trực tiếp, xổ số và các trò chơi đặc biệt - chúng tôi có tất cả! Với hơn 500 trò chơi, sòng bạc trực tuyến của chúng tôi cung cấp hàng giờ giải trí và phần thưởng độc quyền, giải thưởng và tiền thưởng chỉ dành cho bạn! ",
     platformTitle: "Mọi nơi, mọi thiết bị",
     platform:
       "Dù bạn ở đâu, bạn đều có thể giành được tài sản của mình và vui chơi bất cứ lúc nào, với bất kỳ thiết bị nào! Chúng tôi có sẵn trên các ứng dụng cho cả thiết bị Android và iOS cũng như nền tảng dựa trên web. Hãy tận dụng cơ hội giành chiến thắng LỚN với chúng tôi ngay hôm nay! ",
@@ -879,6 +1016,9 @@ export const vivN = {
     name: "Trò chơi gợi cảm",
     live: "Trò chơi gợi cảm",
   },
+  AWC_SG: {
+    live: "Sexy Gaming",
+  },
   SW: {
     live: "Skywind",
     slots: "Skywind",
@@ -889,6 +1029,7 @@ export const vivN = {
   },
   IMES: {
     sports: "IM",
+    esports: "IM",
   },
   SABA: {
     sports: "SABA",
@@ -901,14 +1042,34 @@ export const vivN = {
   JDB: {
     slots: "JDB",
     fish: "JDB",
+    desc:
+      "Chiến thắng báu vật trực tuyến không hề nhàm chán. Tại đây có rất nhiều trò chơi và máy đánh bạc, muốn trải nghiệm thêm nhiều cách chơi thì bạn phải vào đây!",
   },
   JILI: {
     slots: "JILI",
     fish: "JILI",
   },
+  JILITF: {
+    slots: "JILI",
+    fish: "JILI",
+  },
+  JOKER: {
+    slots: "JOKER",
+    fish: "JOKER",
+  },
+  PPTF: {
+    slots: "Pragmatic Play",
+    electron: "Pragmatic Play",
+    live: "Pragmatic Play",
+    fish: "Pragmatic Play",
+    sports: "Pragmatic Play",
+  },
   PP: {
-    slots: "Chơi thực dụng",
-    electron: "Chơi thực dụng",
+    slots: "Pragmatic Play",
+    electron: "Pragmatic Play",
+    live: "Pragmatic Play",
+    fish: "Pragmatic Play",
+    sports: "Pragmatic Play",
   },
   EVO: {
     live: "Tiến hóa",
@@ -934,6 +1095,9 @@ export const vivN = {
   WM: {
     live: "WM Casino",
   },
+  DG: {
+    live: "DG Casino",
+  },
   TCG_SEA: {
     lottery: "TCG SEA",
   },
@@ -951,10 +1115,39 @@ export const vivN = {
     sports: "BetConstruct",
   },
   AVIA: {
-    sports: "AVIA Gaming",
+    sports: "AVIA ",
+    esports: "AVIA",
   },
+
+  AWC_RCB: {
+    sports: "RCB988",
+  },
+  AWC_VENUS: {
+    live: "VENUS",
+  },
+  AWC_COCKFIGHT: {
+    sports: "SV388",
+  },
+  AWC_SPADE: {
+    electron: "SPADE",
+    fish: "SPADE",
+    slots: "SPADE",
+  },
+  AWC_FACAI: { electron: "FACAI", slots: "FACAI", fish: "FACAI" },
+  AWC_PGS: { electron: "PGS", slots: "PGS" },
+  AWC_AWS: { electron: "AWS", slots: "AWS" },
+  AWC_FS: { slots: "FS" },
+  AWC_YL: { electron: "YL", fish: "YL" },
+  AWC_KM: { electron: "KM" },
+  AWC_LUDO: { electron: "LUDO" },
+  AWC_AELOTTO: { lottery: "AE" },
   TF: {
-    sports: "TF Gaming",
+    sports: "TF",
+    esports: "TF",
+  },
+  idr: {
+    withdrawalNumber: "Số thẻ ngân hàng",
+    msgEnterWithdrawalNumber: "Vui lòng nhập số thẻ ngân hàng",
   },
   hk28: {
     withdrawalNumber: "Số thẻ ngân hàng / Địa chỉ tiền điện tử",
@@ -1042,6 +1235,14 @@ export const vivN = {
     sportsRebate: "trò chơi thể thao",
     virtualSportsRebate: "Trò chơi thể thao điện tử",
     vipBenefit: "Giảm giá VIP",
+    bunny: {
+      level1: "Đồng",
+      level2: "Bạc",
+      level3: "Vàng",
+      level4: "Ruby",
+      level5: "Bạch kim",
+      level6: "Kim cương",
+    },
   },
   custom: {
     addcard: {
@@ -1055,14 +1256,83 @@ export const vivN = {
     title: "Nguyên tắc chuyển tiền",
     content: `Xin lưu ý rằng liên quan đến tài khoản chuyển tiền, vui lòng chuyển tiền theo tài khoản của nền tảng. Nếu chuyển tiền được gửi đến tài khoản cũ, điểm số cao nhất có thể bị chậm một thời gian hoặc nó có thể không được kiểm tra Công ty chúng tôi sẽ không chịu trách nhiệm về vấn đề này., Hãy chú ý! `,
   },
+  depositNotificationGMO: {
+    title: "Nguyên tắc chuyển tiền",
+    content: `Hướng dẫn nạp tiền và rút tiền của khách hàng Để phòng chống rửa tiền, các giao dịch rút tiền của khách hàng phải giống với tài khoản nạp tiền bị ràng buộc.`,
+  },
   mgm: {
-    msgPlsEnterAccount: "tên ngân hàng",
-    depositTips: "Vui lòng điền tên tài khoản chuyển tiền hợp lệ để thuận tiện",
+    msgPlsEnterAccount: "Vui lòng điền tên / tài khoản ngân hàng",
+    accountDepositTips:
+      "Vui lòng điền tên ngân hàng chuyển tiền hợp lệ để thuận tiện",
+    nameDepositTips:
+      "Vui lòng điền vào tên của tài khoản chuyển tiền hợp lệ để tạo điều kiện ghi điểm",
   },
   t3: {
     profile: "Thông tin Người dùng",
     transfer: "chuyển",
     deposit: "Đặt cọc",
     withdraw: "Rút tiền",
+  },
+  verified: {
+    yes: "Đã xác minh",
+    no: "Chưa được xác minh",
+    verifying: "Đang xác minh",
+    rejected: "Bị từ chối",
+    waiting: "đang chờ xác minh từ dịch vụ khách hàng",
+    goVerify: "Xác minh tên thật",
+  },
+
+  disabledAddCard: {
+    title: "Không tìm thấy (các) thẻ nào trong tài khoản của bạn",
+    description:
+      "Vui lòng liên hệ với bộ phận chăm sóc khách hàng để thêm thẻ vào trang rút tiền.",
+  },
+  hint: {
+    _099: "Có sẵn lúc (9: 00-23: 30)",
+  },
+  idr1: {
+    pleaseEnterAccountName: "Vui lòng nhập tên tài khoản của bạn",
+    msgPlsSelectAccount: "Vui lòng chọn tài khoản",
+  },
+  pointless: {
+    download: "Điểm tải xuống liên kết APP",
+    copy: "Đã sao chép",
+    link: "Liên kết",
+  },
+  promoRoulette: {
+    main: "Trang chủ ưu đãi",
+    content: "Ưu đãi",
+    terms: "Ưu đãi",
+    dialogUnavailableTitle1: "Chơi mỗi ngày một lần",
+    dialogUnavailableTitle2: "Hãy đến lại vào ngày mai",
+    dialogUnavailableTitle3: "Click để xem thêm nhiều ưu đãi tốt",
+    dialogRewardTitle1: "chúc mừng chiến thắng của bạn",
+  },
+  idr1HomePage: {
+    section1: {
+      live: "Sòng bạc trực tiếp",
+      slot: "Trò chơi xèng",
+      lottery: "Trò chơi xổ số",
+      fishing: "Trò chơi câu cá",
+    },
+    section2: {
+      "1000game": "Hơn 1000 trò chơi",
+      "247support": "Hỗ trợ 24/7",
+      fastpay: "Thanh toán nhanh",
+      secure: "100% an toàn",
+      vip: "Quyền lợi VIP",
+      promo: "Ưu đãi tuyệt vời",
+    },
+    section3: {
+      title: "Sòng bạc khi di chuyển",
+      description:
+        "Trò chơi xèng, Sòng bạc trực tiếp, Sách thể thao có thể chơi dễ dàng chỉ với một Điện thoại di động",
+    },
+    section4: {
+      exclusive: "độc quyền",
+      vip: "Quyền lợi VIP",
+      description:
+        "Tham gia ngay bây giờ và tận hưởng các đặc quyền VIP độc quyền được tạo riêng cho bạn",
+    },
   },
 };

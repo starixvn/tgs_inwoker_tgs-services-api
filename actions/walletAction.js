@@ -74,6 +74,9 @@ import {
   DOCRYPTODEPOSIT_BEGIN,
   DOCRYPTODEPOSIT_SUCCESS,
   DOCRYPTODEPOSIT_FAILED,
+  DODEPOSIT_BEGIN,
+  DODEPOSIT_SUCCESS,
+  DODEPOSIT_FAILED,
 } from "../constant/actionType";
 import { WalletService } from "../services/WalletService";
 
@@ -87,6 +90,7 @@ export const walletAction = {
   doMaticPayDeposit,
   doApplePayDeposit,
   getBankCardList,
+  initBankCard,
   addBankCard,
   deleteBankCard,
   getBalanceList,
@@ -102,12 +106,22 @@ export const walletAction = {
   updateAutoTransferStatus,
   doUmPayCryptoDeposit,
   doUmPayBankDeposit,
+  doFPSDeposit,
+  doFPSDepositWithName,
   doThirdPartyDeposit,
   doBankDeposit,
   doHelp2PayDeposit,
   doSkyPayDeposit,
   doBankDeposit2,
   doCryptoDeposit,
+  performDeposit,
+  doUsdtDeposit,
+  doPulsaDeposit,
+  doEWalletDeposit,
+  performWithdrawFromEveryBrand,
+  doBankDepositWithDetail,
+  doPulsaDepositWithDetail,
+  doEWalletDepositWithDetail,
 };
 function getWalletBalance() {
   return (dispatch) => {
@@ -177,13 +191,109 @@ function getDepositMethod() {
   };
 }
 
-function doBankDeposit(account, amount, paymentid, promotionid, banktype) {
+function doBankDeposit(
+  name,
+  account,
+  amount,
+  paymentid,
+  promotionid,
+  banktype
+) {
   return (dispatch) => {
     dispatch({
       type: DOMANUALDEPOSIT_BEGIN,
       loading: true,
     });
     const result = WalletService.PerformManualBankDeposit(
+      name,
+      account,
+      amount,
+      paymentid,
+      promotionid,
+      banktype
+    )
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: DOMANUALDEPOSIT_SUCCESS,
+            payload: response,
+            loading: true,
+          });
+        } else {
+          dispatch({
+            type: DOMANUALDEPOSIT_FAILED,
+            payload: response,
+            loading: false,
+          });
+        }
+        return response;
+      })
+      .catch((error) => {
+        dispatch({
+          type: DOMANUALDEPOSIT_FAILED,
+          payload: error,
+          loading: false,
+        });
+      });
+    return result;
+  };
+}
+
+function doFPSDeposit(account, amount, paymentid, promotionid, banktype) {
+  return (dispatch) => {
+    dispatch({
+      type: DOMANUALDEPOSIT_BEGIN,
+      loading: true,
+    });
+    const result = WalletService.PerformManualFPSDeposit(
+      account,
+      amount,
+      paymentid,
+      promotionid,
+      banktype
+    )
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: DOMANUALDEPOSIT_SUCCESS,
+            payload: response,
+            loading: true,
+          });
+        } else {
+          dispatch({
+            type: DOMANUALDEPOSIT_FAILED,
+            payload: response,
+            loading: false,
+          });
+        }
+        return response;
+      })
+      .catch((error) => {
+        dispatch({
+          type: DOMANUALDEPOSIT_FAILED,
+          payload: error,
+          loading: false,
+        });
+      });
+    return result;
+  };
+}
+
+function doFPSDepositWithName(
+  name,
+  account,
+  amount,
+  paymentid,
+  promotionid,
+  banktype
+) {
+  return (dispatch) => {
+    dispatch({
+      type: DOMANUALDEPOSIT_BEGIN,
+      loading: true,
+    });
+    const result = WalletService.PerformManualFPSDepositWithName(
+      name,
       account,
       amount,
       paymentid,
@@ -248,6 +358,125 @@ function doThirdPartyDeposit(amount, paymentid, promotionid, banktype) {
       .catch((error) => {
         dispatch({
           type: DOTHIRDPARTYDEPOSIT_FAIL,
+          payload: error,
+          loading: false,
+        });
+      });
+    return result;
+  };
+}
+
+function doUsdtDeposit(amount, paymentid, promotionid, banktype) {
+  return (dispatch) => {
+    dispatch({
+      type: DODEPOSIT_BEGIN,
+      loading: true,
+    });
+    const result = WalletService.PerformUsdtDeposit(
+      amount,
+      paymentid,
+      promotionid,
+      banktype
+    )
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: DODEPOSIT_SUCCESS,
+            payload: response,
+            loading: true,
+          });
+        } else {
+          dispatch({
+            type: DODEPOSIT_FAILED,
+            payload: response,
+            loading: false,
+          });
+        }
+        return response;
+      })
+      .catch((error) => {
+        dispatch({
+          type: DODEPOSIT_FAILED,
+          payload: error,
+          loading: false,
+        });
+      });
+    return result;
+  };
+}
+
+function doPulsaDeposit(amount, paymentid, promotionid, banktype, note) {
+  return (dispatch) => {
+    dispatch({
+      type: DODEPOSIT_BEGIN,
+      loading: true,
+    });
+    const result = WalletService.PerformPulsaDeposit(
+      amount,
+      paymentid,
+      promotionid,
+      banktype,
+      note
+    )
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: DODEPOSIT_SUCCESS,
+            payload: response,
+            loading: true,
+          });
+        } else {
+          dispatch({
+            type: DODEPOSIT_FAILED,
+            payload: response,
+            loading: false,
+          });
+        }
+        return response;
+      })
+      .catch((error) => {
+        dispatch({
+          type: DODEPOSIT_FAILED,
+          payload: error,
+          loading: false,
+        });
+      });
+    return result;
+  };
+}
+
+function doEWalletDeposit(amount, paymentid, promotionid, banktype, note) {
+  return (dispatch) => {
+    dispatch({
+      type: DODEPOSIT_BEGIN,
+      loading: true,
+    });
+    const result = WalletService.PerformEWalletDeposit(
+      amount,
+      paymentid,
+      promotionid,
+      banktype,
+      note
+    )
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: DODEPOSIT_SUCCESS,
+            payload: response,
+            loading: true,
+          });
+        } else {
+          dispatch({
+            type: DODEPOSIT_FAILED,
+            payload: response,
+            loading: false,
+          });
+        }
+        return response;
+      })
+      .catch((error) => {
+        dispatch({
+          type: DODEPOSIT_FAILED,
           payload: error,
           loading: false,
         });
@@ -658,6 +887,42 @@ function getBankCardList() {
     return result;
   };
 }
+function initBankCard(channelid, bankType, address) {
+  return (dispatch) => {
+    dispatch({
+      type: ADDBANKCARD_BEGIN,
+      loading: true,
+    });
+    const result = WalletService.InitBankCard(channelid, bankType, address)
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: ADDBANKCARD_SUCCESS,
+            payload: response,
+            loading: false,
+          });
+
+          // AppHistory.push("/");
+        } else {
+          dispatch({
+            type: ADDBANKCARD_FAIL,
+            payload: response,
+            loading: false,
+          });
+        }
+        return response;
+      })
+      .catch((e) => {
+        dispatch({
+          type: ADDBANKCARD_FAIL,
+          payload: { IsSuccess: false, info: e.status },
+          loading: false,
+        });
+      });
+
+    return result;
+  };
+}
 function addBankCard(channelid, bankType, address) {
   return (dispatch) => {
     dispatch({
@@ -949,6 +1214,42 @@ function doWithdrawalFromGame(gpcode, amount) {
     return result;
   };
 }
+
+function performWithdrawFromEveryBrand() {
+  return (dispatch) => {
+    dispatch({
+      type: DOTRANSFER_BEGIN,
+      loading: true,
+    });
+    const result = WalletService.WithdrawEverything()
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: DOTRANSFER_SUCCESS,
+            payload: response,
+            loading: false,
+          });
+        } else {
+          dispatch({
+            type: DOTRANSFER_FAIL,
+            payload: response,
+            loading: false,
+          });
+        }
+        return response;
+      })
+      .catch((e) => {
+        dispatch({
+          type: DOTRANSFER_FAIL,
+          payload: e.status,
+          loading: false,
+        });
+      });
+
+    return result;
+  };
+}
+
 function getGameBalance(gpcode) {
   return (dispatch) => {
     dispatch({
@@ -1065,6 +1366,47 @@ function doCryptoDeposit(amount, paymentid, promotionid, paymentcode) {
     return result;
   };
 }
+
+function performDeposit(amount, paymentid, promotionid, paymentcode, type) {
+  return (dispatch) => {
+    dispatch({
+      type: DODEPOSIT_BEGIN,
+      loading: true,
+    });
+    const result = WalletService.PerformDeposit(
+      amount,
+      paymentid,
+      promotionid,
+      paymentcode,
+      type
+    )
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: DODEPOSIT_SUCCESS,
+            payload: response,
+            loading: true,
+          });
+        } else {
+          dispatch({
+            type: DODEPOSIT_FAILED,
+            payload: response,
+            loading: false,
+          });
+        }
+        return response;
+      })
+      .catch((error) => {
+        dispatch({
+          type: DODEPOSIT_FAILED,
+          payload: error,
+          loading: false,
+        });
+      });
+    return result;
+  };
+}
+
 function addBilling(card_id, amount) {
   return (dispatch) => {
     dispatch({
@@ -1101,13 +1443,13 @@ function addBilling(card_id, amount) {
     return result;
   };
 }
-function doWithdraw(amount, bankinfoid, paypassword) {
+function doWithdraw(amount, bankinfoid, paypassword, note) {
   return (dispatch) => {
     dispatch({
       type: DOWITHDRAWAL_BEGIN,
       loading: true,
     });
-    const result = WalletService.DoWithdraw(amount, bankinfoid, paypassword)
+    const result = WalletService.DoWithdraw(amount, bankinfoid, paypassword, note)
       .then((response) => {
         if (response.IsSuccess) {
           dispatch({
@@ -1201,6 +1543,138 @@ function updateAutoTransferStatus() {
       .catch((error) => {
         dispatch({
           type: UPDATEAUTOTRANSFER_FAIL,
+          payload: error,
+          loading: false,
+        });
+      });
+    return result;
+  };
+}
+
+function doBankDepositWithDetail(
+  name,
+  account,
+  amount,
+  paymentid,
+  promotionid,
+  banktype,
+  detail
+) {
+  return (dispatch) => {
+    dispatch({
+      type: DOMANUALDEPOSIT_BEGIN,
+      loading: true,
+    });
+    const result = WalletService.PerformManualBankDepositWithDetail(
+      name,
+      account,
+      amount,
+      paymentid,
+      promotionid,
+      banktype,
+      detail
+    )
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: DOMANUALDEPOSIT_SUCCESS,
+            payload: response,
+            loading: true,
+          });
+        } else {
+          dispatch({
+            type: DOMANUALDEPOSIT_FAILED,
+            payload: response,
+            loading: false,
+          });
+        }
+        return response;
+      })
+      .catch((error) => {
+        dispatch({
+          type: DOMANUALDEPOSIT_FAILED,
+          payload: error,
+          loading: false,
+        });
+      });
+    return result;
+  };
+}
+
+function doPulsaDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail) {
+  return (dispatch) => {
+    dispatch({
+      type: DODEPOSIT_BEGIN,
+      loading: true,
+    });
+    const result = WalletService.PerformPulsaDepositWithDetail(
+      amount,
+      paymentid,
+      promotionid,
+      banktype,
+      note,
+      detail
+    )
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: DODEPOSIT_SUCCESS,
+            payload: response,
+            loading: true,
+          });
+        } else {
+          dispatch({
+            type: DODEPOSIT_FAILED,
+            payload: response,
+            loading: false,
+          });
+        }
+        return response;
+      })
+      .catch((error) => {
+        dispatch({
+          type: DODEPOSIT_FAILED,
+          payload: error,
+          loading: false,
+        });
+      });
+    return result;
+  };
+}
+
+function doEWalletDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail) {
+  return (dispatch) => {
+    dispatch({
+      type: DODEPOSIT_BEGIN,
+      loading: true,
+    });
+    const result = WalletService.PerformEWalletDepositWithDetail(
+      amount,
+      paymentid,
+      promotionid,
+      banktype,
+      note,
+      detail
+    )
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: DODEPOSIT_SUCCESS,
+            payload: response,
+            loading: true,
+          });
+        } else {
+          dispatch({
+            type: DODEPOSIT_FAILED,
+            payload: response,
+            loading: false,
+          });
+        }
+        return response;
+      })
+      .catch((error) => {
+        dispatch({
+          type: DODEPOSIT_FAILED,
           payload: error,
           loading: false,
         });

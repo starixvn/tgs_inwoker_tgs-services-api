@@ -37,6 +37,7 @@ export const zhTW = {
   },
 
   common: {
+    pleaseEnterAccountName: "請输入銀行名稱",
     noReachMin: "手機號碼設定在8至10位數",
     upload: "上傳文件",
     title: "{brand} - 專業娛樂平台",
@@ -69,6 +70,7 @@ export const zhTW = {
     msgEnterEmail: "請輸入您的郵箱地址",
     msgInvalidEmail: "郵箱地址不正確",
     msgEnterCode: "請輸入驗證碼",
+    msgEnterCodeEmail: "請輸入驗證碼",
     msgInvalidPhoneCode: "驗證碼錯誤",
     msgEnterEmailCode: "請輸入郵箱驗證碼",
     msgEnterPhoneCode: "請輸入手機驗證碼",
@@ -85,6 +87,11 @@ export const zhTW = {
     emailAddress: "郵箱地址",
     qqNumber: "QQ賬號",
     wechatNumber: "微信賬號",
+    fb: "Facebook Messenger Account",
+    telegram: "Telegram Account",
+    line: "Line Account",
+    viber: "Viber Account",
+    whatsapp: "Whatsapp Account",
     receiverAddress: "收貨地址",
     loginPassword: "登錄密碼",
     contact: "聯繫",
@@ -141,6 +148,7 @@ export const zhTW = {
     startGame: "立即體驗",
     cs: "客服",
     msgSuccessUpdateProfile: "修改成功。",
+    favoriteGame: "加到最愛",
     joinGame: "立刻體驗",
     withdrawalBankType: "類別",
     withdrawalChannel: "渠道",
@@ -199,19 +207,32 @@ export const zhTW = {
       desc: "資訊加密處理，僅用銀行驗證",
       branch: "支行",
       branchPlaceHolder: "請輸入銀行支行",
+      eWalletAccount: "電子貨幣名稱",
+      msgEnterEwalletAccount: "請輸入電子貨幣名稱",
+      phone: "電話號碼",
+      msgEnterPhone: "請輸入電話號碼",
     },
     success: {
       title: "添加銀行卡成功",
       successDesc:
         "恭喜您已經設定完成銀行卡綁定，後續在提款時可以快速選取您的銀行卡，若還想綁定其他銀行卡，",
+      successDescDeposit: "恭喜您已經設定完成銀行卡綁定.",
       bindDesc: "請點選下方“綁定其他銀行卡”再次進行操作。",
       reminder: "貼心提醒",
       callHotline: "或撥打000-000-0000獲得幫助。",
       bindBankCard: "綁定其他銀行卡",
+      goDeposit: "前往存款",
       goWithdrawal: "前往提款",
+      goProfile: "前往個人資料",
+      noMoreAddCard:
+        "恭喜您完成銀行賬戶綁定，稍後提款時可以快速選擇您的提款銀行。",
     },
   },
   deposit: {
+    address: "地址",
+    email: "電子郵件",
+    phone: "電話號碼",
+    fpsId: "ID FPS",
     title: "存款",
     ppRemark: "提示: 系統稍後會在您輸入的金額後方隨機的小數，以便識別訂單",
     plsEnterDepositAmount: "請輸入存款金額",
@@ -253,7 +274,9 @@ export const zhTW = {
     msgPlsSelectPayment: "請選擇支付方式",
     msgPlsSelectMethod: "請選擇支付渠道",
     msgPlsEnterAccount: "請輸入銀行帳戶名稱",
-    msgInvalidFileSize: "文件太大，請選擇小於2mb的文件",
+    msgPlsUploadProof: "請上傳相關銀行憑證",
+    msgNotMustUploadProof: "非強制上傳",
+    msgInvalidFileSize: "文件太大，請選擇小於5mb的文件",
     msgInvalidFileType: "請僅上傳圖像文件。(.jpg/.jpeg/.png/.tiff)",
     msgFailedJoinPromotion: "您無法參加此活動。如有問題，請聯繫客服。",
     exchangeRate: "匯率",
@@ -274,6 +297,11 @@ export const zhTW = {
       orderVerify: "到賬核對",
       manualOpen: "手動開啟",
     },
+    totalAmount: "上分金額",
+    plsEnterUSDTAmount: "請輸入USDT金額",
+    playerNote: "玩家備註",
+    plsEnterPlayerNote: "請輸入玩家備註",
+    eWalletAccount: "電子貨幣名稱",
   },
   forgotPassword: {
     title: "忘記密碼",
@@ -303,6 +331,7 @@ export const zhTW = {
       withdrawalPassword: "請輸入提款密碼 (6位數字)",
       confirmWithdrawalPassword: "重複提款密碼",
       promoteCode: "邀請碼（選填）",
+      email: "請輸入郵箱地址",
     },
     main: {
       homePage: "首頁",
@@ -324,6 +353,9 @@ export const zhTW = {
         setting: "設定",
         signout: "退出登錄",
         wallet: "錢包",
+        deposit: "存款記錄",
+        withdrawal: "提款記錄",
+        transfer: "轉賬記錄",
       },
       home: {
         gameTab: {
@@ -372,6 +404,11 @@ export const zhTW = {
   },
 
   profile: {
+    birthdate: {
+      title: "出生日期",
+      toEdit: "如果需要编辑出生日期，请点击",
+      here: "这里",
+    },
     setted: "已設置",
     setNow: "立即設置",
     edit: "修改",
@@ -401,13 +438,14 @@ export const zhTW = {
     },
 
     nameVerify: {
+      editHere: "这里",
       title: "真實姓名",
       msgEnterICNum: "請輸入您的身份證號碼",
       icNum: "身份證",
       msgInvalidICNum: "身份證號碼不正確",
       msgPlsEnterName: "請輸入您的真實姓名",
       msgPlsEnterICNum: "請輸入您的身份證號碼",
-      toEdit: "如需修改真實姓名，請聯繫",
+      toEdit: "如需修改真实姓名，请點擊",
       verifyName: "實名認證",
       tips: "提示： 真實姓名需要與提款卡姓名相同才可提款",
     },
@@ -448,6 +486,31 @@ export const zhTW = {
       plsEnterWechat: "請輸入微信賬號",
       weChatAccount: "微信賬號",
     },
+    fb: {
+      msgInvalidFB: "Facebook Messenger賬號格式不正確",
+      plsEnterFB: "請輸入Facebook Messenger賬號",
+      fbAccount: "Facebook Messenger賬號",
+    },
+    telegram: {
+      msgInvalidTelegram: "Telegram賬號格式不正確",
+      plsEnterTelegram: "請輸入Telegram賬號",
+      telegramAccount: "Telegram賬號",
+    },
+    line: {
+      msgInvalidLine: "Line賬號格式不正確",
+      plsEnterLine: "請輸入Line賬號",
+      lineAccount: "Line賬號",
+    },
+    viber: {
+      msgInvalidViber: "Viber賬號格式不正確",
+      plsEnterViber: "請輸入Viber賬號",
+      viberAccount: "Viber賬號",
+    },
+    whatsapp: {
+      msgInvalidWhatsapp: "Whatsapp賬號格式不正確",
+      plsEnterWhatsapp: "請輸入Whatsapp賬號格式不正確賬號",
+      whatsappAccount: "Whatsapp賬號",
+    },
     resetResetWithdrawalPassword: {
       title: "修改提款密碼",
       editWithdrawalPassword: "修改提款密碼",
@@ -479,12 +542,14 @@ export const zhTW = {
   },
   report: {
     title: "報表",
+    total: "總計",
     transferDetails: "轉換記錄",
     withdrawalDetails: "提現記錄",
     depositDetails: "充值記錄",
     bettingDetails: "投注記錄",
     rebateDetails: "返水記錄",
     platform: "平台",
+    platformgamename: "平台/遊戲名稱",
     date: "日期",
     gamename: "遊戲名稱",
     startDate: "開始時間",
@@ -545,6 +610,9 @@ export const zhTW = {
     turnover: "流水",
     winloss: "輸贏",
     ratio: "賠率",
+    totalBetAmount: "總投注",
+    totalWinLose: "縂輸贏",
+    totalValidBet: "總有效投注",
   },
   share: {
     bottomNote: {
@@ -582,7 +650,9 @@ export const zhTW = {
     totalFund: "玩家總資金",
     mainAccount: "中心錢包",
     oneKeyReceive: "一鍵回收",
-    oneKeyTransfer: "一鍵轉入",
+    oneKeyTransferIn: "一鍵轉入",
+    oneKeyTransferOut: "一鍵轉入",
+    oneKeyTransferAll: "一键傳輸",
     maintenance: "維護中",
     transferFrom: "請選擇轉出錢包",
     transferFromWallet: "轉出錢包",
@@ -594,12 +664,16 @@ export const zhTW = {
     transfer: "轉賬",
     noticeTitle: "溫馨提示",
     msgFailedTransfer: "轉賬失敗",
+    msgTransferOutFromGP: "從所有子錢包轉移到主錢包",
   },
 
   withdrawal: {
+    notReachMin: "提款金額未達到最低金額",
+    reachedMax: "提款金額達到最大金額",
     msgMustHundred: "金額必須以百位數字結尾",
     msgInvalidAmt: "提款金額 必須大於 0",
     msgCanWithdrawal: "您可提款餘額為：{{amount}}",
+    msgContactCSCardChange: "如需修改請聯繫客服",
     turnover: "流水需求: ",
     msgEnterWithdrawalPass: "請輸入提款密碼",
     msgInsufficient: "中心錢包餘額不足",
@@ -619,6 +693,9 @@ export const zhTW = {
     receiverName: "收款人姓名",
     fee: "手續費",
     receiverAmount: "到賬金額",
+    usdtAmount: "金額 USDT",
+    playerNote: "玩家備註",
+    plsEnterPlayerNote: "請輸入玩家備註",
   },
   promotion: {
     emptyLine1: "目前尚未有活動",
@@ -644,8 +721,49 @@ export const zhTW = {
       Section1Lottery: "彩票遊戲",
       Section1Fishing: "捕魚游戲",
       Section1Sport: "體育電競",
+      Section1Esport: "電競",
       Section1Electron: "電子遊戲",
       Section1Live: "真人遊戲",
+      services: {
+        service1: {
+          title: "平均存款時間",
+          value: "30秒",
+        },
+        service2: {
+          title: "平均取款時間",
+          value: "50秒",
+        },
+        service3: {
+          title: "合作支付平台",
+          value: "60家",
+        },
+        service4: {
+          title: "合作遊戲平台",
+          value: "80家",
+        },
+      },
+      features: {
+        feature1: {
+          title: "更專業",
+          description:
+            "每天為您提供近千場精彩體育、電競賽事，玩法多元極致享受，更有真人、棋牌、彩票、電子遊戲等多種娛樂方式隨心選擇。",
+        },
+        feature2: {
+          title: "更安全",
+          description:
+            "獨家開發，採用128位加密技術和嚴格的安全管理體系，客戶資金得到最完善的保障，讓您全情盡享娛樂、賽事投注，無後顧之憂！",
+        },
+        feature3: {
+          title: "更便捷",
+          description:
+            "自主研發的 Web、H5，更有iOS、Android原生App，讓您隨時隨地，娛樂投注隨心所欲！7×24小時在線客服提供最貼心、最優質的服務。",
+        },
+        feature4: {
+          title: "更快速",
+          description:
+            "最新技術自主研發的財務處理系統，真正做到極速存、取、轉。獨家網路優化技術，為您提供一流的遊戲體驗，最大優化網路延遲。",
+        },
+      },
     },
     liveGame: {
       wmDesc:
@@ -691,7 +809,7 @@ export const zhTW = {
       addBookmark: "加入收藏",
       transfer: "轉賬",
       deposit: "存款",
-      mainAccount: "總資金:",
+      mainAccount: "總資金",
       dollor: "",
       logout: "登出",
       welcomBack: "歡迎您回來，",
@@ -763,6 +881,7 @@ export const zhTW = {
         "我確認我已年滿18歲，並已閱讀和接受本網站的策略丶隱私聲明，條款及條件。",
       btn: "立即註冊",
       activation: "SMS短信認證",
+      email: "請輸入郵箱地址",
     },
     resetPassword: {
       title: "重置密碼",
@@ -817,6 +936,7 @@ export const zhTW = {
   },
   PrimePay: "一等付",
   MaticPay: "MaticPay",
+  ZeroNineNinePay: "099Pay",
   LeePay: "利付錢包",
   ApplePay: "蘋果支付",
   UmPay: "PlayPay",
@@ -827,11 +947,13 @@ export const zhTW = {
   CustomBank: "自定銀行",
   VR: {
     lottery: "VR彩票",
-    desc: "VR獎源一直以“公正、安全、快速、精準”處於行業領先地位，擁有人工智能的全方位系統主流彩種應有盡有，主要分為「VR視訊彩」、「VR品牌彩票」等。亦在積極開發「VR電子」系列遊戲，立志給予客戶更多樣化的選擇。 VR將持續創造進步，為大眾推出更多的新彩種，創造一個全方位的娛樂環境。 ",
+    desc:
+      "VR獎源一直以“公正、安全、快速、精準”處於行業領先地位，擁有人工智能的全方位系統主流彩種應有盡有，主要分為「VR視訊彩」、「VR品牌彩票」等。亦在積極開發「VR電子」系列遊戲，立志給予客戶更多樣化的選擇。 VR將持續創造進步，為大眾推出更多的新彩種，創造一個全方位的娛樂環境。 ",
   },
   KY: {
     chess: "開元棋牌",
-    desc: "搶莊牛牛龍虎鬥，多款棋牌任君選！棋牌彰顯胸懷，競技娛樂燒腦，好友相約競技，遊戲改變生活",
+    desc:
+      "搶莊牛牛龍虎鬥，多款棋牌任君選！棋牌彰顯胸懷，競技娛樂燒腦，好友相約競技，遊戲改變生活",
     BankerNiuNiu: "搶莊牛牛",
     GoldenFlower: "炸金花",
     The21Point: "21點",
@@ -839,10 +961,16 @@ export const zhTW = {
     fish: "KY捕鱼",
   },
   sports: {
-    desc: "PG 包網提供您創新且多樣化的玩法和高賠率的賽事轉播，與隨時隨地使用各式設備，讓您能輕鬆、快速、且安全下注，再加上豐富的體育賽事投注包括足球、籃球、棒球、網球、美式足球、電競等，以滿足各項的體育競技熱愛者的需求！",
+    bunnydesc:
+      "atebunny 包網提供您創新且多樣化的玩法和高賠率的賽事轉播，與隨時隨地使用各式設備，讓您能輕鬆、快速、且安全下注，再加上豐富的體育賽事投注包括足球、籃球、棒球、網球、美式足球、電競等，以滿足各項的體育競技熱愛者的需求！",
+    desc:
+      "PG 包網提供您創新且多樣化的玩法和高賠率的賽事轉播，與隨時隨地使用各式設備，讓您能輕鬆、快速、且安全下注，再加上豐富的體育賽事投注包括足球、籃球、棒球、網球、美式足球、電競等，以滿足各項的體育競技熱愛者的需求！",
   },
   esports: {
-    desc: "IM電子競技有頂尖的技術支持，還擁有令人驚嘆的視覺界面及高效的用戶體驗。即刻透過【PG】包網平台，體驗輕鬆投注電子競技的樂趣吧!",
+    bunnydesc:
+      "IM電子競技有頂尖的技術支持，還擁有令人驚嘆的視覺界面及高效的用戶體驗。即刻透過【atebunny】包網平台，體驗輕鬆投注電子競技的樂趣吧!",
+    desc:
+      "IM電子競技有頂尖的技術支持，還擁有令人驚嘆的視覺界面及高效的用戶體驗。即刻透過【PG】包網平台，體驗輕鬆投注電子競技的樂趣吧!",
   },
   services: {
     depositTitle: "極速存取轉款",
@@ -852,7 +980,8 @@ export const zhTW = {
     security:
       "獨家開發，採用128位加密技術和嚴格的安全管理體系，客戶資金得到最完善的保障，讓您全情盡享娛樂、賽事投注、無後顧之憂！",
     oddsTitle: "海量賽事種類",
-    odds: "每天為您提供近千場精彩體育賽事，更有真人、彩票、電子遊戲等多種娛樂方式選擇，讓您擁有完美遊戲體驗。",
+    odds:
+      "每天為您提供近千場精彩體育賽事，更有真人、彩票、電子遊戲等多種娛樂方式選擇，讓您擁有完美遊戲體驗。",
     platformTitle: "三端任您選擇",
     platform:
       "引領市場的卓越技術，自主研發了全套終端應用，讓您暢享Web、H5，更有iOS、Android原生APP，讓您隨時隨地，娛樂投注! 7x24小時在線客服提供最貼心，最優質的服務",
@@ -870,6 +999,9 @@ export const zhTW = {
     name: "Sexy真人",
     live: "Sexy真人",
   },
+  AWC_SG: {
+    live: "Sexy真人",
+  },
   SW: {
     live: "SW真人",
     slots: "SW老虎機",
@@ -880,26 +1012,47 @@ export const zhTW = {
   },
   IMES: {
     sports: "IM電競",
+    esports: "IM電競",
   },
   SABA: {
     sports: "沙巴體育",
   },
   HABA: {
-    slots: "HABANERO",
-    electron: "HABANERO",
-    fish: "HABANERO",
+    slots: "HABANERO老虎機",
+    electron: "HABANERO電子",
+    fish: "HABANERO捕魚",
   },
   JDB: {
-    slots: "JDB",
+    slots: "JDB老虎機",
     fish: "JDB捕魚",
+    desc:
+      "線上網奪寶不無聊。 這裡擁有眾多遊戲以及老虎機，想要體驗更多的玩法，那你來這裡準沒錯!",
   },
   JILI: {
-    slots: "JILI",
+    slots: "JILI老虎機",
     fish: "JILI捕魚",
+  },
+  JILITF: {
+    slots: "JILI老虎機",
+    fish: "JILI捕魚",
+  },
+  JOKER: {
+    slots: "JOKER老虎機",
+    fish: "JOKER捕魚",
+  },
+  PPTF: {
+    slots: "PP老虎機",
+    electron: "PP電子",
+    live: "PP真人",
+    fish: "PP捕魚",
+    sports: "PP體育",
   },
   PP: {
     slots: "PP老虎機",
     electron: "PP電子",
+    live: "PP真人",
+    fish: "PP捕魚",
+    sports: "PP體育",
   },
   EVO: {
     live: "EVO真人",
@@ -925,6 +1078,9 @@ export const zhTW = {
   WM: {
     live: "WM真人",
   },
+  DG: {
+    live: "DG真人",
+  },
   TCG_SEA: {
     lottery: "TCG SEA彩票",
   },
@@ -946,9 +1102,39 @@ export const zhTW = {
   },
   AVIA: {
     sports: "AVIA體育",
+    esports: "AVIA電競",
   },
+
+  AWC_RCB: {
+    sports: "RCB988體育",
+  },
+  AWC_VENUS: {
+    live: "VENUS真人",
+  },
+  AWC_COCKFIGHT: {
+    sports: "SV388鬥鷄",
+  },
+  AWC_SPADE: {
+    electron: "SPADE電子",
+    fish: "SPADE捕魚",
+    slots: "SPADE老虎機",
+  },
+  AWC_FACAI: { electron: "發財電子", slots: "發財老虎機", fish: "發財捕魚" },
+  AWC_PGS: { electron: "PGS電子", slots: "PGS老虎機" },
+  AWC_AWS: { electron: "AWS電子", slots: "AWS老虎機" },
+  AWC_FS: { slots: "FS老虎機" },
+  AWC_YL: { electron: "YL電子", fish: "YL捕魚" },
+  AWC_KM: { electron: "KM電子" },
+  AWC_LUDO: { electron: "LUDO電子" },
+  AWC_AELOTTO: { lottery: "AE彩票" },
+
   TF: {
     sports: "TF體育",
+    esports: "TF電競",
+  },
+  idr: {
+    withdrawalNumber: "銀行卡號碼",
+    msgEnterWithdrawalNumber: "請輸入銀行卡號碼",
   },
   hk28: {
     withdrawalNumber: "銀行卡號碼/FPS(轉數快)號碼",
@@ -1031,6 +1217,14 @@ export const zhTW = {
     sportsRebate: "體育遊戲",
     virtualSportsRebate: "電競遊戲",
     vipBenefit: "VIP返水",
+    bunny: {
+      level1: "青銅",
+      level2: "白銀",
+      level3: "黃金",
+      level4: "紅寶石",
+      level5: "白金",
+      level6: "鑽石",
+    },
   },
   custom: {
     addcard: {
@@ -1044,14 +1238,79 @@ export const zhTW = {
     title: "匯款指引",
     content: `請各位注意，關於匯款帳號，請根據平台的戶口進行匯款，如匯款至舊戶口，上分可能有時間延遲，亦有可能檢查不到，我司不會因這個問題而負上責任，敬請垂注！`,
   },
+  depositNotificationGMO: {
+    title: "匯款指引",
+    content: `客戶存取款須知\n為防止洗黑錢\n一般客戶每日出款次數為三次\n客戶取款必須跟綁定充值帳戶相同\n有關於取款問題可向客服查詢`,
+  },
   mgm: {
-    msgPlsEnterAccount: "銀行名稱",
-    depositTips: "請填寫有效匯款戶口姓名，方便上分",
+    msgPlsEnterAccount: "請输入銀行帳戶/姓名",
+    accountDepositTips: "請填寫有效匯款銀行名稱，方便上分",
+    nameDepositTips: "請填寫有效匯款戶口/姓名，方便上分",
   },
   t3: {
     profile: "用戶資訊",
     transfer: "轉帳",
     deposit: "存款",
     withdraw: "提款",
+  },
+  verified: {
+    yes: "已驗證",
+    no: "未驗證",
+    rejected: "已拒絕",
+    verifying: "驗證中",
+    waiting: "等待客服驗證",
+    goVerify: "驗證真實姓名",
+  },
+  disabledAddCard: {
+    title: "在您的帳戶中未找到任何卡",
+    description: "請聯繫客服添加卡，以便訪問提款頁面。",
+  },
+  hint: {
+    _099: "在 (9:00-23:30) 可用",
+  },
+
+  idr1: {
+    pleaseEnterAccountName: "請输入銀行名稱",
+    msgPlsSelectAccount: "請選擇帳號",
+  },
+
+  pointless: {
+    download: "APP鏈接載點",
+    copy: "已復制",
+    link: "鏈接",
+  },
+  promoRoulette: {
+    main: "優惠主頁",
+    content: "優惠内容",
+    terms: "優惠條規",
+    dialogUnavailableTitle1: "每日限玩一次",
+    dialogUnavailableTitle2: "明天再來唷",
+    dialogUnavailableTitle3: "點我看更多好康優惠",
+    dialogRewardTitle1: "恭喜您贏得",
+  },
+  idr1HomePage: {
+    section1: {
+      live: "真人娛樂",
+      slot: "電子遊藝",
+      lottery: "彩票遊戲",
+      fishing: "捕魚遊戲",
+    },
+    section2: {
+      "1000game": "1000+ 遊戲",
+      "247support": "24/7 客服",
+      fastpay: "快速支付",
+      secure: "100% 安全",
+      vip: "VIP福利",
+      promo: "真棒優惠",
+    },
+    section3: {
+      title: "移动娱乐场",
+      description: "老虎机游戏、真人娱乐场、体育博彩只需一部手机即可轻松玩",
+    },
+    section4: {
+      exclusive: "獨家",
+      vip: "VIP福利",
+      description: "即刻加入，享受專為您打造的尊貴VIP特權",
+    },
   },
 };

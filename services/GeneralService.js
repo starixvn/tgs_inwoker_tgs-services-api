@@ -15,6 +15,9 @@ export const GeneralService = {
   GetJoinedPromoReport,
   GetVIP,
   GetInvitationCode,
+  GetPromotionRouletteStatus,
+  GetPromotionRouletteResult,
+  GetPromotion
 };
 
 function GetSiteToken() {
@@ -85,5 +88,20 @@ function GetVIP() {
 
 function GetInvitationCode() {
   const result = ApiService.get("agent");
+  return result;
+}
+
+function GetPromotionRouletteStatus(id) {
+  const result = ApiService.get(`sie/roulette/${id}`);
+  return result;
+}
+
+function GetPromotionRouletteResult(id) {
+  const result = ApiService.post(`sie/roulette/${id}`);
+  return result;
+}
+
+function GetPromotion(){
+  const result = ApiService.get("promotion");
   return result;
 }

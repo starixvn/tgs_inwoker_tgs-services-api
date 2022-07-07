@@ -32,6 +32,15 @@ import {
   GETVIP_FAILED,
   GETINVITATIONCODE_SUCCESS,
   GETINVITATIONCODE_FAILED,
+  GETPROMOROULETTE_STATUS_BEGIN,
+  GETPROMOROULETTE_STATUS_SUCCESS,
+  GETPROMOROULETTE_STATUS_FAILED,
+  GETPROMOROULETTE_RESULT_BEGIN,
+  GETPROMOROULETTE_RESULT_SUCCESS,
+  GETPROMOROULETTE_RESULT_FAILED,
+  GETPROMOTION_BEGIN,
+  GETPROMOTION_SUCCESS,
+  GETPROMOTION_FAILURE,
 } from "../constant/actionType";
 // These are the constants to represent each of three recommended actions for a single API fetch or post.
 
@@ -48,6 +57,9 @@ export const generalAction = {
   getBrand,
   getVIP,
   getInvitationCode,
+  getPromotionRouletteStatus,
+  getPromotionRouletteResult,
+  getPromotion,
 };
 function getSiteToken() {
   return (dispatch) => {
@@ -423,6 +435,86 @@ function getInvitationCode() {
       return response;
     });
 
+    return result;
+  };
+}
+
+function getPromotionRouletteStatus(id) {
+  return (dispatch) => {
+    dispatch({
+      type: GETPROMOROULETTE_STATUS_BEGIN,
+    });
+    const result = GeneralService.GetPromotionRouletteStatus(id).then((response)=>{
+      if (response.IsSuccess) {
+        dispatch({
+          type: GETPROMOROULETTE_STATUS_SUCCESS,
+          payload: response,
+        });
+      } else {
+        dispatch({
+          type: GETPROMOROULETTE_STATUS_FAILED,
+          payload: response,
+        });
+      }
+      return response;
+    });
+    return result;
+  };
+}
+
+function getPromotionRouletteResult(id) {
+  return (dispatch) => {
+    dispatch({
+      type: GETPROMOROULETTE_RESULT_BEGIN,
+    });
+    const result = GeneralService.GetPromotionRouletteResult(id).then((response)=>{
+      if (response.IsSuccess) {
+        dispatch({
+          type: GETPROMOROULETTE_RESULT_SUCCESS,
+          payload: response,
+        });
+      } else {
+        dispatch({
+          type: GETPROMOROULETTE_RESULT_FAILED,
+          payload: response,
+        });
+      }
+      return response;
+    });
+    return result;
+  };
+}
+
+function getPromotion() {
+  return (dispatch) => {
+    dispatch({
+      type: GETPROMOTION_BEGIN,
+      loading: true,
+    });
+    const result = GeneralService.GetPromotion()
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: GETPROMOTION_SUCCESS,
+            payload: response,
+            loading: false,
+          });
+        } else {
+          dispatch({
+            type: GETPROMOTION_FAILURE,
+            payload: response,
+            loading: false,
+          });
+        }
+        return response;
+      })
+      .catch((error) => {
+        dispatch({
+          type: GETPROMOTION_FAILURE,
+          payload: error,
+          loading: false,
+        });
+      });
     return result;
   };
 }

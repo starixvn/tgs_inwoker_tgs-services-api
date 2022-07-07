@@ -9,6 +9,8 @@ import {
   GETMARQUEE_BEGIN,
   GETBANNER_SUCCESS,
   GETBANNER_BEGIN,
+  GETANNOUNCEMENT_SUCCESS,
+  GETANNOUNCEMENT_BEGIN,
 } from "../constant/actionType";
 
 const initState = {
@@ -19,6 +21,9 @@ const initState = {
   marqueeText: [],
   showingDialog: false,
   jackpotAmount: "00,000,000.00",
+  marquees: [],
+  mains: [],
+  deposits: []
 };
 
 const uiReducer = (state = initState, action) => {
@@ -69,6 +74,7 @@ const uiReducer = (state = initState, action) => {
         board_list: action.payload.list,
       };
     case GETMARQUEE_BEGIN:
+    case GETANNOUNCEMENT_BEGIN:
       return {
         ...state,
         loading: true,
@@ -81,6 +87,14 @@ const uiReducer = (state = initState, action) => {
       return {
         ...state,
         marqueeText: marqueeText,
+      };
+    case GETANNOUNCEMENT_SUCCESS:
+      const { marquees, mains, deposits} = action.payload;
+      return {
+        ...state,
+        marquees: marquees,
+        mains: mains,
+        deposits: deposits
       };
     default:
       return state;
