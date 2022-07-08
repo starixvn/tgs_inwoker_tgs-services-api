@@ -11,7 +11,7 @@ import {
   GETGAMEBALANCE_FAIL,
   GETFAVGAME_SUCCESS,
 } from "../constant/actionType";
-
+import { GameTypeEnum } from "../utils/Enum";
 const initialState = {
   pending: false,
   kyGameList: [],
@@ -44,16 +44,22 @@ export function gameReducer(state = initialState, action) {
       var providerList = [];
       for (var i = 0; i < gameList.length; i++) {
         for (var x = 0; x < gameList[i].gametypes.length; x++) {
-          list.push({
-            abbreviation: gameList[i].code,
-            game_platform_id: 0,
-            game_platform_name: gameList[i].name,
-            is_try: 2,
-            name: gameList[i].name,
-            params: null,
-            type: gameList[i].gametypes[x],
-            status: gameList[i].status,
-          });
+          if (
+            gameList[i].gametypes[x] !== GameTypeEnum.RNGSPORTS ||
+            (gameList[i].gametypes[x] === GameTypeEnum.RNGSPORTS &&
+              gameList[i].code === "PPTF")
+          ) {
+            list.push({
+              abbreviation: gameList[i].code,
+              game_platform_id: 0,
+              game_platform_name: gameList[i].name,
+              is_try: 2,
+              name: gameList[i].name,
+              params: null,
+              type: gameList[i].gametypes[x],
+              status: gameList[i].status,
+            });
+          }
         }
         providerList.push({
           abbreviation: gameList[i].code,
