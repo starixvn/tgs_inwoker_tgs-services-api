@@ -1344,4 +1344,22 @@ export const idID = {
         "Gabung sekarang dan nikmati hak istimewa VIP premium khusus untuk Anda",
     },
   },
+  brand: {
+    IDR1: {
+      title: "CABANGSLOT",
+      description: "Cabangslot PRAGMATIC SLOT GAME RTP GACOR AMAN TERPERCAYA",
+    },
+    IDR2: {
+      title: "FULUS4D",
+      description: "Fulus4d PRAGMATIC SLOT GAME RTP GACOR AMAN TERPERCAYA",
+    },
+    IDR3: {
+      title: "KAWAH4D",
+      description: "Kawah4d PRAGMATIC SLOT GAME RTP GACOR AMAN TERPERCAYA",
+    },
+    IDR4: {
+      title: "SKALASLOT",
+      description: "Skalaslot PRAGMATIC SLOT GAME RTP GACOR AMAN TERPERCAYA",
+    },
+  },
 };
