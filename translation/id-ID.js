@@ -1345,20 +1345,24 @@ export const idID = {
     },
   },
   brand: {
+    stg_idr1: {
+      title: "CABANGSLOT | Cabangslot PRAGMATIC SLOT GAME RTP GACOR AMAN TERPERCAYA",
+      description: "Cabangslot PRAGMATIC SLOT GAME RTP GACOR AMAN TERPERCAYA",
+    },
     IDR1: {
-      title: "CABANGSLOT",
+      title: "CABANGSLOT | Cabangslot PRAGMATIC SLOT GAME RTP GACOR AMAN TERPERCAYA",
       description: "Cabangslot PRAGMATIC SLOT GAME RTP GACOR AMAN TERPERCAYA",
     },
     IDR2: {
-      title: "FULUS4D",
+      title: "FULUS4D | Fulus4d PRAGMATIC SLOT GAME RTP GACOR AMAN TERPERCAYA",
       description: "Fulus4d PRAGMATIC SLOT GAME RTP GACOR AMAN TERPERCAYA",
     },
     IDR3: {
-      title: "KAWAH4D",
+      title: "KAWAH4D | Kawah4d PRAGMATIC SLOT GAME RTP GACOR AMAN TERPERCAYA",
       description: "Kawah4d PRAGMATIC SLOT GAME RTP GACOR AMAN TERPERCAYA",
     },
     IDR4: {
-      title: "SKALASLOT",
+      title: "SKALASLOT | Skalaslot PRAGMATIC SLOT GAME RTP GACOR AMAN TERPERCAYA",
       description: "Skalaslot PRAGMATIC SLOT GAME RTP GACOR AMAN TERPERCAYA",
     },
   },
