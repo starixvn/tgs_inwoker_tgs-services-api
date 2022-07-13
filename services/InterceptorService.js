@@ -81,8 +81,10 @@ const Interceptor = {
           newResponse.code === 101 ||
           newResponse.code === 210
         ) {
-          localStorage.removeItem("token" + (isMobileOnly ? "1" : "0"));
-          store.dispatch({ type: UNAUTHORIZE });
+          //TODO: Hide to allow /api/info state to be accessible
+          // Ticket involved: TGS-863
+          // localStorage.removeItem("token" + (isMobileOnly ? "1" : "0"));
+          // store.dispatch({ type: UNAUTHORIZE });
 
           if (newResponse.code === 210) {
             AppHistory.replace("/" + i18n.language + "/banned");
@@ -107,8 +109,8 @@ const Interceptor = {
               error.response.config.url.indexOf("player/password") < 0 &&
               error.response.config.url.indexOf("player/init-phone") < 0
             ) {
-              localStorage.removeItem("token" + (isMobileOnly ? "1" : "0"));
-              store.dispatch({ type: UNAUTHORIZE });
+              //  localStorage.removeItem("token" + (isMobileOnly ? "1" : "0"));
+              //  store.dispatch({ type: UNAUTHORIZE });
               if (error.response.data.err == 210) {
                 AppHistory.replace("/" + i18n.language + "/banned");
               } else {

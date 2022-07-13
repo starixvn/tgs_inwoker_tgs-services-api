@@ -37,6 +37,7 @@ import { isMobileOnly } from "react-device-detect";
 const initialState = {
   pending: false,
   updateCardResult: null,
+  registercompleted: "",
   info: {
     avatar: "",
     balance: 0,
@@ -202,6 +203,7 @@ export function accountReducer(state = initialState, action) {
           ...mapToAccountState(state, action.payload.data),
           token: localStorage.getItem("token" + (isMobileOnly ? 1 : 0)),
         },
+        registercompleted: action.payload.data.registercompleted,
         loading: false,
       };
     case GETACCOUNT_SUCCESS:
@@ -210,6 +212,7 @@ export function accountReducer(state = initialState, action) {
         info: {
           ...mapToAccountState(state, action.payload.data),
         },
+        registercompleted: action.payload.data.registercompleted,
         loading: false,
       };
     case GETBALANCE_SUCCESS:
