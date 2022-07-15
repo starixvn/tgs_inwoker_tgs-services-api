@@ -88,6 +88,7 @@ const initialState = {
       vip_progress_bar: 0,
     },
     token: "",
+    logintime:"",
   },
   vip: {
     member: "",
@@ -144,6 +145,7 @@ const initialState = {
     count: 0,
   },
   token: null,
+  logintime: null,
   error: null,
   loading: false,
 };
@@ -189,8 +191,10 @@ export function accountReducer(state = initialState, action) {
       return {
         ...state,
         token: action.payload.data.token,
+        logintime: action.payload.data.logintime,
         info: {
           token: action.payload.data.token,
+          logintime: action.payload.data.logintime,
         },
         loading: false,
       };
