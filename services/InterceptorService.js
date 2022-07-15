@@ -22,17 +22,20 @@ const Interceptor = {
         const logintime = localStorage.getItem(
           "logintime" + (isMobileOnly ? "1" : "0")
         );
+        
         if (token != null && token != "") {
           if (logintime != null && logintime != "") {
-            var date = new Date(logintime) 
-          date = new Date(new Date(date).setHours(date.getHours() + 11)); 
-          var newD = new Date(date.getTime() + 50*60000) 
-          var currentDate = new Date();
-          // // console.log("beforeloginTime:", new Date(result.data.logintime)) 
-          // console.log("afterLoginTime:", newD) 
-          if (currentDate < newD) {
-            config.headers["Token"] = token;
-          }
+            var date = new Date(parseInt(logintime, 10 | 0));
+            date = new Date(new Date(date).setHours(date.getHours() + 11));
+            var newD = new Date(date.getTime() + 50 * 60000);
+            var currentDate = new Date();
+            // console.log("beforeloginTime:", currentDate);
+            // console.log("afterloginTime1:", date);
+            // console.log("afterloginTime2:", newD);
+            // console.log("compare:", currentDate < newD);
+            if (currentDate < newD) {
+              config.headers["Token"] = token;
+            }
           }
           
           // config.headers["Token"] = token;
