@@ -35,6 +35,8 @@ export const accountAction = {
   getIDCardNo,
   getPromoteUserList,
   getPromoteBillList,
+  //TGS-883
+  newRegister,
 };
 function updateMemberCardNo(name, number) {
   return (dispatch) => {
@@ -306,6 +308,25 @@ function getPromoteBillList(limit, page) {
         });
       }
     });
+    return result;
+  };
+}
+
+function newRegister(type, input) {
+  return async (dispatch) => {
+    const result = await AccountService.NewRegister(type, input)
+      .then((response) => {
+        if (response.IsSuccess) {
+        }
+        return response;
+      })
+      .catch((error) => {
+        dispatch({
+          type: GETACCOUNT_FAILURE,
+          payload: error,
+          loading: false,
+        });
+      });
     return result;
   };
 }
