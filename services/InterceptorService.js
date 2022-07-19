@@ -19,8 +19,26 @@ const Interceptor = {
         const token = localStorage.getItem(
           "token" + (isMobileOnly ? "1" : "0")
         );
+        const logintime = localStorage.getItem(
+          "logintime" + (isMobileOnly ? "1" : "0")
+        );
+        
         if (token != null && token != "") {
-          config.headers["Token"] = token;
+          if (logintime != null && logintime != "") {
+            var date = new Date(parseInt(logintime, 10 | 0));
+            date = new Date(new Date(date).setHours(date.getHours() + 11));
+            var newD = new Date(date.getTime() + 50 * 60000);
+            var currentDate = new Date();
+            // console.log("beforeloginTime:", currentDate);
+            // console.log("afterloginTime1:", date);
+            // console.log("afterloginTime2:", newD);
+            // console.log("compare:", currentDate < newD);
+            if (currentDate < newD) {
+              config.headers["Token"] = token;
+            }
+          }
+          
+          // config.headers["Token"] = token;
         }
         config.headers["Content-Type"] = "application/json";
 
@@ -63,11 +81,16 @@ const Interceptor = {
             "token" + (isMobileOnly ? "1" : "0"),
             response.data.token
           );
+          localStorage.setItem(
+            "logintime" + (isMobileOnly ? "1" : "0"),
+            response.data.logintime
+          );
         }
         if (
           response.config.url.toUpperCase().indexOf("/API/PLAYER/LOGOUT") >= 0
         ) {
           localStorage.removeItem("token" + (isMobileOnly ? "1" : "0"));
+          localStorage.removeItem("logintime" + (isMobileOnly ? "1" : "0"));
         }
         if (
           response.config.url.toUpperCase().indexOf("/BANK/HELP2PAY/PAY") >= 0
@@ -81,7 +104,9 @@ const Interceptor = {
           newResponse.code === 101 ||
           newResponse.code === 210
         ) {
+
           localStorage.removeItem("token" + (isMobileOnly ? "1" : "0"));
+          localStorage.removeItem("logintime" + (isMobileOnly ? "1" : "0"));
           store.dispatch({ type: UNAUTHORIZE });
 
           if (newResponse.code === 210) {
@@ -108,6 +133,7 @@ const Interceptor = {
               error.response.config.url.indexOf("player/init-phone") < 0
             ) {
               localStorage.removeItem("token" + (isMobileOnly ? "1" : "0"));
+              localStorage.removeItem("logintime" + (isMobileOnly ? "1" : "0"));
               store.dispatch({ type: UNAUTHORIZE });
               if (error.response.data.err == 210) {
                 AppHistory.replace("/" + i18n.language + "/banned");
