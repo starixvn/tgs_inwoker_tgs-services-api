@@ -1354,4 +1354,23 @@ export const enUS = {
         "Join now and enjoy premium VIP privileges specially for you",
     },
   },
+  t10: {
+    home: {
+      section2: {
+        title: "Super big wins",
+      },
+      section3: {
+        title: "Asia's best casino",
+        content: {
+          first: "More Professional",
+          second: "More Reliable",
+          third: "Safer",
+          forth: "Quicker",
+        },
+      },
+      section4: {
+        title: "Proud partners",
+      },
+    },
+  },
 };

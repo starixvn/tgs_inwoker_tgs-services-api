@@ -1313,4 +1313,23 @@ export const zhTW = {
       description: "即刻加入，享受專為您打造的尊貴VIP特權",
     },
   },
+  t10: {
+    home: {
+      section2: {
+        title: "超級大贏",
+      },
+      section3: {
+        title: "亞洲最佳賭場",
+        content: {
+          first: "更專業",
+          second: "更可靠",
+          third: "更安全",
+          forth: "更快",
+        },
+      },
+      section4: {
+        title: "驕傲的合作夥伴",
+      },
+    },
+  },
 };

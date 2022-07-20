@@ -1318,4 +1318,23 @@ export const zhCN = {
       description: "即刻加入，享受专为您打造的尊贵VIP特权",
     },
   },
+  t10: {
+    home: {
+      section2: {
+        title: "超级大赢",
+      },
+      section3: {
+        title: "亚洲最佳赌场",
+        content: {
+          first: "更专业",
+          second: "更可靠",
+          third: "更安全",
+          forth: "更快",
+        },
+      },
+      section4: {
+        title: "骄傲的合作伙伴",
+      },
+    },
+  },
 };

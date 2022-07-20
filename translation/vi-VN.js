@@ -1335,4 +1335,23 @@ export const vivN = {
         "Tham gia ngay bây giờ và tận hưởng các đặc quyền VIP độc quyền được tạo riêng cho bạn",
     },
   },
+  t10: {
+    home: {
+      section2: {
+        title: "Chiến thắng siêu lớn",
+      },
+      section3: {
+        title: "Sòng bạc tốt nhất Châu Á",
+        content: {
+          first: "Chuyên nghiệp hơn",
+          second: "Đáng tin cậy hơn",
+          third: "An toàn hơn",
+          forth: "Nhanh hơn",
+        },
+      },
+      section4: {
+        title: "Đối tác đáng tự hào",
+      },
+    },
+  },
 };
