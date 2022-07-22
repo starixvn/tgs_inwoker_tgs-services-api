@@ -37,7 +37,7 @@ import { isMobileOnly } from "react-device-detect";
 const initialState = {
   pending: false,
   updateCardResult: null,
-  registercompleted: false,
+  registercompleted: "",
   info: {
     avatar: "",
     balance: 0,
