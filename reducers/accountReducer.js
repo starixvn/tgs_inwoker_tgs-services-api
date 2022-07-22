@@ -37,7 +37,7 @@ import { isMobileOnly } from "react-device-detect";
 const initialState = {
   pending: false,
   updateCardResult: null,
-  registercompleted: "",
+  registercompleted: false,
   info: {
     avatar: "",
     balance: 0,
@@ -88,7 +88,7 @@ const initialState = {
       vip_progress_bar: 0,
     },
     token: "",
-    logintime:"",
+    logintime: "",
   },
   vip: {
     member: "",
