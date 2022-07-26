@@ -1087,12 +1087,24 @@ export const idID = {
     live: "Evolution",
     slots: "Evolution",
   },
+  EVOTF: {
+    live: "Evolution",
+    slots: "Evolution",
+  },
   AB: {
     live: "Allbet",
   },
   RT: {
     slots: "RedTiger",
     electron: "RedTiger",
+  },
+  RTTF: {
+    slots: "RedTiger",
+    electron: "RedTiger",
+  },
+  NTTF: {
+    slots: "Netent",
+    electron: "Netent",
   },
   NT: {
     slots: "Netent",
@@ -1105,6 +1117,9 @@ export const idID = {
     sports: "WG Horserace",
   },
   WM: {
+    live: "WM Casino",
+  },
+  WMTF: {
     live: "WM Casino",
   },
   DG: {

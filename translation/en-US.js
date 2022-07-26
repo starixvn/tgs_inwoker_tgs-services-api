@@ -1092,6 +1092,10 @@ export const enUS = {
     live: "Evolution",
     slots: "Evolution",
   },
+  EVOTF: {
+    live: "Evolution",
+    slots: "Evolution",
+  },
   AB: {
     live: "Allbet",
   },
@@ -1099,7 +1103,15 @@ export const enUS = {
     slots: "RedTiger",
     electron: "RedTiger",
   },
+  RTTF: {
+    slots: "RedTiger",
+    electron: "RedTiger",
+  },
   NT: {
+    slots: "Netent",
+    electron: "Netent",
+  },
+  NTTF: {
     slots: "Netent",
     electron: "Netent",
   },
@@ -1110,6 +1122,9 @@ export const enUS = {
     sports: "WG Horserace",
   },
   WM: {
+    live: "WM Casino",
+  },
+  WMTF: {
     live: "WM Casino",
   },
   DG: {

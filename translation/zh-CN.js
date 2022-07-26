@@ -1065,6 +1065,10 @@ export const zhCN = {
     live: "EVO真人",
     slots: "EVO老虎机",
   },
+  EVOTF: {
+    live: "EVO真人",
+    slots: "EVO老虎机",
+  },
   AB: {
     live: "Allbet真人",
   },
@@ -1072,7 +1076,15 @@ export const zhCN = {
     slots: "RedTiger老虎机",
     electron: "RedTiger电子",
   },
+  RTTF: {
+    slots: "RedTiger老虎机",
+    electron: "RedTiger电子",
+  },
   NT: {
+    slots: "Netent老虎机",
+    electron: "Netent电子",
+  },
+  NTTF: {
     slots: "Netent老虎机",
     electron: "Netent电子",
   },
@@ -1083,6 +1095,9 @@ export const zhCN = {
     sports: "WG赛马",
   },
   WM: {
+    live: "WM真人",
+  },
+  WMTF: {
     live: "WM真人",
   },
   DG: {

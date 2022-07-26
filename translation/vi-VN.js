@@ -1075,6 +1075,10 @@ export const vivN = {
     live: "Tiến hóa",
     slots: "Evolution",
   },
+  EVOTF: {
+    live: "Tiến hóa",
+    slots: "Evolution",
+  },
   AB: {
     live: "Allbet",
   },
@@ -1082,7 +1086,15 @@ export const vivN = {
     slots: "RedTiger",
     electron: "RedTiger",
   },
+  RTTF: {
+    slots: "RedTiger",
+    electron: "RedTiger",
+  },
   NT: {
+    slots: "Netent",
+    electron: "Netent",
+  },
+  NTTF: {
     slots: "Netent",
     electron: "Netent",
   },
@@ -1093,6 +1105,9 @@ export const vivN = {
     sports: "WG Horserace",
   },
   WM: {
+    live: "WM Casino",
+  },
+  WMTF: {
     live: "WM Casino",
   },
   DG: {

@@ -1066,6 +1066,10 @@ export const thTH = {
     live: "Evolution",
     slots: "Evolution",
   },
+  EVOTF: {
+    live: "Evolution",
+    slots: "Evolution",
+  },
   AB: {
     live: "Allbet",
   },
@@ -1073,7 +1077,15 @@ export const thTH = {
     slots: "RedTiger",
     electron: "RedTiger",
   },
+  RTTF: {
+    slots: "RedTiger",
+    electron: "RedTiger",
+  },
   NT: {
+    slots: "Netent",
+    electron: "Netent",
+  },
+  NTTF: {
     slots: "Netent",
     electron: "Netent",
   },
@@ -1084,6 +1096,9 @@ export const thTH = {
     sports: "WG Horserace",
   },
   WM: {
+    live: "WM Casino",
+  },
+  WMTF: {
     live: "WM Casino",
   },
   DG: {
