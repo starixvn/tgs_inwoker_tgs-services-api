@@ -1058,6 +1058,10 @@ export const zhTW = {
     live: "EVO真人",
     slots: "EVO老虎機",
   },
+  EVOTF: {
+    live: "EVO真人",
+    slots: "EVO老虎機",
+  },
   AB: {
     live: "Allbet真人",
   },
@@ -1065,7 +1069,15 @@ export const zhTW = {
     slots: "RedTiger老虎機",
     electron: "RedTiger電子",
   },
+  RTTF: {
+    slots: "RedTiger老虎機",
+    electron: "RedTiger電子",
+  },
   NT: {
+    slots: "Netent老虎機",
+    electron: "Netent電子",
+  },
+  NTTF: {
     slots: "Netent老虎機",
     electron: "Netent電子",
   },
@@ -1076,6 +1088,9 @@ export const zhTW = {
     sports: "WG賽馬",
   },
   WM: {
+    live: "WM真人",
+  },
+  WMTF: {
     live: "WM真人",
   },
   DG: {
@@ -1311,6 +1326,25 @@ export const zhTW = {
       exclusive: "獨家",
       vip: "VIP福利",
       description: "即刻加入，享受專為您打造的尊貴VIP特權",
+    },
+  },
+  t10: {
+    home: {
+      section2: {
+        title: "超級大贏",
+      },
+      section3: {
+        title: "亞洲最佳賭場",
+        content: {
+          first: "更專業",
+          second: "更可靠",
+          third: "更安全",
+          forth: "更快",
+        },
+      },
+      section4: {
+        title: "驕傲的合作夥伴",
+      },
     },
   },
 };

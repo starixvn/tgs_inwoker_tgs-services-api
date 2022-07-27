@@ -1066,6 +1066,10 @@ export const thTH = {
     live: "Evolution",
     slots: "Evolution",
   },
+  EVOTF: {
+    live: "Evolution",
+    slots: "Evolution",
+  },
   AB: {
     live: "Allbet",
   },
@@ -1073,7 +1077,15 @@ export const thTH = {
     slots: "RedTiger",
     electron: "RedTiger",
   },
+  RTTF: {
+    slots: "RedTiger",
+    electron: "RedTiger",
+  },
   NT: {
+    slots: "Netent",
+    electron: "Netent",
+  },
+  NTTF: {
     slots: "Netent",
     electron: "Netent",
   },
@@ -1084,6 +1096,9 @@ export const thTH = {
     sports: "WG Horserace",
   },
   WM: {
+    live: "WM Casino",
+  },
+  WMTF: {
     live: "WM Casino",
   },
   DG: {
@@ -1327,6 +1342,25 @@ export const thTH = {
       vip: "โปรแกรมวีไอพี",
       description:
         "เข้าร่วมตอนนี้และเพลิดเพลินกับสิทธิพิเศษวีไอพีพิเศษสำหรับคุณ",
+    },
+  },
+  t10: {
+    home: {
+      section2: {
+        title: "ชัยชนะที่ยิ่งใหญ่มาก",
+      },
+      section3: {
+        title: "คาสิโนที่ดีที่สุดของเอเชีย",
+        content: {
+          first: "มืออาชีพมากขึ้น",
+          second: "เชื่อถือได้มากขึ้น",
+          third: "ปลอดภัยกว่า",
+          forth: "เร็วกว่า",
+        },
+      },
+      section4: {
+        title: "พันธมิตรภาคภูมิใจ",
+      },
     },
   },
 };

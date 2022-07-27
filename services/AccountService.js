@@ -35,6 +35,8 @@ export const AccountService = {
   UpdateMemberName,
   UploadIC,
   SetBirthDate,
+  //TGS-883
+  NewRegister,
 };
 
 function CheckUserName(username) {
@@ -295,5 +297,13 @@ function UpdateMemberName(token, name) {
 function UploadIC(file) {
   const result = ApiService.postFile(`player/identity/upload`, file, {});
 
+  return result;
+}
+
+function NewRegister(type, input) {
+  const result = ApiService.post("player/register", {
+    type: type,
+    input: input,
+  });
   return result;
 }

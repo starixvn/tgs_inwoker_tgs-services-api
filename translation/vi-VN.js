@@ -1075,6 +1075,10 @@ export const vivN = {
     live: "Tiến hóa",
     slots: "Evolution",
   },
+  EVOTF: {
+    live: "Tiến hóa",
+    slots: "Evolution",
+  },
   AB: {
     live: "Allbet",
   },
@@ -1082,7 +1086,15 @@ export const vivN = {
     slots: "RedTiger",
     electron: "RedTiger",
   },
+  RTTF: {
+    slots: "RedTiger",
+    electron: "RedTiger",
+  },
   NT: {
+    slots: "Netent",
+    electron: "Netent",
+  },
+  NTTF: {
     slots: "Netent",
     electron: "Netent",
   },
@@ -1093,6 +1105,9 @@ export const vivN = {
     sports: "WG Horserace",
   },
   WM: {
+    live: "WM Casino",
+  },
+  WMTF: {
     live: "WM Casino",
   },
   DG: {
@@ -1333,6 +1348,25 @@ export const vivN = {
       vip: "Quyền lợi VIP",
       description:
         "Tham gia ngay bây giờ và tận hưởng các đặc quyền VIP độc quyền được tạo riêng cho bạn",
+    },
+  },
+  t10: {
+    home: {
+      section2: {
+        title: "Chiến thắng siêu lớn",
+      },
+      section3: {
+        title: "Sòng bạc tốt nhất Châu Á",
+        content: {
+          first: "Chuyên nghiệp hơn",
+          second: "Đáng tin cậy hơn",
+          third: "An toàn hơn",
+          forth: "Nhanh hơn",
+        },
+      },
+      section4: {
+        title: "Đối tác đáng tự hào",
+      },
     },
   },
 };

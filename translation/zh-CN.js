@@ -1065,6 +1065,10 @@ export const zhCN = {
     live: "EVO真人",
     slots: "EVO老虎机",
   },
+  EVOTF: {
+    live: "EVO真人",
+    slots: "EVO老虎机",
+  },
   AB: {
     live: "Allbet真人",
   },
@@ -1072,7 +1076,15 @@ export const zhCN = {
     slots: "RedTiger老虎机",
     electron: "RedTiger电子",
   },
+  RTTF: {
+    slots: "RedTiger老虎机",
+    electron: "RedTiger电子",
+  },
   NT: {
+    slots: "Netent老虎机",
+    electron: "Netent电子",
+  },
+  NTTF: {
     slots: "Netent老虎机",
     electron: "Netent电子",
   },
@@ -1083,6 +1095,9 @@ export const zhCN = {
     sports: "WG赛马",
   },
   WM: {
+    live: "WM真人",
+  },
+  WMTF: {
     live: "WM真人",
   },
   DG: {
@@ -1316,6 +1331,25 @@ export const zhCN = {
       exclusive: "独家",
       vip: "VIP福利",
       description: "即刻加入，享受专为您打造的尊贵VIP特权",
+    },
+  },
+  t10: {
+    home: {
+      section2: {
+        title: "超级大赢",
+      },
+      section3: {
+        title: "亚洲最佳赌场",
+        content: {
+          first: "更专业",
+          second: "更可靠",
+          third: "更安全",
+          forth: "更快",
+        },
+      },
+      section4: {
+        title: "骄傲的合作伙伴",
+      },
     },
   },
 };
