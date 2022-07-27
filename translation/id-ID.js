@@ -64,7 +64,7 @@ export const idID = {
     btnTokenLabel: "Dapatkan Kode",
     token: "Kode verifikasi",
     btnTokenResendLabel: "Kirim Ulang",
-    msgInvalidInvitationCode: "kode undangan salah.",
+    msgInvalidInvitationCode: "Kode Referral salah.",
     msgSendToken: "kirim kode",
     msgTokenSent: "verifikasi kode sukses",
     msgTokenVerified: "verifikasi",
@@ -346,7 +346,7 @@ export const idID = {
       confirmPassword: "Konfirmasi Kata Sandi",
       withdrawalPassword: "Silakan masukkan kata sandi penarikan (6 angka)",
       confirmWithdrawalPassword: "Konfirmasi Kata Sandi Penarikan",
-      promoteCode: "Kode Undangan",
+      promoteCode: "Kode Referral",
       email: "Silakan masukkan alamat email",
     },
     main: {
@@ -904,7 +904,7 @@ export const idID = {
       confirmPassword: "Konfirmasi Kata Sandi",
       withdrawalPassword: "Kata Sandi Penarikan",
       confirmWithdrawalPassword: "Konfirmasi Kata Sandi Penarikan",
-      promoteCode: "Kode Undangan",
+      promoteCode: "Kode Referral",
       contract:
         "Saya mengonfirmasi bahwa saya berusia minimal 18 tahun dan telah membaca dan menerima kebijakan, pernyataan privasi, syarat dan ketentuan situs web ini.",
       btn: "Daftar Sekarang",
