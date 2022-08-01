@@ -40,8 +40,19 @@ const Interceptor = {
           
           // config.headers["Token"] = token;
         }
-        config.headers["Content-Type"] = "application/json";
+        const crypto = require("crypto");
+        const TraceParent = require("traceparent");
 
+        const version = Buffer.alloc(1).toString("hex");
+        const traceId = crypto.randomBytes(16).toString("hex");
+        const id = crypto.randomBytes(8).toString("hex");
+        const flags = "01";
+
+        const header = `${version}-${traceId}-${id}-${flags}`;
+
+        const parent = TraceParent.fromString(header);
+        config.headers["Content-Type"] = "application/json";
+        config.headers["traceparent"] = parent;//"00-ab42124a3c573678d4d8b21ba52df3bf-d21f7bc17caa5aba-01";
         config.headers["Accept-Language"] = localStorage.getItem("i18nextLng");
 
         return config;
