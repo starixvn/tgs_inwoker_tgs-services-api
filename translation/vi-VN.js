@@ -1303,7 +1303,7 @@ export const vivN = {
       "Vui lòng liên hệ với bộ phận chăm sóc khách hàng để thêm thẻ vào trang rút tiền.",
   },
   hint: {
-    _099: "Có sẵn lúc (9: 00-23: 30)",
+    _099: "Có sẵn lúc (00:00-23:59)",
   },
   idr1: {
     pleaseEnterAccountName: "Vui lòng nhập tên tài khoản của bạn",

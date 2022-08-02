@@ -1288,7 +1288,7 @@ export const zhCN = {
     description: "请联系客服添加卡，以便访问提款页面。",
   },
   hint: {
-    _099: "在 (9:00-23:30) 可用",
+    _099: "在 (00:00-23:59) 可用",
   },
   idr1: {
     pleaseEnterAccountName: "请输入银行名称",

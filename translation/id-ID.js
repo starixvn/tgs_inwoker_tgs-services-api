@@ -1317,7 +1317,7 @@ export const idID = {
   },
 
   hint: {
-    _099: "Tersedia pada (9:00-23:30)",
+    _099: "Tersedia pada (00:00-23:59)",
   },
 
   idr1: {
