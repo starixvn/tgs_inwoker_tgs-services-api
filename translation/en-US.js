@@ -1319,7 +1319,7 @@ export const enUS = {
   },
 
   hint: {
-    _099: "Available at (9:00-23:30)",
+    _099: "Available at (now - 24 hour)",
   },
 
   idr1: {
