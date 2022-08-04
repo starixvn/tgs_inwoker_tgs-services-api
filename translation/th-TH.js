@@ -35,6 +35,7 @@ export const thTH = {
     join: "เข้าร่วม",
   },
   common: {
+    maintenance: "เวลาบำรุงรักษา",
     pleaseEnterAccountName: "กรุณาใส่ชื่อบัญชีของคุณ",
     noReachMin: "เบอร์มือถือตั้งไว้ที่ 8 ถึง {maxlength} หลัก",
     upload: "อัพโหลดไฟล์",

@@ -39,6 +39,7 @@ export const vivN = {
     join: "Tham gia",
   },
   common: {
+    maintenance: "Thời gian bảo trì",
     pleaseEnterAccountName: "Vui lòng nhập tên tài khoản của bạn",
     noReachMin: "Số điện thoại di động được đặt thành 8 đến {maxlength} chữ số",
     upload: "tải tệp lên",

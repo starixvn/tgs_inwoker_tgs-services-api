@@ -37,6 +37,7 @@ export const zhTW = {
   },
 
   common: {
+    maintenance: "維護時間",
     pleaseEnterAccountName: "請输入銀行名稱",
     noReachMin: "手機號碼設定在8至10位數",
     upload: "上傳文件",

@@ -39,6 +39,7 @@ export const idID = {
   },
 
   common: {
+    maintenance: "Waktu Pemeliharaan",
     pleaseEnterAccountName: "Silakan masukkan nama asli Anda",
     noReachMin: "Nomor ponsel disetel ke 8 hingga {maxlength} digit",
     upload: "Upload document",

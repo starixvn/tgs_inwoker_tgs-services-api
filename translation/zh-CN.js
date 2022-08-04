@@ -37,6 +37,7 @@ export const zhCN = {
   },
 
   common: {
+    maintenance: "维护时间",
     pleaseEnterAccountName: "请输入银行名称",
     noReachMin: "手機號碼設定在8至{maxlength}位數",
     upload: "上传文件",

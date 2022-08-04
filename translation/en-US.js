@@ -39,6 +39,7 @@ export const enUS = {
   },
 
   common: {
+    maintenance: "Maintenance Time",
     pleaseEnterAccountName: "Please enter your real name",
     noReachMin: "The mobile number is set to 8 to {maxlength} digits",
     upload: "Upload document",
