@@ -890,6 +890,7 @@ export const zhCN = {
       btn: "立即注册",
       activation: "SMS短信认证",
       email: "请输入邮箱地址",
+      errorCustomDesc: "请先点击\"发送验证码\"，再填写123456，按\"提交\"即可。",
     },
     resetPassword: {
       title: "重置密码",

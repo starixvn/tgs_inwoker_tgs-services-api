@@ -883,6 +883,9 @@ export const zhTW = {
       btn: "立即註冊",
       activation: "SMS短信認證",
       email: "請輸入郵箱地址",
+      errorCustomDesc: "請先點擊\"發送驗證碼\"，再填寫123456，按\"提交\"即可。",
+
+
     },
     resetPassword: {
       title: "重置密碼",

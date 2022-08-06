@@ -902,6 +902,7 @@ export const vivN = {
       btn: "Đăng ký ngay",
       activation: "Xác minh qua SMS",
       email: "Vui lòng nhập địa chỉ email",
+      errorCustomDesc: "Please press \"Send Code\" button, and Input \"123456\" then press \"Submit\""
     },
     resetPassword: {
       title: "Đặt lại mật khẩu",
