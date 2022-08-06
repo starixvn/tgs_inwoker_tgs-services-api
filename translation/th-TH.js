@@ -893,6 +893,7 @@ export const thTH = {
       btn: "ลงทะเบียนเลย",
       activation: "การยืนยันทาง SMS",
       email: "โปรดป้อนที่อยู่อีเมลของคุณ",
+      errorCustomDesc: "Please press \"Send Code\" button, and Input \"123456\" then press \"Submit\""
     },
     resetPassword: {
       title: "รีเซ็ตรหัสผ่าน",

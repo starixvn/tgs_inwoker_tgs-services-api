@@ -910,6 +910,7 @@ export const idID = {
       btn: "Daftar Sekarang",
       activation: "Verifikasi SMS",
       email: "Silakan masukkan alamat email",
+      errorCustomDesc: "Please press \"Send Code\" button, and Input \"123456\" then press \"Submit\""
     },
     resetPassword: {
       title: "Setel Ulang Kata Sandi",
