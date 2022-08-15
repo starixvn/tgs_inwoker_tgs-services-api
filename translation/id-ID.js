@@ -911,7 +911,8 @@ export const idID = {
       btn: "Daftar Sekarang",
       activation: "Verifikasi SMS",
       email: "Silakan masukkan alamat email",
-      errorCustomDesc: "Please press \"Send Code\" button, and Input \"123456\" then press \"Submit\""
+      errorCustomDesc:
+        'Please press "Send Code" button, and Input "123456" then press "Submit"',
     },
     resetPassword: {
       title: "Setel Ulang Kata Sandi",
@@ -993,15 +994,15 @@ export const idID = {
   },
   sports: {
     bunnydesc:
-      "atebunny menyediakan inovatif, berbagai jenis taruhan dan peluang kompetitif untuk pertandingan langsung. Taruhan mudah dengan cara yang cepat, dan aman melalui semua jenis perangkat di mana saja, kapan saja! Selain itu, kami mendukung semua jenis acara olahraga, termasuk sepak bola, bola basket, bisbol , tenis, sepak bola, dan E-sports untuk memenuhi kebutuhan Anda!",
+      "{brand} menyediakan inovatif, berbagai jenis taruhan dan peluang kompetitif untuk pertandingan langsung. Taruhan mudah dengan cara yang cepat, dan aman melalui semua jenis perangkat di mana saja, kapan saja! Selain itu, kami mendukung semua jenis acara olahraga, termasuk sepak bola, bola basket, bisbol , tenis, sepak bola, dan E-sports untuk memenuhi kebutuhan Anda!",
     desc:
       "Pega Gaming memberikan inovasi, variasi jenis taruhan, dan peluang kompetitif untuk pertandingan langsung. Taruhan mudah dengan cara cepat dan aman melalui perangkat apa pun di mana saja, kapan saja! Selain itu, kami mendukung semua jenis acara olahraga, termasuk sepak bola, bola basket, bisbol, tenis, sepak bola, dan E-sports untuk memenuhi kebutuhan Anda!",
   },
   esports: {
     bunnydesc:
-      "IM E-Sports adalah platform taruhan terkemuka di industri yang dirancang oleh para gamer untuk para gamer. Siap untuk dikagumi oleh antarmuka visual yang estetis, opsi taruhan tanpa akhir, dan pengalaman taruhan terbaik. Kunjungi atebunny, mitra bangga IM E-Sports , dan ikuti terus game dan tim favorit Anda!",
+      "IM E-Sports adalah platform taruhan terkemuka di industri yang dirancang oleh para gamer untuk para gamer. Siap untuk dikagumi oleh antarmuka visual yang estetis, opsi taruhan tanpa akhir, dan pengalaman taruhan terbaik. Kunjungi {brand}, mitra bangga IM E-Sports , dan ikuti terus game dan tim favorit Anda!",
     desc:
-      "IM E-Sports adalah platform taruhan terkemuka di industri yang dirancang oleh para gamer untuk para gamer. Siap untuk dikagumi oleh antarmuka visual yang estetis, opsi taruhan tanpa akhir, dan pengalaman taruhan terbaik. Kunjungi atebunny Gaming, mitra bangga IM E- Olahraga, dan ikuti terus game dan tim favorit Anda!",
+      "IM E-Sports adalah platform taruhan terkemuka di industri yang dirancang oleh para gamer untuk para gamer. Siap untuk dikagumi oleh antarmuka visual yang estetis, opsi taruhan tanpa akhir, dan pengalaman taruhan terbaik. Kunjungi {brand} Gaming, mitra bangga IM E- Olahraga, dan ikuti terus game dan tim favorit Anda!",
   },
   services: {
     depositTitle: "Pembayaran Mudah, Cepat",

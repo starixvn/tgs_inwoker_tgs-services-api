@@ -902,7 +902,8 @@ export const vivN = {
       btn: "Đăng ký ngay",
       activation: "Xác minh qua SMS",
       email: "Vui lòng nhập địa chỉ email",
-      errorCustomDesc: "Please press \"Send Code\" button, and Input \"123456\" then press \"Submit\""
+      errorCustomDesc:
+        'Please press "Send Code" button, and Input "123456" then press "Submit"',
     },
     resetPassword: {
       title: "Đặt lại mật khẩu",
@@ -981,7 +982,7 @@ export const vivN = {
   },
   sports: {
     bunnydesc:
-      "atebunny cung cấp nhiều loại cược mới và tỷ lệ cược cạnh tranh cho các trận đấu trực tiếp. bóng đá, bóng rổ, bóng chày, quần vợt, bóng đá và Thể thao điện tử để đáp ứng nhu cầu của bạn! ",
+      "{brand} cung cấp nhiều loại cược mới và tỷ lệ cược cạnh tranh cho các trận đấu trực tiếp. bóng đá, bóng rổ, bóng chày, quần vợt, bóng đá và Thể thao điện tử để đáp ứng nhu cầu của bạn! ",
     desc:
       "Pega Gaming cung cấp nhiều loại cược mới và tỷ lệ cược cạnh tranh cho các trận đấu trực tiếp. bóng đá, bóng rổ, bóng chày, quần vợt, bóng đá và Thể thao điện tử để đáp ứng nhu cầu của bạn! ",
   },
