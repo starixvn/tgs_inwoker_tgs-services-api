@@ -39,6 +39,7 @@ export const enUS = {
   },
 
   common: {
+    maintenance: "Maintenance Time",
     pleaseEnterAccountName: "Please enter your real name",
     noReachMin: "The mobile number is set to 8 to {maxlength} digits",
     upload: "Upload document",
@@ -997,15 +998,15 @@ export const enUS = {
   },
   sports: {
     bunnydesc:
-      "atebunny provide innovative, variety of bet type and competitive odds for live matches.  Easy betting with quick, and secure way through any kind of devices anywhere, anytime!  In addition, we support all kinds of sport events, including soccer, basketball, baseball, tennis, football, and E-sports to fulfill your needs!",
+      "{brand} provide innovative, variety of bet type and competitive odds for live matches.  Easy betting with quick, and secure way through any kind of devices anywhere, anytime!  In addition, we support all kinds of sport events, including soccer, basketball, baseball, tennis, football, and E-sports to fulfill your needs!",
     desc:
       "Pega Gaming provide innovative, variety of bet type and competitive odds for live matches.  Easy betting with quick, and secure way through any kind of devices anywhere, anytime!  In addition, we support all kinds of sport events, including soccer, basketball, baseball, tennis, football, and E-sports to fulfill your needs!",
   },
   esports: {
     bunnydesc:
-      "IM E-Sports is an industry-leading betting platform designed by gamers for gamers. Ready to be stunned by the aesthetically pleasing visual interface, endless betting options, and the ultimate betting experience.Visit atebunny, a proud partner of IM E-Sports, and stay up to date on your favorite games and teams!",
+      "IM E-Sports is an industry-leading betting platform designed by gamers for gamers. Ready to be stunned by the aesthetically pleasing visual interface, endless betting options, and the ultimate betting experience.Visit {brand}, a proud partner of IM E-Sports, and stay up to date on your favorite games and teams!",
     desc:
-      "IM E-Sports is an industry-leading betting platform designed by gamers for gamers. Ready to be stunned by the aesthetically pleasing visual interface, endless betting options, and the ultimate betting experience.Visit atebunny Gaming, a proud partner of IM E-Sports, and stay up to date on your favorite games and teams!",
+      "IM E-Sports is an industry-leading betting platform designed by gamers for gamers. Ready to be stunned by the aesthetically pleasing visual interface, endless betting options, and the ultimate betting experience.Visit {brand} Gaming, a proud partner of IM E-Sports, and stay up to date on your favorite games and teams!",
   },
   services: {
     depositTitle: "Easy, Rapid Payouts",
