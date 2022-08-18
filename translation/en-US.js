@@ -917,7 +917,8 @@ export const enUS = {
       btn: "Register Now",
       activation: "SMS Verification",
       email: "Please enter email address",
-      errorCustomDesc: "Please press \"Send Code\" button, and Input \"123456\" then press \"Submit\"",
+      errorCustomDesc:
+        'Please press "Send Code" button, and Input "123456" then press "Submit"',
     },
     resetPassword: {
       title: "Reset Password",
@@ -1131,6 +1132,9 @@ export const enUS = {
   },
   DG: {
     live: "DG Casino",
+  },
+  IDNLIVE: {
+    live: "IDN Casino",
   },
   TCG_SEA: {
     lottery: "TCG SEA",

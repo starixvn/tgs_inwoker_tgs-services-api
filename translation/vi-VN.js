@@ -1116,6 +1116,9 @@ export const vivN = {
   DG: {
     live: "DG Casino",
   },
+  IDNLIVE: {
+    live: "IDN Casino",
+  },
   TCG_SEA: {
     lottery: "TCG SEA",
   },

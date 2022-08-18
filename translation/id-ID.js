@@ -1128,6 +1128,9 @@ export const idID = {
   DG: {
     live: "DG Casino",
   },
+  IDNLIVE: {
+    live: "IDN Casino",
+  },
   TCG_SEA: {
     lottery: "TCG SEA",
   },

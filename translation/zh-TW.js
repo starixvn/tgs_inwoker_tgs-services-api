@@ -1098,6 +1098,9 @@ export const zhTW = {
   DG: {
     live: "DG真人",
   },
+  IDNLIVE: {
+    live: "IDN真人",
+  },
   TCG_SEA: {
     lottery: "TCG SEA彩票",
   },
