@@ -137,12 +137,13 @@ function PerformPulsaDeposit(amount, paymentid, promotionid, banktype, note) {
   return result;
 }
 
-function PerformEWalletDeposit(amount, paymentid, promotionid, banktype, note) {
+function PerformEWalletDeposit(amount, paymentid, promotionid, banktype, note, emoneyname) {
   var params = { 
     amount: amount,
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
-    banktype: banktype || "ewallet"
+    banktype: banktype || "ewallet",
+    emoneyname: emoneyname
   }
   if(note !== undefined && note !== null)
   {
@@ -494,12 +495,13 @@ function PerformPulsaDepositWithDetail(amount, paymentid, promotionid, banktype,
   return result;
 }
 
-function PerformEWalletDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail) {
+function PerformEWalletDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail, emoneyname) {
   var params = { 
     amount: amount,
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
-    banktype: banktype || "ewallet"
+    banktype: banktype || "ewallet",
+    emoneyname: emoneyname
   }
   if(note !== undefined && note !== null)
   {
