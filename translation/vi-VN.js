@@ -1116,6 +1116,9 @@ export const vivN = {
   DG: {
     live: "DG Casino",
   },
+  IDNLIVE: {
+    live: "IDN Casino",
+  },
   TCG_SEA: {
     lottery: "TCG SEA",
   },
@@ -1371,5 +1374,8 @@ export const vivN = {
         title: "Đối tác đáng tự hào",
       },
     },
+  },
+  WGHK: {
+    loginRegister: "Đăng nhập / Đăng ký",
   },
 };

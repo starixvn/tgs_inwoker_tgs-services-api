@@ -1107,6 +1107,9 @@ export const thTH = {
   DG: {
     live: "DG Casino",
   },
+  IDNLIVE: {
+    live: "IDN Casino",
+  },
   TCG_SEA: {
     lottery: "TCG SEA",
   },
@@ -1365,5 +1368,8 @@ export const thTH = {
         title: "พันธมิตรภาคภูมิใจ",
       },
     },
+  },
+  WGHK: {
+    loginRegister: "เข้าสู่ระบบ/ลงทะเบียน",
   },
 };

@@ -1133,6 +1133,9 @@ export const enUS = {
   DG: {
     live: "DG Casino",
   },
+  IDNLIVE: {
+    live: "IDN Casino",
+  },
   TCG_SEA: {
     lottery: "TCG SEA",
   },
@@ -1390,5 +1393,8 @@ export const enUS = {
         title: "Proud partners",
       },
     },
+  },
+  WGHK: {
+    loginregister: "Login / Register Now",
   },
 };

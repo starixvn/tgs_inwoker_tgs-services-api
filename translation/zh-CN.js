@@ -1105,6 +1105,9 @@ export const zhCN = {
   DG: {
     live: "DG真人",
   },
+  IDNLIVE: {
+    live: "IDN真人",
+  },
   TCG_SEA: {
     lottery: "TCG SEA彩票",
   },
@@ -1353,5 +1356,8 @@ export const zhCN = {
         title: "骄傲的合作伙伴",
       },
     },
+  },
+  WGHK: {
+    loginRegister: "立即登入/注册",
   },
 };
