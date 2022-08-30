@@ -39,6 +39,7 @@ export const vivN = {
     join: "Tham gia",
   },
   common: {
+    nodata: "hông có thông tin",
     maintenance: "Thời gian bảo trì",
     pleaseEnterAccountName: "Vui lòng nhập tên tài khoản của bạn",
     noReachMin: "Số điện thoại di động được đặt thành 8 đến {maxlength} chữ số",
