@@ -1355,4 +1355,7 @@ export const zhTW = {
   WGHK: {
     loginRegister: "立即登入/註冊",
   },
+  T2: {
+    marquee: "最新通告",
+  },
 };

@@ -1419,4 +1419,7 @@ export const idID = {
   WGHK: {
     loginregister: "Masuk / Dafter Sekarang",
   },
+  T2: {
+    marquee: "Berita",
+  },
 };

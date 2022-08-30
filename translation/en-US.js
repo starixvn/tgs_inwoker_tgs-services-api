@@ -1397,4 +1397,7 @@ export const enUS = {
   WGHK: {
     loginregister: "Login / Register Now",
   },
+  T2: {
+    marquee: "News",
+  },
 };

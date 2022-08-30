@@ -1372,4 +1372,7 @@ export const thTH = {
   WGHK: {
     loginRegister: "เข้าสู่ระบบ/ลงทะเบียน",
   },
+  T2: {
+    marquee: "ข่าว",
+  },
 };

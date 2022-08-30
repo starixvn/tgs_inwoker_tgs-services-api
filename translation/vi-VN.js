@@ -1378,4 +1378,7 @@ export const vivN = {
   WGHK: {
     loginRegister: "Đăng nhập / Đăng ký",
   },
+  T2: {
+    marquee: "Tin tức",
+  },
 };
