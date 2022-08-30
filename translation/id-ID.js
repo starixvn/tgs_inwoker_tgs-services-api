@@ -39,6 +39,7 @@ export const idID = {
   },
 
   common: {
+    nodata: "Tidak ada informasi",
     maintenance: "Waktu Pemeliharaan",
     pleaseEnterAccountName: "Silakan masukkan nama asli Anda",
     noReachMin: "Nomor ponsel disetel ke 8 hingga {maxlength} digit",
@@ -1415,5 +1416,11 @@ export const idID = {
         title: "Mitra Bangga",
       },
     },
+  },
+  WGHK: {
+    loginregister: "Masuk / Dafter Sekarang",
+  },
+  T2: {
+    marquee: "Berita",
   },
 };

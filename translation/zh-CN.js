@@ -1357,4 +1357,10 @@ export const zhCN = {
       },
     },
   },
+  WGHK: {
+    loginRegister: "立即登入/注册",
+  },
+  T2: {
+    marquee: "最新通告",
+  },
 };

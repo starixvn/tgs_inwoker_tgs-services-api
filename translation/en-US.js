@@ -39,6 +39,7 @@ export const enUS = {
   },
 
   common: {
+    nodata: "No data",
     maintenance: "Maintenance Time",
     pleaseEnterAccountName: "Please enter your real name",
     noReachMin: "The mobile number is set to 8 to {maxlength} digits",
@@ -1393,5 +1394,11 @@ export const enUS = {
         title: "Proud partners",
       },
     },
+  },
+  WGHK: {
+    loginregister: "Login / Register Now",
+  },
+  T2: {
+    marquee: "News",
   },
 };

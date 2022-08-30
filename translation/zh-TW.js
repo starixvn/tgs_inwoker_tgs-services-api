@@ -37,6 +37,7 @@ export const zhTW = {
   },
 
   common: {
+    nodata: "查無資料",
     maintenance: "維護時間",
     pleaseEnterAccountName: "請输入銀行名稱",
     noReachMin: "手機號碼設定在8至10位數",
@@ -1351,5 +1352,11 @@ export const zhTW = {
         title: "驕傲的合作夥伴",
       },
     },
+  },
+  WGHK: {
+    loginRegister: "立即登入/註冊",
+  },
+  T2: {
+    marquee: "最新通告",
   },
 };
