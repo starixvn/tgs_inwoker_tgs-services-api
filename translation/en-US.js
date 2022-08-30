@@ -1401,4 +1401,7 @@ export const enUS = {
   T2: {
     marquee: "News",
   },
+  customGPname: {
+    sport: " Sports"
+  },
 };

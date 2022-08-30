@@ -1376,4 +1376,7 @@ export const thTH = {
   T2: {
     marquee: "ข่าว",
   },
+  customGPname: {
+    sport: "Sports"
+  },
 };

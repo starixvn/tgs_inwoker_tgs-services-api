@@ -1423,4 +1423,7 @@ export const idID = {
   T2: {
     marquee: "Berita",
   },
+  customGPname: {
+    sport: "Sports"
+  },
 };

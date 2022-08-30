@@ -1382,4 +1382,7 @@ export const vivN = {
   T2: {
     marquee: "Tin tức",
   },
+  customGPname: {
+    sport: "Sports"
+  },
 };

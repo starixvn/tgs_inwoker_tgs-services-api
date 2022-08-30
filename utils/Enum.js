@@ -1,3 +1,5 @@
+import Config from "../../config/config";
+import i18n from "../../utils/i18n";
 export const GameTypeEnum = {
   SPORTS: 1,
   RNGSPORTS: 2,
@@ -110,4 +112,7 @@ export const SlotGameIsTest = {
 export const SlotGameWithTest = {
   No: 0,
   Yes: 1,
+};
+export const customGPname = {
+  WGFM: Config.brand === "WGHK" ? "MGM" : ""
 };
