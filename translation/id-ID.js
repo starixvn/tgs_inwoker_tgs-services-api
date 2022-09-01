@@ -1040,6 +1040,11 @@ export const idID = {
     slots: "Skywind",
     electron: "Skywind",
   },
+  SWTF: {
+    live: "Skywind",
+    slots: "Skywind",
+    electron: "Skywind",
+  },
   SBO: {
     sports: "SBO",
   },
@@ -1424,6 +1429,6 @@ export const idID = {
     marquee: "Berita",
   },
   customGPname: {
-    sport: "Sports"
+    sport: "Sports",
   },
 };

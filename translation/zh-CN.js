@@ -1017,6 +1017,11 @@ export const zhCN = {
     slots: "SW老虎机",
     electron: "SW电子",
   },
+  SWTF: {
+    live: "SW真人",
+    slots: "SW老虎机",
+    electron: "SW电子",
+  },
   SBO: {
     sports: "SBO体育",
   },
@@ -1365,6 +1370,6 @@ export const zhCN = {
     marquee: "最新通告",
   },
   customGPname: {
-    sport: "体育"
+    sport: "体育",
   },
 };
