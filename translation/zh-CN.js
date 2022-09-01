@@ -1364,4 +1364,7 @@ export const zhCN = {
   T2: {
     marquee: "最新通告",
   },
+  customGPname: {
+    sport: "体育"
+  },
 };

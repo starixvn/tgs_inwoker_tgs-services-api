@@ -1359,4 +1359,7 @@ export const zhTW = {
   T2: {
     marquee: "最新通告",
   },
+  customGPname: {
+    sport: "體育"
+  },
 };
