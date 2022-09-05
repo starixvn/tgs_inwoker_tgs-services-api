@@ -653,7 +653,7 @@ export const zhTW = {
     mainAccount: "中心錢包",
     oneKeyReceive: "一鍵回收",
     oneKeyTransferIn: "一鍵轉入",
-    oneKeyTransferOut: "一鍵轉入",
+    oneKeyTransferOut: "一鍵轉出",
     oneKeyTransferAll: "一键傳輸",
     maintenance: "維護中",
     transferFrom: "請選擇轉出錢包",
