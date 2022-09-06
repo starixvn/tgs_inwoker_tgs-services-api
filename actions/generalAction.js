@@ -35,9 +35,18 @@ import {
   GETPROMOROULETTE_STATUS_BEGIN,
   GETPROMOROULETTE_STATUS_SUCCESS,
   GETPROMOROULETTE_STATUS_FAILED,
+  GETDAROULETTE_STATUS_BEGIN,
+  GETDAROULETTE_STATUS_SUCCESS,
+  GETDAROULETTE_STATUS_FAILED,
   GETPROMOROULETTE_RESULT_BEGIN,
   GETPROMOROULETTE_RESULT_SUCCESS,
   GETPROMOROULETTE_RESULT_FAILED,
+  GETDAROULETTE_RESULT_BEGIN,
+  GETDAROULETTE_RESULT_SUCCESS,
+  GETDAROULETTE_RESULT_FAILED,
+  GETROULETTE_COUNT_BEGIN,
+  GETROULETTE_COUNT_SUCCESS,
+  GETROULETTE_COUNT_FAILED,
   GETPROMOTION_BEGIN,
   GETPROMOTION_SUCCESS,
   GETPROMOTION_FAILURE,
@@ -60,6 +69,9 @@ export const generalAction = {
   getPromotionRouletteStatus,
   getPromotionRouletteResult,
   getPromotion,
+  getPromotionRouletteCount,
+  getDepositAccumulateRoulette,
+  getDepositAccumulateRouletteResult,
 };
 function getSiteToken() {
   return (dispatch) => {
@@ -515,6 +527,75 @@ function getPromotion() {
           loading: false,
         });
       });
+    return result;
+  };
+}
+
+function getPromotionRouletteCount() {
+  return (dispatch) => {
+    dispatch({
+      type: GETROULETTE_COUNT_BEGIN,
+    });
+    const result = GeneralService.GetPromotionRouletteCount().then((response)=>{
+      if (response.IsSuccess) {
+        dispatch({
+          type: GETROULETTE_COUNT_SUCCESS,
+          payload: response,
+        });
+      } else {
+        dispatch({
+          type: GETROULETTE_COUNT_FAILED,
+          payload: response,
+        });
+      }
+      return response;
+    });
+    return result;
+  };
+}
+
+function getDepositAccumulateRoulette(id) {
+  return (dispatch) => {
+    dispatch({
+      type: GETDAROULETTE_STATUS_BEGIN,
+    });
+    const result = GeneralService.GetDepositAccumulateRoulette(id).then((response)=>{
+      if (response.IsSuccess) {
+        dispatch({
+          type: GETDAROULETTE_STATUS_SUCCESS,
+          payload: response,
+        });
+      } else {
+        dispatch({
+          type: GETDAROULETTE_STATUS_FAILED,
+          payload: response,
+        });
+      }
+      return response;
+    });
+    return result;
+  };
+}
+
+function getDepositAccumulateRouletteResult(id) {
+  return (dispatch) => {
+    dispatch({
+      type: GETDAROULETTE_RESULT_BEGIN,
+    });
+    const result = GeneralService.GetDepositAccumulateRouletteResult(id).then((response)=>{
+      if (response.IsSuccess) {
+        dispatch({
+          type: GETDAROULETTE_RESULT_SUCCESS,
+          payload: response,
+        });
+      } else {
+        dispatch({
+          type: GETDAROULETTE_RESULT_FAILED,
+          payload: response,
+        });
+      }
+      return response;
+    });
     return result;
   };
 }
