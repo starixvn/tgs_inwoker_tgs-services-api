@@ -653,7 +653,7 @@ export const zhTW = {
     mainAccount: "中心錢包",
     oneKeyReceive: "一鍵回收",
     oneKeyTransferIn: "一鍵轉入",
-    oneKeyTransferOut: "一鍵轉入",
+    oneKeyTransferOut: "一鍵轉出",
     oneKeyTransferAll: "一键傳輸",
     maintenance: "維護中",
     transferFrom: "請選擇轉出錢包",
@@ -1010,6 +1010,11 @@ export const zhTW = {
     slots: "SW老虎機",
     electron: "SW電子",
   },
+  SWTF: {
+    live: "SW真人",
+    slots: "SW老虎机",
+    electron: "SW电子",
+  },
   SBO: {
     sports: "SBO體育",
   },
@@ -1358,5 +1363,8 @@ export const zhTW = {
   },
   T2: {
     marquee: "最新通告",
+  },
+  customGPname: {
+    sport: "體育",
   },
 };

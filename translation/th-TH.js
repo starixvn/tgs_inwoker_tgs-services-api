@@ -1019,6 +1019,11 @@ export const thTH = {
     slots: "Skywind",
     electron: "Skywind",
   },
+  SWTF: {
+    live: "Skywind",
+    slots: "Skywind",
+    electron: "Skywind",
+  },
   SBO: {
     sports: "SBO",
   },
@@ -1375,5 +1380,8 @@ export const thTH = {
   },
   T2: {
     marquee: "ข่าว",
+  },
+  customGPname: {
+    sport: "Sports",
   },
 };

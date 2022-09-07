@@ -1028,6 +1028,11 @@ export const vivN = {
     slots: "Skywind",
     electron: "Skywind",
   },
+  SWTF: {
+    live: "Skywind",
+    slots: "Skywind",
+    electron: "Skywind",
+  },
   SBO: {
     sports: "SBO",
   },
@@ -1381,5 +1386,8 @@ export const vivN = {
   },
   T2: {
     marquee: "Tin tức",
+  },
+  customGPname: {
+    sport: "Sports",
   },
 };

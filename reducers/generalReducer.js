@@ -31,6 +31,15 @@ import {
   GETPROMOROULETTE_RESULT_BEGIN,
   GETPROMOROULETTE_RESULT_SUCCESS,
   GETPROMOROULETTE_RESULT_FAILED,
+  GETDAROULETTE_STATUS_BEGIN,
+  GETDAROULETTE_STATUS_SUCCESS,
+  GETDAROULETTE_STATUS_FAILED,
+  GETDAROULETTE_RESULT_BEGIN,
+  GETDAROULETTE_RESULT_SUCCESS,
+  GETDAROULETTE_RESULT_FAILED,
+  GETROULETTE_COUNT_BEGIN,
+  GETROULETTE_COUNT_SUCCESS,
+  GETROULETTE_COUNT_FAILED,
   RESET_PROMOROULETTE,
   GETPROMOTION_BEGIN,
   GETPROMOTION_SUCCESS,
@@ -56,6 +65,7 @@ const initialState = {
   },
   isRouletteAvailable: null,
   itemIndex: null,
+  rouletteCount: [],
 };
 function mapPromotionList(data) {
   var items = [];
@@ -240,12 +250,14 @@ export function generalReducer(state = initialState, action) {
         isRouletteAvailable: null,
         loading: false,
       };
+    case GETDAROULETTE_RESULT_BEGIN:
     case GETPROMOROULETTE_RESULT_BEGIN:
       return {
         ...state,
         itemIndex: null,
         loading: true,
       }
+    case GETDAROULETTE_RESULT_SUCCESS:
     case GETPROMOROULETTE_RESULT_SUCCESS:
       return {
         ...state,
@@ -253,6 +265,7 @@ export function generalReducer(state = initialState, action) {
           action.payload.data.itemindex,
         loading: false,
       };
+    case GETDAROULETTE_RESULT_FAILED:
     case GETPROMOROULETTE_RESULT_FAILED:
       return {
         ...state,
@@ -264,6 +277,17 @@ export function generalReducer(state = initialState, action) {
         ...state,
         isRouletteAvailable: null,
         itemIndex: null,
+      }
+    case GETROULETTE_COUNT_BEGIN: 
+    case GETROULETTE_COUNT_FAILED: 
+    return {
+      ...state,
+      rouletteCount: [],
+    }
+    case GETROULETTE_COUNT_SUCCESS: 
+      return {
+        ...state,
+        rouletteCount: action.payload.data,
       }
     default:
       return state;

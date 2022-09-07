@@ -17,7 +17,10 @@ export const GeneralService = {
   GetInvitationCode,
   GetPromotionRouletteStatus,
   GetPromotionRouletteResult,
-  GetPromotion
+  GetPromotion,
+  GetPromotionRouletteCount,
+  GetDepositAccumulateRoulette,
+  GetDepositAccumulateRouletteResult
 };
 
 function GetSiteToken() {
@@ -103,5 +106,20 @@ function GetPromotionRouletteResult(id) {
 
 function GetPromotion(){
   const result = ApiService.get("promotion");
+  return result;
+}
+
+function GetPromotionRouletteCount() {
+  const result = ApiService.get(`promotion/roulette/count`);
+  return result;
+}
+
+function GetDepositAccumulateRoulette(promotionId) {
+  const result = ApiService.get(`dar/setting/${promotionId}`);
+  return result;
+}
+
+function GetDepositAccumulateRouletteResult(promotionId) {
+  const result = ApiService.post(`dar/${promotionId}`);
   return result;
 }

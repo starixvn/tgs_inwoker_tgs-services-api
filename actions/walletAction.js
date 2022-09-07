@@ -447,7 +447,7 @@ function doPulsaDeposit(amount, paymentid, promotionid, banktype, note) {
   };
 }
 
-function doEWalletDeposit(amount, paymentid, promotionid, banktype, note) {
+function doEWalletDeposit(amount, paymentid, promotionid, banktype, note, emoneyname) {
   return (dispatch) => {
     dispatch({
       type: DODEPOSIT_BEGIN,
@@ -458,7 +458,8 @@ function doEWalletDeposit(amount, paymentid, promotionid, banktype, note) {
       paymentid,
       promotionid,
       banktype,
-      note
+      note,
+      emoneyname
     )
       .then((response) => {
         if (response.IsSuccess) {
@@ -1646,7 +1647,7 @@ function doPulsaDepositWithDetail(amount, paymentid, promotionid, banktype, note
   };
 }
 
-function doEWalletDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail) {
+function doEWalletDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail, emoneyname) {
   return (dispatch) => {
     dispatch({
       type: DODEPOSIT_BEGIN,
@@ -1658,7 +1659,8 @@ function doEWalletDepositWithDetail(amount, paymentid, promotionid, banktype, no
       promotionid,
       banktype,
       note,
-      detail
+      detail,
+      emoneyname
     )
       .then((response) => {
         if (response.IsSuccess) {

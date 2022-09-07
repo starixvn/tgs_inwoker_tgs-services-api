@@ -1042,6 +1042,11 @@ export const enUS = {
     slots: "Skywind",
     electron: "Skywind",
   },
+  SWTF: {
+    live: "Skywind",
+    slots: "Skywind",
+    electron: "Skywind",
+  },
   AWC_SG: {
     live: "Sexy Gaming",
   },
@@ -1400,5 +1405,8 @@ export const enUS = {
   },
   T2: {
     marquee: "News",
+  },
+  customGPname: {
+    sport: " Sports",
   },
 };

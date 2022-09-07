@@ -37,6 +37,7 @@ export const zhCN = {
   },
 
   common: {
+    nodata: "查无资料",
     maintenance: "维护时间",
     pleaseEnterAccountName: "请输入银行名称",
     noReachMin: "手機號碼設定在8至{maxlength}位數",
@@ -1016,6 +1017,11 @@ export const zhCN = {
     slots: "SW老虎机",
     electron: "SW电子",
   },
+  SWTF: {
+    live: "SW真人",
+    slots: "SW老虎机",
+    electron: "SW电子",
+  },
   SBO: {
     sports: "SBO体育",
   },
@@ -1362,5 +1368,8 @@ export const zhCN = {
   },
   T2: {
     marquee: "最新通告",
+  },
+  customGPname: {
+    sport: "体育",
   },
 };
