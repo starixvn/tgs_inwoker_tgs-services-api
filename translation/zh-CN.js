@@ -1344,6 +1344,12 @@ export const zhCN = {
       description: "即刻加入，享受专为您打造的尊贵VIP特权",
     },
   },
+  brand: {
+    SOWIN: {
+      title: "Game of KING - 专业娱乐平台",
+      description: "专业娱乐平台",
+    }
+  },
   t10: {
     home: {
       section2: {

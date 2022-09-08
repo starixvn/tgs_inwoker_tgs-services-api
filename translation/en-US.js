@@ -1381,6 +1381,12 @@ export const enUS = {
         "Join now and enjoy premium VIP privileges specially for you",
     },
   },
+  brand: {
+    SOWIN: {
+      title: "Game of KING | The Biggest & Most Trusted Online Casino",
+      description: "The Biggest & Most Trusted Online Casino",
+    }
+  },
   t10: {
     home: {
       section2: {
