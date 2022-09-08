@@ -1339,6 +1339,12 @@ export const zhTW = {
       description: "即刻加入，享受專為您打造的尊貴VIP特權",
     },
   },
+  brand: {
+    SOWIN: {
+      title: "Game of KING - 專業娛樂平台",
+      description: "專業娛樂平台",
+    }
+  },
   t10: {
     home: {
       section2: {

@@ -1362,6 +1362,12 @@ export const vivN = {
         "Tham gia ngay bây giờ và tận hưởng các đặc quyền VIP độc quyền được tạo riêng cho bạn",
     },
   },
+  brand: {
+    SOWIN: {
+      title: "Game of KING | The Biggest & Most Trusted Online Casino",
+      description: "The Biggest & Most Trusted Online Casino",
+    }
+  },
   t10: {
     home: {
       section2: {

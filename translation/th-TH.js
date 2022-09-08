@@ -1356,6 +1356,12 @@ export const thTH = {
         "เข้าร่วมตอนนี้และเพลิดเพลินกับสิทธิพิเศษวีไอพีพิเศษสำหรับคุณ",
     },
   },
+  brand: {
+    SOWIN: {
+      title: "Game of KING | The Biggest & Most Trusted Online Casino",
+      description: "The Biggest & Most Trusted Online Casino",
+    }
+  },
   t10: {
     home: {
       section2: {

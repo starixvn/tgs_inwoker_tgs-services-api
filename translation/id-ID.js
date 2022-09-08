@@ -1402,6 +1402,10 @@ export const idID = {
         "SKALASLOT | Skalaslot PRAGMATIC SLOT GAME RTP GACOR AMAN TERPERCAYA",
       description: "Skalaslot PRAGMATIC SLOT GAME RTP GACOR AMAN TERPERCAYA",
     },
+    SOWIN: {
+      title: "Game of KING | The Biggest & Most Trusted Online Casino",
+      description: "The Biggest & Most Trusted Online Casino",
+    }
   },
   t10: {
     home: {
