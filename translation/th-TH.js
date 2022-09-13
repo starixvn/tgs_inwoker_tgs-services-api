@@ -1045,6 +1045,12 @@ export const thTH = {
     desc:
       "การชนะขุมทรัพย์ออนไลน์ไม่ใช่เรื่องน่าเบื่อ มีเกมและสล็อตแมชชีนมากมายที่นี่ หากคุณต้องการสัมผัสประสบการณ์การเล่นเกมมากกว่านี้ คุณต้องมาที่นี่!",
   },
+  JDBTF: {
+    slots: "JDB",
+    fish: "JDB",
+    desc:
+      "การชนะขุมทรัพย์ออนไลน์ไม่ใช่เรื่องน่าเบื่อ มีเกมและสล็อตแมชชีนมากมายที่นี่ หากคุณต้องการสัมผัสประสบการณ์การเล่นเกมมากกว่านี้ คุณต้องมาที่นี่!",
+  },
   JILI: {
     slots: "JILI",
     fish: "JILI",
@@ -1360,7 +1366,7 @@ export const thTH = {
     SOWIN: {
       title: "Game of KING | The Biggest & Most Trusted Online Casino",
       description: "The Biggest & Most Trusted Online Casino",
-    }
+    },
   },
   t10: {
     home: {

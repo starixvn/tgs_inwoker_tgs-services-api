@@ -1054,6 +1054,12 @@ export const vivN = {
     desc:
       "Chiến thắng báu vật trực tuyến không hề nhàm chán. Tại đây có rất nhiều trò chơi và máy đánh bạc, muốn trải nghiệm thêm nhiều cách chơi thì bạn phải vào đây!",
   },
+  JDBTF: {
+    slots: "JDB",
+    fish: "JDB",
+    desc:
+      "Chiến thắng báu vật trực tuyến không hề nhàm chán. Tại đây có rất nhiều trò chơi và máy đánh bạc, muốn trải nghiệm thêm nhiều cách chơi thì bạn phải vào đây!",
+  },
   JILI: {
     slots: "JILI",
     fish: "JILI",
@@ -1366,7 +1372,7 @@ export const vivN = {
     SOWIN: {
       title: "Game of KING | The Biggest & Most Trusted Online Casino",
       description: "The Biggest & Most Trusted Online Casino",
-    }
+    },
   },
   t10: {
     home: {

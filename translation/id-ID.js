@@ -1066,6 +1066,12 @@ export const idID = {
     desc:
       "Memenangkan harta secara online tidak membosankan. Ada banyak permainan dan mesin slot di sini. Jika Anda ingin merasakan lebih banyak gameplay, Anda harus datang ke sini!",
   },
+  JDBTF: {
+    slots: "JDB",
+    fish: "JDB",
+    desc:
+      "Memenangkan harta secara online tidak membosankan. Ada banyak permainan dan mesin slot di sini. Jika Anda ingin merasakan lebih banyak gameplay, Anda harus datang ke sini!",
+  },
   JILI: {
     slots: "JILI",
     fish: "JILI",
@@ -1405,7 +1411,7 @@ export const idID = {
     SOWIN: {
       title: "Game of KING | The Biggest & Most Trusted Online Casino",
       description: "The Biggest & Most Trusted Online Casino",
-    }
+    },
   },
   t10: {
     home: {
