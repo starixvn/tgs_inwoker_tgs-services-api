@@ -1071,6 +1071,12 @@ export const enUS = {
     desc:
       "Winning treasures online is not boring. There are many games and slot machines here. If you want to experience more gameplay, you must come here!",
   },
+  JDBTF: {
+    slots: "JDB",
+    fish: "JDB",
+    desc:
+      "Winning treasures online is not boring. There are many games and slot machines here. If you want to experience more gameplay, you must come here!",
+  },
   JILI: {
     slots: "JILI",
     fish: "JILI",
@@ -1385,7 +1391,7 @@ export const enUS = {
     SOWIN: {
       title: "Game of KING | The Biggest & Most Trusted Online Casino",
       description: "The Biggest & Most Trusted Online Casino",
-    }
+    },
   },
   t10: {
     home: {

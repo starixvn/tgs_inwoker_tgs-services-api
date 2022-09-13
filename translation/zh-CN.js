@@ -1043,6 +1043,12 @@ export const zhCN = {
     desc:
       "线上网夺宝不无聊。这里拥有众多游戏以及老虎机，想要体验更多的玩法，那你来这里准没错!",
   },
+  JDBTF: {
+    slots: "JDB老虎机",
+    fish: "JDB捕鱼",
+    desc:
+      "线上网夺宝不无聊。这里拥有众多游戏以及老虎机，想要体验更多的玩法，那你来这里准没错!",
+  },
   JILI: {
     slots: "JILI老虎机",
     fish: "JILI捕鱼",
@@ -1348,7 +1354,7 @@ export const zhCN = {
     SOWIN: {
       title: "Game of KING - 专业娱乐平台",
       description: "专业娱乐平台",
-    }
+    },
   },
   t10: {
     home: {
