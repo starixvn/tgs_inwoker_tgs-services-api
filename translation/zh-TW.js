@@ -1379,4 +1379,8 @@ export const zhTW = {
   customGPname: {
     sport: "體育",
   },
+  fees: {
+    withdraw: "提款費",
+    deposit: "存款費",
+  },
 };

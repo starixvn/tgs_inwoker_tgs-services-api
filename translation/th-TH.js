@@ -1396,4 +1396,8 @@ export const thTH = {
   customGPname: {
     sport: "Sports",
   },
+  fees: {
+    withdraw: "ค่าธรรมเนียมการถอน",
+    deposit: "ค่าธรรมเนียมการฝาก",
+  },
 };

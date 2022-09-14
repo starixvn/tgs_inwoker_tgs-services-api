@@ -1402,4 +1402,8 @@ export const vivN = {
   customGPname: {
     sport: "Sports",
   },
+  fees: {
+    withdraw: "Phí rút tiền",
+    deposit: "Phí đặt cọc",
+  },
 };

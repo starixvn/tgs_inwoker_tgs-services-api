@@ -1421,4 +1421,8 @@ export const enUS = {
   customGPname: {
     sport: " Sports",
   },
+  fees: {
+    withdraw: "Withdrawal fee",
+    deposit: "Deposit fee",
+  },
 };

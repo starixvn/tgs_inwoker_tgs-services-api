@@ -139,6 +139,7 @@ function mapDepositList(result) {
           channelname: data[i].channelname,
           channelcode: data[i].channelcode,
           transferlimit: data[i].transferlimit,
+          fees: data[i].feepercentile,
         });
     }
   }
@@ -178,6 +179,7 @@ function mapDepositType(result) {
               transferlimit: data[i].transferlimit,
               extended: data[i].extended,
               displayorder: data[i].displayorder,
+              fees: data[i].feepercentile,
             },
           ],
         },
@@ -200,6 +202,7 @@ function mapDepositType(result) {
             transferlimit: data[i].transferlimit,
             extended: data[i].extended,
             displayorder: data[i].displayorder,
+            fees: data[i].feepercentile,
           });
       } else {
         depositTypeList
@@ -215,6 +218,7 @@ function mapDepositType(result) {
                 transferlimit: data[i].transferlimit,
                 extended: data[i].extended,
                 displayorder: data[i].displayorder,
+                fees: data[i].feepercentile,
               },
             ],
           });
@@ -310,6 +314,7 @@ function mapWithdrawalList(data) {
             channelname: data[i].channelname,
             channelcode: data[i].channelcode,
             transferlimit: data[i].transferlimit,
+            fees: data[i].feepercentile,
           },
         ],
       });
@@ -321,6 +326,7 @@ function mapWithdrawalList(data) {
           channelname: data[i].channelname,
           channelcode: data[i].channelcode,
           transferlimit: data[i].transferlimit,
+          fees: data[i].feepercentile,
         });
     }
   }

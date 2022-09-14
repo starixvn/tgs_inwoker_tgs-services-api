@@ -1441,4 +1441,8 @@ export const idID = {
   customGPname: {
     sport: "Sports",
   },
+  fees: {
+    withdraw: "Biaya penarikan",
+    deposit: "Biaya setoran",
+  },
 };

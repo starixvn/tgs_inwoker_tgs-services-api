@@ -1384,4 +1384,8 @@ export const zhCN = {
   customGPname: {
     sport: "体育",
   },
+  fees: {
+    withdraw: "提款费",
+    deposit: "存款费",
+  },
 };
