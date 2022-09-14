@@ -1202,7 +1202,7 @@ export const zhTW = {
   sowin: {
     card: {
       addCard: {
-        BankAccountName: "銀行賬號名稱 (英文)",
+        BankAccountName: "銀行帳戶名稱 (英文)",
       },
     },
   },
