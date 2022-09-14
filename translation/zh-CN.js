@@ -1206,6 +1206,13 @@ export const zhCN = {
     BankAccountName: "请输入付款人名称(英文简称)",
     msgEnterBankAccountName: "Chan Txx Mxx",
   },
+  sowin: {
+    card: {
+      addCard: {
+        BankAccountName: "银行账号名称 (英文)",
+      },
+    },
+  },
   download: {
     supported: "支持设备",
     openGuide: "查看安装指南",

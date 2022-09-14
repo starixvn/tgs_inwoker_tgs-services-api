@@ -1215,6 +1215,13 @@ export const vivN = {
     BankAccountName: "Vui lòng nhập tên người thanh toán (viết tắt tiếng Anh)",
     msgEnterBankAccountName: "Chan Txx Mxx",
   },
+  sowin: {
+    card: {
+      addCard: {
+        BankAccountName: "Tên tài khoản ngân hàng",
+      },
+    },
+  },
   download: {
     supported: "Thiết bị hỗ trợ",
     openGuide: "Xem Hướng dẫn Cài đặt",
