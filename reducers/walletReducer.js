@@ -127,6 +127,7 @@ function mapDepositList(result) {
             channelname: data[i].channelname,
             channelcode: data[i].channelcode,
             transferlimit: data[i].transferlimit,
+            fees: data[i].feepercentile,
           },
         ],
       });
