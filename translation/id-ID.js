@@ -1228,6 +1228,13 @@ export const idID = {
       "Silakan masukkan nama pembayar (singkatan bahasa Inggris)",
     msgEnterBankAccountName: "Chan Txx Mxx",
   },
+  sowin: {
+    card: {
+      addCard: {
+        BankAccountName: "Nama pemegang bank",
+      },
+    },
+  },
   download: {
     supported: "Perangkat Pendukung",
     openGuide: "Instruksi Instal",

@@ -1199,6 +1199,13 @@ export const zhTW = {
     BankAccountName: "請輸入付款人名稱（英文簡稱）",
     msgEnterBankAccountName: "Chan Txx Mxx",
   },
+  sowin: {
+    card: {
+      addCard: {
+        BankAccountName: "銀行賬號名稱 (英文)",
+      },
+    },
+  },
   download: {
     supported: "支持設備",
     openGuide: "查看安裝指南",

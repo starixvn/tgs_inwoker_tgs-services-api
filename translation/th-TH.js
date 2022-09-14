@@ -1207,6 +1207,13 @@ export const thTH = {
     BankAccountName: "โปรดป้อนชื่อของผู้ชำระเงิน (ตัวย่อภาษาอังกฤษ)",
     msgEnterBankAccountName: "Chan Txx Mxx",
   },
+  sowin: {
+    card: {
+      addCard: {
+        BankAccountName: "ชื่อบัญชีธนาคาร",
+      },
+    },
+  },
   download: {
     supported: "อุปกรณ์สนับสนุน",
     openGuide: "ดูคู่มือการติดตั้ง",

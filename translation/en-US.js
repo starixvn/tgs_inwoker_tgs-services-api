@@ -1234,6 +1234,13 @@ export const enUS = {
       "Please enter the name of the payer (English abbreviation)",
     msgEnterBankAccountName: "Chan Txx Mxx",
   },
+  sowin: {
+    card: {
+      addCard: {
+        BankAccountName: "Bank holder name",
+      },
+    },
+  },
   download: {
     supported: "Support Device",
     openGuide: "Install Instruction",
