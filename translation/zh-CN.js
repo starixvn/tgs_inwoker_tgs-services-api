@@ -1209,7 +1209,7 @@ export const zhCN = {
   sowin: {
     card: {
       addCard: {
-        BankAccountName: "银行账号名称 (英文)",
+        BankAccountName: "银行账户名称 (英文)",
       },
     },
   },
