@@ -1072,8 +1072,8 @@ export const enUS = {
       "Winning treasures online is not boring. There are many games and slot machines here. If you want to experience more gameplay, you must come here!",
   },
   JDBTF: {
-    slots: "JDB",
-    fish: "JDB",
+    slots: "JDBTF Slots",
+    fish: "JDBTF Fishing",
     desc:
       "Winning treasures online is not boring. There are many games and slot machines here. If you want to experience more gameplay, you must come here!",
   },
@@ -1082,8 +1082,8 @@ export const enUS = {
     fish: "JILI",
   },
   JILITF: {
-    slots: "JILI",
-    fish: "JILI",
+    slots: "JILI Slots",
+    fish: "JILI Fishing",
   },
   JOKER: {
     slots: "JOKER",
@@ -1119,7 +1119,7 @@ export const enUS = {
     electron: "RedTiger",
   },
   RTTF: {
-    slots: "RedTiger",
+    slots: "RedTiger Slots",
     electron: "RedTiger",
   },
   NT: {

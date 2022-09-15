@@ -1046,8 +1046,8 @@ export const thTH = {
       "การชนะขุมทรัพย์ออนไลน์ไม่ใช่เรื่องน่าเบื่อ มีเกมและสล็อตแมชชีนมากมายที่นี่ หากคุณต้องการสัมผัสประสบการณ์การเล่นเกมมากกว่านี้ คุณต้องมาที่นี่!",
   },
   JDBTF: {
-    slots: "JDB",
-    fish: "JDB",
+    slots: "JILI Slots",
+    fish: "JILI Fishing",
     desc:
       "การชนะขุมทรัพย์ออนไลน์ไม่ใช่เรื่องน่าเบื่อ มีเกมและสล็อตแมชชีนมากมายที่นี่ หากคุณต้องการสัมผัสประสบการณ์การเล่นเกมมากกว่านี้ คุณต้องมาที่นี่!",
   },
@@ -1056,8 +1056,8 @@ export const thTH = {
     fish: "JILI",
   },
   JILITF: {
-    slots: "JILI",
-    fish: "JILI",
+    slots: "JILI Slots",
+    fish: "JILI Fishing",
   },
   JOKER: {
     slots: "JOKER",
@@ -1089,7 +1089,7 @@ export const thTH = {
     live: "Allbet",
   },
   RT: {
-    slots: "RedTiger",
+    slots: "RedTiger Slots",
     electron: "RedTiger",
   },
   RTTF: {

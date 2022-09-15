@@ -1067,8 +1067,8 @@ export const idID = {
       "Memenangkan harta secara online tidak membosankan. Ada banyak permainan dan mesin slot di sini. Jika Anda ingin merasakan lebih banyak gameplay, Anda harus datang ke sini!",
   },
   JDBTF: {
-    slots: "JDB",
-    fish: "JDB",
+    slots: "JDBTF Slots",
+    fish: "JDBTF Fishing",
     desc:
       "Memenangkan harta secara online tidak membosankan. Ada banyak permainan dan mesin slot di sini. Jika Anda ingin merasakan lebih banyak gameplay, Anda harus datang ke sini!",
   },
@@ -1077,8 +1077,8 @@ export const idID = {
     fish: "JILI",
   },
   JILITF: {
-    slots: "JILI",
-    fish: "JILI",
+    slots: "JILI Slots",
+    fish: "JILI Fishing",
   },
   JOKER: {
     slots: "JOKER",
@@ -1114,7 +1114,7 @@ export const idID = {
     electron: "RedTiger",
   },
   RTTF: {
-    slots: "RedTiger",
+    slots: "RedTiger Slots",
     electron: "RedTiger",
   },
   NTTF: {

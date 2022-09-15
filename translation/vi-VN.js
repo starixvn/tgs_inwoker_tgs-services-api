@@ -1055,8 +1055,8 @@ export const vivN = {
       "Chiến thắng báu vật trực tuyến không hề nhàm chán. Tại đây có rất nhiều trò chơi và máy đánh bạc, muốn trải nghiệm thêm nhiều cách chơi thì bạn phải vào đây!",
   },
   JDBTF: {
-    slots: "JDB",
-    fish: "JDB",
+    slots: "JDBTF Slots",
+    fish: "JDBTF Fishing",
     desc:
       "Chiến thắng báu vật trực tuyến không hề nhàm chán. Tại đây có rất nhiều trò chơi và máy đánh bạc, muốn trải nghiệm thêm nhiều cách chơi thì bạn phải vào đây!",
   },
@@ -1065,8 +1065,8 @@ export const vivN = {
     fish: "JILI",
   },
   JILITF: {
-    slots: "JILI",
-    fish: "JILI",
+    slots: "JILI Slots",
+    fish: "JILI Fishing",
   },
   JOKER: {
     slots: "JOKER",
@@ -1102,7 +1102,7 @@ export const vivN = {
     electron: "RedTiger",
   },
   RTTF: {
-    slots: "RedTiger",
+    slots: "RedTiger Slots",
     electron: "RedTiger",
   },
   NT: {
