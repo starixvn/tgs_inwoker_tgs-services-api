@@ -1430,6 +1430,6 @@ export const enUS = {
   },
   fees: {
     withdraw: "Withdrawal fee",
-    deposit: "Deposit fee",
+    deposit: "Transfer fee",
   },
 };

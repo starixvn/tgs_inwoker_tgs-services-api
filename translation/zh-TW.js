@@ -1388,6 +1388,6 @@ export const zhTW = {
   },
   fees: {
     withdraw: "提款費",
-    deposit: "存款費",
+    deposit: "手續費",
   },
 };

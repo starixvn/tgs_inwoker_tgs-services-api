@@ -1393,6 +1393,6 @@ export const zhCN = {
   },
   fees: {
     withdraw: "提款费",
-    deposit: "存款费",
+    deposit: "手续费",
   },
 };
