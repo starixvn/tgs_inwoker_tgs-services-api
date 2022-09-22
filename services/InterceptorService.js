@@ -55,6 +55,11 @@ const Interceptor = {
         // config.headers["traceparent"] = parent;//"00-ab42124a3c573678d4d8b21ba52df3bf-d21f7bc17caa5aba-01";
         config.headers["Accept-Language"] = localStorage.getItem("i18nextLng");
 
+        if(config.url.toUpperCase().indexOf("/GAMEPROVIDER/LIST") >= 0)
+        {
+          config.headers["Token"] = "";
+        }
+
         return config;
       },
       function (error) {
