@@ -733,7 +733,7 @@ export const idID = {
     moreInfo: "Info Lebih Lanjut",
     startDate: "Tanggal Mulai: ",
     endDate: "Tanggal Akhir:",
-    judul: "Promosi",
+    title: "Promosi",
     promoType: "Jenis Promosi",
     promoTarget: "Target Promosi",
     promoDetail: "TnC",
