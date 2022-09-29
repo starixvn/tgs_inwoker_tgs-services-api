@@ -1330,6 +1330,7 @@ export const thTH = {
     main: "เสนอหน้าแรก",
     content: "ข้อเสนอ",
     terms: "ข้อเสนอ",
+    dialogDARUnavailableTitle: "หวยเติมเงินหมดเขตแล้ว",
     dialogUnavailableTitle1: "เล่นวันละครั้ง",
     dialogUnavailableTitle2: "พรุ่งนี้มาอีกนะ",
     dialogUnavailableTitle3: "คลิกเพื่อดูข้อเสนอที่ดีเพิ่มเติม",

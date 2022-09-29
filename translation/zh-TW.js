@@ -1315,6 +1315,7 @@ export const zhTW = {
     main: "優惠主頁",
     content: "優惠内容",
     terms: "優惠條規",
+    dialogDARUnavailableTitle: "充值抽獎已結束",
     dialogUnavailableTitle1: "每日限玩一次",
     dialogUnavailableTitle2: "明天再來唷",
     dialogUnavailableTitle3: "點我看更多好康優惠",

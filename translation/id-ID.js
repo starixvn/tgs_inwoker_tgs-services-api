@@ -1350,6 +1350,7 @@ export const idID = {
     main: "Beranda Promosi",
     content: "Konten Promosi",
     terms: "S&K Promosi",
+    dialogDARUnavailableTitle: "Lotre isi ulang telah berakhir",
     dialogUnavailableTitle1: "Mainkan sekali sehari",
     dialogUnavailableTitle2: "Datang lagi besok",
     dialogUnavailableTitle3: "Klik untuk melihat lebih banyak penawaran bagus",

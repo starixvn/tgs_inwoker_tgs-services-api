@@ -1320,6 +1320,7 @@ export const zhCN = {
     main: "优惠主页",
     content: "优惠内容",
     terms: "优惠条规",
+    dialogDARUnavailableTitle: "充值抽奖已结束",
     dialogUnavailableTitle1: "每日限玩一次",
     dialogUnavailableTitle2: "明天再来唷",
     dialogUnavailableTitle3: "点我看更多好康优惠",

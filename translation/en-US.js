@@ -1353,6 +1353,7 @@ export const enUS = {
     main: "Promotion Home",
     content: "Promotion Content",
     terms: "Promotion T&C",
+    dialogDARUnavailableTitle: "Deposit Roulette has ended",
     dialogUnavailableTitle1: "Play once a day",
     dialogUnavailableTitle2: "Come again tomorrow",
     dialogUnavailableTitle3: "Click to see more good deals",

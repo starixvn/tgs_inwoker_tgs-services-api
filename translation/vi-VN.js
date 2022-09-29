@@ -1335,6 +1335,7 @@ export const vivN = {
     main: "Trang chủ ưu đãi",
     content: "Ưu đãi",
     terms: "Ưu đãi",
+    dialogDARUnavailableTitle: "Xổ số nạp tiền đã kết thúc",
     dialogUnavailableTitle1: "Chơi mỗi ngày một lần",
     dialogUnavailableTitle2: "Hãy đến lại vào ngày mai",
     dialogUnavailableTitle3: "Click để xem thêm nhiều ưu đãi tốt",
