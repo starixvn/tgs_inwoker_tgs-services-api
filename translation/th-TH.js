@@ -1335,6 +1335,8 @@ export const thTH = {
     dialogUnavailableTitle2: "พรุ่งนี้มาอีกนะ",
     dialogUnavailableTitle3: "คลิกเพื่อดูข้อเสนอที่ดีเพิ่มเติม",
     dialogRewardTitle1: "ยินดีด้วยกับชัยชนะของคุณ",
+    dialogErrorTitle1: "ไม่สามารถชิงโชคได้",
+    dialogErrorTitle2: "โปรดลองอีกครั้งในภายหลัง",
   },
   idr1HomePage: {
     section1: {

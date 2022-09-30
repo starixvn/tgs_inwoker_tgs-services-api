@@ -1340,6 +1340,8 @@ export const vivN = {
     dialogUnavailableTitle2: "Hãy đến lại vào ngày mai",
     dialogUnavailableTitle3: "Click để xem thêm nhiều ưu đãi tốt",
     dialogRewardTitle1: "chúc mừng chiến thắng của bạn",
+    dialogErrorTitle1: "Không thể rút thăm trúng thưởng",
+    dialogErrorTitle2: "Vui lòng thử lại sau",
   },
   idr1HomePage: {
     section1: {

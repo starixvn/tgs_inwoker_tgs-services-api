@@ -1320,6 +1320,8 @@ export const zhTW = {
     dialogUnavailableTitle2: "明天再來唷",
     dialogUnavailableTitle3: "點我看更多好康優惠",
     dialogRewardTitle1: "恭喜您贏得",
+    dialogErrorTitle1: "無法進行抽獎",
+    dialogErrorTitle2: "請稍後再試",
   },
   idr1HomePage: {
     section1: {

@@ -1325,6 +1325,8 @@ export const zhCN = {
     dialogUnavailableTitle2: "明天再来唷",
     dialogUnavailableTitle3: "点我看更多好康优惠",
     dialogRewardTitle1: "恭喜您赢得",
+    dialogErrorTitle1: "无法进行抽奖",
+    dialogErrorTitle2: "请稍后再试",
   },
   idr1HomePage: {
     section1: {

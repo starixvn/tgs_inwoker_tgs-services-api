@@ -1355,6 +1355,8 @@ export const idID = {
     dialogUnavailableTitle2: "Datang lagi besok",
     dialogUnavailableTitle3: "Klik untuk melihat lebih banyak penawaran bagus",
     dialogRewardTitle1: "Selamat atas kemenangan",
+    dialogErrorTitle1: "Undian tidak mungkin",
+    dialogErrorTitle2: "Silakan coba lagi nanti",
   },
 
   idr1HomePage: {

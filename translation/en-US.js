@@ -1358,6 +1358,8 @@ export const enUS = {
     dialogUnavailableTitle2: "Come again tomorrow",
     dialogUnavailableTitle3: "Click to see more good deals",
     dialogRewardTitle1: "Congratulations on winning",
+    dialogErrorTitle1: "Failed to play Roulette",
+    dialogErrorTitle2: "Please try again later",
   },
 
   idr1HomePage: {
