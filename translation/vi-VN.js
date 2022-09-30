@@ -1342,6 +1342,7 @@ export const vivN = {
     dialogRewardTitle1: "chúc mừng chiến thắng của bạn",
     dialogErrorTitle1: "Không thể rút thăm trúng thưởng",
     dialogErrorTitle2: "Vui lòng thử lại sau",
+    dialogIndexErrorTitle1: "Người chơi vui lòng làm mới",
   },
   idr1HomePage: {
     section1: {

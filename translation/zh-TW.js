@@ -1322,6 +1322,7 @@ export const zhTW = {
     dialogRewardTitle1: "恭喜您贏得",
     dialogErrorTitle1: "無法進行抽獎",
     dialogErrorTitle2: "請稍後再試",
+    dialogIndexErrorTitle1: "請玩家重新整理",
   },
   idr1HomePage: {
     section1: {

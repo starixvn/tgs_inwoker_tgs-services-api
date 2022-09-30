@@ -1357,6 +1357,7 @@ export const idID = {
     dialogRewardTitle1: "Selamat atas kemenangan",
     dialogErrorTitle1: "Undian tidak mungkin",
     dialogErrorTitle2: "Silakan coba lagi nanti",
+    dialogIndexErrorTitle1: "Pemain harap segarkan",
   },
 
   idr1HomePage: {

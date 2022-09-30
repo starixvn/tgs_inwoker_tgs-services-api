@@ -1337,6 +1337,7 @@ export const thTH = {
     dialogRewardTitle1: "ยินดีด้วยกับชัยชนะของคุณ",
     dialogErrorTitle1: "ไม่สามารถชิงโชคได้",
     dialogErrorTitle2: "โปรดลองอีกครั้งในภายหลัง",
+    dialogIndexErrorTitle1: "ผู้เล่นโปรดรีเฟรช",
   },
   idr1HomePage: {
     section1: {

@@ -1360,6 +1360,7 @@ export const enUS = {
     dialogRewardTitle1: "Congratulations on winning",
     dialogErrorTitle1: "Failed to play Roulette",
     dialogErrorTitle2: "Please try again later",
+    dialogIndexErrorTitle1: "Player please refresh",
   },
 
   idr1HomePage: {
