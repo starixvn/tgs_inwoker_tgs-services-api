@@ -1020,6 +1020,9 @@ export const zhCN = {
   SBO: {
     sports: "SBO体育",
   },
+  SBOTF: {
+    sports: "SBOTF体育",
+  },
   IMES: {
     sports: "IM电竞",
     esports: "IM电竞",

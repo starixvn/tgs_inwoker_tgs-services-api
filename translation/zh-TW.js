@@ -1013,6 +1013,9 @@ export const zhTW = {
   SBO: {
     sports: "SBO體育",
   },
+  SBOTF: {
+    sports: "SBOTF體育",
+  },
   IMES: {
     sports: "IM電競",
     esports: "IM電競",

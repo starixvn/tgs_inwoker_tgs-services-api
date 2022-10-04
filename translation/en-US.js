@@ -1047,6 +1047,9 @@ export const enUS = {
   SBO: {
     sports: "SBO",
   },
+  SBOTF: {
+    sports: "SBOTF",
+  },
   IMES: {
     sports: "IM",
     esports: "IM",
