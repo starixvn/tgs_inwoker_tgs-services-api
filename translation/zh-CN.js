@@ -1362,6 +1362,10 @@ export const zhCN = {
       title: "Game of KING - 专业娱乐平台",
       description: "专业娱乐平台",
     },
+    WGHK: {
+      title: "MGM Sports - 专业娱乐平台",
+      description: "专业娱乐平台",
+    },
   },
   t10: {
     home: {
