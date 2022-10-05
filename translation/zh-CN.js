@@ -1361,10 +1361,12 @@ export const zhCN = {
     KING8: {
       title: "Game of KING - 专业娱乐平台",
       description: "专业娱乐平台",
+      footer: "Game of KING",
     },
     WGHK: {
       title: "MGM Sports - 专业娱乐平台",
       description: "专业娱乐平台",
+      footer: "MGM Sports"
     },
   },
   t10: {

@@ -1397,10 +1397,12 @@ export const enUS = {
     KING8: {
       title: "Game of KING | The Biggest & Most Trusted Online Casino",
       description: "The Biggest & Most Trusted Online Casino",
+      footer: "Game of KING",
     },
     WGHK: {
       title: "MGM Sports | The Biggest & Most Trusted Online Casino",
       description: "The Biggest & Most Trusted Online Casino",
+      footer: "MGM Sports",
     },
   },
   t10: {

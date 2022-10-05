@@ -1356,10 +1356,12 @@ export const zhTW = {
     KING8: {
       title: "Game of KING - 專業娛樂平台",
       description: "專業娛樂平台",
+      footer: "Game of KING",
     },
     WGHK: {
       title: "MGM Sports - 專業娛樂平台",
       description: "專業娛樂平台",
+      footer: "MGM Sports"
     },
   },
   t10: {
