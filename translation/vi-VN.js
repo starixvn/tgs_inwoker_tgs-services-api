@@ -1385,6 +1385,10 @@ export const vivN = {
       description: "The Biggest & Most Trusted Online Casino",
       footer: "MGM Sports"
     },
+    WGHK: {
+      title: "MGM Sports | The Biggest & Most Trusted Online Casino",
+      description: "The Biggest & Most Trusted Online Casino",
+    },
   },
   t10: {
     home: {
