@@ -1368,10 +1368,6 @@ export const zhCN = {
       description: "专业娱乐平台",
       footer: "MGM Sports"
     },
-    WGHK: {
-      title: "MGM Sports - 专业娱乐平台",
-      description: "专业娱乐平台",
-    },
   },
   t10: {
     home: {

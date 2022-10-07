@@ -1363,10 +1363,6 @@ export const zhTW = {
       description: "專業娛樂平台",
       footer: "MGM Sports"
     },
-    WGHK: {
-      title: "MGM Sports - 專業娛樂平台",
-      description: "專業娛樂平台",
-    },
   },
   t10: {
     home: {
