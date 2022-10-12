@@ -1122,6 +1122,9 @@ export const idID = {
   },
   WGFM: {
     sports: "WG Sports",
+    TIGER: {
+      sports: "Tiger Sports"
+    },
   },
   WGVIA: {
     sports: "WG Horserace",

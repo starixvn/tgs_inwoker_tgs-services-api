@@ -1093,6 +1093,9 @@ export const zhTW = {
   },
   WGFM: {
     sports: "WG體育",
+    TIGER: {
+      sports: "老虎體育"
+    },
   },
   WGVIA: {
     sports: "WG賽馬",
