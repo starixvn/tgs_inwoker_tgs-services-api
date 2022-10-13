@@ -1317,6 +1317,11 @@ export const zhCN = {
     pleaseEnterAccountName: "请输入银行名称",
     msgPlsSelectAccount: "请选择帐号",
   },
+  king8: {
+    EWallet: "电子货币",
+    FPS: " 转速快",
+    ThirdParty: "便利店现金"
+  },
   pointless: {
     download: "APP链接载点",
     copy: "已复制",
