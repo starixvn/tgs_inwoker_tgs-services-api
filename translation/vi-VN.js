@@ -1110,6 +1110,9 @@ export const vivN = {
   },
   WGFM: {
     sports: "WG Sports",
+    TIGER: {
+      sports: "Tiger Sports"
+    },
   },
   WGVIA: {
     sports: "WG Horserace",

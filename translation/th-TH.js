@@ -1102,6 +1102,9 @@ export const thTH = {
   },
   WGFM: {
     sports: "WG Sports",
+    TIGER: {
+      sports: "Tiger Sports"
+    },
   },
   WGVIA: {
     sports: "WG Horserace",

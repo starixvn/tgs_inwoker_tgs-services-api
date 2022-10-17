@@ -1127,6 +1127,9 @@ export const enUS = {
   },
   WGFM: {
     sports: "WG Sports",
+    TIGER: {
+      sports: "Tiger Sports"
+    },
   },
   WGVIA: {
     sports: "WG Horserace",

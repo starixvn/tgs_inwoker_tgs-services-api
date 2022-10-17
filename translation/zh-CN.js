@@ -1100,6 +1100,9 @@ export const zhCN = {
   },
   WGFM: {
     sports: "WG体育",
+    TIGER: {
+      sports: "老虎体育"
+    },
   },
   WGVIA: {
     sports: "WG赛马",
