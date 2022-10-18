@@ -1311,7 +1311,11 @@ export const zhTW = {
     pleaseEnterAccountName: "請输入銀行名稱",
     msgPlsSelectAccount: "請選擇帳號",
   },
-
+  king8: {
+    EWallet: "電子貨幣",
+    FPS: "轉速快",
+    ThirdParty: "便利店現金"
+  },
   pointless: {
     download: "APP鏈接載點",
     copy: "已復制",

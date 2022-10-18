@@ -1349,7 +1349,11 @@ export const enUS = {
     pleaseEnterAccountName: "Please enter your origin account",
     msgPlsSelectAccount: "Please select account",
   },
-
+  king8: {
+    EWallet: "E-money",
+    FPS: "FPS",
+    ThirdParty: "Cash(7-11/Circle K)"
+  },
   pointless: {
     download: "APP Download",
     copy: "Successful Copy",
