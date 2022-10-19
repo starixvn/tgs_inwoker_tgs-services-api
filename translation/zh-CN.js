@@ -1319,7 +1319,7 @@ export const zhCN = {
   },
   king8: {
     EWallet: "电子货币",
-    FPS: " 转速快",
+    FPS: " 转数快",
     ThirdParty: "便利店现金"
   },
   pointless: {
