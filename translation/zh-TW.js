@@ -1313,7 +1313,7 @@ export const zhTW = {
   },
   king8: {
     EWallet: "電子貨幣",
-    FPS: "轉速快",
+    FPS: "轉數快",
     ThirdParty: "便利店現金"
   },
   pointless: {
