@@ -1,3 +1,4 @@
+import config from "../../config/config";
 import {
   KYGAMELIST_SUCCESS,
   GETHOMEPAGEGAMELIST_BEGIN,
@@ -49,12 +50,24 @@ export function gameReducer(state = initialState, action) {
             (gameList[i].gametypes[x] === GameTypeEnum.RNGSPORTS &&
               gameList[i].code === "PPTF")
           ) {
+            //the reason having two variable is because apparently name and code is different
+            //if use code on both abbreviation and name, the either one of those will fucked up.
+            var newcode;
+            var newname;
+            if (gameList[i].code === "BTI" && config.currency === "PHP") {
+              newcode = "PHSB";
+              newname = "PHSB";
+            } else {
+              newcode = gameList[i].code;
+              newname = gameList[i].name;
+            }
+
             list.push({
-              abbreviation: gameList[i].code,
+              abbreviation: newcode,
               game_platform_id: 0,
               game_platform_name: gameList[i].name,
               is_try: 2,
-              name: gameList[i].name,
+              name: newname,
               params: null,
               type: gameList[i].gametypes[x],
               status: gameList[i].status,
@@ -62,9 +75,9 @@ export function gameReducer(state = initialState, action) {
           }
         }
         providerList.push({
-          abbreviation: gameList[i].code,
+          abbreviation: newcode,
           transferwallet: gameList[i].transferwallet,
-          name: gameList[i].name,
+          name: newname,
           status: gameList[i].status,
           balance: 0,
         });
