@@ -1087,6 +1087,12 @@ export const zhCN = {
     live: "EVO真人",
     slots: "EVO老虎机",
   },
+  BTI: {
+    sports: "BTI体育",
+  },
+  PHSB: {
+    sports: "PHSB体育",
+  },
   AB: {
     live: "Allbet真人",
   },

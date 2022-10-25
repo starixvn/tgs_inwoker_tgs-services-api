@@ -1115,6 +1115,12 @@ export const enUS = {
     live: "Evolution",
     slots: "Evolution",
   },
+  BTI: {
+    sports: "BTI",
+  },
+  PHSB: {
+    sports: "PHSB",
+  },
   AB: {
     live: "Allbet",
   },

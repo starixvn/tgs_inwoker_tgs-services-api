@@ -1098,6 +1098,12 @@ export const vivN = {
     live: "Tiến hóa",
     slots: "Evolution",
   },
+  BTI: {
+    sports: "BTI",
+  },
+  PHSB: {
+    sports: "PHSB",
+  },
   AB: {
     live: "Allbet",
   },
