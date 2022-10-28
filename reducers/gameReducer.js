@@ -69,6 +69,7 @@ export function gameReducer(state = initialState, action) {
               is_try: 2,
               name: newname,
               params: null,
+              gpcode: gameList[i].code,
               type: gameList[i].gametypes[x],
               status: gameList[i].status,
             });
@@ -78,6 +79,7 @@ export function gameReducer(state = initialState, action) {
           abbreviation: newcode,
           transferwallet: gameList[i].transferwallet,
           name: newname,
+          gpcode: gameList[i].code,
           status: gameList[i].status,
           balance: 0,
         });
