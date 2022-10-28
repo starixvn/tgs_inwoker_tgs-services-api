@@ -130,7 +130,7 @@ export function gameReducer(state = initialState, action) {
       var providerList = [...state.providerList];
       var index = -1;
       providerList.map((a, i) => {
-        if (a.abbreviation === action.gpcode) {
+        if (a.gpcode === action.gpcode) {
           index = i;
         }
       });
