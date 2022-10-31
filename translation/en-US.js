@@ -1068,6 +1068,11 @@ export const enUS = {
     electron: "Habanero",
     fish: "HABA",
   },
+  HABATF: {
+    slots: "Habanero",
+    electron: "Habanero",
+    fish: "HABA",
+  },
   JDB: {
     slots: "JDB",
     fish: "JDB",

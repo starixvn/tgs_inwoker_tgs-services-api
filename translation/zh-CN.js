@@ -1040,6 +1040,11 @@ export const zhCN = {
     electron: "HABANERO电子",
     fish: "HABANERO捕鱼",
   },
+  HABATF: {
+    slots: "HABANERO老虎机",
+    electron: "HABANERO电子",
+    fish: "HABANERO捕鱼",
+  },
   JDB: {
     slots: "JDB老虎机",
     fish: "JDB捕鱼",
