@@ -1037,6 +1037,9 @@ export const thTH = {
   SABA: {
     sports: "SABA",
   },
+  SABATF: {
+    sports: "SABA",
+  },
   HABA: {
     slots: "Habanero",
     electron: "Habanero",
@@ -1363,6 +1366,11 @@ export const thTH = {
     dialogErrorTitle1: "ไม่สามารถชิงโชคได้",
     dialogErrorTitle2: "โปรดลองอีกครั้งในภายหลัง",
     dialogIndexErrorTitle1: "ผู้เล่นโปรดรีเฟรช",
+    remainingSpin: "คุณยังมี {rouletteCount} โอกาส !",
+    history: "บันทึกที่ชนะ",
+    winningID: "รางวัลชนะเลิศ ID",
+    dateTime: "เวลา",
+    winnings: "เนื้อหาที่ชนะ",
   },
   idr1HomePage: {
     section1: {

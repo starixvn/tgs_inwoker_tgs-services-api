@@ -1058,6 +1058,9 @@ export const idID = {
   SABA: {
     sports: "SABA",
   },
+  SABATF: {
+    sports: "SABA",
+  },
   HABA: {
     slots: "Habanero",
     electron: "Habanero",
@@ -1384,6 +1387,11 @@ export const idID = {
     dialogErrorTitle1: "Undian tidak mungkin",
     dialogErrorTitle2: "Silakan coba lagi nanti",
     dialogIndexErrorTitle1: "Pemain harap segarkan",
+    remainingSpin: "Sisa {roulettecount} putaran!",
+    history: "Rekor menang",
+    winningID: "Kemenangan ID",
+    dateTime: "Waktu",
+    winnings: "Kemenangan",
   },
 
   idr1HomePage: {

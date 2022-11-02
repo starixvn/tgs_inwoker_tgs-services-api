@@ -1035,6 +1035,9 @@ export const zhCN = {
   SABA: {
     sports: "沙巴体育",
   },
+  SABATF: {
+    sports: "沙巴体育",
+  },
   HABA: {
     slots: "HABANERO老虎机",
     electron: "HABANERO电子",
@@ -1358,6 +1361,11 @@ export const zhCN = {
     dialogErrorTitle1: "无法进行抽奖",
     dialogErrorTitle2: "请稍后再试",
     dialogIndexErrorTitle1: "请玩家重新整理",
+    remainingSpin: "您还有 {rouletteCount} 次机会 !",
+    history: "中奖记录",
+    winningID: "中奖 ID",
+    dateTime: "时间",
+    winnings: "中奖内容",
   },
   idr1HomePage: {
     section1: {

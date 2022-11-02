@@ -1063,6 +1063,9 @@ export const enUS = {
   SABA: {
     sports: "SABA",
   },
+  SABATF: {
+    sports: "SABA",
+  },
   HABA: {
     slots: "Habanero",
     electron: "Habanero",
@@ -1391,6 +1394,11 @@ export const enUS = {
     dialogErrorTitle1: "Failed to play Roulette",
     dialogErrorTitle2: "Please try again later",
     dialogIndexErrorTitle1: "Player please refresh",
+    remainingSpin: "Remaining {rouletteCount} Spin(s) !",
+    history: "History",
+    winningID: "Winning ID",
+    dateTime: "Date & Time",
+    winnings: "Winnings",
   },
 
   idr1HomePage: {

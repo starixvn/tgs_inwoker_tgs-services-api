@@ -1046,6 +1046,9 @@ export const vivN = {
   SABA: {
     sports: "SABA",
   },
+  SABATF: {
+    sports: "SABA",
+  },
   HABA: {
     slots: "Habanero",
     electron: "Habanero",
@@ -1369,6 +1372,11 @@ export const vivN = {
     dialogErrorTitle1: "Không thể rút thăm trúng thưởng",
     dialogErrorTitle2: "Vui lòng thử lại sau",
     dialogIndexErrorTitle1: "Người chơi vui lòng làm mới",
+    remainingSpin: "Bạn vẫn còn {rouletteCount} Cơ hội !",
+    history: "Kỷ lục chiến thắng",
+    winningID: "Giải thưởng chiến thắng ID",
+    dateTime: "thời gian",
+    winnings: "Nội dung chiến thắng",
   },
   idr1HomePage: {
     section1: {
