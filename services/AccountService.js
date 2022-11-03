@@ -30,9 +30,8 @@ export const AccountService = {
   VerifyForgotPassword,
   ResetPassword,
   GetIDCardNo,
-  GetPromoteUser,
+
   GetPromoteBill,
-  UpdateMemberName,
   UploadIC,
   SetBirthDate,
   //TGS-883
@@ -267,28 +266,10 @@ function GetIDCardNo() {
 
   return result;
 }
-function GetPromoteUser(page, limit) {
-  const result = ApiService.get(
-    `pc/user/promoteUser?page=${page}&page_size=${limit}`
-  );
 
-  return result;
-}
 function GetPromoteBill(page, limit) {
   const result = ApiService.get(
     `pc/userPromoteBill?page=${page}&page_size=${limit}`
-  );
-
-  return result;
-}
-function UpdateMemberName(token, name) {
-  const result = ApiService.post(
-    "member/editSurename",
-    {
-      name,
-      token,
-    },
-    true
   );
 
   return result;

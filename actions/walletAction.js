@@ -29,9 +29,6 @@ import {
   UPDATEBALANCELIST_BEGIN,
   UPDATEBALANCELIST_SUCCESS,
   UPDATEBALANCELIST_FAIL,
-  CANCELDEPOSIT_BEGIN,
-  CANCELDEPOSIT_SUCCESS,
-  CANCELDEPOSIT_FAIL,
   DOWITHDRAWALALL_BEGIN,
   DOWITHDRAWALALL_SUCCESS,
   DOWITHDRAWALALL_FAIL,
@@ -44,21 +41,12 @@ import {
   ADDBILLING_BEGIN,
   ADDBILLING_SUCCESS,
   ADDBILLING_FAIL,
-  DOLEEPAYDEPOSIT_BEGIN,
-  DOLEEPAYDEPOSIT_SUCCESS,
-  DOLEEPAYDEPOSIT_FAIL,
   DOUMPAYDEPOSIT_BEGIN,
   DOUMPAYDEPOSIT_SUCCESS,
   DOUMPAYDEPOSIT_FAIL,
   DOWITHDRAWAL_BEGIN,
   DOWITHDRAWAL_SUCCESS,
   DOWITHDRAWAL_FAIL,
-  DOPRIMEPAYDEPOSIT_BEGIN,
-  DOPRIMEPAYDEPOSIT_SUCCESS,
-  DOPRIMEPAYDEPOSIT_FAIL,
-  DOAPPLEPAYDEPOSIT_BEGIN,
-  DOAPPLEPAYDEPOSIT_SUCCESS,
-  DOAPPLEPAYDEPOSIT_FAIL,
   GETAUTOTRANSFER_BEGIN,
   GETAUTOTRANSFER_SUCCESS,
   GETAUTOTRANSFER_FAIL,
@@ -85,17 +73,12 @@ export const walletAction = {
   getDepositMethod,
   doUploadDepositProof,
   getWithdrawalChannel,
-  doLeePayDeposit,
-  doPrimePayDeposit,
-  doMaticPayDeposit,
-  doApplePayDeposit,
   getBankCardList,
   initBankCard,
   addBankCard,
   deleteBankCard,
   getBalanceList,
   updateBalanceList,
-  cancelDeposit,
   doWithdrawAll,
   doTransfer,
   doWithdrawalFromGame,
@@ -105,13 +88,10 @@ export const walletAction = {
   getAutoTransferStatus,
   updateAutoTransferStatus,
   doUmPayCryptoDeposit,
-  doUmPayBankDeposit,
   doFPSDeposit,
   doFPSDepositWithName,
   doThirdPartyDeposit,
   doBankDeposit,
-  doHelp2PayDeposit,
-  doSkyPayDeposit,
   doBankDeposit2,
   doCryptoDeposit,
   performDeposit,
@@ -447,7 +427,14 @@ function doPulsaDeposit(amount, paymentid, promotionid, banktype, note) {
   };
 }
 
-function doEWalletDeposit(amount, paymentid, promotionid, banktype, note, emoneyname) {
+function doEWalletDeposit(
+  amount,
+  paymentid,
+  promotionid,
+  banktype,
+  note,
+  emoneyname
+) {
   return (dispatch) => {
     dispatch({
       type: DODEPOSIT_BEGIN,
@@ -488,80 +475,6 @@ function doEWalletDeposit(amount, paymentid, promotionid, banktype, note, emoney
   };
 }
 
-function doLeePayDeposit(amount, paymentid, promotionid) {
-  return (dispatch) => {
-    dispatch({
-      type: DOLEEPAYDEPOSIT_BEGIN,
-      loading: true,
-    });
-    const result = WalletService.PerformLeePayDeposit(
-      amount,
-      paymentid,
-      promotionid
-    )
-      .then((response) => {
-        if (response.IsSuccess) {
-          dispatch({
-            type: DOLEEPAYDEPOSIT_SUCCESS,
-            payload: response,
-            loading: true,
-          });
-        } else {
-          dispatch({
-            type: DOLEEPAYDEPOSIT_FAIL,
-            payload: response,
-            loading: false,
-          });
-        }
-        return response;
-      })
-      .catch((error) => {
-        dispatch({
-          type: DOLEEPAYDEPOSIT_FAIL,
-          payload: error,
-          loading: false,
-        });
-      });
-    return result;
-  };
-}
-function doUmPayBankDeposit(amount, paymentid, promotionid) {
-  return (dispatch) => {
-    dispatch({
-      type: DOUMPAYDEPOSIT_BEGIN,
-      loading: true,
-    });
-    const result = WalletService.PerformUmPayBankDeposit(
-      amount,
-      paymentid,
-      promotionid
-    )
-      .then((response) => {
-        if (response.IsSuccess) {
-          dispatch({
-            type: DOUMPAYDEPOSIT_SUCCESS,
-            payload: response,
-            loading: true,
-          });
-        } else {
-          dispatch({
-            type: DOUMPAYDEPOSIT_FAIL,
-            payload: response,
-            loading: false,
-          });
-        }
-        return response;
-      })
-      .catch((error) => {
-        dispatch({
-          type: DOUMPAYDEPOSIT_FAIL,
-          payload: error,
-          loading: false,
-        });
-      });
-    return result;
-  };
-}
 function doUmPayCryptoDeposit(amount, paymentid, promotionid) {
   return (dispatch) => {
     dispatch({
@@ -599,193 +512,7 @@ function doUmPayCryptoDeposit(amount, paymentid, promotionid) {
     return result;
   };
 }
-function doPrimePayDeposit(amount, paymentid, promotionid) {
-  return (dispatch) => {
-    dispatch({
-      type: DOPRIMEPAYDEPOSIT_BEGIN,
-      loading: true,
-    });
-    const result = WalletService.PerformPrimePayDeposit(
-      amount,
-      paymentid,
-      promotionid
-    )
-      .then((response) => {
-        if (response.IsSuccess) {
-          dispatch({
-            type: DOPRIMEPAYDEPOSIT_SUCCESS,
-            payload: response,
-            loading: true,
-          });
-        } else {
-          dispatch({
-            type: DOPRIMEPAYDEPOSIT_FAIL,
-            payload: response,
-            loading: false,
-          });
-        }
-        return response;
-      })
-      .catch((error) => {
-        dispatch({
-          type: DOPRIMEPAYDEPOSIT_FAIL,
-          payload: error,
-          loading: false,
-        });
-      });
-    return result;
-  };
-}
-function doMaticPayDeposit(amount, paymentid, promotionid) {
-  return (dispatch) => {
-    dispatch({
-      type: DOBANKDEPOSIT_BEGIN,
-      loading: true,
-    });
-    const result = WalletService.PerformMaticPayDeposit(
-      amount,
-      paymentid,
-      promotionid
-    )
-      .then((response) => {
-        if (response.IsSuccess) {
-          dispatch({
-            type: DOBANKDEPOSIT_SUCCESS,
-            payload: response,
-            loading: true,
-          });
-        } else {
-          dispatch({
-            type: DOBANKDEPOSIT_FAILED,
-            payload: response,
-            loading: false,
-          });
-        }
-        return response;
-      })
-      .catch((error) => {
-        dispatch({
-          type: DOBANKDEPOSIT_FAILED,
-          payload: error,
-          loading: false,
-        });
-      });
-    return result;
-  };
-}
 
-function doHelp2PayDeposit(amount, paymentid, promotionid) {
-  return (dispatch) => {
-    dispatch({
-      type: DOBANKDEPOSIT_BEGIN,
-      loading: true,
-    });
-    const result = WalletService.PerformHelp2PayDeposit(
-      amount,
-      paymentid,
-      promotionid
-    )
-      .then((response) => {
-        if (response.IsSuccess) {
-          dispatch({
-            type: DOBANKDEPOSIT_SUCCESS,
-            payload: response,
-            loading: true,
-          });
-        } else {
-          dispatch({
-            type: DOBANKDEPOSIT_FAILED,
-            payload: response,
-            loading: false,
-          });
-        }
-        return response;
-      })
-      .catch((error) => {
-        dispatch({
-          type: DOBANKDEPOSIT_FAILED,
-          payload: error,
-          loading: false,
-        });
-      });
-    return result;
-  };
-}
-function doSkyPayDeposit(amount, paymentid, promotionid) {
-  return (dispatch) => {
-    dispatch({
-      type: DOBANKDEPOSIT_SUCCESS,
-      loading: true,
-    });
-    const result = WalletService.PerformSkyPayDeposit(
-      amount,
-      paymentid,
-      promotionid
-    )
-      .then((response) => {
-        if (response.IsSuccess) {
-          dispatch({
-            type: DOBANKDEPOSIT_SUCCESS,
-            payload: response,
-            loading: true,
-          });
-        } else {
-          dispatch({
-            type: DOBANKDEPOSIT_FAILED,
-            payload: response,
-            loading: false,
-          });
-        }
-        return response;
-      })
-      .catch((error) => {
-        dispatch({
-          type: DOBANKDEPOSIT_FAILED,
-          payload: error,
-          loading: false,
-        });
-      });
-    return result;
-  };
-}
-function doApplePayDeposit(amount, paymentid, promotionid, transname) {
-  return (dispatch) => {
-    dispatch({
-      type: DOAPPLEPAYDEPOSIT_BEGIN,
-      loading: true,
-    });
-    const result = WalletService.PerformApplePayDeposit(
-      amount,
-      paymentid,
-      promotionid,
-      transname
-    )
-      .then((response) => {
-        if (response.IsSuccess) {
-          dispatch({
-            type: DOAPPLEPAYDEPOSIT_SUCCESS,
-            payload: response,
-            loading: true,
-          });
-        } else {
-          dispatch({
-            type: DOAPPLEPAYDEPOSIT_FAIL,
-            payload: response,
-            loading: false,
-          });
-        }
-        return response;
-      })
-      .catch((error) => {
-        dispatch({
-          type: DOAPPLEPAYDEPOSIT_FAIL,
-          payload: error,
-          loading: false,
-        });
-      });
-    return result;
-  };
-}
 function doUploadDepositProof(id, file, payload) {
   return (dispatch) => {
     dispatch({
@@ -1073,42 +800,7 @@ function updateBalanceList() {
     return result;
   };
 }
-function cancelDeposit(id) {
-  return (dispatch) => {
-    dispatch({
-      type: CANCELDEPOSIT_BEGIN,
-      loading: true,
-    });
-    const result = WalletService.CancelDeposit(id)
-      .then((response) => {
-        if (response.IsSuccess) {
-          dispatch({
-            type: CANCELDEPOSIT_SUCCESS,
-            payload: response,
-            loading: false,
-          });
 
-          // AppHistory.push("/");
-        } else {
-          dispatch({
-            type: CANCELDEPOSIT_FAIL,
-            payload: response,
-            loading: false,
-          });
-        }
-        return response;
-      })
-      .catch((e) => {
-        dispatch({
-          type: CANCELDEPOSIT_FAIL,
-          payload: e.status,
-          loading: false,
-        });
-      });
-
-    return result;
-  };
-}
 function doWithdrawAll() {
   return (dispatch) => {
     dispatch({
@@ -1452,7 +1144,12 @@ function doWithdraw(amount, bankinfoid, paypassword, note) {
       type: DOWITHDRAWAL_BEGIN,
       loading: true,
     });
-    const result = WalletService.DoWithdraw(amount, bankinfoid, paypassword, note)
+    const result = WalletService.DoWithdraw(
+      amount,
+      bankinfoid,
+      paypassword,
+      note
+    )
       .then((response) => {
         if (response.IsSuccess) {
           dispatch({
@@ -1606,7 +1303,14 @@ function doBankDepositWithDetail(
   };
 }
 
-function doPulsaDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail) {
+function doPulsaDepositWithDetail(
+  amount,
+  paymentid,
+  promotionid,
+  banktype,
+  note,
+  detail
+) {
   return (dispatch) => {
     dispatch({
       type: DODEPOSIT_BEGIN,
@@ -1647,7 +1351,15 @@ function doPulsaDepositWithDetail(amount, paymentid, promotionid, banktype, note
   };
 }
 
-function doEWalletDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail, emoneyname) {
+function doEWalletDepositWithDetail(
+  amount,
+  paymentid,
+  promotionid,
+  banktype,
+  note,
+  detail,
+  emoneyname
+) {
   return (dispatch) => {
     dispatch({
       type: DODEPOSIT_BEGIN,

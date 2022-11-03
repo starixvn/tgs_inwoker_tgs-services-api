@@ -3,7 +3,6 @@ import {
   GETDEPOSITCHANNEL_SUCCESS,
   GETDEPOSITCHANNEL_FAIL,
   LOGOUT_SUCCESS,
-  CANCELDEPOSIT_BEGIN,
   CANCELDEPOSIT_SUCCESS,
   CANCELDEPOSIT_FAIL,
   DOMANUALDEPOSIT_BEGIN,
@@ -47,15 +46,9 @@ import {
   GETWITHDRAWALCHANNEL_BEGIN,
   GETWITHDRAWALCHANNEL_SUCCESS,
   GETWITHDRAWALCHANNEL_FAILED,
-  DOLEEPAYDEPOSIT_BEGIN,
-  DOLEEPAYDEPOSIT_SUCCESS,
-  DOLEEPAYDEPOSIT_FAIL,
   DOUMPAYDEPOSIT_BEGIN,
   DOUMPAYDEPOSIT_SUCCESS,
   DOUMPAYDEPOSIT_FAIL,
-  DOPRIMEPAYDEPOSIT_BEGIN,
-  DOPRIMEPAYDEPOSIT_SUCCESS,
-  DOPRIMEPAYDEPOSIT_FAIL,
   DOMATICPAYDEPOSIT_BEGIN,
   DOMATICPAYDEPOSIT_SUCCESS,
   DOMATICPAYDEPOSIT_FAIL,
@@ -529,12 +522,6 @@ const walletReducer = (state = initState, action) => {
         transferLoading: false,
       };
 
-    case DOMANUALDEPOSIT_BEGIN:
-      return {
-        ...state,
-        message: "",
-        depositLoading: true,
-      };
     case DOMANUALDEPOSIT_SUCCESS:
     case DOMANUALDEPOSIT_FAILED:
       return {
@@ -542,38 +529,17 @@ const walletReducer = (state = initState, action) => {
         depositResult: action.payload,
         depositLoading: false,
       };
-    case CANCELDEPOSIT_BEGIN:
-      return {
-        ...state,
-        message: "",
-        depositLoading: true,
-      };
-    case CANCELDEPOSIT_SUCCESS:
-    case CANCELDEPOSIT_FAIL:
-      return {
-        ...state,
-        cancelDepositResult: action.payload,
-        depositLoading: false,
-      };
+
     case DOMANUALDEPOSIT_BEGIN:
       return {
         ...state,
         message: "",
         depositLoading: true,
-      };
-    case DOMANUALDEPOSIT_SUCCESS:
-    case DOMANUALDEPOSIT_FAILED:
-      return {
-        ...state,
-        depositResult: action.payload,
-        depositLoading: false,
       };
     case DOAPPLEPAYDEPOSIT_BEGIN:
     case DOHELP2PAYDEPOSIT_BEGIN:
     case DOSKYPAYDEPOSIT_BEGIN:
-    case DOPRIMEPAYDEPOSIT_BEGIN:
     case DOMATICPAYDEPOSIT_BEGIN:
-    case DOLEEPAYDEPOSIT_BEGIN:
     case DOUMPAYDEPOSIT_BEGIN:
       return {
         ...state,
@@ -586,12 +552,8 @@ const walletReducer = (state = initState, action) => {
     case DOSKYPAYDEPOSIT_SUCCESS:
     case DOAPPLEPAYDEPOSIT_SUCCESS:
     case DOAPPLEPAYDEPOSIT_FAIL:
-    case DOPRIMEPAYDEPOSIT_SUCCESS:
-    case DOPRIMEPAYDEPOSIT_FAIL:
     case DOMATICPAYDEPOSIT_SUCCESS:
     case DOMATICPAYDEPOSIT_FAIL:
-    case DOLEEPAYDEPOSIT_SUCCESS:
-    case DOLEEPAYDEPOSIT_FAIL:
     case DOUMPAYDEPOSIT_SUCCESS:
     case DOUMPAYDEPOSIT_FAIL:
       return {

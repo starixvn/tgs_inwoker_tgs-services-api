@@ -1,10 +1,8 @@
 import { ApiService } from "./ApiService";
-import config from "../../config/config";
 
 export const InboxService = {
   InboxList,
   UpdateReadMessage,
-  DeleteMessage,
 };
 
 function InboxList(language, page, limit) {
@@ -17,13 +15,6 @@ function InboxList(language, page, limit) {
 
 function UpdateReadMessage(ids) {
   const result = ApiService.postArray("letter", ids);
-
-  return result;
-}
-function DeleteMessage(ids) {
-  const result = ApiService.post("member/messageDelete", {
-    ids,
-  });
 
   return result;
 }

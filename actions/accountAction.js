@@ -20,7 +20,6 @@ import {
   GETIDCARDNO_BEGIN,
   GETIDCARDNO_SUCCESS,
   GETIDCARDNO_FAILURE,
-  GETPROMOTEUSER_SUCCESS,
   GETPROMOTEBILL_SUCCESS,
 } from "../constant/actionType";
 
@@ -33,7 +32,7 @@ export const accountAction = {
   registerAccount,
   updateMemberCardNo,
   getIDCardNo,
-  getPromoteUserList,
+
   getPromoteBillList,
   //TGS-883
   newRegister,
@@ -281,21 +280,7 @@ function getIDCardNo() {
     return result;
   };
 }
-function getPromoteUserList(limit, page) {
-  return (dispatch) => {
-    var result = AccountService.GetPromoteUser(page, limit);
-    result.then((response) => {
-      if (response.IsSuccess) {
-        dispatch({
-          type: GETPROMOTEUSER_SUCCESS,
-          payload: response,
-          isNew: page === 0,
-        });
-      }
-    });
-    return result;
-  };
-}
+
 function getPromoteBillList(limit, page) {
   return (dispatch) => {
     var result = AccountService.GetPromoteBill(page, limit);

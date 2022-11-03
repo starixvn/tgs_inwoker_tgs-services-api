@@ -1,23 +1,11 @@
 import { ApiService } from "./ApiService";
 
 export const BonusService = {
-  AvailableList,
   CompletedList,
   ReceiveBonus,
   GetActivityDetails,
 };
 
-function AvailableList(token) {
-  const result = ApiService.post(
-    "bonus_receive/availableList",
-    {
-      token: token,
-    },
-    true
-  );
-
-  return result;
-}
 async function CompletedList(token) {
   const result = await ApiService.post(
     "bonus_receive/receivedList",

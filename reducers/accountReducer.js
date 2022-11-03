@@ -26,7 +26,6 @@ import {
   GETINVITELINK_BEGIN,
   GETINVITELINK_FAILURE,
   GETINVITELINK_SUCCESS,
-  GETPROMOTEUSER_SUCCESS,
   GETPROMOTEBILL_SUCCESS,
   UNAUTHORIZE,
   SETMESSAGEREAD_BEGIN,
@@ -384,16 +383,7 @@ export function accountReducer(state = initialState, action) {
           promote_url: "",
         },
       };
-    case GETPROMOTEUSER_SUCCESS:
-      return {
-        ...state,
-        promote_user: {
-          list: action.isNew
-            ? action.payload.data.list
-            : state.promote_user.list.concat(action.payload.data.list),
-          count: action.payload.data.count,
-        },
-      };
+
     case GETPROMOTEBILL_SUCCESS:
       return {
         ...state,

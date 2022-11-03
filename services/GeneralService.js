@@ -20,7 +20,7 @@ export const GeneralService = {
   GetPromotion,
   GetPromotionRouletteCount,
   GetDepositAccumulateRoulette,
-  GetDepositAccumulateRouletteResult
+  GetDepositAccumulateRouletteResult,
 };
 
 function GetSiteToken() {
@@ -104,7 +104,7 @@ function GetPromotionRouletteResult(id) {
   return result;
 }
 
-function GetPromotion(){
+function GetPromotion() {
   const result = ApiService.get("promotion");
   return result;
 }

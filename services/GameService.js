@@ -6,7 +6,6 @@ export const GameService = {
   JoinGame,
   JoinLobbyGame,
   GetHomePageGameList,
-  GetGamePlatformByType,
 
   SetFavoriteGame,
   RemoveFavoriteGame,
@@ -49,13 +48,6 @@ function JoinGame(gid, gpcode) {
       lobbyurl: window.location.protocol + "//" + window.location.hostname,
     },
   });
-  return result;
-}
-
-function GetGamePlatformByType() {
-  const result = ApiService.get(
-    `GameProvider/list?platformtype=${config.isPC}&language=${i18n.language}&currency=${config.currency}`
-  );
   return result;
 }
 
