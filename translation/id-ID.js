@@ -1488,4 +1488,14 @@ export const idID = {
     withdraw: "Biaya penarikan",
     deposit: "Biaya setoran",
   },
+  TIGER: {
+    login: "Masuk",
+    cs: "hubungi kami",
+    my: "Nomor akun saya",
+    promo: "Promosi",
+    chess: "Poker",
+    sport: "Olahraga",
+    fish: "Fishing",
+    lottery: "Nomor"
+  }
 };

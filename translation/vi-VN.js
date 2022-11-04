@@ -1449,4 +1449,14 @@ export const vivN = {
     withdraw: "Phí rút tiền",
     deposit: "Phí đặt cọc",
   },
+  TIGER: {
+    login: "đăng nhập",
+    cs: "liên hệ chúng tôi",
+    my: "Số tài khoản của tôi",
+    promo: "Khuyến mãi",
+    chess: "bài xì phé",
+    sport: "Thi đấu thể thao",
+    fish: "Trò chơi câu cá",
+    lottery: "Bóng màu"
+  }
 };

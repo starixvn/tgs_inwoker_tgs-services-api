@@ -1430,4 +1430,14 @@ export const zhTW = {
     withdraw: "提款費",
     deposit: "手續費",
   },
+  TIGER: {
+    login: "登入",
+    cs: "聯繫我們",
+    my: "我的賬號",
+    promo: "優惠活動",
+    chess: "撲克",
+    sport: "體育竞技",
+    fish: "捕魚遊戲",
+    lottery: "彩球"
+  }
 };

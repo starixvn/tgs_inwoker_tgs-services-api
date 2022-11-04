@@ -1436,4 +1436,14 @@ export const zhCN = {
     withdraw: "提款费",
     deposit: "手续费",
   },
+  TIGER: {
+    login: "登入",
+    cs: "联系我们",
+    my: "我的账号",
+    promo: "优惠活动",
+    chess: "扑克",
+    sport: "体育竞技",
+    fish: "捕鱼游戏",
+    lottery: "彩球"
+  }
 };

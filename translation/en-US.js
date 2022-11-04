@@ -1472,4 +1472,14 @@ export const enUS = {
     withdraw: "Withdrawal fee",
     deposit: "Transfer fee",
   },
+  TIGER: {
+    login: "Login",
+    cs: "Contact Us",
+    my: "My Account",
+    promo: "Promotion",
+    chess: "Poker",
+    sport: "Sports",
+    fish: "Fishing",
+    lottery: "Number"
+  }
 };
