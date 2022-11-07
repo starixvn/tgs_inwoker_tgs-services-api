@@ -27,12 +27,14 @@ function GetHomePageGameList() {
   );
   return result;
 }
-
+const languageFromLocalStorage = localStorage.getItem("i18nextLng");
+var detectLanguage =
+  languageFromLocalStorage || i18n.language || config.defaultLanguage;
 function JoinLobbyGame(gtype, gpcode) {
   const result = ApiService.post(`Game/lobby/geturl`, {
     gpcode: gpcode,
     gtype: parseInt(gtype),
-    language: i18n.language,
+    language: detectLanguage,
     extends: {
       lobbyurl: window.location.protocol + "//" + window.location.hostname,
     },
@@ -44,7 +46,7 @@ function JoinGame(gid, gpcode) {
   const result = ApiService.post(`Game/geturl`, {
     gpcode: gpcode,
     gid: parseInt(gid),
-    language: i18n.language,
+    language: detectLanguage,
     extends: {
       lobbyurl: window.location.protocol + "//" + window.location.hostname,
     },
