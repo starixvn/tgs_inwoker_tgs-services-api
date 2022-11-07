@@ -1436,7 +1436,7 @@ export const zhTW = {
     my: "我的賬號",
     promo: "優惠活動",
     chess: "撲克",
-    sport: "體育竞技",
+    sport: "體育競技",
     fish: "捕魚遊戲",
     lottery: "彩球"
   }
