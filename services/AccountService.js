@@ -15,13 +15,6 @@ export const AccountService = {
   ChangeWithdrawalPassword,
   AddWithdrawalPassword,
   GetChangeWithdrawalPasswordVerificationCode,
-  UpdateQQ,
-  UpdateWechat,
-  UpdateFB,
-  UpdateTelegram,
-  UpdateLine,
-  UpdateViber,
-  UpdateWhatsapp,
   VerifyEmail,
   UpdateEmail,
   VerifyPhone,
@@ -37,6 +30,7 @@ export const AccountService = {
   SetBirthDate,
   //TGS-883
   NewRegister,
+  UpdateIM,
 };
 
 function CheckUserName(username) {
@@ -121,52 +115,9 @@ function SetBirthDate(yyyymmdd) {
   return result;
 }
 
-function UpdateQQ(member_qq) {
-  const result = ApiService.patch("Player/qq", {
-    qq: member_qq,
-  });
-
-  return result;
-}
-
-function UpdateWechat(member_wechat) {
-  const result = ApiService.patch("Player/wechat", {
-    wechat: member_wechat,
-  });
-  return result;
-}
-
-function UpdateFB(member_fb) {
-  const result = ApiService.patch("Player/fb", {
-    facebookmessenger: member_fb,
-  });
-  return result;
-}
-
-function UpdateTelegram(member_telegram) {
-  const result = ApiService.patch("Player/telegram", {
-    telegram: member_telegram,
-  });
-  return result;
-}
-
-function UpdateLine(member_line) {
-  const result = ApiService.patch("Player/line", {
-    line: member_line,
-  });
-  return result;
-}
-
-function UpdateViber(member_viber) {
-  const result = ApiService.patch("Player/viber", {
-    viber: member_viber,
-  });
-  return result;
-}
-
-function UpdateWhatsapp(member_whatsapp) {
-  const result = ApiService.patch("Player/whatsapp", {
-    whatsapp: member_whatsapp,
+function UpdateIM(value, im) {
+  const result = ApiService.patch(`Player/${im}`, {
+    [im]: value,
   });
   return result;
 }
