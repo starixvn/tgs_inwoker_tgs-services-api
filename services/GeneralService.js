@@ -20,7 +20,8 @@ export const GeneralService = {
   GetPromotion,
   GetPromotionRouletteCount,
   GetDepositAccumulateRoulette,
-  GetDepositAccumulateRouletteResult
+  GetDepositAccumulateRouletteResult,
+  GetDepositAccumulateRouletteHistory
 };
 
 function GetSiteToken() {
@@ -121,5 +122,10 @@ function GetDepositAccumulateRoulette(promotionId) {
 
 function GetDepositAccumulateRouletteResult(promotionId) {
   const result = ApiService.post(`dar/${promotionId}`);
+  return result;
+}
+
+function GetDepositAccumulateRouletteHistory(promotionId) {
+  const result = ApiService.get(`dar/roulette/${promotionId}`);
   return result;
 }

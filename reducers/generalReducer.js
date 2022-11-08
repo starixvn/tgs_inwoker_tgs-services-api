@@ -31,9 +31,6 @@ import {
   GETPROMOROULETTE_RESULT_BEGIN,
   GETPROMOROULETTE_RESULT_SUCCESS,
   GETPROMOROULETTE_RESULT_FAILED,
-  GETDAROULETTE_STATUS_BEGIN,
-  GETDAROULETTE_STATUS_SUCCESS,
-  GETDAROULETTE_STATUS_FAILED,
   GETDAROULETTE_RESULT_BEGIN,
   GETDAROULETTE_RESULT_SUCCESS,
   GETDAROULETTE_RESULT_FAILED,
@@ -44,6 +41,9 @@ import {
   GETPROMOTION_BEGIN,
   GETPROMOTION_SUCCESS,
   GETPROMOTION_FAILURE,
+  GETDAROULETTE_HISTORY_BEGIN,
+  GETDAROULETTE_HISTORY_FAILED,
+  GETDAROULETTE_HISTORY_SUCCESS,
 } from "../constant/actionType";
 const initialState = {
   isIPRestrict: false,
@@ -66,10 +66,11 @@ const initialState = {
   isRouletteAvailable: null,
   itemIndex: null,
   rouletteCount: [],
+  rouletteHistory: [],
 };
 function mapPromotionList(data) {
   var items = [];
-  data.map((item)=> items.push(item));
+  data.map((item) => items.push(item));
   return { items };
 }
 
@@ -237,7 +238,7 @@ export function generalReducer(state = initialState, action) {
         ...state,
         isRouletteAvailable: null,
         loading: true,
-      }
+      };
     case GETPROMOROULETTE_STATUS_SUCCESS:
       return {
         ...state,
@@ -256,13 +257,12 @@ export function generalReducer(state = initialState, action) {
         ...state,
         itemIndex: null,
         loading: true,
-      }
+      };
     case GETDAROULETTE_RESULT_SUCCESS:
     case GETPROMOROULETTE_RESULT_SUCCESS:
       return {
         ...state,
-        itemIndex:
-          action.payload.data.itemindex,
+        itemIndex: action.payload.data.itemindex,
         loading: false,
       };
     case GETDAROULETTE_RESULT_FAILED:
@@ -272,23 +272,34 @@ export function generalReducer(state = initialState, action) {
         itemIndex: null,
         loading: false,
       };
-    case RESET_PROMOROULETTE: 
+    case RESET_PROMOROULETTE:
       return {
         ...state,
         isRouletteAvailable: null,
         itemIndex: null,
-      }
-    case GETROULETTE_COUNT_BEGIN: 
-    case GETROULETTE_COUNT_FAILED: 
-    return {
-      ...state,
-      rouletteCount: [],
-    }
-    case GETROULETTE_COUNT_SUCCESS: 
+      };
+    case GETROULETTE_COUNT_BEGIN:
+    case GETROULETTE_COUNT_FAILED:
+      return {
+        ...state,
+        rouletteCount: [],
+      };
+    case GETROULETTE_COUNT_SUCCESS:
       return {
         ...state,
         rouletteCount: action.payload.data,
-      }
+      };
+    case GETDAROULETTE_HISTORY_BEGIN:
+    case GETDAROULETTE_HISTORY_FAILED:
+      return {
+        ...state,
+        rouletteHistory: [],
+      };
+    case GETDAROULETTE_HISTORY_SUCCESS:
+      return {
+        ...state,
+        rouletteHistory: action.payload.data,
+      };
     default:
       return state;
   }
