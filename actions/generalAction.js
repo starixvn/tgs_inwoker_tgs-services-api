@@ -44,6 +44,9 @@ import {
   GETDAROULETTE_RESULT_BEGIN,
   GETDAROULETTE_RESULT_SUCCESS,
   GETDAROULETTE_RESULT_FAILED,
+  GETDAROULETTE_HISTORY_BEGIN,
+  GETDAROULETTE_HISTORY_SUCCESS,
+  GETDAROULETTE_HISTORY_FAILED,
   GETROULETTE_COUNT_BEGIN,
   GETROULETTE_COUNT_SUCCESS,
   GETROULETTE_COUNT_FAILED,
@@ -72,6 +75,7 @@ export const generalAction = {
   getPromotionRouletteCount,
   getDepositAccumulateRoulette,
   getDepositAccumulateRouletteResult,
+  getDepositAccumulateRouletteHistory
 };
 function getSiteToken() {
   return (dispatch) => {
@@ -591,6 +595,29 @@ function getDepositAccumulateRouletteResult(id) {
       } else {
         dispatch({
           type: GETDAROULETTE_RESULT_FAILED,
+          payload: response,
+        });
+      }
+      return response;
+    });
+    return result;
+  };
+}
+
+function getDepositAccumulateRouletteHistory(id) {
+  return (dispatch) => {
+    dispatch({
+      type: GETDAROULETTE_HISTORY_BEGIN,
+    });
+    const result = GeneralService.GetDepositAccumulateRouletteHistory(id).then((response)=>{
+      if (response.IsSuccess) {
+        dispatch({
+          type: GETDAROULETTE_HISTORY_SUCCESS,
+          payload: response,
+        });
+      } else {
+        dispatch({
+          type: GETDAROULETTE_HISTORY_FAILED,
           payload: response,
         });
       }
