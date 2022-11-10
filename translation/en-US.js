@@ -1383,9 +1383,9 @@ export const enUS = {
     link: "Link",
   },
   promoRoulette: {
-    main: "Promotion Home",
-    content: "Promotion Content",
-    terms: "Promotion T&C",
+    main: "Home",
+    content: "How to Play",
+    terms: "T&C",
     dialogDARUnavailableTitle: "Deposit Roulette has ended",
     dialogUnavailableTitle1: "Play once a day",
     dialogUnavailableTitle2: "Come again tomorrow",
