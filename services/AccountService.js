@@ -30,7 +30,11 @@ export const AccountService = {
   SetBirthDate,
   //TGS-883
   NewRegister,
+<<<<<<< HEAD
   UpdateIM,
+=======
+  GetRegisterStatus,
+>>>>>>> 4e67538 (add in get register status)
 };
 
 function CheckUserName(username) {
@@ -248,6 +252,11 @@ function UpdateMemberName(token, name) {
 function UploadIC(file) {
   const result = ApiService.postFile(`player/identity/upload`, file, {});
 
+  return result;
+}
+
+function GetRegisterStatus() {
+  const result = ApiService.get("player/register");
   return result;
 }
 
