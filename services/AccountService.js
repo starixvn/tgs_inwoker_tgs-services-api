@@ -28,13 +28,9 @@ export const AccountService = {
   UpdateMemberName,
   UploadIC,
   SetBirthDate,
-  //TGS-883
   NewRegister,
-<<<<<<< HEAD
   UpdateIM,
-=======
   GetRegisterStatus,
->>>>>>> 4e67538 (add in get register status)
 };
 
 function CheckUserName(username) {
