@@ -168,7 +168,6 @@ function mapDepositType(result) {
       if (checkDuplicate.indexOf(data[i].channelname.split("@")[0]) < 0) {
         checkDuplicate.push(data[i].channelname.split("@")[0]);
 
-        console.log(checkDuplicate);
         if (
           data[i].methodcode === "Usdt" &&
           data[i].paymentcode === "Manual" &&
@@ -214,7 +213,7 @@ function mapDepositType(result) {
                 .channel.push({
                   id: data[i].id,
                   channelid: data[i].channelid,
-                  channelname: data[i].channelname.split("@")[0],
+                  channelname: data[i].channelname.split("@")[1],
                   transferlimit: data[i].transferlimit,
                   extended: data[i].extended,
                   displayorder: data[i].displayorder,
