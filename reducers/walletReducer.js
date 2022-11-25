@@ -169,8 +169,8 @@ function mapDepositType(result) {
         checkDuplicate.push(data[i].channelname.split("@")[0]);
 
         if (
-          data[i].methodcode === "Usdt" &&
-          data[i].paymentcode === "Manual" &&
+          // data[i].methodcode === "Usdt" &&
+          // data[i].paymentcode === "Manual" &&
           config.features.Deposit_SplitUsdt
         ) {
           depositType.paymentcode = data[i].channelname.split("@")[0];
@@ -270,8 +270,8 @@ function mapDepositType(result) {
       if (
         !(
           data[i].channelname.indexOf("@") > 0 &&
-          data[i].methodcode === "Usdt" &&
-          data[i].paymentcode === "Manual" &&
+          // data[i].methodcode === "Usdt" &&
+          // data[i].paymentcode === "Manual" &&
           config.features.Deposit_SplitUsdt
         )
       ) {
