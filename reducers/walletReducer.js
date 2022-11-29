@@ -163,8 +163,7 @@ function mapDepositType(result) {
     if (data[i].transferlimit.to > depositMaxLimit) {
       depositMaxLimit = data[i].transferlimit.to;
     }
-
-    if (data[i].channelname.indexOf("@") > 0) {
+    if ((data[i].channelname.indexOf("@") > 0) && (config.features.Deposit_SplitUsdt)) {
       if (checkDuplicate.indexOf(data[i].channelname.split("@")[0]) < 0) {
         checkDuplicate.push(data[i].channelname.split("@")[0]);
 
@@ -176,7 +175,7 @@ function mapDepositType(result) {
           depositType.paymentcode = data[i].channelname.split("@")[0];
           depositType.paymentid = data[i].paymentid;
           depositType.displayorder = data[i].displayorder;
-          depositType.alteredpaymentcode = "Usdt";
+          depositType.alteredpaymentcode = data[i].methodcode//"Usdt";
           depositType.method = [
             {
               methodid: data[i].methodid,
@@ -240,10 +239,10 @@ function mapDepositType(result) {
         }
       }
     }
-
-    if (checkDuplicate.indexOf(data[i].paymentcode) < 0) {
+    var paymentCode = config.features.Deposit_SplitUsdt ? data[i].channelname.split("@")[0] : data[i].paymentcode
+    if (checkDuplicate.indexOf(paymentCode) < 0) {
       checkDuplicate.push(data[i].paymentcode);
-
+     
       depositType.paymentcode = data[i].paymentcode;
       depositType.paymentid = data[i].paymentid;
       depositType.displayorder = data[i].displayorder;
@@ -269,7 +268,7 @@ function mapDepositType(result) {
     } else {
       if (
         !(
-          data[i].channelname.indexOf("@") > 0 &&
+          // data[i].channelname.indexOf("@") > 0 &&
           // data[i].methodcode === "Usdt" &&
           // data[i].paymentcode === "Manual" &&
           config.features.Deposit_SplitUsdt
