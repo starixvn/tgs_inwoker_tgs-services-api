@@ -168,15 +168,11 @@ function mapDepositType(result) {
       if (checkDuplicate.indexOf(data[i].channelname.split("@")[0]) < 0) {
         checkDuplicate.push(data[i].channelname.split("@")[0]);
 
-        if (
-          data[i].methodcode === "Usdt" &&
-          data[i].paymentcode === "Manual" &&
-          config.features.Deposit_SplitUsdt
-        ) {
+        if (config.features.Deposit_SplitUsdt) {
           depositType.paymentcode = data[i].channelname.split("@")[0];
           depositType.paymentid = data[i].paymentid;
           depositType.displayorder = data[i].displayorder;
-          depositType.alteredpaymentcode = "Usdt";
+          depositType.alteredpaymentcode = data[i].paymentcode;
           depositType.method = [
             {
               methodid: data[i].methodid,
@@ -203,10 +199,10 @@ function mapDepositType(result) {
           var paymentcode = depositTypeList.filter(
             (a) => a.paymentcode === data[i].channelname.split("@")[0]
           )[0];
-
           if (paymentcode) {
             if (
               paymentcode.method.filter((a) => a.methodid === data[i].methodid)
+                .length > 0
             ) {
               paymentcode.method
                 .filter((a) => a.methodid === data[i].methodid)[0]
@@ -222,7 +218,7 @@ function mapDepositType(result) {
             } else {
               paymentcode.method.push({
                 methodid: data[i].methodid,
-                methodcode: data[i].channelname.split("@")[0],
+                methodcode: data[i].methodcode,
                 channel: [
                   {
                     id: data[i].id,
@@ -239,78 +235,76 @@ function mapDepositType(result) {
           }
         }
       }
-    }
-
-    if (checkDuplicate.indexOf(data[i].paymentcode) < 0) {
-      checkDuplicate.push(data[i].paymentcode);
-
-      depositType.paymentcode = data[i].paymentcode;
-      depositType.paymentid = data[i].paymentid;
-      depositType.displayorder = data[i].displayorder;
-      depositType.method = [
-        {
-          methodid: data[i].methodid,
-          methodcode: data[i].methodcode,
-          channel: [
-            {
-              id: data[i].id,
-              channelid: data[i].channelid,
-              channelname: data[i].channelname,
-              transferlimit: data[i].transferlimit,
-              extended: data[i].extended,
-              displayorder: data[i].displayorder,
-              fees: data[i].feepercentile,
-            },
-          ],
-        },
-      ];
-
-      depositTypeList.push(depositType);
     } else {
-      if (
-        !(
-          data[i].channelname.indexOf("@") > 0 &&
-          data[i].methodcode === "Usdt" &&
-          data[i].paymentcode === "Manual" &&
-          config.features.Deposit_SplitUsdt
-        )
-      ) {
+      if (checkDuplicate.indexOf(data[i].paymentcode) < 0) {
+        checkDuplicate.push(data[i].paymentcode);
+
+        depositType.paymentcode = data[i].paymentcode;
+        depositType.paymentid = data[i].paymentid;
+        depositType.displayorder = data[i].displayorder;
+        depositType.method = [
+          {
+            methodid: data[i].methodid,
+            methodcode: data[i].methodcode,
+            channel: [
+              {
+                id: data[i].id,
+                channelid: data[i].channelid,
+                channelname: data[i].channelname,
+                transferlimit: data[i].transferlimit,
+                extended: data[i].extended,
+                displayorder: data[i].displayorder,
+                fees: data[i].feepercentile,
+              },
+            ],
+          },
+        ];
+
+        depositTypeList.push(depositType);
+      } else {
         if (
-          depositTypeList
-            .filter((a) => a.paymentcode === data[i].paymentcode)[0]
-            .method.filter((a) => a.methodcode === data[i].methodcode).length >
-          0
+          !(
+            data[i].channelname.indexOf("@") > 0 &&
+            config.features.Deposit_SplitUsdt
+          )
         ) {
-          depositTypeList
-            .filter((a) => a.paymentcode === data[i].paymentcode)[0]
-            .method.filter((a) => a.methodcode === data[i].methodcode)[0]
-            .channel.push({
-              id: data[i].id,
-              channelid: data[i].channelid,
-              channelname: data[i].channelname,
-              transferlimit: data[i].transferlimit,
-              extended: data[i].extended,
-              displayorder: data[i].displayorder,
-              fees: data[i].feepercentile,
-            });
-        } else {
-          depositTypeList
-            .filter((a) => a.paymentcode === data[i].paymentcode)[0]
-            .method.push({
-              methodid: data[i].methodid,
-              methodcode: data[i].methodcode,
-              channel: [
-                {
-                  id: data[i].id,
-                  channelid: data[i].channelid,
-                  channelname: data[i].channelname,
-                  transferlimit: data[i].transferlimit,
-                  extended: data[i].extended,
-                  displayorder: data[i].displayorder,
-                  fees: data[i].feepercentile,
-                },
-              ],
-            });
+          if (
+            depositTypeList
+              .filter((a) => a.paymentcode === data[i].paymentcode)[0]
+              .method.filter((a) => a.methodcode === data[i].methodcode)
+              .length > 0
+          ) {
+            depositTypeList
+              .filter((a) => a.paymentcode === data[i].paymentcode)[0]
+              .method.filter((a) => a.methodcode === data[i].methodcode)[0]
+              .channel.push({
+                id: data[i].id,
+                channelid: data[i].channelid,
+                channelname: data[i].channelname,
+                transferlimit: data[i].transferlimit,
+                extended: data[i].extended,
+                displayorder: data[i].displayorder,
+                fees: data[i].feepercentile,
+              });
+          } else {
+            depositTypeList
+              .filter((a) => a.paymentcode === data[i].paymentcode)[0]
+              .method.push({
+                methodid: data[i].methodid,
+                methodcode: data[i].methodcode,
+                channel: [
+                  {
+                    id: data[i].id,
+                    channelid: data[i].channelid,
+                    channelname: data[i].channelname,
+                    transferlimit: data[i].transferlimit,
+                    extended: data[i].extended,
+                    displayorder: data[i].displayorder,
+                    fees: data[i].feepercentile,
+                  },
+                ],
+              });
+          }
         }
       }
     }
