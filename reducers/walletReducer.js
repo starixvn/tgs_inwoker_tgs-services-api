@@ -164,11 +164,10 @@ function mapDepositType(result) {
       depositMaxLimit = data[i].transferlimit.to;
     }
 
-    if (data[i].channelname.indexOf("@") > 0) {
+    if (config.features.Deposit_SplitUsdt && data[i].channelname.indexOf("@") > 0) {
       if (checkDuplicate.indexOf(data[i].channelname.split("@")[0]) < 0) {
         checkDuplicate.push(data[i].channelname.split("@")[0]);
 
-        if (config.features.Deposit_SplitUsdt) {
           depositType.paymentcode = data[i].channelname.split("@")[0];
           depositType.paymentid = data[i].paymentid;
           depositType.displayorder = data[i].displayorder;
@@ -192,7 +191,7 @@ function mapDepositType(result) {
           ];
 
           depositTypeList.push(depositType);
-        }
+        
       } else {
         //if data.channelname contain "@" then add into method else do nothing
         if (data[i].channelname.indexOf("@") > 0) {
