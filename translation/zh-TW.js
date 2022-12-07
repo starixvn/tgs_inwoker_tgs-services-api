@@ -1360,6 +1360,7 @@ export const zhTW = {
     winningID: "中獎 ID",
     dateTime: "時間",
     winnings: "中獎内容",
+    outOfCount: "您的次數已經使用完畢！",
   },
   idr1HomePage: {
     section1: {
@@ -1438,6 +1439,6 @@ export const zhTW = {
     chess: "撲克",
     sport: "體育競技",
     fish: "捕魚遊戲",
-    lottery: "彩球"
-  }
+    lottery: "彩球",
+  },
 };

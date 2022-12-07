@@ -1399,6 +1399,7 @@ export const enUS = {
     winningID: "Winning ID",
     dateTime: "Date & Time",
     winnings: "Winnings",
+    outOfCount: "Oops, it seems you've run out of spins.",
   },
 
   idr1HomePage: {
@@ -1480,6 +1481,6 @@ export const enUS = {
     chess: "Poker",
     sport: "Sports",
     fish: "Fishing",
-    lottery: "Number"
-  }
+    lottery: "Number",
+  },
 };

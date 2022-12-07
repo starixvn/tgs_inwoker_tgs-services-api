@@ -1366,6 +1366,7 @@ export const zhCN = {
     winningID: "中奖 ID",
     dateTime: "时间",
     winnings: "中奖内容",
+    outOfCount: "您的次数已经使用完毕！",
   },
   idr1HomePage: {
     section1: {
@@ -1444,6 +1445,6 @@ export const zhCN = {
     chess: "扑克",
     sport: "体育竞技",
     fish: "捕鱼游戏",
-    lottery: "彩球"
-  }
+    lottery: "彩球",
+  },
 };
