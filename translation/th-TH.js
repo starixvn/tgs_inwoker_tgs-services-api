@@ -1371,6 +1371,7 @@ export const thTH = {
     winningID: "รางวัลชนะเลิศ ID",
     dateTime: "เวลา",
     winnings: "เนื้อหาที่ชนะ",
+    outOfCount: "อ๊ะ ดูเหมือนว่าคุณหมุนหมดแล้ว",
   },
   idr1HomePage: {
     section1: {
@@ -1451,6 +1452,6 @@ export const thTH = {
     chess: "โป๊กเกอร์",
     sport: "กีฬา",
     fish: "ยิงปลา",
-    slots: "เกมส์ตัวเลข"
-  }
+    slots: "เกมส์ตัวเลข",
+  },
 };

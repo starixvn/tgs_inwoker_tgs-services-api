@@ -1377,6 +1377,7 @@ export const vivN = {
     winningID: "Giải thưởng chiến thắng ID",
     dateTime: "thời gian",
     winnings: "Nội dung chiến thắng",
+    outOfCount: "Số đếm của bạn đã hết!",
   },
   idr1HomePage: {
     section1: {
@@ -1457,6 +1458,6 @@ export const vivN = {
     chess: "bài xì phé",
     sport: "Thi đấu thể thao",
     fish: "Trò chơi câu cá",
-    lottery: "Bóng màu"
-  }
+    lottery: "Bóng màu",
+  },
 };

@@ -1392,6 +1392,7 @@ export const idID = {
     winningID: "Kemenangan ID",
     dateTime: "Waktu",
     winnings: "Kemenangan",
+    outOfCount: "Ups, sepertinya Anda kehabisan putaran.",
   },
 
   idr1HomePage: {
@@ -1496,6 +1497,6 @@ export const idID = {
     chess: "Poker",
     sport: "Olahraga",
     fish: "Fishing",
-    lottery: "Nomor"
-  }
+    lottery: "Nomor",
+  },
 };
