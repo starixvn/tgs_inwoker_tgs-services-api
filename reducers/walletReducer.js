@@ -124,6 +124,7 @@ function mapDepositList(result) {
         banktype: data[i].banktype,
         channel: [
           {
+            id: data[i].id,
             channelid: data[i].channelid,
             channelname: data[i].channelname,
             channelcode: data[i].channelcode,
@@ -136,6 +137,7 @@ function mapDepositList(result) {
       depositList
         .filter((a) => a.banktype === data[i].banktype)[0]
         .channel.push({
+          id: data[i].id,
           channelid: data[i].channelid,
           channelname: data[i].channelname,
           channelcode: data[i].channelcode,
@@ -393,6 +395,7 @@ function mapWithdrawalList(data) {
         banktype: data[i].banktype,
         channel: [
           {
+            id: data[i].id,
             channelid: data[i].channelid,
             channelname: data[i].channelname,
             channelcode: data[i].channelcode,
@@ -405,6 +408,7 @@ function mapWithdrawalList(data) {
       withdrawalList
         .filter((a) => a.banktype === data[i].banktype)[0]
         .channel.push({
+          id: data[i].id,
           channelid: data[i].channelid,
           channelname: data[i].channelname,
           channelcode: data[i].channelcode,
