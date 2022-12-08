@@ -1064,6 +1064,7 @@ export const zhTW = {
   JOKER: {
     slots: "JOKER老虎機",
     fish: "JOKER捕魚",
+    electron: "JOKER電子",
   },
   PPTF: {
     slots: "PP老虎機",

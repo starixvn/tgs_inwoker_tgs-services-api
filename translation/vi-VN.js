@@ -1082,6 +1082,7 @@ export const vivN = {
   JOKER: {
     slots: "JOKER",
     fish: "JOKER",
+    electron: "JOKER",
   },
   PPTF: {
     slots: "Pragmatic Play",

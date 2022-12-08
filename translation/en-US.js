@@ -1099,6 +1099,7 @@ export const enUS = {
   JOKER: {
     slots: "JOKER",
     fish: "JOKER",
+    electron: "JOKER",
   },
   PPTF: {
     slots: "Pragmatic Play",
