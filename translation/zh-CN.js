@@ -1338,6 +1338,8 @@ export const zhCN = {
   idr1: {
     pleaseEnterAccountName: "请输入银行名称",
     msgPlsSelectAccount: "请选择帐号",
+    eWalletAccount: "电子货币名称",
+    phone: "电话号码",
   },
   king8: {
     EWallet: "电子货币",

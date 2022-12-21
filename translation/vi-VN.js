@@ -1354,6 +1354,8 @@ export const vivN = {
   idr1: {
     pleaseEnterAccountName: "Vui lòng nhập tên tài khoản của bạn",
     msgPlsSelectAccount: "Vui lòng chọn tài khoản",
+    eWalletAccount: "Tên tiền điện tử",
+    phone: "Điện thoại",
   },
   pointless: {
     download: "Điểm tải xuống liên kết APP",

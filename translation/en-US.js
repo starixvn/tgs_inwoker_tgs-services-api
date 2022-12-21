@@ -1371,6 +1371,8 @@ export const enUS = {
   idr1: {
     pleaseEnterAccountName: "Please enter your origin account",
     msgPlsSelectAccount: "Please select account",
+    eWalletAccount: "NAMA REKENING",
+    phone: "NOMOR REKENING",
   },
   king8: {
     EWallet: "E-money",

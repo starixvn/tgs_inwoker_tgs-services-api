@@ -1332,6 +1332,8 @@ export const zhTW = {
   idr1: {
     pleaseEnterAccountName: "請输入銀行名稱",
     msgPlsSelectAccount: "請選擇帳號",
+    eWalletAccount: "電子貨幣名稱",
+    phone: "電話號碼",
   },
   king8: {
     EWallet: "電子貨幣",

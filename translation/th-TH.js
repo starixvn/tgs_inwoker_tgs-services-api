@@ -1347,6 +1347,8 @@ export const thTH = {
   idr1: {
     pleaseEnterAccountName: "กรุณาใส่ชื่อบัญชีของคุณ",
     msgPlsSelectAccount: "กรุณาเลือกบัญชี",
+    eWalletAccount: "ชื่อเงินอิเล็กทรอนิกส์",
+    phone: "โทรศัพท์",
   },
 
   pointless: {
