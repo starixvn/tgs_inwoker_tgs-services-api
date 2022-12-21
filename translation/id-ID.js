@@ -1370,6 +1370,8 @@ export const idID = {
   idr1: {
     pleaseEnterAccountName: "Silakan masukkan akun asal Anda",
     msgPlsSelectAccount: "Silakan pilih akun asal Anda",
+    eWalletAccount: "NAMA REKENING",
+    phone: "NOMOR REKENING",
   },
   pointless: {
     download: "Titik unduh tautan APLIKASI",
