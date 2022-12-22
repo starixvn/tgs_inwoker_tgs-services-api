@@ -1025,7 +1025,7 @@ function getBalanceList(loading = true) {
         } else {
           dispatch({
             type: GETBALANCELIST_FAIL,
-            payload: response,
+            // payload: response,
             loading: false,
           });
         }
