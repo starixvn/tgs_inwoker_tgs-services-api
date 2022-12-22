@@ -115,9 +115,9 @@ function SetBirthDate(yyyymmdd) {
   return result;
 }
 
-function UpdateIM(value, im) {
+function UpdateIM(value, im, param) {
   const result = ApiService.patch(`Player/${im}`, {
-    [im]: value,
+    [param]: value,
   });
   return result;
 }
