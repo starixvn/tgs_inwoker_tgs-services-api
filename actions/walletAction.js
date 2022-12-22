@@ -174,7 +174,7 @@ function getDepositMethod() {
         } else {
           dispatch({
             type: GETDEPOSITCHANNEL_FAIL,
-            payload: response,
+            //payload: response,
             loading: false,
           });
         }
@@ -447,7 +447,14 @@ function doPulsaDeposit(amount, paymentid, promotionid, banktype, note) {
   };
 }
 
-function doEWalletDeposit(amount, paymentid, promotionid, banktype, note, emoneyname) {
+function doEWalletDeposit(
+  amount,
+  paymentid,
+  promotionid,
+  banktype,
+  note,
+  emoneyname
+) {
   return (dispatch) => {
     dispatch({
       type: DODEPOSIT_BEGIN,
@@ -873,7 +880,7 @@ function getBankCardList() {
         } else {
           dispatch({
             type: GETBANKCARDLIST_FAIL,
-            payload: response,
+            // payload: response,
             loading: false,
           });
         }
@@ -1452,7 +1459,12 @@ function doWithdraw(amount, bankinfoid, paypassword, note) {
       type: DOWITHDRAWAL_BEGIN,
       loading: true,
     });
-    const result = WalletService.DoWithdraw(amount, bankinfoid, paypassword, note)
+    const result = WalletService.DoWithdraw(
+      amount,
+      bankinfoid,
+      paypassword,
+      note
+    )
       .then((response) => {
         if (response.IsSuccess) {
           dispatch({
@@ -1606,7 +1618,14 @@ function doBankDepositWithDetail(
   };
 }
 
-function doPulsaDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail) {
+function doPulsaDepositWithDetail(
+  amount,
+  paymentid,
+  promotionid,
+  banktype,
+  note,
+  detail
+) {
   return (dispatch) => {
     dispatch({
       type: DODEPOSIT_BEGIN,
@@ -1647,7 +1666,15 @@ function doPulsaDepositWithDetail(amount, paymentid, promotionid, banktype, note
   };
 }
 
-function doEWalletDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail, emoneyname) {
+function doEWalletDepositWithDetail(
+  amount,
+  paymentid,
+  promotionid,
+  banktype,
+  note,
+  detail,
+  emoneyname
+) {
   return (dispatch) => {
     dispatch({
       type: DODEPOSIT_BEGIN,
