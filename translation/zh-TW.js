@@ -164,6 +164,7 @@ export const zhTW = {
     termsAndCondition: "條款和條件",
     exit: "登出",
     playeronline: "在線人數",
+    cockfight: "鬥雞",
   },
   affiliate: {
     title: "推廣賺錢",
@@ -1144,7 +1145,7 @@ export const zhTW = {
   TCG_LOTTO_VN: {
     lottery: "TCG VN彩票",
   },
-  365: {
+  "365": {
     chess: "365棋牌",
   },
   LY: {
@@ -1173,7 +1174,11 @@ export const zhTW = {
     fish: "SPADE捕魚",
     slots: "SPADE老虎機",
   },
-  AWC_FACAI: { electron: "發財電子", slots: "發財老虎機", fish: "發財捕魚" },
+  AWC_FACAI: {
+    electron: "發財電子",
+    slots: "發財老虎機",
+    fish: "發財捕魚",
+  },
   AWC_PGS: { electron: "PGS電子", slots: "PGS老虎機" },
   AWC_AWS: { electron: "AWS電子", slots: "AWS老虎機" },
   AWC_FS: { slots: "FS老虎機" },
@@ -1185,6 +1190,10 @@ export const zhTW = {
   TF: {
     sports: "TF體育",
     esports: "TF電競",
+  },
+  SM01: {
+    sports: "SM01",
+    cockfight: "SM01",
   },
   idr: {
     withdrawalNumber: "銀行卡號碼",
@@ -1297,11 +1306,13 @@ export const zhTW = {
   },
   depositNotification: {
     title: "匯款指引",
-    content: `請各位注意，關於匯款帳號，請根據平台的戶口進行匯款，如匯款至舊戶口，上分可能有時間延遲，亦有可能檢查不到，我司不會因這個問題而負上責任，敬請垂注！`,
+    content:
+      "請各位注意，關於匯款帳號，請根據平台的戶口進行匯款，如匯款至舊戶口，上分可能有時間延遲，亦有可能檢查不到，我司不會因這個問題而負上責任，敬請垂注！",
   },
   depositNotificationGMO: {
     title: "匯款指引",
-    content: `客戶存取款須知\n為防止洗黑錢\n一般客戶每日出款次數為三次\n客戶取款必須跟綁定充值帳戶相同\n有關於取款問題可向客服查詢`,
+    content:
+      "客戶存取款須知\n為防止洗黑錢\n一般客戶每日出款次數為三次\n客戶取款必須跟綁定充值帳戶相同\n有關於取款問題可向客服查詢",
   },
   mgm: {
     msgPlsEnterAccount: "請输入銀行帳戶/姓名",
@@ -1434,6 +1445,15 @@ export const zhTW = {
     withdraw: "提款費",
     deposit: "手續費",
   },
+  extended: {
+    name: "帳戶名字",
+    phone: "電話號碼",
+    eMoneyName: "電子貨幣名稱",
+    bankAccount: "銀行卡號",
+    address: "地址",
+    fpsId: "ID FPS",
+    email: "電子郵件",
+  },
   TIGER: {
     login: "登入",
     cs: "聯繫我們",
@@ -1443,5 +1463,31 @@ export const zhTW = {
     sport: "體育競技",
     fish: "捕魚遊戲",
     lottery: "彩球",
+  },
+  T13: {
+    winner: "贏家",
+    proceedLogin: "已有帳號？",
+    proceedRegister: "沒有賬號？",
+    me: "我",
+    topGames: "熱門遊戲",
+    recommeneddGames: "為您推薦",
+    newGames: "新遊戲",
+    topNews: "頭條新聞",
+    aboutUs: "關於我們",
+    quickLink: {
+      title: "快速鏈接",
+      "247": "24/7 客戶服務",
+      faq: "常見問題解答",
+      privacy: "隱私政策",
+      tnc: "條款和條件",
+      reponsible: "負責任的遊戲",
+      follow: "關注我們",
+    },
+    partners: "合作夥伴",
+    brandTag: "{brandName}：一個成功的賭場！",
+    brandDescription:
+      "{brandName} 是所有在線賭場玩家的首選目的地，他們希望在他們的遊戲環境中尋找一流和優雅的感覺。我們的賭場為您提供超過 400 種在線賭場遊戲 - 一些傳統與現代曲折，和 一些全新的、創新的和異國情調的。憑藉不可抗拒的每週獎金促銷和有吸引力的忠誠度和 VIP 計劃，我們相信您會在未來一段時間內堅持使用。我們所有的軟件都是由業界最重要的在線開發和維護的 遊戲軟件公司 Pegasus。因此，我們能夠在精緻而引人入勝的氛圍中為您提供最高質量和終極安全性的最新尖端遊戲。",
+    belongTo:
+      "本網站屬於（PAGCOR）菲律賓娛樂博彩公司授權和監管 PGG Copyright© 2020 PGG Casino Co.Group All Rights Reserved Version {version}",
   },
 };

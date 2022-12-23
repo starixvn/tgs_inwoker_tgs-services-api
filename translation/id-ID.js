@@ -1,4 +1,7 @@
 export const idID = {
+  "365": {
+    chess: "365",
+  },
   lang: {
     language: "Bahasa",
     "zh-TW": "繁體",
@@ -14,7 +17,6 @@ export const idID = {
     ERR202: "Akun Dikunci.",
     ERR401: "Harap Periksa Kembali.",
   },
-
   panel: {
     im: "Pesan Singkat",
     cs: "Livechat",
@@ -29,7 +31,6 @@ export const idID = {
     liveChatOptionRegister: "Daftar",
     liveChatOptionSlot: "Slots",
   },
-
   support: {
     contactnow: "Hubungi Sekarang",
     online: "Pelayanan Online",
@@ -37,7 +38,6 @@ export const idID = {
     qr: "QR Support",
     join: "Bergabung",
   },
-
   common: {
     nodata: "Tidak ada informasi",
     maintenance: "Waktu Pemeliharaan",
@@ -171,6 +171,7 @@ export const idID = {
     termsAndCondition: "Syarat dan ketentuan",
     exit: "Exit",
     playeronline: "Pengguna online",
+    cockfight: "Sabungan",
   },
   affiliate: {
     title: "Afiliasi",
@@ -420,7 +421,6 @@ export const idID = {
       },
     },
   },
-
   profile: {
     birthdate: {
       title: "Tanggal Lahir",
@@ -454,7 +454,6 @@ export const idID = {
       step1Title: "Silakan masukkan nomor telepon lama",
       step2Title: "Setel nomor telepon baru",
     },
-
     nameVerify: {
       editHere: "di sini",
       title: "Nama Asli",
@@ -492,7 +491,6 @@ export const idID = {
       verifyEmail: "Verifikasi email",
       addEmail: "Siapkan email baru",
       plsEnterEmail: "Silakan masukkan alamat email",
-
       bindEmail: "Mengikat Alamat Email",
       toEdit: "Jika Diperlukan Untuk Mengedit Email, Silahkan Klik",
       here: "nih",
@@ -556,7 +554,6 @@ export const idID = {
       confirmNewPassword: "Konfirmasi Kata Sandi Baru",
       plsEnterOldPassword: "Silakan masukkan kata sandi lama",
     },
-
     withdrawalPassword: {
       msgInvalidConPass: "Konfirmasi Kata Sandi tidak cocok",
       title: "Password Penarikan",
@@ -662,7 +659,6 @@ export const idID = {
     search: "Cari kata kunci",
     all: "Semua",
   },
-
   transfer: {
     autoTransfer:
       "Transfer Otomatis : Semua kredit akan ditransfer ke game selama peluncuran",
@@ -695,7 +691,6 @@ export const idID = {
     msgFailedTransfer: "Transfer gagal",
     msgTransferOutFromGP: "Transfer dari semua sub-dompet ke dompet utama",
   },
-
   withdrawal: {
     notReachMin: "Jumlah penarikan tidak mencapai jumlah minimum",
     reachMax: "Jumlah penarikan mencapai jumlah maksimum",
@@ -871,7 +866,6 @@ export const idID = {
       contactUs: "Hubungi kami",
       contactNumber: "Hotline :400-120-8118",
       contactEmail: "Email Kontak:cs@{brand}.com",
-
       copyright:
         "Situs web ini milik PAGCOR）Philippine Amusement and Gaming Corporation Otorisasi dan pengawasan",
       copyrightLine2:
@@ -882,7 +876,6 @@ export const idID = {
       loginTitle: "Masuk",
       loginTitleLine2: "Situs taruhan terbaik di Asia",
       newRegister: "Pendaftaran Baru",
-
       rememberMe: "Ingat Aku",
       forgetPass: "Lupa Kata Sandi",
       cs: "Jika Anda mengalami masalah saat login, jangan ragu untuk",
@@ -922,7 +915,6 @@ export const idID = {
       confirmNewPassword: "Konfirmasi Kata Sandi Baru",
       resetSuccess: "Reset kata sandi berhasil",
     },
-
     account: {
       fund: "Dana",
       personal: "Info Pribadi",
@@ -948,14 +940,12 @@ export const idID = {
         markAsRead: "Tandai sebagai Telah Dibaca",
       },
     },
-
     download: {
       titleDesc: "",
       supportPlatform: "(Android/iOS)",
       pcDownload: "Web Seluler",
       mobileDownload: "Unduh Android/iOS",
     },
-
     maintenance: {
       title: "Maaf, sistem dalam pemeliharaan",
       maintenance: "pemeliharaan",
@@ -1056,9 +1046,6 @@ export const idID = {
     esports: "IM",
   },
   SABA: {
-    sports: "SABA",
-  },
-  SABATF: {
     sports: "SABA",
   },
   HABA: {
@@ -1174,9 +1161,6 @@ export const idID = {
   TCG_LOTTO_VN: {
     lottery: "TCG VN",
   },
-  365: {
-    chess: "365",
-  },
   LY: {
     chess: "LEGaming",
     fish: "LEGaming",
@@ -1202,17 +1186,42 @@ export const idID = {
     fish: "SPADE",
     slots: "SPADE",
   },
-  AWC_FACAI: { electron: "FACAI", slots: "FACAI", fish: "FACAI" },
-  AWC_PGS: { electron: "PGS", slots: "PGS" },
-  AWC_AWS: { electron: "AWS", slots: "AWS" },
-  AWC_FS: { slots: "FS" },
-  AWC_YL: { electron: "YL", fish: "YL" },
-  AWC_KM: { electron: "KM" },
-  AWC_LUDO: { electron: "LUDO" },
-  AWC_AELOTTO: { lottery: "AE" },
+  AWC_FACAI: {
+    electron: "FACAI",
+    slots: "FACAI",
+    fish: "FACAI",
+  },
+  AWC_PGS: {
+    electron: "PGS",
+    slots: "PGS",
+  },
+  AWC_AWS: {
+    electron: "AWS",
+    slots: "AWS",
+  },
+  AWC_FS: {
+    slots: "FS",
+  },
+  AWC_YL: {
+    electron: "YL",
+    fish: "YL",
+  },
+  AWC_KM: {
+    electron: "KM",
+  },
+  AWC_LUDO: {
+    electron: "LUDO",
+  },
+  AWC_AELOTTO: {
+    lottery: "AE",
+  },
   TF: {
     sports: "TF Gaming",
     esports: "TF",
+  },
+  SM01: {
+    sports: "SM01",
+    cockfight: "SM01",
   },
   idr: {
     withdrawalNumber: "NOMOR REKENING",
@@ -1266,16 +1275,19 @@ export const idID = {
     title: "Unduh",
     iphone: {
       title: "Panduan penginstalan untuk iOS:",
-      point1: `1. Instal dan buka aplikasi. Pemberitahuan "Pengembang Perusahaan Tidak Tepercaya" akan muncul.`,
-      point2: `2. Buka "Pengaturan" ponsel Anda -> "Umum" -> "Profil & Manajemen Perangkat" -> Klik nama aplikasi ini. Klik "Percayai (nama aplikasi ini)" . Luncurkan ulang aplikasi dan mulai mainkan.`,
+      point1:
+        '1. Instal dan buka aplikasi. Pemberitahuan "Pengembang Perusahaan Tidak Tepercaya" akan muncul.',
+      point2:
+        '2. Buka "Pengaturan" ponsel Anda -> "Umum" -> "Profil & Manajemen Perangkat" -> Klik nama aplikasi ini. Klik "Percayai (nama aplikasi ini)" . Luncurkan ulang aplikasi dan mulai mainkan.',
     },
     android: {
       title: "Panduan penginstalan untuk Android:",
-      point1: `1. Klik tautan "Unduh", aplikasi mulai mengunduh. Setelah selesai, klik "Instal".`,
-      point2: `2. Buka "Pengaturan"->"Keamanan"-> aktifkan instalasi dari sumber yang tidak dikenal. Luncurkan ulang aplikasi dan mulai mainkan.`,
+      point1:
+        '1. Klik tautan "Unduh", aplikasi mulai mengunduh. Setelah selesai, klik "Instal".',
+      point2:
+        '2. Buka "Pengaturan"->"Keamanan"-> aktifkan instalasi dari sumber yang tidak dikenal. Luncurkan ulang aplikasi dan mulai mainkan.',
     },
   },
-
   piso: {
     withdrawalNumber: "Nomor Rekening Bank/Nomor Gcash",
     msgEnterWithdrawalNumber:
@@ -1329,11 +1341,13 @@ export const idID = {
   },
   depositNotification: {
     title: "Pemberitahuan Transfer Bank",
-    content: `<div style="margin-bottom: 10px; text-align: center">* PENTING *</div> <div style="margin-bottom: 10px;">Yang terhormat semua anggota VIP, sebelum melakukan deposit , harap periksa kembali apakah Anda menggunakan nomor rekening bank yang kami tunjuk yang tertera di Halaman Deposit. </div><div style="margin-bottom: 10px;">Jika nomor rekening bank yang digunakan salah, kami TIDAK bertanggung jawab atas masalah yang disebabkan, seperti: keterlambatan pengisian ulang, kehilangan jejak setoran Anda , dll. </div><div style="margin-bottom: 10px;">Terima kasih atas perhatian Anda.</div>`,
+    content:
+      '<div style="margin-bottom: 10px; text-align: center">* PENTING *</div> <div style="margin-bottom: 10px;">Yang terhormat semua anggota VIP, sebelum melakukan deposit , harap periksa kembali apakah Anda menggunakan nomor rekening bank yang kami tunjuk yang tertera di Halaman Deposit. </div><div style="margin-bottom: 10px;">Jika nomor rekening bank yang digunakan salah, kami TIDAK bertanggung jawab atas masalah yang disebabkan, seperti: keterlambatan pengisian ulang, kehilangan jejak setoran Anda , dll. </div><div style="margin-bottom: 10px;">Terima kasih atas perhatian Anda.</div>',
   },
   depositNotificationGMO: {
     title: "Pemberitahuan Transfer Bank",
-    content: `<div style="margin-bottom: 10px; text-align: center;">Penting !</div> <div style="margin-bottom: 10px;">Pastikan rekening bank penarikan Anda SAMA sebagai rekening deposit Anda untuk mencegah pencucian uang.</div><div style="margin-bottom: 10px;">Ada 3 kali batasan penarikan dalam 1 hari untuk anggota umum.</div><div style="margin- bottom: 10px;">Hubungi CS jika Anda memiliki pertanyaan penarikan, terima kasih.</div>`,
+    content:
+      '<div style="margin-bottom: 10px; text-align: center;">Penting !</div> <div style="margin-bottom: 10px;">Pastikan rekening bank penarikan Anda SAMA sebagai rekening deposit Anda untuk mencegah pencucian uang.</div><div style="margin-bottom: 10px;">Ada 3 kali batasan penarikan dalam 1 hari untuk anggota umum.</div><div style="margin- bottom: 10px;">Hubungi CS jika Anda memiliki pertanyaan penarikan, terima kasih.</div>',
   },
   mgm: {
     msgPlsEnterAccount: "Silakan isi rekening/nama bank",
@@ -1356,17 +1370,14 @@ export const idID = {
     waiting: "Menunggu verifikasi dari layanan pelanggan",
     goVerify: "Verifikasi nama asli",
   },
-
   disabledAddCard: {
     title: "Tidak ada kartu yang ditemukan di akun Anda",
     description:
       "Silakan hubungi layanan pelanggan untuk menambahkan kartu untuk mengakses halaman penarikan.",
   },
-
   hint: {
     _099: "Tersedia pada (00:00-23:59)",
   },
-
   idr1: {
     pleaseEnterAccountName: "Silakan masukkan akun asal Anda",
     msgPlsSelectAccount: "Silakan pilih akun asal Anda",
@@ -1397,7 +1408,6 @@ export const idID = {
     winnings: "Kemenangan",
     outOfCount: "Ups, sepertinya Anda kehabisan putaran.",
   },
-
   idr1HomePage: {
     section1: {
       live: "Kasino langsung",
@@ -1492,6 +1502,15 @@ export const idID = {
     withdraw: "Biaya penarikan",
     deposit: "Biaya setoran",
   },
+  extended: {
+    name: "Nama akun",
+    phone: "Telepon",
+    eMoneyName: "Nama uang elektronik",
+    bankAccount: "Nomor rekening",
+    address: "Alamat",
+    fpsId: "ID FPS",
+    email: "Email",
+  },
   TIGER: {
     login: "Masuk",
     cs: "hubungi kami",
@@ -1501,5 +1520,31 @@ export const idID = {
     sport: "Olahraga",
     fish: "Fishing",
     lottery: "Nomor",
+  },
+  T13: {
+    winner: "Pemenang",
+    proceedLogin: "Sudah punya akun?",
+    proceedRegister: "Belum punya akun?",
+    me: "Saya",
+    topGames: "Game Teratas",
+    recommeneddGames: "Disarankan untuk Anda",
+    newGames: "Game Baru",
+    topNews: "Berita utama",
+    aboutUs: "Tentang kami",
+    quickLink: {
+      title: "Tautan cepat",
+      "247": "Layanan Pelanggan 24/7",
+      faq: "FAQ",
+      privacy: "Kebijakan Privasi",
+      tnc: "Syarat dan Ketentuan",
+      reponsible: "Permainan yang Bertanggung Jawab",
+      follow: "Ikuti Kami",
+    },
+    partners: "Mitra",
+    brandTag: "{brandName}: kasino pemenang!",
+    brandDescription:
+      "{brandName} adalah tujuan utama untuk semua pemain kasino online yang mencari sentuhan kelas dan keanggunan dalam lingkungan permainan mereka. Kasino kami menyediakan lebih dari 400 permainan kasino online – beberapa tradisional dengan sentuhan modern, dan beberapa benar-benar baru, inovatif, dan eksotis. Dengan promosi bonus mingguan yang menarik dan program loyalitas dan VIP yang menarik, kami yakin Anda akan bertahan untuk sementara waktu. Semua perangkat lunak kami dikembangkan dan dikelola oleh industri online terkemuka perusahaan perangkat lunak game, Pegasus. Oleh karena itu, kami dapat menawarkan kepada Anda game-game mutakhir terbaru, dengan kualitas tertinggi dan keamanan tertinggi dalam suasana yang canggih namun menarik.",
+    belongTo:
+      "Situs web ini milik（PAGCOR）Philippine Amusement and Gaming Corporation Otorisasi dan pengawasan PGG Hak Cipta© 2020 PGG Casino Co.Group Versi Hak Cipta Dilindungi Undang-Undang {version}",
   },
 };
