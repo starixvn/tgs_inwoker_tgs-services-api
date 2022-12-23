@@ -1,5 +1,5 @@
 export const vivN = {
-  365: {
+  "365": {
     chess: "365",
   },
   lang: {
@@ -1047,9 +1047,6 @@ export const vivN = {
   SABA: {
     sports: "SABA",
   },
-  SABATF: {
-    sports: "SABA",
-  },
   HABA: {
     slots: "Habanero",
     electron: "Habanero",
@@ -1203,7 +1200,7 @@ export const vivN = {
   },
   SM01: {
     sports: "SM01",
-    cockfight: "SM01"
+    cockfight: "SM01",
   },
   idr: {
     withdrawalNumber: "Số thẻ ngân hàng",
@@ -1258,14 +1255,17 @@ export const vivN = {
     title: "Tải xuống",
     iphone: {
       title: "Hướng dẫn cài đặt iPhone",
-      point1: `1. Theo phương pháp tải xuống, cài đặt → nhấp vào bắt đầu, sẽ có thông báo nhắc" chưa đạt đến nhà phát triển cấp doanh nghiệp ".`,
-      point2: `2. Tương ứng với Cài đặt> Chung> Quản lý Thiết bị> Sau khi tìm thấy mục có tên của cửa sổ bật lên, hãy nhấp vào" Tin cậy ".`,
+      point1:
+        '1. Theo phương pháp tải xuống, cài đặt → nhấp vào bắt đầu, sẽ có thông báo nhắc" chưa đạt đến nhà phát triển cấp doanh nghiệp ".',
+      point2:
+        '2. Tương ứng với Cài đặt> Chung> Quản lý Thiết bị> Sau khi tìm thấy mục có tên của cửa sổ bật lên, hãy nhấp vào" Tin cậy ".',
     },
     android: {
       title: "Hướng dẫn cài đặt Android",
       point1:
         "1. Theo phương pháp tải xuống, hãy nhấp vào cài đặt sau khi quá trình tải xuống hoàn tất.",
-      point2: `2. Đi tới Cài đặt> Bảo mật> Nguồn không xác định> Cho phép và xác nhận, sau đó khởi động lại hệ thống.`,
+      point2:
+        "2. Đi tới Cài đặt> Bảo mật> Nguồn không xác định> Cho phép và xác nhận, sau đó khởi động lại hệ thống.",
     },
   },
   piso: {
@@ -1321,11 +1321,13 @@ export const vivN = {
   },
   depositNotification: {
     title: "Nguyên tắc chuyển tiền",
-    content: `Xin lưu ý rằng liên quan đến tài khoản chuyển tiền, vui lòng chuyển tiền theo tài khoản của nền tảng. Nếu chuyển tiền được gửi đến tài khoản cũ, điểm số cao nhất có thể bị chậm một thời gian hoặc nó có thể không được kiểm tra Công ty chúng tôi sẽ không chịu trách nhiệm về vấn đề này., Hãy chú ý! `,
+    content:
+      "Xin lưu ý rằng liên quan đến tài khoản chuyển tiền, vui lòng chuyển tiền theo tài khoản của nền tảng. Nếu chuyển tiền được gửi đến tài khoản cũ, điểm số cao nhất có thể bị chậm một thời gian hoặc nó có thể không được kiểm tra Công ty chúng tôi sẽ không chịu trách nhiệm về vấn đề này., Hãy chú ý! ",
   },
   depositNotificationGMO: {
     title: "Nguyên tắc chuyển tiền",
-    content: `Hướng dẫn nạp tiền và rút tiền của khách hàng Để phòng chống rửa tiền, các giao dịch rút tiền của khách hàng phải giống với tài khoản nạp tiền bị ràng buộc.`,
+    content:
+      "Hướng dẫn nạp tiền và rút tiền của khách hàng Để phòng chống rửa tiền, các giao dịch rút tiền của khách hàng phải giống với tài khoản nạp tiền bị ràng buộc.",
   },
   mgm: {
     msgPlsEnterAccount: "Vui lòng điền tên / tài khoản ngân hàng",
@@ -1380,12 +1382,6 @@ export const vivN = {
     dialogErrorTitle1: "Không thể rút thăm trúng thưởng",
     dialogErrorTitle2: "Vui lòng thử lại sau",
     dialogIndexErrorTitle1: "Người chơi vui lòng làm mới",
-    remainingSpin: "Bạn vẫn còn {rouletteCount} Cơ hội !",
-    history: "Kỷ lục chiến thắng",
-    winningID: "Giải thưởng chiến thắng ID",
-    dateTime: "thời gian",
-    winnings: "Nội dung chiến thắng",
-    outOfCount: "Số đếm của bạn đã hết!",
   },
   idr1HomePage: {
     section1: {
@@ -1458,6 +1454,15 @@ export const vivN = {
     withdraw: "Phí rút tiền",
     deposit: "Phí đặt cọc",
   },
+  extended: {
+    name: "tên tài khoản",
+    phone: "Điện thoại",
+    eMoneyName: "Tên tiền điện tử",
+    bankAccount: "số tài khoản",
+    address: "Địa chỉ",
+    fpsId: "ID FPS",
+    email: "Email",
+  },
   TIGER: {
     login: "đăng nhập",
     cs: "liên hệ chúng tôi",
@@ -1467,5 +1472,31 @@ export const vivN = {
     sport: "Thi đấu thể thao",
     fish: "Trò chơi câu cá",
     lottery: "Bóng màu",
+  },
+  T13: {
+    winner: "người chiến thắng",
+    proceedLogin: "Đã có tài khoản chưa?",
+    proceedRegister: "Chưa có tài khoản?",
+    me: "tôi",
+    topGames: "Trò chơi hàng đầu",
+    recommeneddGames: "Được đề xuất cho bạn",
+    newGames: "Trò chơi mới",
+    topNews: "Tin tức hàng đầu",
+    aboutUs: "Giới thiệu về chúng tôi",
+    quickLink: {
+      title: "Liên kết nhanh",
+      "247": "Dịch vụ khách hàng 24/7",
+      faq: "Câu hỏi thường gặp",
+      privacy: "Chính sách bảo mật",
+      tnc: "Điều khoản và Điều kiện",
+      reponsible: "Chơi game có trách nhiệm",
+      follow: "Theo dõi chúng tôi",
+    },
+    partners: "đối tác",
+    brandTag: "{brandName}: sòng bạc chiến thắng!",
+    brandDescription:
+      "{brandName} là điểm đến hàng đầu cho tất cả những người chơi sòng bạc trực tuyến đang tìm kiếm cảm giác đẳng cấp và sang trọng trong môi trường chơi trò chơi của họ. Sòng bạc của chúng tôi cung cấp cho bạn hơn 400 trò chơi sòng bạc trực tuyến – một số trò chơi truyền thống pha chút hiện đại và một số hoàn toàn mới, sáng tạo và kỳ lạ. Với các chương trình khuyến mãi tiền thưởng hàng tuần không thể cưỡng lại và các chương trình khách hàng thân thiết và VIP hấp dẫn, chúng tôi chắc chắn rằng bạn sẽ gắn bó trong một thời gian tới. Tất cả phần mềm của chúng tôi được phát triển và duy trì bởi công ty trực tuyến hàng đầu trong ngành công ty phần mềm trò chơi, Pegasus. Nhờ đó, chúng tôi có thể cung cấp cho bạn những trò chơi tiên tiến mới nhất, có chất lượng cao nhất và bảo mật tối ưu trong một bầu không khí phức tạp nhưng hấp dẫn.",
+    belongTo:
+      "Trang web này thuộc về（PAGCOR）Philippine Entertainment and Gaming Corporation Ủy quyền và giám sát PGG Bản quyền © 2020 PGG Casino Co.Group Phiên bản bảo lưu mọi quyền {version}",
   },
 };

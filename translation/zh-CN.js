@@ -1152,7 +1152,7 @@ export const zhCN = {
   TCG_LOTTO_VN: {
     lottery: "TCG VN彩票",
   },
-  365: {
+  "365": {
     chess: "365棋牌",
   },
   LY: {
@@ -1181,7 +1181,11 @@ export const zhCN = {
     fish: "SPADE捕鱼",
     slots: "SPADE老虎机",
   },
-  AWC_FACAI: { electron: "发财电子", slots: "发财老虎机", fish: "发财捕鱼" },
+  AWC_FACAI: {
+    electron: "发财电子",
+    slots: "发财老虎机",
+    fish: "发财捕鱼",
+  },
   AWC_PGS: { electron: "PGS电子", slots: "PGS老虎机" },
   AWC_AWS: { electron: "AWS电子", slots: "AWS老虎机" },
   AWC_FS: { slots: "FS老虎机" },
@@ -1196,7 +1200,7 @@ export const zhCN = {
   },
   SM01: {
     sports: "SM01",
-    cockfight: "SM01"
+    cockfight: "SM01",
   },
   idr: {
     withdrawalNumber: "银行卡号码",
@@ -1249,7 +1253,8 @@ export const zhCN = {
     title: "下载",
     iphone: {
       title: "iPhone 安装指南",
-      point1: `1. 按下载方式，安装→点击启动，会出现提示“尚未信任企业级开发人员”。`,
+      point1:
+        "1. 按下载方式，安装→点击启动，会出现提示“尚未信任企业级开发人员”。",
       point2:
         "2. 前往设置>通用>设备管理>找到和弹窗对应名称的项目后, 点击“信任”即可。",
     },
@@ -1308,11 +1313,13 @@ export const zhCN = {
   },
   depositNotification: {
     title: "汇款指引",
-    content: `请各位注意，关于汇款帐号，请根据平台的户口进行汇款，如汇款至旧户口，上分可能有时间延迟，亦有可能检查不到，我司不会因这个问题而负上责任，敬请垂注！ `,
+    content:
+      "请各位注意，关于汇款帐号，请根据平台的户口进行汇款，如汇款至旧户口，上分可能有时间延迟，亦有可能检查不到，我司不会因这个问题而负上责任，敬请垂注！ ",
   },
   depositNotificationGMO: {
     title: "汇款指引",
-    content: `客户存取款须知\n为防止洗黑钱\n一般客户每日出款次数为三次\n客户取款必须跟绑定充值帐户相同\n有关于取款问题可向客服查询`,
+    content:
+      "客户存取款须知\n为防止洗黑钱\n一般客户每日出款次数为三次\n客户取款必须跟绑定充值帐户相同\n有关于取款问题可向客服查询",
   },
   mgm: {
     msgPlsEnterAccount: "请输入银行帐户/姓名",
@@ -1445,6 +1452,15 @@ export const zhCN = {
     withdraw: "提款费",
     deposit: "手续费",
   },
+  extended: {
+    name: "帐户名字",
+    phone: "电话号码",
+    eMoneyName: "电子货币名称",
+    bankAccount: "银行卡号",
+    address: "地址",
+    fpsId: "ID FPS",
+    email: "电子邮件",
+  },
   TIGER: {
     login: "登入",
     cs: "联系我们",
@@ -1454,5 +1470,31 @@ export const zhCN = {
     sport: "体育竞技",
     fish: "捕鱼游戏",
     lottery: "彩球",
+  },
+  T13: {
+    winner: "赢家",
+    proceedLogin: "已有帐号？",
+    proceedRegister: "没有账号？",
+    me: "我",
+    topGames: "热门游戏",
+    recommeneddGames: "为您推荐",
+    newGames: "新游戏",
+    topNews: "头条新闻",
+    aboutUs: "关于我们",
+    quickLink: {
+      title: "快速链接",
+      "247": "24/7 客户服务",
+      faq: "常见问题解答",
+      privacy: "隐私政策",
+      tnc: "条款和条件",
+      reponsible: "负责任的游戏",
+      follow: "关注我们",
+    },
+    partners: "合作伙伴",
+    brandTag: "{brandName}：一个成功的赌场！",
+    brandDescription:
+      "{brandName} 是所有在线赌场玩家的首选目的地，他们希望在他们的游戏环境中寻找一流和优雅的感觉。我们的赌场为您提供超过 400 种在线赌场游戏 - 一些传统与现代曲折，和 一些全新的、创新的和异国情调的。凭借不可抗拒的每周奖金促销和有吸引力的忠诚度和 VIP 计划，我们相信您会在未来一段时间内坚持使用。我们所有的软件都是由业界最重要的在线开发和维护的 游戏软件公司 Pegasus。因此，我们能够在精致而引人入胜的氛围中为您提供最高质量和终极安全性的最新尖端游戏。",
+    belongTo:
+      "本网站属于（PAGCOR）菲律宾娱乐博彩公司授权和监管 PGG Copyright© 2020 PGG Casino Co.Group All Rights Reserved Version {version}",
   },
 };

@@ -1180,7 +1180,7 @@ export const enUS = {
   TCG_LOTTO_VN: {
     lottery: "TCG VN",
   },
-  365: {
+  "365": {
     chess: "365",
   },
   LY: {
@@ -1222,7 +1222,7 @@ export const enUS = {
   },
   SM01: {
     sports: "SM01",
-    cockfight: "SM01"
+    cockfight: "SM01",
   },
   idr: {
     withdrawalNumber: "Bank card number",
@@ -1277,13 +1277,17 @@ export const enUS = {
     title: "Download",
     iphone: {
       title: "Installation guide for iOS:",
-      point1: `1. Install and open the app. A notification of "Untrusted Enterprise Developer" will pop up.`,
-      point2: `2. Go to your phone's "Settings" -> "General" -> "Profiles & Device Management" -> Click on the name of this app. Click "Trust (name of this app)" . Relaunch the app and start playing.`,
+      point1:
+        '1. Install and open the app. A notification of "Untrusted Enterprise Developer" will pop up.',
+      point2:
+        '2. Go to your phone\'s "Settings" -> "General" -> "Profiles & Device Management" -> Click on the name of this app. Click "Trust (name of this app)" . Relaunch the app and start playing.',
     },
     android: {
       title: "Installation guide for Android:",
-      point1: `1. Click the "Download" link, the app starts to download. Once finished, click "Install".`,
-      point2: `2. Go to "Settings"->"Security"-> enable installation from unknown sources. Relaunch the app and start playing.`,
+      point1:
+        '1. Click the "Download" link, the app starts to download. Once finished, click "Install".',
+      point2:
+        '2. Go to "Settings"->"Security"-> enable installation from unknown sources. Relaunch the app and start playing.',
     },
   },
 
@@ -1336,11 +1340,13 @@ export const enUS = {
   },
   depositNotification: {
     title: "Bank Transferring Notification",
-    content: `<div style="margin-bottom: 10px; text-align: center">* IMPORTANT *</div> <div style="margin-bottom: 10px;">Dear all VIP members, before making a deposit, please double-check you are using our designated bank account number showed on the Deposit Page. </div><div style="margin-bottom: 10px;">If the incorrect bank account number has been used, we're NOT responsible for the issues caused, such as: top-up delay, lost track of your deposit, etc. </div><div style="margin-bottom: 10px;">Thank you for your attention.</div>`,
+    content:
+      '<div style="margin-bottom: 10px; text-align: center">* IMPORTANT *</div> <div style="margin-bottom: 10px;">Dear all VIP members, before making a deposit, please double-check you are using our designated bank account number showed on the Deposit Page. </div><div style="margin-bottom: 10px;">If the incorrect bank account number has been used, we\'re NOT responsible for the issues caused, such as: top-up delay, lost track of your deposit, etc. </div><div style="margin-bottom: 10px;">Thank you for your attention.</div>',
   },
   depositNotificationGMO: {
     title: "Bank Transferring Notification",
-    content: `<div style="margin-bottom: 10px; text-align: center;">Important !</div> <div style="margin-bottom: 10px;">Please ensure your withdrawal bank account is the SAME as your deposit account to prevent money laundering.</div><div style="margin-bottom: 10px;">There are 3 times withdrawal limitation within 1 day for general members.</div><div style="margin-bottom: 10px;">Contact CS if you have any withdrawal questions, thanks you.</div>`,
+    content:
+      '<div style="margin-bottom: 10px; text-align: center;">Important !</div> <div style="margin-bottom: 10px;">Please ensure your withdrawal bank account is the SAME as your deposit account to prevent money laundering.</div><div style="margin-bottom: 10px;">There are 3 times withdrawal limitation within 1 day for general members.</div><div style="margin-bottom: 10px;">Contact CS if you have any withdrawal questions, thanks you.</div>',
   },
   mgm: {
     msgPlsEnterAccount: "Please fill in bank account/name",
@@ -1481,6 +1487,15 @@ export const enUS = {
     withdraw: "Withdrawal fee",
     deposit: "Transfer fee",
   },
+  extended: {
+    name: "Account name",
+    phone: "Phone",
+    eMoneyName: "E-money Name",
+    bankAccount: "Account number",
+    address: "Address",
+    fpsId: "FPS ID",
+    email: "Email",
+  },
   TIGER: {
     login: "Login",
     cs: "Contact Us",
@@ -1490,5 +1505,31 @@ export const enUS = {
     sport: "Sports",
     fish: "Fishing",
     lottery: "Number",
+  },
+  T13: {
+    winner: "Winners",
+    proceedLogin: "Already have an acocunt?",
+    proceedRegister: "Don't have an account?",
+    me: "Me",
+    topGames: "Top Games",
+    recommeneddGames: "Recommended for You",
+    newGames: "New Games",
+    topNews: "Top news",
+    aboutUs: "About us",
+    quickLink: {
+      title: "Quick link",
+      "247": "24/7 Customer Service",
+      faq: "FAQs",
+      privacy: "Privacy Policy",
+      tnc: "Terms and Conditions",
+      reponsible: "Responsible Gaming",
+      follow: "Follow Us",
+    },
+    partners: "Partners",
+    brandTag: "{brandName}: a winning casino!",
+    brandDescription:
+      "{brandName} is the leading destination for all online casino players who are looking for a touch of class and elegance in their gaming environment. Our casino provides you with over 400 online casino games – some traditional with modern twists, and some completely new, innovative, and exotic. With irresistible weekly bonus promotions and attractive loyalty and VIP programs, we're sure you'll be sticking around for a while to come. All of our software is developed and maintained by the industry's foremost online gaming software company, Pegasus. Because of this, we are able to offer you the newest cutting-edge games, of the highest quality and ultimate security in a sophisticated, yet engaging atmosphere.",
+    belongTo:
+      "This website belongs to（PAGCOR）Philippine Amusement and Gaming Corporation Authorization and supervision PGG Copyright© 2020 PGG Casino Co.Group All Rights Reserved Version {version}",
   },
 };
