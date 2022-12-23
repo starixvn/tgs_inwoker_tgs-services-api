@@ -165,6 +165,7 @@ export const thTH = {
     termsAndCondition: "ข้อกำหนดและเงื่อนไข",
     exit: "ออกจากระบบ",
     playeronline: "ผู้ใช้ออนไลน์",
+    cockfight: "การชนไก่",
   },
   affiliate: {
     title: "โปรโมชั่นสร้างรายได้",
@@ -1191,6 +1192,10 @@ export const thTH = {
   TF: {
     sports: "TF Gaming",
     esports: "TF",
+  },
+  SM01: {
+    sports: "SM01",
+    cockfight: "SM01"
   },
   idr: {
     withdrawalNumber: "หมายเลขบัตรธนาคาร",

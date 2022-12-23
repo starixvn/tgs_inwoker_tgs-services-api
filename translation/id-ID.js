@@ -171,6 +171,7 @@ export const idID = {
     termsAndCondition: "Syarat dan ketentuan",
     exit: "Exit",
     playeronline: "Pengguna online",
+    cockfight: "Sabungan",
   },
   affiliate: {
     title: "Afiliasi",
@@ -1212,6 +1213,10 @@ export const idID = {
   TF: {
     sports: "TF Gaming",
     esports: "TF",
+  },
+  SM01: {
+    sports: "SM01",
+    cockfight: "SM01"
   },
   idr: {
     withdrawalNumber: "NOMOR REKENING",

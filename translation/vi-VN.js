@@ -171,6 +171,7 @@ export const vivN = {
     termsAndCondition: "Các điều khoản và điều kiện",
     exit: "Thoát",
     playeronline: "người dùng trực tuyến",
+    cockfight: "Đá gà",
   },
   affiliate: {
     title: "Khuyến mãi",
@@ -1198,6 +1199,10 @@ export const vivN = {
   TF: {
     sports: "TF",
     esports: "TF",
+  },
+  SM01: {
+    sports: "SM01",
+    cockfight: "SM01"
   },
   idr: {
     withdrawalNumber: "Số thẻ ngân hàng",

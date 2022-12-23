@@ -174,6 +174,7 @@ export const enUS = {
     termsAndCondition: "Terms and conditions",
     exit: "Exit",
     playeronline: "Online users",
+    cockfight: "Cockfight",
   },
   affiliate: {
     title: "Affiliate",
@@ -1217,6 +1218,10 @@ export const enUS = {
   TF: {
     sports: "TF Gaming",
     esports: "TF",
+  },
+  SM01: {
+    sports: "SM01",
+    cockfight: "SM01"
   },
   idr: {
     withdrawalNumber: "Bank card number",
