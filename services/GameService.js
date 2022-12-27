@@ -12,12 +12,18 @@ export const GameService = {
   RemoveFavoriteGame,
   GetFavoriteGame,
   JoinBetConstruct,
+  GetCockfight,
 };
 
 function GetGameList(gpCode, gametypes) {
   const result = ApiService.get(
     `Game/list?gpcode=${gpCode}&platformtype=${config.isPC}&language=${i18n.language}&currency=${config.currency}&gametypes=${gametypes}`
   );
+  return result;
+}
+
+function GetCockfight(gametypes) {
+  const result = ApiService.get(`game/sm01`);
   return result;
 }
 
