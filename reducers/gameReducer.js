@@ -45,6 +45,8 @@ export function gameReducer(state = initialState, action) {
       var providerList = [];
       for (var i = 0; i < gameList.length; i++) {
         for (var x = 0; x < gameList[i].gametypes.length; x++) {
+          var newcode = gameList[i].code;
+          var newname = gameList[i].name;
           if (
             gameList[i].gametypes[x] !== GameTypeEnum.RNGSPORTS ||
             (gameList[i].gametypes[x] === GameTypeEnum.RNGSPORTS &&
@@ -52,14 +54,9 @@ export function gameReducer(state = initialState, action) {
           ) {
             //the reason having two variable is because apparently name and code is different
             //if use code on both abbreviation and name, the either one of those will fucked up.
-            var newcode;
-            var newname;
             if (gameList[i].code === "BTI" && config.currency === "PHP") {
               newcode = "PHSB";
               newname = "PHSB";
-            } else {
-              newcode = gameList[i].code;
-              newname = gameList[i].name;
             }
 
             list.push({
