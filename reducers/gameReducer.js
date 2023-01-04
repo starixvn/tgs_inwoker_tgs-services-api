@@ -59,6 +59,14 @@ export function gameReducer(state = initialState, action) {
               newname = "PHSB";
             }
 
+            //if gamelist.code is SM01 or AWC_COCKFIGHT change the type to GameTypeEnum.COCKFIGHT
+            if (
+              gameList[i].code === "AWC_COCKFIGHT" ||
+              gameList[i].code === "SM01"
+            ) {
+              gameList[i].gametypes[x] = GameTypeEnum.COCKFIGHT;
+            }
+
             list.push({
               abbreviation: newcode,
               game_platform_id: 0,
