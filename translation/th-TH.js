@@ -1176,6 +1176,7 @@ export const thTH = {
   },
   AWC_COCKFIGHT: {
     sports: "SV388",
+    cockfight: "SV388",
   },
   AWC_SPADE: {
     electron: "SPADE",

@@ -1175,6 +1175,7 @@ export const zhCN = {
   },
   AWC_COCKFIGHT: {
     sports: "SV388斗鸡",
+    cockfight: "SV388",
   },
   AWC_SPADE: {
     electron: "SPADE电子",
