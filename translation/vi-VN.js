@@ -1182,6 +1182,7 @@ export const vivN = {
   },
   AWC_COCKFIGHT: {
     sports: "SV388",
+    cockfight: "SV388",
   },
   AWC_SPADE: {
     electron: "SPADE",
@@ -1202,7 +1203,7 @@ export const vivN = {
   },
   SM01: {
     sports: "SM01",
-    cockfight: "SM01"
+    cockfight: "SM01",
   },
   idr: {
     withdrawalNumber: "Số thẻ ngân hàng",

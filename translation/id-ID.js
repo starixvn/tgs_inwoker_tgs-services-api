@@ -1196,6 +1196,7 @@ export const idID = {
   },
   AWC_COCKFIGHT: {
     sports: "SV388",
+    cockfight: "SV388",
   },
   AWC_SPADE: {
     electron: "SPADE",
@@ -1216,7 +1217,7 @@ export const idID = {
   },
   SM01: {
     sports: "SM01",
-    cockfight: "SM01"
+    cockfight: "SM01",
   },
   idr: {
     withdrawalNumber: "NOMOR REKENING",

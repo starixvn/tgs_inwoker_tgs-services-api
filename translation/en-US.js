@@ -1201,6 +1201,7 @@ export const enUS = {
   },
   AWC_COCKFIGHT: {
     sports: "SV388",
+    cockfight: "SV388",
   },
   AWC_SPADE: {
     electron: "SPADE",
@@ -1221,7 +1222,7 @@ export const enUS = {
   },
   SM01: {
     sports: "SM01",
-    cockfight: "SM01"
+    cockfight: "SM01",
   },
   idr: {
     withdrawalNumber: "Bank card number",

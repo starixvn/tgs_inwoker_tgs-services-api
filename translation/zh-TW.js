@@ -1167,6 +1167,7 @@ export const zhTW = {
   },
   AWC_COCKFIGHT: {
     sports: "SV388鬥鷄",
+    cockfight: "SV388鬥鷄",
   },
   AWC_SPADE: {
     electron: "SPADE電子",
@@ -1188,7 +1189,7 @@ export const zhTW = {
   },
   SM01: {
     sports: "SM01",
-    cockfight: "SM01"
+    cockfight: "SM01",
   },
   idr: {
     withdrawalNumber: "銀行卡號碼",
