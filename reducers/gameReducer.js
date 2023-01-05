@@ -19,7 +19,7 @@ const initialState = {
   pending: false,
   kyGameList: [],
   kyHotGameList: [],
-  homePageGameList: [],
+  homePageGameList: config.features.HardcodeContentIDR ? idr.gameList : [],
   providerList: config.features.HardcodeContentIDR ? idr.providerList : [],
   error: null,
   favGame: [],
