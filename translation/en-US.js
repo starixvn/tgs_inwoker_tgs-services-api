@@ -818,7 +818,7 @@ export const enUS = {
       bgDesc:
         "The most comprehensive variety of lottery games and betting methods",
       kmDesc:
-        "专注于彩票游戏行业多年，拥有经典彩种、玩法。还有极易操作的游戏界面，更是在您游戏过程中增光添彩！",
+        "",
     },
     chessGame: {
       kyDesc:
