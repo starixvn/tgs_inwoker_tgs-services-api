@@ -1,5 +1,5 @@
 import Config from "../../config/config";
-import i18n from "../../utils/i18n";
+
 export const GameTypeEnum = {
   SPORTS: 1,
   RNGSPORTS: 2,
