@@ -1,3 +1,5 @@
+import config from "../../config/config";
+
 import {
   IPRESTRICT,
   GETMOBILEPREFIX_SUCCESS,
@@ -45,17 +47,20 @@ import {
   GETDAROULETTE_HISTORY_FAILED,
   GETDAROULETTE_HISTORY_SUCCESS,
 } from "../constant/actionType";
+import { idr } from "../utils/hardcode/idr-stg";
 const initialState = {
   isIPRestrict: false,
   mobilePrefix: [],
   isMaintenance: false,
   promotionList: { items: [] },
   token: "",
-  brandLanguage: [
-    {
-      culturecode: "en-US",
-    },
-  ],
+  brandLanguage: config.features.HardcodeContentIDR
+    ? idr.language
+    : [
+        {
+          culturecode: "en-US",
+        },
+      ],
   brandsSupport: [],
   livechat: "",
   banner: [],

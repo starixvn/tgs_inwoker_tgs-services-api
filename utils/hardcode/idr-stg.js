@@ -341,7 +341,17 @@ const providerList = [
   },
 ];
 
+const language = [
+  {
+    culturecode: "en-US",
+  },
+  {
+    culturecode: "id-ID",
+  },
+];
+
 export const idr = {
   gameList,
   providerList,
+  language,
 };
