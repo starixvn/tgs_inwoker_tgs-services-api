@@ -13,12 +13,14 @@ import {
   GETFAVGAME_SUCCESS,
 } from "../constant/actionType";
 import { GameTypeEnum } from "../utils/Enum";
+import { idr } from "../utils/hardcode/idr-stg";
+
 const initialState = {
   pending: false,
   kyGameList: [],
   kyHotGameList: [],
-  homePageGameList: [],
-  providerList: [],
+  homePageGameList: config.features.HardcodeContentIDR ? idr.gameList : [],
+  providerList: config.features.HardcodeContentIDR ? idr.providerList : [],
   error: null,
   favGame: [],
   containTransferWallet: false,
@@ -37,7 +39,9 @@ export function gameReducer(state = initialState, action) {
         ...state,
         message: "",
         loading: true,
-        homePageGameList: [],
+        homePageGameList: config.features.HardcodeContentIDR
+          ? idr.gameList
+          : [],
       };
     case GETHOMEPAGEGAMELIST_SUCCESS:
       var gameList = action.payload.data;
