@@ -350,8 +350,19 @@ const language = [
   },
 ];
 
+const brandSupport = [
+  {
+    type: "WeChat",
+    phone: "16713494701",
+    appid: "1",
+    qrcodeurl:
+      "https://project.srvptt.com/tgs-project/messengerQRCode/ccDXkUmswrdTmWKdWdVvg7FuKV8dXK5K.png",
+  },
+];
+
 export const idr = {
   gameList,
   providerList,
   language,
+  brandSupport,
 };

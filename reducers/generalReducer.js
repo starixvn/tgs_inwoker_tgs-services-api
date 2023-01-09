@@ -61,7 +61,7 @@ const initialState = {
           culturecode: "en-US",
         },
       ],
-  brandsSupport: [],
+  brandsSupport: config.features.HardcodeContentIDR ? idr.brandSupport : [],
   livechat: "",
   banner: [],
   brand: {
