@@ -1185,6 +1185,10 @@ export const zhTW = {
     sports: "TF體育",
     esports: "TF電競",
   },
+  TFTF: {
+    sports: "TF體育",
+    esports: "TF電競",
+  },
   idr: {
     withdrawalNumber: "銀行卡號碼",
     msgEnterWithdrawalNumber: "請輸入銀行卡號碼",

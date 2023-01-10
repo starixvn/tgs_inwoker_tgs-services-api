@@ -1192,6 +1192,10 @@ export const zhCN = {
     sports: "TF体育",
     esports: "TF电竞",
   },
+  TFTF: {
+    sports: "TF体育",
+    esports: "TF电竞",
+  },
   idr: {
     withdrawalNumber: "银行卡号码",
     msgEnterWithdrawalNumber: "请输入银行卡号码",

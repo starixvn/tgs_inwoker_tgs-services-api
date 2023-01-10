@@ -1218,6 +1218,10 @@ export const enUS = {
     sports: "TF Gaming",
     esports: "TF",
   },
+  TFTF: {
+    sports: "TF Gaming",
+    esports: "TF",
+  },
   idr: {
     withdrawalNumber: "Bank card number",
     msgEnterWithdrawalNumber: "Please enter bank card number",
