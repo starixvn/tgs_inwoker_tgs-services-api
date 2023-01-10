@@ -1213,6 +1213,10 @@ export const idID = {
     sports: "TF Gaming",
     esports: "TF",
   },
+  TFTF: {
+    sports: "TF Gaming",
+    esports: "TF",
+  },
   idr: {
     withdrawalNumber: "NOMOR REKENING",
     msgEnterWithdrawalNumber: "Silahkan Masukkan Nomor Rekening",

@@ -1192,6 +1192,10 @@ export const thTH = {
     sports: "TF Gaming",
     esports: "TF",
   },
+  TFTF: {
+    sports: "TF Gaming",
+    esports: "TF",
+  },
   idr: {
     withdrawalNumber: "หมายเลขบัตรธนาคาร",
     msgEnterWithdrawalNumber: "โปรดป้อนหมายเลขบัตรธนาคาร",
