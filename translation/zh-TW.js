@@ -1192,6 +1192,10 @@ export const zhTW = {
     sports: "TF體育",
     esports: "TF電競",
   },
+  TFTF: {
+    sports: "TF體育",
+    esports: "TF電競",
+  },
   SM01: {
     sports: "SM01",
     cockfight: "SM01",

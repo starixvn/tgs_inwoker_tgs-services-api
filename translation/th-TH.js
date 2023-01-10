@@ -1195,6 +1195,10 @@ export const thTH = {
     sports: "TF Gaming",
     esports: "TF",
   },
+  TFTF: {
+    sports: "TF Gaming",
+    esports: "TF",
+  },
   SM01: {
     sports: "SM01",
     cockfight: "SM01",

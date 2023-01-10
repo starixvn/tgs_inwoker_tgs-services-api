@@ -1199,6 +1199,10 @@ export const vivN = {
     sports: "TF",
     esports: "TF",
   },
+  TFTF: {
+    sports: "TF",
+    esports: "TF",
+  },
   SM01: {
     sports: "SM01",
     cockfight: "SM01",

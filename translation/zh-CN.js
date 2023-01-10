@@ -1199,6 +1199,10 @@ export const zhCN = {
     sports: "TF体育",
     esports: "TF电竞",
   },
+  TFTF: {
+    sports: "TF体育",
+    esports: "TF电竞",
+  },
   SM01: {
     sports: "SM01",
     cockfight: "SM01",
