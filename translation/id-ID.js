@@ -627,6 +627,11 @@ export const idID = {
         to: "Ke",
       },
     },
+    balanceChanges: {
+      title: "Catatan Perubahan Akun",
+      type: "Tipe Transaksi",
+      amount: "Jumlah"
+    },
     dateTime: "Waktu",
     betid: "ID",
     betDateTime: "Waktu Taruhan",

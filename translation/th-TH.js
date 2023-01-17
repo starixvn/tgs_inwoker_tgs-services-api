@@ -613,6 +613,11 @@ export const thTH = {
         to: "ถึง",
       },
     },
+    balanceChanges: {
+      title: "บันทึกการเปลี่ยนแปลงบัญชี",
+      type: "ประเภทธุรกรรม",
+      amount: "จำนวน"
+    },
     dateTime: "เวลา",
     betDateTime: "เวลาเดิมพัน",
     betid: "หมายเลขคำสั่งซื้อ",

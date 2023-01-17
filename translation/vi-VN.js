@@ -622,6 +622,11 @@ export const vivN = {
         to: "Tới",
       },
     },
+    balanceChanges: {
+      title: "Hồ sơ thay đổi tài khoản",
+      type: "Loại giao dịch",
+      amount: "Số lượng"
+    },
     dateTime: "Thời gian",
     betid: "ID",
     betDateTime: "Thời gian đặt cược",
