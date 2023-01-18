@@ -894,7 +894,7 @@ export const idID = {
       controlDesc: "Anda sudah mengatur kontrol diri, akun di",
       controlText: "akan dibuka",
       errorMsg: {
-        kosongUsername: "Nama Pengguna Tidak Boleh Kosong",
+        emptyUsername: "Nama Pengguna Tidak Boleh Kosong",
         emptyPassword: "Kata Sandi Tidak Boleh Kosong",
       },
     },
@@ -960,8 +960,7 @@ export const idID = {
       title: "Maaf, sistem dalam pemeliharaan",
       maintenance: "pemeliharaan",
       maintenancePeriod: "Maintenance period：",
-      desc:
-        "Untuk pengalaman bermain yang lebih baik, kami telah bekerja keras",
+      desc: "Untuk pengalaman bermain yang lebih baik, kami telah bekerja keras",
       descText:
         "Jika memiliki pertanyaan, silahkan hubungi layanan pelanggan online",
       btn: "Hubungi Kami",
@@ -980,13 +979,11 @@ export const idID = {
   CustomBank: "Bank Kustom",
   VR: {
     lottery: "VR",
-    desc:
-      "Lotre VR. Kami juga mengembangkan seri permainan VR Electronic, bertekad untuk memberi pelanggan lebih banyak pilihan yang beragam. VR akan terus berkreasi dan berkembang, untuk memperkenalkan lebih banyak jenis lotere baru kepada publik, dan menciptakan hiburan serba bisa. lingkungan.",
+    desc: "Lotre VR. Kami juga mengembangkan seri permainan VR Electronic, bertekad untuk memberi pelanggan lebih banyak pilihan yang beragam. VR akan terus berkreasi dan berkembang, untuk memperkenalkan lebih banyak jenis lotere baru kepada publik, dan menciptakan hiburan serba bisa. lingkungan.",
   },
   KY: {
     chess: "KaiYuan",
-    desc:
-      "Permainan kartu nomor 1. Banteng banteng, blackjack, poker, harimau naga, dan permainan kartu pemain nyata lainnya",
+    desc: "Permainan kartu nomor 1. Banteng banteng, blackjack, poker, harimau naga, dan permainan kartu pemain nyata lainnya",
     BankerNiuNiu: "Niu-Niu",
     GoldenFlower: "Bunga Gloden",
     The21Point: "The 21 Point",
@@ -996,14 +993,12 @@ export const idID = {
   sports: {
     bunnydesc:
       "{brand} menyediakan inovatif, berbagai jenis taruhan dan peluang kompetitif untuk pertandingan langsung. Taruhan mudah dengan cara yang cepat, dan aman melalui semua jenis perangkat di mana saja, kapan saja! Selain itu, kami mendukung semua jenis acara olahraga, termasuk sepak bola, bola basket, bisbol , tenis, sepak bola, dan E-sports untuk memenuhi kebutuhan Anda!",
-    desc:
-      "Pega Gaming memberikan inovasi, variasi jenis taruhan, dan peluang kompetitif untuk pertandingan langsung. Taruhan mudah dengan cara cepat dan aman melalui perangkat apa pun di mana saja, kapan saja! Selain itu, kami mendukung semua jenis acara olahraga, termasuk sepak bola, bola basket, bisbol, tenis, sepak bola, dan E-sports untuk memenuhi kebutuhan Anda!",
+    desc: "Pega Gaming memberikan inovasi, variasi jenis taruhan, dan peluang kompetitif untuk pertandingan langsung. Taruhan mudah dengan cara cepat dan aman melalui perangkat apa pun di mana saja, kapan saja! Selain itu, kami mendukung semua jenis acara olahraga, termasuk sepak bola, bola basket, bisbol, tenis, sepak bola, dan E-sports untuk memenuhi kebutuhan Anda!",
   },
   esports: {
     bunnydesc:
       "IM E-Sports adalah platform taruhan terkemuka di industri yang dirancang oleh para gamer untuk para gamer. Siap untuk dikagumi oleh antarmuka visual yang estetis, opsi taruhan tanpa akhir, dan pengalaman taruhan terbaik. Kunjungi {brand}, mitra bangga IM E-Sports , dan ikuti terus game dan tim favorit Anda!",
-    desc:
-      "IM E-Sports adalah platform taruhan terkemuka di industri yang dirancang oleh para gamer untuk para gamer. Siap untuk dikagumi oleh antarmuka visual yang estetis, opsi taruhan tanpa akhir, dan pengalaman taruhan terbaik. Kunjungi {brand} Gaming, mitra bangga IM E- Olahraga, dan ikuti terus game dan tim favorit Anda!",
+    desc: "IM E-Sports adalah platform taruhan terkemuka di industri yang dirancang oleh para gamer untuk para gamer. Siap untuk dikagumi oleh antarmuka visual yang estetis, opsi taruhan tanpa akhir, dan pengalaman taruhan terbaik. Kunjungi {brand} Gaming, mitra bangga IM E- Olahraga, dan ikuti terus game dan tim favorit Anda!",
   },
   services: {
     depositTitle: "Pembayaran Mudah, Cepat",
@@ -1013,8 +1008,7 @@ export const idID = {
     security:
       "Sebagai platform taruhan online paling tepercaya di Asia, kami berkomitmen untuk memberikan pengalaman bermain game terbaik di setiap aspek. Kami menggunakan SSL 128-bit untuk mengenkripsi setiap informasi pribadi yang Anda bagikan kepada kami.",
     oddsTitle: "500+ Game teratas",
-    odds:
-      "Dari olahraga yang mengasyikkan, hingga jackpot progresif besar, permainan meja klasik, kasino langsung, lotere, dan permainan khusus - kami memiliki semuanya! Dengan 500+ permainan, kasino online kami menawarkan jam hiburan dan hadiah eksklusif, hadiah, dan bonus hanya untuk Anda !",
+    odds: "Dari olahraga yang mengasyikkan, hingga jackpot progresif besar, permainan meja klasik, kasino langsung, lotere, dan permainan khusus - kami memiliki semuanya! Dengan 500+ permainan, kasino online kami menawarkan jam hiburan dan hadiah eksklusif, hadiah, dan bonus hanya untuk Anda !",
     platformTitle: "Di mana saja, perangkat apa saja",
     platform:
       "Di mana pun Anda berada, Anda dapat memenangkan keberuntungan dan bersenang-senang kapan saja, dengan perangkat apa pun! Kami tersedia di aplikasi untuk perangkat Android dan iOS, dan juga sebagai platform berbasis web. Manfaatkan peluang untuk memenangkan BIG bersama kami hari ini!",
@@ -1074,14 +1068,12 @@ export const idID = {
   JDB: {
     slots: "JDB",
     fish: "JDB",
-    desc:
-      "Memenangkan harta secara online tidak membosankan. Ada banyak permainan dan mesin slot di sini. Jika Anda ingin merasakan lebih banyak gameplay, Anda harus datang ke sini!",
+    desc: "Memenangkan harta secara online tidak membosankan. Ada banyak permainan dan mesin slot di sini. Jika Anda ingin merasakan lebih banyak gameplay, Anda harus datang ke sini!",
   },
   JDBTF: {
     slots: "JDBTF Slots",
     fish: "JDBTF Fishing",
-    desc:
-      "Memenangkan harta secara online tidak membosankan. Ada banyak permainan dan mesin slot di sini. Jika Anda ingin merasakan lebih banyak gameplay, Anda harus datang ke sini!",
+    desc: "Memenangkan harta secara online tidak membosankan. Ada banyak permainan dan mesin slot di sini. Jika Anda ingin merasakan lebih banyak gameplay, Anda harus datang ke sini!",
   },
   JILI: {
     slots: "JILI",
