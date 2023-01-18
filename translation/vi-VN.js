@@ -1166,6 +1166,7 @@ export const vivN = {
   },
   BC: {
     sports: "BetConstruct",
+    customsports: "BetConstruct",
   },
   AVIA: {
     sports: "AVIA ",
