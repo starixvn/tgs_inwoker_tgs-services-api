@@ -23,6 +23,7 @@ export const GameEnum = {
   AG: "AG",
   BBIN: "BBIN",
   DG: "DG",
+  DGTF: "DGTF",
   GD: "GD",
   MG: "MG",
   KY: "KY",
@@ -115,5 +116,5 @@ export const SlotGameWithTest = {
   Yes: 1,
 };
 export const customGPname = {
-  WGFM: Config.brand === "WGHK" ? "MGM" : ""
+  WGFM: Config.brand === "WGHK" ? "MGM" : "",
 };
