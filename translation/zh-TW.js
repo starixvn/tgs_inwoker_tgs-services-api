@@ -1202,6 +1202,12 @@ export const zhTW = {
     sports: "SM01",
     cockfight: "SM01",
   },
+  BTG: {
+    slots: "BTG老虎機"
+  },
+  NLC: {
+    slots: "NLC老虎機"
+  },
   idr: {
     withdrawalNumber: "銀行卡號碼",
     msgEnterWithdrawalNumber: "請輸入銀行卡號碼",

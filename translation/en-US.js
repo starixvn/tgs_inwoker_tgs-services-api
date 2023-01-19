@@ -1230,6 +1230,12 @@ export const enUS = {
     sports: "SM01",
     cockfight: "SM01",
   },
+  BTG: {
+    slots: "BTG"
+  },
+  NLC: {
+    slots: "NLC"
+  },
   idr: {
     withdrawalNumber: "Bank card number",
     msgEnterWithdrawalNumber: "Please enter bank card number",

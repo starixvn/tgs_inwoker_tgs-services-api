@@ -1208,6 +1208,12 @@ export const vivN = {
     sports: "SM01",
     cockfight: "SM01",
   },
+  BTG: {
+    slots: "BTG"
+  },
+  NLC: {
+    slots: "NLC"
+  },
   idr: {
     withdrawalNumber: "Số thẻ ngân hàng",
     msgEnterWithdrawalNumber: "Vui lòng nhập số thẻ ngân hàng",

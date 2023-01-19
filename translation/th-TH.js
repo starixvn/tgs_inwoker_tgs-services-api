@@ -1205,6 +1205,12 @@ export const thTH = {
     sports: "SM01",
     cockfight: "SM01",
   },
+  BTG: {
+    slots: "BTG"
+  },
+  NLC: {
+    slots: "NLC"
+  },
   idr: {
     withdrawalNumber: "หมายเลขบัตรธนาคาร",
     msgEnterWithdrawalNumber: "โปรดป้อนหมายเลขบัตรธนาคาร",
