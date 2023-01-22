@@ -29,7 +29,7 @@ export const AccountService = {
   UploadIC,
   SetBirthDate,
   NewRegister,
-  UpdateIM,
+
   GetRegisterStatus
 };
 
@@ -258,12 +258,7 @@ function NewRegister(type, input) {
   });
   return result;
 }
-function UpdateIM(value, im) {
-  const result = ApiService.patch(`Player/${im}`, {
-    [im]: value,
-  });
-  return result;
-}
+
 function GetRegisterStatus() {
   const result = ApiService.get("player/register");
   return result;
