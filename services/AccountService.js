@@ -37,6 +37,8 @@ export const AccountService = {
   SetBirthDate,
   //TGS-883
   NewRegister,
+  UpdateIM,
+  GetRegisterStatus
 };
 
 function CheckUserName(username) {
@@ -305,5 +307,15 @@ function NewRegister(type, input) {
     type: type,
     input: input,
   });
+  return result;
+}
+function UpdateIM(value, im) {
+  const result = ApiService.patch(`Player/${im}`, {
+    [im]: value,
+  });
+  return result;
+}
+function GetRegisterStatus() {
+  const result = ApiService.get("player/register");
   return result;
 }
