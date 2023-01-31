@@ -164,6 +164,7 @@ export const zhTW = {
     termsAndCondition: "條款和條件",
     exit: "登出",
     playeronline: "在線人數",
+    cockfight: "鬥雞",
   },
   affiliate: {
     title: "推廣賺錢",
@@ -1166,6 +1167,7 @@ export const zhTW = {
   },
   AWC_COCKFIGHT: {
     sports: "SV388鬥鷄",
+    cockfight: "SV388鬥鷄",
   },
   AWC_SPADE: {
     electron: "SPADE電子",
@@ -1188,6 +1190,9 @@ export const zhTW = {
   TFTF: {
     sports: "TF體育",
     esports: "TF電競",
+  SM01: {
+    sports: "SM01",
+    cockfight: "SM01",
   },
   idr: {
     withdrawalNumber: "銀行卡號碼",

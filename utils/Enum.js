@@ -17,6 +17,7 @@ export const GameTypeEnum = {
   LOTTERYLOBBY: 14,
   SLOT: 15,
   TABLEGAME: 16,
+  COCKFIGHT: 17,
 };
 export const GameEnum = {
   AG: "AG",

@@ -164,6 +164,7 @@ export const zhCN = {
     termsAndCondition: "条款和条件",
     exit: "登出",
     playeronline: "在线人数",
+    cockfight: "斗鸡",
   },
   affiliate: {
     title: "推广赚钱",
@@ -1173,6 +1174,7 @@ export const zhCN = {
   },
   AWC_COCKFIGHT: {
     sports: "SV388斗鸡",
+    cockfight: "SV388",
   },
   AWC_SPADE: {
     electron: "SPADE电子",
@@ -1195,6 +1197,9 @@ export const zhCN = {
   TFTF: {
     sports: "TF体育",
     esports: "TF电竞",
+  SM01: {
+    sports: "SM01",
+    cockfight: "SM01",
   },
   idr: {
     withdrawalNumber: "银行卡号码",
