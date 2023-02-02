@@ -1222,6 +1222,12 @@ export const enUS = {
     sports: "TF Gaming",
     esports: "TF",
   },
+  BTG: {
+    slots: "BTG"
+  },
+  NLC: {
+    slots: "NLC"
+  },
   idr: {
     withdrawalNumber: "Bank card number",
     msgEnterWithdrawalNumber: "Please enter bank card number",

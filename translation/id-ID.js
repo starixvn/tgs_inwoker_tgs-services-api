@@ -1209,6 +1209,12 @@ export const idID = {
     sports: "TF Gaming",
     esports: "TF",
   },
+  BTG: {
+    slots: "BTG"
+  },
+  NLC: {
+    slots: "NLC"
+  },
   idr: {
     withdrawalNumber: "NOMOR REKENING",
     msgEnterWithdrawalNumber: "Silahkan Masukkan Nomor Rekening",
