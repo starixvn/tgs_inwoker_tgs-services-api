@@ -1196,6 +1196,12 @@ export const zhCN = {
     sports: "TF体育",
     esports: "TF电竞",
   },
+  BTG: {
+    slots: "BTG老虎机"
+  },
+  NLC: {
+    slots: "NLC老虎机"
+  },
   idr: {
     withdrawalNumber: "银行卡号码",
     msgEnterWithdrawalNumber: "请输入银行卡号码",
