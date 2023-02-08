@@ -8,6 +8,7 @@ export const ReportService = {
   GetWithdrawalStatus,
   GetTransferReport,
   GetRoundsTotal,
+  GetBalanceChanges,
 };
 
 function GetTransactionDetails(from, to, page, rows, desc, sort, all) {
@@ -69,6 +70,14 @@ function GetWithdrawalStatus() {
 function GetTransferReport(from, to, page, rows, order, desc, sort, all) {
   const result = ApiService.get(
     `game/balance/list?beginrecord=${from}&endrecord=${to}&Page=${page}&Rows=${rows}&OrderBy=${order}&IsDesc=${desc}&SortBy=${sort}&ShowAll=${all}`
+  );
+  return result;
+}
+
+function GetBalanceChanges(from, to, page, rows)
+{
+  const result = ApiService.get(
+    `transaction?from=${from}&to=${to}&page=${page}&rows=${rows}`
   );
   return result;
 }

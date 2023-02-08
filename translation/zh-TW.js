@@ -600,6 +600,11 @@ export const zhTW = {
       title: "活動紀錄",
       promoName: "活動名稱",
     },
+    balanceChanges: {
+      title: "賬變記錄",
+      type: "交易類型",
+      amount: "交易金額",
+    },
     dateTime: "時間",
 
     betDateTime: "投注時間",

@@ -607,6 +607,11 @@ export const zhCN = {
         to: "至",
       },
     },
+    balanceChanges: {
+      title: "账变记录",
+      type: "交易类型",
+      amount: "交易金额",
+    },
     dateTime: "时间",
 
     betDateTime: "投注时间",
