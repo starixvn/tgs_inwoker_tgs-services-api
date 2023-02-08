@@ -631,6 +631,11 @@ export const enUS = {
         to: "To",
       },
     },
+    balanceChanges: {
+      title: "Balance Change Records",
+      type: "Transaction Type",
+      amount: "Amount",
+    },
     dateTime: "Time",
     betid: "ID",
     betDateTime: "Bet Time",
