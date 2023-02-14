@@ -1188,6 +1188,7 @@ export const idID = {
   },
   BC: {
     sports: "BetConstruct",
+    customsports: "BetConstruct",
   },
   AVIA: {
     sports: "AVIA Gaming",

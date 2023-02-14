@@ -1165,6 +1165,7 @@ export const zhCN = {
   },
   BC: {
     sports: "Bet体育",
+    customsports: "BC体育",
   },
   AVIA: {
     sports: "AVIA体育",

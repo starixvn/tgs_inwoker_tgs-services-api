@@ -1193,6 +1193,7 @@ export const enUS = {
   },
   BC: {
     sports: "BetConstruct",
+    customsports: "BetConstruct",
   },
   AVIA: {
     sports: "AVIA Gaming",

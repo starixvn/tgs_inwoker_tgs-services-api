@@ -1167,6 +1167,7 @@ export const thTH = {
   },
   BC: {
     sports: "BetConstruct",
+    customsports: "BetConstruct",
   },
   AVIA: {
     sports: "AVIA Gaming",

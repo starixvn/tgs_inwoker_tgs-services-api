@@ -1158,6 +1158,7 @@ export const zhTW = {
   },
   BC: {
     sports: "Bet體育",
+    customsports: "BC體育",
   },
   AVIA: {
     sports: "AVIA體育",
