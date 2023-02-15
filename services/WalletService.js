@@ -122,12 +122,13 @@ function PerformUsdtDeposit(amount, paymentid, promotionid, banktype) {
   return result;
 }
 
-function PerformPulsaDeposit(amount, paymentid, promotionid, banktype, note) {
+function PerformPulsaDeposit(amount, paymentid, promotionid, banktype, note, phone) {
   var params = {
     amount: amount,
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
-    banktype: banktype || "pulsa"
+    banktype: banktype || "pulsa",
+    phone: phone
   }
   if(note !== undefined && note !== null)
   {
@@ -137,13 +138,14 @@ function PerformPulsaDeposit(amount, paymentid, promotionid, banktype, note) {
   return result;
 }
 
-function PerformEWalletDeposit(amount, paymentid, promotionid, banktype, note, emoneyname) {
+function PerformEWalletDeposit(amount, paymentid, promotionid, banktype, note, emoneyname, phone) {
   var params = { 
     amount: amount,
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
     banktype: banktype || "ewallet",
-    emoneyname: emoneyname
+    emoneyname: emoneyname,
+    phone: phone
   }
   if(note !== undefined && note !== null)
   {
@@ -476,12 +478,13 @@ function PerformManualBankDepositWithDetail(
   return result;
 }
 
-function PerformPulsaDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail) {
+function PerformPulsaDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail, phone) {
   var params = {
     amount: amount,
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
-    banktype: banktype || "pulsa"
+    banktype: banktype || "pulsa",
+    phone: phone
   }
   if(note !== undefined && note !== null)
   {
@@ -495,13 +498,14 @@ function PerformPulsaDepositWithDetail(amount, paymentid, promotionid, banktype,
   return result;
 }
 
-function PerformEWalletDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail, emoneyname) {
+function PerformEWalletDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail, emoneyname, phone) {
   var params = { 
     amount: amount,
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
     banktype: banktype || "ewallet",
-    emoneyname: emoneyname
+    emoneyname: emoneyname,
+    phone: phone
   }
   if(note !== undefined && note !== null)
   {
