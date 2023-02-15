@@ -407,7 +407,7 @@ function doUsdtDeposit(amount, paymentid, promotionid, banktype) {
   };
 }
 
-function doPulsaDeposit(amount, paymentid, promotionid, banktype, note) {
+function doPulsaDeposit(amount, paymentid, promotionid, banktype, note, phone) {
   return (dispatch) => {
     dispatch({
       type: DODEPOSIT_BEGIN,
@@ -418,7 +418,8 @@ function doPulsaDeposit(amount, paymentid, promotionid, banktype, note) {
       paymentid,
       promotionid,
       banktype,
-      note
+      note,
+      phone
     )
       .then((response) => {
         if (response.IsSuccess) {
@@ -447,7 +448,7 @@ function doPulsaDeposit(amount, paymentid, promotionid, banktype, note) {
   };
 }
 
-function doEWalletDeposit(amount, paymentid, promotionid, banktype, note, emoneyname) {
+function doEWalletDeposit(amount, paymentid, promotionid, banktype, note, emoneyname, phone) {
   return (dispatch) => {
     dispatch({
       type: DODEPOSIT_BEGIN,
@@ -459,7 +460,8 @@ function doEWalletDeposit(amount, paymentid, promotionid, banktype, note, emoney
       promotionid,
       banktype,
       note,
-      emoneyname
+      emoneyname,
+      phone
     )
       .then((response) => {
         if (response.IsSuccess) {
@@ -1606,7 +1608,7 @@ function doBankDepositWithDetail(
   };
 }
 
-function doPulsaDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail) {
+function doPulsaDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail, phone) {
   return (dispatch) => {
     dispatch({
       type: DODEPOSIT_BEGIN,
@@ -1618,7 +1620,8 @@ function doPulsaDepositWithDetail(amount, paymentid, promotionid, banktype, note
       promotionid,
       banktype,
       note,
-      detail
+      detail,
+      phone
     )
       .then((response) => {
         if (response.IsSuccess) {
@@ -1647,7 +1650,7 @@ function doPulsaDepositWithDetail(amount, paymentid, promotionid, banktype, note
   };
 }
 
-function doEWalletDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail, emoneyname) {
+function doEWalletDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail, emoneyname, phone) {
   return (dispatch) => {
     dispatch({
       type: DODEPOSIT_BEGIN,
@@ -1660,7 +1663,8 @@ function doEWalletDepositWithDetail(amount, paymentid, promotionid, banktype, no
       banktype,
       note,
       detail,
-      emoneyname
+      emoneyname,
+      phone
     )
       .then((response) => {
         if (response.IsSuccess) {
