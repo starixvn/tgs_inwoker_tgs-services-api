@@ -407,7 +407,7 @@ function doUsdtDeposit(amount, paymentid, promotionid, banktype) {
   };
 }
 
-function doPulsaDeposit(amount, paymentid, promotionid, banktype, note) {
+function doPulsaDeposit(amount, paymentid, promotionid, banktype, note, phone) {
   return (dispatch) => {
     dispatch({
       type: DODEPOSIT_BEGIN,
@@ -418,7 +418,8 @@ function doPulsaDeposit(amount, paymentid, promotionid, banktype, note) {
       paymentid,
       promotionid,
       banktype,
-      note
+      note,
+      phone
     )
       .then((response) => {
         if (response.IsSuccess) {
@@ -453,7 +454,8 @@ function doEWalletDeposit(
   promotionid,
   banktype,
   note,
-  emoneyname
+  emoneyname, 
+  phone
 ) {
   return (dispatch) => {
     dispatch({
@@ -466,7 +468,8 @@ function doEWalletDeposit(
       promotionid,
       banktype,
       note,
-      emoneyname
+      emoneyname,
+      phone
     )
       .then((response) => {
         if (response.IsSuccess) {
@@ -1618,14 +1621,7 @@ function doBankDepositWithDetail(
   };
 }
 
-function doPulsaDepositWithDetail(
-  amount,
-  paymentid,
-  promotionid,
-  banktype,
-  note,
-  detail
-) {
+function doPulsaDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail, phone) {
   return (dispatch) => {
     dispatch({
       type: DODEPOSIT_BEGIN,
@@ -1637,7 +1633,8 @@ function doPulsaDepositWithDetail(
       promotionid,
       banktype,
       note,
-      detail
+      detail,
+      phone
     )
       .then((response) => {
         if (response.IsSuccess) {
@@ -1666,15 +1663,7 @@ function doPulsaDepositWithDetail(
   };
 }
 
-function doEWalletDepositWithDetail(
-  amount,
-  paymentid,
-  promotionid,
-  banktype,
-  note,
-  detail,
-  emoneyname
-) {
+function doEWalletDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail, emoneyname, phone) {
   return (dispatch) => {
     dispatch({
       type: DODEPOSIT_BEGIN,
@@ -1687,7 +1676,8 @@ function doEWalletDepositWithDetail(
       banktype,
       note,
       detail,
-      emoneyname
+      emoneyname,
+      phone
     )
       .then((response) => {
         if (response.IsSuccess) {
