@@ -448,15 +448,7 @@ function doPulsaDeposit(amount, paymentid, promotionid, banktype, note, phone) {
   };
 }
 
-function doEWalletDeposit(
-  amount,
-  paymentid,
-  promotionid,
-  banktype,
-  note,
-  emoneyname, 
-  phone
-) {
+function doEWalletDeposit(amount, paymentid, promotionid, banktype, note, emoneyname, phone) {
   return (dispatch) => {
     dispatch({
       type: DODEPOSIT_BEGIN,
