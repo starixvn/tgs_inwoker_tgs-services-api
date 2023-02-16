@@ -122,7 +122,7 @@ function PerformUsdtDeposit(amount, paymentid, promotionid, banktype) {
   return result;
 }
 
-function PerformPulsaDeposit(amount, paymentid, promotionid, banktype, note) {
+function PerformPulsaDeposit(amount, paymentid, promotionid, banktype, note, phone) {
   var params = {
     amount: amount,
     paymentid: paymentid,
@@ -133,11 +133,15 @@ function PerformPulsaDeposit(amount, paymentid, promotionid, banktype, note) {
   {
     params.note = note;
   }
+  if(phone !== undefined && phone !== null)
+  {
+    params.phone = phone;
+  }
   const result = ApiService.put("deposit/manual/pulsa", params);
   return result;
 }
 
-function PerformEWalletDeposit(amount, paymentid, promotionid, banktype, note, emoneyname) {
+function PerformEWalletDeposit(amount, paymentid, promotionid, banktype, note, emoneyname, phone) {
   var params = { 
     amount: amount,
     paymentid: paymentid,
@@ -148,6 +152,10 @@ function PerformEWalletDeposit(amount, paymentid, promotionid, banktype, note, e
   if(note !== undefined && note !== null)
   {
     params.note = note;
+  }
+  if(phone !== undefined && phone !== null)
+  {
+    params.phone = phone;
   }
   const result = ApiService.put("deposit/manual/ewallet", params);
   return result;
@@ -476,7 +484,7 @@ function PerformManualBankDepositWithDetail(
   return result;
 }
 
-function PerformPulsaDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail) {
+function PerformPulsaDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail, phone) {
   var params = {
     amount: amount,
     paymentid: paymentid,
@@ -487,6 +495,10 @@ function PerformPulsaDepositWithDetail(amount, paymentid, promotionid, banktype,
   {
     params.note = note;
   }
+  if(phone !== undefined && phone !== null)
+  {
+    params.phone = phone;
+  }
   if(detail !== undefined && detail !== null)
   {
     params.detail = detail;
@@ -495,7 +507,7 @@ function PerformPulsaDepositWithDetail(amount, paymentid, promotionid, banktype,
   return result;
 }
 
-function PerformEWalletDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail, emoneyname) {
+function PerformEWalletDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail, emoneyname, phone) {
   var params = { 
     amount: amount,
     paymentid: paymentid,
@@ -506,6 +518,10 @@ function PerformEWalletDepositWithDetail(amount, paymentid, promotionid, banktyp
   if(note !== undefined && note !== null)
   {
     params.note = note;
+  }
+  if(phone !== undefined && phone !== null)
+  {
+    params.phone = phone;
   }
   if(detail !== undefined && detail !== null)
   {
