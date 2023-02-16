@@ -134,6 +134,10 @@ function PerformPulsaDeposit(amount, paymentid, promotionid, banktype, note, pho
   {
     params.note = note;
   }
+  if(phone !== undefined && phone !== null)
+  {
+    params.phone = phone;
+  }
   const result = ApiService.put("deposit/manual/pulsa", params);
   return result;
 }
@@ -150,6 +154,10 @@ function PerformEWalletDeposit(amount, paymentid, promotionid, banktype, note, e
   if(note !== undefined && note !== null)
   {
     params.note = note;
+  }
+  if(phone !== undefined && phone !== null)
+  {
+    params.phone = phone;
   }
   const result = ApiService.put("deposit/manual/ewallet", params);
   return result;
@@ -490,6 +498,10 @@ function PerformPulsaDepositWithDetail(amount, paymentid, promotionid, banktype,
   {
     params.note = note;
   }
+  if(phone !== undefined && phone !== null)
+  {
+    params.phone = phone;
+  }
   if(detail !== undefined && detail !== null)
   {
     params.detail = detail;
@@ -510,6 +522,10 @@ function PerformEWalletDepositWithDetail(amount, paymentid, promotionid, banktyp
   if(note !== undefined && note !== null)
   {
     params.note = note;
+  }
+  if(phone !== undefined && phone !== null)
+  {
+    params.phone = phone;
   }
   if(detail !== undefined && detail !== null)
   {
