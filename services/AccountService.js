@@ -29,7 +29,7 @@ export const AccountService = {
   UploadIC,
   SetBirthDate,
   NewRegister,
-
+  UpdateIM,
   GetRegisterStatus
 };
 
