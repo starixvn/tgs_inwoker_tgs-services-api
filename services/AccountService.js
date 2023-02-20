@@ -29,8 +29,8 @@ export const AccountService = {
   UploadIC,
   SetBirthDate,
   NewRegister,
-
-  GetRegisterStatus
+  UpdateIM,
+  GetRegisterStatus,
 };
 
 function CheckUserName(username) {
