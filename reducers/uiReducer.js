@@ -81,7 +81,6 @@ const uiReducer = (state = initState, action) => {
       };
     case GETMARQUEE_SUCCESS:
       let marqueeText = [];
-      console.log(action.payload)
       action.payload.map((item) => {
         marqueeText.push(item);
       });
