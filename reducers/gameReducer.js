@@ -88,7 +88,7 @@ export function gameReducer(state = initialState, action) {
           balance: 0,
         });
       }
-
+      console.log(list)
       return {
         ...state,
         homePageGameList: list,
