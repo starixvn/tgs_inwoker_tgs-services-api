@@ -53,7 +53,7 @@ const initialState = {
   mobilePrefix: [],
   isMaintenance: false,
   promotionList: { items: [] },
-  token: "",
+  token: "xoxoxo",
   brandLanguage: config.features.HardcodeContentIDR
     ? idr.language
     : [
@@ -62,7 +62,7 @@ const initialState = {
         },
       ],
   brandsSupport: config.features.HardcodeContentIDR ? idr.brandSupport : [],
-  livechat: "",
+  livechat: {"name":null,"setting":{"url":"https://static.zdassets.com/web_widget/latest/liveChat.html?v=10#key=cabangslot805.zendesk.com"}},
   banner: [],
   brand: {
     //TGS-197, since hide when true, default hide, show when return false
