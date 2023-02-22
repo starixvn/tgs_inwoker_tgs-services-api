@@ -38,10 +38,7 @@ export function gameReducer(state = initialState, action) {
       return {
         ...state,
         message: "",
-        loading: true,
-        homePageGameList: config.features.HardcodeContentIDR
-          ? idr.gameList
-          : [],
+        loading: true
       };
     case GETHOMEPAGEGAMELIST_SUCCESS:
       var gameList = action.payload.data;
