@@ -30,7 +30,7 @@ export const AccountService = {
   SetBirthDate,
   NewRegister,
   UpdateIM,
-  GetRegisterStatus,
+  GetRegisterStatus
 };
 
 function CheckUserName(username) {
