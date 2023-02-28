@@ -46,6 +46,8 @@ import {
   GETDAROULETTE_HISTORY_BEGIN,
   GETDAROULETTE_HISTORY_FAILED,
   GETDAROULETTE_HISTORY_SUCCESS,
+  GETAFFILIATESTATUS_SUCCESS,
+  GETAFFILIATESTATUS_FAIL
 } from "../constant/actionType";
 import { idr } from "../utils/hardcode/idr-stg";
 const initialState = {
@@ -72,6 +74,7 @@ const initialState = {
   itemIndex: null,
   rouletteCount: [],
   rouletteHistory: [],
+  haveAffiliate: false,
 };
 function mapPromotionList(data) {
   var items = [];
@@ -304,6 +307,16 @@ export function generalReducer(state = initialState, action) {
       return {
         ...state,
         rouletteHistory: action.payload.data,
+      };
+    case GETAFFILIATESTATUS_SUCCESS:
+      return {
+        ...state,
+        haveAffiliate: action.payload.data.switchon,
+      };
+    case GETAFFILIATESTATUS_FAIL:
+      return {
+        ...state,
+        haveAffiliate: false,
       };
     default:
       return state;
