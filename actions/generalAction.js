@@ -53,6 +53,8 @@ import {
   GETPROMOTION_BEGIN,
   GETPROMOTION_SUCCESS,
   GETPROMOTION_FAILURE,
+  GETAFFILIATESTATUS_SUCCESS,
+  GETAFFILIATESTATUS_FAIL
 } from "../constant/actionType";
 // These are the constants to represent each of three recommended actions for a single API fetch or post.
 
@@ -75,7 +77,8 @@ export const generalAction = {
   getPromotionRouletteCount,
   getDepositAccumulateRoulette,
   getDepositAccumulateRouletteResult,
-  getDepositAccumulateRouletteHistory
+  getDepositAccumulateRouletteHistory,
+  getAffiliateStatus
 };
 function getSiteToken() {
   return (dispatch) => {
@@ -623,6 +626,35 @@ function getDepositAccumulateRouletteHistory(id) {
       }
       return response;
     });
+    return result;
+  };
+}
+
+function getAffiliateStatus() {
+  return (dispatch) => {
+    const result = GeneralService.GetAffiliateStatus()
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: GETAFFILIATESTATUS_SUCCESS,
+            payload: response,
+          });
+        } else {
+          dispatch({
+            type: GETAFFILIATESTATUS_FAIL,
+            payload: response,
+          });
+        }
+        return response;
+      })
+      .catch((response) => {
+        dispatch({
+          type: GETAFFILIATESTATUS_FAIL,
+          payload: response,
+        });
+        return response;
+      });
+
     return result;
   };
 }

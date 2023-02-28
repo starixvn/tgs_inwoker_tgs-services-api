@@ -21,7 +21,8 @@ export const GeneralService = {
   GetPromotionRouletteCount,
   GetDepositAccumulateRoulette,
   GetDepositAccumulateRouletteResult,
-  GetDepositAccumulateRouletteHistory
+  GetDepositAccumulateRouletteHistory,
+  GetAffiliateStatus
 };
 
 function GetSiteToken() {
@@ -127,5 +128,10 @@ function GetDepositAccumulateRouletteResult(promotionId) {
 
 function GetDepositAccumulateRouletteHistory(promotionId) {
   const result = ApiService.get(`dar/roulette/${promotionId}`);
+  return result;
+}
+
+function GetAffiliateStatus(){
+  const result = ApiService.get(`brandallagent/check`);
   return result;
 }
