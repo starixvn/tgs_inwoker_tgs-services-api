@@ -1074,6 +1074,7 @@ export const vivN = {
   JDBTF: {
     slots: "JDBTF Slots",
     fish: "JDBTF Fishing",
+    electron: "JDBTF",
     desc:
       "Chiến thắng báu vật trực tuyến không hề nhàm chán. Tại đây có rất nhiều trò chơi và máy đánh bạc, muốn trải nghiệm thêm nhiều cách chơi thì bạn phải vào đây!",
   },
@@ -1082,8 +1083,9 @@ export const vivN = {
     fish: "JILI",
   },
   JILITF: {
-    slots: "JILI Slots",
-    fish: "JILI Fishing",
+    slots: "JILITF Slots",
+    fish: "JILITF Fishing",
+    electron: "JILITF",
   },
   JOKER: {
     slots: "JOKER",
@@ -1210,6 +1212,7 @@ export const vivN = {
   TFTF: {
     sports: "TF",
     esports: "TF",
+  },
   SM01: {
     sports: "SM01",
     cockfight: "SM01",

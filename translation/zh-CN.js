@@ -1063,6 +1063,7 @@ export const zhCN = {
   JDBTF: {
     slots: "JDBTF老虎机",
     fish: "JDBTF捕鱼",
+    electron: "JDBTF电子",
     desc:
       "线上网夺宝不无聊。这里拥有众多游戏以及老虎机，想要体验更多的玩法，那你来这里准没错!",
   },
@@ -1071,8 +1072,9 @@ export const zhCN = {
     fish: "JILI捕鱼",
   },
   JILITF: {
-    slots: "JILI老虎机",
-    fish: "JILI捕鱼",
+    slots: "JILITF老虎机",
+    fish: "JILITF捕鱼",
+    electron: "JILITF电子",
   },
   JOKER: {
     slots: "JOKER老虎机",
@@ -1203,6 +1205,7 @@ export const zhCN = {
   TFTF: {
     sports: "TF体育",
     esports: "TF电竞",
+  },
   SM01: {
     sports: "SM01",
     cockfight: "SM01",
