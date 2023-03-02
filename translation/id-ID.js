@@ -1065,15 +1065,18 @@ export const idID = {
   JDBTF: {
     slots: "JDBTF Slots",
     fish: "JDBTF Fishing",
-    desc: "Memenangkan harta secara online tidak membosankan. Ada banyak permainan dan mesin slot di sini. Jika Anda ingin merasakan lebih banyak gameplay, Anda harus datang ke sini!",
+    electron: "JDBTF",
+    desc:
+      "Memenangkan harta secara online tidak membosankan. Ada banyak permainan dan mesin slot di sini. Jika Anda ingin merasakan lebih banyak gameplay, Anda harus datang ke sini!",
   },
   JILI: {
     slots: "JILI",
     fish: "JILI",
   },
   JILITF: {
-    slots: "JILI Slots",
-    fish: "JILI Fishing",
+    slots: "JILITF Slots",
+    fish: "JILITF Fishing",
+    electron: "JILITF",
   },
   JOKER: {
     slots: "JOKER",

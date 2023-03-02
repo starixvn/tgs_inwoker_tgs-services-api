@@ -1084,15 +1084,18 @@ export const enUS = {
   JDBTF: {
     slots: "JDBTF Slots",
     fish: "JDBTF Fishing",
-    desc: "Winning treasures online is not boring. There are many games and slot machines here. If you want to experience more gameplay, you must come here!",
+    electron: "JDBTF",
+    desc:
+      "Winning treasures online is not boring. There are many games and slot machines here. If you want to experience more gameplay, you must come here!",
   },
   JILI: {
     slots: "JILI",
     fish: "JILI",
   },
   JILITF: {
-    slots: "JILI Slots",
-    fish: "JILI Fishing",
+    slots: "JILITF Slots",
+    fish: "JILITF Fishing",
+    electron: "JILITF",
   },
   JOKER: {
     slots: "JOKER",

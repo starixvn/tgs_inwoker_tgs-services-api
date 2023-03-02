@@ -1050,15 +1050,18 @@ export const zhTW = {
   JDBTF: {
     slots: "JDBTF老虎機",
     fish: "JDBTF捕魚",
-    desc: "線上網奪寶不無聊。 這裡擁有眾多遊戲以及老虎機，想要體驗更多的玩法，那你來這裡準沒錯!",
+    electron: "JDBTF電子",
+    desc:
+      "線上網奪寶不無聊。 這裡擁有眾多遊戲以及老虎機，想要體驗更多的玩法，那你來這裡準沒錯!",
   },
   JILI: {
     slots: "JILI老虎機",
     fish: "JILI捕魚",
   },
   JILITF: {
-    slots: "JILI老虎機",
-    fish: "JILI捕魚",
+    slots: "JILITF老虎機",
+    fish: "JILITF捕魚",
+    electron: "JILITF電子",
   },
   JOKER: {
     slots: "JOKER老虎機",
