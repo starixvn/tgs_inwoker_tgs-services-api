@@ -165,6 +165,7 @@ export const zhTW = {
     exit: "登出",
     playeronline: "在線人數",
     cockfight: "鬥雞",
+    virtualsports: "虛擬體育",
   },
   affiliate: {
     title: "推廣賺錢",
@@ -1051,8 +1052,7 @@ export const zhTW = {
     slots: "JDBTF老虎機",
     fish: "JDBTF捕魚",
     electron: "JDBTF電子",
-    desc:
-      "線上網奪寶不無聊。 這裡擁有眾多遊戲以及老虎機，想要體驗更多的玩法，那你來這裡準沒錯!",
+    desc: "線上網奪寶不無聊。 這裡擁有眾多遊戲以及老虎機，想要體驗更多的玩法，那你來這裡準沒錯!",
   },
   JILI: {
     slots: "JILI老虎機",
@@ -1206,10 +1206,10 @@ export const zhTW = {
     cockfight: "SM01",
   },
   BTG: {
-    slots: "BTG老虎機"
+    slots: "BTG老虎機",
   },
   NLC: {
-    slots: "NLC老虎機"
+    slots: "NLC老虎機",
   },
   idr: {
     withdrawalNumber: "銀行卡號碼",
@@ -1505,5 +1505,11 @@ export const zhTW = {
       "{brandName} 是所有在線賭場玩家的首選目的地，他們希望在他們的遊戲環境中尋找一流和優雅的感覺。我們的賭場為您提供超過 400 種在線賭場遊戲 - 一些傳統與現代曲折，和 一些全新的、創新的和異國情調的。憑藉不可抗拒的每週獎金促銷和有吸引力的忠誠度和 VIP 計劃，我們相信您會在未來一段時間內堅持使用。我們所有的軟件都是由業界最重要的在線開發和維護的 遊戲軟件公司 Pegasus。因此，我們能夠在精緻而引人入勝的氛圍中為您提供最高質量和終極安全性的最新尖端遊戲。",
     belongTo:
       "本網站屬於（PAGCOR）菲律賓娛樂博彩公司授權和監管 PGG Copyright© 2020 PGG Casino Co.Group All Rights Reserved Version {version}",
+  },
+  rebateRate: {
+    title: "回扣率",
+    players: "玩家",
+    turnover: "分水",
+    rebates: "回扣",
   },
 };

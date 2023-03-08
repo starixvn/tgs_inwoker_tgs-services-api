@@ -165,6 +165,7 @@ export const zhCN = {
     exit: "登出",
     playeronline: "在线人数",
     cockfight: "斗鸡",
+    virtualsports: "虚拟体育",
   },
   affiliate: {
     title: "推广赚钱",
@@ -1058,8 +1059,7 @@ export const zhCN = {
     slots: "JDBTF老虎机",
     fish: "JDBTF捕鱼",
     electron: "JDBTF电子",
-    desc:
-      "线上网夺宝不无聊。这里拥有众多游戏以及老虎机，想要体验更多的玩法，那你来这里准没错!",
+    desc: "线上网夺宝不无聊。这里拥有众多游戏以及老虎机，想要体验更多的玩法，那你来这里准没错!",
   },
   JILI: {
     slots: "JILI老虎机",
@@ -1213,10 +1213,10 @@ export const zhCN = {
     cockfight: "SM01",
   },
   BTG: {
-    slots: "BTG老虎机"
+    slots: "BTG老虎机",
   },
   NLC: {
-    slots: "NLC老虎机"
+    slots: "NLC老虎机",
   },
   idr: {
     withdrawalNumber: "银行卡号码",
@@ -1512,5 +1512,11 @@ export const zhCN = {
       "{brandName} 是所有在线赌场玩家的首选目的地，他们希望在他们的游戏环境中寻找一流和优雅的感觉。我们的赌场为您提供超过 400 种在线赌场游戏 - 一些传统与现代曲折，和 一些全新的、创新的和异国情调的。凭借不可抗拒的每周奖金促销和有吸引力的忠诚度和 VIP 计划，我们相信您会在未来一段时间内坚持使用。我们所有的软件都是由业界最重要的在线开发和维护的 游戏软件公司 Pegasus。因此，我们能够在精致而引人入胜的氛围中为您提供最高质量和终极安全性的最新尖端游戏。",
     belongTo:
       "本网站属于（PAGCOR）菲律宾娱乐博彩公司授权和监管 PGG Copyright© 2020 PGG Casino Co.Group All Rights Reserved Version {version}",
+  },
+  rebateRate: {
+    title: "回扣率",
+    players: "玩家",
+    turnover: "分水",
+    rebates: "回扣",
   },
 };

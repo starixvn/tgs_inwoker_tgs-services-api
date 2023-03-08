@@ -175,6 +175,7 @@ export const enUS = {
     exit: "Exit",
     playeronline: "Online users",
     cockfight: "Cockfight",
+    virtualsports: "Virtual Sports",
   },
   affiliate: {
     title: "Affiliate",
@@ -1085,8 +1086,7 @@ export const enUS = {
     slots: "JDBTF Slots",
     fish: "JDBTF Fishing",
     electron: "JDBTF",
-    desc:
-      "Winning treasures online is not boring. There are many games and slot machines here. If you want to experience more gameplay, you must come here!",
+    desc: "Winning treasures online is not boring. There are many games and slot machines here. If you want to experience more gameplay, you must come here!",
   },
   JILI: {
     slots: "JILI",
@@ -1234,10 +1234,10 @@ export const enUS = {
     cockfight: "SM01",
   },
   BTG: {
-    slots: "BTG"
+    slots: "BTG",
   },
   NLC: {
-    slots: "NLC"
+    slots: "NLC",
   },
   idr: {
     withdrawalNumber: "Bank card number",
@@ -1546,5 +1546,11 @@ export const enUS = {
       "{brandName} is the leading destination for all online casino players who are looking for a touch of class and elegance in their gaming environment. Our casino provides you with over 400 online casino games – some traditional with modern twists, and some completely new, innovative, and exotic. With irresistible weekly bonus promotions and attractive loyalty and VIP programs, we're sure you'll be sticking around for a while to come. All of our software is developed and maintained by the industry's foremost online gaming software company, Pegasus. Because of this, we are able to offer you the newest cutting-edge games, of the highest quality and ultimate security in a sophisticated, yet engaging atmosphere.",
     belongTo:
       "This website belongs to（PAGCOR）Philippine Amusement and Gaming Corporation Authorization and supervision PGG Copyright© 2020 PGG Casino Co.Group All Rights Reserved Version {version}",
+  },
+  rebateRate: {
+    title: "Rebate Rates",
+    players: "Players",
+    turnover: "Turnover",
+    rebates: "Rebates",
   },
 };

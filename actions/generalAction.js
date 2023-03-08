@@ -54,7 +54,10 @@ import {
   GETPROMOTION_SUCCESS,
   GETPROMOTION_FAILURE,
   GETAFFILIATESTATUS_SUCCESS,
-  GETAFFILIATESTATUS_FAIL
+  GETAFFILIATESTATUS_FAIL,
+  GETBRANDALLAGENT_BEGIN,
+  GETBRANDALLAGENT_SUCCESS,
+  GETBRANDALLAGENT_FAIL,
 } from "../constant/actionType";
 // These are the constants to represent each of three recommended actions for a single API fetch or post.
 
@@ -78,7 +81,8 @@ export const generalAction = {
   getDepositAccumulateRoulette,
   getDepositAccumulateRouletteResult,
   getDepositAccumulateRouletteHistory,
-  getAffiliateStatus
+  getAffiliateStatus,
+  getBrandAllAgent,
 };
 function getSiteToken() {
   return (dispatch) => {
@@ -463,20 +467,22 @@ function getPromotionRouletteStatus(id) {
     dispatch({
       type: GETPROMOROULETTE_STATUS_BEGIN,
     });
-    const result = GeneralService.GetPromotionRouletteStatus(id).then((response)=>{
-      if (response.IsSuccess) {
-        dispatch({
-          type: GETPROMOROULETTE_STATUS_SUCCESS,
-          payload: response,
-        });
-      } else {
-        dispatch({
-          type: GETPROMOROULETTE_STATUS_FAILED,
-          payload: response,
-        });
+    const result = GeneralService.GetPromotionRouletteStatus(id).then(
+      (response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: GETPROMOROULETTE_STATUS_SUCCESS,
+            payload: response,
+          });
+        } else {
+          dispatch({
+            type: GETPROMOROULETTE_STATUS_FAILED,
+            payload: response,
+          });
+        }
+        return response;
       }
-      return response;
-    });
+    );
     return result;
   };
 }
@@ -486,20 +492,22 @@ function getPromotionRouletteResult(id) {
     dispatch({
       type: GETPROMOROULETTE_RESULT_BEGIN,
     });
-    const result = GeneralService.GetPromotionRouletteResult(id).then((response)=>{
-      if (response.IsSuccess) {
-        dispatch({
-          type: GETPROMOROULETTE_RESULT_SUCCESS,
-          payload: response,
-        });
-      } else {
-        dispatch({
-          type: GETPROMOROULETTE_RESULT_FAILED,
-          payload: response,
-        });
+    const result = GeneralService.GetPromotionRouletteResult(id).then(
+      (response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: GETPROMOROULETTE_RESULT_SUCCESS,
+            payload: response,
+          });
+        } else {
+          dispatch({
+            type: GETPROMOROULETTE_RESULT_FAILED,
+            payload: response,
+          });
+        }
+        return response;
       }
-      return response;
-    });
+    );
     return result;
   };
 }
@@ -543,20 +551,22 @@ function getPromotionRouletteCount() {
     dispatch({
       type: GETROULETTE_COUNT_BEGIN,
     });
-    const result = GeneralService.GetPromotionRouletteCount().then((response)=>{
-      if (response.IsSuccess) {
-        dispatch({
-          type: GETROULETTE_COUNT_SUCCESS,
-          payload: response,
-        });
-      } else {
-        dispatch({
-          type: GETROULETTE_COUNT_FAILED,
-          payload: response,
-        });
+    const result = GeneralService.GetPromotionRouletteCount().then(
+      (response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: GETROULETTE_COUNT_SUCCESS,
+            payload: response,
+          });
+        } else {
+          dispatch({
+            type: GETROULETTE_COUNT_FAILED,
+            payload: response,
+          });
+        }
+        return response;
       }
-      return response;
-    });
+    );
     return result;
   };
 }
@@ -566,20 +576,22 @@ function getDepositAccumulateRoulette(id) {
     dispatch({
       type: GETDAROULETTE_STATUS_BEGIN,
     });
-    const result = GeneralService.GetDepositAccumulateRoulette(id).then((response)=>{
-      if (response.IsSuccess) {
-        dispatch({
-          type: GETDAROULETTE_STATUS_SUCCESS,
-          payload: response,
-        });
-      } else {
-        dispatch({
-          type: GETDAROULETTE_STATUS_FAILED,
-          payload: response,
-        });
+    const result = GeneralService.GetDepositAccumulateRoulette(id).then(
+      (response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: GETDAROULETTE_STATUS_SUCCESS,
+            payload: response,
+          });
+        } else {
+          dispatch({
+            type: GETDAROULETTE_STATUS_FAILED,
+            payload: response,
+          });
+        }
+        return response;
       }
-      return response;
-    });
+    );
     return result;
   };
 }
@@ -589,20 +601,22 @@ function getDepositAccumulateRouletteResult(id) {
     dispatch({
       type: GETDAROULETTE_RESULT_BEGIN,
     });
-    const result = GeneralService.GetDepositAccumulateRouletteResult(id).then((response)=>{
-      if (response.IsSuccess) {
-        dispatch({
-          type: GETDAROULETTE_RESULT_SUCCESS,
-          payload: response,
-        });
-      } else {
-        dispatch({
-          type: GETDAROULETTE_RESULT_FAILED,
-          payload: response,
-        });
+    const result = GeneralService.GetDepositAccumulateRouletteResult(id).then(
+      (response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: GETDAROULETTE_RESULT_SUCCESS,
+            payload: response,
+          });
+        } else {
+          dispatch({
+            type: GETDAROULETTE_RESULT_FAILED,
+            payload: response,
+          });
+        }
+        return response;
       }
-      return response;
-    });
+    );
     return result;
   };
 }
@@ -612,15 +626,40 @@ function getDepositAccumulateRouletteHistory(id) {
     dispatch({
       type: GETDAROULETTE_HISTORY_BEGIN,
     });
-    const result = GeneralService.GetDepositAccumulateRouletteHistory(id).then((response)=>{
+    const result = GeneralService.GetDepositAccumulateRouletteHistory(id).then(
+      (response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: GETDAROULETTE_HISTORY_SUCCESS,
+            payload: response,
+          });
+        } else {
+          dispatch({
+            type: GETDAROULETTE_HISTORY_FAILED,
+            payload: response,
+          });
+        }
+        return response;
+      }
+    );
+    return result;
+  };
+}
+
+function getBrandAllAgent() {
+  return (dispatch) => {
+    dispatch({
+      type: GETBRANDALLAGENT_BEGIN,
+    });
+    const result = GeneralService.GetBrandAllAgent().then((response) => {
       if (response.IsSuccess) {
         dispatch({
-          type: GETDAROULETTE_HISTORY_SUCCESS,
+          type: GETBRANDALLAGENT_SUCCESS,
           payload: response,
         });
       } else {
         dispatch({
-          type: GETDAROULETTE_HISTORY_FAILED,
+          type: GETBRANDALLAGENT_FAIL,
           payload: response,
         });
       }

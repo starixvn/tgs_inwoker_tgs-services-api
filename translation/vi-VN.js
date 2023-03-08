@@ -172,6 +172,7 @@ export const vivN = {
     exit: "Thoát",
     playeronline: "người dùng trực tuyến",
     cockfight: "Đá gà",
+    virtualsports: "Thể thao ảo",
   },
   affiliate: {
     title: "Khuyến mãi",
@@ -1065,8 +1066,7 @@ export const vivN = {
     slots: "JDBTF Slots",
     fish: "JDBTF Fishing",
     electron: "JDBTF",
-    desc:
-      "Chiến thắng báu vật trực tuyến không hề nhàm chán. Tại đây có rất nhiều trò chơi và máy đánh bạc, muốn trải nghiệm thêm nhiều cách chơi thì bạn phải vào đây!",
+    desc: "Chiến thắng báu vật trực tuyến không hề nhàm chán. Tại đây có rất nhiều trò chơi và máy đánh bạc, muốn trải nghiệm thêm nhiều cách chơi thì bạn phải vào đây!",
   },
   JILI: {
     slots: "JILI",
@@ -1212,10 +1212,10 @@ export const vivN = {
     cockfight: "SM01",
   },
   BTG: {
-    slots: "BTG"
+    slots: "BTG",
   },
   NLC: {
-    slots: "NLC"
+    slots: "NLC",
   },
   idr: {
     withdrawalNumber: "Số thẻ ngân hàng",
@@ -1513,5 +1513,11 @@ export const vivN = {
       "{brandName} là điểm đến hàng đầu cho tất cả những người chơi sòng bạc trực tuyến đang tìm kiếm cảm giác đẳng cấp và sang trọng trong môi trường chơi trò chơi của họ. Sòng bạc của chúng tôi cung cấp cho bạn hơn 400 trò chơi sòng bạc trực tuyến – một số trò chơi truyền thống pha chút hiện đại và một số hoàn toàn mới, sáng tạo và kỳ lạ. Với các chương trình khuyến mãi tiền thưởng hàng tuần không thể cưỡng lại và các chương trình khách hàng thân thiết và VIP hấp dẫn, chúng tôi chắc chắn rằng bạn sẽ gắn bó trong một thời gian tới. Tất cả phần mềm của chúng tôi được phát triển và duy trì bởi công ty trực tuyến hàng đầu trong ngành công ty phần mềm trò chơi, Pegasus. Nhờ đó, chúng tôi có thể cung cấp cho bạn những trò chơi tiên tiến mới nhất, có chất lượng cao nhất và bảo mật tối ưu trong một bầu không khí phức tạp nhưng hấp dẫn.",
     belongTo:
       "Trang web này thuộc về（PAGCOR）Philippine Entertainment and Gaming Corporation Ủy quyền và giám sát PGG Bản quyền © 2020 PGG Casino Co.Group Phiên bản bảo lưu mọi quyền {version}",
+  },
+  rebateRate: {
+    title: "Tỷ lệ hoàn trả",
+    players: "Người chơi",
+    turnover: "Tổng số tiền cược",
+    rebates: "Tiền hoàn trả",
   },
 };

@@ -22,7 +22,8 @@ export const GeneralService = {
   GetDepositAccumulateRoulette,
   GetDepositAccumulateRouletteResult,
   GetDepositAccumulateRouletteHistory,
-  GetAffiliateStatus
+  GetAffiliateStatus,
+  GetBrandAllAgent,
 };
 
 function GetSiteToken() {
@@ -106,7 +107,7 @@ function GetPromotionRouletteResult(id) {
   return result;
 }
 
-function GetPromotion(){
+function GetPromotion() {
   const result = ApiService.get("promotion");
   return result;
 }
@@ -131,7 +132,11 @@ function GetDepositAccumulateRouletteHistory(promotionId) {
   return result;
 }
 
-function GetAffiliateStatus(){
+function GetAffiliateStatus() {
   const result = ApiService.get(`brandallagent/check`);
+  return result;
+}
+function GetBrandAllAgent(promotionId) {
+  const result = ApiService.get(`brandallagent`);
   return result;
 }

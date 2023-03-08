@@ -45,7 +45,8 @@ import {
   GETDAROULETTE_HISTORY_FAILED,
   GETDAROULETTE_HISTORY_SUCCESS,
   GETAFFILIATESTATUS_SUCCESS,
-  GETAFFILIATESTATUS_FAIL
+  GETAFFILIATESTATUS_FAIL,
+  GETBRANDALLAGENT_SUCCESS,
 } from "../constant/actionType";
 const initialState = {
   isIPRestrict: false,
@@ -70,6 +71,7 @@ const initialState = {
   rouletteCount: [],
   rouletteHistory: [],
   haveAffiliate: false,
+  rebates: [],
 };
 function mapPromotionList(data) {
   var items = [];
@@ -306,13 +308,21 @@ export function generalReducer(state = initialState, action) {
     case GETAFFILIATESTATUS_SUCCESS:
       return {
         ...state,
-        haveAffiliate: action.payload.data.switchon
+        haveAffiliate: action.payload.data.switchon,
       };
     case GETAFFILIATESTATUS_FAIL:
       return {
         ...state,
-        haveAffiliate: false
+        haveAffiliate: false,
       };
+
+    case GETBRANDALLAGENT_SUCCESS:
+      return {
+        ...state,
+        rebates: action.payload.data,
+        loading: false,
+      };
+
     default:
       return state;
   }

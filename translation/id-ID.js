@@ -172,6 +172,7 @@ export const idID = {
     exit: "Exit",
     playeronline: "Pengguna online",
     cockfight: "Sabungan",
+    virtualsports: "Bintik maya",
   },
   affiliate: {
     title: "Afiliasi",
@@ -1066,8 +1067,7 @@ export const idID = {
     slots: "JDBTF Slots",
     fish: "JDBTF Fishing",
     electron: "JDBTF",
-    desc:
-      "Memenangkan harta secara online tidak membosankan. Ada banyak permainan dan mesin slot di sini. Jika Anda ingin merasakan lebih banyak gameplay, Anda harus datang ke sini!",
+    desc: "Memenangkan harta secara online tidak membosankan. Ada banyak permainan dan mesin slot di sini. Jika Anda ingin merasakan lebih banyak gameplay, Anda harus datang ke sini!",
   },
   JILI: {
     slots: "JILI",
@@ -1233,10 +1233,10 @@ export const idID = {
     cockfight: "SM01",
   },
   BTG: {
-    slots: "BTG"
+    slots: "BTG",
   },
   NLC: {
-    slots: "NLC"
+    slots: "NLC",
   },
   idr: {
     withdrawalNumber: "NOMOR REKENING",
@@ -1561,5 +1561,11 @@ export const idID = {
       "{brandName} adalah tujuan utama untuk semua pemain kasino online yang mencari sentuhan kelas dan keanggunan dalam lingkungan permainan mereka. Kasino kami menyediakan lebih dari 400 permainan kasino online – beberapa tradisional dengan sentuhan modern, dan beberapa benar-benar baru, inovatif, dan eksotis. Dengan promosi bonus mingguan yang menarik dan program loyalitas dan VIP yang menarik, kami yakin Anda akan bertahan untuk sementara waktu. Semua perangkat lunak kami dikembangkan dan dikelola oleh industri online terkemuka perusahaan perangkat lunak game, Pegasus. Oleh karena itu, kami dapat menawarkan kepada Anda game-game mutakhir terbaru, dengan kualitas tertinggi dan keamanan tertinggi dalam suasana yang canggih namun menarik.",
     belongTo:
       "Situs web ini milik（PAGCOR）Philippine Amusement and Gaming Corporation Otorisasi dan pengawasan PGG Hak Cipta© 2020 PGG Casino Co.Group Versi Hak Cipta Dilindungi Undang-Undang {version}",
+  },
+  rebateRate: {
+    title: "Tingkat Rebate",
+    players: "Pemain",
+    turnover: "Pengeluaran",
+    rebates: "Rebate",
   },
 };
