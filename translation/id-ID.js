@@ -172,6 +172,7 @@ export const idID = {
     exit: "Exit",
     playeronline: "Pengguna online",
     cockfight: "Sabungan",
+    virtualsports: "Bintik maya",
   },
   affiliate: {
     title: "Afiliasi",
@@ -1516,5 +1517,11 @@ export const idID = {
     sport: "Olahraga",
     fish: "Fishing",
     lottery: "Nomor",
+  },
+  rebateRate: {
+    title: "Tingkat Rebate",
+    players: "Pemain",
+    turnover: "Pengeluaran",
+    rebates: "Rebate",
   },
 };

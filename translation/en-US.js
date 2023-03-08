@@ -175,6 +175,7 @@ export const enUS = {
     exit: "Exit",
     playeronline: "Online users",
     cockfight: "Cockfight",
+    virtualsports: "Virtual Sports",
   },
   affiliate: {
     title: "Affiliate",
@@ -1499,5 +1500,11 @@ export const enUS = {
     sport: "Sports",
     fish: "Fishing",
     lottery: "Number",
+  },
+  rebateRate: {
+    title: "Rebate Rates",
+    players: "Players",
+    turnover: "Turnover",
+    rebates: "Rebates",
   },
 };

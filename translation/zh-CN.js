@@ -165,6 +165,7 @@ export const zhCN = {
     exit: "登出",
     playeronline: "在线人数",
     cockfight: "斗鸡",
+    virtualsports: "虚拟体育",
   },
   affiliate: {
     title: "推广赚钱",
@@ -1465,5 +1466,11 @@ export const zhCN = {
     sport: "体育竞技",
     fish: "捕鱼游戏",
     lottery: "彩球",
+  },
+  rebateRate: {
+    title: "回扣率",
+    players: "玩家",
+    turnover: "分水",
+    rebates: "回扣",
   },
 };

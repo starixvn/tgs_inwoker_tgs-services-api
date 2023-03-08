@@ -165,6 +165,7 @@ export const zhTW = {
     exit: "登出",
     playeronline: "在線人數",
     cockfight: "鬥雞",
+    virtualsports: "虛擬體育",
   },
   affiliate: {
     title: "推廣賺錢",
@@ -1459,5 +1460,11 @@ export const zhTW = {
     sport: "體育競技",
     fish: "捕魚遊戲",
     lottery: "彩球",
+  },
+  rebateRate: {
+    title: "回扣率",
+    players: "玩家",
+    turnover: "分水",
+    rebates: "回扣",
   },
 };

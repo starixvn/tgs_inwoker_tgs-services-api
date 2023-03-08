@@ -172,6 +172,7 @@ export const vivN = {
     exit: "Thoát",
     playeronline: "người dùng trực tuyến",
     cockfight: "Đá gà",
+    virtualsports: "Thể thao ảo",
   },
   affiliate: {
     title: "Khuyến mãi",
@@ -1477,5 +1478,11 @@ export const vivN = {
     sport: "Thi đấu thể thao",
     fish: "Trò chơi câu cá",
     lottery: "Bóng màu",
+  },
+  rebateRate: {
+    title: "Tỷ lệ hoàn trả",
+    players: "Người chơi",
+    turnover: "Tổng số tiền cược",
+    rebates: "Tiền hoàn trả",
   },
 };

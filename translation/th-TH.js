@@ -166,6 +166,7 @@ export const thTH = {
     exit: "ออกจากระบบ",
     playeronline: "ผู้ใช้ออนไลน์",
     cockfight: "การชนไก่",
+    virtualsports: "กีฬาเสมือน",
   },
   affiliate: {
     title: "โปรโมชั่นสร้างรายได้",
@@ -1472,5 +1473,11 @@ export const thTH = {
     sport: "กีฬา",
     fish: "ยิงปลา",
     slots: "เกมส์ตัวเลข",
+  },
+  rebateRate: {
+    title: "อัตราการคืนเงิน",
+    players: "ผู้เล่น",
+    turnover: "ยอดเงินเดิมพัน",
+    rebates: "คืนเงิน",
   },
 };
