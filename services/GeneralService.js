@@ -21,7 +21,8 @@ export const GeneralService = {
   GetPromotionRouletteCount,
   GetDepositAccumulateRoulette,
   GetDepositAccumulateRouletteResult,
-  GetDepositAccumulateRouletteHistory
+  GetDepositAccumulateRouletteHistory,
+  GetBrandAllAgent,
 };
 
 function GetSiteToken() {
@@ -105,7 +106,7 @@ function GetPromotionRouletteResult(id) {
   return result;
 }
 
-function GetPromotion(){
+function GetPromotion() {
   const result = ApiService.get("promotion");
   return result;
 }
@@ -127,5 +128,10 @@ function GetDepositAccumulateRouletteResult(promotionId) {
 
 function GetDepositAccumulateRouletteHistory(promotionId) {
   const result = ApiService.get(`dar/roulette/${promotionId}`);
+  return result;
+}
+
+function GetBrandAllAgent(promotionId) {
+  const result = ApiService.get(`brandallagent`);
   return result;
 }
