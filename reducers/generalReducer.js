@@ -46,6 +46,7 @@ import {
   GETDAROULETTE_HISTORY_BEGIN,
   GETDAROULETTE_HISTORY_FAILED,
   GETDAROULETTE_HISTORY_SUCCESS,
+  GETBRANDALLAGENT_SUCCESS,
 } from "../constant/actionType";
 import { idr } from "../utils/hardcode/idr-stg";
 const initialState = {
@@ -72,6 +73,7 @@ const initialState = {
   itemIndex: null,
   rouletteCount: [],
   rouletteHistory: [],
+  rebates: [],
 };
 function mapPromotionList(data) {
   var items = [];
@@ -305,6 +307,14 @@ export function generalReducer(state = initialState, action) {
         ...state,
         rouletteHistory: action.payload.data,
       };
+
+    case GETBRANDALLAGENT_SUCCESS:
+      return {
+        ...state,
+        rebates: action.payload.data,
+        loading: false,
+      };
+
     default:
       return state;
   }

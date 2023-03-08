@@ -174,6 +174,7 @@ export const enUS = {
     termsAndCondition: "Terms and conditions",
     exit: "Exit",
     playeronline: "Online users",
+    cockfight: "Cockfight",
   },
   affiliate: {
     title: "Affiliate",
@@ -469,8 +470,7 @@ export const enUS = {
       msgPlsEnterICNum: "Please enter your ID number",
       toEdit: "If Required to Edit Real Name, Please Click ",
       verifyName: "Real Name Verify",
-      tips:
-        "Tips:  Real name needs to be same as withdrawal bank name to withdraw money",
+      tips: "Tips:  Real name needs to be same as withdrawal bank name to withdraw money",
     },
     password: {
       title: "Login Password",
@@ -822,8 +822,7 @@ export const enUS = {
         "VR Lottery researches and develops different types of lottery particularly the famous hongkong's lottery. ",
       bgDesc:
         "The most comprehensive variety of lottery games and betting methods",
-      kmDesc:
-        "",
+      kmDesc: "",
     },
     chessGame: {
       kyDesc:
@@ -990,13 +989,11 @@ export const enUS = {
   CustomBank: "Custom Bank",
   VR: {
     lottery: "VR",
-    desc:
-      "VR lottery. We are also developing the VR Electronic series of games, determined to give customers more diversified choices. VR will continue to create and progress, in order to introduce more new kind lottery for the public, and create an all-round entertainment environment.",
+    desc: "VR lottery. We are also developing the VR Electronic series of games, determined to give customers more diversified choices. VR will continue to create and progress, in order to introduce more new kind lottery for the public, and create an all-round entertainment environment.",
   },
   KY: {
     chess: "KaiYuan",
-    desc:
-      "No 1 card game. Bull bull,blackjack,poker,dragon tiger and other real playercard game",
+    desc: "No 1 card game. Bull bull,blackjack,poker,dragon tiger and other real playercard game",
     BankerNiuNiu: "Niu-Niu",
     GoldenFlower: "Gloden Flower",
     The21Point: "The 21 Point",
@@ -1006,14 +1003,12 @@ export const enUS = {
   sports: {
     bunnydesc:
       "{brand} provide innovative, variety of bet type and competitive odds for live matches.  Easy betting with quick, and secure way through any kind of devices anywhere, anytime!  In addition, we support all kinds of sport events, including soccer, basketball, baseball, tennis, football, and E-sports to fulfill your needs!",
-    desc:
-      "Pega Gaming provide innovative, variety of bet type and competitive odds for live matches.  Easy betting with quick, and secure way through any kind of devices anywhere, anytime!  In addition, we support all kinds of sport events, including soccer, basketball, baseball, tennis, football, and E-sports to fulfill your needs!",
+    desc: "Pega Gaming provide innovative, variety of bet type and competitive odds for live matches.  Easy betting with quick, and secure way through any kind of devices anywhere, anytime!  In addition, we support all kinds of sport events, including soccer, basketball, baseball, tennis, football, and E-sports to fulfill your needs!",
   },
   esports: {
     bunnydesc:
       "IM E-Sports is an industry-leading betting platform designed by gamers for gamers. Ready to be stunned by the aesthetically pleasing visual interface, endless betting options, and the ultimate betting experience.Visit {brand}, a proud partner of IM E-Sports, and stay up to date on your favorite games and teams!",
-    desc:
-      "IM E-Sports is an industry-leading betting platform designed by gamers for gamers. Ready to be stunned by the aesthetically pleasing visual interface, endless betting options, and the ultimate betting experience.Visit {brand} Gaming, a proud partner of IM E-Sports, and stay up to date on your favorite games and teams!",
+    desc: "IM E-Sports is an industry-leading betting platform designed by gamers for gamers. Ready to be stunned by the aesthetically pleasing visual interface, endless betting options, and the ultimate betting experience.Visit {brand} Gaming, a proud partner of IM E-Sports, and stay up to date on your favorite games and teams!",
   },
   services: {
     depositTitle: "Easy, Rapid Payouts",
@@ -1023,8 +1018,7 @@ export const enUS = {
     security:
       "As the most trusted online betting platform in Asia, we are committed to providing the best gaming experience in every aspect. We use an 128-bit SSL to encrypt every private information you share with us.",
     oddsTitle: "500+ Top games",
-    odds:
-      "From exciting sports, to massive progressive jackpots, classic table games, live casino, lottery, and specialty games – we have it all! With 500+ games, our online casino offers hours of entertainment and exclusive rewards, prizes and bonuses just for you!",
+    odds: "From exciting sports, to massive progressive jackpots, classic table games, live casino, lottery, and specialty games – we have it all! With 500+ games, our online casino offers hours of entertainment and exclusive rewards, prizes and bonuses just for you!",
     platformTitle: "Anywhere, any devices",
     platform:
       "No matter where you are, you can win your fortune and have fun at anytime, with any devices! We are available on apps for both Android and iOS devices, and also as a web-based platform. Take advantage of chances to win BIG with us today!",
@@ -1084,22 +1078,22 @@ export const enUS = {
   JDB: {
     slots: "JDB",
     fish: "JDB",
-    desc:
-      "Winning treasures online is not boring. There are many games and slot machines here. If you want to experience more gameplay, you must come here!",
+    desc: "Winning treasures online is not boring. There are many games and slot machines here. If you want to experience more gameplay, you must come here!",
   },
   JDBTF: {
     slots: "JDBTF Slots",
     fish: "JDBTF Fishing",
-    desc:
-      "Winning treasures online is not boring. There are many games and slot machines here. If you want to experience more gameplay, you must come here!",
+    electron: "JDBTF",
+    desc: "Winning treasures online is not boring. There are many games and slot machines here. If you want to experience more gameplay, you must come here!",
   },
   JILI: {
     slots: "JILI",
     fish: "JILI",
   },
   JILITF: {
-    slots: "JILI Slots",
-    fish: "JILI Fishing",
+    slots: "JILITF Slots",
+    fish: "JILITF Fishing",
+    electron: "JILITF",
   },
   JOKER: {
     slots: "JOKER",
@@ -1192,6 +1186,7 @@ export const enUS = {
   },
   BC: {
     sports: "BetConstruct",
+    customsports: "BetConstruct",
   },
   AVIA: {
     sports: "AVIA Gaming",
@@ -1205,6 +1200,7 @@ export const enUS = {
   },
   AWC_COCKFIGHT: {
     sports: "SV388",
+    cockfight: "SV388",
   },
   AWC_SPADE: {
     electron: "SPADE",
@@ -1228,10 +1224,14 @@ export const enUS = {
     esports: "TF",
   },
   BTG: {
-    slots: "BTG"
+    slots: "BTG",
   },
   NLC: {
-    slots: "NLC"
+    slots: "NLC",
+  },
+  SM01: {
+    sports: "SM01",
+    cockfight: "SM01",
   },
   idr: {
     withdrawalNumber: "Bank card number",

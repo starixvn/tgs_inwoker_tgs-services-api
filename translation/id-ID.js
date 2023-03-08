@@ -171,6 +171,7 @@ export const idID = {
     termsAndCondition: "Syarat dan ketentuan",
     exit: "Exit",
     playeronline: "Pengguna online",
+    cockfight: "Sabungan",
   },
   affiliate: {
     title: "Afiliasi",
@@ -1078,6 +1079,7 @@ export const idID = {
   JDBTF: {
     slots: "JDBTF Slots",
     fish: "JDBTF Fishing",
+    electron: "JDBTF",
     desc: "Memenangkan harta secara online tidak membosankan. Ada banyak permainan dan mesin slot di sini. Jika Anda ingin merasakan lebih banyak gameplay, Anda harus datang ke sini!",
   },
   JILI: {
@@ -1085,8 +1087,9 @@ export const idID = {
     fish: "JILI",
   },
   JILITF: {
-    slots: "JILI Slots",
-    fish: "JILI Fishing",
+    slots: "JILITF Slots",
+    fish: "JILITF Fishing",
+    electron: "JILITF",
   },
   JOKER: {
     slots: "JOKER",
@@ -1179,6 +1182,7 @@ export const idID = {
   },
   BC: {
     sports: "BetConstruct",
+    customsports: "BetConstruct",
   },
   AVIA: {
     sports: "AVIA Gaming",
@@ -1192,6 +1196,7 @@ export const idID = {
   },
   AWC_COCKFIGHT: {
     sports: "SV388",
+    cockfight: "SV388",
   },
   AWC_SPADE: {
     electron: "SPADE",
@@ -1215,10 +1220,14 @@ export const idID = {
     esports: "TF",
   },
   BTG: {
-    slots: "BTG"
+    slots: "BTG",
   },
   NLC: {
-    slots: "NLC"
+    slots: "NLC",
+  },
+  SM01: {
+    sports: "SM01",
+    cockfight: "SM01",
   },
   idr: {
     withdrawalNumber: "NOMOR REKENING",

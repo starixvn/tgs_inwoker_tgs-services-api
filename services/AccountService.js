@@ -30,6 +30,7 @@ export const AccountService = {
   SetBirthDate,
   NewRegister,
   UpdateIM,
+  GetRegisterStatus
 };
 
 function CheckUserName(username) {
@@ -255,5 +256,10 @@ function NewRegister(type, input) {
     type: type,
     input: input,
   });
+  return result;
+}
+
+function GetRegisterStatus() {
+  const result = ApiService.get("player/register");
   return result;
 }
