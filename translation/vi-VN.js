@@ -171,6 +171,8 @@ export const vivN = {
     termsAndCondition: "Các điều khoản và điều kiện",
     exit: "Thoát",
     playeronline: "người dùng trực tuyến",
+    cockfight: "Đá gà",
+    virtualsports: "Thể thao ảo",
   },
   affiliate: {
     title: "Khuyến mãi",
@@ -953,8 +955,7 @@ export const vivN = {
       title: "Xin lỗi, hệ thống đang được bảo trì",
       maintenance: "bảo trì",
       maintenancePeriod: "Thời gian bảo trì ：",
-      desc:
-        "Để bạn có trải nghiệm trò chơi tốt hơn, chúng tôi đã làm việc chăm chỉ",
+      desc: "Để bạn có trải nghiệm trò chơi tốt hơn, chúng tôi đã làm việc chăm chỉ",
       descText:
         "Nếu có bất kỳ câu hỏi nào, vui lòng liên hệ với dịch vụ khách hàng trực tuyến trong thời gian",
       btn: "Liên hệ với chúng tôi",
@@ -973,13 +974,11 @@ export const vivN = {
   CustomBank: "Ngân hàng tùy chỉnh",
   VR: {
     lottery: "VR",
-    desc:
-      'Xổ số VR luôn ở vị trí dẫn đầu trong ngành với " công bằng, an toàn, nhanh chóng và chính xác "và có hệ thống trí tuệ nhân tạo toàn diện. Chúng tôi có tất cả các loại xổ số chính thống tại đây, chủ yếu được chia thành "Xổ số phát trực tiếp VR " và "Xổ số VR ". Chúng tôi cũng đang phát triển loạt trò chơi "VR Điện tử ", quyết tâm mang đến cho khách hàng nhiều sự lựa chọn đa dạng hơn. VR sẽ tiếp tục sáng tạo và phát triển, nhằm giới thiệu thêm nhiều loại hình xổ số mới cho công chúng và tạo ra một môi trường giải trí toàn diện. ',
+    desc: 'Xổ số VR luôn ở vị trí dẫn đầu trong ngành với " công bằng, an toàn, nhanh chóng và chính xác "và có hệ thống trí tuệ nhân tạo toàn diện. Chúng tôi có tất cả các loại xổ số chính thống tại đây, chủ yếu được chia thành "Xổ số phát trực tiếp VR " và "Xổ số VR ". Chúng tôi cũng đang phát triển loạt trò chơi "VR Điện tử ", quyết tâm mang đến cho khách hàng nhiều sự lựa chọn đa dạng hơn. VR sẽ tiếp tục sáng tạo và phát triển, nhằm giới thiệu thêm nhiều loại hình xổ số mới cho công chúng và tạo ra một môi trường giải trí toàn diện. ',
   },
   KY: {
     chess: "KaiYuan",
-    desc:
-      "Không có 1 trò chơi bài nào. Bull bull, blackjack, poker, dragon tiger và các trò chơi đánh bài thực khác",
+    desc: "Không có 1 trò chơi bài nào. Bull bull, blackjack, poker, dragon tiger và các trò chơi đánh bài thực khác",
     BankerNiuNiu: "Niu-Niu",
     GoldenFlower: "Hoa Gloden",
     The21Point: "Điểm 21",
@@ -989,14 +988,12 @@ export const vivN = {
   sports: {
     bunnydesc:
       "{brand} cung cấp nhiều loại cược mới và tỷ lệ cược cạnh tranh cho các trận đấu trực tiếp. bóng đá, bóng rổ, bóng chày, quần vợt, bóng đá và Thể thao điện tử để đáp ứng nhu cầu của bạn! ",
-    desc:
-      "Pega Gaming cung cấp nhiều loại cược mới và tỷ lệ cược cạnh tranh cho các trận đấu trực tiếp. bóng đá, bóng rổ, bóng chày, quần vợt, bóng đá và Thể thao điện tử để đáp ứng nhu cầu của bạn! ",
+    desc: "Pega Gaming cung cấp nhiều loại cược mới và tỷ lệ cược cạnh tranh cho các trận đấu trực tiếp. bóng đá, bóng rổ, bóng chày, quần vợt, bóng đá và Thể thao điện tử để đáp ứng nhu cầu của bạn! ",
   },
   esports: {
     bunnydesc:
       "IM E-Sports là một nền tảng cá cược hàng đầu trong ngành được thiết kế bởi các game thủ dành cho người chơi. đối tác tự hào của IM E-Sports và luôn cập nhật về các trò chơi và đội yêu thích của bạn! ",
-    desc:
-      "IM E-Sports là một nền tảng cá cược hàng đầu trong ngành được thiết kế bởi các game thủ dành cho người chơi. đối tác tự hào của IM E-Sports và luôn cập nhật về các trò chơi và đội yêu thích của bạn! ",
+    desc: "IM E-Sports là một nền tảng cá cược hàng đầu trong ngành được thiết kế bởi các game thủ dành cho người chơi. đối tác tự hào của IM E-Sports và luôn cập nhật về các trò chơi và đội yêu thích của bạn! ",
   },
   services: {
     depositTitle: "Thanh toán dễ dàng, nhanh chóng",
@@ -1006,8 +1003,7 @@ export const vivN = {
     security:
       "Là nền tảng cá cược trực tuyến đáng tin cậy nhất ở Châu Á, chúng tôi cam kết cung cấp trải nghiệm chơi trò chơi tốt nhất ở mọi khía cạnh. Chúng tôi sử dụng SSL 128 bit để mã hóa mọi thông tin cá nhân mà bạn chia sẻ với chúng tôi.",
     oddsTitle: "Hơn 500 trò chơi hàng đầu",
-    odds:
-      "Từ các môn thể thao thú vị, đến giải đặc biệt lũy tiến lớn, trò chơi trên bàn cổ điển, sòng bạc trực tiếp, xổ số và các trò chơi đặc biệt - chúng tôi có tất cả! Với hơn 500 trò chơi, sòng bạc trực tuyến của chúng tôi cung cấp hàng giờ giải trí và phần thưởng độc quyền, giải thưởng và tiền thưởng chỉ dành cho bạn! ",
+    odds: "Từ các môn thể thao thú vị, đến giải đặc biệt lũy tiến lớn, trò chơi trên bàn cổ điển, sòng bạc trực tiếp, xổ số và các trò chơi đặc biệt - chúng tôi có tất cả! Với hơn 500 trò chơi, sòng bạc trực tuyến của chúng tôi cung cấp hàng giờ giải trí và phần thưởng độc quyền, giải thưởng và tiền thưởng chỉ dành cho bạn! ",
     platformTitle: "Mọi nơi, mọi thiết bị",
     platform:
       "Dù bạn ở đâu, bạn đều có thể giành được tài sản của mình và vui chơi bất cứ lúc nào, với bất kỳ thiết bị nào! Chúng tôi có sẵn trên các ứng dụng cho cả thiết bị Android và iOS cũng như nền tảng dựa trên web. Hãy tận dụng cơ hội giành chiến thắng LỚN với chúng tôi ngay hôm nay! ",
@@ -1067,22 +1063,22 @@ export const vivN = {
   JDB: {
     slots: "JDB",
     fish: "JDB",
-    desc:
-      "Chiến thắng báu vật trực tuyến không hề nhàm chán. Tại đây có rất nhiều trò chơi và máy đánh bạc, muốn trải nghiệm thêm nhiều cách chơi thì bạn phải vào đây!",
+    desc: "Chiến thắng báu vật trực tuyến không hề nhàm chán. Tại đây có rất nhiều trò chơi và máy đánh bạc, muốn trải nghiệm thêm nhiều cách chơi thì bạn phải vào đây!",
   },
   JDBTF: {
     slots: "JDBTF Slots",
     fish: "JDBTF Fishing",
-    desc:
-      "Chiến thắng báu vật trực tuyến không hề nhàm chán. Tại đây có rất nhiều trò chơi và máy đánh bạc, muốn trải nghiệm thêm nhiều cách chơi thì bạn phải vào đây!",
+    electron: "JDBTF",
+    desc: "Chiến thắng báu vật trực tuyến không hề nhàm chán. Tại đây có rất nhiều trò chơi và máy đánh bạc, muốn trải nghiệm thêm nhiều cách chơi thì bạn phải vào đây!",
   },
   JILI: {
     slots: "JILI",
     fish: "JILI",
   },
   JILITF: {
-    slots: "JILI Slots",
-    fish: "JILI Fishing",
+    slots: "JILITF Slots",
+    fish: "JILITF Fishing",
+    electron: "JILITF",
   },
   JOKER: {
     slots: "JOKER",
@@ -1172,6 +1168,7 @@ export const vivN = {
   },
   BC: {
     sports: "BetConstruct",
+    customsports: "BetConstruct",
   },
   AVIA: {
     sports: "AVIA ",
@@ -1186,6 +1183,7 @@ export const vivN = {
   },
   AWC_COCKFIGHT: {
     sports: "SV388",
+    cockfight: "SV388",
   },
   AWC_SPADE: {
     electron: "SPADE",
@@ -1209,10 +1207,14 @@ export const vivN = {
     esports: "TF",
   },
   BTG: {
-    slots: "BTG"
+    slots: "BTG",
   },
   NLC: {
-    slots: "NLC"
+    slots: "NLC",
+  },
+  SM01: {
+    sports: "SM01",
+    cockfight: "SM01",
   },
   idr: {
     withdrawalNumber: "Số thẻ ngân hàng",
@@ -1476,5 +1478,11 @@ export const vivN = {
     sport: "Thi đấu thể thao",
     fish: "Trò chơi câu cá",
     lottery: "Bóng màu",
+  },
+  rebateRate: {
+    title: "Tỷ lệ hoàn trả",
+    players: "Người chơi",
+    turnover: "Tổng số tiền cược",
+    rebates: "Tiền hoàn trả",
   },
 };

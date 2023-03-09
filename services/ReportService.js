@@ -74,8 +74,7 @@ function GetTransferReport(from, to, page, rows, order, desc, sort, all) {
   return result;
 }
 
-function GetBalanceChanges(from, to, page, rows)
-{
+function GetBalanceChanges(from, to, page, rows) {
   const result = ApiService.get(
     `transaction?from=${from}&to=${to}&page=${page}&rows=${rows}`
   );
