@@ -1456,9 +1456,9 @@ export const zhTW = {
     lottery: "彩球",
   },
   rebateRate: {
-    title: "回扣率",
-    players: "玩家",
-    turnover: "分水",
-    rebates: "回扣",
+    title: "返水比例",
+    players: "活躍玩家",
+    turnover: "有效投注",
+    rebates: "返水比例",
   },
 };
