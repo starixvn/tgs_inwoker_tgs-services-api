@@ -1034,6 +1034,7 @@ export const idID = {
     live: "Skywind",
     slots: "Skywind",
     electron: "Skywind",
+    fish: "Skywind",
   },
   SBO: {
     sports: "SBO",
