@@ -1023,6 +1023,7 @@ export const zhCN = {
     live: "SW真人",
     slots: "SW老虎机",
     electron: "SW电子",
+    fish: "SW捕鱼",
   },
   SBO: {
     sports: "SBO体育",
