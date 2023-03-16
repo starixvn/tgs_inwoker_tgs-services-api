@@ -23,6 +23,7 @@ export const GeneralService = {
   GetDepositAccumulateRouletteResult,
   GetDepositAccumulateRouletteHistory,
   GetBrandAllAgent,
+  GetAffiliateStatus,
 };
 
 function GetSiteToken() {
@@ -133,5 +134,10 @@ function GetDepositAccumulateRouletteHistory(promotionId) {
 
 function GetBrandAllAgent(promotionId) {
   const result = ApiService.get(`brandallagent`);
+  return result;
+}
+
+function GetAffiliateStatus(){
+  const result = ApiService.get(`brandallagent/check`);
   return result;
 }
