@@ -167,6 +167,7 @@ export const zhCN = {
     cockfight: "斗鸡",
     virtualsports: "虚拟体育",
     egame: "电子游戏",
+    livedealer: "真人娱乐",
   },
   affiliate: {
     title: "推广赚钱",
