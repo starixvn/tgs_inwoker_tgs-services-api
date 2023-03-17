@@ -166,6 +166,7 @@ export const zhTW = {
     playeronline: "在線人數",
     cockfight: "鬥雞",
     virtualsports: "虛擬體育",
+    egame: "電子遊戲",
   },
   affiliate: {
     title: "推廣賺錢",
