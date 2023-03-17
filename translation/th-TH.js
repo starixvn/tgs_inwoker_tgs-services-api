@@ -167,6 +167,8 @@ export const thTH = {
     playeronline: "ผู้ใช้ออนไลน์",
     cockfight: "การชนไก่",
     virtualsports: "กีฬาเสมือน",
+    egame: "เกมออนไลน์",
+    livedealer: "คาสิโนสด",
   },
   affiliate: {
     title: "โปรโมชั่นสร้างรายได้",
