@@ -174,6 +174,7 @@ export const vivN = {
     cockfight: "Đá gà",
     virtualsports: "Thể thao ảo",
     egame: "Trò chơi điện tử",
+    livedealer: "Casino trực tiếp",
   },
   affiliate: {
     title: "Khuyến mãi",

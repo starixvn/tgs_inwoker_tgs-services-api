@@ -177,6 +177,7 @@ export const enUS = {
     cockfight: "Cockfight",
     virtualsports: "Virtual Sports",
     egame: "EGame",
+    livedealer: "Live Dealer",
   },
   affiliate: {
     title: "Affiliate",
