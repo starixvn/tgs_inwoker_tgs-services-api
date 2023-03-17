@@ -173,6 +173,7 @@ export const idID = {
     playeronline: "Pengguna online",
     cockfight: "Sabungan",
     virtualsports: "Virtual Sports",
+    egame: "EGame",
   },
   affiliate: {
     title: "Afiliasi",
