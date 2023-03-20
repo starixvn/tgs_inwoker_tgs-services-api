@@ -1179,6 +1179,7 @@ export const zhTW = {
     slots: "SPADE老虎機",
   },
   AWC_FACAI: { electron: "發財電子", slots: "發財老虎機", fish: "發財捕魚" },
+  FACHAI: { electron: "發財電子", slots: "發財老虎機", fish: "發財捕魚" },
   AWC_PGS: { electron: "PGS電子", slots: "PGS老虎機" },
   AWC_AWS: { electron: "AWS電子", slots: "AWS老虎機" },
   AWC_FS: { slots: "FS老虎機" },
