@@ -174,6 +174,7 @@ export const vivN = {
     cockfight: "Đá gà",
     virtualsports: "Thể thao ảo",
     egame: "Trò chơi điện tử",
+    livedealer: "Casino trực tiếp",
   },
   affiliate: {
     title: "Khuyến mãi",
@@ -1194,6 +1195,7 @@ export const vivN = {
     slots: "SPADE",
   },
   AWC_FACAI: { electron: "FACAI", slots: "FACAI", fish: "FACAI" },
+  FACHAI: { electron: "FACAI", slots: "FACAI", fish: "FACAI" },
   AWC_PGS: { electron: "PGS", slots: "PGS" },
   AWC_AWS: { electron: "AWS", slots: "AWS" },
   AWC_FS: { slots: "FS" },

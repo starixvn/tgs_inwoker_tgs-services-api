@@ -167,6 +167,7 @@ export const zhCN = {
     cockfight: "斗鸡",
     virtualsports: "虚拟体育",
     egame: "电子游戏",
+    livedealer: "真人娱乐",
   },
   affiliate: {
     title: "推广赚钱",
@@ -1189,11 +1190,8 @@ export const zhCN = {
     fish: "SPADE捕鱼",
     slots: "SPADE老虎机",
   },
-  AWC_FACAI: {
-    electron: "发财电子",
-    slots: "发财老虎机",
-    fish: "发财捕鱼",
-  },
+  AWC_FACAI: { electron: "发财电子", slots: "发财老虎机", fish: "发财捕鱼" },
+  FACHAI: { electron: "发财电子", slots: "发财老虎机", fish: "发财捕鱼" },
   AWC_PGS: { electron: "PGS电子", slots: "PGS老虎机" },
   AWC_AWS: { electron: "AWS电子", slots: "AWS老虎机" },
   AWC_FS: { slots: "FS老虎机" },

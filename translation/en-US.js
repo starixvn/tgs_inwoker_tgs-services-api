@@ -177,6 +177,7 @@ export const enUS = {
     cockfight: "Cockfight",
     virtualsports: "Virtual Sports",
     egame: "EGame",
+    livedealer: "Live Dealer",
   },
   affiliate: {
     title: "Affiliate",
@@ -1216,6 +1217,7 @@ export const enUS = {
     slots: "SPADE",
   },
   AWC_FACAI: { electron: "FACAI", slots: "FACAI", fish: "FACAI" },
+  FACHAI: { electron: "FACAI", slots: "FACAI", fish: "FACAI" },
   AWC_PGS: { electron: "PGS", slots: "PGS" },
   AWC_AWS: { electron: "AWS", slots: "AWS" },
   AWC_FS: { slots: "FS" },

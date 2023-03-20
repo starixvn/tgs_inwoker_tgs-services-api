@@ -174,6 +174,7 @@ export const idID = {
     cockfight: "Sabungan",
     virtualsports: "Virtual Sports",
     egame: "EGame",
+    livedealer: "Live Dealer",
   },
   affiliate: {
     title: "Afiliasi",
@@ -1193,35 +1194,15 @@ export const idID = {
     fish: "SPADE",
     slots: "SPADE",
   },
-  AWC_FACAI: {
-    electron: "FACAI",
-    slots: "FACAI",
-    fish: "FACAI",
-  },
-  AWC_PGS: {
-    electron: "PGS",
-    slots: "PGS",
-  },
-  AWC_AWS: {
-    electron: "AWS",
-    slots: "AWS",
-  },
-  AWC_FS: {
-    slots: "FS",
-  },
-  AWC_YL: {
-    electron: "YL",
-    fish: "YL",
-  },
-  AWC_KM: {
-    electron: "KM",
-  },
-  AWC_LUDO: {
-    electron: "LUDO",
-  },
-  AWC_AELOTTO: {
-    lottery: "AE",
-  },
+  AWC_FACAI: { electron: "FACAI", slots: "FACAI", fish: "FACAI" },
+  FACHAI: { electron: "FACAI", slots: "FACAI", fish: "FACAI" },
+  AWC_PGS: { electron: "PGS", slots: "PGS" },
+  AWC_AWS: { electron: "AWS", slots: "AWS" },
+  AWC_FS: { slots: "FS" },
+  AWC_YL: { electron: "YL", fish: "YL" },
+  AWC_KM: { electron: "KM" },
+  AWC_LUDO: { electron: "LUDO" },
+  AWC_AELOTTO: { lottery: "AE" },
   TF: {
     sports: "TF Gaming",
     esports: "TF",
