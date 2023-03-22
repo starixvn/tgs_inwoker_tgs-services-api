@@ -234,11 +234,9 @@ export function generalReducer(state = initialState, action) {
       };
 
     case GETBRAND_FAIL:
-      console.log("GETBRAND_FAIL");
-
       return {
         ...state,
-        // brand: { hasInvitationCode: true },
+        isMaintenance: action.payload.data.errmsgid === "UnderMaintenance",
         loading: false,
       };
     case GETLIVECHATURL_SUCCESS:
