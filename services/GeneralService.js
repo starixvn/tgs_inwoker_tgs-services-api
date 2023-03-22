@@ -132,12 +132,12 @@ function GetDepositAccumulateRouletteHistory(promotionId) {
   return result;
 }
 
+function GetAffiliateStatus() {
+  const result = ApiService.get(`brandallagent/check`);
+  return result;
+}
 function GetBrandAllAgent(promotionId) {
   const result = ApiService.get(`brandallagent`);
   return result;
 }
 
-function GetAffiliateStatus(){
-  const result = ApiService.get(`brandallagent/check`);
-  return result;
-}

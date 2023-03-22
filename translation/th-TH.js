@@ -1027,6 +1027,7 @@ export const thTH = {
     live: "Skywind",
     slots: "Skywind",
     electron: "Skywind",
+    fish: "Skywind",
   },
   SBO: {
     sports: "SBO",

@@ -46,9 +46,9 @@ import {
   GETDAROULETTE_HISTORY_BEGIN,
   GETDAROULETTE_HISTORY_FAILED,
   GETDAROULETTE_HISTORY_SUCCESS,
-  GETBRANDALLAGENT_SUCCESS,
   GETAFFILIATESTATUS_SUCCESS,
   GETAFFILIATESTATUS_FAIL,
+  GETBRANDALLAGENT_SUCCESS,
 } from "../constant/actionType";
 import { idr } from "../utils/hardcode/idr-stg";
 const initialState = {
@@ -65,7 +65,12 @@ const initialState = {
         },
       ],
   brandsSupport: config.features.HardcodeContentIDR ? idr.brandSupport : [],
-  livechat: {"name":null,"setting":{"url":"https://static.zdassets.com/web_widget/latest/liveChat.html?v=10#key=cabangslot805.zendesk.com"}},
+  livechat: {
+    name: null,
+    setting: {
+      url: "https://static.zdassets.com/web_widget/latest/liveChat.html?v=10#key=cabangslot805.zendesk.com",
+    },
+  },
   banner: [],
   brand: {
     //TGS-197, since hide when true, default hide, show when return false
@@ -77,6 +82,7 @@ const initialState = {
   rouletteHistory: [],
   rebates: [],
   haveAffiliate: false,
+
 };
 function mapPromotionList(data) {
   var items = [];
@@ -229,11 +235,9 @@ export function generalReducer(state = initialState, action) {
       };
 
     case GETBRAND_FAIL:
-      console.log("GETBRAND_FAIL");
-
       return {
         ...state,
-        // brand: { hasInvitationCode: true },
+        isMaintenance: action.payload.data.errmsgid === "UnderMaintenance",
         loading: false,
       };
     case GETLIVECHATURL_SUCCESS:
@@ -326,6 +330,7 @@ export function generalReducer(state = initialState, action) {
         ...state,
         haveAffiliate: false,
       };
+
     default:
       return state;
   }

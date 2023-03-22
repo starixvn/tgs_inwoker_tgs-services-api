@@ -172,7 +172,7 @@ export const idID = {
     exit: "Exit",
     playeronline: "Pengguna online",
     cockfight: "Sabungan",
-    virtualsports: "Bintik maya",
+    virtualsports: "Virtual Sports",
     egame: "EGame",
     livedealer: "Live Dealer",
   },
@@ -1047,6 +1047,7 @@ export const idID = {
     live: "Skywind",
     slots: "Skywind",
     electron: "Skywind",
+    fish: "Skywind",
   },
   SBO: {
     sports: "SBO",
