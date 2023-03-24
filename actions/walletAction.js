@@ -448,7 +448,15 @@ function doPulsaDeposit(amount, paymentid, promotionid, banktype, note, phone) {
   };
 }
 
-function doEWalletDeposit(amount, paymentid, promotionid, banktype, note, emoneyname, phone) {
+function doEWalletDeposit(
+  amount,
+  paymentid,
+  promotionid,
+  banktype,
+  note,
+  emoneyname,
+  phone
+) {
   return (dispatch) => {
     dispatch({
       type: DODEPOSIT_BEGIN,
@@ -1256,42 +1264,46 @@ function performWithdrawFromEveryBrand() {
 }
 
 function getGameBalance(gpcode) {
+  var listOfGpCodeThatDoestRequireAPICall = ["BTG", "NLC"];
+
   return (dispatch) => {
     dispatch({
       type: GETGAMEBALANCE_BEGIN,
       loading: true,
     });
-    const result = WalletService.GetGameBalance(gpcode)
-      .then((response) => {
-        if (response.IsSuccess) {
-          dispatch({
-            type: GETGAMEBALANCE_SUCCESS,
-            payload: response,
-            gpcode: gpcode,
-            loading: false,
-          });
+    if (!listOfGpCodeThatDoestRequireAPICall.includes(gpcode)) {
+      const result = WalletService.GetGameBalance(gpcode)
+        .then((response) => {
+          if (response.IsSuccess) {
+            dispatch({
+              type: GETGAMEBALANCE_SUCCESS,
+              payload: response,
+              gpcode: gpcode,
+              loading: false,
+            });
 
-          // AppHistory.push("/");
-        } else {
+            // AppHistory.push("/");
+          } else {
+            dispatch({
+              type: GETGAMEBALANCE_FAIL,
+              payload: response,
+              gpcode: gpcode,
+              loading: false,
+            });
+          }
+          return response;
+        })
+        .catch((e) => {
           dispatch({
             type: GETGAMEBALANCE_FAIL,
-            payload: response,
+            payload: e.status,
             gpcode: gpcode,
             loading: false,
           });
-        }
-        return response;
-      })
-      .catch((e) => {
-        dispatch({
-          type: GETGAMEBALANCE_FAIL,
-          payload: e.status,
-          gpcode: gpcode,
-          loading: false,
         });
-      });
-
-    return result;
+      return result;
+    } else {
+    }
   };
 }
 
@@ -1454,7 +1466,12 @@ function doWithdraw(amount, bankinfoid, paypassword, note) {
       type: DOWITHDRAWAL_BEGIN,
       loading: true,
     });
-    const result = WalletService.DoWithdraw(amount, bankinfoid, paypassword, note)
+    const result = WalletService.DoWithdraw(
+      amount,
+      bankinfoid,
+      paypassword,
+      note
+    )
       .then((response) => {
         if (response.IsSuccess) {
           dispatch({
@@ -1608,7 +1625,15 @@ function doBankDepositWithDetail(
   };
 }
 
-function doPulsaDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail, phone) {
+function doPulsaDepositWithDetail(
+  amount,
+  paymentid,
+  promotionid,
+  banktype,
+  note,
+  detail,
+  phone
+) {
   return (dispatch) => {
     dispatch({
       type: DODEPOSIT_BEGIN,
@@ -1650,7 +1675,16 @@ function doPulsaDepositWithDetail(amount, paymentid, promotionid, banktype, note
   };
 }
 
-function doEWalletDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail, emoneyname, phone) {
+function doEWalletDepositWithDetail(
+  amount,
+  paymentid,
+  promotionid,
+  banktype,
+  note,
+  detail,
+  emoneyname,
+  phone
+) {
   return (dispatch) => {
     dispatch({
       type: DODEPOSIT_BEGIN,
