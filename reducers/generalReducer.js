@@ -80,8 +80,9 @@ const initialState = {
   itemIndex: null,
   rouletteCount: [],
   rouletteHistory: [],
-  haveAffiliate: false,
   rebates: [],
+  haveAffiliate: false,
+
 };
 function mapPromotionList(data) {
   var items = [];
@@ -313,6 +314,12 @@ export function generalReducer(state = initialState, action) {
         ...state,
         rouletteHistory: action.payload.data,
       };
+    case GETBRANDALLAGENT_SUCCESS:
+      return {
+        ...state,
+        rebates: action.payload.data,
+        loading: false,
+      };
     case GETAFFILIATESTATUS_SUCCESS:
       return {
         ...state,
@@ -322,13 +329,6 @@ export function generalReducer(state = initialState, action) {
       return {
         ...state,
         haveAffiliate: false,
-      };
-
-    case GETBRANDALLAGENT_SUCCESS:
-      return {
-        ...state,
-        rebates: action.payload.data,
-        loading: false,
       };
 
     default:

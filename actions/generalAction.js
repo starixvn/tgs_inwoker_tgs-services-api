@@ -53,11 +53,13 @@ import {
   GETPROMOTION_BEGIN,
   GETPROMOTION_SUCCESS,
   GETPROMOTION_FAILURE,
-  GETAFFILIATESTATUS_SUCCESS,
-  GETAFFILIATESTATUS_FAIL,
   GETBRANDALLAGENT_BEGIN,
   GETBRANDALLAGENT_SUCCESS,
   GETBRANDALLAGENT_FAIL,
+  GETAFFILIATESTATUS_SUCCESS,
+  GETAFFILIATESTATUS_FAIL,
+
+
 } from "../constant/actionType";
 // These are the constants to represent each of three recommended actions for a single API fetch or post.
 
@@ -81,8 +83,8 @@ export const generalAction = {
   getDepositAccumulateRoulette,
   getDepositAccumulateRouletteResult,
   getDepositAccumulateRouletteHistory,
-  getAffiliateStatus,
   getBrandAllAgent,
+  getAffiliateStatus,
 };
 function getSiteToken() {
   return (dispatch) => {
