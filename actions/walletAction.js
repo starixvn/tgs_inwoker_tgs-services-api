@@ -1303,6 +1303,12 @@ function getGameBalance(gpcode) {
         });
       return result;
     } else {
+      //return a fake Promise to make the caller happy
+      return new Promise((resolve, reject) => {
+        resolve({
+          IsSuccess: false,
+        });
+      });
     }
   };
 }
