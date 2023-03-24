@@ -1265,6 +1265,7 @@ function performWithdrawFromEveryBrand() {
 
 function getGameBalance(gpcode) {
   var listOfGpCodeThatDoestRequireAPICall = ["BTG", "NLC"];
+  var result;
 
   return (dispatch) => {
     dispatch({
@@ -1303,6 +1304,12 @@ function getGameBalance(gpcode) {
         });
       return result;
     } else {
+      //return a fake Promise to make the caller happy
+      return new Promise((resolve, reject) => {
+        resolve({
+          IsSuccess: false,
+        });
+      });
     }
   };
 }
