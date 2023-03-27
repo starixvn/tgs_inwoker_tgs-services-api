@@ -1482,4 +1482,16 @@ export const vivN = {
     turnover: "Tổng số tiền cược",
     rebates: "Tiền hoàn trả",
   },
+  depositAndWithdrawalStatus: {
+    depositOrWithdraw: "Đơn gửi/rút tiền",
+    updatedTime: "Thời gian cập nhật",
+    orderNo: "Mã đơn hàng",
+    channel: "Kênh thanh toán",
+    amount: "Số tiền",
+    status: "Trạng thái",
+    approved: "Đã duyệt",
+    rejected: "Không được duyệt",
+    review: "Đang chờ xử lý",
+    paid: "Đã thanh toán",
+  },
 };
