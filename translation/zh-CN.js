@@ -1476,4 +1476,16 @@ export const zhCN = {
     turnover: "有效投注",
     rebates: "返水比例",
   },
+  depositAndWithdrawalStatus: {
+    depositOrWithdraw: "存/提款单",
+    updatedTime: "更新时间",
+    orderNo: "订单号",
+    channel: "支付渠道",
+    amount: "金额",
+    status: "状态",
+    approved: "审核通过",
+    rejected: "审核未通过",
+    review: "等待审核",
+    paid: "已支付",
+  },
 };
