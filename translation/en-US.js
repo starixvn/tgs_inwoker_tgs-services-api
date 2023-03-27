@@ -1557,4 +1557,16 @@ export const enUS = {
     turnover: "Turnover",
     rebates: "Rebates",
   },
+  depositAndWithdrawalStatus: {
+    depositOrWithdraw: "Deposit/Withdrawal Form",
+    updatedTime: "Update Time",
+    orderNo: "Order Number",
+    channel: "Payment Channel",
+    amount: "Amount",
+    status: "Status",
+    approved: "Success",
+    rejected: "Rejected",
+    review: "Waiting",
+    paid: "Success",
+  },
 };

@@ -1551,4 +1551,16 @@ export const idID = {
     turnover: "Pengeluaran",
     rebates: "Rebate",
   },
+  depositAndWithdrawalStatus: {
+    depositOrWithdraw: "Transaksi Deposit / Withdrawal",
+    updatedTime: "Waktu",
+    orderNo: "Ref",
+    channel: "Jenis Bank",
+    amount: "Jumlah",
+    status: "Status",
+    approved: "Sukses",
+    rejected: "Ditolak",
+    review: "Menunggu",
+    paid: "Sukses",
+  },
 };

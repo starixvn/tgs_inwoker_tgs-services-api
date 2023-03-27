@@ -1526,4 +1526,16 @@ export const thTH = {
     turnover: "ยอดเงินเดิมพัน",
     rebates: "คืนเงิน",
   },
+  depositAndWithdrawalStatus: {
+    depositOrWithdraw: "ฟอร์มฝากเงิน/ถอนเงิน",
+    updatedTime: "เวลาอัพเดท",
+    orderNo: "หมายเลขคำสั่งซื้อ",
+    channel: "ช่องทางการชำระเงิน",
+    amount: "จำนวนเงิน",
+    status: "สถานะ",
+    approved: "อนุมัติแล้ว",
+    rejected: "ไม่ผ่านการอนุมัติ",
+    review: "รอการตรวจสอบ",
+    paid: "จ่ายเงินแล้ว",
+  },
 };

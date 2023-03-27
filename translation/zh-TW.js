@@ -1512,4 +1512,16 @@ export const zhTW = {
     turnover: "有效投注",
     rebates: "返水比例",
   },
+  depositAndWithdrawalStatus: {
+    depositOrWithdraw: "存/提款單",
+    updatedTime: "更新時間",
+    orderNo: "訂單號",
+    channel: "渠道",
+    amount: "金額",
+    status: "狀態",
+    approved: "已通過",
+    rejected: "已拒絕",
+    review: "等待中",
+    paid: "已支付",
+  },
 };
