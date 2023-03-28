@@ -147,6 +147,11 @@ export function gameReducer(state = initialState, action) {
         if (a.gpcode === action.gpcode) {
           index = i;
         }
+
+        //if a.name === "Evolution" change to "EVO(NT,RT,BTG,NLC)"
+        if (a.name === "Evolution") {
+          a.name = "EVO (NT,RT,BTG,NLC)";
+        }
       });
       providerList[index].balance = action.payload.data.balance;
       return {
