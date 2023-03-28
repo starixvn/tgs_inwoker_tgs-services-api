@@ -38,7 +38,7 @@ export function gameReducer(state = initialState, action) {
       return {
         ...state,
         message: "",
-        loading: true
+        loading: true,
       };
     case GETHOMEPAGEGAMELIST_SUCCESS:
       var gameList = action.payload.data;
@@ -91,7 +91,6 @@ export function gameReducer(state = initialState, action) {
         });
       }
 
-
       return {
         ...state,
         homePageGameList: list,
@@ -139,6 +138,11 @@ export function gameReducer(state = initialState, action) {
       providerList.map((a, i) => {
         if (a.gpcode === action.gpcode) {
           index = i;
+        }
+
+        //if a.name === "Evolution" change to "EVO(NT,RT,BTG,NLC)"
+        if (a.name === "Evolution") {
+          a.name = "EVO (NT,RT,BTG,NLC)";
         }
       });
       providerList[index].balance = action.payload.data.balance;
