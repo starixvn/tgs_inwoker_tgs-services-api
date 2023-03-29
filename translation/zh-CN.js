@@ -1487,5 +1487,7 @@ export const zhCN = {
     rejected: "审核未通过",
     review: "等待审核",
     paid: "已支付",
+    DepositNotify: "存款单",
+    WithdrawalNotify: "提款单",
   },
 };

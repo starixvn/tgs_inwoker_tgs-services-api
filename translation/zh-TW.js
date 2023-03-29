@@ -1481,5 +1481,7 @@ export const zhTW = {
     rejected: "已拒絕",
     review: "等待中",
     paid: "已支付",
+    DepositNotify: "存款單",
+    WithdrawalNotify: "提款單",
   },
 };

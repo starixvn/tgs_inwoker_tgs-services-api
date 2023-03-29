@@ -1494,5 +1494,7 @@ export const thTH = {
     rejected: "ไม่ผ่านการอนุมัติ",
     review: "รอการตรวจสอบ",
     paid: "จ่ายเงินแล้ว",
+    DepositNotify: "ฝากเงินแล้ว",
+    WithdrawalNotify: "ถอนเงินแล้ว",
   },
 };
