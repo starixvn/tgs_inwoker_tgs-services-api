@@ -1568,5 +1568,7 @@ export const enUS = {
     rejected: "Rejected",
     review: "Waiting",
     paid: "Success",
+    DepositNotify: "Deposit Form",
+    WithdrawNotify: "Withdrawal Form",
   },
 };
