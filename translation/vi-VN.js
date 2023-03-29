@@ -1493,5 +1493,7 @@ export const vivN = {
     rejected: "Không được duyệt",
     review: "Đang chờ xử lý",
     paid: "Đã thanh toán",
+    DepositNotify: "Hình thức gửi tiền",
+    WithdrawalNotify: "ình thức rút tiền",
   },
 };

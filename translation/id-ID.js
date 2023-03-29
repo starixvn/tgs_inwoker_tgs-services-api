@@ -1532,5 +1532,7 @@ export const idID = {
     rejected: "Ditolak",
     review: "Menunggu",
     paid: "Sukses",
+    DepositNotify: "Transaksi Deposit",
+    WithdrawNotify: "Transaksi Withdrawal ",
   },
 };
