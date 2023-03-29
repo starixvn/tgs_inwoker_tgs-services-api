@@ -128,8 +128,13 @@ export function gameReducer(state = initialState, action) {
         loading: false,
       };
     case GETGAMEBALANCE_BEGIN:
+      var tempProviderList = [...state.providerList];
+      tempProviderList.forEach((provider) => {
+        provider.balance = 0;
+      });
       return {
         ...state,
+        providerList: tempProviderList,
       };
     case GETGAMEBALANCE_SUCCESS:
       var providerList = [...state.providerList];
