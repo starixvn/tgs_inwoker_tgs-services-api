@@ -22,7 +22,7 @@ const Interceptor = {
         const logintime = localStorage.getItem(
           "logintime" + (isMobileOnly ? "1" : "0")
         );
-        
+
         if (token != null && token != "") {
           if (logintime != null && logintime != "") {
             var date = new Date(parseInt(logintime, 10 | 0));
@@ -37,7 +37,7 @@ const Interceptor = {
               config.headers["Token"] = token;
             }
           }
-          
+
           // config.headers["Token"] = token;
         }
         // const crypto = require("crypto");
@@ -55,8 +55,7 @@ const Interceptor = {
         // config.headers["traceparent"] = parent;//"00-ab42124a3c573678d4d8b21ba52df3bf-d21f7bc17caa5aba-01";
         config.headers["Accept-Language"] = localStorage.getItem("i18nextLng");
 
-        if(config.url.toUpperCase().indexOf("/GAMEPROVIDER/LIST") >= 0)
-        {
+        if (config.url.toUpperCase().indexOf("/GAMEPROVIDER/LIST") >= 0) {
           config.headers["Token"] = "";
         }
 
@@ -120,15 +119,14 @@ const Interceptor = {
           newResponse.code === 101 ||
           newResponse.code === 210
         ) {
-
           localStorage.removeItem("token" + (isMobileOnly ? "1" : "0"));
           localStorage.removeItem("logintime" + (isMobileOnly ? "1" : "0"));
           store.dispatch({ type: UNAUTHORIZE });
 
           if (newResponse.code === 210) {
-            AppHistory.replace("/" + i18n.language + "/banned");
+            AppHistory.replace("/banned");
           } else {
-            AppHistory.replace("/" + i18n.language + "/");
+            AppHistory.replace("/");
           }
         }
 
@@ -152,9 +150,9 @@ const Interceptor = {
               localStorage.removeItem("logintime" + (isMobileOnly ? "1" : "0"));
               store.dispatch({ type: UNAUTHORIZE });
               if (error.response.data.err == 210) {
-                AppHistory.replace("/" + i18n.language + "/banned");
+                AppHistory.replace("/banned");
               } else {
-                AppHistory.replace("/" + i18n.language + "/");
+                AppHistory.replace("/");
               }
             }
           }
