@@ -1192,6 +1192,12 @@ export const vivN = {
     fish: "SPADE",
     slots: "SPADE",
   },
+  OBET: {
+    sports: "OBET",
+  },
+  YEEBET: {
+    live: "YEEBET",
+  },
   AWC_FACAI: { electron: "FACAI", slots: "FACAI", fish: "FACAI" },
   FACHAI: { electron: "FACAI", slots: "FACAI", fish: "FACAI" },
   AWC_PGS: { electron: "PGS", slots: "PGS" },
