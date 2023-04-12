@@ -1186,6 +1186,12 @@ export const zhCN = {
     fish: "SPADE捕鱼",
     slots: "SPADE老虎机",
   },
+  OBET: {
+    sports: "OBET体育",
+  },
+  YEEBET: {
+    live: "YEEBET",
+  },
   AWC_FACAI: { electron: "发财电子", slots: "发财老虎机", fish: "发财捕鱼" },
   AWC_PGS: { electron: "PGS电子", slots: "PGS老虎机" },
   AWC_AWS: { electron: "AWS电子", slots: "AWS老虎机" },
