@@ -1184,6 +1184,9 @@ export const enUS = {
   365: {
     chess: "365",
   },
+  "365tf": {
+    chess: "365",
+  },
   LY: {
     chess: "LEGaming",
     fish: "LEGaming",
@@ -1210,11 +1213,12 @@ export const enUS = {
     electron: "SPADE",
     fish: "SPADE",
     slots: "SPADE",
-  }, "OBET": {
-    "sports": "OBET"
   },
-  "YEEBET": {
-    "live": "YEEBET"
+  OBET: {
+    sports: "OBET",
+  },
+  YEEBET: {
+    live: "YEEBET",
   },
   AWC_FACAI: { electron: "FACAI", slots: "FACAI", fish: "FACAI" },
   AWC_PGS: { electron: "PGS", slots: "PGS" },
