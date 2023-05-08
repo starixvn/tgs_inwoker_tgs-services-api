@@ -1179,7 +1179,7 @@ export const idID = {
   365: {
     chess: "365",
   },
-  "365tf": {
+  "365TF": {
     chess: "365",
   },
   LY: {
