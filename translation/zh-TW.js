@@ -1155,6 +1155,9 @@ export const zhTW = {
   365: {
     chess: "365棋牌",
   },
+  "365tf": {
+    chess: "365棋牌",
+  },
   LY: {
     chess: "樂遊棋牌",
     fish: "樂遊捕魚",

@@ -2,6 +2,9 @@ export const vivN = {
   365: {
     chess: "365",
   },
+  "365tf": {
+    chess: "365",
+  },
   lang: {
     language: "Ngôn ngữ",
     "zh-TW": "繁體",
