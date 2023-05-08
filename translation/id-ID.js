@@ -1179,6 +1179,9 @@ export const idID = {
   365: {
     chess: "365",
   },
+  "365tf": {
+    chess: "365",
+  },
   LY: {
     chess: "LEGaming",
     fish: "LEGaming",
