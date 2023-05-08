@@ -1158,7 +1158,7 @@ export const zhCN = {
   365: {
     chess: "365棋牌",
   },
-  "365tf": {
+  "365TF": {
     chess: "365棋牌",
   },
   LY: {
