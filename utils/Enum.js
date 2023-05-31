@@ -29,7 +29,7 @@ export const GameEnum = {
   KY: "KY",
   AP: "AP",
   BL: "BL",
-  LEG: "LEG",
+  LEG: "LY",
   SBO: "SBO",
   AS: "AS",
   _633: "633",
