@@ -166,34 +166,36 @@ function mapDepositType(result) {
       depositMaxLimit = data[i].transferlimit.to;
     }
 
-    if (config.features.Deposit_SplitUsdt && data[i].channelname.indexOf("@") > 0) {
+    if (
+      config.features.Deposit_SplitUsdt &&
+      data[i].channelname.indexOf("@") > 0
+    ) {
       if (checkDuplicate.indexOf(data[i].channelname.split("@")[0]) < 0) {
         checkDuplicate.push(data[i].channelname.split("@")[0]);
 
-          depositType.paymentcode = data[i].channelname.split("@")[0];
-          depositType.paymentid = data[i].paymentid;
-          depositType.displayorder = data[i].displayorder;
-          depositType.alteredpaymentcode = data[i].paymentcode;
-          depositType.method = [
-            {
-              methodid: data[i].methodid,
-              methodcode: data[i].methodcode,
-              channel: [
-                {
-                  id: data[i].id,
-                  channelid: data[i].channelid,
-                  channelname: data[i].channelname.split("@")[1],
-                  transferlimit: data[i].transferlimit,
-                  extended: data[i].extended,
-                  displayorder: data[i].displayorder,
-                  fees: data[i].feepercentile,
-                },
-              ],
-            },
-          ];
+        depositType.paymentcode = data[i].channelname.split("@")[0];
+        depositType.paymentid = data[i].paymentid;
+        depositType.displayorder = data[i].displayorder;
+        depositType.alteredpaymentcode = data[i].paymentcode;
+        depositType.method = [
+          {
+            methodid: data[i].methodid,
+            methodcode: data[i].methodcode,
+            channel: [
+              {
+                id: data[i].id,
+                channelid: data[i].channelid,
+                channelname: data[i].channelname.split("@")[1],
+                transferlimit: data[i].transferlimit,
+                extended: data[i].extended,
+                displayorder: data[i].displayorder,
+                fees: data[i].feepercentile,
+              },
+            ],
+          },
+        ];
 
-          depositTypeList.push(depositType);
-        
+        depositTypeList.push(depositType);
       } else {
         //if data.channelname contain "@" then add into method else do nothing
         if (data[i].channelname.indexOf("@") > 0) {
@@ -317,6 +319,24 @@ function mapDepositType(result) {
       ].channel.sort(function (a, b) {
         return a.displayorder > b.displayorder ? 1 : -1;
       });
+    }
+  }
+
+  for (let index = 0; index < depositTypeList.length; index++) {
+    const depositType = depositTypeList[index];
+    if (depositType.paymentcode.toUpperCase() === "MANUAL") {
+      for (
+        let methodIndex = 0;
+        methodIndex < depositType.method.length;
+        methodIndex++
+      ) {
+        const method = depositType.method[methodIndex];
+        if (method.methodcode.toUpperCase() === "BANKTRANSFER") {
+          depositType.method.unshift(
+            depositType.method.splice(methodIndex, 1)[0]
+          );
+        }
+      }
     }
   }
 
