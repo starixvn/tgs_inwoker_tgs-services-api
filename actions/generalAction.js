@@ -758,12 +758,12 @@ function replyMemo(letterId, content) {
   };
 }
 
-function composeMemo(content, subject) {
+function composeMemo(subject, content) {
   return (dispatch) => {
     dispatch({
       type: COMPOSEMEMO_BEGIN,
     });
-    const result = GeneralService.ComposeMemo(content, subject).then(
+    const result = GeneralService.ComposeMemo(subject, content).then(
       (response) => {
         if (response.IsSuccess) {
           dispatch({
