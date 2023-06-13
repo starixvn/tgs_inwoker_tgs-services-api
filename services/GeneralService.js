@@ -25,6 +25,9 @@ export const GeneralService = {
   GetBrandAllAgent,
   GetAffiliateStatus,
   GetMemoV2,
+  ReplyMemo,
+  ComposeMemo,
+  ReadMemo,
 };
 
 function GetSiteToken() {
@@ -148,4 +151,22 @@ function GetMemoV2(letterId) {
   return result;
 }
 
-function ReplyMemo(token, letterId) {}
+function ReplyMemo(letterId, content) {
+  const result = ApiService.put(`station-letter/${letterId}:reply`, {
+    content,
+  });
+  return result;
+}
+
+function ComposeMemo(subject, content) {
+  const result = ApiService.put(`station-letter`, {
+    subject,
+    content,
+  });
+  return result;
+}
+
+function ReadMemo(letterId) {
+  const result = ApiService.patch(`station-letter/${letterId}:read`);
+  return result;
+}

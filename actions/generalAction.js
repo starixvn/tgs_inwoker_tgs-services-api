@@ -61,6 +61,12 @@ import {
   GETMEMOV2_BEGIN,
   GETMEMOV2_SUCCESS,
   GETMEMOV2_FAIL,
+  REPLYMEMO_BEGIN,
+  REPLYMEMO_SUCCESS,
+  REPLYMEMO_FAIL,
+  COMPOSEMEMO_BEGIN,
+  COMPOSEMEMO_SUCCESS,
+  COMPOSEMEMO_FAIL,
 } from "../constant/actionType";
 // These are the constants to represent each of three recommended actions for a single API fetch or post.
 
@@ -87,6 +93,8 @@ export const generalAction = {
   getBrandAllAgent,
   getAffiliateStatus,
   getMemoV2,
+  replyMemo,
+  composeMemo,
 };
 function getSiteToken() {
   return (dispatch) => {
@@ -721,6 +729,56 @@ function getMemoV2(letterId) {
       }
       return response;
     });
+    return result;
+  };
+}
+
+function replyMemo(letterId, content) {
+  return (dispatch) => {
+    dispatch({
+      type: REPLYMEMO_BEGIN,
+    });
+    const result = GeneralService.ReplyMemo(letterId, content).then(
+      (response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: REPLYMEMO_SUCCESS,
+            payload: response,
+          });
+        } else {
+          dispatch({
+            type: REPLYMEMO_FAIL,
+            payload: response,
+          });
+        }
+        return response;
+      }
+    );
+    return result;
+  };
+}
+
+function composeMemo(content, subject) {
+  return (dispatch) => {
+    dispatch({
+      type: COMPOSEMEMO_BEGIN,
+    });
+    const result = GeneralService.ComposeMemo(content, subject).then(
+      (response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: COMPOSEMEMO_SUCCESS,
+            payload: response,
+          });
+        } else {
+          dispatch({
+            type: COMPOSEMEMO_FAIL,
+            payload: response,
+          });
+        }
+        return response;
+      }
+    );
     return result;
   };
 }
