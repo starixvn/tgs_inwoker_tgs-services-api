@@ -67,6 +67,9 @@ import {
   COMPOSEMEMO_BEGIN,
   COMPOSEMEMO_SUCCESS,
   COMPOSEMEMO_FAIL,
+  READMEMO_BEGIN,
+  READMEMO_SUCCESS,
+  READMEMO_FAIL,
 } from "../constant/actionType";
 // These are the constants to represent each of three recommended actions for a single API fetch or post.
 
@@ -95,6 +98,7 @@ export const generalAction = {
   getMemoV2,
   replyMemo,
   composeMemo,
+  readMemo,
 };
 function getSiteToken() {
   return (dispatch) => {
@@ -779,6 +783,29 @@ function composeMemo(subject, content) {
         return response;
       }
     );
+    return result;
+  };
+}
+
+function readMemo(letterId) {
+  return (dispatch) => {
+    dispatch({
+      type: READMEMO_BEGIN,
+    });
+    const result = GeneralService.ReadMemo(letterId).then((response) => {
+      if (response.IsSuccess) {
+        dispatch({
+          type: READMEMO_SUCCESS,
+          payload: response,
+        });
+      } else {
+        dispatch({
+          type: READMEMO_FAIL,
+          payload: response,
+        });
+      }
+      return response;
+    });
     return result;
   };
 }
