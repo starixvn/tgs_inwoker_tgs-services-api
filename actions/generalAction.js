@@ -58,6 +58,9 @@ import {
   GETBRANDALLAGENT_FAIL,
   GETAFFILIATESTATUS_SUCCESS,
   GETAFFILIATESTATUS_FAIL,
+  GETMEMOV2_BEGIN,
+  GETMEMOV2_SUCCESS,
+  GETMEMOV2_FAIL,
 } from "../constant/actionType";
 // These are the constants to represent each of three recommended actions for a single API fetch or post.
 
@@ -83,6 +86,7 @@ export const generalAction = {
   getDepositAccumulateRouletteHistory,
   getBrandAllAgent,
   getAffiliateStatus,
+  getMemoV2,
 };
 function getSiteToken() {
   return (dispatch) => {
@@ -694,6 +698,29 @@ function getAffiliateStatus() {
         return response;
       });
 
+    return result;
+  };
+}
+
+function getMemoV2(letterId) {
+  return (dispatch) => {
+    dispatch({
+      type: GETMEMOV2_BEGIN,
+    });
+    const result = GeneralService.GetMemoV2(letterId).then((response) => {
+      if (response.IsSuccess) {
+        dispatch({
+          type: GETMEMOV2_SUCCESS,
+          payload: response,
+        });
+      } else {
+        dispatch({
+          type: GETMEMOV2_FAIL,
+          payload: response,
+        });
+      }
+      return response;
+    });
     return result;
   };
 }

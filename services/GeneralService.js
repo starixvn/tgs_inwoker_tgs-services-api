@@ -24,6 +24,7 @@ export const GeneralService = {
   GetDepositAccumulateRouletteHistory,
   GetBrandAllAgent,
   GetAffiliateStatus,
+  GetMemoV2,
 };
 
 function GetSiteToken() {
@@ -136,7 +137,15 @@ function GetBrandAllAgent(promotionId) {
   const result = ApiService.get(`brandallagent`);
   return result;
 }
-function GetAffiliateStatus(){
+function GetAffiliateStatus() {
   const result = ApiService.get(`brandallagent/check`);
   return result;
 }
+
+function GetMemoV2(letterId) {
+  const endpoint = letterId ? `station-letter/${letterId}` : "station-letter";
+  const result = ApiService.get(endpoint);
+  return result;
+}
+
+function ReplyMemo(token, letterId) {}
