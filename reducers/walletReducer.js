@@ -159,13 +159,14 @@ function mapDepositType(result) {
   for (var i = 0; i < data.length; i++) {
     var depositType = {};
     var banktypedisplayname = data[i].methodcode;
-    if (data[i].methodcode.toUpperCase() === "PULSA") {
-      banktypedisplayname = "Gcash";
+    if (config.features.AlterMethodCode) {
+      if (data[i].methodcode.toUpperCase() === "PULSA") {
+        banktypedisplayname = "Gcash";
+      }
+      if (data[i].methodcode.toUpperCase() === "EWALLET") {
+        banktypedisplayname = "Paymaya";
+      }
     }
-    if (data[i].methodcode.toUpperCase() === "EWALLET") {
-      banktypedisplayname = "Paymaya";
-    }
-
     if (data[i].transferlimit.from < depositMinLimit) {
       depositMinLimit = data[i].transferlimit.from;
     }
