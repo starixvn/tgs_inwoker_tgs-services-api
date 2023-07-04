@@ -70,6 +70,9 @@ import {
   READMEMO_BEGIN,
   READMEMO_SUCCESS,
   READMEMO_FAIL,
+  DELIVERYBOX_BEGIN,
+  DELIVERYBOX_SUCCESS,
+  DELIVERYBOX_FAIL,
 } from "../constant/actionType";
 // These are the constants to represent each of three recommended actions for a single API fetch or post.
 
@@ -99,6 +102,7 @@ export const generalAction = {
   replyMemo,
   composeMemo,
   readMemo,
+  deliveryBox,
 };
 function getSiteToken() {
   return (dispatch) => {
@@ -806,6 +810,31 @@ function readMemo(letterId) {
       }
       return response;
     });
+    return result;
+  };
+}
+
+function deliveryBox(action, id, page, rows) {
+  return (dispatch) => {
+    dispatch({
+      type: DELIVERYBOX_BEGIN,
+    });
+    const result = GeneralService.SentAction(action, id, page, rows).then(
+      (response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: DELIVERYBOX_SUCCESS,
+            payload: response,
+          });
+        } else {
+          dispatch({
+            type: DELIVERYBOX_FAIL,
+            payload: response,
+          });
+        }
+        return response;
+      }
+    );
     return result;
   };
 }

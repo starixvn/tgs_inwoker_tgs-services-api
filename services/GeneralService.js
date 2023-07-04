@@ -28,6 +28,7 @@ export const GeneralService = {
   ReplyMemo,
   ComposeMemo,
   ReadMemo,
+  SentAction,
 };
 
 function GetSiteToken() {
@@ -169,4 +170,16 @@ function ComposeMemo(subject, content) {
 function ReadMemo(letterId) {
   const result = ApiService.patch(`station-letter/${letterId}:read`);
   return result;
+}
+
+function SentAction(operation, id, page, row) {
+  if (operation === "get") {
+    const url = `delivery-box?page=${page}&rows=${row}`;
+    return ApiService.get(url);
+  }
+
+  if (operation === "read") {
+    const url = `delivery-box/${id}`;
+    return ApiService.get(url);
+  }
 }
