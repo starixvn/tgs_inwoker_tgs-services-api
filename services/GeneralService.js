@@ -24,6 +24,11 @@ export const GeneralService = {
   GetDepositAccumulateRouletteHistory,
   GetBrandAllAgent,
   GetAffiliateStatus,
+  GetMemoV2,
+  ReplyMemo,
+  ComposeMemo,
+  ReadMemo,
+  SentAction,
 };
 
 function GetSiteToken() {
@@ -132,12 +137,49 @@ function GetDepositAccumulateRouletteHistory(promotionId) {
   return result;
 }
 
-function GetAffiliateStatus() {
-  const result = ApiService.get(`brandallagent/check`);
-  return result;
-}
 function GetBrandAllAgent(promotionId) {
   const result = ApiService.get(`brandallagent`);
   return result;
 }
+function GetAffiliateStatus() {
+  const result = ApiService.get(`brandallagent/check`);
+  return result;
+}
 
+function GetMemoV2(letterId) {
+  const endpoint = letterId ? `station-letter/${letterId}` : "station-letter";
+  const result = ApiService.get(endpoint);
+  return result;
+}
+
+function ReplyMemo(letterId, content) {
+  const result = ApiService.put(`station-letter/${letterId}:reply`, {
+    content,
+  });
+  return result;
+}
+
+function ComposeMemo(subject, content) {
+  const result = ApiService.put(`station-letter`, {
+    subject,
+    content,
+  });
+  return result;
+}
+
+function ReadMemo(letterId) {
+  const result = ApiService.patch(`station-letter/${letterId}:read`);
+  return result;
+}
+
+function SentAction(operation, id, page, row) {
+  if (operation === "get") {
+    const url = `delivery-box?page=${page}&rows=${row}`;
+    return ApiService.get(url);
+  }
+
+  if (operation === "read") {
+    const url = `delivery-box/${id}`;
+    return ApiService.get(url);
+  }
+}
