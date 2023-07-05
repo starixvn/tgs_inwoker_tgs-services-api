@@ -58,6 +58,21 @@ import {
   GETBRANDALLAGENT_FAIL,
   GETAFFILIATESTATUS_SUCCESS,
   GETAFFILIATESTATUS_FAIL,
+  GETMEMOV2_BEGIN,
+  GETMEMOV2_SUCCESS,
+  GETMEMOV2_FAIL,
+  REPLYMEMO_BEGIN,
+  REPLYMEMO_SUCCESS,
+  REPLYMEMO_FAIL,
+  COMPOSEMEMO_BEGIN,
+  COMPOSEMEMO_SUCCESS,
+  COMPOSEMEMO_FAIL,
+  READMEMO_BEGIN,
+  READMEMO_SUCCESS,
+  READMEMO_FAIL,
+  DELIVERYBOX_BEGIN,
+  DELIVERYBOX_SUCCESS,
+  DELIVERYBOX_FAIL,
 } from "../constant/actionType";
 // These are the constants to represent each of three recommended actions for a single API fetch or post.
 
@@ -83,6 +98,11 @@ export const generalAction = {
   getDepositAccumulateRouletteHistory,
   getBrandAllAgent,
   getAffiliateStatus,
+  getMemoV2,
+  replyMemo,
+  composeMemo,
+  readMemo,
+  deliveryBox,
 };
 function getSiteToken() {
   return (dispatch) => {
@@ -694,6 +714,127 @@ function getAffiliateStatus() {
         return response;
       });
 
+    return result;
+  };
+}
+
+function getMemoV2(letterId) {
+  return (dispatch) => {
+    dispatch({
+      type: GETMEMOV2_BEGIN,
+    });
+    const result = GeneralService.GetMemoV2(letterId).then((response) => {
+      if (response.IsSuccess) {
+        dispatch({
+          type: GETMEMOV2_SUCCESS,
+          payload: response,
+        });
+      } else {
+        dispatch({
+          type: GETMEMOV2_FAIL,
+          payload: response,
+        });
+      }
+      return response;
+    });
+    return result;
+  };
+}
+
+function replyMemo(letterId, content) {
+  return (dispatch) => {
+    dispatch({
+      type: REPLYMEMO_BEGIN,
+    });
+    const result = GeneralService.ReplyMemo(letterId, content).then(
+      (response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: REPLYMEMO_SUCCESS,
+            payload: response,
+          });
+        } else {
+          dispatch({
+            type: REPLYMEMO_FAIL,
+            payload: response,
+          });
+        }
+        return response;
+      }
+    );
+    return result;
+  };
+}
+
+function composeMemo(subject, content) {
+  return (dispatch) => {
+    dispatch({
+      type: COMPOSEMEMO_BEGIN,
+    });
+    const result = GeneralService.ComposeMemo(subject, content).then(
+      (response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: COMPOSEMEMO_SUCCESS,
+            payload: response,
+          });
+        } else {
+          dispatch({
+            type: COMPOSEMEMO_FAIL,
+            payload: response,
+          });
+        }
+        return response;
+      }
+    );
+    return result;
+  };
+}
+
+function readMemo(letterId) {
+  return (dispatch) => {
+    dispatch({
+      type: READMEMO_BEGIN,
+    });
+    const result = GeneralService.ReadMemo(letterId).then((response) => {
+      if (response.IsSuccess) {
+        dispatch({
+          type: READMEMO_SUCCESS,
+          payload: response,
+        });
+      } else {
+        dispatch({
+          type: READMEMO_FAIL,
+          payload: response,
+        });
+      }
+      return response;
+    });
+    return result;
+  };
+}
+
+function deliveryBox(action, id, page, rows) {
+  return (dispatch) => {
+    dispatch({
+      type: DELIVERYBOX_BEGIN,
+    });
+    const result = GeneralService.SentAction(action, id, page, rows).then(
+      (response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: DELIVERYBOX_SUCCESS,
+            payload: response,
+          });
+        } else {
+          dispatch({
+            type: DELIVERYBOX_FAIL,
+            payload: response,
+          });
+        }
+        return response;
+      }
+    );
     return result;
   };
 }
