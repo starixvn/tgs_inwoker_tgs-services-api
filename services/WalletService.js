@@ -44,6 +44,8 @@ export const WalletService = {
   PerformManualBankDepositWithDetail,
   PerformPulsaDepositWithDetail,
   PerformEWalletDepositWithDetail,
+  PerformCoinsphDeposit,
+  PerformCoinsphDepositWithDetail,
 };
 
 function WithdrawalFromGame(gpcode, amount) {
@@ -528,5 +530,58 @@ function PerformEWalletDepositWithDetail(amount, paymentid, promotionid, banktyp
     params.detail = detail;
   }
   const result = ApiService.put("deposit/manual/ewallet", params);
+  return result;
+}
+
+function PerformCoinsphDeposit(amount, paymentid, promotionid, banktype, note, name, phone, address) {
+  console.log(address)
+  var params = { 
+    amount: amount,
+    paymentid: paymentid,
+    promotionid: promotionid === "" ? null : promotionid,
+    banktype: banktype || "coinsph",
+  }
+  if(note !== undefined && note !== null)
+  {
+    params.note = note;
+  }
+  if(name !== undefined && name !== null)
+  {
+    params.name = name;
+  }
+  if(phone !== undefined && phone !== null)
+  {
+    params.phone = phone;
+  }
+  params.address = address;
+  const result = ApiService.put("deposit/manual/coinsph", params);
+  return result;
+}
+
+function PerformCoinsphDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail, name, phone, address) {
+  var params = { 
+    amount: amount,
+    paymentid: paymentid,
+    promotionid: promotionid === "" ? null : promotionid,
+    banktype: banktype || "coinsph",
+  }
+  if(note !== undefined && note !== null)
+  {
+    params.note = note;
+  }
+  if(name !== undefined && name !== null)
+  {
+    params.name = name;
+  }
+  if(phone !== undefined && phone !== null)
+  {
+    params.phone = phone;
+  }
+  params.address = address;
+  if(detail !== undefined && detail !== null)
+  {
+    params.detail = detail;
+  }
+  const result = ApiService.put("deposit/manual/coinsph", params);
   return result;
 }
