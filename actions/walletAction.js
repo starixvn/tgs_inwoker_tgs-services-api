@@ -122,6 +122,8 @@ export const walletAction = {
   doBankDepositWithDetail,
   doPulsaDepositWithDetail,
   doEWalletDepositWithDetail,
+  doCoinsphDeposit,
+  doCoinsphDepositWithDetail,
 };
 function getWalletBalance() {
   return (dispatch) => {
@@ -1665,6 +1667,93 @@ function doEWalletDepositWithDetail(amount, paymentid, promotionid, banktype, no
       detail,
       emoneyname,
       phone
+    )
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: DODEPOSIT_SUCCESS,
+            payload: response,
+            loading: true,
+          });
+        } else {
+          dispatch({
+            type: DODEPOSIT_FAILED,
+            payload: response,
+            loading: false,
+          });
+        }
+        return response;
+      })
+      .catch((error) => {
+        dispatch({
+          type: DODEPOSIT_FAILED,
+          payload: error,
+          loading: false,
+        });
+      });
+    return result;
+  };
+}
+
+function doCoinsphDeposit(amount, paymentid, promotionid, banktype, note, name, phone, address) {
+  return (dispatch) => {
+    dispatch({
+      type: DODEPOSIT_BEGIN,
+      loading: true,
+    });
+    const result = WalletService.PerformCoinsphDeposit(
+      amount,
+      paymentid,
+      promotionid,
+      banktype,
+      note,
+      name,
+      phone,
+      address
+    )
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: DODEPOSIT_SUCCESS,
+            payload: response,
+            loading: true,
+          });
+        } else {
+          dispatch({
+            type: DODEPOSIT_FAILED,
+            payload: response,
+            loading: false,
+          });
+        }
+        return response;
+      })
+      .catch((error) => {
+        dispatch({
+          type: DODEPOSIT_FAILED,
+          payload: error,
+          loading: false,
+        });
+      });
+    return result;
+  };
+}
+
+function doCoinsphDepositWithDetail(amount, paymentid, promotionid, banktype, note, detail, name, phone, address) {
+  return (dispatch) => {
+    dispatch({
+      type: DODEPOSIT_BEGIN,
+      loading: true,
+    });
+    const result = WalletService.PerformCoinsphDepositWithDetail(
+      amount,
+      paymentid,
+      promotionid,
+      banktype,
+      note,
+      detail,
+      name,
+      phone,
+      address
     )
       .then((response) => {
         if (response.IsSuccess) {
