@@ -38,7 +38,10 @@ export const accountAction = {
   //TGS-883
   newRegister,
   GetRegisterStatus,
+  performUpdateMemberNameAndIC,
 };
+
+//DEPRECIATED: TGS-1269
 function updateMemberCardNo(name, number) {
   return (dispatch) => {
     dispatch({
@@ -312,6 +315,7 @@ function getPromoteBillList(limit, page) {
     return result;
   };
 }
+
 function GetRegisterStatus() {
   return async (dispatch) => {
     const result = await AccountService.GetRegisterStatus()
@@ -330,6 +334,7 @@ function GetRegisterStatus() {
     return result;
   };
 }
+
 function newRegister(type, input) {
   return async (dispatch) => {
     const result = await AccountService.NewRegister(type, input)
@@ -345,6 +350,45 @@ function newRegister(type, input) {
           loading: false,
         });
       });
+    return result;
+  };
+}
+
+function performUpdateMemberNameAndIC(name, number, file) {
+  return (dispatch) => {
+    dispatch({
+      type: UPDATECARDNO_BEGIN,
+      loading: true,
+    });
+    const result = AccountService.UpdateMemberNameAndIC(name, number, file)
+      .then((response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: UPDATECARDNO_SUCCESS,
+            payload: {
+              IsSuccess: true,
+              member_name: name,
+              check_pass_account: true,
+            },
+            loading: false,
+          });
+        } else {
+          dispatch({
+            type: UPDATECARDNO_FAILURE,
+            payload: response,
+            loading: false,
+          });
+        }
+        return response;
+      })
+      .catch((e) => {
+        dispatch({
+          type: UPDATECARDNO_FAILURE,
+          payload: e.status,
+          loading: false,
+        });
+      });
+
     return result;
   };
 }
