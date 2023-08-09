@@ -30,7 +30,8 @@ export const AccountService = {
   SetBirthDate,
   NewRegister,
   UpdateIM,
-  GetRegisterStatus
+  GetRegisterStatus,
+  UpdateMemberNameAndIC,
 };
 
 function CheckUserName(username) {
@@ -245,9 +246,17 @@ function UpdateMemberName(token, name) {
   return result;
 }
 
-function UploadIC(file) {
-  const result = ApiService.postFile(`player/identity/upload`, file, {});
+function UpdateMemberNameAndIC(realname, id, file) {
+  const result = ApiService.postFile(`player/identity/upload`, file, {
+    realname,
+    id,
+  });
 
+  return result;
+}
+
+function GetRegisterStatus() {
+  const result = ApiService.get("player/register");
   return result;
 }
 
@@ -259,7 +268,8 @@ function NewRegister(type, input) {
   return result;
 }
 
-function GetRegisterStatus() {
-  const result = ApiService.get("player/register");
+//DEPRECIATED: TGS-1269
+function UploadIC(file) {
+  const result = ApiService.postFile(`player/identity/upload`, file, {});
   return result;
 }
