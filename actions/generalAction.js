@@ -718,25 +718,27 @@ function getAffiliateStatus() {
   };
 }
 
-function getMemoV2(letterId) {
+function getMemoV2(letterId, page, row) {
   return (dispatch) => {
     dispatch({
       type: GETMEMOV2_BEGIN,
     });
-    const result = GeneralService.GetMemoV2(letterId).then((response) => {
-      if (response.IsSuccess) {
-        dispatch({
-          type: GETMEMOV2_SUCCESS,
-          payload: response,
-        });
-      } else {
-        dispatch({
-          type: GETMEMOV2_FAIL,
-          payload: response,
-        });
+    const result = GeneralService.GetMemoV2(letterId, page, row).then(
+      (response) => {
+        if (response.IsSuccess) {
+          dispatch({
+            type: GETMEMOV2_SUCCESS,
+            payload: response,
+          });
+        } else {
+          dispatch({
+            type: GETMEMOV2_FAIL,
+            payload: response,
+          });
+        }
+        return response;
       }
-      return response;
-    });
+    );
     return result;
   };
 }
