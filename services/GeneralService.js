@@ -149,7 +149,7 @@ function GetAffiliateStatus() {
 function GetMemoV2(letterId, page, row) {
   const endpoint = letterId
     ? `station-letter/${letterId}`
-    : `station-letter?page=${page}&rows=${row}`;
+    : `station-letter?page=${page || 1}&rows=${row || 10}`;
   const result = ApiService.get(endpoint);
   return result;
 }
