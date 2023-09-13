@@ -32,6 +32,7 @@ export const AccountService = {
   UpdateIM,
   GetRegisterStatus,
   UpdateMemberNameAndIC,
+  AddPlayerIdentity,
 };
 
 function CheckUserName(username) {
@@ -268,8 +269,15 @@ function GetRegisterStatus() {
   return result;
 }
 
-//DEPRECIATED: TGS-1269
 function UploadIC(file) {
   const result = ApiService.postFile(`player/identity/upload`, file, {});
+  return result;
+}
+
+function AddPlayerIdentity(realname, id) {
+  const result = ApiService.patch(`player/identity`, {
+    realname,
+    id,
+  });
   return result;
 }
