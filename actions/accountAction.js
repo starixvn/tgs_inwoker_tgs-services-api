@@ -39,7 +39,6 @@ export const accountAction = {
   newRegister,
   GetRegisterStatus,
   performUpdateMemberNameAndIC,
-  performAddPlayerIdentity,
 };
 
 //DEPRECIATED: TGS-1269
@@ -362,45 +361,6 @@ function performUpdateMemberNameAndIC(name, number, file) {
       loading: true,
     });
     const result = AccountService.UpdateMemberNameAndIC(name, number, file)
-      .then((response) => {
-        if (response.IsSuccess) {
-          dispatch({
-            type: UPDATECARDNO_SUCCESS,
-            payload: {
-              IsSuccess: true,
-              member_name: name,
-              check_pass_account: true,
-            },
-            loading: false,
-          });
-        } else {
-          dispatch({
-            type: UPDATECARDNO_FAILURE,
-            payload: response,
-            loading: false,
-          });
-        }
-        return response;
-      })
-      .catch((e) => {
-        dispatch({
-          type: UPDATECARDNO_FAILURE,
-          payload: e.status,
-          loading: false,
-        });
-      });
-
-    return result;
-  };
-}
-
-function performAddPlayerIdentity(name, number) {
-  return (dispatch) => {
-    dispatch({
-      type: UPDATECARDNO_BEGIN,
-      loading: true,
-    });
-    const result = AccountService.AddPlayerIdentity(name, number)
       .then((response) => {
         if (response.IsSuccess) {
           dispatch({
