@@ -32,7 +32,6 @@ export const AccountService = {
   UpdateIM,
   GetRegisterStatus,
   UpdateMemberNameAndIC,
-  AddPlayerIdentity,
 };
 
 function CheckUserName(username) {
@@ -248,10 +247,15 @@ function UpdateMemberName(token, name) {
 }
 
 function UpdateMemberNameAndIC(realname, id, file) {
-  const result = ApiService.postFile(`player/identity/upload`, file, {
-    realname,
-    id,
-  });
+  const result = file
+    ? ApiService.postFile(`player/identity/upload`, file, {
+        realname,
+        id,
+      })
+    : ApiService.patch(`player/identity`, {
+        realname,
+        id,
+      });
 
   return result;
 }
@@ -271,13 +275,5 @@ function NewRegister(type, input) {
 
 function UploadIC(file) {
   const result = ApiService.postFile(`player/identity/upload`, file, {});
-  return result;
-}
-
-function AddPlayerIdentity(realname, id) {
-  const result = ApiService.patch(`player/identity`, {
-    realname,
-    id,
-  });
   return result;
 }
