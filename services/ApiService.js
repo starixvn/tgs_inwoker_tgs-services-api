@@ -168,11 +168,16 @@ function postFormData(url, bodyFormData) {
   return request;
 }
 
-function postFile(apiEndpoint, file, payload) {
+function postFile(apiEndpoint, file, payload, forIdentity) {
   var data = new FormData();
   data.append("file", file);
-  for (var key in payload) {
-    data.append(key, payload[key]);
+
+  if (forIdentity) {
+    data.append("request", JSON.stringify(payload));
+  } else {
+    for (var key in payload) {
+      data.append(key, payload[key]);
+    }
   }
 
   const request = axios({
