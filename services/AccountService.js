@@ -248,10 +248,15 @@ function UpdateMemberName(token, name) {
 
 function UpdateMemberNameAndIC(realname, id, file) {
   const result = file
-    ? ApiService.postFile(`player/identity/upload`, file, {
-        realname,
-        id,
-      })
+    ? ApiService.postFile(
+        `player/identity/upload`,
+        file,
+        {
+          realname,
+          id,
+        },
+        true
+      )
     : ApiService.patch(`player/identity`, {
         realname,
         id,
