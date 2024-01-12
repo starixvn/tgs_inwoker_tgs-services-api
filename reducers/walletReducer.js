@@ -166,34 +166,36 @@ function mapDepositType(result) {
       depositMaxLimit = data[i].transferlimit.to;
     }
 
-    if (config.features.Deposit_SplitUsdt && data[i].channelname.indexOf("@") > 0) {
+    if (
+      config.features.Deposit_SplitUsdt &&
+      data[i].channelname.indexOf("@") > 0
+    ) {
       if (checkDuplicate.indexOf(data[i].channelname.split("@")[0]) < 0) {
         checkDuplicate.push(data[i].channelname.split("@")[0]);
 
-          depositType.paymentcode = data[i].channelname.split("@")[0];
-          depositType.paymentid = data[i].paymentid;
-          depositType.displayorder = data[i].displayorder;
-          depositType.alteredpaymentcode = data[i].paymentcode;
-          depositType.method = [
-            {
-              methodid: data[i].methodid,
-              methodcode: data[i].methodcode,
-              channel: [
-                {
-                  id: data[i].id,
-                  channelid: data[i].channelid,
-                  channelname: data[i].channelname.split("@")[1],
-                  transferlimit: data[i].transferlimit,
-                  extended: data[i].extended,
-                  displayorder: data[i].displayorder,
-                  fees: data[i].feepercentile,
-                },
-              ],
-            },
-          ];
+        depositType.paymentcode = data[i].channelname.split("@")[0];
+        depositType.paymentid = data[i].paymentid;
+        depositType.displayorder = data[i].displayorder;
+        depositType.alteredpaymentcode = data[i].paymentcode;
+        depositType.method = [
+          {
+            methodid: data[i].methodid,
+            methodcode: data[i].methodcode,
+            channel: [
+              {
+                id: data[i].id,
+                channelid: data[i].channelid,
+                channelname: data[i].channelname.split("@")[1],
+                transferlimit: data[i].transferlimit,
+                extended: data[i].extended,
+                displayorder: data[i].displayorder,
+                fees: data[i].feepercentile,
+              },
+            ],
+          },
+        ];
 
-          depositTypeList.push(depositType);
-        
+        depositTypeList.push(depositType);
       } else {
         //if data.channelname contain "@" then add into method else do nothing
         if (data[i].channelname.indexOf("@") > 0) {
@@ -384,41 +386,56 @@ function mapBankList(data) {
   return { bankList };
 }
 function mapWithdrawalList(data) {
-  var withdrawalList = [];
-  var checkDuplicate = [];
-  var withdrawalMaxLimit = 0;
-  var withdrawalMinLimit = 999999999;
-  for (var i = 0; i < data.length; i++) {
-    if (checkDuplicate.indexOf(data[i].banktype) < 0) {
-      checkDuplicate.push(data[i].banktype);
-      withdrawalList.push({
-        banktype: data[i].banktype,
-        channel: [
-          {
-            id: data[i].id,
-            channelid: data[i].channelid,
-            channelname: data[i].channelname,
-            channelcode: data[i].channelcode,
-            transferlimit: data[i].transferlimit,
-            fees: data[i].feepercentile,
-          },
-        ],
-      });
-    } else {
-      withdrawalList
-        .filter((a) => a.banktype === data[i].banktype)[0]
-        .channel.push({
-          id: data[i].id,
-          channelid: data[i].channelid,
-          channelname: data[i].channelname,
-          channelcode: data[i].channelcode,
-          transferlimit: data[i].transferlimit,
-          fees: data[i].feepercentile,
-        });
-    }
-  }
+  const withdrawalList = new Map();
+  let withdrawalMaxLimit = 0;
+  let withdrawalMinLimit = Infinity;
 
-  return { withdrawalList, withdrawalMinLimit, withdrawalMaxLimit };
+  data.forEach((item) => {
+    const {
+      banktype,
+      id,
+      channelid,
+      channelname,
+      channelcode,
+      transferlimit,
+      fees,
+      displayorder,
+    } = item;
+
+    const channel = {
+      id,
+      channelid,
+      channelname: channelname,
+      channelcode,
+      transferlimit,
+      fees,
+      displayorder,
+    };
+
+    if (!withdrawalList.has(banktype)) {
+      withdrawalList.set(banktype, { banktype, channel: [channel] });
+    } else {
+      const { channel: channels } = withdrawalList.get(banktype);
+      const existingChannel = channels.find((c) => c.channelid === channelid);
+      if (!existingChannel) {
+        const index = channels.findIndex((c) => c.displayorder > displayorder);
+        if (index === -1) {
+          channels.push(channel);
+        } else {
+          channels.splice(index, 0, channel);
+        }
+      }
+    }
+
+    withdrawalMaxLimit = Math.max(withdrawalMaxLimit, transferlimit);
+    withdrawalMinLimit = Math.min(withdrawalMinLimit, transferlimit);
+  });
+
+  return {
+    withdrawalList: Array.from(withdrawalList.values()),
+    withdrawalMinLimit,
+    withdrawalMaxLimit,
+  };
 }
 const walletReducer = (state = initState, action) => {
   switch (action.type) {
