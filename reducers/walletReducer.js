@@ -435,7 +435,7 @@ function mapWithdrawalList(data) {
     const channel = {
       id,
       channelid,
-      channelname: `${channelname} - ${channelid}`,
+      channelname: channelname,
       channelcode,
       transferlimit,
       fees,
