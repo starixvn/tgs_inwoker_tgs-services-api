@@ -415,56 +415,43 @@ function mapBankList(data) {
   return { bankList };
 }
 function mapWithdrawalList(data) {
-  const withdrawalList = new Map();
-  let withdrawalMaxLimit = 0;
-  let withdrawalMinLimit = Infinity;
-
-  data.forEach((item) => {
-    const {
-      banktype,
-      id,
-      channelid,
-      channelname,
-      channelcode,
-      transferlimit,
-      fees,
-      displayorder,
-    } = item;
-
+  const withdrawalList = data.reduce((result, item) => {
+    const existingBank = result.find((bank) => bank.banktype === item.banktype);
     const channel = {
-      id,
-      channelid,
-      channelname: channelname,
-      channelcode,
-      transferlimit,
-      fees,
-      displayorder,
+      id: item.id,
+      channelid: item.channelid,
+      channelname: item.channelname,
+      channelcode: item.channelcode,
+      transferlimit: item.transferlimit,
+      fees: item.feepercentile,
+      displayorder: item.displayorder,
     };
 
-    if (!withdrawalList.has(banktype)) {
-      withdrawalList.set(banktype, { banktype, channel: [channel] });
+    if (existingBank) {
+      existingBank.channel.push(channel);
+      existingBank.channel.sort((a, b) =>
+        a.channelid.localeCompare(b.channelid)
+      );
+      existingBank.channel.sort((a, b) => a.displayorder - b.displayorder);
+
+      existingBank.channel = existingBank.channel.filter(
+        (item, index, self) =>
+          index === self.findIndex((t) => t.channelid === item.channelid)
+      );
     } else {
-      const { channel: channels } = withdrawalList.get(banktype);
-      const existingChannel = channels.find((c) => c.channelid === channelid);
-      if (!existingChannel) {
-        const index = channels.findIndex((c) => c.displayorder > displayorder);
-        if (index === -1) {
-          channels.push(channel);
-        } else {
-          channels.splice(index, 0, channel);
-        }
-      }
+      result.push({
+        banktype: item.banktype,
+        channel: [channel],
+      });
     }
+    return result;
+  }, []);
 
-    withdrawalMaxLimit = Math.max(withdrawalMaxLimit, transferlimit);
-    withdrawalMinLimit = Math.min(withdrawalMinLimit, transferlimit);
-  });
+  const withdrawalLimits = data.map((item) => item.transferlimit);
+  const withdrawalMinLimit = Math.min(...withdrawalLimits);
+  const withdrawalMaxLimit = Math.max(...withdrawalLimits);
 
-  return {
-    withdrawalList: Array.from(withdrawalList.values()),
-    withdrawalMinLimit,
-    withdrawalMaxLimit,
-  };
+  return { withdrawalList, withdrawalMinLimit, withdrawalMaxLimit };
 }
 const walletReducer = (state = initState, action) => {
   switch (action.type) {
