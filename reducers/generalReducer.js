@@ -230,6 +230,7 @@ export function generalReducer(state = initialState, action) {
         ...state,
         // brand: { hasInvitationCode: true },
         loading: false,
+        isMaintenance: true,
       };
     case GETLIVECHATURL_SUCCESS:
       return {
