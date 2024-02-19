@@ -270,7 +270,9 @@ function GetUmPayExchangeRate(brandPaymentId) {
 }
 
 function GetExchangeRate(provider, id) {
-  const result = ApiService.get(`deposit/${provider}/exchangerate/${id}`);
+  const result = ApiService.get(
+    `deposit/crypto/${provider}/exchangerate/${id}`
+  );
   return result;
 }
 
