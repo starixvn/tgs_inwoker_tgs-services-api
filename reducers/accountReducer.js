@@ -180,6 +180,7 @@ function mapToAccountState(state, data) {
     identityformstatus: data.identityformstatus,
     identityformid: data.identityformid ? data.identityformid : "",
     bankInfoAuthentication: data.bankinfoauthentication,
+    ...data,
   };
 }
 export function accountReducer(state = initialState, action) {
