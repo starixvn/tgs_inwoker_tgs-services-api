@@ -39,6 +39,7 @@ var detectLanguage =
 
 //custom handler
 const checkIfObject = (obj) => {
+  console.log(obj);
   return typeof obj === "object" ? obj?.match.params?.params : obj;
 };
 
