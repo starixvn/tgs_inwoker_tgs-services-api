@@ -36,9 +36,15 @@ function GetHomePageGameList() {
 const languageFromLocalStorage = localStorage.getItem("i18nextLng");
 var detectLanguage =
   languageFromLocalStorage || i18n.language || config.defaultLanguage;
+
+//custom handler
+const checkIfObject = (obj) => {
+  return typeof obj === "object" ? obj?.match.params?.params : obj;
+};
+
 function JoinLobbyGame(gtype, gpcode) {
   const result = ApiService.post(`Game/lobby/geturl`, {
-    gpcode: gpcode,
+    gpcode: checkIfObject(gpcode),
     gtype: parseInt(gtype),
     language: detectLanguage,
     extends: {
