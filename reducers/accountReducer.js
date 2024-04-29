@@ -40,6 +40,10 @@ const initialState = {
   registercompleted: "",
   info: {
     avatar: "",
+    accumdeposit: 0,
+    accumturnover:0,
+    levelupaccumulatedeposit:0,
+    levelupaccumulatebetamount: 0,
     balance: 0,
     member_card_no: "",
     member_id: 0,
@@ -154,6 +158,10 @@ function mapToAccountState(state, data) {
   return {
     ...state.info,
     avatar: data.avatar_url_text,
+    accumdeposit: data.accumdeposit,
+    accumturnover:data.accumturnover,
+    levelupaccumulatedeposit:data.levelupaccumulatedeposit,
+    levelupaccumulatebetamount: data.levelupaccumulatebetamount,
     balance: 0,
     member_last_login: "",
     member_id: 0,
