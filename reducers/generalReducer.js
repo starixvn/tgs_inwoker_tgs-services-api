@@ -47,6 +47,7 @@ import {
   GETAFFILIATESTATUS_SUCCESS,
   GETAFFILIATESTATUS_FAIL,
   GETBRANDALLAGENT_SUCCESS,
+  GETSOCIAL_SUCCESS,
 } from "../constant/actionType";
 const initialState = {
   isIPRestrict: false,
@@ -72,6 +73,7 @@ const initialState = {
   rouletteHistory: [],
   haveAffiliate: false,
   rebates: [],
+  socialList: [],
 };
 function mapPromotionList(data) {
   var items = [];
@@ -323,7 +325,15 @@ export function generalReducer(state = initialState, action) {
         rebates: action.payload.data,
         loading: false,
       };
-
+    
+    case GETSOCIAL_SUCCESS:
+      return {
+        ...state,
+        socialList: action.payload.data,
+        loading: false,
+      };
+    
+    
     default:
       return state;
   }

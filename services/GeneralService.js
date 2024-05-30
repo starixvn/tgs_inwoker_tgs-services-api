@@ -29,6 +29,7 @@ export const GeneralService = {
   ComposeMemo,
   ReadMemo,
   SentAction,
+  GetBrandSocial,
 };
 
 function GetSiteToken() {
@@ -184,4 +185,9 @@ function SentAction(operation, id, page, row) {
     const url = `delivery-box/${id}`;
     return ApiService.get(url);
   }
+}
+
+function GetBrandSocial() {
+  const result = ApiService.get("brand/social");
+  return result;
 }

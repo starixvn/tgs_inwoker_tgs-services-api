@@ -73,6 +73,9 @@ import {
   DELIVERYBOX_BEGIN,
   DELIVERYBOX_SUCCESS,
   DELIVERYBOX_FAIL,
+  GETSOCIAL_BEGIN,
+  GETSOCIAL_SUCCESS,
+  GETSOCIAL_FAILED
 } from "../constant/actionType";
 // These are the constants to represent each of three recommended actions for a single API fetch or post.
 
@@ -103,6 +106,7 @@ export const generalAction = {
   composeMemo,
   readMemo,
   deliveryBox,
+  getBrandSocial,
 };
 function getSiteToken() {
   return (dispatch) => {
@@ -837,6 +841,27 @@ function deliveryBox(action, id, page, rows) {
         return response;
       }
     );
+    return result;
+  };
+}
+
+function getBrandSocial() {
+  return (dispatch) => {
+    const result = GeneralService.GetBrandSocial().then((response) => {
+      if (response.IsSuccess) {
+        dispatch({
+          type: GETSOCIAL_SUCCESS,
+          payload: response,
+        });
+      } else {
+        dispatch({
+          type: GETSOCIAL_FAILED,
+          payload: response,
+        });
+      }
+      return response;
+    });
+    
     return result;
   };
 }
