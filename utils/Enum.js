@@ -145,3 +145,13 @@ export const GroupCodeEnum = {
   BCA:'BCA',
   QRIS:'QRIS',
 }
+
+// 自定義的 MovnCode
+export const MovnCodeEnum = {
+  NET:'NET', // 網關
+  QR : 'QR', // 掃碼
+  DR : 'DR', // 直聯
+  MOMO : 'MOMO', // MOMO
+  VP : 'VP', // ViettelPay
+  USDT :'USDT', // USDT
+}
