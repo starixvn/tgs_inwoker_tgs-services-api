@@ -141,6 +141,8 @@ function mapDepositChannelList(result){
 }
 function mapDepositList(result) {
   var data = result.data;
+  console.log("===>mapDepositList()");
+  console.log(data);
 
   var depositList = [];
   var checkDuplicate = [];
@@ -155,6 +157,7 @@ function mapDepositList(result) {
             channelid: data[i].channelid,
             channelname: data[i].channelname,
             channelcode: data[i].channelcode,
+            displayorder: data[i].displayorder,
             transferlimit: data[i].transferlimit,
             fees: data[i].feepercentile,
             paymentcode: data[i].paymentcode,
@@ -172,6 +175,9 @@ function mapDepositList(result) {
           channelid: data[i].channelid,
           channelname: data[i].channelname,
           channelcode: data[i].channelcode,
+          displayorder: data[i].displayorder,
+          paymentcode: data[i].paymentcode,
+          paymentid: data[i].paymentid,
           transferlimit: data[i].transferlimit,
           fees: data[i].feepercentile,
           extended: data[i].extended,
