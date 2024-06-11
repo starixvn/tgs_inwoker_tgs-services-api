@@ -141,9 +141,6 @@ function mapDepositChannelList(result){
 }
 function mapDepositList(result) {
   var data = result.data;
-  console.log("===>mapDepositList()");
-  console.log(data);
-
   var depositList = [];
   var checkDuplicate = [];
   for (var i = 0; i < data.length; i++) {
