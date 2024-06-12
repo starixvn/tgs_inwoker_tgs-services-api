@@ -91,6 +91,7 @@ const initState = {
   message: "",
   depositList: [],
   depositTypeList: [],
+  depositChannelList: [],
   depositLoading: false,
   depositResult: null,
   cancelDepositResult: null,
@@ -112,9 +113,34 @@ const initState = {
   depositMinLimit: 0,
   depositMaxLimit: 0,
 };
+function mapDepositData(result) {
+  return {depositData: result.data}
+}
+export function groupBy(array, fn) {
+  return array.reduce((result, item) => {
+    const key = fn(item);
+    if (!result[key]) {
+      result[key] = [];
+    }
+    result[key].push(item);
+    return result;
+  }, {});
+}
+
+function mapDepositChannelList(result){
+  const data = result.data ?? [];
+  const groupByData = groupBy(data, row => row.channelcode);
+  const depositChannelList = Object.keys(groupByData).map((key)=> {
+    return {
+      code: key,
+      channels: groupByData[key],
+    }
+  });
+  return {depositChannelList}
+  
+}
 function mapDepositList(result) {
   var data = result.data;
-
   var depositList = [];
   var checkDuplicate = [];
   for (var i = 0; i < data.length; i++) {
@@ -128,8 +154,13 @@ function mapDepositList(result) {
             channelid: data[i].channelid,
             channelname: data[i].channelname,
             channelcode: data[i].channelcode,
+            displayorder: data[i].displayorder,
             transferlimit: data[i].transferlimit,
             fees: data[i].feepercentile,
+            paymentcode: data[i].paymentcode,
+            paymentid: data[i].paymentid,
+            extended: data[i].extended,
+            banktype: data[i].banktype,
           },
         ],
       });
@@ -141,8 +172,13 @@ function mapDepositList(result) {
           channelid: data[i].channelid,
           channelname: data[i].channelname,
           channelcode: data[i].channelcode,
+          displayorder: data[i].displayorder,
+          paymentcode: data[i].paymentcode,
+          paymentid: data[i].paymentid,
           transferlimit: data[i].transferlimit,
           fees: data[i].feepercentile,
+          extended: data[i].extended,
+          banktype: data[i].banktype,
         });
     }
   }
@@ -613,6 +649,8 @@ const walletReducer = (state = initState, action) => {
         ...state,
         ...mapDepositType(action.payload),
         ...mapDepositList(action.payload),
+        ...mapDepositChannelList(action.payload),
+        ...mapDepositData(action.payload),
         loading: false,
       };
     case GETDEPOSITCHANNEL_FAIL:
