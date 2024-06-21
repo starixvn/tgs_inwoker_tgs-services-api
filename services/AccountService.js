@@ -32,6 +32,7 @@ export const AccountService = {
   UpdateIM,
   GetRegisterStatus,
   UpdateMemberNameAndIC,
+  GetBucketTypeAmount,
 };
 
 function CheckUserName(username) {
@@ -280,5 +281,9 @@ function NewRegister(type, input) {
 
 function UploadIC(file) {
   const result = ApiService.postFile(`player/identity/upload`, file, {});
+  return result;
+}
+function GetBucketTypeAmount() {
+  const result = ApiService.get(`player/bucket/type/amount`);
   return result;
 }
