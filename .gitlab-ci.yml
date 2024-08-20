@@ -1,6 +1,6 @@
-include:
-  - project: 'inwoker/tgs/tgs-gitlab-ci-jobs'
-    ref: main
-    file: '/templates/.trigger.yaml'
-build:
-  extends: .build
+# include:
+#   - project: 'inwoker/tgs/tgs-gitlab-ci-jobs'
+#     ref: main
+#     file: '/templates/.trigger.yaml'
+# build:
+#   extends: .build
