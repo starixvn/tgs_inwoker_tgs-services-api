@@ -13,7 +13,9 @@ export const ApiService = {
   postFile,
   postArray,
 };
-const custmHeader = {};
+const custmHeader = {
+  "b-id": config.brandId
+};
 
 function getImage(apiEndpoint) {
   return axios
@@ -36,6 +38,7 @@ function get(apiEndpoint) {
     .get(config.baseUrl + apiEndpoint, {
       headers: {
         "Content-Type": "application/json",
+        ...custmHeader,
       },
     })
     .then((response) => {
