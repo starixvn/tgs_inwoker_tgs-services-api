@@ -14,12 +14,20 @@ export const ApiService = {
   postArray,
 };
 const custmHeader = {
-  "b-id": config.brandId
+  "b-id": config.brandId,
+};
+
+const getUrl = (apiEndpoint) => {
+  const brandPaths = ["brandcommunication", "brandlivechat", "brand/maintenance"];
+  if (brandPaths.some((path) => apiEndpoint.startsWith(path))) {
+    return config.baseUrl + config.brandPath + apiEndpoint;
+  }
+  return config.baseUrl + config.operatorPath + apiEndpoint;
 };
 
 function getImage(apiEndpoint) {
   return axios
-    .get(config.baseUrl + apiEndpoint, {
+    .get(getUrl(apiEndpoint), {
       headers: {
         "Content-Type": "image/png",
         ...custmHeader,
@@ -35,7 +43,7 @@ function getImage(apiEndpoint) {
 
 function get(apiEndpoint) {
   return axios
-    .get(config.baseUrl + apiEndpoint, {
+    .get(getUrl(apiEndpoint), {
       headers: {
         "Content-Type": "application/json",
         ...custmHeader,
@@ -56,10 +64,10 @@ function post(apiEndpoint, payload, formData = false) {
     for (let v in payload) {
       bodyFormData.append(v, payload[v]);
     }
-    request = postFormData(config.baseUrl + apiEndpoint, bodyFormData);
+    request = postFormData(getUrl(apiEndpoint), bodyFormData);
   } else {
     request = axios.post(
-      config.baseUrl + apiEndpoint,
+      getUrl(apiEndpoint),
 
       JSON.stringify(payload),
       {
@@ -67,7 +75,7 @@ function post(apiEndpoint, payload, formData = false) {
           "Content-Type": "application/json;charset=UTF-8",
           ...custmHeader,
         },
-      }
+      },
     );
   }
   return request;
@@ -76,7 +84,7 @@ function postArray(apiEndpoint, payload) {
   var bodyFormData = new FormData();
   let request = null;
   request = axios.post(
-    config.baseUrl + apiEndpoint,
+    getUrl(apiEndpoint),
 
     JSON.stringify(payload),
     {
@@ -84,13 +92,13 @@ function postArray(apiEndpoint, payload) {
         "Content-Type": "application/json;charset=UTF-8",
         ...custmHeader,
       },
-    }
+    },
   );
   return request;
 }
 function put(apiEndpoint, payload) {
   let request = null;
-  request = axios.put(config.baseUrl + apiEndpoint, JSON.stringify(payload), {
+  request = axios.put(getUrl(apiEndpoint), JSON.stringify(payload), {
     headers: {
       "Content-Type": "application/json;charset=UTF-8",
       ...custmHeader,
@@ -109,7 +117,7 @@ function put(apiEndpoint, payload) {
 
 function patch(apiEndpoint, payload) {
   let request = null;
-  request = axios.patch(config.baseUrl + apiEndpoint, JSON.stringify(payload), {
+  request = axios.patch(getUrl(apiEndpoint), JSON.stringify(payload), {
     headers: {
       "Content-Type": "application/json;charset=UTF-8",
       ...custmHeader,
@@ -128,14 +136,14 @@ function patch(apiEndpoint, payload) {
 
 function del(apiEndpoint, payload, withoutQuerystring = false) {
   let request = null;
-  let url = config.baseUrl + apiEndpoint;
+  let url = getUrl(apiEndpoint);
   let i = 0;
   for (var key in payload) {
     if (i == 0) {
       url += "?";
     }
     if (withoutQuerystring === true) {
-      url = config.baseUrl + apiEndpoint + "/" + payload[key];
+      url = getUrl(apiEndpoint) + "/" + payload[key];
     } else {
       url += key + "=" + payload[key];
     }
@@ -185,7 +193,7 @@ function postFile(apiEndpoint, file, payload, forIdentity) {
 
   const request = axios({
     method: "post",
-    url: config.baseUrl + apiEndpoint,
+    url: getUrl(apiEndpoint),
     data: data,
 
     headers: {
@@ -224,7 +232,7 @@ function postExternal(url, payload, formData = false) {
           "Content-Type": "application/x-www-form-urlencoded",
           ...custmHeader,
         },
-      }
+      },
     );
   }
   return request;
