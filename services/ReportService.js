@@ -12,9 +12,9 @@ export const ReportService = {
   GetAgentReport,
 };
 
-function GetTransactionDetails(from, to, page, rows, desc, sort, all) {
+function GetTransactionDetails(from, to, page, rows, desc, sort, all, culture) {
   const result = ApiService.get(
-    `playerreport/rounds?From=${from}&To=${to}&page=${page}&rows=${rows}&desc=${desc}&sort=${sort}&all=${all}`
+    `playerreport/rounds?From=${from}&To=${to}&page=${page}&rows=${rows}&desc=${desc}&sort=${sort}&all=${all}&culture=${culture}`
   );
   return result;
 }
