@@ -12,6 +12,7 @@ export const ApiService = {
   getImage,
   postFile,
   postArray,
+  getAssetURL
 };
 const custmHeader = {
   "b-id": config.brandId,
@@ -39,6 +40,10 @@ function getImage(apiEndpoint) {
     .catch((err) => {
       console.log(err);
     });
+}
+
+function getAssetURL() {
+  return config.baseUrl + config.assetsPath;
 }
 
 function get(apiEndpoint) {

@@ -1,5 +1,7 @@
-function imagePathGenerator(path) {
-  return `${process.env.PUBLIC_URL}/assets/images/${path}`;
+import { ApiService } from "./../services/ApiService";
+ 
+function imagePathGenerator() {
+  return ApiService.getAssetURL();
 }
 
 export function copy(item) {
