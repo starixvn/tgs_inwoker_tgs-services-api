@@ -12,7 +12,7 @@ export const ApiService = {
   getImage,
   postFile,
   postArray,
-  getAssetURL
+  getAssetURL,
 };
 const custmHeader = {
   "b-id": config.brandId,

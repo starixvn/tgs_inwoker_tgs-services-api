@@ -3,6 +3,7 @@ import config from "../../config/config";
 import i18n from "../../utils/i18n";
 export const GameService = {
   GetGameList,
+  GetCategory,
   JoinGame,
   JoinLobbyGame,
   GetHomePageGameList,
@@ -19,6 +20,19 @@ function GetGameList(gpCode, gametypes) {
   const result = ApiService.get(
     `Game/list?gpcode=${gpCode}&platformtype=${config.isPC}&language=${i18n.language}&currency=${config.currency}&gametypes=${gametypes}`,
   );
+  return result;
+}
+
+function GetCategory(gametypes, tag, pageIndex, pageSize) {
+  const result = ApiService.post("Category", {
+    Platformtype: config.isPC,
+    Language: i18n.language,
+    Currency: config.currency,
+    GameTypes: gametypes,
+    Tag: tag,
+    PageIndex: pageIndex,
+    PageSize: pageSize,
+  });
   return result;
 }
 
