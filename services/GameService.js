@@ -17,7 +17,7 @@ export const GameService = {
 
 function GetGameList(gpCode, gametypes) {
   const result = ApiService.get(
-    `Game/list?gpcode=${gpCode}&platformtype=${config.isPC}&language=${i18n.language}&currency=${config.currency}&gametypes=${gametypes}`
+    `Game/list?gpcode=${gpCode}&platformtype=${config.isPC}&language=${i18n.language}&currency=${config.currency}&gametypes=${gametypes}`,
   );
   return result;
 }
@@ -29,13 +29,12 @@ function GetCockfight(gametypes) {
 
 function GetHomePageGameList() {
   const result = ApiService.get(
-    `GameProvider/list?platformtype=${config.isPC}&language=${i18n.language}&currency=${config.currency}`
+    `GameProvider/list?platformtype=${config.isPC}&language=${i18n.language}&currency=${config.currency}`,
   );
   return result;
 }
 const languageFromLocalStorage = localStorage.getItem("i18nextLng");
-var detectLanguage =
-  languageFromLocalStorage || i18n.language || config.defaultLanguage;
+var detectLanguage = languageFromLocalStorage || i18n.language || config.defaultLanguage;
 
 //custom handler
 const checkIfObject = (obj) => {
@@ -50,6 +49,7 @@ function JoinLobbyGame(gtype, gpcode) {
     language: detectLanguage,
     extends: {
       lobbyurl: window.location.protocol + "//" + window.location.hostname,
+      browserUserAgent: window.navigator?.userAgent,
     },
   });
   return result;
@@ -62,6 +62,7 @@ function JoinGame(gid, gpcode) {
     language: detectLanguage,
     extends: {
       lobbyurl: window.location.protocol + "//" + window.location.hostname,
+      browserUserAgent: window.navigator?.userAgent,
     },
   });
   return result;
@@ -69,7 +70,7 @@ function JoinGame(gid, gpcode) {
 
 function GetGamePlatformByType() {
   const result = ApiService.get(
-    `GameProvider/list?platformtype=${config.isPC}&language=${i18n.language}&currency=${config.currency}`
+    `GameProvider/list?platformtype=${config.isPC}&language=${i18n.language}&currency=${config.currency}`,
   );
   return result;
 }
