@@ -66,6 +66,7 @@ const initialState = {
   brand: {
     //TGS-197, since hide when true, default hide, show when return false
     hasInvitationCode: true,
+    playerIdentityAuthenticationEnabled: false
   },
   isRouletteAvailable: null,
   itemIndex: null,
@@ -206,6 +207,8 @@ export function generalReducer(state = initialState, action) {
       var mobileUrl = action.payload.data.mobileLogoUrl;
       var loadingUrl = action.payload.data.loadingUrl;
       var hasInvitationCode = action.payload.data.hasInvitationCode;
+      console.log(action.payload.data)
+      const playerIdentityAuthenticationEnabled = action.payload.data.playerIdentityAuthenticationEnabled
 
       if (desktopUrl && desktopUrl.indexOf("https://") < 0)
         desktopUrl = "https://" + desktopUrl;
@@ -221,6 +224,7 @@ export function generalReducer(state = initialState, action) {
           mobileLogoUrl: mobileUrl,
           loadingUrl: loadingUrl,
           hasInvitationCode: hasInvitationCode,
+          playerIdentityAuthenticationEnabled
         },
         loading: false,
       };
