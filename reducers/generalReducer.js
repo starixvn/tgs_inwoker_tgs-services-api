@@ -207,7 +207,6 @@ export function generalReducer(state = initialState, action) {
       var mobileUrl = action.payload.data.mobileLogoUrl;
       var loadingUrl = action.payload.data.loadingUrl;
       var hasInvitationCode = action.payload.data.hasInvitationCode;
-      console.log(action.payload.data)
       const playerIdentityAuthenticationEnabled = action.payload.data.playerIdentityAuthenticationEnabled
 
       if (desktopUrl && desktopUrl.indexOf("https://") < 0)
