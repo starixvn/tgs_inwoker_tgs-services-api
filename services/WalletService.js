@@ -571,7 +571,6 @@ function PerformCoinsphDeposit(
   phone,
   address
 ) {
-  console.log(address);
   var params = {
     amount: amount,
     paymentid: paymentid,

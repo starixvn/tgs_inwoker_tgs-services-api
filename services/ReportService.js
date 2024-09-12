@@ -9,11 +9,12 @@ export const ReportService = {
   GetTransferReport,
   GetRoundsTotal,
   GetBalanceChanges,
+  GetAgentReport,
 };
 
-function GetTransactionDetails(from, to, page, rows, desc, sort, all) {
+function GetTransactionDetails(from, to, page, rows, desc, sort, all, culture) {
   const result = ApiService.get(
-    `playerreport/rounds?From=${from}&To=${to}&page=${page}&rows=${rows}&desc=${desc}&sort=${sort}&all=${all}`
+    `playerreport/rounds?From=${from}&To=${to}&page=${page}&rows=${rows}&desc=${desc}&sort=${sort}&all=${all}&culture=${culture}`
   );
   return result;
 }
@@ -78,6 +79,13 @@ function GetBalanceChanges(from, to, page, rows)
 {
   const result = ApiService.get(
     `transaction?from=${from}&to=${to}&page=${page}&rows=${rows}`
+  );
+  return result;
+}
+
+function GetAgentReport(from, to, page, rows) {
+  const result = ApiService.get(
+    `playerAllAgentReport?from=${from}&to=${to}&page=${page}&rows=${rows}`,
   );
   return result;
 }
