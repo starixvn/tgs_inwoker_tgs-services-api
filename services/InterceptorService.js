@@ -12,7 +12,7 @@ const Interceptor = {
     axios.interceptors.request.use(
       function (config) {
         const client = localStorage.getItem("client-token");
-        if (client != null && client != "") {
+        if (client != null && client != "" && !config.headers["Authorization"]) {
           config.headers["Authorization"] = "bearer " + client;
         }
 

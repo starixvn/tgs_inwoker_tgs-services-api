@@ -58,7 +58,7 @@ export function gameReducer(state = initialState, action) {
           ) {
             //the reason having two variable is because apparently name and code is different
             //if use code on both abbreviation and name, the either one of those will fucked up.
-            if (gameList[i].code === "BTI" && config.currency === "PHP") {
+            if (gameList[i].code === "BTI" && import.meta.env.VITE_CURRENCY === "PHP") {
               newcode = "PHSB";
               newname = "PHSB";
             }
