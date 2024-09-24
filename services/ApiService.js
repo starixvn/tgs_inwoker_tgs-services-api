@@ -13,6 +13,7 @@ export const ApiService = {
   postFile,
   postArray,
   getAssetURL,
+  getSabaAPI
 };
 const custmHeader = {
   "b-id": config.brandId,
@@ -44,6 +45,22 @@ function getImage(apiEndpoint) {
 
 function getAssetURL() {
   return config.baseUrl + config.assetsPath;
+}
+
+function getSabaAPI(apiEndpoint) {
+  return axios
+    .get(config.sabaAPIPath + apiEndpoint, {
+      headers: {
+        "Content-Type": "application/json",
+        ...custmHeader,
+      },
+    })
+    .then((response) => {
+      return response;
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 }
 
 function get(apiEndpoint) {
