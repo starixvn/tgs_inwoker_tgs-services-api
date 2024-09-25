@@ -1,5 +1,4 @@
 import axios from "axios";
-import config from "../../config/config";
 
 export const ApiService = {
   get,
@@ -16,15 +15,15 @@ export const ApiService = {
   getSabaAPI
 };
 const custmHeader = {
-  "b-id": config.brandId,
+  "b-id": import.meta.env.VITE_BRAND_ID,
 };
 
 const getUrl = (apiEndpoint) => {
   const brandPaths = ["brandcommunication", "brandlivechat", "brand/maintenance"];
   if (brandPaths.some((path) => apiEndpoint.startsWith(path))) {
-    return config.baseUrl + config.brandPath + apiEndpoint;
+    return import.meta.env.VITE_BASE_URL + import.meta.env.VITE_BRAND_PATH + apiEndpoint;
   }
-  return config.baseUrl + config.operatorPath + apiEndpoint;
+  return import.meta.env.VITE_BASE_URL + import.meta.env.VITE_OPERATOR_PATH + apiEndpoint;
 };
 
 function getImage(apiEndpoint) {
@@ -44,7 +43,23 @@ function getImage(apiEndpoint) {
 }
 
 function getAssetURL() {
-  return config.baseUrl + config.assetsPath;
+  return import.meta.env.VITE_ASSETS_PATH;
+}
+
+function getSabaAPI(apiEndpoint) {
+  return axios
+    .get(import.meta.env.SABA_API_URL + apiEndpoint, {
+      headers: {
+        "Content-Type": "application/json",
+        ...custmHeader,
+      },
+    })
+    .then((response) => {
+      return response;
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 }
 
 function getSabaAPI(apiEndpoint) {
@@ -78,6 +93,23 @@ function get(apiEndpoint) {
       console.log(err);
     });
 }
+
+// function postSabaAPI(apiEndpoint, token) {
+//   return axios
+//     .get(getSabaUrl(apiEndpoint), {
+//       headers: {
+//         Accept: "application/json",
+//         "Content-Type": "application/json",
+//         Authorization: `Bearer ${token}`,
+//       },
+//     })
+//     .then((response) => {
+//       return response;
+//     })
+//     .catch((err) => {
+//       console.log(err);
+//     });
+// }
 
 function post(apiEndpoint, payload, formData = false) {
   var bodyFormData = new FormData();

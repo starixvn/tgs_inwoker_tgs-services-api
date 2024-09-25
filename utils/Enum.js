@@ -116,7 +116,7 @@ export const SlotGameWithTest = {
   Yes: 1,
 };
 export const customGPname = {
-  WGFM: Config.brand === "WGHK" ? "MGM" : "",
+  WGFM: import.meta.env.VITE_BRAND === "WGHK" ? "MGM" : "",
 };
 
 // 自定義的 GroupCode，可依照需求新增對應類型

@@ -3,7 +3,6 @@ import config from "../../config/config";
 import i18n from "../../utils/i18n";
 export const GameService = {
   GetGameList,
-  GetCategory,
   JoinGame,
   JoinLobbyGame,
   GetHomePageGameList,
@@ -18,21 +17,8 @@ export const GameService = {
 
 function GetGameList(gpCode, gametypes) {
   const result = ApiService.get(
-    `Game/list?gpcode=${gpCode}&platformtype=${config.isPC}&language=${i18n.language}&currency=${config.currency}&gametypes=${gametypes}`,
+    `Game/list?gpcode=${gpCode}&platformtype=${config.isPC}&language=${i18n.language}&currency=${import.meta.env.VITE_CURRENCY}&gametypes=${gametypes}`,
   );
-  return result;
-}
-
-function GetCategory(gametypes, tag, pageIndex, pageSize) {
-  const result = ApiService.post("Category", {
-    Platformtype: config.isPC,
-    Language: i18n.language,
-    Currency: config.currency,
-    GameTypes: gametypes,
-    Tag: tag,
-    PageIndex: pageIndex,
-    PageSize: pageSize,
-  });
   return result;
 }
 
@@ -43,12 +29,12 @@ function GetCockfight(gametypes) {
 
 function GetHomePageGameList() {
   const result = ApiService.get(
-    `GameProvider/list?platformtype=${config.isPC}&language=${i18n.language}&currency=${config.currency}`,
+    `GameProvider/list?platformtype=${config.isPC}&language=${i18n.language}&currency=${import.meta.env.VITE_CURRENCY}`,
   );
   return result;
 }
 const languageFromLocalStorage = localStorage.getItem("i18nextLng");
-var detectLanguage = languageFromLocalStorage || i18n.language || config.defaultLanguage;
+var detectLanguage = languageFromLocalStorage || i18n.language || import.meta.env.VITE_DEFAULT_LANGUAGE;
 
 //custom handler
 const checkIfObject = (obj) => {
@@ -84,7 +70,7 @@ function JoinGame(gid, gpcode) {
 
 function GetGamePlatformByType() {
   const result = ApiService.get(
-    `GameProvider/list?platformtype=${config.isPC}&language=${i18n.language}&currency=${config.currency}`,
+    `GameProvider/list?platformtype=${config.isPC}&language=${i18n.language}&currency=${import.meta.env.VITE_CURRENCY}`,
   );
   return result;
 }

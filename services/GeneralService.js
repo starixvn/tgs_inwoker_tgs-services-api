@@ -34,8 +34,8 @@ export const GeneralService = {
 
 function GetSiteToken() {
   const result = ApiService.post("Auth/jwt", {
-    client: config.client,
-    currency: config.currency,
+    client: import.meta.env.VITE_CLIENT,
+    currency: import.meta.env.VITE_CURRENCY,
   }); //done
   return result;
 }
