@@ -62,22 +62,6 @@ function getSabaAPI(apiEndpoint) {
     });
 }
 
-function getSabaAPI(apiEndpoint) {
-  return axios
-    .get(config.sabaAPIPath + apiEndpoint, {
-      headers: {
-        "Content-Type": "application/json",
-        ...custmHeader,
-      },
-    })
-    .then((response) => {
-      return response;
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-}
-
 function get(apiEndpoint) {
   return axios
     .get(getUrl(apiEndpoint), {
