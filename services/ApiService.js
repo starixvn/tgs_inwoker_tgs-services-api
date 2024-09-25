@@ -48,7 +48,7 @@ function getAssetURL() {
 
 function getSabaAPI(apiEndpoint) {
   return axios
-    .get(import.meta.env.SABA_API_URL + apiEndpoint, {
+    .get(import.meta.env.VITE_SABA_API_URL + apiEndpoint, {
       headers: {
         "Content-Type": "application/json",
         ...custmHeader,
