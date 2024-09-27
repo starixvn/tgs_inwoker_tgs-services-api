@@ -1,4 +1,5 @@
 import axios from "axios";
+import { HubConnectionBuilder } from "@microsoft/signalr";
 
 export const ApiService = {
   get,
@@ -12,7 +13,8 @@ export const ApiService = {
   postFile,
   postArray,
   getAssetURL,
-  getSabaAPI
+  getSabaAPI,
+  GetConnection,
 };
 const custmHeader = {
   "b-id": import.meta.env.VITE_BRAND_ID,
@@ -274,4 +276,12 @@ function postExternal(url, payload, formData = false) {
     );
   }
   return request;
+}
+
+function GetConnection(url){
+  const connection = new HubConnectionBuilder()
+    .withUrl(import.meta.env.VITE_OPERATOR_SIGNALR + url + `?brandId=${import.meta.env.VITE_BRAND_ID}`)  
+    .build();
+
+  return connection;
 }
