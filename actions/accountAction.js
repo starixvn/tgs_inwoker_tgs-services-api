@@ -36,9 +36,10 @@ export const accountAction = {
   getPromoteUserList,
   getPromoteBillList,
   //TGS-883
-  newRegister,
+  newRegister, 
   GetRegisterStatus,
   performUpdateMemberNameAndIC,
+  getMilestoneList,
 };
 
 //DEPRECIATED: TGS-1269
@@ -389,6 +390,24 @@ function performUpdateMemberNameAndIC(name, number, file) {
         });
       });
 
+    return result;
+  };
+}
+
+function getMilestoneList() {
+  return async (dispatch) => {
+    const result = await AccountService.getMilestoneList()
+      .then((response) => {
+        if (response.IsSuccess) { 
+        } 
+        return response;
+      })
+      .catch((error) => {
+        dispatch({ 
+          payload: error,
+          loading: false,
+        });
+      });  
     return result;
   };
 }

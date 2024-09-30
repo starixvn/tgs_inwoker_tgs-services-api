@@ -33,6 +33,7 @@ export const AccountService = {
   GetRegisterStatus,
   UpdateMemberNameAndIC,
   GetBucketTypeAmount,
+  getMilestoneList
 };
 
 function CheckUserName(username) {
@@ -278,7 +279,7 @@ function NewRegister(type, input) {
   });
   return result;
 }
-
+ 
 function UploadIC(file) {
   const result = ApiService.postFile(`player/identity/upload`, file, {});
   return result;
@@ -287,3 +288,8 @@ function GetBucketTypeAmount() {
   const result = ApiService.get(`player/bucket/type/amount`);
   return result;
 }
+
+function getMilestoneList() {  
+  const result = ApiService.get(`promotion/milestone-list`);  
+  return result;  
+};
