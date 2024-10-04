@@ -1,5 +1,5 @@
 import axios from "axios";
-import { HubConnectionBuilder } from "@microsoft/signalr";
+import * as signalR from "@microsoft/signalr";
 
 export const ApiService = {
   get,
@@ -279,8 +279,12 @@ function postExternal(url, payload, formData = false) {
 }
 
 function GetConnection(url){
-  const connection = new HubConnectionBuilder()
-    .withUrl(import.meta.env.VITE_OPERATOR_SIGNALR + url + `?brandId=${import.meta.env.VITE_BRAND_ID}`)  
+  const connection = new signalR.HubConnectionBuilder()
+    .withUrl(import.meta.env.VITE_OPERATOR_SIGNALR + url + `?brandId=${import.meta.env.VITE_BRAND_ID}`,{
+      skipNegotiation: true,  
+      transport: signalR.HttpTransportType.WebSockets
+    })   
+    .withAutomaticReconnect()
     .build();
 
   return connection;
