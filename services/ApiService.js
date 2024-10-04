@@ -33,6 +33,7 @@ function getImage(apiEndpoint) {
     .get(getUrl(apiEndpoint), {
       headers: {
         "Content-Type": "image/png",
+        "session": localStorage.getItem("session"),
         ...custmHeader,
       },
     })
@@ -53,6 +54,8 @@ function getSabaAPI(apiEndpoint) {
     .get(import.meta.env.VITE_SABA_API_URL + apiEndpoint, {
       headers: {
         "Content-Type": "application/json",
+        "session": localStorage.getItem("session"),
+        "Access-Control-Allow-Origin": "*",
         ...custmHeader,
       },
     })
@@ -69,6 +72,7 @@ function get(apiEndpoint) {
     .get(getUrl(apiEndpoint), {
       headers: {
         "Content-Type": "application/json",
+        "session": localStorage.getItem("session"),
         ...custmHeader,
       },
     })
@@ -113,6 +117,7 @@ function post(apiEndpoint, payload, formData = false) {
       {
         headers: {
           "Content-Type": "application/json;charset=UTF-8",
+          "session": localStorage.getItem("session"),
           ...custmHeader,
         },
       },
@@ -130,6 +135,7 @@ function postArray(apiEndpoint, payload) {
     {
       headers: {
         "Content-Type": "application/json;charset=UTF-8",
+        "session": localStorage.getItem("session"),
         ...custmHeader,
       },
     },
@@ -141,6 +147,7 @@ function put(apiEndpoint, payload) {
   request = axios.put(getUrl(apiEndpoint), JSON.stringify(payload), {
     headers: {
       "Content-Type": "application/json;charset=UTF-8",
+      "session": localStorage.getItem("session"),
       ...custmHeader,
     },
   });
@@ -160,6 +167,7 @@ function patch(apiEndpoint, payload) {
   request = axios.patch(getUrl(apiEndpoint), JSON.stringify(payload), {
     headers: {
       "Content-Type": "application/json;charset=UTF-8",
+      "session": localStorage.getItem("session"),
       ...custmHeader,
     },
   });
@@ -193,6 +201,7 @@ function del(apiEndpoint, payload, withoutQuerystring = false) {
   request = axios.delete(url, {
     headers: {
       "Content-Type": "application/json;charset=UTF-8",
+      "session": localStorage.getItem("session"),
       ...custmHeader,
     },
   });
@@ -213,6 +222,7 @@ function postFormData(url, bodyFormData) {
 
     headers: {
       "Content-Type": "application/json;charset=UTF-8",
+      "session": localStorage.getItem("session"),
       ...custmHeader,
     },
   });
@@ -239,6 +249,7 @@ function postFile(apiEndpoint, file, payload, forIdentity) {
     headers: {
       accept: "application/json",
       "Content-Type": `multipart/form-data; boundary=${data._boundary}`,
+      "session": localStorage.getItem("session"),
       ...custmHeader,
     },
   });
@@ -259,6 +270,7 @@ function postExternal(url, payload, formData = false) {
 
       headers: {
         "Content-Type": "text/html; charset=UTF-8",
+        "session": localStorage.getItem("session"),
         ...custmHeader,
       },
     });
@@ -270,6 +282,7 @@ function postExternal(url, payload, formData = false) {
       {
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
+          "session": localStorage.getItem("session"),
           ...custmHeader,
         },
       },
