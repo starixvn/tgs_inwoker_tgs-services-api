@@ -33,7 +33,7 @@ function getImage(apiEndpoint) {
     .get(getUrl(apiEndpoint), {
       headers: {
         "Content-Type": "image/png",
-        "session": localStorage.getItem("session"),
+        session: localStorage.getItem("session"),
         ...custmHeader,
       },
     })
@@ -54,7 +54,7 @@ function getSabaAPI(apiEndpoint) {
     .get(import.meta.env.VITE_SABA_API_URL + apiEndpoint, {
       headers: {
         "Content-Type": "application/json",
-        "session": localStorage.getItem("session"),
+        session: localStorage.getItem("session"),
         "Access-Control-Allow-Origin": "*",
         ...custmHeader,
       },
@@ -72,7 +72,7 @@ function get(apiEndpoint) {
     .get(getUrl(apiEndpoint), {
       headers: {
         "Content-Type": "application/json",
-        "session": localStorage.getItem("session"),
+        session: localStorage.getItem("session"),
         ...custmHeader,
       },
     })
@@ -83,23 +83,6 @@ function get(apiEndpoint) {
       console.log(err);
     });
 }
-
-// function postSabaAPI(apiEndpoint, token) {
-//   return axios
-//     .get(getSabaUrl(apiEndpoint), {
-//       headers: {
-//         Accept: "application/json",
-//         "Content-Type": "application/json",
-//         Authorization: `Bearer ${token}`,
-//       },
-//     })
-//     .then((response) => {
-//       return response;
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//     });
-// }
 
 function post(apiEndpoint, payload, formData = false) {
   var bodyFormData = new FormData();
@@ -117,7 +100,7 @@ function post(apiEndpoint, payload, formData = false) {
       {
         headers: {
           "Content-Type": "application/json;charset=UTF-8",
-          "session": localStorage.getItem("session"),
+          session: localStorage.getItem("session"),
           ...custmHeader,
         },
       },
@@ -135,7 +118,7 @@ function postArray(apiEndpoint, payload) {
     {
       headers: {
         "Content-Type": "application/json;charset=UTF-8",
-        "session": localStorage.getItem("session"),
+        session: localStorage.getItem("session"),
         ...custmHeader,
       },
     },
@@ -147,7 +130,7 @@ function put(apiEndpoint, payload) {
   request = axios.put(getUrl(apiEndpoint), JSON.stringify(payload), {
     headers: {
       "Content-Type": "application/json;charset=UTF-8",
-      "session": localStorage.getItem("session"),
+      session: localStorage.getItem("session"),
       ...custmHeader,
     },
   });
@@ -167,7 +150,7 @@ function patch(apiEndpoint, payload) {
   request = axios.patch(getUrl(apiEndpoint), JSON.stringify(payload), {
     headers: {
       "Content-Type": "application/json;charset=UTF-8",
-      "session": localStorage.getItem("session"),
+      session: localStorage.getItem("session"),
       ...custmHeader,
     },
   });
@@ -201,7 +184,7 @@ function del(apiEndpoint, payload, withoutQuerystring = false) {
   request = axios.delete(url, {
     headers: {
       "Content-Type": "application/json;charset=UTF-8",
-      "session": localStorage.getItem("session"),
+      session: localStorage.getItem("session"),
       ...custmHeader,
     },
   });
@@ -222,7 +205,7 @@ function postFormData(url, bodyFormData) {
 
     headers: {
       "Content-Type": "application/json;charset=UTF-8",
-      "session": localStorage.getItem("session"),
+      session: localStorage.getItem("session"),
       ...custmHeader,
     },
   });
@@ -249,7 +232,7 @@ function postFile(apiEndpoint, file, payload, forIdentity) {
     headers: {
       accept: "application/json",
       "Content-Type": `multipart/form-data; boundary=${data._boundary}`,
-      "session": localStorage.getItem("session"),
+      session: localStorage.getItem("session"),
       ...custmHeader,
     },
   });
@@ -270,7 +253,7 @@ function postExternal(url, payload, formData = false) {
 
       headers: {
         "Content-Type": "text/html; charset=UTF-8",
-        "session": localStorage.getItem("session"),
+        session: localStorage.getItem("session"),
         ...custmHeader,
       },
     });
@@ -282,7 +265,7 @@ function postExternal(url, payload, formData = false) {
       {
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
-          "session": localStorage.getItem("session"),
+          session: localStorage.getItem("session"),
           ...custmHeader,
         },
       },
@@ -291,12 +274,15 @@ function postExternal(url, payload, formData = false) {
   return request;
 }
 
-function GetConnection(url){
+function GetConnection(url) {
   const connection = new signalR.HubConnectionBuilder()
-    .withUrl(import.meta.env.VITE_OPERATOR_SIGNALR + url + `?brandId=${import.meta.env.VITE_BRAND_ID}`,{
-      skipNegotiation: true,  
-      transport: signalR.HttpTransportType.WebSockets
-    })   
+    .withUrl(
+      import.meta.env.VITE_OPERATOR_SIGNALR + url + `?brandId=${import.meta.env.VITE_BRAND_ID}`,
+      {
+        skipNegotiation: true,
+        transport: signalR.HttpTransportType.WebSockets,
+      },
+    )
     .withAutomaticReconnect()
     .build();
 
