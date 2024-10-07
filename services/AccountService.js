@@ -51,7 +51,7 @@ function Login(username, password) {
 }
 
 function Register(username, pwd, confirmpwd, invitationcode = "", upper) {
-  var currency = import.meta.env.VITE_CURRENCY;
+  var currency = config.currency;
   const result = ApiService.post("Player/create", {
     username,
     currency,

@@ -17,7 +17,7 @@ export const GameService = {
 
 function GetGameList(gpCode, gametypes) {
   const result = ApiService.get(
-    `Game/list?gpcode=${gpCode}&platformtype=${config.isPC}&language=${i18n.language}&currency=${import.meta.env.VITE_CURRENCY}&gametypes=${gametypes}`,
+    `Game/list?gpcode=${gpCode}&platformtype=${config.isPC}&language=${i18n.language}&currency=${config.currency}&gametypes=${gametypes}`,
   );
   return result;
 }
@@ -29,12 +29,12 @@ function GetCockfight(gametypes) {
 
 function GetHomePageGameList() {
   const result = ApiService.get(
-    `GameProvider/list?platformtype=${config.isPC}&language=${i18n.language}&currency=${import.meta.env.VITE_CURRENCY}`,
+    `GameProvider/list?platformtype=${config.isPC}&language=${i18n.language}&currency=${config.currency}`,
   );
   return result;
 }
 const languageFromLocalStorage = localStorage.getItem("i18nextLng");
-var detectLanguage = languageFromLocalStorage || i18n.language || import.meta.env.VITE_DEFAULT_LANGUAGE;
+var detectLanguage = languageFromLocalStorage || i18n.language || config.defaultLanguage;
 
 //custom handler
 const checkIfObject = (obj) => {
@@ -70,7 +70,7 @@ function JoinGame(gid, gpcode) {
 
 function GetGamePlatformByType() {
   const result = ApiService.get(
-    `GameProvider/list?platformtype=${config.isPC}&language=${i18n.language}&currency=${import.meta.env.VITE_CURRENCY}`,
+    `GameProvider/list?platformtype=${config.isPC}&language=${i18n.language}&currency=${config.currency}`,
   );
   return result;
 }

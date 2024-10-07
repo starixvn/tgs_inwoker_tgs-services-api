@@ -1,4 +1,4 @@
-import Config from "../../config/config";
+import config from "../../config/config";
 import i18n from "../../utils/i18n";
 export const GameTypeEnum = {
   SPORTS: 1,
@@ -116,7 +116,7 @@ export const SlotGameWithTest = {
   Yes: 1,
 };
 export const customGPname = {
-  WGFM: import.meta.env.VITE_BRAND === "WGHK" ? "MGM" : "",
+  WGFM: config.brand === "WGHK" ? "MGM" : "",
 };
 
 // 自定義的 GroupCode，可依照需求新增對應類型
