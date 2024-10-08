@@ -1,6 +1,5 @@
 import axios from "axios";
 import * as signalR from "@microsoft/signalr";
-import config from "../../config/config";
 
 export const ApiService = {
   get,
@@ -18,15 +17,15 @@ export const ApiService = {
   GetConnection,
 };
 const custmHeader = {
-  "b-id": config.brandId,
+  "b-id": import.meta.env.VITE_BRAND_ID,
 };
 
 const getUrl = (apiEndpoint) => {
   const brandPaths = ["brandcommunication", "brandlivechat", "brand/maintenance"];
   if (brandPaths.some((path) => apiEndpoint.startsWith(path))) {
-    return config.baseUrl + config.brandPath + apiEndpoint;
+    return import.meta.env.VITE_BASE_URL + import.meta.env.VITE_BRAND_PATH + apiEndpoint;
   }
-  return config.baseUrl + config.operatorPath + apiEndpoint;
+  return import.meta.env.VITE_BASE_URL + import.meta.env.VITE_OPERATOR_PATH + apiEndpoint;
 };
 
 function getImage(apiEndpoint) {
@@ -47,12 +46,12 @@ function getImage(apiEndpoint) {
 }
 
 function getAssetURL() {
-  return config.assetsPath;
+  return import.meta.env.VITE_ASSETS_PATH;
 }
 
 function getSabaAPI(apiEndpoint) {
   return axios
-    .get(config.sabaApiUrl + apiEndpoint, {
+    .get(import.meta.env.VITE_SABA_API_URL + apiEndpoint, {
       headers: {
         "Content-Type": "application/json",
         session: localStorage.getItem("session"),
@@ -278,7 +277,7 @@ function postExternal(url, payload, formData = false) {
 function GetConnection(url) {
   const connection = new signalR.HubConnectionBuilder()
     .withUrl(
-      config.operatorSignalr + url + `?brandId=${config.brandId}`,
+      import.meta.env.VITE_OPERATOR_SIGNALR + url + `?brandId=${import.meta.env.VITE_BRAND_ID}`,
       {
         skipNegotiation: true,
         transport: signalR.HttpTransportType.WebSockets,
