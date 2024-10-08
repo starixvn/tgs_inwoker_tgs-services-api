@@ -459,14 +459,17 @@ function PerformDeposit(
   paymentid,
   promotionid = "",
   paymentcode,
-  type
+  type,
+  customData = ""
 ) {
+  var parsedCustomData = JSON.parse(customData) ?? {}
   var url = `deposit/${type}/${paymentcode.toLowerCase()}`;
   var params = {
     amount: amount,
     paymentid: paymentid,
     promotionid: promotionid === "" ? null : promotionid,
     banktype: type,
+    customData: parsedCustomData
   };
   if (paymentcode.toUpperCase() === "LEEPAY" && type === "crypto") {
     const result = ApiService.put(url, params);
