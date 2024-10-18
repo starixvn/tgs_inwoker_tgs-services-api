@@ -33,7 +33,9 @@ import {
   SETMESSAGEREAD_SUCCESS,
   SETMESSAGEREAD_FAILED,
   SETMILESTONE_PROMOTION_ID,
-  SETMILESTONE_DETAILS_PROMOTION_ID
+  SETMILESTONE_DETAILS_PROMOTION_ID,
+  SELECTEDMILESTONE,
+  INITSELECTEDMILESTONE,
 } from "../constant/actionType";
 import { isMobileOnly } from "react-device-detect";
 const initialState = {
@@ -156,7 +158,17 @@ const initialState = {
   error: null,
   loading: false,
   promotion_id:'',
-  details_promotion_id:''
+  details_promotion_id:'',
+  selectedMilestone: {
+    name: "",
+    subSubject: "",
+    totalValidBetAmount: 0,
+    totalDepositAmount: 0,
+    from: "",
+    to: "",
+    promotionId: "",
+    conditions: [],
+  },
 };
 function mapToAccountState(state, data) {
   return {
@@ -428,7 +440,26 @@ export function accountReducer(state = initialState, action) {
     return {
       ...state,
       details_promotion_id:action.payload
-    }
+    };
+    case SELECTEDMILESTONE:
+      return {
+        ...state,
+        selectedMilestone: action.payload,
+      };
+    case INITSELECTEDMILESTONE:
+      return {
+        ...state,
+        selectedMilestone: {
+          name: "",
+          subSubject: "",
+          totalValidBetAmount: 0,
+          totalDepositAmount: 0,
+          from: "",
+          to: "",
+          promotionId: "",
+          conditions: [],
+        },
+      };
     default:
       return state;
   }
