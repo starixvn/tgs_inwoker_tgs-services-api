@@ -33,6 +33,7 @@ import {
   SETMESSAGEREAD_SUCCESS,
   SETMESSAGEREAD_FAILED,
   SETMILESTONE_PROMOTION_ID,
+  SETMILESTONE_DETAILS_PROMOTION_ID
 } from "../constant/actionType";
 import { isMobileOnly } from "react-device-detect";
 const initialState = {
@@ -154,7 +155,8 @@ const initialState = {
   logintime: null,
   error: null,
   loading: false,
-  promotion_id:''
+  promotion_id:'',
+  details_promotion_id:''
 };
 function mapToAccountState(state, data) {
   return {
@@ -421,6 +423,11 @@ export function accountReducer(state = initialState, action) {
     return {
       ...state,
       promotion_id:action.payload
+    };
+    case  SETMILESTONE_DETAILS_PROMOTION_ID:
+    return {
+      ...state,
+      details_promotion_id:action.payload
     }
     default:
       return state;
